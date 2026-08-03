@@ -326,6 +326,17 @@ section{position:relative}
 .mblock li::before{content:"";position:absolute;left:0;top:7px;width:9px;height:9px;background:var(--negro)}
 .modal__foot{padding:22px 28px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 
+/* ---------- índice de ofertas (para buscadores y para navegar) ---------- */
+.indice{padding:56px 0;border-bottom:var(--bd);background:var(--negro);color:var(--blanco)}
+.indice h2{font-size:clamp(24px,3.4vw,38px);margin-bottom:22px;color:var(--blanco)}
+.indice ul{list-style:none;display:grid;gap:10px;
+  grid-template-columns:repeat(auto-fill,minmax(330px,1fr))}
+.indice li a{
+  display:block;border:var(--bd-fino);border-color:#3a3a3a;padding:11px 14px;
+  font-size:14px;font-weight:500;line-height:1.4;
+}
+.indice li a:hover{background:var(--amarillo);color:var(--negro);border-color:var(--negro)}
+
 /* ---------- fuentes ---------- */
 .fuentes{padding:64px 0;border-bottom:var(--bd);background:var(--azul);color:var(--blanco)}
 .fuentes h2{color:var(--blanco)}
@@ -692,6 +703,22 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
 <div class="modal" id="modal">
   <div class="modal__box" id="modalBox"></div>
 </div>
+
+<!-- Índice de enlaces reales a cada oferta. Lo regenera el motor: las tarjetas
+     de arriba las dibuja JavaScript y un buscador puede no verlas; estos
+     enlaces sí están en el HTML y son la puerta por donde Google entra. -->
+<!-- OFERTAS-ESTATICAS:INICIO -->
+<section class="indice">
+  <div class="wrap">
+    <h2>Todas las ofertas</h2>
+    <ul>
+      <li><a href="oferta/operario-de-produccion-conserh-1/">Operario de Producción — CONSERH (Sin sueldo declarado, Lima)</a></li>
+      <li><a href="oferta/customer-service-chamba-talent-s-a-c-2/">Customer Service — Chamba Talent S.A.C. (Sin sueldo declarado, Lima)</a></li>
+      <li><a href="oferta/asistente-contable-grupo-ferreycorp-3/">Asistente Contable — Grupo Ferreycorp (Sin sueldo declarado, Lima)</a></li>
+    </ul>
+  </div>
+</section>
+<!-- OFERTAS-ESTATICAS:FIN -->
 
 <!-- ============ FUENTES ============ -->
 <section class="fuentes" id="fuentes">

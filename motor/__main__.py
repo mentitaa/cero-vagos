@@ -188,6 +188,22 @@ def cmd_exportar(_args) -> None:
     print(f"Tasa de aprobación histórica: {info['stats']['tasa_aprobacion']}%")
 
 
+def cmd_publicar(args) -> None:
+    """Genera una página por oferta, el sitemap y el robots.txt."""
+    from .sitio import generar, sitio_publicado
+
+    destino = (args.sitio or sitio_publicado()).rstrip("/")
+    info = generar(sitio=destino)
+
+    print(f"Dirección del sitio: {info['sitio']}")
+    print(f"{info['paginas']} páginas de oferta generadas en oferta/")
+    if info.get("retiradas"):
+        print(f"{info['retiradas']} páginas retiradas (ofertas que ya cerraron)")
+    print("sitemap.xml y robots.txt actualizados")
+    print("\nFalta un paso manual, una sola vez: registrar el sitio en")
+    print("Google Search Console y enviar el sitemap.")
+
+
 def cmd_stats(_args) -> None:
     s = Almacen().estadisticas()
     print(f"Procesadas en total   {s['total_procesadas']}")
@@ -252,6 +268,11 @@ def main() -> None:
 
     e = sub.add_parser("exportar", help="generar datos/ofertas.js")
     e.set_defaults(func=cmd_exportar)
+
+    pub = sub.add_parser("publicar", help="generar una página por oferta + sitemap")
+    pub.add_argument("--sitio", default="",
+                     help="dirección del sitio (si se omite, se lee del CNAME)")
+    pub.set_defaults(func=cmd_publicar)
 
     s = sub.add_parser("stats", help="estado de la base")
     s.set_defaults(func=cmd_stats)
