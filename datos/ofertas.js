@@ -1,23 +1,164 @@
 /* Generado por el motor de Cero Vagos. No editar a mano. */
 window.CERO_VAGOS = {
- "generado": "2026-08-03T10:25:45",
- "total": 43,
+ "generado": "2026-08-03T19:20:17",
+ "total": 63,
  "stats": {
-  "total_procesadas": 915,
-  "aprobadas_vigentes": 43,
-  "tasa_aprobacion": 4.7,
-  "sin_sueldo": 675,
-  "pct_sin_sueldo": 74,
+  "total_procesadas": 1207,
+  "aprobadas_vigentes": 63,
+  "tasa_aprobacion": 5.2,
+  "sin_sueldo": 908,
+  "pct_sin_sueldo": 75,
   "sueldo_mediano": 1300,
   "por_fuente": {
-   "Bumeran": 24,
-   "Laborum": 18,
+   "Bumeran": 32,
+   "Laborum": 30,
    "Convocatorias del Estado": 1
   }
  },
  "ofertas": [
   {
    "id": 1,
+   "puesto": "Asesor(a) de Ventas",
+   "empresa": "CoverPrime",
+   "cat": "Atención al Cliente",
+   "min": 1500,
+   "max": 1500,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 1,
+   "vence": "2026-10-31",
+   "restan": 89,
+   "score": 92,
+   "resumen": "Buscamos una persona proactivo(a) y organizado(a) para unirse a nuestro equipo. El candidato ideal tendrá experiencia en atención al cliente, gestión de ventas y logística de despacho.",
+   "funciones": [
+    "Gestionar y dar seguimiento via WhatsApp, llamadas y correo electrónico, para realizar cotizaciones, venta y cierre de negocios de los productos/servicios de la empresa.",
+    "Realizar el seguimiento de propuestas y coordinar con las áreas de logística y técnica para asegurar una entrega impecable del servicio/producto.",
+    "Coordinar con Facturación para validar los depósitos de los pedidos realizados",
+    "Gestionar y ampliar la cartera de clientes actuales actualizando la base de datos",
+    "Cumplir metas de ventas establecidas y reportar avances al área comercial.",
+    "Capacitaciones permanentes en la línea de producto, feedback con el staff de ejecutivo",
+    "Seguimiento de leads en el CRM, elaboración de contratos y gestión de instalaciones.",
+    "Manejo de consultas y requerimientos post-venta para asegurar la satisfacción del cliente."
+   ],
+   "requisitos": [
+    "Experiencia mínima de 1 a 2 años en el rubro industrial",
+    "Técnico y/o Universitario completo o inconcluso",
+    "Experiencia de 1 a 2 años en posiciones de ventas y atención al cliente",
+    "Experiencia en venta de productos textiles industriales, estructuras metálicas o similares (deseable).",
+    "Habilidades de comunicación, persuasión y negociación",
+    "Manejo del Office (Word, Excel PPT, Outlook) a nivel Intermedio",
+    "De preferencia vivir a zonas aledañas a la Victoria",
+    "Horario de trabajo de 8 a 6pm de lunes a viernes",
+    "Excelente capacidad de comunicación, persuasión y negociación.",
+    "Actitud positiva, proactiva y con gran empatía.",
+    "Pasión por las ventas y el logro de metas.",
+    "Vocación de servicio y orientación al cliente."
+   ],
+   "beneficios": [
+    "Sueldo base 1500 soles + Comisión escalonada según margen de venta",
+    "Disponibilidad a gozar 2 medio días libres al año para lo que gustes (cumpleaños, trámite, etc)",
+    "Disponibilidad de 1 día al año para que realices tu examen oncológico preventivo",
+    "Bonos por proyectos institucionales o de alto volumen y/o cumplimiento de objetivos",
+    "Línea de carrera en el área",
+    "Respaldo técnico y operativo",
+    "PLanilla todos los beneficios en regimen REMYPE",
+    "En Cover prime S.A.C. promovemos una cultura inclusiva, basada en el respeto, la diversidad y la equidad de oportunidades para todos. Fomentamos la participación de personas con discapacidad, en cumplimiento de la Ley N.° 29973, y aseguramos igualdad de condiciones para todos."
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/asesora-de-ventas-b2b-sector-industrial-coverprime-1118387558.html"
+  },
+  {
+   "id": 2,
+   "puesto": "Anfitriona Automotriz A1",
+   "empresa": "A&RC Consultores",
+   "cat": "Tecnología",
+   "min": 2700,
+   "max": 2700,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 1,
+   "vence": "2026-10-01",
+   "restan": 59,
+   "score": 92,
+   "resumen": "Dar la bienvenida a los clientes y/o Ejecutivos de la compañía.",
+   "funciones": [
+    "Dar la bienvenida a los clientes y/o Ejecutivos de la compañía.",
+    "Atención a clientes de nuestros productos y/o a ejecutivos de la compañía en red de concesionarias y/o Malls, dar bienvenida, información, dirigirlos a sus lugares en eventos corporativos.",
+    "Salir en fotografías de catálogo, y/o eventos promocionales, participar en desfiles temáticos, etc.",
+    "Dar cotizaciones, presupuestos, etc. (se les dará capacitación orientada, pagada desde el primer día)",
+    "Opcional proceso de venta de vehículo con comisiones adicionales al sueldo ofrecido, por auto colocado.",
+    "Participar en desfiles en eventos promocionales, de realizarse"
+   ],
+   "requisitos": [
+    "Edad: Hasta 34 años",
+    "Buena Presencia y Figura (NO Excluyente)",
+    "Orientadas a la excelencia del servicio",
+    "Proactiva y buen trato al cliente.",
+    "Deseos de superación y trabajo en equipo.",
+    "Personalidad extrovertida, conversadora, carismática y muy sociable.",
+    "Disponibilidad de traslado a cualquier punto de lima. (facilidad de elegir cercanía a domicilio y/o centro de estudios)",
+    "Ser atenta, servicial, amable y siempre disponible en cualquier actividad que se le encomiende.",
+    "Rapidez e iniciativa.",
+    "No requiere experiencia (capacitaciones constantes).",
+    "Disponibilidad inmediata.",
+    "Las Srtas. Interesadas, Postular enviando su CV con FOTOGRAFIA ACTUALIZADA, a arc.seleccion en gmail. com y asunto ANFIAUTO-2026. y por favor confirmar postulación por whatsapp con asistente de selección de personal, Srta. Andrea Garcés al Whatsapp +51 933 089 161 ."
+   ],
+   "beneficios": [
+    "Ingreso a planillas con todos sus beneficios de ley desde el primer día de Capacitación.",
+    "Oportunidad de desarrollar una Línea de Carrera",
+    "Asignación familiar de tener hijos menores de edad",
+    "Salario: Salario + viáticos semanales = S/. 2700 / mes",
+    "Se dará Facilidades con sus horarios a las chicas que estudien.",
+    "Horario y Contacto",
+    "Mier, Jue, Vie, Sab de 9:30am a 5:30pm (Incluye refrigerio) y dos domingos al mes en el mismo horario."
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/anfitriona-automotriz-a1-2026-marcas-de-autos-arc-consultores-1118387561.html"
+  },
+  {
+   "id": 3,
+   "puesto": "Arquitecto(a) Supervisor de Obra",
+   "empresa": "CoverPrime",
+   "cat": "Ingeniería",
+   "min": 2500,
+   "max": 2500,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 1,
+   "vence": "2026-10-31",
+   "restan": 89,
+   "score": 89,
+   "resumen": "COVER PRIME SAC es una empresa peruana que brinda servicios de fabricación e instalación de todo tipo de coberturas para exteriores, con planes de crecimiento. Nos encontramos en busca del mejor talento para el puesto de SUPERVISOR DE OBRA",
+   "funciones": [
+    "Supervisar la ejecución de trabajos arquitectónicos y acabados, asegurando el cumplimiento de planos, especificaciones técnicas y estándares de calidad.",
+    "Coordinar con la constructora, contratistas y especialidades para prevenir y resolver interferencias durante la obra.",
+    "Coordinar y dirigir al personal interno en obra",
+    "Verificar el avance de obra y el cumplimiento del cronograma, realizando seguimiento a la programación diaria.",
+    "Gestionar la logística y los recursos necesarios para la obra.",
+    "Controlar la calidad de materiales, acabados y procedimientos constructivos, gestionando oportunamente las observaciones.",
+    "Administrar y mantener actualizados los planos, cambios, documentación técnica y reportes de obra."
+   ],
+   "requisitos": [
+    "Observador y detallista",
+    "Comunicación efectiva a todo nivel tanto con cliente externo como interno",
+    "Proactividad y orientación a resultados.",
+    "Capacidad para en equipo y bajo presión",
+    "Capacidad para resolución de problemas."
+   ],
+   "beneficios": [
+    "Ingreso a planilla",
+    "Todos los beneficios de ley",
+    "Capacitación constante",
+    "Línea de carrera a futuro dentro de la empresa",
+    "Agradable ambiente laboral",
+    "Remuneración bruta de S/.2500",
+    "¡te invitamos a postular y ser parte de COVERPRIME y crecer juntos!"
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/arquitectoa-supervisor-de-obra-coverprime-1118387541.html"
+  },
+  {
+   "id": 4,
    "puesto": "Customer Service",
    "empresa": "CHAMBA TALENT S.A.C.",
    "cat": "Atención al Cliente",
@@ -62,7 +203,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/customer-service-interprete-ingles-avanzado-remoto-chamba-talent-s.a.c.-1118387141.html"
   },
   {
-   "id": 2,
+   "id": 5,
    "puesto": "Asistente de Tesoreria",
    "empresa": "CoverPrime",
    "cat": "Tecnología",
@@ -114,7 +255,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-tesoreria-coverprime-1118387435.html"
   },
   {
-   "id": 3,
+   "id": 6,
    "puesto": "Asesor de Seguros Vida",
    "empresa": "Rimac Cia de Seguros y Reaseguros S.A.",
    "cat": "Tecnología",
@@ -151,7 +292,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-seguros-vida-cusco-rimac-cia-de-seguros-y-reaseguros-s.a.-1118387151.html"
   },
   {
-   "id": 4,
+   "id": 7,
    "puesto": "Asesor de Seguros Vida",
    "empresa": "Rimac Cia de Seguros y Reaseguros S.A.",
    "cat": "Tecnología",
@@ -188,7 +329,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-seguros-vida-piura-rimac-cia-de-seguros-y-reaseguros-s.a.-1118387154.html"
   },
   {
-   "id": 5,
+   "id": 8,
    "puesto": "Operario de Producción",
    "empresa": "CYL",
    "cat": "Ingeniería",
@@ -198,8 +339,8 @@ window.CERO_VAGOS = {
    "ciudad": "Lima",
    "fuente": "Bumeran",
    "dias": 2,
-   "vence": "2026-09-29",
-   "restan": 57,
+   "vence": "2026-09-30",
+   "restan": 58,
    "score": 94,
    "resumen": "¡No pierdas esta gran oportunidad de formar parte de una empresa sólida y en crecimiento!",
    "funciones": [
@@ -226,7 +367,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-produccion--maquinaria-con-o-sin-experiencia|-santa-anita-cyl-1118387181.html"
   },
   {
-   "id": 6,
+   "id": 9,
    "puesto": "Operaria de Producción",
    "empresa": "CYL",
    "cat": "Ingeniería",
@@ -236,8 +377,8 @@ window.CERO_VAGOS = {
    "ciudad": "Lima",
    "fuente": "Bumeran",
    "dias": 2,
-   "vence": "2026-09-29",
-   "restan": 57,
+   "vence": "2026-09-30",
+   "restan": 58,
    "score": 94,
    "resumen": "¡ÚNETE HOY! TRABAJO EN PRODUCCIÓN INMEDIATO",
    "funciones": [
@@ -264,7 +405,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operaria-de-produccion-maquinaria-santa-anita-cyl-1118387185.html"
   },
   {
-   "id": 7,
+   "id": 10,
    "puesto": "Asesor de Seguros Vida",
    "empresa": "Rimac Cia de Seguros y Reaseguros S.A.",
    "cat": "Tecnología",
@@ -301,7 +442,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-seguros-vida-lima-norte-rimac-cia-de-seguros-y-reaseguros-s.a.-1118387324.html"
   },
   {
-   "id": 8,
+   "id": 11,
    "puesto": "Operario de Limpieza de Piezas-producción con",
    "empresa": "CYL",
    "cat": "Ingeniería",
@@ -311,8 +452,8 @@ window.CERO_VAGOS = {
    "ciudad": "Lima",
    "fuente": "Bumeran",
    "dias": 2,
-   "vence": "2026-09-29",
-   "restan": 57,
+   "vence": "2026-09-30",
+   "restan": 58,
    "score": 91,
    "resumen": "¡TU OPORTUNIDAD EN PRODUCCIÓN ESTÁ AQUÍ!",
    "funciones": [
@@ -341,7 +482,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-limpieza-de-piezas-produccion-con-sin-experiencia-ate-cyl-1118387168.html"
   },
   {
-   "id": 9,
+   "id": 12,
    "puesto": "Operario de Limpieza de Piezas",
    "empresa": "CYL",
    "cat": "Ingeniería",
@@ -351,8 +492,8 @@ window.CERO_VAGOS = {
    "ciudad": "Lima",
    "fuente": "Bumeran",
    "dias": 2,
-   "vence": "2026-09-29",
-   "restan": 57,
+   "vence": "2026-09-30",
+   "restan": 58,
    "score": 91,
    "resumen": "¡VACANTES DISPONIBLES YA! – INGRESO INMEDIATO",
    "funciones": [
@@ -381,7 +522,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-limpieza-de-piezas-produccion-santa-anita-cyl-1118387180.html"
   },
   {
-   "id": 10,
+   "id": 13,
    "puesto": "Asistente de Marketing y Comercial",
    "empresa": "CoverPrime",
    "cat": "Tecnología",
@@ -433,7 +574,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-marketing-y-comercial-coverprime-1118387417.html"
   },
   {
-   "id": 11,
+   "id": 14,
    "puesto": "Asesor de Ventas",
    "empresa": "CAMARA DE COMERCIO EXTERIOR S.A.C.",
    "cat": "Ventas",
@@ -473,7 +614,141 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/unete-a-nuestro-equipo-de-ventas-asesor-de-ventas--turno-tarde-camara-de-comercio-exterior-s.a.c.-1118387337.html"
   },
   {
-   "id": 12,
+   "id": 15,
+   "puesto": "Coordinador de Mantenimiento",
+   "empresa": "Pigmalion Consultores",
+   "cat": "Ingeniería",
+   "min": 2500,
+   "max": 3000,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 3,
+   "vence": "2026-09-29",
+   "restan": 57,
+   "score": 100,
+   "resumen": "Si se encuentra interesado(a), debe enviar su CV al siguiente número: 933 429 319",
+   "funciones": [
+    "Planificar, coordinar y supervisar el mantenimiento preventivo y correctivo de la planta.",
+    "Gestionar el correcto funcionamiento de equipos eléctricos y mecánicos.",
+    "Elaborar y dar seguimiento a indicadores e informes de mantenimiento.",
+    "Gestionar la compra y cotización de repuestos e insumos necesarios para el área.",
+    "Coordinar con el equipo de producción la ejecución de los mantenimientos para asegurar la continuidad de la operación.",
+    "Apoyar en la supervisión de personal técnico y promover el cumplimiento de los estándares de seguridad."
+   ],
+   "requisitos": [
+    "Técnico o Egresado en Ingeniería Mecánica o similares.",
+    "Entre 1 a 2 años de experiencia en mantenimiento industrial.",
+    "Conocimiento en mantenimiento de máquinas envasadoras, hornos y equipos que tengan PLC.",
+    "Conocimiento en compras de repuestos y gestión de cotizaciones.",
+    "Experiencia en empresas del rubro de alimentos. (Deseable)",
+    "Disponibilidad para laborar en San Luis, Lima Perú."
+   ],
+   "beneficios": [
+    "Planilla desde primer día bajo Régimen MYPE",
+    "Sueldo entre S/. 2500 – S/. 3000",
+    "Asignación familiar según ley",
+    "Capacidad de realizar horas extras.",
+    "Bonos de Movilidad y Alimentación",
+    "Ubicación: San Luis, frente al Mercado de fruta."
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/coordinador-de-mantenimiento-wimpon-pigmalion-consultores-1118386015.html"
+  },
+  {
+   "id": 16,
+   "puesto": "Ingeniero de Proyectos Gestión SSOMA",
+   "empresa": "Engineering Services & Consulting S.A.C",
+   "cat": "Ingeniería",
+   "min": 2500,
+   "max": 2500,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 3,
+   "vence": "2026-10-29",
+   "restan": 87,
+   "score": 97,
+   "resumen": "Apoyar en la planificación, ejecución y seguimiento de los proyectos SSOMA.",
+   "funciones": [
+    "Apoyar en la planificación, ejecución y seguimiento de los proyectos SSOMA.",
+    "Coordinar los recursos necesarios para la correcta ejecución de los servicios.",
+    "Realizar el seguimiento al personal destacado en campo y al cumplimiento de los entregables.",
+    "Elaborar informes, reportes y documentación técnica para clientes.",
+    "Verificar el cumplimiento de la normativa vigente, los requisitos del cliente y los estándares de SINCRO.",
+    "Participar en reuniones de coordinación con clientes, proveedores y equipos internos.",
+    "Brindar soporte en la elaboración de propuestas técnicas, cotizaciones y procesos de licitación.",
+    "Mantener actualizada la documentación técnica y administrativa de los proyectos."
+   ],
+   "requisitos": [
+    "Bachiller de Ingeniería Industrial, Ingeniería de Seguridad, Ingeniería Ambiental, Ingeniería de Minas, Ingeniería Civil, Ingeniería Química o carreras afines.",
+    "Deseable título profesional y colegiatura.",
+    "Experiencia mínima de 2 años en SSOMA, SST, HSE/EHS o Sistemas Integrados de Gestión.",
+    "Experiencia en gestión y seguimiento de proyectos o servicios SSOMA.",
+    "Conocimiento de la Ley N.° 29783, IPERC, trabajos de alto riesgo y Sistemas de Gestión ISO 45001, ISO 14001 e ISO 9001.",
+    "Manejo de Microsoft Office a nivel intermedio.",
+    "Deseable experiencia en elaboración de propuestas técnicas, licitaciones y coordinación con clientes y proveedores.",
+    "Deseable conocimiento de herramientas de inteligencia artificial aplicadas a la gestión documental y análisis de información.",
+    "Disponibilidad para realizar visitas a campo según requerimiento."
+   ],
+   "beneficios": [
+    "Ubicación: Surquillo, Lima",
+    "Horario: Lunes a viernes de 8:30 a.m. a 5:30 p.m.",
+    "Remuneración: S/ 2,500",
+    "Ingreso a planilla desde el primer día con todos los beneficios de ley",
+    "EPS cubierta al 50% y Seguro Oncológico al 100%",
+    "Seguro Vida Ley desde el primer día de labores",
+    "Participación en utilidades",
+    "Acceso a capacitaciones constantes y oportunidades de aprendizaje continuo",
+    "Participación en proyectos de alto impacto con clientes líderes",
+    "Grato ambiente laboral y actividades de integración",
+    "Pertenecer a una empresa líder y en constante crecimiento",
+    "¡Sé parte del equipo SINCRO y lleva tu talento al siguiente nivel!"
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/ingeniero-de-proyectos-gestion-ssoma-engineering-services-consulting-s.a.c-1118386028.html"
+  },
+  {
+   "id": 17,
+   "puesto": "Asesor(a) de ventas San Isidro",
+   "empresa": "ADECCO",
+   "cat": "Ventas",
+   "min": 1300,
+   "max": 2000,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 3,
+   "vence": "2026-10-29",
+   "restan": 87,
+   "score": 95,
+   "resumen": "En Adecco, por encargo de nuestro cliente Cámara de Comercio Exterior , nos encontramos en la búsqueda de Asesor(a) de Ventas Digitales - San Isidro con experiencia en ventas y enfoque a resultados.",
+   "funciones": [
+    "Asesorar y vender cursos digitales a clientes potenciales.",
+    "Gestionar leads provenientes de diferentes canales digitales.",
+    "Atender consultas a través de chat y otros medios de contacto.",
+    "Realizar seguimiento comercial hasta el cierre de la venta.",
+    "Brindar soporte al cliente respecto a accesos e inicio de cursos."
+   ],
+   "requisitos": [
+    "Secundaria completa, estudios técnicos o universitarios en curso.",
+    "Experiencia mínima de 6 meses en Ventas digitales, Call Center, Ventas directas o Atención comercial.",
+    "Manejo de herramientas digitales y seguimiento comercial.",
+    "Disponibilidad para trabajar en San Isidro.",
+    "Excelente comunicación, proactividad y orientación a resultados."
+   ],
+   "beneficios": [
+    "Sueldo fijo: S/ 1,200.",
+    "Atractivas comisiones semanales desde la primera semana.",
+    "Ingresos variables aproximados entre S/ 1,300 y S/ 2,000 adicionales según desempeño.",
+    "Capacitación y oportunidades de crecimiento",
+    "Lugar de trabajo: San Isidro.",
+    "Horario: Lunes a sábado de 2:00 p.m. a 10:45 p.m. (45 minutos de refrigerio).",
+    "Modalidad: Presencial.",
+    "Contrato bajo régimen MYPE"
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/asesora-de-ventas-san-isidro-adecco-1118386014.html"
+  },
+  {
+   "id": 18,
    "puesto": "Administrador de Operaciones",
    "empresa": "Beliving Talents",
    "cat": "Contabilidad",
@@ -512,7 +787,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/administrador-de-operaciones-outsourcing-beliving-talents-1118386627.html"
   },
   {
-   "id": 13,
+   "id": 19,
    "puesto": "Practicante Profesional de Contabilidad",
    "empresa": "CENTAURO EDITORES SAC",
    "cat": "Contabilidad",
@@ -556,7 +831,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-profesional-de-contabilidad-centauro-editores-sac-1118386941.html"
   },
   {
-   "id": 14,
+   "id": 20,
    "puesto": "Auxiliar Operativo",
    "empresa": "Servicios Postales del Perú S.A.",
    "cat": "Tecnología",
@@ -597,7 +872,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-operativo-almacen-los-olivos-servicios-postales-del-peru-s.a.-1118387001.html"
   },
   {
-   "id": 15,
+   "id": 21,
    "puesto": "Representante de Servicios",
    "empresa": "CAJA CUSCO",
    "cat": "Tecnología",
@@ -637,7 +912,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/representante-de-servicios-agencia-puquio-ref-1308-2026-caja-cusco-1118386570.html"
   },
   {
-   "id": 16,
+   "id": 22,
    "puesto": "Operario de montaje",
    "empresa": "Estanterías Metálicas JRM S.A.C",
    "cat": "Logística",
@@ -677,7 +952,92 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-montaje-urgente-estanterias-metalicas-jrm-s.a.c-1118386775.html"
   },
   {
-   "id": 17,
+   "id": 23,
+   "puesto": "Supervisor Comercial Internacional",
+   "empresa": "Talento Humano Perú",
+   "cat": "Ventas",
+   "min": 3000,
+   "max": 3000,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 3,
+   "vence": "2026-10-29",
+   "restan": 87,
+   "score": 92,
+   "resumen": "Nuestro cliente, Agencia Internacional especializada en la comercialización de Seguros de Vida, Salud e Inversiones, nos ha encargado la búsqueda de un (1) Supervisor Comercial Internacional de Seguros de Vida y Salud.",
+   "funciones": [
+    "Diseñar e implementar estrategias para el cumplimiento de metas de ventas.",
+    "Gestionar el desempeño de la fuerza comercial mediante indicadores (KPIs).",
+    "Brindar acompañamiento y coaching comercial al equipo de ventas.",
+    "Prospectar y desarrollar nuevas oportunidades de negocio.",
+    "Mantener y fortalecer relaciones con clientes corporativos e individuales.",
+    "Elaborar reportes comerciales y proyecciones de ventas para la dirección.",
+    "Coordinar campañas comerciales y actividades de capacitación.",
+    "Garantizar el cumplimiento de las políticas y lineamientos comerciales de la compañía.",
+    "Promover la comercialización de productos internacionales de Vida, Salud e Inversiones."
+   ],
+   "requisitos": [
+    "Profesional universitario en Administración, Marketing, Economía, Ingeniería Comercial o carreras afines.",
+    "Experiencia mínima de tres (3) años en posiciones comerciales a fines de sector.",
+    "Experiencia en el área comercial relacionada a Seguros de Vida, Seguros de Salud, AFPs, Seguros Internacionales o relacionados.",
+    "Experiencia liderando equipos de ventas o fuerza comercial.",
+    "Ms. Office, nivel intermedio. • Inglés, nivel intermedio."
+   ],
+   "beneficios": [
+    "Remuneración: $ 3,000.00 dólares + Comisiones.",
+    "Contrato Honorarios Profesionales con empresa extranjera (Locador de Servicios - USA).",
+    "Vacaciones al año: 12 días hábiles.",
+    "MODALIDAD DE TRABAJO Y HORARIO DE MIAMI",
+    "Lunes a viernes de 9:00 a.m. a 6:00 p.m.",
+    "Distrito en San Isidro.",
+    "Trabajo presencial."
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/supervisor-comercial-internacional--seguros-de-vida-y-salud-talento-humano-peru-1118386040.html"
+  },
+  {
+   "id": 24,
+   "puesto": "Técnico de Farmacia para atención al cliente",
+   "empresa": "Confidencial",
+   "cat": "Atención al Cliente",
+   "min": 1500,
+   "max": 1500,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 3,
+   "vence": "2026-10-29",
+   "restan": 87,
+   "score": 92,
+   "resumen": "Por encargado de nuestro cliente en el area de Farmacias nos encontramos en busqueda de un Técnico de Farmacia / Miraflores",
+   "funciones": [
+    "Dar seguimiento al paciente del canal asignado",
+    "Gestionar, coordina de forma correcta la atención al paciente según lo indicado en su receta",
+    "Absolver consultas e identificar las necesidades del los pacientes",
+    "Informar y Coordinar con el cliente/paciente si hay observaciones en su solicitud",
+    "Realizar otras funciones relacionadas al puesto.",
+    "Tipo de trabajo",
+    "Rango de horario 8am a 8pm dentro de ello habrían 2 turnos para poder rotar.",
+    "Trabajo Lunes a sábado y domingo descansan",
+    "Rotan cada turno pero de manera mensual ( quiere decir que les asignan un turno y estarán en ese turno 1 mes aproximadamente y luego rotan a otro de esos 3 turnos."
+   ],
+   "requisitos": [
+    "Egresados y/o titulados de la carrera Técnico de Farmacia.",
+    "Disponibilidad para laborar en turnos rotativos.",
+    "Experiencia de 6 meses en boticas o Farmacias."
+   ],
+   "beneficios": [
+    "Ingreso a planilla desde el primer día con todo los beneficios de ley al 100%.",
+    "(CTS, gratificaciones, vacaciones, pago de Essalud, asignación familiar)",
+    "Salario acorde al mercado",
+    "Capacitaciones constantes y desarrollo de proyectos dentro del área.",
+    "Salario S/1500",
+    "Facilidades para adquirir productos de la empresa."
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/tecnico-de-farmacia-para-atencion-al-cliente-cuidafarma-1118386056.html"
+  },
+  {
+   "id": 25,
    "puesto": "Supervisor(a) de Energías Renovables",
    "empresa": "Talento Humano Perú",
    "cat": "Prácticas",
@@ -720,7 +1080,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/supervisora-de-energias-renovables-|-piura-talara-talento-humano-peru-1118386921.html"
   },
   {
-   "id": 18,
+   "id": 26,
    "puesto": "Operaria de Limpieza de Producción",
    "empresa": "CYL",
    "cat": "Ingeniería",
@@ -761,7 +1121,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operaria-de-limpieza-de-produccion-ingreso-a-planillabonos-ate-cyl-1118387056.html"
   },
   {
-   "id": 19,
+   "id": 27,
    "puesto": "Operario de Almacén",
    "empresa": "CYL",
    "cat": "Logística",
@@ -802,7 +1162,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-almacen-|-bonos-planilla-cyl-1118387058.html"
   },
   {
-   "id": 20,
+   "id": 28,
    "puesto": "Operador de Monitoreo Vehicular",
    "empresa": "Confidencial",
    "cat": "Tecnología",
@@ -852,7 +1212,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operador-de-monitoreo-vehicular--central-de-monitoreo-gps-1118386543.html"
   },
   {
-   "id": 21,
+   "id": 29,
    "puesto": "Practicante de Soporte Técnico",
    "empresa": "BOLD ASCENT",
    "cat": "Tecnología",
@@ -889,7 +1249,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-de-soporte-tecnico-bold-ascent-1118386254.html"
   },
   {
-   "id": 22,
+   "id": 30,
    "puesto": "Jefe de Marketing",
    "empresa": "Confidencial",
    "cat": "Marketing",
@@ -936,7 +1296,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/jefe-de-marketing-1118356328.html"
   },
   {
-   "id": 23,
+   "id": 31,
    "puesto": "Labora de Lunes a Viernes FIJO! Atención al cliente",
    "empresa": "ManpowerGroup Perú",
    "cat": "Atención al Cliente",
@@ -976,7 +1336,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/labora-de-lunes-a-viernes-fijo-atencion-al-cliente-turno-manana-s.-2500-manpowergroup-peru-1118386965.html"
   },
   {
-   "id": 24,
+   "id": 32,
    "puesto": "Practicante de Contabilidad",
    "empresa": "Confidencial",
    "cat": "Contabilidad",
@@ -1023,7 +1383,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-de-contabilidad-1118386534.html"
   },
   {
-   "id": 25,
+   "id": 33,
    "puesto": "Auxiliar Administrativo",
    "empresa": "Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco",
    "cat": "Tecnología",
@@ -1061,7 +1421,93 @@ window.CERO_VAGOS = {
    "url": "https://www.convocape.com/convocatorias/auxiliar-administrativo-proyecto-especial-regional-plan-copesco-del-gobierno-regional-del-cusco-728-2026-07-797486"
   },
   {
-   "id": 26,
+   "id": 34,
+   "puesto": "Carpintero de Melamina y Mobiliario Comercial",
+   "empresa": "CONSERH",
+   "cat": "Tecnología",
+   "min": 1800,
+   "max": 2200,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 30,
+   "vence": "2026-08-04",
+   "restan": 1,
+   "score": 97,
+   "resumen": "RESUMEN: Nos encontramos en búsqueda de un Carpintero con experiencia en fabricación de mobiliario comercial para incorporarse a nuestro equipo de trabajo.",
+   "funciones": [
+    "Fabricar mobiliario comercial utilizando melamina, madera, fenólico y otros materiales.",
+    "Realizar el armado y acondicionamiento de muebles para proyectos comerciales.",
+    "Interpretar planos de diseño para la correcta fabricación de piezas.",
+    "Operar herramientas y equipos propios del área de carpintería."
+   ],
+   "requisitos": [
+    "Técnico en Carpintería o carreras afines.",
+    "Experiencia comprobable como carpintero.",
+    "Conocimiento en lectura de planos.",
+    "Manejo de herramientas manuales y eléctricas.",
+    "Disponibilidad para trabajar en campo y planta."
+   ],
+   "beneficios": [
+    "Sueldo entre S/ 1,800 y S/ 2,200 (según evaluación).",
+    "Ingreso a planilla PYME desde el primer día.",
+    "Gratificaciones y CTS según régimen PYME.",
+    "Movilidad cubierta cuando se realicen trabajos en campo.",
+    "Buen clima laboral.",
+    "Oportunidad de crecimiento.",
+    "Lugar y horario",
+    "Villa El Salvador (cerca a la estación Parque Industrial)",
+    "Lunes a viernes",
+    "08:00 a.m. - 6:00 p.m.",
+    "08:00 a.m. - 1:00 p.m.",
+    "¡Postúlate ahora!. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: carpenter, ebanista, carpintero, salesman, saleswoman, seller, vendedor, comercial, salesperson"
+   ],
+   "url": "https://www.laborum.pe/job/conserh/carpintero-de-melamina-y-mobiliario-comercial-villa-el/6a4998286eff4770744bbc50"
+  },
+  {
+   "id": 35,
+   "puesto": "Asesor(a) de Ventas",
+   "empresa": "EsTalent",
+   "cat": "Ventas",
+   "min": 1200,
+   "max": 1200,
+   "modalidad": "Remoto",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 30,
+   "vence": "2026-08-04",
+   "restan": 1,
+   "score": 96,
+   "resumen": "RESUMEN: En , consultora especializada en atracción de talento, conectamos a profesionales destacados con oportunidades de crecimiento en empresas que confían en nosotros para incorporar a los mejores talentos.",
+   "funciones": [
+    "Brindar asesoría comercial a clientes interesados en realizar su portabilidad móvil hacia Claro, ofreciendo promociones y beneficios, y gestionando el proceso de venta de manera eficiente para contribuir al cumplimiento de los objetivos comerciales.",
+    "Ofrecer los servicios de portabilidad móvil de Claro, informando promociones y beneficios vigentes.",
+    "Registrar y validar correctamente la información del cliente en el sistema.",
+    "Brindar una atención cordial y orientada al cierre de ventas.",
+    "Cumplir con los indicadores comerciales y estándares de calidad establecidos."
+   ],
+   "requisitos": [
+    "Con o sin experiencia en ventas o call center.",
+    "Disponibilidad para trabajar de manera flexible (opción presencial/ remota en Surquillo).",
+    "Disponibilidad para iniciar capacitación y gestión de manera inmediata.",
+    "Contar con herramientas adecuadas en caso de solicitar trabajo remoto (internet estable y equipo de trabajo).",
+    "Facilidad de comunicación, orientación al cliente y enfoque en resultados."
+   ],
+   "beneficios": [
+    "Contratación mediante Recibos por Honorarios (RxH).",
+    "Sueldo fijo de S/ 1,200.",
+    "Bono de movilidad de S/ 200.",
+    "Bono de permanencia de S/ 350.",
+    "Bono de alimentación de S/ 100.",
+    "Comisiones ilimitadas.",
+    "Modalidad remota, con opción de laborar de forma presencial en Surquillo si el postulante lo prefiere.",
+    "Horario de lunes a sábado, de 9:00 a. m. a 6:00 p. m.",
+    "Descanso fijo los domingos."
+   ],
+   "url": "https://www.laborum.pe/job/estalent/asesor-a-de-ventas-call-center-flexible-con-experiencia/6a499bb76eff4770744bd7bf"
+  },
+  {
+   "id": 36,
    "puesto": "Técnico de Aire Acondicionado",
    "empresa": "CONSERH",
    "cat": "Tecnología",
@@ -1105,7 +1551,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/conserh/tecnico-de-aire-acondicionado-villa-el-salvador/6a4998d46eff4770744bc160"
   },
   {
-   "id": 27,
+   "id": 37,
    "puesto": "Asistente de Despacho",
    "empresa": "Lavoro Perú",
    "cat": "Ingeniería",
@@ -1153,7 +1599,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/asistente-de-despacho-turnos-rotativos-huachipa-huachipa/6a4999786eff4770744bc683"
   },
   {
-   "id": 28,
+   "id": 38,
    "puesto": "Técnico de Aire Acondicionado / Villa el Salvador",
    "empresa": "CONSERH",
    "cat": "Tecnología",
@@ -1197,7 +1643,169 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/conserh/tecnico-de-aire-acondicionado-villa-el-salvador/6a4998d46eff4770744bc160"
   },
   {
-   "id": 29,
+   "id": 39,
+   "puesto": "Apparka",
+   "empresa": "APPARKA",
+   "cat": "Tecnología",
+   "min": 1130,
+   "max": 1130,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 30,
+   "vence": "2026-08-04",
+   "restan": 1,
+   "score": 94,
+   "resumen": "RESUMEN: En apparka nos encontramos en búsqueda del mejor talento para el puesto de Anfitrión de Estacionamientos.",
+   "funciones": [
+    "Brindar una excelente atención a nuestros clientes, asegurando una experiencia agradable desde su llegada.",
+    "Facilitar la entrada y salida de los vehículos en nuestras instalaciones.",
+    "Colaborar con un equipo comprometido en garantizar la seguridad y el buen funcionamiento de cada estacionamiento.",
+    "Utilizar nuestras herramientas tecnológicas para hacer el trabajo más eficiente.",
+    "Disponibilidad para laborar en el turno rotativo y tarde."
+   ],
+   "requisitos": [
+    "Personas con buena actitud, orientadas al servicio y dispuestas a aprender.",
+    "No es necesaria la experiencia",
+    "Disponibilidad para movilizarse en distintos plaza vea de alrededor.",
+    "Compromiso con el trabajo en equipo y la puntualidad.",
+    "Disponibilidad completa, que no este estudiando"
+   ],
+   "beneficios": [
+    "Sueldo: S/. 1130 mensual + INGRESO DIRECTO A PLANILLA (CTS, GRATIFICACIÓN, ASIGNACIÓN FAMILIAR)",
+    "TURNO 8 HORAS ENTRE RANGO DE HORARIO DE: 6:00 AM A 11:00 PM CON UN DÍA DE DESCANSO A LA SEMANA ROTATIVO",
+    "¡Oportunidad de línea de carrera a corto plazo!",
+    "Capacitaciones constantes.",
+    "INGRESO INMEDIATO",
+    "Recuerda que, si cuentas con alguna discapacidad, ¡no te límites y anímate a postular! ¡Garantizamos un proceso justo y transparente, velando por la igualdad de tus derechos! (Ley General de la Persona con Discapacidad - Ley N° 29973, reglamento N°107-2015-MIMP y normas complementarias).",
+    "¡Únete a nuestro equipo y haz la diferencia desde donde estés!. -Requerimientos- Educación mínima: Educación Secundaria años de experiencia"
+   ],
+   "url": "https://www.laborum.pe/job/apparka/ingreso-inmediato-sin-experiencia-anfitrion-a-de/6a499a356eff4770744bcba1"
+  },
+  {
+   "id": 40,
+   "puesto": "Ayudante de Planta",
+   "empresa": "CONSERH",
+   "cat": "Logística",
+   "min": 1200,
+   "max": 1500,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 30,
+   "vence": "2026-08-04",
+   "restan": 1,
+   "score": 94,
+   "resumen": "Apoyar en actividades de carpintería, estructuras metálicas y pintura.",
+   "funciones": [
+    "Apoyar en actividades de carpintería, estructuras metálicas y pintura.",
+    "Preparar materiales e insumos para producción.",
+    "Trasladar herramientas y materiales dentro de planta.",
+    "Apoyar en procesos de embalaje y despacho."
+   ],
+   "requisitos": [
+    "Secundaria completa.",
+    "Experiencia mínima de 6 meses en producción, construcción, metalmecánica o rubros similares (deseable).",
+    "Buena condición física.",
+    "Disponibilidad para realizar labores operativas.",
+    "Disponibilidad para trabajar en Villa El Salvador."
+   ],
+   "beneficios": [
+    "Sueldo entre S/ 1,200 y S/ 1,500.",
+    "Ingreso a planilla PYME desde el primer día.",
+    "Gratificaciones y CTS según régimen.",
+    "Movilidad cubierta para trabajos en campo.",
+    "Estabilidad laboral.",
+    "Oportunidad de crecimiento dentro de la empresa.",
+    "Lugar y horario",
+    "Villa El Salvador (cerca a la estación Parque Industrial)",
+    "Lunes a viernes",
+    "08:00 a.m. - 6:00 p.m.",
+    "08:00 a.m. - 1:00 p.m.-Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: asistente, auxiliar, aux, auxiliary, assistant, helper, aide, piso, vivienda, inmobiliario, inmueble, condominio, edificio, planta, floor"
+   ],
+   "url": "https://www.laborum.pe/job/conserh/ayudante-de-planta-villa-el-salvador/6a4998786eff4770744bbea5"
+  },
+  {
+   "id": 41,
+   "puesto": "Primax Cerro Azul",
+   "empresa": "COESTI S.A.",
+   "cat": "Atención al Cliente",
+   "min": 1130,
+   "max": 1130,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 30,
+   "vence": "2026-08-04",
+   "restan": 1,
+   "score": 93,
+   "resumen": "RESUMEN: ¡Trabaja en Primax Cerro Azul! Carretera Panamericana km 129",
+   "funciones": [
+    "Atención al cliente y despacho de combustible.",
+    "Manejo de vouchers, vales y efectivo.",
+    "Realizar cuadre de caja y reporte de ventas al finalizar el turno.",
+    "Mantener el orden y limpieza de la estación.",
+    "Cumplir con las normas de seguridad y salud en el trabajo."
+   ],
+   "requisitos": [
+    "Secundaria completa.",
+    "Experiencia en atención al cliente (deseable).",
+    "Manejo de caja (deseable).",
+    "Disponibilidad para laborar en turnos rotativos entre mañana, tarde y noche",
+    "Disponibilidad para trabajar en Primax"
+   ],
+   "beneficios": [
+    "Sueldo de S/1130",
+    "35% adicional por horario nocturno",
+    "Bono de movilidad de 150 soles",
+    "Bonos adicionales",
+    "Ingreso a planilla desde el primer día.",
+    "Asignación familiar.",
+    "Bonos por ventas.",
+    "¡Únete a nuestro gran equipo!. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: controlador, despachador, dispatcher"
+   ],
+   "url": "https://www.laborum.pe/job/coesti-s-a/sueldo-bono-150-primax-cerro-azul-despachador-de-combustible/6a499e4d6eff4770744beacf"
+  },
+  {
+   "id": 42,
+   "puesto": "Grifo Primax Valle Hermoso",
+   "empresa": "COESTI S.A.",
+   "cat": "Atención al Cliente",
+   "min": 565,
+   "max": 565,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 30,
+   "vence": "2026-08-04",
+   "restan": 1,
+   "score": 93,
+   "resumen": "Despachador(a) de Combustible / Turno part time 10 am a 2 pm",
+   "funciones": [
+    "Atención al cliente y despacho de combustible.",
+    "Manejo de vouchers, vales y efectivo.",
+    "Realizar cuadre de caja y reporte de ventas al finalizar el turno.",
+    "Mantener el orden y limpieza de la estación.",
+    "Cumplir con las normas de seguridad y salud en el trabajo."
+   ],
+   "requisitos": [
+    "Secundaria completa.",
+    "Experiencia en atención al cliente (deseable).",
+    "Manejo de caja (deseable).",
+    "Disponibilidad para laborar en turno part time de 10 am a 2 pm",
+    "Disponibilidad para trabajar en Primax Valle Hermoso"
+   ],
+   "beneficios": [
+    "Sueldo S/565.",
+    "Ingreso a planilla desde el primer día.",
+    "Asignación familiar.",
+    "Bonos por ventas.",
+    "¡Únete a nuestro gran equipo!. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: controlador, despachador, dispatcher"
+   ],
+   "url": "https://www.laborum.pe/job/coesti-s-a/turno-part-time-10-am-a-2-pm-grifo-primax-valle-hermoso/6a499d216eff4770744be203"
+  },
+  {
+   "id": 43,
    "puesto": "Trabaja cerca al Parque de la Amistad",
    "empresa": "COESTI S.A.",
    "cat": "Atención al Cliente",
@@ -1235,7 +1843,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/coesti-s-a/trabaja-cerca-al-parque-de-la-amistad-grifos-primax-atc/6a499d016eff4770744be0fb"
   },
   {
-   "id": 30,
+   "id": 44,
    "puesto": "Trabaja en Primax Tomás Marsano",
    "empresa": "COESTI S.A.",
    "cat": "Atención al Cliente",
@@ -1273,7 +1881,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/coesti-s-a/trabaja-en-primax-tomas-marsano-turno-tarde-sueldo-bonos/6a499ddc6eff4770744be774"
   },
   {
-   "id": 31,
+   "id": 45,
    "puesto": "Asistente de Almacén Jr",
    "empresa": "Adecco Perú S.A.",
    "cat": "Logística",
@@ -1320,7 +1928,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/adecco-peru-s-a/asistente-de-almacen-jr-rotativo-ate-consumo-masivo-lacteos/6a499dbc6eff4770744be6cd"
   },
   {
-   "id": 32,
+   "id": 46,
    "puesto": "Asistente de Despacho/Turnos Rotativos/Huachipa - Huachipa (Lurigancho)",
    "empresa": "Lavoro Perú",
    "cat": "Ingeniería",
@@ -1368,7 +1976,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/asistente-de-despacho-turnos-rotativos-huachipa-huachipa/6a4999786eff4770744bc683"
   },
   {
-   "id": 33,
+   "id": 47,
    "puesto": "Panadero Junior",
    "empresa": "TALENTUS - Consultoría y Formación",
    "cat": "Ingeniería",
@@ -1409,23 +2017,108 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/talentus-consultoria-y-formacion/panadero-junior-chorrillos-san-isidro-y-aledanos/6a499e356eff4770744bea27"
   },
   {
-   "id": 34,
-   "puesto": "Planta Papa Johns",
+   "id": 48,
+   "puesto": "Papa Johns",
    "empresa": "NG Restaurants",
    "cat": "Ingeniería",
-   "min": 542,
-   "max": 542,
+   "min": 1130,
+   "max": 1130,
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
    "dias": 30,
    "vence": "2026-08-04",
    "restan": 1,
-   "score": 91,
+   "score": 90,
    "resumen": "RESUMEN: NGR, holding gastronómico del grupo intercorp a cargo de 6 unidades de negocio: Bembos, China Wok, Don Belisario, Dunkin, Papa Johns y Popeyes.",
    "funciones": [
-    "Lavado y limpieza de bandejas utilizadas en el proceso de producción.",
-    "Ordenar, secar y abastecer las bandejas limpias para garantizar la continuidad de la operación.",
+    "Preparar la masa para pizzas según las indicaciones de producción.",
+    "Cargar el saco de harina para cernir (tamizar) y mezclar.",
+    "Formar y dividir la masa en porciones (boleo).",
+    "Lavar, desinfectar y secar las bandejas.",
+    "Mantener limpios y desinfectados los equipos de producción.",
+    "Controlar y registrar la producción del día.",
+    "Cumplir estrictamente con los estándares de seguridad y las normas de calidad e inocuidad alimentaria.",
+    "Otras actividades referente al puesto."
+   ],
+   "requisitos": [
+    "Experiencia mínimo de 3 meses en el área de producción en plantas de alimentos (Indispensable).",
+    "Disponibilidad de hacer horas extras y trabajar en feriados.",
+    "Disponibilidad para trabajar en el distrito de ATE (Vivir en zonas aledañas).",
+    "Disponibilidad para laborar en horario rotativos de 1pm a 10pm."
+   ],
+   "beneficios": [
+    "Ingreso a planilla completa desde el primer día (Gratificaciones + vacaciones + CTS + seguro de salud + asignación familiar), SCTR.",
+    "Sueldo básico 1130 nuevos soles.",
+    "Bono marca Papa Johns S/220",
+    "Alimentación cubierta al 100%.",
+    "Pago de horas extras.",
+    "Beneficios del grupo intercorp (descuentos educativos: UTP, Zegel Ipae, Idat, etc.; descuentos corporativos : Entretenimiento, Financiero, Salud, Retail, Deporte, etc).",
+    "Pagos mensuales y puntuales.",
+    "Y sobre todo UN GRATO AMBIENTE de trabajo.",
+    "NGR es una empresa incluyente, que respeta la diversidad y no hace ningún tipo de discriminación**. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: operator, operario, operator, production, produce, fabricacion, manufactoring, elaboracion, making, manufactura, produccion"
+   ],
+   "url": "https://www.laborum.pe/job/ng-restaurants/papa-johns-operario-de-produccion-turno-tarde-planilla-bono/6a499a806eff4770744bce31"
+  },
+  {
+   "id": 49,
+   "puesto": "Despachador de combustible Primax",
+   "empresa": "COESTI S.A.",
+   "cat": "Atención al Cliente",
+   "min": 1200,
+   "max": 1200,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 30,
+   "vence": "2026-08-04",
+   "restan": 1,
+   "score": 90,
+   "resumen": "RESUMEN: ¡Trabaja en Primax Chorrillos! Dirección: Avenida Defensores del Morro N°1391 esquina con Jirón Costa Azul, Urbanización El Morro",
+   "funciones": [
+    "Atención al cliente y despacho de combustible.",
+    "Manejo de vouchers, vales y efectivo.",
+    "Realizar cuadre de caja y reporte de ventas al finalizar el turno.",
+    "Mantener el orden y limpieza de la estación.",
+    "Cumplir con las normas de seguridad y salud en el trabajo."
+   ],
+   "requisitos": [
+    "Secundaria completa.",
+    "Experiencia en atención al cliente (deseable).",
+    "Manejo de caja (deseable).",
+    "Disponibilidad para laborar en turnos de 3 pm a 11 pm"
+   ],
+   "beneficios": [
+    "Sueldo aproximado de S/1200.",
+    "Ingreso a planilla desde el primer día.",
+    "Asignación familiar.",
+    "Bonos por ventas.",
+    "¡Únete a nuestro gran equipo!. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: controlador, despachador, dispatcher, nominas, sueldo, paga, retribucion, salary, payslip, payroll, wage, pay, payment, nominista"
+   ],
+   "url": "https://www.laborum.pe/job/coesti-s-a/trabaja-en-cerca-a-plaza-lima-sur-despachador-de-combustible/6a499cfb6eff4770744be0d8"
+  },
+  {
+   "id": 50,
+   "puesto": "Planta Papa Johns",
+   "empresa": "NG Restaurants",
+   "cat": "Ingeniería",
+   "min": 1130,
+   "max": 1130,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 30,
+   "vence": "2026-08-04",
+   "restan": 1,
+   "score": 90,
+   "resumen": "RESUMEN: NGR, holding gastronómico del grupo intercorp a cargo de 6 unidades de negocio: Bembos, China Wok, Don Belisario, Dunkin, Papa Johns y Popeyes.",
+   "funciones": [
+    "Preparar la masa para pizzas según las indicaciones de producción.",
+    "Cargar el saco de harina para cernir (tamizar) y mezclar.",
+    "Formar y dividir la masa en porciones (boleo).",
+    "Lavar, desinfectar y secar las bandejas.",
+    "Mantener limpios y desinfectados los equipos de producción.",
+    "Controlar y registrar la producción del día.",
     "Cumplir estrictamente con los estándares de seguridad y las normas de calidad e inocuidad alimentaria.",
     "Otras actividades referente al puesto."
    ],
@@ -1433,23 +2126,25 @@ window.CERO_VAGOS = {
     "Experiencia mínimo de 3 meses en el área de producción en plantas de alimentos (Indispensable)",
     "Disponibilidad de hacer horas extras y trabajar en feriados.",
     "Disponibilidad para trabajar en el distrito de ATE (Vivir en zonas aledañas).",
-    "Disponibilidad para laborar de 7am a 4pm (lunes, martes y miércoles)."
+    "Disponibilidad para laborar de 10pm a 7am."
    ],
    "beneficios": [
-    "Ingreso a planilla completa desde el primer día (Gratificaciones + vacaciones + seguro de salud + asignación familiar), SCTR.",
-    "Sueldo básico 542 nuevos soles.",
-    "Bono de S/110 de manera mensual.",
-    "Bono por lavado de hasta S/100",
-    "Almuerzo cubierto.",
+    "Ingreso a planilla completa desde el primer día (Gratificaciones + vacaciones + CTS + seguro de salud + asignación familiar), SCTR.",
+    "Sueldo básico 1130 nuevos soles.",
+    "Bono de S/220 de manera mensual.",
+    "Bono marca de S/200.",
+    "Bonificación noctura de acuerdo a ley.",
+    "Alimentación cubierta al 100%.",
+    "Pago de horas extras.",
     "Beneficios del 25 % de descuendo en nuestras marcas NGR (Bembos, Dunkin. Papa Johns, Popeyes, Don Belisario yChina Wok)",
     "Beneficios del grupo intercorp (descuentos educativos: UTP, Zegel Ipae, Idat, etc.; descuentos corporativos : Entretenimiento, Financiero, Salud, Retail, Deporte, etc).",
     "Pagos mensuales y puntuales.",
     "Y sobre todo UN GRATO AMBIENTE de trabajo."
    ],
-   "url": "https://www.laborum.pe/job/ng-restaurants/planta-papa-johns-operario-de-produccion-trabaja-3-dias-a-la/6a499a936eff4770744bceb8"
+   "url": "https://www.laborum.pe/job/ng-restaurants/planta-papa-johns-operario-de-produccion-madrugada-sueldo/6a499a8e6eff4770744bce96"
   },
   {
-   "id": 35,
+   "id": 51,
    "puesto": "Operario de producción",
    "empresa": "TALENTUS - Consultoría y Formación",
    "cat": "Ingeniería",
@@ -1492,7 +2187,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/talentus-consultoria-y-formacion/operario-de-produccion-puente-piedra-los-olivos/6a499e276eff4770744be9a7"
   },
   {
-   "id": 36,
+   "id": 52,
    "puesto": "Operario de planta",
    "empresa": "NG Restaurants",
    "cat": "Ingeniería",
@@ -1535,7 +2230,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/ng-restaurants/operario-de-planta-sueldo-fijo-bono-fijo-mensual-planilla/6a499a7a6eff4770744bcdf0"
   },
   {
-   "id": 37,
+   "id": 53,
    "puesto": "Atención al Cliente",
    "empresa": "TALENTUS - Consultoría y Formación",
    "cat": "Atención al Cliente",
@@ -1570,7 +2265,101 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/talentus-consultoria-y-formacion/atencion-al-cliente-alimentos-y-bebidas-santiago-de-surco-y/6a499df96eff4770744be83d"
   },
   {
-   "id": 38,
+   "id": 54,
+   "puesto": "Supervisor (a) de Seguridad y Salud presencial LIMA",
+   "empresa": "Lavoro Perú",
+   "cat": "Ingeniería",
+   "min": 2000,
+   "max": 2000,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 30,
+   "vence": "2026-08-04",
+   "restan": 1,
+   "score": 88,
+   "resumen": "Reportar condiciones y actos inseguros.",
+   "funciones": [
+    "Reportar condiciones y actos inseguros.",
+    "Asegurar el cumplimiento de las normativas de seguridad.",
+    "Implementar mejoras en el proceso.",
+    "Entre otras funciones inherentes al puesto solicitados por el jefe(a) inmediato(a)."
+   ],
+   "requisitos": [
+    "Estudios mínimos: Universitario Titulado en Ingenieria de Seguridad o carreras a fines",
+    "Experiencia mínima - Tiempo: Supervisor de Seguridad y Salud en el Trabajo / Supervisor de Seguridad y medio ambiente - 2 AÑOS",
+    "Conocimiento y gestión del Sistema SSOMA",
+    "Disponibilidad: Inmediata",
+    "Disponibilidad de cambio de residencia o de viaje No",
+    "Manejo de sistemas informáticos: Macros en excel, Microsoft office intermedio",
+    "Dominio de idiomas: Intermedio",
+    "Licencia de Conducir: No.",
+    "Con Domicilio en zonas cercanas a el Agustino o Huachipa - Lima.",
+    "HORARIO DE TRABAJO",
+    "Lunes, martes y miércoles de 08:00 a 17:00 horas.",
+    "Jueves, viernes y sábado de 07:00 a 16:00 horas."
+   ],
+   "beneficios": [
+    "Agradable ambiente laboral.",
+    "Ingreso directo a Planilla desde el primer día de labores con todos los Beneficios de Ley.",
+    "Remuneración: S/2,000.00",
+    "Bono de S/250.00 (movilidad)",
+    "Convenios institucionales",
+    "Seguro SCTR y Vida Ley",
+    "Pertenecer a una empresa líder en el mercado· OTROS",
+    "Para esta posición aceptamos a personas con discapacidad",
+    "Somos una empresa que promueve la igualdad de oportunidades y no discriminamos por motivo de origen, edad, sexo, discapacidad u otra condición , asi como la inclusión laboral de personas con discapacidad."
+   ],
+   "url": "https://www.laborum.pe/job/lavoro-peru/supervisor-a-de-seguridad-y-salud-presencial-lima/6a499c496eff4770744bdc29"
+  },
+  {
+   "id": 55,
+   "puesto": "Básico",
+   "empresa": "GEA Internacional",
+   "cat": "Tecnología",
+   "min": 1200,
+   "max": 1200,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 30,
+   "vence": "2026-08-04",
+   "restan": 1,
+   "score": 88,
+   "resumen": "RESUMEN: Impulsa tu carrera en GEA Internacional",
+   "funciones": [
+    "Gestionar solicitudes de baja de clientes del servicio móvil.",
+    "Aplicar estrategias de retención y fidelización, ofreciendo soluciones y beneficios para evitar la cancelación del servicio.",
+    "Atender consultas a través de llamadas inbound, outbound y canales escritos."
+   ],
+   "requisitos": [
+    "Experiencia mínima de 3 meses en ventas, retenciones, ATC o áreas comerciales.",
+    "Disponibilidad para laborar en horarios rotativos.",
+    "Habilidades de comunicación, negociación y orientación al cumplimiento de objetivos.",
+    "¿Por qué GEA Internacional?",
+    "Línea de carrera y oportunidades de crecimiento.",
+    "Capacitación desde el primer día.",
+    "Excelente clima laboral.",
+    "Bonos e incentivos por desempeño.",
+    "Más de 100 Convenios Corporativos"
+   ],
+   "beneficios": [
+    "Sueldo fijo de S/ 1,200.",
+    "Bono de movilidad: S/ 100.",
+    "Bono nocturno: S/ 70.",
+    "Bono de productividad de hasta S/ 300.",
+    "Bono de bienvenida: S/ 100.",
+    "Bono de permanencia: S/ 400.",
+    "Capacitación remunerada: S/ 210.",
+    "Lunes a domingo con un día de descanso rotativo.",
+    "Turnos rotativos",
+    "12:00 p. m. a 9:00 p. m.",
+    "1:00 p. m. a 10:00 p. m."
+   ],
+   "url": "https://www.laborum.pe/job/gea-internacional/gana-desde-1300-fijo-mensuales-turno-tarde-beneficios/6a499cd36eff4770744bdfd1"
+  },
+  {
+   "id": 56,
    "puesto": "Operario de Limpieza para San Borja",
    "empresa": "Lavoro Perú",
    "cat": "Tecnología",
@@ -1611,7 +2400,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/operario-de-limpieza-para-san-borja/6a499e626eff4770744beb93"
   },
   {
-   "id": 39,
+   "id": 57,
    "puesto": "Coordinado de Operaciones",
    "empresa": "Lavoro Perú",
    "cat": "Ingeniería",
@@ -1653,7 +2442,48 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/coordinado-de-operaciones-rotativos/6a499d786eff4770744be4e6"
   },
   {
-   "id": 40,
+   "id": 58,
+   "puesto": "Promotora de Ventas Rubro Belleza Capilar",
+   "empresa": "Salesland Pacífico",
+   "cat": "Ventas",
+   "min": 1130,
+   "max": 1130,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 30,
+   "vence": "2026-08-04",
+   "restan": 1,
+   "score": 86,
+   "resumen": "RESUMEN: ¿Te apasiona el mundo de la belleza y las ventas?",
+   "funciones": [
+    "Asesorar a clientes en productos de belleza y cuidado capilar",
+    "Impulsar y promocionar las marcas en punto de venta",
+    "Cumplir con metas de ventas establecidas",
+    "Mantener el orden y exhibición de productos"
+   ],
+   "requisitos": [
+    "Experiencia en ventas presenciales en rubro capilar - autoservicios, tiendas por departamento, retail (INDISPENSABLE).",
+    "Conocimientos intermedio acerca del Cuidado capilar. (DESEABE)",
+    "Disponibilidad para trabajar 48hrs semanales.",
+    "Contar con carnet de sanidad e impronta de manos.(DESEABLE)"
+   ],
+   "beneficios": [
+    "Sueldo fijo S/1130",
+    "Bono de movilidad/línea: S/30",
+    "Comisiones: hasta S/1000",
+    "Planilla completa desde el primer día",
+    "Lunes, martes, jueves y domingo: 12:30 pm 9:30 pm",
+    "Viernes y sábado: 1:00 pm 10:00 pm",
+    "Descanso fijo: miércoles",
+    "Lugar de trabajo",
+    "Saga Falabella Jockey Plaza",
+    "¡Postula con nosotros y sé parte del GRAN EQUIPO DE SALESLAND!. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaEdad: entre 20 y 35 añosPalabras clave: cambaceo, sales, nominas, sueldo, paga, retribucion, salary, payslip, payroll, wage, pay, payment, nominista, permanent, fijo"
+   ],
+   "url": "https://www.laborum.pe/job/salesland-pacifico/trabaja-en-redken-y-loreal-promotora-de-ventas-rubro-belleza/6a499c216eff4770744bdadf"
+  },
+  {
+   "id": 59,
    "puesto": "Operario de planta/ Sueldo fijo + bono fijo mensual + planilla completa",
    "empresa": "NG Restaurants",
    "cat": "Ingeniería",
@@ -1696,7 +2526,43 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/ng-restaurants/operario-de-planta-sueldo-fijo-bono-fijo-mensual-planilla/6a499a7a6eff4770744bcdf0"
   },
   {
-   "id": 41,
+   "id": 60,
+   "puesto": "Operario auxiliar de Almacén c",
+   "empresa": "Adecco Perú S.A.",
+   "cat": "Logística",
+   "min": 1250,
+   "max": 1250,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 30,
+   "vence": "2026-08-04",
+   "restan": 1,
+   "score": 85,
+   "resumen": "RESUMEN: Adecco es la empresa de Recursos Humanos más grande del mundo. Somos líderes en gestión humana. Diariamente ayudamos a más de 700,000 personas a encontrar trabajo a través de nuestra amplia red.",
+   "funciones": [
+    "Armado de pedidos paletizando mercadería (cajas de productos para supermercados de 5kg a 20 kg)",
+    "Manejo de radiofrecuencia (RF).",
+    "Trasladar paletas con Estoca"
+   ],
+   "requisitos": [
+    "Con experiencia laboral de 3 meses en auxiliar de almacén, operario de producción, auxiliar multifuncional.",
+    "Disponibilidad para laborar en Punta Negra, Altura del Peaje de Punta negra (contamos con buses de acercamiento gratuitos)",
+    "Disponibilidad laborar en horarios rotativos (turno día: 7:00am a 4:00pm // turno tarde: 1:00 pm a 10:00 pm// turno noche: 9:00pm a 6:00am)",
+    "Mucha actitud y ganas de aprender."
+   ],
+   "beneficios": [
+    "Remuneración: s/1250",
+    "Bono de movilidad: S/102",
+    "Bono Alimentación: S/200",
+    "Buses de acercamiento gratis en todo Lima.",
+    "Ingreso a planilla Adecco desde el primer día de trabajo con todos los Beneficios de ley (CTS, Gratificación, Vacaciones, Seguro Social, Seguro Vida Ley, Asignación Familiar)",
+    "Beneficios corporativos.-Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: operator, operario, operator, ayudante, asistente, auxiliar, aux, auxiliary, assistant, helper, aide, bodega, warehouse, storehouse, almacen"
+   ],
+   "url": "https://www.laborum.pe/job/adecco-peru-s-a/operario-auxiliar-de-almacen-c-sin-experiencia-ingreso/6a499bdd6eff4770744bd8eb"
+  },
+  {
+   "id": 61,
    "puesto": "Back Office",
    "empresa": "Concentrix",
    "cat": "Atención al Cliente",
@@ -1731,7 +2597,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/concentrix/back-office-full-time-madrugada-san-isidro-movilidad/6a499b246eff4770744bd393"
   },
   {
-   "id": 42,
+   "id": 62,
    "puesto": "Operario de Producción",
    "empresa": "CONSERH",
    "cat": "Ingeniería",
@@ -1766,7 +2632,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/conserh/gana-mas-de-1800-soles-operario-de-produccion-sta-anita/6a4998146eff4770744bbbac"
   },
   {
-   "id": 43,
+   "id": 63,
    "puesto": "¡Gana más de 1800 Soles! Operario de Producción — Sta Anita / Planilla completa + Alimentación - Ingreso inmediato + Horas extra",
    "empresa": "CONSERH",
    "cat": "Ingeniería",
