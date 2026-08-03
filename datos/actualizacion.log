@@ -1,0 +1,72 @@
+
+════════════════════════════════════════════════════════
+  2026-08-03 01:10:26 -05
+════════════════════════════════════════════════════════
+/Users/f/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Buscando solo avisos publicados en los últimos 2 días.
+
+
+▸ Convocatorias del Estado
+  ! No se obtuvo ningún aviso. Motivo:
+      · El sitemap trae 1475 URLs, pero ninguna actualizada en los últimos 2 días
+
+══════════════════════════════════════════════════════════
+  RESUMEN DE LA CORRIDA
+══════════════════════════════════════════════════════════
+  Avisos leídos           0
+  Pasaron el filtro       0   (0%)
+  Rechazados              0
+  Nuevos en la base       0
+  Duplicados              0
+  Marcados vencidos       0
+
+  Fuentes que no entregaron nada:
+    · Convocatorias del Estado
+
+  Revisa el detalle de cada una más arriba, o corre:
+    python3 -m motor diagnostico
+══════════════════════════════════════════════════════════
+
+→ 0 ofertas exportadas a /Users/f/Desktop/cero-vagos/datos/ofertas.js
+/Users/f/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Procesadas en total   85
+Aprobadas vigentes    0
+Tasa de aprobación    0.0%
+
+════════════════════════════════════════════════════════
+  2026-08-03 01:11:23 -05
+════════════════════════════════════════════════════════
+/Users/f/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Buscando solo avisos publicados en los últimos 2 días.
+
+
+▸ Convocatorias del Estado
+  ! No se obtuvo ningún aviso. Motivo:
+      · El sitemap trae 1475 URLs, pero ninguna actualizada en los últimos 2 días
+
+══════════════════════════════════════════════════════════
+  RESUMEN DE LA CORRIDA
+══════════════════════════════════════════════════════════
+  Avisos leídos           0
+  Pasaron el filtro       0   (0%)
+  Rechazados              0
+  Nuevos en la base       0
+  Duplicados              0
+  Marcados vencidos       0
+
+  Fuentes que no entregaron nada:
+    · Convocatorias del Estado
+
+  Revisa el detalle de cada una más arriba, o corre:
+    python3 -m motor diagnostico
+══════════════════════════════════════════════════════════
+
+→ 0 ofertas exportadas a /Users/f/Desktop/cero-vagos/datos/ofertas.js
+/Users/f/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Procesadas en total   85
+Aprobadas vigentes    0
+Tasa de aprobación    0.0%

@@ -1,0 +1,13 @@
+# El motor corre sin dependencias externas en modo --demo.
+
+# Para recolectar de portales reales:
+requests>=2.31
+
+# Para abrir el PDF de las bases y sacar las funciones del puesto.
+# Es el diferencial del proyecto: sin esto, casi ninguna convocatoria del
+# Estado pasa el filtro.
+pdfplumber>=0.11
+
+# Para los portales hechos en React (Bumeran, Laborum): descomenta y luego
+# corre `playwright install chromium`.
+# playwright>=1.44

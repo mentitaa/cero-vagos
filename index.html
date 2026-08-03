@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cero Vagos — Solo ofertas de trabajo completas en Perú</title>
+<meta name="description" content="Recopilamos ofertas laborales de los principales portales del Perú y solo publicamos las que tienen sueldo, funciones, requisitos y beneficios detallados. Cero vagos, cero ofertas vagas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   CERO VAGOS — Design System
+   Neobrutalismo peruano: bloques, bordes duros, rojo dominante
+   ============================================================ */
+:root{
+  --rojo:#FF1E1E;
+  --rojo-osc:#C10D0D;
+  --negro:#0B0B0B;
+  --crema:#FFF3E4;
+  --blanco:#FFFFFF;
+  --amarillo:#FFD100;
+  --azul:#2B37FF;
+  --lima:#B8FF2E;
+  --magenta:#FF4FA3;
+  --cyan:#4CE0F5;
+  --gris:#E8E0D4;
+
+  --bd:3px solid var(--negro);
+  --bd-fino:2px solid var(--negro);
+  --sh:7px 7px 0 var(--negro);
+  --sh-sm:4px 4px 0 var(--negro);
+  --sh-lg:12px 12px 0 var(--negro);
+  --r:0px;
+  --display:'Archivo Black','Arial Black',system-ui,sans-serif;
+  --body:'Space Grotesk',system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--body);
+  background:var(--crema);
+  color:var(--negro);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  background-image:
+    linear-gradient(rgba(11,11,11,.045) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(11,11,11,.045) 1px,transparent 1px);
+  background-size:44px 44px;
+}
+h1,h2,h3,h4{font-family:var(--display);letter-spacing:-.02em;line-height:.95;text-transform:uppercase}
+a{color:inherit;text-decoration:none}
+button,input,select{font-family:var(--body)}
+img,svg{display:block;max-width:100%}
+.wrap{max-width:1360px;margin:0 auto;padding:0 20px}
+
+/* ---------- utilidades ---------- */
+.blk{border:var(--bd);background:var(--blanco)}
+.sh{box-shadow:var(--sh)}
+.tachado{position:relative;display:inline-block}
+.tachado::after{
+  content:"";position:absolute;left:-4%;right:-4%;top:52%;height:.13em;
+  background:var(--negro);transform:rotate(-3deg);
+}
+.pill{
+  display:inline-flex;align-items:center;gap:7px;
+  border:var(--bd-fino);padding:5px 12px;font-weight:700;
+  font-size:12px;text-transform:uppercase;letter-spacing:.04em;background:var(--blanco);
+}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  border:var(--bd);background:var(--amarillo);color:var(--negro);
+  font-family:var(--display);font-size:15px;text-transform:uppercase;
+  padding:16px 26px;cursor:pointer;box-shadow:var(--sh-sm);
+  transition:transform .08s ease,box-shadow .08s ease;letter-spacing:.01em;
+}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--negro)}
+.btn:active{transform:translate(3px,3px);box-shadow:0 0 0 var(--negro)}
+.btn--rojo{background:var(--rojo);color:var(--blanco)}
+.btn--negro{background:var(--negro);color:var(--amarillo)}
+.btn--blanco{background:var(--blanco)}
+
+/* ---------- barra marquee ---------- */
+.marquee{
+  background:var(--rojo);color:var(--blanco);border-bottom:var(--bd);
+  overflow:hidden;white-space:nowrap;padding:9px 0;position:relative;z-index:60;
+}
+.marquee__track{display:inline-flex;gap:38px;animation:slide 26s linear infinite;padding-right:38px}
+.marquee span{font-family:var(--display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:var(--crema);border-bottom:var(--bd)}
+.nav{display:flex;align-items:stretch;max-width:1360px;margin:0 auto}
+.logo{
+  display:flex;align-items:center;gap:10px;padding:16px 22px;
+  border-right:var(--bd);background:var(--negro);color:var(--blanco);
+  font-family:var(--display);font-size:22px;letter-spacing:-.03em;
+}
+.logo__cero{
+  display:grid;place-items:center;width:34px;height:34px;border-radius:50%;
+  border:3px solid var(--rojo);color:var(--rojo);font-size:17px;
+}
+.nav__links{display:flex;align-items:center;gap:4px;flex:1;padding:0 14px;flex-wrap:wrap}
+.nav__links a{
+  padding:9px 13px;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.02em;
+  border:2px solid transparent;
+}
+.nav__links a:hover{border:var(--bd-fino);background:var(--amarillo)}
+.nav__cta{display:flex;align-items:center;border-left:var(--bd);padding:0 18px;gap:10px}
+.nav__cta .btn{padding:11px 18px;font-size:13px}
+.burger{display:none;border:none;background:none;padding:0 20px;cursor:pointer}
+.burger span{display:block;width:26px;height:3px;background:var(--negro);margin:5px 0}
+
+/* ---------- hero ---------- */
+.hero{border-bottom:var(--bd);display:grid;grid-template-columns:1.15fr .85fr}
+.hero__left{background:var(--rojo);color:var(--blanco);padding:56px 46px 46px;border-right:var(--bd);position:relative;overflow:hidden}
+.hero__tag{
+  display:inline-block;background:var(--negro);color:var(--lima);
+  font-family:var(--display);font-size:12px;letter-spacing:.09em;
+  padding:8px 14px;border:var(--bd-fino);border-color:var(--negro);margin-bottom:26px;
+}
+.hero h1{font-size:clamp(44px,6.4vw,86px);line-height:.88;margin-bottom:22px}
+.hero h1 em{font-style:normal;background:var(--amarillo);color:var(--negro);padding:0 10px;display:inline-block;border:var(--bd)}
+.hero__sub{font-size:clamp(16px,1.35vw,19px);max-width:560px;font-weight:500;line-height:1.5;margin-bottom:30px}
+.hero__sub b{background:var(--negro);padding:2px 6px}
+
+/* buscador */
+.search{display:flex;border:var(--bd);background:var(--blanco);box-shadow:var(--sh);max-width:640px}
+.search input{
+  flex:1;min-width:0;border:none;outline:none;padding:19px 18px;font-size:16px;font-weight:500;background:transparent;
+}
+.search input::placeholder{color:#8a8a8a}
+.search button{
+  border:none;border-left:var(--bd);background:var(--negro);color:var(--amarillo);
+  font-family:var(--display);font-size:14px;padding:0 26px;cursor:pointer;text-transform:uppercase;
+}
+.search button:hover{background:var(--amarillo);color:var(--negro)}
+.hero__chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}
+.hero__chips button{
+  border:var(--bd-fino);border-color:var(--blanco);background:transparent;color:var(--blanco);
+  padding:7px 13px;font-size:12.5px;font-weight:700;cursor:pointer;text-transform:uppercase;
+}
+.hero__chips button:hover{background:var(--blanco);color:var(--rojo)}
+
+.hero__right{background:var(--azul);display:grid;place-items:center;padding:34px;position:relative;overflow:hidden}
+.hero__right::before{
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(rgba(255,255,255,.28) 2px,transparent 2px);
+  background-size:22px 22px;
+}
+.hero__art{position:relative;width:100%;max-width:430px}
+
+/* franja de métricas */
+.strip{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:var(--bd);background:var(--negro)}
+.strip div{padding:22px 18px;border-right:var(--bd);color:var(--blanco);text-align:center}
+.strip div:last-child{border-right:none}
+.strip b{display:block;font-family:var(--display);font-size:clamp(24px,3vw,38px);color:var(--amarillo);line-height:1}
+.strip span{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;opacity:.85}
+.strip div:nth-child(2) b{color:var(--lima)}
+.strip div:nth-child(3) b{color:var(--cyan)}
+.strip div:nth-child(4) b{color:var(--magenta)}
+
+/* ---------- secciones ---------- */
+section{position:relative}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:32px}
+.sec-head h2{font-size:clamp(30px,4.2vw,54px)}
+.sec-head p{max-width:460px;font-weight:500;font-size:15.5px;line-height:1.5}
+.kicker{
+  display:inline-block;background:var(--negro);color:var(--blanco);
+  font-family:var(--display);font-size:11.5px;letter-spacing:.11em;padding:7px 12px;margin-bottom:14px;
+}
+
+/* filtro */
+.filtro{padding:70px 0;border-bottom:var(--bd)}
+.filtro__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:var(--bd);box-shadow:var(--sh-lg);background:var(--blanco)}
+.fcard{padding:30px 24px 26px;border-right:var(--bd);position:relative}
+.fcard:last-child{border-right:none}
+.fcard__num{
+  position:absolute;top:-3px;right:-3px;width:44px;height:44px;display:grid;place-items:center;
+  background:var(--negro);color:var(--blanco);font-family:var(--display);font-size:16px;border:var(--bd);
+}
+.fcard h3{font-size:19px;margin:18px 0 9px}
+.fcard p{font-size:14.5px;line-height:1.5;font-weight:500}
+.fcard:nth-child(1){background:var(--amarillo)}
+.fcard:nth-child(2){background:var(--lima)}
+.fcard:nth-child(3){background:var(--cyan)}
+.fcard:nth-child(4){background:var(--magenta)}
+.fcard__ico{width:78px;height:78px}
+
+/* comparativa */
+.vs{padding:64px 0;border-bottom:var(--bd);background:var(--negro);color:var(--blanco)}
+.vs h2{color:var(--blanco)}
+.vs__grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:34px}
+.vs__col{border:var(--bd);border-color:var(--blanco);padding:28px}
+.vs__col--mal{background:#1a1a1a}
+.vs__col--bien{background:var(--rojo);border-color:var(--blanco)}
+.vs__col h3{font-size:22px;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.vs__col ul{list-style:none;display:grid;gap:11px}
+.vs__col li{display:flex;gap:11px;font-size:15px;font-weight:500;line-height:1.45;align-items:flex-start}
+.vs__col li i{
+  flex:0 0 auto;width:22px;height:22px;display:grid;place-items:center;font-style:normal;
+  font-weight:800;font-size:13px;border:2px solid currentColor;margin-top:1px;
+}
+.vs__col--mal li i{color:#ff6b6b}
+.vs__col--bien li i{color:var(--negro);background:var(--lima);border-color:var(--negro)}
+
+/* ---------- ofertas ---------- */
+.ofertas{padding:70px 0;border-bottom:var(--bd)}
+.toolbar{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;border:var(--bd);
+  box-shadow:var(--sh);background:var(--blanco);margin-bottom:26px;
+}
+.toolbar>*{border-right:var(--bd)}
+.toolbar>*:last-child{border-right:none}
+.tb-search{display:flex;align-items:center;gap:10px;padding:0 16px}
+.tb-search input{border:none;outline:none;padding:17px 0;font-size:15px;width:100%;font-weight:500;background:transparent}
+.toolbar select{
+  border:none;outline:none;width:100%;padding:17px 16px;font-size:14px;font-weight:700;
+  background:var(--blanco);cursor:pointer;text-transform:uppercase;appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,var(--negro) 50%),linear-gradient(135deg,var(--negro) 50%,transparent 50%);
+  background-position:calc(100% - 20px) 50%,calc(100% - 14px) 50%;
+  background-size:6px 6px,6px 6px;background-repeat:no-repeat;
+}
+.chips{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:26px}
+.chip{
+  border:var(--bd-fino);background:var(--blanco);padding:9px 15px;font-size:13px;font-weight:700;
+  cursor:pointer;text-transform:uppercase;letter-spacing:.02em;box-shadow:2px 2px 0 var(--negro);
+}
+.chip:hover{background:var(--amarillo)}
+.chip.on{background:var(--negro);color:var(--blanco)}
+.count{font-weight:700;font-size:14px;margin-bottom:18px}
+.count b{background:var(--lima);border:var(--bd-fino);padding:3px 9px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:22px}
+.job{
+  border:var(--bd);background:var(--blanco);box-shadow:var(--sh-sm);
+  display:flex;flex-direction:column;transition:transform .1s ease,box-shadow .1s ease;
+  cursor:pointer;position:relative;
+}
+.job__plazo{
+  position:absolute;top:-11px;right:12px;z-index:2;
+  border:var(--bd);padding:3px 10px;font-family:var(--display);
+  font-size:11px;letter-spacing:.03em;text-transform:uppercase;
+}
+.job:hover{transform:translate(-3px,-3px);box-shadow:var(--sh)}
+.job__top{display:flex;justify-content:space-between;align-items:stretch;border-bottom:var(--bd)}
+.job__logo{
+  width:60px;flex:0 0 60px;display:grid;place-items:center;border-right:var(--bd);
+  font-family:var(--display);font-size:20px;
+}
+.job__head{padding:14px 16px;flex:1;min-width:0}
+.job__head h3{font-size:17.5px;line-height:1.1;margin-bottom:6px}
+.job__head p{font-size:13.5px;font-weight:700;opacity:.75}
+.job__score{
+  flex:0 0 62px;display:grid;place-items:center;border-left:var(--bd);background:var(--lima);
+  font-family:var(--display);font-size:17px;
+}
+.job__score small{display:block;font-size:8.5px;letter-spacing:.06em}
+.job__pay{
+  padding:13px 16px;border-bottom:var(--bd-fino);background:var(--amarillo);
+  font-family:var(--display);font-size:21px;display:flex;align-items:baseline;gap:8px;
+}
+.job__pay span{font-family:var(--body);font-size:12px;font-weight:700;text-transform:uppercase;opacity:.7}
+.job__meta{display:flex;flex-wrap:wrap;gap:7px;padding:14px 16px}
+.job__meta .pill{font-size:11px;padding:4px 9px}
+.job__body{padding:0 16px 14px;font-size:14px;line-height:1.45;font-weight:500;flex:1}
+.job__foot{
+  border-top:var(--bd);padding:11px 16px;display:flex;justify-content:space-between;align-items:center;
+  font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;
+}
+.job__foot em{font-style:normal;background:var(--negro);color:var(--blanco);padding:3px 8px}
+/* ---------- oferta exclusiva de una universidad ---------- */
+.job--exc .job__pay,
+.job--exc .job__meta,
+.job--exc .job__body{
+  filter:blur(5px);user-select:none;pointer-events:none;opacity:.75;
+}
+.job__exc{
+  position:relative;margin:0 16px 14px;border:var(--bd);background:var(--azul);
+  color:var(--blanco);padding:13px 15px;box-shadow:var(--sh-sm);
+}
+.job__exc b{display:block;font-family:var(--display);font-size:12.5px;
+  text-transform:uppercase;letter-spacing:.03em;margin-bottom:5px}
+.job__exc span{display:block;font-size:12.5px;font-weight:500;line-height:1.4;opacity:.9}
+.job__exc em{
+  display:inline-block;margin-top:9px;font-style:normal;background:var(--amarillo);
+  color:var(--negro);border:var(--bd-fino);padding:5px 11px;font-weight:700;font-size:12px;
+}
+.sello-uni{
+  position:absolute;top:-11px;left:12px;z-index:2;background:var(--azul);color:var(--blanco);
+  border:var(--bd);padding:3px 10px;font-family:var(--display);font-size:11px;
+  letter-spacing:.03em;text-transform:uppercase;
+}
+.vacio{border:var(--bd);background:var(--blanco);padding:50px;text-align:center;box-shadow:var(--sh-sm)}
+.vacio h3{font-size:24px;margin-bottom:10px}
+
+/* ---------- modal ---------- */
+.modal{
+  position:fixed;inset:0;background:rgba(11,11,11,.72);z-index:100;
+  display:none;padding:24px;overflow-y:auto;
+}
+.modal.on{display:block}
+.modal__box{
+  max-width:820px;margin:24px auto;background:var(--crema);border:var(--bd);box-shadow:var(--sh-lg);
+}
+.modal__head{background:var(--rojo);color:var(--blanco);padding:26px 28px;border-bottom:var(--bd);position:relative}
+.modal__head h2{font-size:clamp(24px,3.4vw,36px);padding-right:56px;line-height:1}
+.modal__head p{font-weight:700;margin-top:9px;font-size:15px}
+.modal__x{
+  position:absolute;top:16px;right:16px;width:40px;height:40px;border:var(--bd);border-color:var(--blanco);
+  background:var(--negro);color:var(--blanco);font-size:20px;cursor:pointer;line-height:1;
+}
+.modal__pay{
+  background:var(--amarillo);border-bottom:var(--bd);padding:20px 28px;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+}
+.modal__pay b{font-family:var(--display);font-size:30px}
+.modal__grid{display:grid;grid-template-columns:1fr 1fr;}
+.mblock{padding:24px 28px;border-bottom:var(--bd);border-right:var(--bd)}
+.mblock:nth-child(even){border-right:none}
+.mblock h4{font-size:16px;margin-bottom:13px;display:flex;align-items:center;gap:9px}
+.mblock h4 i{width:14px;height:14px;border:var(--bd-fino);display:block;font-style:normal}
+.mblock ul{list-style:none;display:grid;gap:9px}
+.mblock li{font-size:14.5px;line-height:1.45;font-weight:500;padding-left:19px;position:relative}
+.mblock li::before{content:"";position:absolute;left:0;top:7px;width:9px;height:9px;background:var(--negro)}
+.modal__foot{padding:22px 28px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+
+/* ---------- fuentes ---------- */
+.fuentes{padding:64px 0;border-bottom:var(--bd);background:var(--azul);color:var(--blanco)}
+.fuentes h2{color:var(--blanco)}
+.fuentes .kicker{background:var(--amarillo);color:var(--negro)}
+.fuentes__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:0;border:var(--bd);background:var(--blanco);box-shadow:var(--sh-lg);margin-top:30px}
+.fuente{
+  padding:26px 18px;border-right:var(--bd);border-bottom:var(--bd);text-align:center;color:var(--negro);
+}
+.fuente b{display:block;font-family:var(--display);font-size:16px;margin-bottom:5px}
+.fuente span{font-size:12px;font-weight:700;opacity:.65}
+
+/* ---------- alertas ---------- */
+.alerta{padding:70px 0;border-bottom:var(--bd)}
+.alerta__box{
+  border:var(--bd);box-shadow:var(--sh-lg);display:grid;grid-template-columns:1.1fr .9fr;background:var(--blanco);
+}
+.alerta__l{padding:44px 40px;background:var(--lima);border-right:var(--bd)}
+.alerta__l h2{font-size:clamp(28px,3.6vw,44px);margin-bottom:14px}
+.alerta__l p{font-weight:500;font-size:16px;line-height:1.5;margin-bottom:26px}
+.form{display:flex;flex-direction:column;gap:12px;max-width:430px}
+.form input,.form select{border:var(--bd);padding:15px 16px;font-size:15px;font-weight:500;outline:none;background:var(--blanco)}
+.form input:focus{box-shadow:var(--sh-sm)}
+.alerta__r{display:grid;place-items:center;padding:34px;background:var(--magenta)}
+
+/* ---------- footer ---------- */
+footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
+.foot__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px;padding-bottom:44px}
+.foot__grid h4{font-size:15px;margin-bottom:15px;color:var(--amarillo)}
+.foot__grid ul{list-style:none;display:grid;gap:9px}
+.foot__grid li a{font-size:14px;font-weight:500;opacity:.8}
+.foot__grid li a:hover{opacity:1;text-decoration:underline}
+.foot__logo{font-family:var(--display);font-size:30px;display:flex;align-items:center;gap:11px;margin-bottom:14px}
+.foot__logo .logo__cero{width:40px;height:40px;font-size:20px}
+.foot__bar{border-top:2px solid #2a2a2a;padding:20px 0;font-size:12.5px;font-weight:600;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;opacity:.7}
+
+/* ---------- responsive ---------- */
+@media(max-width:1080px){
+  .hero{grid-template-columns:1fr}
+  .hero__left{border-right:none;border-bottom:var(--bd)}
+  .hero__right{padding:40px 24px}
+  .filtro__grid{grid-template-columns:1fr 1fr}
+  .fcard:nth-child(2){border-right:none}
+  .fcard:nth-child(1),.fcard:nth-child(2){border-bottom:var(--bd)}
+  .toolbar{grid-template-columns:1fr 1fr}
+  .toolbar>*{border-bottom:var(--bd)}
+  .toolbar>*:nth-child(2n){border-right:none}
+  .toolbar>*:nth-child(n+3){border-bottom:none}
+  .alerta__box{grid-template-columns:1fr}
+  .alerta__l{border-right:none;border-bottom:var(--bd)}
+  .foot__grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:820px){
+  .nav__links,.nav__cta{display:none}
+  .nav__links.open{
+    display:flex;flex-direction:column;align-items:stretch;position:absolute;top:100%;left:0;right:0;
+    background:var(--crema);border-bottom:var(--bd);padding:12px;gap:4px;
+  }
+  .burger{display:block;margin-left:auto}
+  .nav{align-items:center;position:relative}
+  .strip{grid-template-columns:1fr 1fr}
+  .strip div:nth-child(2n){border-right:none}
+  .strip div:nth-child(-n+2){border-bottom:var(--bd);border-bottom-color:#3a3a3a}
+  .vs__grid{grid-template-columns:1fr}
+  .modal__grid{grid-template-columns:1fr}
+  .mblock{border-right:none}
+}
+@media(max-width:600px){
+  .wrap{padding:0 14px}
+  .hero__left{padding:34px 20px}
+  .filtro,.ofertas,.alerta{padding:44px 0}
+  .filtro__grid{grid-template-columns:1fr;box-shadow:var(--sh)}
+  .fcard{border-right:none;border-bottom:var(--bd)}
+  .fcard:last-child{border-bottom:none}
+  .toolbar{grid-template-columns:1fr}
+  .toolbar>*{border-right:none;border-bottom:var(--bd)}
+  .toolbar>*:last-child{border-bottom:none}
+  .grid{grid-template-columns:1fr}
+  .search{flex-direction:column}
+  .search button{border-left:none;border-top:var(--bd);padding:15px}
+  .foot__grid{grid-template-columns:1fr}
+  .modal{padding:10px}
+  .alerta__l{padding:28px 20px}
+  .vs__col{padding:20px}
+  .sec-head h2{font-size:32px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee">
+  <div class="marquee__track">
+    <span>★ Sueldo visible o no entra ★ Funciones detalladas o no entra ★ Requisitos claros o no entra ★ Beneficios listados o no entra</span>
+    <span>★ Sueldo visible o no entra ★ Funciones detalladas o no entra ★ Requisitos claros o no entra ★ Beneficios listados o no entra</span>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="nav">
+    <a href="#" class="logo">
+      <span class="logo__cero">0</span>
+      <span class="tachado">VAGOS</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#ofertas">Ofertas</a>
+      <a href="#filtro">El filtro</a>
+      <a href="#fuentes">Fuentes</a>
+      <a href="#alertas">Alertas</a>
+      <a href="#">Empresas</a>
+    </nav>
+    <div class="nav__cta">
+      <a href="#alertas" class="btn btn--rojo">Recibir alertas</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__left">
+    <div class="hero__tag">EL FILTRO ANTI-OFERTAS VAGAS DEL PERÚ</div>
+    <h1>Aquí no hay<br>ofertas <em>vagas</em>.<br>Ni vagos.</h1>
+    <p class="hero__sub">
+      Rastreamos los principales portales de empleo del Perú y <b>botamos el 80%</b>.
+      Solo publicamos avisos con sueldo en soles, funciones reales, requisitos claros y beneficios escritos. Si le falta uno, no entra.
+    </p>
+    <form class="search" id="heroSearch" onsubmit="return false;">
+      <input type="text" id="heroInput" placeholder="Busca: contador, backend, ventas, practicante...">
+      <button type="submit">Buscar</button>
+    </form>
+    <div class="hero__chips">
+      <button data-q="Tecnología">Tecnología</button>
+      <button data-q="Ventas">Ventas</button>
+      <button data-q="Contabilidad">Contabilidad</button>
+      <button data-q="Salud">Salud</button>
+      <button data-q="Prácticas">Prácticas</button>
+    </div>
+  </div>
+  <div class="hero__right">
+    <div class="hero__art">
+      <!-- Ilustración isométrica 3D-ish: pila de avisos filtrados -->
+      <svg viewBox="0 0 400 400" role="img" aria-label="Ofertas filtradas por Cero Vagos">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#FFF3E4"/><stop offset="1" stop-color="#E8E0D4"/>
+          </linearGradient>
+        </defs>
+        <!-- sombra base -->
+        <ellipse cx="200" cy="352" rx="140" ry="26" fill="#0B0B0B" opacity=".35"/>
+
+        <!-- aviso rechazado 1 (cae) -->
+        <g transform="translate(300 250) rotate(18)">
+          <rect x="0" y="8" width="86" height="60" fill="#0B0B0B"/>
+          <rect x="-5" y="0" width="86" height="60" fill="#8A8A8A" stroke="#0B0B0B" stroke-width="4"/>
+          <line x1="6" y1="16" x2="52" y2="16" stroke="#0B0B0B" stroke-width="5"/>
+          <line x1="6" y1="30" x2="66" y2="30" stroke="#0B0B0B" stroke-width="5" opacity=".5"/>
+          <line x1="-2" y1="58" x2="78" y2="2" stroke="#FF1E1E" stroke-width="6"/>
+        </g>
+        <!-- aviso rechazado 2 -->
+        <g transform="translate(18 268) rotate(-22)">
+          <rect x="0" y="8" width="78" height="56" fill="#0B0B0B"/>
+          <rect x="-5" y="0" width="78" height="56" fill="#8A8A8A" stroke="#0B0B0B" stroke-width="4"/>
+          <line x1="6" y1="15" x2="46" y2="15" stroke="#0B0B0B" stroke-width="5"/>
+          <line x1="6" y1="29" x2="58" y2="29" stroke="#0B0B0B" stroke-width="5" opacity=".5"/>
+          <line x1="-2" y1="54" x2="70" y2="2" stroke="#FF1E1E" stroke-width="6"/>
+        </g>
+
+        <!-- pila de tarjetas aprobadas (efecto 3D por capas) -->
+        <g>
+          <rect x="86" y="140" width="230" height="180" fill="#0B0B0B"/>
+          <rect x="78" y="132" width="230" height="180" fill="#B8FF2E" stroke="#0B0B0B" stroke-width="5"/>
+          <rect x="70" y="112" width="230" height="180" fill="#0B0B0B"/>
+          <rect x="62" y="104" width="230" height="180" fill="#FFD100" stroke="#0B0B0B" stroke-width="5"/>
+          <rect x="54" y="80" width="230" height="182" fill="#0B0B0B"/>
+          <rect x="46" y="72" width="230" height="182" fill="url(#g1)" stroke="#0B0B0B" stroke-width="5"/>
+        </g>
+
+        <!-- contenido de la tarjeta superior -->
+        <g>
+          <rect x="62" y="88" width="46" height="46" fill="#2B37FF" stroke="#0B0B0B" stroke-width="4"/>
+          <text x="76" y="120" font-family="Archivo Black, sans-serif" font-size="24" fill="#FFF">S/</text>
+          <rect x="118" y="92" width="122" height="14" fill="#0B0B0B"/>
+          <rect x="118" y="114" width="86" height="12" fill="#0B0B0B" opacity=".4"/>
+          <rect x="62" y="150" width="178" height="30" fill="#FFD100" stroke="#0B0B0B" stroke-width="4"/>
+          <text x="72" y="172" font-family="Archivo Black, sans-serif" font-size="17" fill="#0B0B0B">S/ 4,500</text>
+          <rect x="62" y="194" width="150" height="10" fill="#0B0B0B" opacity=".65"/>
+          <rect x="62" y="212" width="182" height="10" fill="#0B0B0B" opacity=".65"/>
+          <rect x="62" y="230" width="120" height="10" fill="#0B0B0B" opacity=".65"/>
+        </g>
+
+        <!-- sello 3D "APROBADO" -->
+        <g transform="translate(232 176) rotate(-12)">
+          <circle cx="6" cy="10" r="58" fill="#0B0B0B"/>
+          <circle cx="0" cy="4" r="58" fill="#FF1E1E" stroke="#0B0B0B" stroke-width="5"/>
+          <circle cx="0" cy="4" r="45" fill="none" stroke="#FFF" stroke-width="3"/>
+          <text x="0" y="-4" text-anchor="middle" font-family="Archivo Black, sans-serif" font-size="15" fill="#FFF">CERO</text>
+          <text x="0" y="14" text-anchor="middle" font-family="Archivo Black, sans-serif" font-size="15" fill="#FFF">VAGOS</text>
+          <text x="0" y="32" text-anchor="middle" font-family="Archivo Black, sans-serif" font-size="10" fill="#FFD100">APROBADO</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STRIP ============ -->
+<div class="strip">
+  <div><b id="sEscaneados">18,420</b><span>Avisos escaneados hoy</span></div>
+  <div><b id="sAprobadas">2,976</b><span>Pasaron el filtro</span></div>
+  <div><b id="sTasa">100%</b><span>Con sueldo visible</span></div>
+  <div><b id="sPortales">9</b><span>Portales rastreados</span></div>
+</div>
+
+<!-- ============ EL FILTRO ============ -->
+<section class="filtro" id="filtro">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="kicker">NUESTRO ÚNICO TRABAJO</span>
+        <h2>Las 4 pruebas<br>que un aviso debe pasar</h2>
+      </div>
+      <p>Si un aviso falla en una sola, se bota. No lo escondemos al final, no lo ponemos en gris: simplemente no existe en Cero Vagos.</p>
+    </div>
+
+    <div class="filtro__grid">
+      <div class="fcard">
+        <div class="fcard__num">01</div>
+        <svg class="fcard__ico" viewBox="0 0 100 100" aria-hidden="true">
+          <ellipse cx="50" cy="88" rx="30" ry="7" fill="#0B0B0B" opacity=".3"/>
+          <rect x="22" y="34" width="56" height="46" fill="#0B0B0B"/>
+          <rect x="16" y="28" width="56" height="46" fill="#FFF" stroke="#0B0B0B" stroke-width="4"/>
+          <text x="44" y="60" text-anchor="middle" font-family="Archivo Black, sans-serif" font-size="24" fill="#FF1E1E">S/</text>
+          <circle cx="70" cy="24" r="15" fill="#0B0B0B"/>
+          <circle cx="66" cy="20" r="15" fill="#FFD100" stroke="#0B0B0B" stroke-width="4"/>
+          <text x="66" y="26" text-anchor="middle" font-family="Archivo Black, sans-serif" font-size="14" fill="#0B0B0B">$</text>
+        </svg>
+        <h3>Sueldo en soles</h3>
+        <p>Monto o rango real. "Sueldo acorde al mercado" y "a convenir" no pasan.</p>
+      </div>
+
+      <div class="fcard">
+        <div class="fcard__num">02</div>
+        <svg class="fcard__ico" viewBox="0 0 100 100" aria-hidden="true">
+          <ellipse cx="50" cy="88" rx="30" ry="7" fill="#0B0B0B" opacity=".3"/>
+          <rect x="26" y="24" width="52" height="60" fill="#0B0B0B"/>
+          <rect x="20" y="18" width="52" height="60" fill="#FFF" stroke="#0B0B0B" stroke-width="4"/>
+          <rect x="28" y="30" width="8" height="8" fill="#2B37FF" stroke="#0B0B0B" stroke-width="3"/>
+          <rect x="42" y="32" width="22" height="4" fill="#0B0B0B"/>
+          <rect x="28" y="46" width="8" height="8" fill="#2B37FF" stroke="#0B0B0B" stroke-width="3"/>
+          <rect x="42" y="48" width="22" height="4" fill="#0B0B0B"/>
+          <rect x="28" y="62" width="8" height="8" fill="#2B37FF" stroke="#0B0B0B" stroke-width="3"/>
+          <rect x="42" y="64" width="16" height="4" fill="#0B0B0B"/>
+        </svg>
+        <h3>Qué vas a hacer</h3>
+        <p>Funciones concretas del día a día. Nada de "apoyar en labores del área".</p>
+      </div>
+
+      <div class="fcard">
+        <div class="fcard__num">03</div>
+        <svg class="fcard__ico" viewBox="0 0 100 100" aria-hidden="true">
+          <ellipse cx="50" cy="88" rx="30" ry="7" fill="#0B0B0B" opacity=".3"/>
+          <path d="M50 14 82 26v24c0 18-14 28-32 34-18-6-32-16-32-34V26z" fill="#0B0B0B" transform="translate(5 6)"/>
+          <path d="M50 14 82 26v24c0 18-14 28-32 34-18-6-32-16-32-34V26z" fill="#FFF" stroke="#0B0B0B" stroke-width="4"/>
+          <path d="M36 48l10 11 20-22" fill="none" stroke="#FF1E1E" stroke-width="8" stroke-linecap="square"/>
+        </svg>
+        <h3>Requisitos honestos</h3>
+        <p>Años de experiencia, estudios y herramientas. Sin listas imposibles ni sorpresas.</p>
+      </div>
+
+      <div class="fcard">
+        <div class="fcard__num">04</div>
+        <svg class="fcard__ico" viewBox="0 0 100 100" aria-hidden="true">
+          <ellipse cx="50" cy="88" rx="30" ry="7" fill="#0B0B0B" opacity=".3"/>
+          <rect x="24" y="40" width="58" height="42" fill="#0B0B0B"/>
+          <rect x="18" y="34" width="58" height="42" fill="#FFF" stroke="#0B0B0B" stroke-width="4"/>
+          <rect x="18" y="34" width="58" height="12" fill="#B8FF2E" stroke="#0B0B0B" stroke-width="4"/>
+          <rect x="42" y="34" width="10" height="42" fill="#0B0B0B"/>
+          <path d="M47 34c-8-16-24-10-18 0" fill="none" stroke="#0B0B0B" stroke-width="4"/>
+          <path d="M47 34c8-16 24-10 18 0" fill="none" stroke="#0B0B0B" stroke-width="4"/>
+        </svg>
+        <h3>Beneficios escritos</h3>
+        <p>Planilla, EPS, bonos, horario, home office. Lo que realmente recibes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARATIVA ============ -->
+<section class="vs">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="kicker" style="background:var(--lima);color:var(--negro)">LA DIFERENCIA</span>
+        <h2>Buscar chamba<br>no debería ser<br>adivinanza</h2>
+      </div>
+    </div>
+    <div class="vs__grid">
+      <div class="vs__col vs__col--mal">
+        <h3>Los otros portales</h3>
+        <ul>
+          <li><i>×</i> "Sueldo a convenir" en 7 de cada 10 avisos</li>
+          <li><i>×</i> Descripciones copiadas y pegadas de hace 3 años</li>
+          <li><i>×</i> Avisos vencidos que siguen arriba</li>
+          <li><i>×</i> Consultoras que no dicen para qué empresa es</li>
+          <li><i>×</i> Postulas, y recién en la entrevista te dicen el pago</li>
+        </ul>
+      </div>
+      <div class="vs__col vs__col--bien">
+        <h3>Cero Vagos</h3>
+        <ul>
+          <li><i>✓</i> Sueldo en soles, siempre, o el aviso no entra</li>
+          <li><i>✓</i> Funciones, requisitos y beneficios verificados</li>
+          <li><i>✓</i> Revisamos cada 6 horas: si vence, desaparece</li>
+          <li><i>✓</i> Todo en un solo lugar: 9 portales en una búsqueda</li>
+          <li><i>✓</i> Sabes cuánto pagan antes de mandar tu CV</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFERTAS ============ -->
+<section class="ofertas" id="ofertas">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="kicker">100% APROBADAS</span>
+        <h2>Ofertas de hoy</h2>
+      </div>
+      <p id="actualizado">Actualizado hace 12 minutos. Cada aviso muestra su puntaje de completitud y de qué portal salió.</p>
+    </div>
+
+    <div class="toolbar">
+      <div class="tb-search">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#0B0B0B" stroke-width="3"><circle cx="11" cy="11" r="7"/><line x1="16" y1="16" x2="22" y2="22"/></svg>
+        <input type="text" id="q" placeholder="Puesto, empresa o palabra clave">
+      </div>
+      <select id="fCiudad"><option value="">Todo el Perú</option></select>
+      <select id="fModalidad">
+        <option value="">Toda modalidad</option>
+        <option>Presencial</option>
+        <option>Híbrido</option>
+        <option>Remoto</option>
+      </select>
+      <select id="fSueldo">
+        <option value="0">Cualquier sueldo</option>
+        <option value="1500">Desde S/ 1,500</option>
+        <option value="2500">Desde S/ 2,500</option>
+        <option value="4000">Desde S/ 4,000</option>
+        <option value="7000">Desde S/ 7,000</option>
+      </select>
+    </div>
+
+    <div class="chips" id="chips"></div>
+    <p class="count" id="count"></p>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<!-- ============ MODAL ============ -->
+<div class="modal" id="modal">
+  <div class="modal__box" id="modalBox"></div>
+</div>
+
+<!-- ============ FUENTES ============ -->
+<section class="fuentes" id="fuentes">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="kicker">DE DÓNDE SALEN</span>
+        <h2>Rastreamos 9 portales.<br>Tú buscas en uno.</h2>
+      </div>
+      <p style="color:#fff">No competimos con ellos: los ordenamos. Al postular te llevamos al aviso original de la empresa.</p>
+    </div>
+    <div class="fuentes__grid" id="fuentesGrid">
+      <div class="fuente" style="background:#B8FF2E"><b>Bumeran</b><span>Portal de empleo</span></div>
+      <div class="fuente" style="background:#FFD100"><b>Laborum</b><span>Portal de empleo</span></div>
+      <div class="fuente" style="background:#4CE0F5"><b>Convocatorias del Estado</b><span>CAS, 728 y 276</span></div>
+      <div class="fuente" style="background:#FF4FA3"><b>Webs de empresa</b><span>Bolsas oficiales</span></div>
+      <div class="fuente" style="background:#FFF"><b>Portales de entidades</b><span>Ministerios y municipios</span></div>
+      <div class="fuente" style="background:#FFF"><b>Bases de concursos</b><span>Abrimos los PDF</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ALERTAS ============ -->
+<section class="alerta" id="alertas">
+  <div class="wrap">
+    <div class="alerta__box">
+      <div class="alerta__l">
+        <span class="kicker">GRATIS, SIN LETRA CHICA</span>
+        <h2>Que la chamba te llegue al WhatsApp</h2>
+        <p>Elige tu rubro y tu sueldo mínimo. Te avisamos apenas entre una oferta que pase el filtro. Sin spam, sin publicidad de cursos.</p>
+        <form class="form" onsubmit="event.preventDefault();this.querySelector('.btn').textContent='¡Listo! Te avisamos ✓';">
+          <input type="text" placeholder="Tu nombre" required>
+          <input type="tel" placeholder="Tu WhatsApp (9 dígitos)" pattern="[0-9]{9}" required>
+          <select required>
+            <option value="">¿Qué buscas?</option>
+            <option>Tecnología</option><option>Ventas</option><option>Contabilidad</option>
+            <option>Salud</option><option>Logística</option><option>Marketing</option>
+            <option>Administración</option><option>Prácticas</option>
+          </select>
+          <button class="btn btn--rojo" type="submit">Activar mis alertas</button>
+        </form>
+      </div>
+      <div class="alerta__r">
+        <svg viewBox="0 0 260 260" style="max-width:270px" aria-hidden="true">
+          <ellipse cx="130" cy="238" rx="86" ry="16" fill="#0B0B0B" opacity=".3"/>
+          <!-- celular 3D -->
+          <rect x="72" y="46" width="124" height="184" rx="6" fill="#0B0B0B"/>
+          <rect x="62" y="36" width="124" height="184" rx="6" fill="#FFF3E4" stroke="#0B0B0B" stroke-width="5"/>
+          <rect x="62" y="36" width="124" height="26" fill="#0B0B0B"/>
+          <!-- notificaciones -->
+          <rect x="78" y="80" width="98" height="34" fill="#0B0B0B"/>
+          <rect x="72" y="74" width="98" height="34" fill="#B8FF2E" stroke="#0B0B0B" stroke-width="4"/>
+          <rect x="80" y="82" width="46" height="6" fill="#0B0B0B"/>
+          <rect x="80" y="94" width="66" height="5" fill="#0B0B0B" opacity=".55"/>
+          <rect x="78" y="132" width="98" height="34" fill="#0B0B0B"/>
+          <rect x="72" y="126" width="98" height="34" fill="#FFD100" stroke="#0B0B0B" stroke-width="4"/>
+          <rect x="80" y="134" width="56" height="6" fill="#0B0B0B"/>
+          <rect x="80" y="146" width="40" height="5" fill="#0B0B0B" opacity=".55"/>
+          <rect x="78" y="184" width="98" height="34" fill="#0B0B0B"/>
+          <rect x="72" y="178" width="98" height="34" fill="#4CE0F5" stroke="#0B0B0B" stroke-width="4"/>
+          <rect x="80" y="186" width="62" height="6" fill="#0B0B0B"/>
+          <rect x="80" y="198" width="48" height="5" fill="#0B0B0B" opacity=".55"/>
+          <!-- badge -->
+          <circle cx="196" cy="52" r="26" fill="#0B0B0B"/>
+          <circle cx="190" cy="46" r="26" fill="#FF1E1E" stroke="#0B0B0B" stroke-width="5"/>
+          <text x="190" y="54" text-anchor="middle" font-family="Archivo Black, sans-serif" font-size="20" fill="#FFF">12</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <div class="foot__logo"><span class="logo__cero">0</span><span class="tachado" style="--x:1">VAGOS</span></div>
+        <p style="font-size:14.5px;line-height:1.55;opacity:.8;max-width:330px">
+          El buscador que solo muestra ofertas laborales completas del Perú. Si no dice cuánto paga, para nosotros no existe.
+        </p>
+      </div>
+      <div>
+        <h4>Buscar</h4>
+        <ul>
+          <li><a href="#ofertas">Ofertas de hoy</a></li>
+          <li><a href="#ofertas">Trabajo remoto</a></li>
+          <li><a href="#ofertas">Prácticas y trainee</a></li>
+          <li><a href="#ofertas">Empleos en Lima</a></li>
+          <li><a href="#ofertas">Empleos en provincias</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Cero Vagos</h4>
+        <ul>
+          <li><a href="#filtro">Cómo filtramos</a></li>
+          <li><a href="#fuentes">Portales que rastreamos</a></li>
+          <li><a href="#">Publicar una oferta</a></li>
+          <li><a href="#">Reportar aviso incompleto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Libro de reclamaciones</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <span>© 2026 Cero Vagos · Hecho en Lima, Perú 🇵🇪</span>
+      <span>Los avisos pertenecen a sus portales de origen. Nosotros solo filtramos.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Datos generados por el motor: python -m motor recolectar --demo --exportar -->
+<script src="datos/ofertas.js" onerror="console.info('Sin datos del motor: se usan las ofertas de ejemplo')"></script>
+<script>
+/* ============================================================
+   DATA DE EJEMPLO — se usa solo si el motor todavía no exportó
+   ============================================================ */
+const OFERTAS_DEMO = [
+  {
+    id:1, puesto:"Desarrollador Backend Node.js", empresa:"Rappi Perú", cat:"Tecnología",
+    min:7000, max:9500, modalidad:"Remoto", ciudad:"Lima", fuente:"Web de la empresa", dias:0, score:98,
+    resumen:"Construir y mantener microservicios del módulo de pagos para Perú y Chile.",
+    funciones:["Desarrollar y mantener microservicios en Node.js y TypeScript","Diseñar endpoints REST y documentarlos en Swagger","Optimizar consultas en PostgreSQL y Redis","Participar en code reviews y en el on-call rotativo (1 semana cada 6)","Escribir pruebas unitarias con Jest (cobertura mínima 70%)"],
+    requisitos:["3+ años en desarrollo backend con Node.js","Manejo de PostgreSQL, Docker y AWS (ECS o Lambda)","Inglés intermedio para documentación y reuniones","Egresado de Ing. de Sistemas, Informática o afines"],
+    beneficios:["Planilla completa desde el día 1 + EPS cubierta al 70%","100% remoto desde cualquier ciudad del Perú","Bono anual por desempeño de hasta 2 sueldos","S/ 300 mensuales para internet y coworking","20 días de vacaciones + tu cumpleaños libre"]
+  },
+  {
+    id:2, puesto:"Asistente Contable", empresa:"Grupo Ferreycorp", cat:"Contabilidad",
+    min:2800, max:3400, modalidad:"Híbrido", ciudad:"Lima", fuente:"Computrabajo", dias:1, score:94,
+    resumen:"Apoyo en el cierre contable mensual y registro de facturación de la unidad minera.",
+    funciones:["Registrar comprobantes de compra y venta en SAP","Elaborar conciliaciones bancarias mensuales","Preparar reportes de detracciones y percepciones","Apoyar en el cierre contable mensual y anual","Atender requerimientos de auditoría externa"],
+    requisitos:["Bachiller o titulado en Contabilidad","1 a 2 años en puestos contables similares","Excel intermedio (tablas dinámicas, BUSCARV)","Deseable manejo de SAP FI"],
+    beneficios:["Planilla con todos los beneficios de ley","Modalidad híbrida: 3 días oficina (San Isidro), 2 remotos","EPS familiar cubierta al 60%","Movilidad y almuerzo subvencionado","Línea de carrera al puesto de Analista Contable"]
+  },
+  {
+    id:3, puesto:"Ejecutivo Comercial B2B", empresa:"Alicorp", cat:"Ventas",
+    min:3500, max:6000, modalidad:"Presencial", ciudad:"Arequipa", fuente:"Bumeran", dias:0, score:91,
+    resumen:"Gestión de cartera de bodegas y mayoristas en la zona sur del país.",
+    funciones:["Gestionar una cartera de 80 clientes mayoristas en Arequipa","Cumplir cuota mensual de venta y cobertura","Negociar espacios y exhibiciones en punto de venta","Reportar en CRM diariamente las visitas realizadas","Levantar información de precios de la competencia"],
+    requisitos:["2+ años en ventas de consumo masivo","Licencia de conducir A-I vigente","Disponibilidad para viajar dentro de la región sur","Estudios técnicos o universitarios en Administración, Marketing o afines"],
+    beneficios:["Sueldo base S/ 3,500 + comisiones sin tope (promedio S/ 2,500)","Movilidad propia de la empresa + combustible","Planilla, EPS y seguro de vida ley","Capacitaciones comerciales certificadas","Bono trimestral por cumplimiento de cuota"]
+  },
+  {
+    id:4, puesto:"Enfermera(o) — Área de Emergencia", empresa:"Clínica Internacional", cat:"Salud",
+    min:3200, max:3900, modalidad:"Presencial", ciudad:"Lima", fuente:"Laborum", dias:2, score:93,
+    resumen:"Atención de pacientes en emergencia adultos, turnos rotativos de 12 horas.",
+    funciones:["Realizar el triaje y la valoración inicial del paciente","Administrar medicamentos según indicación médica","Registrar la evolución en la historia clínica electrónica","Preparar y asistir en procedimientos de emergencia","Coordinar el traslado interno de pacientes"],
+    requisitos:["Título de Licenciada(o) en Enfermería y colegiatura habilitada","1+ año de experiencia en emergencia o UCI","Certificación BLS y ACVS vigente","Disponibilidad para turnos rotativos incluidos fines de semana"],
+    beneficios:["Planilla completa + asignación familiar","Bono por turno nocturno y feriados","Descuentos de hasta 50% en atenciones para ti y familiares directos","Programa de especialización con financiamiento parcial","Uniformes y alimentación en turno cubiertos"]
+  },
+  {
+    id:5, puesto:"Practicante de Marketing Digital", empresa:"Cineplanet", cat:"Prácticas",
+    min:1400, max:1400, modalidad:"Híbrido", ciudad:"Lima", fuente:"Web de la empresa", dias:0, score:88,
+    resumen:"Apoyo en la ejecución de campañas de redes sociales y email marketing.",
+    funciones:["Programar publicaciones en Instagram, TikTok y Facebook","Redactar copies cortos para campañas de estrenos","Elaborar reportes semanales de métricas en Looker Studio","Coordinar con la agencia creativa la entrega de piezas","Apoyar en el envío de campañas de email marketing"],
+    requisitos:["Estudiante de últimos ciclos de Marketing, Comunicaciones o Publicidad","Carta de presentación de la universidad (práctica pre-profesional)","Manejo de Canva y Meta Business Suite","Disponibilidad de 30 horas semanales"],
+    beneficios:["Subvención de S/ 1,400 mensuales","Modalidad híbrida (3 días en oficina, Surco)","Entradas de cine gratis al mes para ti y un acompañante","Horario flexible compatible con tus clases","Posibilidad real de contratación al terminar prácticas"]
+  },
+  {
+    id:6, puesto:"Analista de Datos", empresa:"Interbank", cat:"Tecnología",
+    min:5500, max:7200, modalidad:"Híbrido", ciudad:"Lima", fuente:"Web de la empresa", dias:1, score:96,
+    resumen:"Análisis del comportamiento de clientes del segmento banca personas.",
+    funciones:["Construir dashboards en Power BI para el equipo comercial","Escribir consultas SQL sobre el datawarehouse (Snowflake)","Automatizar reportes recurrentes con Python","Analizar campañas y medir su impacto en conversión","Presentar hallazgos a gerentes de producto"],
+    requisitos:["2+ años como analista de datos o BI","SQL avanzado y Python (pandas) intermedio","Experiencia con Power BI o Tableau","Bachiller en Ingeniería, Economía, Estadística o afines"],
+    beneficios:["Planilla + EPS cubierta al 80% para titular y familia","Híbrido: 2 días presenciales en San Isidro","Bono de desempeño anual","Presupuesto anual de S/ 3,000 para certificaciones","Convenios en gimnasios y descuentos en productos del banco"]
+  },
+  {
+    id:7, puesto:"Supervisor de Almacén", empresa:"Ransa", cat:"Logística",
+    min:3800, max:4500, modalidad:"Presencial", ciudad:"Callao", fuente:"Computrabajo", dias:3, score:90,
+    resumen:"Supervisión de operaciones de recepción, picking y despacho del centro de distribución.",
+    funciones:["Supervisar a un equipo de 18 operarios por turno","Controlar los indicadores de exactitud de inventario y fill rate","Gestionar la recepción y el despacho de mercadería","Asegurar el cumplimiento de las normas de seguridad (SST)","Elaborar reportes diarios de productividad en WMS"],
+    requisitos:["3+ años supervisando operaciones logísticas","Manejo de sistemas WMS y Excel intermedio","Titulado o bachiller en Ing. Industrial, Logística o afines","Disponibilidad para turnos rotativos"],
+    beneficios:["Planilla completa desde el primer día","Movilidad de acercamiento desde puntos de Lima","Comedor en planta con almuerzo subvencionado","Seguro de vida ley y EPS opcional","Bono semestral por cumplimiento de KPIs"]
+  },
+  {
+    id:8, puesto:"Diseñador(a) UX/UI", empresa:"Yape", cat:"Tecnología",
+    min:6000, max:8000, modalidad:"Remoto", ciudad:"Lima", fuente:"Indeed Perú", dias:0, score:95,
+    resumen:"Diseño de flujos y pantallas para nuevas funcionalidades de la billetera digital.",
+    funciones:["Diseñar wireframes y prototipos de alta fidelidad en Figma","Mantener y ampliar el design system del producto","Realizar pruebas de usabilidad con usuarios reales","Trabajar con product managers y desarrolladores en squads ágiles","Documentar decisiones de diseño y handoff a desarrollo"],
+    requisitos:["3+ años diseñando productos digitales (portafolio obligatorio)","Dominio de Figma y sistemas de diseño","Experiencia en investigación de usuarios","Deseable experiencia en fintech o apps móviles masivas"],
+    beneficios:["100% remoto dentro del Perú","Planilla + EPS cubierta al 100% para el titular","Presupuesto de S/ 4,000 al año para formación","Equipo MacBook Pro entregado por la empresa","Viernes con jornada reducida"]
+  },
+  {
+    id:9, puesto:"Asistente Administrativo", empresa:"Universidad Continental", cat:"Administración",
+    min:2000, max:2400, modalidad:"Presencial", ciudad:"Huancayo", fuente:"Laborum", dias:2, score:87,
+    resumen:"Soporte administrativo a la dirección de la facultad de ingeniería.",
+    funciones:["Gestionar la agenda y las reuniones del director de facultad","Redactar cartas, memorandos y actas","Llevar el control documentario físico y digital","Atender consultas de estudiantes y docentes","Apoyar en la organización de eventos académicos"],
+    requisitos:["Egresado técnico o universitario en Administración o Secretariado","1 año de experiencia en funciones administrativas","Office intermedio (Word, Excel, Outlook)","Buena redacción y trato al público"],
+    beneficios:["Planilla con todos los beneficios de ley","Descuento de hasta 50% en programas de la universidad para ti y familiares","Horario fijo de lunes a viernes de 8:00 a 17:30","Seguro de vida ley","Capacitaciones internas gratuitas"]
+  },
+  {
+    id:10, puesto:"Community Manager", empresa:"Tottus", cat:"Marketing",
+    min:2600, max:3200, modalidad:"Híbrido", ciudad:"Lima", fuente:"Bumeran", dias:1, score:89,
+    resumen:"Gestión diaria de las comunidades digitales de la marca y atención de consultas.",
+    funciones:["Publicar y monitorear contenido en 4 redes sociales","Responder comentarios y mensajes en menos de 2 horas","Escalar reclamos al área de servicio al cliente","Elaborar el reporte mensual de métricas de comunidad","Proponer contenido para fechas comerciales"],
+    requisitos:["2 años como community manager de marcas retail o consumo","Manejo de herramientas de monitoreo (Hootsuite, Sprout o similar)","Excelente ortografía y redacción","Bachiller en Comunicaciones, Marketing o afines"],
+    beneficios:["Planilla completa + EPS al 50%","Híbrido: 3 días oficina (Santa Anita), 2 remotos","Descuento de colaborador en tiendas del grupo","Día libre por cumpleaños","Bono por campaña navideña"]
+  },
+  {
+    id:11, puesto:"Ingeniero de Seguridad y Salud Ocupacional", empresa:"Cosapi", cat:"Ingeniería",
+    min:6500, max:8500, modalidad:"Presencial", ciudad:"Cusco", fuente:"Computrabajo", dias:4, score:92,
+    resumen:"Liderar el sistema de gestión SST en obra de infraestructura vial.",
+    funciones:["Implementar y auditar el sistema de gestión SST en obra","Dictar capacitaciones diarias de 5 minutos a cuadrillas","Investigar incidentes y elaborar informes de causa raíz","Coordinar inspecciones con la supervisión del cliente","Gestionar los permisos de trabajo de alto riesgo"],
+    requisitos:["Titulado y colegiado en Ing. Industrial, Civil o Ambiental","4+ años en SST en proyectos de construcción","Certificación en la Ley 29783 y curso de 120 horas SST","Disponibilidad para régimen 20x8 en Cusco"],
+    beneficios:["Sueldo neto en régimen atípico 20x8","Alojamiento y alimentación cubiertos en campamento","Pasajes aéreos ida y vuelta pagados por la empresa","Planilla, EPS y seguro complementario SCTR","Bono por cierre de proyecto sin accidentes"]
+  },
+  {
+    /* ── Ejemplo de oferta de una bolsa universitaria aliada ──
+       Se muestra el puesto y la empresa; el detalle queda en su portal.
+       El motor llenaría este campo con lo que entregue el convenio. */
+    id:13, puesto:"Practicante de Ingeniería Industrial", empresa:"San Fernando", cat:"Prácticas",
+    min:1500, max:1500, modalidad:"Presencial", ciudad:"Lima", fuente:"Bolsa UPN", dias:1, score:90,
+    resumen:"Apoyo en los proyectos de mejora continua de la planta de Chincha.",
+    funciones:[], requisitos:[], beneficios:[],
+    exclusiva:{universidad:"la Universidad Privada del Norte", siglas:"UPN",
+               url:"https://empleabilidad.upn.edu.pe/"}
+  },
+  {
+    id:14, puesto:"Trainee Comercial", empresa:"Alicorp", cat:"Ventas",
+    min:2800, max:3200, modalidad:"Híbrido", ciudad:"Trujillo", fuente:"Bolsa UPAO", dias:2, score:88,
+    resumen:"Programa trainee de 12 meses en el área comercial de consumo masivo.",
+    funciones:[], requisitos:[], beneficios:[],
+    exclusiva:{universidad:"la Universidad Privada Antenor Orrego", siglas:"UPAO",
+               url:"https://www.upao.edu.pe/"}
+  },
+  {
+    id:12, puesto:"Docente de Matemática — Secundaria", empresa:"Colegio Trilce", cat:"Educación",
+    min:2800, max:3600, modalidad:"Presencial", ciudad:"Trujillo", fuente:"Convocatorias CAS", dias:5, score:86,
+    resumen:"Dictado de matemática para 3ro, 4to y 5to de secundaria, turno mañana.",
+    funciones:["Dictar 24 horas pedagógicas semanales de matemática","Elaborar sesiones de aprendizaje alineadas al currículo nacional","Evaluar y registrar el progreso de los estudiantes en el SIAGIE","Atender a padres de familia una vez al mes","Preparar estudiantes para concursos y simulacros de admisión"],
+    requisitos:["Título en Educación Secundaria, especialidad Matemática","Colegiatura vigente en el Colegio de Profesores","2+ años dictando en secundaria","Disponibilidad para el turno mañana (7:30 a 14:30)"],
+    beneficios:["Planilla con todos los beneficios de ley","Escala salarial por años de servicio y desempeño","Descuento de 60% en pensión para hijos del docente","Capacitación pedagógica continua financiada","Vacaciones en el periodo escolar de verano"]
+  }
+];
+
+/* ============================================================
+   FUENTE DE DATOS
+   Si el motor ya exportó datos/ofertas.js, mandan esos datos.
+   Si no, el sitio funciona igual con las ofertas de ejemplo.
+   ============================================================ */
+const MOTOR = window.CERO_VAGOS || null;
+
+/* Modo demostración: abre index.html?demo=1 para ver el listado de ejemplo
+   aunque el motor ya tenga ofertas reales cargadas. Sirve para enseñar la web
+   en una reunión sin depender de cuántas ofertas haya recolectado hoy. */
+const DEMO = new URLSearchParams(location.search).has('demo');
+const OFERTAS = (!DEMO && MOTOR && MOTOR.ofertas && MOTOR.ofertas.length)
+  ? MOTOR.ofertas
+  : OFERTAS_DEMO;
+
+/* ============================================================
+   ESTADO Y RENDER
+   ============================================================ */
+const $ = s => document.querySelector(s);
+const grid = $('#grid'), chipsBox = $('#chips'), countEl = $('#count');
+const CATS = [...new Set(OFERTAS.map(o=>o.cat))].sort();
+const CIUDADES = [...new Set(OFERTAS.map(o=>o.ciudad))].sort();
+const COLORES = ['#FFD100','#B8FF2E','#4CE0F5','#FF4FA3','#FF1E1E','#2B37FF'];
+let estado = { q:'', cat:'', ciudad:'', modalidad:'', sueldo:0 };
+
+// llenar select de ciudades
+CIUDADES.forEach(c=>{
+  const op = document.createElement('option'); op.textContent = c; $('#fCiudad').appendChild(op);
+});
+
+// chips de categoría
+function pintarChips(){
+  chipsBox.innerHTML = '';
+  const todos = ['Todas', ...CATS];
+  todos.forEach(c=>{
+    const b = document.createElement('button');
+    b.className = 'chip' + ((estado.cat===c || (c==='Todas' && !estado.cat)) ? ' on' : '');
+    b.textContent = c;
+    b.onclick = ()=>{ estado.cat = (c==='Todas') ? '' : c; pintarChips(); render(); };
+    chipsBox.appendChild(b);
+  });
+}
+
+const soles = n => 'S/ ' + n.toLocaleString('es-PE');
+const cuando = d => d===0 ? 'Hoy' : d===1 ? 'Ayer' : 'Hace ' + d + ' días';
+
+/* Cuánto queda para postular. Si el aviso no lo dice, no se inventa. */
+function plazo(o){
+  if(o.restan === null || o.restan === undefined) return null;
+  if(o.restan < 0)  return {txt:'Cerrado', color:'var(--negro)', letra:'#fff'};
+  if(o.restan === 0) return {txt:'Cierra HOY', color:'var(--rojo)', letra:'#fff'};
+  if(o.restan === 1) return {txt:'Cierra mañana', color:'var(--rojo)', letra:'#fff'};
+  if(o.restan <= 3)  return {txt:`Cierra en ${o.restan} días`, color:'var(--rojo)', letra:'#fff'};
+  if(o.restan <= 7)  return {txt:`Cierra en ${o.restan} días`, color:'var(--amarillo)', letra:'var(--negro)'};
+  return {txt:`Cierra en ${o.restan} días`, color:'var(--lima)', letra:'var(--negro)'};
+}
+
+function filtrar(){
+  const q = estado.q.trim().toLowerCase();
+  return OFERTAS.filter(o=>{
+    if(estado.cat && o.cat !== estado.cat) return false;
+    if(estado.ciudad && o.ciudad !== estado.ciudad) return false;
+    if(estado.modalidad && o.modalidad !== estado.modalidad) return false;
+    if(estado.sueldo && o.max < estado.sueldo) return false;
+    if(q){
+      const texto = (o.puesto+' '+o.empresa+' '+o.cat+' '+o.ciudad+' '+o.resumen+' '+o.modalidad).toLowerCase();
+      if(!texto.includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+function render(){
+  const lista = filtrar();
+  countEl.innerHTML = `Mostrando <b>${lista.length}</b> ofertas completas de ${OFERTAS.length} verificadas`;
+  if(!lista.length){
+    grid.innerHTML = `<div class="vacio" style="grid-column:1/-1">
+      <h3>No hay chamba con esos filtros</h3>
+      <p style="font-weight:500;margin-bottom:18px">Prueba con menos filtros o activa una alerta para que te avisemos apenas entre una.</p>
+      <a href="#alertas" class="btn btn--rojo">Crear alerta</a></div>`;
+    return;
+  }
+  grid.innerHTML = lista.map((o,i)=>{
+    const p = plazo(o);
+    const x = o.exclusiva;   // {universidad, siglas, url} cuando la oferta es de una bolsa aliada
+    return `
+    <article class="job ${x ? 'job--exc' : ''}" onclick="abrir(${o.id})" tabindex="0" onkeypress="if(event.key==='Enter')abrir(${o.id})">
+      ${x ? `<div class="sello-uni">Exclusiva · ${x.siglas}</div>` : ''}
+      ${p && !x ? `<div class="job__plazo" style="background:${p.color};color:${p.letra}">${p.txt}</div>` : ''}
+      <div class="job__top">
+        <div class="job__logo" style="background:${COLORES[i % COLORES.length]}">${o.empresa[0]}</div>
+        <div class="job__head">
+          <h3>${o.puesto}</h3>
+          <p>${o.empresa}</p>
+        </div>
+        <div class="job__score">${o.score}<small>SCORE</small></div>
+      </div>
+      <div class="job__pay">${o.min===o.max ? soles(o.min) : soles(o.min)+' – '+soles(o.max)}<span>al mes</span></div>
+      <div class="job__meta">
+        <span class="pill">📍 ${o.ciudad}</span>
+        <span class="pill">${o.modalidad}</span>
+        <span class="pill">${o.cat}</span>
+      </div>
+      <div class="job__body">${o.resumen}</div>
+      ${x ? `<div class="job__exc">
+               <b>Solo para ${x.universidad}</b>
+               <span>El detalle de esta oferta está reservado a sus estudiantes y egresados.</span>
+               <em>Ver en el portal de ${x.siglas} →</em>
+             </div>` : ''}
+      <div class="job__foot"><span>${cuando(o.dias)}</span><em>vía ${o.fuente}</em></div>
+    </article>`;
+  }).join('');
+}
+
+/* ---------- modal ---------- */
+function abrir(id){
+  const o = OFERTAS.find(x=>x.id===id);
+  const x = o.exclusiva;
+
+  /* Oferta de una bolsa aliada: mostramos el puesto y la empresa, y mandamos
+     al postulante al portal de su universidad. El detalle es de ellos. */
+  if(x){
+    $('#modalBox').innerHTML = `
+      <div class="modal__head" style="background:var(--azul)">
+        <button class="modal__x" onclick="cerrar()" aria-label="Cerrar">✕</button>
+        <h2>${o.puesto}</h2>
+        <p>${o.empresa} · ${o.ciudad} · Publicada ${cuando(o.dias).toLowerCase()}</p>
+        <p style="margin-top:10px"><span class="pill" style="background:var(--amarillo);color:var(--negro);border-color:var(--negro)">Exclusiva para ${x.universidad}</span></p>
+      </div>
+      <div class="mblock" style="border-right:none;background:var(--crema)">
+        <h4><i style="background:var(--azul)"></i>Por qué no ves el detalle acá</h4>
+        <p style="font-weight:500;font-size:15px;line-height:1.5">
+          Esta vacante la publicó <b>${o.empresa}</b> de forma exclusiva en la bolsa de trabajo
+          de ${x.universidad}. El sueldo, las funciones y los requisitos son parte de ese acuerdo,
+          así que se ven en su portal, no acá.
+        </p>
+        <p style="font-weight:500;font-size:15px;line-height:1.5;margin-top:12px">
+          Si estudiaste ahí, entra con tu cuenta y postula. Si no, en Cero Vagos hay
+          ${OFERTAS.filter(y=>!y.exclusiva).length} ofertas abiertas para todos.
+        </p>
+      </div>
+      <div class="modal__foot">
+        <a href="${x.url}" target="_blank" rel="noopener noreferrer" class="btn btn--rojo">Ir al portal de ${x.siglas} →</a>
+        <button class="btn btn--blanco" onclick="cerrar()">Seguir buscando</button>
+        <span style="font-size:12.5px;font-weight:700;opacity:.6">Cero Vagos no guarda ni pide tus datos de estudiante.</span>
+      </div>`;
+    $('#modal').classList.add('on');
+    document.body.style.overflow = 'hidden';
+    return;
+  }
+
+  $('#modalBox').innerHTML = `
+    <div class="modal__head">
+      <button class="modal__x" onclick="cerrar()" aria-label="Cerrar">✕</button>
+      <h2>${o.puesto}</h2>
+      <p>${o.empresa} · ${o.ciudad} · ${o.modalidad} · Publicada ${cuando(o.dias).toLowerCase()}</p>
+      ${(()=>{ const p = plazo(o); return p
+        ? `<p style="margin-top:10px"><span class="pill" style="background:${p.color};color:${p.letra};border-color:var(--negro)">${p.txt} · postula hasta el ${new Date(o.vence+'T00:00:00').toLocaleDateString('es-PE',{day:'numeric',month:'long'})}</span></p>`
+        : `<p style="margin-top:10px"><span class="pill" style="background:var(--blanco);color:var(--negro)">El aviso no indica fecha de cierre</span></p>`; })()}
+    </div>
+    <div class="modal__pay">
+      <div><span style="font-size:12px;font-weight:700;text-transform:uppercase;display:block">Sueldo mensual</span>
+      <b>${o.min===o.max ? soles(o.min) : soles(o.min)+' – '+soles(o.max)}</b></div>
+      <span class="pill" style="background:var(--negro);color:var(--lima);border-color:var(--negro)">SCORE DE COMPLETITUD ${o.score}/100</span>
+    </div>
+    <div class="modal__grid">
+      <div class="mblock"><h4><i style="background:var(--azul)"></i>Qué vas a hacer</h4><ul>${o.funciones.map(f=>`<li>${f}</li>`).join('')}</ul></div>
+      <div class="mblock"><h4><i style="background:var(--rojo)"></i>Qué piden</h4><ul>${o.requisitos.map(f=>`<li>${f}</li>`).join('')}</ul></div>
+      <div class="mblock" style="grid-column:1/-1;border-right:none;background:var(--lima)"><h4><i style="background:var(--negro)"></i>Qué te dan</h4><ul>${o.beneficios.map(f=>`<li>${f}</li>`).join('')}</ul></div>
+    </div>
+    <div class="modal__foot">
+      <a href="${o.url || '#'}" target="_blank" rel="noopener noreferrer" class="btn btn--rojo">Postular en ${o.fuente} →</a>
+      <button class="btn btn--blanco" onclick="cerrar()">Seguir buscando</button>
+      <span style="font-size:12.5px;font-weight:700;opacity:.6">Te llevamos al aviso original. Cero Vagos nunca te pide pagar.</span>
+    </div>`;
+  $('#modal').classList.add('on');
+  document.body.style.overflow = 'hidden';
+}
+function cerrar(){ $('#modal').classList.remove('on'); document.body.style.overflow=''; }
+$('#modal').addEventListener('click', e=>{ if(e.target.id==='modal') cerrar(); });
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') cerrar(); });
+
+/* ---------- listeners ---------- */
+$('#q').addEventListener('input', e=>{ estado.q = e.target.value; render(); });
+$('#fCiudad').addEventListener('change', e=>{ estado.ciudad = e.target.value; render(); });
+$('#fModalidad').addEventListener('change', e=>{ estado.modalidad = e.target.value; render(); });
+$('#fSueldo').addEventListener('change', e=>{ estado.sueldo = +e.target.value; render(); });
+
+$('#heroSearch').addEventListener('submit', ()=>{
+  estado.q = $('#heroInput').value; $('#q').value = estado.q;
+  render(); $('#ofertas').scrollIntoView({behavior:'smooth'});
+});
+document.querySelectorAll('.hero__chips button').forEach(b=>{
+  b.onclick = ()=>{
+    estado.cat = b.dataset.q; estado.q=''; $('#q').value='';
+    pintarChips(); render(); $('#ofertas').scrollIntoView({behavior:'smooth'});
+  };
+});
+$('#burger').onclick = ()=> $('#navLinks').classList.toggle('open');
+
+/* ---------- aviso de modo demostración ---------- */
+if(DEMO){
+  const b = document.createElement('div');
+  b.style.cssText = 'background:var(--amarillo);border-bottom:3px solid var(--negro);'
+    + 'padding:10px 20px;font-weight:700;font-size:13px;text-align:center;'
+    + 'text-transform:uppercase;letter-spacing:.03em';
+  b.textContent = 'Modo demostración · ofertas de ejemplo, no reales';
+  document.body.insertBefore(b, document.body.firstChild);
+}
+
+/* ---------- métricas reales del motor, si existen ---------- */
+if(!DEMO && MOTOR && MOTOR.stats){
+  const s = MOTOR.stats, n = x => (x||0).toLocaleString('es-PE');
+  $('#sEscaneados').textContent = n(s.total_procesadas);
+  $('#sAprobadas').textContent  = n(s.aprobadas_vigentes);
+  $('#sTasa').textContent       = (s.pct_sin_sueldo ?? 0) + '%';
+  $('#sPortales').textContent   = Object.keys(s.por_fuente||{}).length || 9;
+  $('#sEscaneados').nextElementSibling.textContent = 'Avisos revisados';
+  $('#sAprobadas').nextElementSibling.textContent  = 'Pasaron el filtro';
+  $('#sTasa').nextElementSibling.textContent = 'No dice cuánto paga';
+  const fecha = new Date(MOTOR.generado);
+  $('#actualizado').textContent =
+    `Actualizado el ${fecha.toLocaleDateString('es-PE')} a las ${fecha.toLocaleTimeString('es-PE',{hour:'2-digit',minute:'2-digit'})}. ` +
+    `Cada aviso muestra su puntaje de completitud y de qué portal salió.`;
+}
+
+pintarChips();
+render();
+</script>
+
+
+</body>
+</html>

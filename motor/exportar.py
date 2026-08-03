@@ -1,0 +1,86 @@
+"""
+Exportador al sitio.
+
+Genera `datos/ofertas.js`, que el index.html carga con un <script> normal.
+Se usa un .js en vez de .json a propósito: así el prototipo funciona abriendo
+el archivo con doble clic, sin servidor y sin problemas de CORS.
+"""
+from __future__ import annotations
+
+import json
+from datetime import date, datetime
+from pathlib import Path
+
+from .almacen import Almacen
+
+RAIZ = Path(__file__).resolve().parent.parent
+SALIDA_JS = RAIZ / "datos" / "ofertas.js"
+SALIDA_JSON = RAIZ / "datos" / "ofertas.json"
+
+
+def _dias_desde(valor: str | None) -> int | None:
+    if not valor:
+        return None
+    try:
+        return (date.today() - date.fromisoformat(valor[:10])).days
+    except ValueError:
+        return None
+
+
+def _a_formato_web(fila: dict, indice: int) -> dict:
+    dias = _dias_desde(fila.get("publicado")) or 0
+    restantes = _dias_desde(fila.get("vence"))
+    # _dias_desde devuelve días transcurridos; para el cierre queremos los que
+    # faltan, que es el mismo número al revés.
+    restantes = -restantes if restantes is not None else None
+
+    return {
+        "id": indice,
+        "puesto": fila["puesto"],
+        "empresa": fila["empresa"] or "Empresa confidencial",
+        "cat": fila["categoria"] or "Otros",
+        "min": fila["sueldo_min"] or 0,
+        "max": fila["sueldo_max"] or fila["sueldo_min"] or 0,
+        "modalidad": fila["modalidad"] or "Presencial",
+        "ciudad": fila["ciudad"] or "Perú",
+        "fuente": fila["fuente"],
+        "dias": max(0, dias),
+        "vence": fila.get("vence") or "",
+        "restan": restantes,          # None si el aviso no dice hasta cuándo
+        "score": fila["score"],
+        "resumen": fila["resumen"] or "",
+        "funciones": fila["funciones"],
+        "requisitos": fila["requisitos"],
+        "beneficios": fila["beneficios"],
+        "url": fila["url"],
+    }
+
+
+def exportar(almacen: Almacen | None = None, limite: int = 500) -> dict:
+    al = almacen or Almacen()
+    # Nunca se exporta sin depurar antes: si no, una oferta cuyo plazo cerró
+    # anoche seguiría publicada hasta la próxima recolección.
+    quitadas = al.depurar()
+    filas = al.aprobadas(limite)
+    ofertas = [_a_formato_web(f, i + 1) for i, f in enumerate(filas)]
+    stats = al.estadisticas()
+
+    payload = {
+        "generado": datetime.now().isoformat(timespec="seconds"),
+        "total": len(ofertas),
+        "stats": stats,
+        "ofertas": ofertas,
+    }
+
+    SALIDA_JS.parent.mkdir(parents=True, exist_ok=True)
+    cuerpo = json.dumps(payload, ensure_ascii=False, indent=1)
+
+    SALIDA_JSON.write_text(cuerpo, encoding="utf-8")
+    SALIDA_JS.write_text(
+        "/* Generado por el motor de Cero Vagos. No editar a mano. */\n"
+        f"window.CERO_VAGOS = {cuerpo};\n",
+        encoding="utf-8",
+    )
+
+    return {"archivo": str(SALIDA_JS), "ofertas": len(ofertas),
+            "stats": stats, "quitadas": quitadas}

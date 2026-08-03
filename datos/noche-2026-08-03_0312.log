@@ -1,0 +1,508 @@
+════════════════════════════════════════════════════════
+  CONVOCATORIAS DEL ESTADO · 03:12:44
+════════════════════════════════════════════════════════
+/Users/f/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+
+▸ Convocatorias del Estado
+  ✗ [ 69] Profesional I — Solo 0 funciones detalladas (mínimo 1)
+  ✗ [ 66] Abogado De Demuna — Solo 0 funciones detalladas (mínimo 1)
+  ✗ [ 72] Asistente Técnico De Obra Ii — Solo 0 funciones detalladas (mínimo 1)
+  ✗ [ 69] Especialista En Planeamiento Estrategico Y Gestion Presupuestal Y De Inversiones — Solo 0 funciones detalladas (mínimo 1)
+  ✓ [ 84] Auxiliar Administrativo — Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco (S/ 2,100)
+  ✗ [ 72] Tecnico I — Solo 0 funciones detalladas (mínimo 1)
+  ✗ [ 72] Analista De Presupuesto — Solo 0 funciones detalladas (mínimo 1)
+  ✗ [ 72] Asistente Tecnico Ii — Solo 0 funciones detalladas (mínimo 1)
+  ✗ [ 72] Especialista En Salud Ambiental Ii — Solo 0 funciones detalladas (mínimo 1)
+  ✗ [ 72] Tecnico Administrativo I — Solo 0 funciones detalladas (mínimo 1)
+  Incidencias:
+      · No se llegó a las funciones: el aviso no enlaza bases en PDF legibles ni desde la página de la entidad   [se repitió 12 veces]
+      · 500 avisos saltados porque su plazo ya cerró
+
+══════════════════════════════════════════════════════════
+  RESUMEN DE LA CORRIDA
+══════════════════════════════════════════════════════════
+  Avisos leídos          12
+  Pasaron el filtro       1   (8.3%)
+  Rechazados              9
+  Nuevos en la base       1
+  Duplicados              2
+  Marcados vencidos       0
+
+  Por qué se rechazaron (un aviso puede fallar en varias):
+       9×  Solo N funciones detalladas (mínimo N)
+══════════════════════════════════════════════════════════
+
+→ 7 ofertas exportadas a /Users/f/Desktop/cero-vagos/datos/ofertas.js
+
+════════════════════════════════════════════════════════
+  PORTALES PRIVADOS · 03:29:58
+════════════════════════════════════════════════════════
+/Users/f/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+
+▸ Bumeran
+  ✗ [ 65] Asistente de sedes — No declara sueldo
+  ✗ [ 52] Operador de Pre-Prensa Gráfica — No declara sueldo
+  ✗ [ 47] UPC: Analista de Desarrollo Docente — No declara sueldo
+  ✗ [ 59] Vendedor(a) de Tienda — No declara sueldo
+  ✗ [ 62] Vendedor(a) de Tienda — No declara sueldo
+  ✗ [ 32] Vendedor de Tienda — No declara sueldo
+  ✗ [ 49] Ayudante de Cocina — No declara sueldo
+  ✗ [ 63] Promotor de Servicios BCP Abancay — No declara sueldo
+  ✗ [ 63] Promotor de Servicios BCP Pangoa — No declara sueldo
+  ✗ [ 63] Promotor de Servicios BCP La Oroya — No declara sueldo
+  ✓ [ 95] Asistente de Tesoreria — CoverPrime (S/ 1,500)
+  ✗ [ 52] Vendedor B2B — No declara sueldo
+  ✗ [ 52] Ingeniero(a) Geomecánico — No declara sueldo
+  ✗ [ 35] Supervisor de Ventilación y Servicios Mina — No declara sueldo
+  ✗ [ 49] Asesor Comercial de Seguros — No declara sueldo
+  ✗ [ 55] Conductor de Camión para Interior Mina — No declara sueldo
+  ✗ [ 51] Jefe Comercial — No declara sueldo
+  ✓ [ 89] Asistente de Marketing y Comercial — CoverPrime (S/ 1,500)
+  ✗ [ 56] Jefe Comercial de Créditos Mype — No declara sueldo
+  ✗ [ 50] Cajeros de Banca — No declara sueldo
+  ✗ [ 70] Supervisor de Campamentos y Calidad de Vida — No declara sueldo
+  ✗ [ 49] Operador de Streaming y Editor de Clips — No declara sueldo
+  ✗ [ 50] Chofer de Transporte de Carga Pesada — No declara sueldo
+  ✗ [ 49] Asistente Logistico — No declara sueldo
+  ✗ [ 39] Analista de Costos para Licitaciones y Proyectos en Minería Subterránea — No declara sueldo
+  ✗ [ 68] Auxiliar de Costos y Productividad — No declara sueldo
+  ✗ [ 46] Prevencionista de Riesgos — No declara sueldo
+  ✗ [ 52] Ingeniero de Seguridad SSOMA — No declara sueldo
+  ✗ [ 68] Demand Planner — No declara sueldo
+  ✗ [ 55] Instructor — No declara sueldo
+  ✗ [ 38] Ejecutivo Comercial B2B — No declara sueldo
+  ✗ [ 35] Instrumentista(marcona — No declara sueldo
+  ✗ [ 68] Coordinadora General de Experiencia al Paciente — No declara sueldo
+  ✗ [ 24] Practicante Profesional Legal — No declara sueldo
+  ✗ [ 52] Editor de Video Creativo — No declara sueldo
+  ✗ [ 52] Analista Junior de Gestión Documental — No declara sueldo
+  ✗ [ 59] Asistente Contable — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 32] Asesor de Telemarketing Full Time Banco Ripley Breña — No declara sueldo
+  ✗ [ 32] Asesor de Telemarketing Full Time Banco Ripley San Borja — No declara sueldo
+  ✗ [ 32] Asesor de Telemarketing Full Time Banco Ripley Santa Anita — No declara sueldo
+  ✗ [ 32] Asesor de Telemarketing Full Time Banco Ripley Chorrillos — No declara sueldo
+  ✗ [ 27] Practicante de Riesgos Financieros — No declara sueldo
+  ✗ [ 65] Asesora Comercial Los Olivos — No declara sueldo
+  ✗ [ 70] Planner Senior de Mantenimiento de Equipos Trackless — No declara sueldo
+  ✗ [ 44] Asistente Contable — No declara sueldo
+  ✗ [ 70] Almacenero — No declara sueldo
+  ✗ [ 55] Supervisor Comercial Banco Ripley Atocongo — No declara sueldo
+  ✗ [ 58] Supervisor Comercial Volante — No declara sueldo
+  ✗ [ 38] Ejecutivo Comercial Bancario BCP — No declara sueldo
+  ✗ [ 39] Asistente de Seleccion y Desarrollo — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 18] Ejecutivo Comercial — No declara sueldo
+  ✗ [ 68] Analista Comercial — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 45] Analista de Aprendizaje y Desarrollo — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 56] Auxiliar de Informes — No declara sueldo
+  ✗ [ 59] Contador General Sector Farmaceutico — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 55] Asesor de Financiamiento Vehicular — No declara sueldo
+  ✗ [ 65] Administrador Inmobiliario — No declara sueldo
+  ✗ [ 72] Técnico mecánico automotriz — Solo 0 requisitos (mínimo 3)
+  ✗ [ 63] Estibador Ayudante de Almacén MInería y — No declara sueldo
+  ✗ [ 56] Desarrollador Senior de Software — No declara sueldo
+  ✓ [ 84] Asesor de Ventas — CAMARA DE COMERCIO EXTERIOR S.A.C. (S/ 1,200)
+  ✗ [ 70] Supervisor de Ventas — No declara sueldo
+  ✗ [ 48] Practicante Profesional de Aprendizaje y Desarrollo — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 63] Analista de Reclutamiento y Selección — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 55] Editor Audiovisual — No declara sueldo
+  ✓ [ 94] Asesor de Seguros Vida — Rimac Cia de Seguros y Reaseguros S.A. (S/ 4,000)
+  ✗ [ 35] Auxiliar Contable y facturacion — No declara sueldo
+  ✗ [ 24] Analista de Riesgo Legal Ubicación Fisica Huancayo — No declara sueldo
+  ✗ [ 28] Analista PMO Senior — No declara sueldo
+  ✗ [ 52] Director(a) Ejecutivo(a) ONG — No declara sueldo
+  ✗ [ 41] Analista Senior de Seleccion — No declara sueldo
+  ✗ [ 64] Practicante de Taller — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 64] Practicante de Taller — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 31] Mecanico Linea Amarilla Blanca con Experiencia — No declara sueldo
+  ✗ [ 39] Metalurgista III — No declara sueldo
+  ✗ [ 27] Analista Auxiliar Via Humeda Geoquimica — No declara sueldo
+  ✗ [ 45] Supervisor de Ensayos al Fuego — No declara sueldo
+  ✗ [ 65] Tecnico de Servicio-Montacargas — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 30] Analista de Absorción atómica — No declara sueldo
+  ✗ [ 40] Analista Asistente GSI — No declara sueldo
+  ✗ [ 40] Monitorista Ambiental III — No declara sueldo
+  ✗ [ 40] Operarios — No declara sueldo
+  ✗ [ 68] Analista ICP — No declara sueldo
+  ✗ [ 10] Asesor de Atención al Cliente — No declara sueldo
+  ✗ [ 65] Ejecutivo de Negocios- Linea Amarilla — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 65] Ejecutivo de Negocios- Equipos Logisticos — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 31] Líder Técnico Senior — No declara sueldo
+  ✗ [ 30] Atencion al Cliente — No declara sueldo
+  ✗ [ 30] Trabaja en el BCP como Cajero JULIACA (Planilla BCP +Sueldo — No declara sueldo
+  ✗ [ 70] Técnico de Soporte Informático de Cc.aa — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 40] Asesor de Clientes — No declara sueldo
+  ✗ [ 64] Laureate: Asistente de Talent Management — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 77] Asistente de Gerencia General — Solo 0 beneficios listados (mínimo 2)
+  ✗ [ 63] Practicante de Proyectos de Desarrollo — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 62] Practicante de Costos y Presupuestos — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 65] Practicante de Recursos Humanos — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 65] Traductor Intérprete Chino Mandarín — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 54] Asesor de Negocios: Agencia Nueva Gran Chimú (San Juan de Lurigancho — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 41] Back Office Sin Experiencia Presencial Part Time Full Time Planilla completa — Solo 1 funciones detalladas (mínimo 3)
+  ✗ [ 47] Personal de Atención y Servicio — No declara sueldo
+  ✗ [ 35] Arquitecto — No declara sueldo
+  ✗ [ 52] Encargado de Atención y Gestión de Salón — No declara sueldo
+  ✗ [ 49] Equipo de Cocina — No declara sueldo
+  ✗ [ 49] Lavador de Vehículos — No declara sueldo
+  ✗ [ 35] Analista Programador Backend — No declara sueldo
+  ✗ [ 58] Director de calidad académica, docente y curricular — No declara sueldo
+  ✗ [ 65] Enfermera(o) de Vigilancia Médica — No declara sueldo
+  ✗ [ 68] Auxiliar Administrativo — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 52] Abogada Civil — No declara sueldo
+  ✗ [ 63] Promotor de Servicios Cajero Bancario Scotiabank — No declara sueldo
+  ✗ [ 33] Asistente Senior de Recursos Humanos — No declara sueldo
+  ✗ [ 56] Cajera — No declara sueldo
+  ✓ [ 94] Operaria de Producción — CYL (S/ 1,150)
+  ✗ [ 49] Operario de Almacén — No declara sueldo
+  ✗ [ 49] Representante de Ventas y Atención al Cliente — No declara sueldo
+  ✓ [ 94] Operario de Producción — CYL (S/ 1,150)
+  ✓ [ 91] Operario de Limpieza de Piezas — CYL (S/ 1,150)
+  ✗ [ 52] Especialistas en sistemas de gestión — No declara sueldo
+  ✗ [ 55] Enfermera Licenciada — No declara sueldo
+  ✗ [ 37] Practicante Profesional — No declara sueldo
+  ✓ [ 91] Operario de Limpieza de Piezas-producción con — CYL (S/ 1,150)
+  ✗ [ 52] Ingeniero de Alimentos — No declara sueldo
+  ✗ [ 53] Ejecutiva Comercial Call Center — No declara sueldo
+  ✗ [ 59] Ayudante Muestreo — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 50] Redactor Creativo de Contenidos — No declara sueldo
+  ✗ [ 50] Asistente de Contabilidad — No declara sueldo
+  ✗ [ 50] Asistente de Compras — No declara sueldo
+  ✗ [ 55] Ayudante de Planta — No declara sueldo
+  ✗ [ 35] Control Interno — No declara sueldo
+  ✓ [ 94] Asesor de Seguros Vida — Rimac Cia de Seguros y Reaseguros S.A. (S/ 4,000)
+  ✓ [ 94] Asesor de Seguros Vida — Rimac Cia de Seguros y Reaseguros S.A. (S/ 4,000)
+  ✗ [ 32] Jefe de Negocios Entidad Financiera — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 70] Coordinador de Producción de Ensamble — No declara sueldo
+  ✗ [ 46] Técnico Contable — No declara sueldo
+  ✗ [ 59] Ingeniero de Procura — No declara sueldo
+  ✗ [ 65] Ingeniero de Planeamiento — Sueldo declarado como 'a convenir' o similar
+  ✓ [ 95] Customer Service — CHAMBA TALENT S.A.C. (S/ 1,700 – S/ 2,200)
+  ✗ [ 79] Customer Service Bilingüe — Solo 1 funciones detalladas (mínimo 3)
+  ✗ [ 45] Cajero Bancario — No declara sueldo
+  ✗ [ 10] Se requiere 3 Psicólogas para La Molina, Surco y Miraflores, formación Psicoterapeuta concluida — No declara sueldo
+  ✗ [ 49] Asistente Administrativo y Contable — No declara sueldo
+  ✗ [ 65] Vendedor(a) Corporativo Senior — No declara sueldo
+  ✗ [ 52] Asesor de de créditos grupales — No declara sueldo
+  ✗ [ 46] Practicante Profesional de Riesgos de Crédito, Mercado y Liquidez — No declara sueldo
+  ✗ [ 10] Topografo — No declara sueldo
+  ✗ [ 18] Atención al Cliente YAPE — No declara sueldo
+  ✗ [ 51] Mesero(a) de Fin de Semana — No declara sueldo
+  ✗ [ 52] Ayudante de Cocina — No declara sueldo
+  ✗ [ 49] Sanguchero — No declara sueldo
+  ✗ [ 65] Ejecutivo Comercial Negocios — No declara sueldo
+  ✗ [ 64] Operario(a) de Producción — No declara sueldo
+  ✗ [ 48] Analista de Campañas Digitales y Performance — No declara sueldo
+  ✗ [ 35] Practicante Pre Profesional: Div. Nuevos Negocios — No declara sueldo
+  ✓ [ 91] Operario de Almacén — CYL (S/ 1,150)
+  ✓ [ 91] Operaria de Limpieza de Producción — CYL (S/ 1,150)
+  ✗ [ 44] IT Recruiter — No declara sueldo
+  ✗ [ 48] Analista Contable — No declara sueldo
+  ✗ [ 65] Asistente de Marketing Digital — No declara sueldo
+  ✗ [ 55] Supervisor de Mantenimiento Mecánico Mina — No declara sueldo
+  ✗ [ 49] Asesor(a) de Negocios de Formación — No declara sueldo
+  ✗ [ 49] Técnico Electrónico Automotriz — No declara sueldo
+  ✗ [ 62] Asesor(a) Comercial — No declara sueldo
+  ✗ [ 46] Estilista de Uñas — No declara sueldo
+  ✗ [ 52] Ejecutivo(a) Comercial — No declara sueldo
+  ✗ [ 60] Practicante Profesional de Comunicación, Cultura y Bienestar — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 20] Asesor(a) Químico Comercial — No declara sueldo
+  ✗ [ 29] Asesor Comercial — No declara sueldo
+  ✗ [ 24] Jefe de la Unidad de Riesgos — No declara sueldo
+  ✗ [ 29] Asesor Comercial — No declara sueldo
+  ✗ [ 65] Auxiliar de Calidad — No declara sueldo
+  ✗ [ 55] Asesor de Ventas Inmobiliarias — No declara sueldo
+  ✗ [ 55] Abogado — No declara sueldo
+  ✗ [ 63] Coordinador(a) de Talento Humano y Desarrollo Organizacional — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 49] Representante Comercial — No declara sueldo
+  ✗ [ 49] Analista de administración y capacitación — No declara sueldo
+  ✗ [ 25] Jefe — No declara sueldo
+  ✗ [ 63] Cajero Bancario Scotiabank — No declara sueldo
+  ✗ [ 45] Coordinador(a) de Gestión Legal Municipal — No declara sueldo
+  ✗ [ 45] Coordinador(a) de Mantenimiento — No declara sueldo
+  ✗ [ 60] Asistente Administrativa — No declara sueldo
+  ✗ [ 60] Editor Audiovisual Semi Senior — No declara sueldo
+  ✗ [ 10] Coordinador de Oficina Técnica e Inmobiliaria — No declara sueldo
+  ✗ [ 39] Analista Programador Backend Java — No declara sueldo
+  ✗ [ 55] Docente de Soldadura — No declara sueldo
+  ✗ [ 65] Desarrollador Full Stack con Enfoque en Análisis — No declara sueldo
+  ✗ [ 31] Asesor(a) de Negocios con Experiencia Agencia Santa Luzmila — No declara sueldo
+  ✗ [ 55] Asistente de Riesgos de TI y Seguridad de la Información — No declara sueldo
+  ✗ [ 35] Analista de Nómina — No declara sueldo
+  ✗ [ 48] Ingeniero Preventa Networking — No declara sueldo
+  ✗ [ 53] Coordinador de Atracción del Talento — No declara sueldo
+  ✗ [ 68] Practicante Profesional de Reclutamiento y Selección — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 68] Supervisor de Seguridad Patrimonial — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 63] Analista de RRHH — No declara sueldo
+  ✗ [ 49] Practicante Contable — No declara sueldo
+  ✓ [ 95] Auxiliar Operativo — Servicios Postales del Perú S.A. (S/ 1,130)
+  ✗ [ 68] Revenue Manager — No declara sueldo
+  ✗ [ 68] Egresado Técnico o universitario en Ing. Electrónica — No declara sueldo
+  ✗ [ 63] Tesorero — No declara sueldo
+  ✗ [ 55] Auditor de Auditoría Continua y de Cumplimiento — No declara sueldo
+  ✗ [ 36] Ejecutivo — No declara sueldo
+  ✗ [ 42] Supervisor de Inversión Privada — No declara sueldo
+  ✗ [ 66] Analista Contable — No declara sueldo
+  ✗ [ 52] Analista de Compras y Servicios — No declara sueldo
+  ✗ [ 39] Asistente de Ventas — No declara sueldo
+  ✗ [ 60] Comprador Junior — No declara sueldo
+  ✗ [ 65] Ejecutivo Comercial — No declara sueldo
+  ✗ [ 62] Desarrollador .NET Semi Senior — No declara sueldo
+  ✗ [ 32] Programador Java Legacy — No declara sueldo
+  ✗ [ 65] Asistente de Direccion Tecnica — No declara sueldo
+  ✗ [ 24] Contact Center en Atención al Cliente — No declara sueldo
+  ✗ [ 68] Ejecutivo Comercial Multisede — No declara sueldo
+  ✗ [ 50] Asesor de Negocios — No declara sueldo
+  ✗ [ 60] Analista de Compras — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 55] HR Specialist — No declara sueldo
+  ✗ [ 62] Support Engineer I — No declara sueldo
+  ✗ [ 67] Practicante Profesional de Contabilidad — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 67] Auxiliar Contable — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 60] Coordinador de Recaudación — No declara sueldo
+  ✗ [ 58] Especialista de Finanzas y Administración — No declara sueldo
+  ✗ [ 64] Supervisor de SST — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 30] Senior iOS Developer — No declara sueldo
+  ✗ [ 62] Gestor de Negocios Masivos Junior — No declara sueldo
+  ✓ [ 89] Labora de Lunes a Viernes FIJO! Atención al cliente — ManpowerGroup Perú (S/ 2,100)
+  ✗ [ 65] Visitador Médico — No declara sueldo
+  ✗ [ 33] Representante de Servicios — No declara sueldo
+  ✗ [ 50] Asistente de remuneraciones — No declara sueldo
+  ✗ [ 49] Asistente Contable Administrativo — No declara sueldo
+  ✗ [ 37] Banco BBVA — No declara sueldo
+  ✗ [ 33] Representante de Servicios — No declara sueldo
+  ✗ [ 33] Representante de Servicios — No declara sueldo
+  ✗ [ 39] Promotor de Servicios BCP — No declara sueldo
+  ✗ [ 39] Promotor de Servicios BCP — No declara sueldo
+  ✗ [ 38] Ejecutivo de Banca Pyme Piura — No declara sueldo
+  ✗ [ 24] Jefes de Práctica de Arquitectura 2026 1 — No declara sueldo
+  ✗ [ 34] Ingeniero de Datos — No declara sueldo
+  ✗ [ 50] Analista de Excelencia Operacional — No declara sueldo
+  ✗ [ 56] Asistente de tecnología de la información — No declara sueldo
+  ✗ [ 37] Desarrollador Host — No declara sueldo
+  ✗ [ 59] Abogado Junior — No declara sueldo
+  ✗ [ 65] Ejecutivo(a) de crédito vehicular — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 39] Promotor de Servicios BCP -Lima San Isidro — No declara sueldo
+  ✗ [ 37] Desarrollador APX — No declara sueldo
+  ✗ [ 65] Asesor(a) Técnico Comercial — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 65] Ejecutivo(a) comercial — Sueldo declarado como 'a convenir' o similar
+  ✓ [ 95] Practicante Profesional de Contabilidad — CENTAURO EDITORES SAC (S/ 1,300 – S/ 1,600)
+  ✗ [ 55] Coordinador de Planificación y Programación Académica — No declara sueldo
+  ✗ [ 52] Practicante preprofesional de Ing. Sistemas, Ing. de Telecomunicaciones y — No declara sueldo
+  ✗ [ 32] Jefe de Compras e Importaciones — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 65] Enfermera Ocupacional — No declara sueldo
+  ✗ [ 50] Coordinador de Comunicaciones — No declara sueldo
+  ✗ [ 33] Promotor(a) educativo — No declara sueldo
+  ✗ [ 76] Asistente de Operaciones — Solo 2 requisitos (mínimo 3)
+  ✗ [ 65] Especialista de Desarrollo TI — No declara sueldo
+  ✗ [ 27] Analista de Costos y Presupuestos — No declara sueldo
+  ✗ [ 28] Supervisor de Almacén Huaral — No declara sueldo
+  ✗ [ 59] Practicante preprofesional de Ing. Sistemas y — No declara sueldo
+  ✗ [ 51] Ejecutivo de ventas — Solo 0 funciones detalladas (mínimo 3)
+  ✗ [ 54] Gerente de Operaciones — Sueldo declarado como 'a convenir' o similar
+  ✓ [ 92] Supervisor(a) de Energías Renovables — Talento Humano Perú (S/ 2,500)
+  ✗ [ 51] Ejecutivo de Ventas — Solo 0 funciones detalladas (mínimo 3)
+  ✗ [ 40] Analista de Redes Sociales — No declara sueldo
+  ✗ [ 35] Practicante Pre Profesional — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 55] Psicóloga Licenciada — No declara sueldo
+  ✗ [ 35] Ejecutivo de Ventas — No declara sueldo
+  ✗ [ 35] Ejecutivo — No declara sueldo
+  ✗ [ 70] Auxiliar Administrativo — No declara sueldo
+  ✗ [ 51] Asesor de ventas — Solo 0 funciones detalladas (mínimo 3)
+  ✗ [ 65] Jefe de Operaciones Uripa Ref 1310 2026 — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 42] Gerente de Productos — No declara sueldo
+  ✗ [ 65] Ingeniero de Producción — No declara sueldo
+  ✗ [ 51] Asesor de ventas — Solo 0 funciones detalladas (mínimo 3)
+  ✗ [ 65] Asesor de Telemarketing- Sector Inmobilirio — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 55] Especialista Gestión Cultural y de Plataformas Digitales — No declara sueldo
+  ✗ [ 50] Asesor (a) de Soporte Técnico en Linea — No declara sueldo
+  ✗ [ 50] Asesor (a) de Soporte Técnico — No declara sueldo
+  ✗ [ 60] Administrador Puerto Maldonado — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 52] Enfermera Ocupacional — No declara sueldo
+  ✗ [ 35] Practicante Pre profesional de Finanzas — No declara sueldo
+  ✗ [ 51] Ejecutivo de ventas — Solo 0 funciones detalladas (mínimo 3)
+  ✗ [ 30] Practicante Pre profesional de Almacén — No declara sueldo
+  ✗ [ 39] Asistente de bienestar y clima — No declara sueldo
+  ✗ [ 24] Docente de Ingeniería Geológica — No declara sueldo
+  ✗ [ 33] Agente Bidireccional, Educación Continua — No declara sueldo
+  ✗ [ 55] Diseñador Animador — No declara sueldo
+  ✗ [ 67] Coordinador(a) Junior de Eventos — No declara sueldo
+  ✗ [ 70] Asistente de Eventos — No declara sueldo
+  ✗ [ 51] Ejecutivo de Ventas — Solo 0 funciones detalladas (mínimo 3)
+  ✗ [ 35] Jefe de Guardia Avance — No declara sueldo
+  ✗ [ 65] Promotor de Ventas — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 45] Practicante Profesional de Ingeniería Biomédica — Solo 2 funciones detalladas (mínimo 3)
+  ✗ [ 18] Promotos de Servicios — No declara sueldo
+  ✗ [ 50] Asistente de Seguridad y Protección — No declara sueldo
+  ✗ [ 62] Auditor para Restaurantes — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 53] Analista Sr. de Planeamiento Financiero — No declara sueldo
+  ✗ [ 50] Supervisor(a) de Tesorería — No declara sueldo
+  ✗ [ 65] Promotores de ventas Inbox Arequipa Mall Cayma — No declara sueldo
+  ✗ [ 28] Contador General — No declara sueldo
+  ✗ [ 55] Supervisora Call Center — No declara sueldo
+  ✗ [ 65] Ejecutiva (o) Atención de Salud — No declara sueldo
+  ✗ [ 55] Product Manager — No declara sueldo
+  ✗ [ 55] Analista de Recursos Humanos — No declara sueldo
+  ✗ [ 33] Business Analyst — No declara sueldo
+  ✗ [ 31] Abogado — No declara sueldo
+  ✗ [ 65] Generalista de Recursos Humanos — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 35] Supervisor — No declara sueldo
+  ✗ [ 27] Practicante Profesional de Arquitectura — No declara sueldo
+  ✗ [ 62] Analista de contenido — No declara sueldo
+  ✗ [ 49] Coordinador de Operaciones — No declara sueldo
+  ✗ [ 61] Analista Programador — Solo 0 funciones detalladas (mínimo 3)
+  ✗ [ 59] Operador de Aguas y Relaves — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 14] Asesor de Experiencia al Cliente — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 53] Asesor de Servicio al Cliente — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 33] Representante de Servicios — No declara sueldo
+  ✗ [ 35] Agente comercial de seguros — No declara sueldo
+  ✗ [ 27] Especialista en edición de video, diseño grafico y Ecommerce — No declara sueldo
+  ✗ [ 62] Representante Comercial — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 65] Analista Contable y de Costos — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 65] Administrador en Sitio — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 54] Analista de Tesorería y Recaudación Junior — No declara sueldo
+  ✗ [ 54] Apoyo de RRHH — No declara sueldo
+  ✗ [ 68] Asistente de procesos — No declara sueldo
+  ✗ [ 48] Analista de Procesos Por Proyecto — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 56] Asistente de Contrataciones — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 25] Asesor(a) de Ventas Telefónicas — No declara sueldo
+  ✗ [ 54] Coordinador Junior De Marketing — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 51] Asesor de ventas — Solo 0 funciones detalladas (mínimo 3)
+  ✗ [ 44] Técnico Mecánico Industrial — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 62] Gestor(a) de Fidelización de Clientes — No declara sueldo
+  ✗ [ 18] Funcionario(a) de Negocios y Servicios Temporal — No declara sueldo
+  ✗ [ 44] Vendedora Inmobiliario — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 38] Ejecutivo Comercial Bancario BCP — No declara sueldo
+  ✗ [ 56] Coordinador de Mesa de Ayuda Jr — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 55] Jefe de Planeamiento y Control — No declara sueldo
+  ✗ [ 70] Ejecutivo de Customer Service — No declara sueldo
+  ✗ [ 42] Supervisor de Almacén en Áncash — No declara sueldo
+  ✗ [ 68] Analista Plaft — No declara sueldo
+  ✗ [ 65] Abogado — No declara sueldo
+  ✗ [ 65] Practicante Profesional de Contrataciones — No declara sueldo
+  ✗ [ 23] Analista Senior de Selección y Desarrollo del Talento — No declara sueldo
+  ✗ [ 65] Jefe de sistemas — No declara sueldo
+  ✗ [ 55] Practicante Profesional de Finanzas — No declara sueldo
+  ✗ [ 39] Comprador(a) Senior de Materias Primas e Insumos Industriales — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 65] Ejecutivo Comercial — No declara sueldo
+  ✗ [ 84] Promotora de Ventas de Colchones — Solo 2 requisitos (mínimo 3)
+  ✓ [ 93] Operario de montaje — Estanterías Metálicas JRM S.A.C (S/ 1,800 – S/ 2,000)
+  ✗ [ 62] Analista de Relaciones Laborales — No declara sueldo
+  ✗ [ 55] Analista Programador — No declara sueldo
+  ✗ [ 65] Ejecutivo Comercial — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 54] ANALISTA DE CONTROL INTERNO y RIESGOS — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 63] Asistente de Facturación Contable — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 52] Analista contable — No declara sueldo
+  ✗ [ 51] Asesor comercial Multiproducto — Solo 0 funciones detalladas (mínimo 3)
+  ✗ [ 65] Docente tiempo parcial — No declara sueldo
+  ✗ [ 65] Electricista — No declara sueldo
+  ✗ [ 67] Docente de Sistemas — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 56] Asistente de Pricing — No declara sueldo
+  ✗ [ 49] Analista Comercial — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 65] Asesor de ventas Campo — No declara sueldo
+  ✗ [ 52] Diseñador Gráfico — No declara sueldo
+  ✗ [ 65] Asesor de ventas Campo — No declara sueldo
+  ✗ [ 62] Auxiliar de Contabilidad — No declara sueldo
+  ✗ [ 66] Analista Senior de Medios Performance — No declara sueldo
+  ✗ [ 49] Operador de centro de datos — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 47] Analista de Integración AWS — No declara sueldo
+  ✗ [ 45] Supervisor Electricista I Um Cerro Lindo Chincha — No declara sueldo
+  ✗ [ 49] Auxiliar de Limpieza y Mantenimiento — No declara sueldo
+  ✗ [ 51] Gestor de Ventas — Solo 0 funciones detalladas (mínimo 3)
+  ✗ [ 45] Despachador Aduanero — No declara sueldo
+  ✗ [ 49] Ejecutiva de Ventas — No declara sueldo
+  ✗ [ 55] PTC Innovación — No declara sueldo
+  ✗ [ 40] Arquitecto de Soluciones — No declara sueldo
+  ✗ [ 50] Operador de Medios de Pago — No declara sueldo
+  ✗ [ 64] Docente de Humanidades — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 51] Hunter Comercial B2B — No declara sueldo
+  ✗ [ 47] Analista BI Jr — No declara sueldo
+  ✗ [ 29] Analista de Datos — No declara sueldo
+  ✗ [ 61] Docente de Derecho — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 68] Asistente de Operaciones y Logística — No declara sueldo
+  ✗ [ 61] Docente de Contabilidad — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 48] Supervisor de cobranza telefónica — No declara sueldo
+  ✗ [ 22] Licencia por salud : Profesor de Ciencias sociales para el nivel secundaria — No declara sueldo
+  ✗ [ 64] Docente de Ciencias — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 70] Técnico mecánico Líder — No declara sueldo
+  ✗ [ 35] Asistente de Flota Vehicular — No declara sueldo
+  ✗ [ 53] Supervisor(a) de Patio — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 61] Docente de Administración de Empresas — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 35] Sub Gerente Adjunto Gestión Inmobiliaria — No declara sueldo
+  ✗ [ 65] Ejecutiva Comercial B2B — No declara sueldo
+  ✗ [ 52] Supervisor de Calidad de Obras Civiles — No declara sueldo
+  ✗ [ 52] Supervisora de Centro de Control — No declara sueldo
+  ✗ [ 18] Supervisor(a) de Compras — No declara sueldo
+  ✗ [ 10] Asistente de Reclutamiento — No declara sueldo
+  ✗ [ 40] Asistente Contable — No declara sueldo
+  ✗ [ 50] Operario de Mecanizado CNC — No declara sueldo
+  ✗ [ 65] Asistente Contable Junior — No declara sueldo
+  ✗ [ 28] Auxiliar de Publicidad — No declara sueldo
+  ✗ [ 62] Asistente de Almacén — No declara sueldo
+  ✗ [ 60] Analista de reclutamiento y selección — No declara sueldo
+  ✗ [ 35] Cotizador de ventas — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 70] Operador Multiple de Maquinaria Pesada — No declara sueldo
+  ✗ [ 46] Analista de Riesgo Mype — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 70] Analista de Marketing — No declara sueldo
+  ✗ [ 47] Operador del Centro de Control — No declara sueldo
+  ✗ [ 46] Analista de Costos y Presupuestos — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 28] Asistente patrimonial — No declara sueldo
+  ✗ [ 50] Supervisor de Seguridad Patrimonial — No declara sueldo
+  ✗ [ 40] Auxiliar Contable — No declara sueldo
+  ✗ [ 66] Practicante de Ingeniería Informática y — No declara sueldo
+  ✗ [ 35] Practicante de ventas — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 33] Ejecutivo de ventas senior (Sector construcción, industrial y — No declara sueldo
+  ✗ [ 62] Asistente de Tesorería — No declara sueldo
+  ✗ [ 59] Jefe de Clima Cultura y Comunicacion Interna — No declara sueldo
+  ✗ [ 52] Ingeniero de Seguridad, Salud Ocupacional y Medio Ambiente — No declara sueldo
+  ✗ [ 70] Inspector de Calidad — No declara sueldo
+  ✗ [ 65] Supervisor de Prospección — No declara sueldo
+  ✗ [ 49] Técnico Electricista Industrial — No declara sueldo
+  ✗ [ 62] Técnico Electrónico — No declara sueldo
+  ✗ [ 30] Coordinador de Gestión del Cambio — No declara sueldo
+  ✓ [ 95] Administrador de Operaciones — Beliving Talents (S/ 2,000 – S/ 2,500)
+  ✗ [ 35] Asistente de Mantenimiento y Operaciones — No declara sueldo
+  ✗ [ 53] Programador de Sistemas — No declara sueldo
+  ✗ [ 35] Tienda Ripley — No declara sueldo
+  ✗ [ 35] Asistente de Mantenimiento y Operaciones — No declara sueldo
+  ✗ [ 63] Coordinador de Transporte — No declara sueldo
+  ✗ [ 10] Practicante de Contabilidad — No declara sueldo
+  ✗ [ 41] SIN experiencia Back Office Claro Fijo SIN ventas Full time o Part time — Solo 1 funciones detalladas (mínimo 3)
+  ✗ [ 55] Superintendente SSOMA — No declara sueldo
+  ✗ [ 38] Ingeniero de Electricidad Junior — No declara sueldo
+  ✗ [ 38] Ingeniero de Electricidad — No declara sueldo
+  ✗ [ 35] Coordinador De Auditoría- Sede Lima — No declara sueldo
+  ✗ [ 50] Líder Técnico — No declara sueldo
+  ✗ [ 70] Tecnico Electricista Mantenimiento — No declara sueldo
+  ✗ [ 35] Supervisor de Producción de Alimentos — No declara sueldo
+  ✗ [ 50] Asistente de Planillas — No declara sueldo
+  ✗ [ 35] Asistente de internados — No declara sueldo
+  ✗ [ 44] Ejecutivo comercial experiencia en alimentos — No declara sueldo
+  ✗ [ 24] Auxiliar Vehicular de Contratos y Recuperaciones Ubicacion Fisica: Agencia la Molina — No declara sueldo
+  ✗ [ 50] Especialista en Ciberseguridad — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 50] Analista de Sistemas — No declara sueldo
+  ✗ [ 33] Practicante profesional Administración — No declara sueldo
+  ✗ [ 65] Asistente Contable — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 62] Auditor de calidad — No declara sueldo
+  ✗ [ 16] Abogado(a) con experiencia en Derecho Corporativo — No declara sueldo
+  ✗ [ 55] Comprador Técnico Nacional — No declara sueldo
+  ✗ [ 52] Vendedor(a) de tienda — No declara sueldo
+  ✗ [ 65] Analista Logístico (Minería — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 40] Ejecutivo de Admisión — No declara sueldo
+  ✗ [ 50] Atención al Cliente y Mantenimiento de Pista — No declara sueldo
+  ✗ [ 50] Media Buyer Remoto — No declara sueldo
+  ✗ [ 68] Operario textil — No declara sueldo
+  ✓ [ 94] Representante de Servicios — CAJA CUSCO (S/ 1,380)
+  ✗ [ 31] Asesor(a) de Negocios con Experiencia(producto Emprende Mujer) Agencia Callao — No declara sueldo
+  ✗ [ 39] Practicante Profesional de Créditos — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 67] Asesor de Negocios Nuevos Mercados II — No declara sueldo
+  ✗ [ 65] Practicante de Contabilidad y Controlling Financiero — No declara sueldo
+  ✗ [ 50] Supervisor de transporte de personal — No declara sueldo
+  ✓ [ 90] Operador de Monitoreo Vehicular — Confidencial (S/ 1,200)
+  ✗ [ 28] Técnico Electrónico Industrial — Sueldo declarado como 'a convenir' o similar
+  ✗ [ 35] Financiera SURGIR — No declara sueldo
+  ✗ [ 31] Ejecutivo Banca Pyme Fac. Negociable — No declara sueldo
+  ✓ [ 87] Practicante de Contabilidad — Confidencial (S/ 565)
+  ✗ [ 45] Operario de Mantenimiento — No declara sueldo
+  ✗ [ 35] Desarrollador Comercial — No declara sueldo
+  ✗ [ 60] Practicante de Dirección General — Solo 0 requisitos (mínimo 3)
