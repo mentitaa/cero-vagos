@@ -1004,18 +1004,32 @@ function pintarChips(){
   });
 }
 
-const soles = n => 'S/ ' + n.toLocaleString('es-PE');
+/* ── Limpieza de texto ajeno ──────────────────────────────────────────
+   El contenido de cada oferta viene de portales que no controlamos. Si un
+   aviso trae código dentro del título, insertarlo tal cual lo ejecutaría en
+   el navegador de quien visita el sitio. Todo dato de una oferta pasa por
+   aquí antes de pintarse. */
+const esc = v => String(v ?? '').replace(/[&<>"'`]/g, c => ({
+  '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;','`':'&#96;'
+}[c]));
+
+/* Solo se aceptan enlaces web de verdad: nada de javascript: ni data: */
+const url_segura = u => /^https?:\/\//i.test(String(u || '')) ? String(u) : '#';
+
+const soles = n => 'S/ ' + (Number(n) || 0).toLocaleString('es-PE');
 const cuando = d => d===0 ? 'Hoy' : d===1 ? 'Ayer' : 'Hace ' + d + ' días';
 
 /* Cuánto queda para postular. Si el aviso no lo dice, no se inventa. */
 function plazo(o){
   if(o.restan === null || o.restan === undefined) return null;
-  if(o.restan < 0)  return {txt:'Cerrado', color:'var(--negro)', letra:'#fff'};
-  if(o.restan === 0) return {txt:'Cierra HOY', color:'var(--rojo)', letra:'#fff'};
-  if(o.restan === 1) return {txt:'Cierra mañana', color:'var(--rojo)', letra:'#fff'};
-  if(o.restan <= 3)  return {txt:`Cierra en ${o.restan} días`, color:'var(--rojo)', letra:'#fff'};
-  if(o.restan <= 7)  return {txt:`Cierra en ${o.restan} días`, color:'var(--amarillo)', letra:'var(--negro)'};
-  return {txt:`Cierra en ${o.restan} días`, color:'var(--lima)', letra:'var(--negro)'};
+  const restan = Number(o.restan);
+  if(!Number.isFinite(restan)) return null;
+  if(restan < 0)  return {txt:'Cerrado', color:'var(--negro)', letra:'#fff'};
+  if(restan === 0) return {txt:'Cierra HOY', color:'var(--rojo)', letra:'#fff'};
+  if(restan === 1) return {txt:'Cierra mañana', color:'var(--rojo)', letra:'#fff'};
+  if(restan <= 3)  return {txt:`Cierra en ${restan} días`, color:'var(--rojo)', letra:'#fff'};
+  if(restan <= 7)  return {txt:`Cierra en ${restan} días`, color:'var(--amarillo)', letra:'var(--negro)'};
+  return {txt:`Cierra en ${restan} días`, color:'var(--lima)', letra:'var(--negro)'};
 }
 
 function filtrar(){
@@ -1047,30 +1061,30 @@ function render(){
     const p = plazo(o);
     const x = o.exclusiva;   // {universidad, siglas, url} cuando la oferta es de una bolsa aliada
     return `
-    <article class="job ${x ? 'job--exc' : ''}" onclick="abrir(${o.id})" tabindex="0" onkeypress="if(event.key==='Enter')abrir(${o.id})">
-      ${x ? `<div class="sello-uni">Exclusiva · ${x.siglas}</div>` : ''}
-      ${p && !x ? `<div class="job__plazo" style="background:${p.color};color:${p.letra}">${p.txt}</div>` : ''}
+    <article class="job ${x ? 'job--exc' : ''}" onclick="abrir(${Number(o.id)||0})" tabindex="0" onkeypress="if(event.key==='Enter')abrir(${Number(o.id)||0})">
+      ${x ? `<div class="sello-uni">Exclusiva · ${esc(x.siglas)}</div>` : ''}
+      ${p && !x ? `<div class="job__plazo" style="background:${p.color};color:${p.letra}">${esc(p.txt)}</div>` : ''}
       <div class="job__top">
-        <div class="job__logo" style="background:${COLORES[i % COLORES.length]}">${o.empresa[0]}</div>
+        <div class="job__logo" style="background:${COLORES[i % COLORES.length]}">${esc((o.empresa||'?')[0])}</div>
         <div class="job__head">
-          <h3>${o.puesto}</h3>
-          <p>${o.empresa}</p>
+          <h3>${esc(o.puesto)}</h3>
+          <p>${esc(o.empresa)}</p>
         </div>
-        <div class="job__score">${o.score}<small>SCORE</small></div>
+        <div class="job__score">${esc(o.score)}<small>SCORE</small></div>
       </div>
       <div class="job__pay">${o.min===o.max ? soles(o.min) : soles(o.min)+' – '+soles(o.max)}<span>al mes</span></div>
       <div class="job__meta">
-        <span class="pill">📍 ${o.ciudad}</span>
-        <span class="pill">${o.modalidad}</span>
-        <span class="pill">${o.cat}</span>
+        <span class="pill">📍 ${esc(o.ciudad)}</span>
+        <span class="pill">${esc(o.modalidad)}</span>
+        <span class="pill">${esc(o.cat)}</span>
       </div>
-      <div class="job__body">${o.resumen}</div>
+      <div class="job__body">${esc(o.resumen)}</div>
       ${x ? `<div class="job__exc">
-               <b>Solo para ${x.universidad}</b>
+               <b>Solo para ${esc(x.universidad)}</b>
                <span>El detalle de esta oferta está reservado a sus estudiantes y egresados.</span>
-               <em>Ver en el portal de ${x.siglas} →</em>
+               <em>Ver en el portal de ${esc(x.siglas)} →</em>
              </div>` : ''}
-      <div class="job__foot"><span>${cuando(o.dias)}</span><em>vía ${o.fuente}</em></div>
+      <div class="job__foot"><span>${cuando(o.dias)}</span><em>vía ${esc(o.fuente)}</em></div>
     </article>`;
   }).join('');
 }
@@ -1086,15 +1100,15 @@ function abrir(id){
     $('#modalBox').innerHTML = `
       <div class="modal__head" style="background:var(--azul)">
         <button class="modal__x" onclick="cerrar()" aria-label="Cerrar">✕</button>
-        <h2>${o.puesto}</h2>
-        <p>${o.empresa} · ${o.ciudad} · Publicada ${cuando(o.dias).toLowerCase()}</p>
-        <p style="margin-top:10px"><span class="pill" style="background:var(--amarillo);color:var(--negro);border-color:var(--negro)">Exclusiva para ${x.universidad}</span></p>
+        <h2>${esc(o.puesto)}</h2>
+        <p>${esc(o.empresa)} · ${esc(o.ciudad)} · Publicada ${cuando(o.dias).toLowerCase()}</p>
+        <p style="margin-top:10px"><span class="pill" style="background:var(--amarillo);color:var(--negro);border-color:var(--negro)">Exclusiva para ${esc(x.universidad)}</span></p>
       </div>
       <div class="mblock" style="border-right:none;background:var(--crema)">
         <h4><i style="background:var(--azul)"></i>Por qué no ves el detalle acá</h4>
         <p style="font-weight:500;font-size:15px;line-height:1.5">
-          Esta vacante la publicó <b>${o.empresa}</b> de forma exclusiva en la bolsa de trabajo
-          de ${x.universidad}. El sueldo, las funciones y los requisitos son parte de ese acuerdo,
+          Esta vacante la publicó <b>${esc(o.empresa)}</b> de forma exclusiva en la bolsa de trabajo
+          de ${esc(x.universidad)}. El sueldo, las funciones y los requisitos son parte de ese acuerdo,
           así que se ven en su portal, no acá.
         </p>
         <p style="font-weight:500;font-size:15px;line-height:1.5;margin-top:12px">
@@ -1103,7 +1117,7 @@ function abrir(id){
         </p>
       </div>
       <div class="modal__foot">
-        <a href="${x.url}" target="_blank" rel="noopener noreferrer" class="btn btn--rojo">Ir al portal de ${x.siglas} →</a>
+        <a href="${url_segura(x.url)}" target="_blank" rel="noopener noreferrer" class="btn btn--rojo">Ir al portal de ${esc(x.siglas)} →</a>
         <button class="btn btn--blanco" onclick="cerrar()">Seguir buscando</button>
         <span style="font-size:12.5px;font-weight:700;opacity:.6">Cero Vagos no guarda ni pide tus datos de estudiante.</span>
       </div>`;
@@ -1115,24 +1129,24 @@ function abrir(id){
   $('#modalBox').innerHTML = `
     <div class="modal__head">
       <button class="modal__x" onclick="cerrar()" aria-label="Cerrar">✕</button>
-      <h2>${o.puesto}</h2>
-      <p>${o.empresa} · ${o.ciudad} · ${o.modalidad} · Publicada ${cuando(o.dias).toLowerCase()}</p>
+      <h2>${esc(o.puesto)}</h2>
+      <p>${esc(o.empresa)} · ${esc(o.ciudad)} · ${esc(o.modalidad)} · Publicada ${cuando(o.dias).toLowerCase()}</p>
       ${(()=>{ const p = plazo(o); return p
-        ? `<p style="margin-top:10px"><span class="pill" style="background:${p.color};color:${p.letra};border-color:var(--negro)">${p.txt} · postula hasta el ${new Date(o.vence+'T00:00:00').toLocaleDateString('es-PE',{day:'numeric',month:'long'})}</span></p>`
+        ? `<p style="margin-top:10px"><span class="pill" style="background:${p.color};color:${p.letra};border-color:var(--negro)">${esc(p.txt)} · postula hasta el ${new Date(o.vence+'T00:00:00').toLocaleDateString('es-PE',{day:'numeric',month:'long'})}</span></p>`
         : `<p style="margin-top:10px"><span class="pill" style="background:var(--blanco);color:var(--negro)">El aviso no indica fecha de cierre</span></p>`; })()}
     </div>
     <div class="modal__pay">
       <div><span style="font-size:12px;font-weight:700;text-transform:uppercase;display:block">Sueldo mensual</span>
       <b>${o.min===o.max ? soles(o.min) : soles(o.min)+' – '+soles(o.max)}</b></div>
-      <span class="pill" style="background:var(--negro);color:var(--lima);border-color:var(--negro)">SCORE DE COMPLETITUD ${o.score}/100</span>
+      <span class="pill" style="background:var(--negro);color:var(--lima);border-color:var(--negro)">SCORE DE COMPLETITUD ${Number(o.score)||0}/100</span>
     </div>
     <div class="modal__grid">
-      <div class="mblock"><h4><i style="background:var(--azul)"></i>Qué vas a hacer</h4><ul>${o.funciones.map(f=>`<li>${f}</li>`).join('')}</ul></div>
-      <div class="mblock"><h4><i style="background:var(--rojo)"></i>Qué piden</h4><ul>${o.requisitos.map(f=>`<li>${f}</li>`).join('')}</ul></div>
-      <div class="mblock" style="grid-column:1/-1;border-right:none;background:var(--lima)"><h4><i style="background:var(--negro)"></i>Qué te dan</h4><ul>${o.beneficios.map(f=>`<li>${f}</li>`).join('')}</ul></div>
+      <div class="mblock"><h4><i style="background:var(--azul)"></i>Qué vas a hacer</h4><ul>${o.funciones.map(f=>`<li>${esc(f)}</li>`).join('')}</ul></div>
+      <div class="mblock"><h4><i style="background:var(--rojo)"></i>Qué piden</h4><ul>${o.requisitos.map(f=>`<li>${esc(f)}</li>`).join('')}</ul></div>
+      <div class="mblock" style="grid-column:1/-1;border-right:none;background:var(--lima)"><h4><i style="background:var(--negro)"></i>Qué te dan</h4><ul>${o.beneficios.map(f=>`<li>${esc(f)}</li>`).join('')}</ul></div>
     </div>
     <div class="modal__foot">
-      <a href="${o.url || '#'}" target="_blank" rel="noopener noreferrer" class="btn btn--rojo">Postular en ${o.fuente} →</a>
+      <a href="${url_segura(o.url)}" target="_blank" rel="noopener noreferrer" class="btn btn--rojo">Postular en ${esc(o.fuente)} →</a>
       <button class="btn btn--blanco" onclick="cerrar()">Seguir buscando</button>
       <span style="font-size:12.5px;font-weight:700;opacity:.6">Te llevamos al aviso original. Cero Vagos nunca te pide pagar.</span>
     </div>`;
