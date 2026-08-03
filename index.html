@@ -450,7 +450,7 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
     <div class="hero__tag">EL FILTRO ANTI-OFERTAS VAGAS DEL PERÚ</div>
     <h1>Aquí no hay<br>ofertas <em>vagas</em>.<br>Ni vagos.</h1>
     <p class="hero__sub">
-      Rastreamos los principales portales de empleo del Perú y <b>botamos el 80%</b>.
+      Revisamos los portales de empleo del Perú y <b>botamos la mayoría</b>.
       Solo publicamos avisos con sueldo en soles, funciones reales, requisitos claros y beneficios escritos. Si le falta uno, no entra.
     </p>
     <form class="search" id="heroSearch" onsubmit="return false;">
@@ -533,10 +533,13 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
 
 <!-- ============ STRIP ============ -->
 <div class="strip">
-  <div><b id="sEscaneados">18,420</b><span>Avisos escaneados hoy</span></div>
-  <div><b id="sAprobadas">2,976</b><span>Pasaron el filtro</span></div>
-  <div><b id="sTasa">100%</b><span>Con sueldo visible</span></div>
-  <div><b id="sPortales">9</b><span>Portales rastreados</span></div>
+  <!-- Estos números los reemplaza el motor con los datos reales de la base.
+       Los valores de aquí son solo el estado inicial: nunca deben inventar
+       una cifra que no salga de una corrida. -->
+  <div><b id="sEscaneados">—</b><span>Avisos revisados</span></div>
+  <div><b id="sAprobadas">—</b><span>Pasaron el filtro</span></div>
+  <div><b id="sTasa">—</b><span>No dice cuánto paga</span></div>
+  <div><b id="sPortales">—</b><span>Portales rastreados</span></div>
 </div>
 
 <!-- ============ EL FILTRO ============ -->
@@ -638,8 +641,8 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
         <ul>
           <li><i>✓</i> Sueldo en soles, siempre, o el aviso no entra</li>
           <li><i>✓</i> Funciones, requisitos y beneficios verificados</li>
-          <li><i>✓</i> Revisamos cada 6 horas: si vence, desaparece</li>
-          <li><i>✓</i> Todo en un solo lugar: 9 portales en una búsqueda</li>
+          <li><i>✓</i> Revisamos cada día: si vence, desaparece</li>
+          <li><i>✓</i> Todo en un solo lugar, en una sola búsqueda</li>
           <li><i>✓</i> Sabes cuánto pagan antes de mandar tu CV</li>
         </ul>
       </div>
@@ -655,7 +658,7 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
         <span class="kicker">100% APROBADAS</span>
         <h2>Ofertas de hoy</h2>
       </div>
-      <p id="actualizado">Actualizado hace 12 minutos. Cada aviso muestra su puntaje de completitud y de qué portal salió.</p>
+      <p id="actualizado">Cada aviso muestra su puntaje de completitud y de qué portal salió.</p>
     </div>
 
     <div class="toolbar">
@@ -696,7 +699,7 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
     <div class="sec-head">
       <div>
         <span class="kicker">DE DÓNDE SALEN</span>
-        <h2>Rastreamos 9 portales.<br>Tú buscas en uno.</h2>
+        <h2>Rastreamos los portales.<br>Tú buscas en uno.</h2>
       </div>
       <p style="color:#fff">No competimos con ellos: los ordenamos. Al postular te llevamos al aviso original de la empresa.</p>
     </div>
@@ -824,7 +827,7 @@ const OFERTAS_DEMO = [
   },
   {
     id:2, puesto:"Asistente Contable", empresa:"Grupo Ferreycorp", cat:"Contabilidad",
-    min:2800, max:3400, modalidad:"Híbrido", ciudad:"Lima", fuente:"Computrabajo", dias:1, score:94,
+    min:2800, max:3400, modalidad:"Híbrido", ciudad:"Lima", fuente:"Bumeran", dias:1, score:94,
     resumen:"Apoyo en el cierre contable mensual y registro de facturación de la unidad minera.",
     funciones:["Registrar comprobantes de compra y venta en SAP","Elaborar conciliaciones bancarias mensuales","Preparar reportes de detracciones y percepciones","Apoyar en el cierre contable mensual y anual","Atender requerimientos de auditoría externa"],
     requisitos:["Bachiller o titulado en Contabilidad","1 a 2 años en puestos contables similares","Excel intermedio (tablas dinámicas, BUSCARV)","Deseable manejo de SAP FI"],
@@ -864,7 +867,7 @@ const OFERTAS_DEMO = [
   },
   {
     id:7, puesto:"Supervisor de Almacén", empresa:"Ransa", cat:"Logística",
-    min:3800, max:4500, modalidad:"Presencial", ciudad:"Callao", fuente:"Computrabajo", dias:3, score:90,
+    min:3800, max:4500, modalidad:"Presencial", ciudad:"Callao", fuente:"Bumeran", dias:3, score:90,
     resumen:"Supervisión de operaciones de recepción, picking y despacho del centro de distribución.",
     funciones:["Supervisar a un equipo de 18 operarios por turno","Controlar los indicadores de exactitud de inventario y fill rate","Gestionar la recepción y el despacho de mercadería","Asegurar el cumplimiento de las normas de seguridad (SST)","Elaborar reportes diarios de productividad en WMS"],
     requisitos:["3+ años supervisando operaciones logísticas","Manejo de sistemas WMS y Excel intermedio","Titulado o bachiller en Ing. Industrial, Logística o afines","Disponibilidad para turnos rotativos"],
@@ -872,7 +875,7 @@ const OFERTAS_DEMO = [
   },
   {
     id:8, puesto:"Diseñador(a) UX/UI", empresa:"Yape", cat:"Tecnología",
-    min:6000, max:8000, modalidad:"Remoto", ciudad:"Lima", fuente:"Indeed Perú", dias:0, score:95,
+    min:6000, max:8000, modalidad:"Remoto", ciudad:"Lima", fuente:"Web de la empresa", dias:0, score:95,
     resumen:"Diseño de flujos y pantallas para nuevas funcionalidades de la billetera digital.",
     funciones:["Diseñar wireframes y prototipos de alta fidelidad en Figma","Mantener y ampliar el design system del producto","Realizar pruebas de usabilidad con usuarios reales","Trabajar con product managers y desarrolladores en squads ágiles","Documentar decisiones de diseño y handoff a desarrollo"],
     requisitos:["3+ años diseñando productos digitales (portafolio obligatorio)","Dominio de Figma y sistemas de diseño","Experiencia en investigación de usuarios","Deseable experiencia en fintech o apps móviles masivas"],
@@ -896,7 +899,7 @@ const OFERTAS_DEMO = [
   },
   {
     id:11, puesto:"Ingeniero de Seguridad y Salud Ocupacional", empresa:"Cosapi", cat:"Ingeniería",
-    min:6500, max:8500, modalidad:"Presencial", ciudad:"Cusco", fuente:"Computrabajo", dias:4, score:92,
+    min:6500, max:8500, modalidad:"Presencial", ciudad:"Cusco", fuente:"Bumeran", dias:4, score:92,
     resumen:"Liderar el sistema de gestión SST en obra de infraestructura vial.",
     funciones:["Implementar y auditar el sistema de gestión SST en obra","Dictar capacitaciones diarias de 5 minutos a cuadrillas","Investigar incidentes y elaborar informes de causa raíz","Coordinar inspecciones con la supervisión del cliente","Gestionar los permisos de trabajo de alto riesgo"],
     requisitos:["Titulado y colegiado en Ing. Industrial, Civil o Ambiental","4+ años en SST en proyectos de construcción","Certificación en la Ley 29783 y curso de 120 horas SST","Disponibilidad para régimen 20x8 en Cusco"],
