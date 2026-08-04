@@ -1,6 +1,6 @@
 /* Generado por el motor de Cero Vagos. No editar a mano. */
 window.CERO_VAGOS = {
- "generado": "2026-08-04T05:06:57",
+ "generado": "2026-08-04T08:40:06",
  "total": 63,
  "stats": {
   "total_procesadas": 1207,
@@ -380,7 +380,7 @@ window.CERO_VAGOS = {
    "vence": "2026-09-30",
    "restan": 57,
    "score": 94,
-   "resumen": "¡TRABAJA EN PRODUCCIÓN – INGRESO RÁPIDO!",
+   "resumen": "¡ÚNETE HOY! TRABAJO EN PRODUCCIÓN INMEDIATO",
    "funciones": [
     "Manejo de las máquinas de varias (anillado-habilitado-corte-caucho y operaciones manuales).",
     "Mantener su puesto de trabajo limpio y ordenado.",
@@ -402,7 +402,7 @@ window.CERO_VAGOS = {
     "Alimentación un 70% cubierto",
     "Buen clima laboral"
    ],
-   "url": "https://www.bumeran.com.pe/empleos/operaria-de-produccion-maquinaria-con-o-sin-experiencia-santa-anita-cyl-1118387178.html"
+   "url": "https://www.bumeran.com.pe/empleos/operaria-de-produccion-maquinaria-santa-anita-cyl-1118387185.html"
   },
   {
    "id": 10,
@@ -519,7 +519,7 @@ window.CERO_VAGOS = {
     "Alimentación cubierta al 70%",
     "Buen clima laboral y oportunidades de crecimiento"
    ],
-   "url": "https://www.bumeran.com.pe/empleos/operario-de-limpieza-de-piezas-produccion-santa-anita-cyl-1118387172.html"
+   "url": "https://www.bumeran.com.pe/empleos/operario-de-limpieza-de-piezas-produccion-santa-anita-cyl-1118387180.html"
   },
   {
    "id": 13,
