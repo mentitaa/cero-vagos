@@ -209,7 +209,7 @@ class TestGeneracion(unittest.TestCase):
         borra. Una convocatoria cerrada indexada en Google es peor que nada.
         """
         self._guardar("a" * 16, "Asistente Contable")
-        self._guardar("b" * 16, "Puesto Que Vencera", dias_vence=8)
+        self._guardar("b" * 16, "Cajero de Tienda", dias_vence=8)
         info = generar(self.almacen, SITIO, self.tmp)
         self.assertEqual(info["paginas"], 2)
 
@@ -372,3 +372,42 @@ class PruebaCompartir(unittest.TestCase):
         from motor.sitio import bloque_compartir
 
         self.assertIn("El 88% de los avisos", bloque_compartir(self.SITIO, 88))
+
+
+class PruebaAislamiento(unittest.TestCase):
+    """
+    Los tests no pueden tocar los archivos de verdad.
+
+    Esto no es purismo: pasó. `generar()` recibía una carpeta temporal para
+    las páginas, pero por dentro llamaba al exportador, que escribía siempre
+    en `datos/ofertas.js` sin mirar la carpeta. Resultado: correr los tests
+    dejaba la portada del sitio con dos ofertas inventadas ("Analista de
+    Datos — Acme"), y se subía así sin que nadie lo notara.
+    """
+
+    def test_generar_no_toca_el_archivo_de_ofertas_de_verdad(self):
+        from motor.sitio import generar
+
+        real = RAIZ / "datos" / "ofertas.js"
+        antes = real.read_bytes() if real.exists() else None
+
+        with tempfile.TemporaryDirectory() as tmp:
+            al = Almacen(":memory:")
+            al.guardar(Oferta(
+                huella="z" * 16, fuente="Bumeran", url="https://origen.pe/9",
+                puesto="Analista de Prueba", empresa="Empresa de Prueba",
+                ciudad="Lima", sueldo_min=2000, sueldo_max=2500,
+                funciones=["Una función"], requisitos=["Un requisito"],
+                beneficios=["Un beneficio"],
+                publicado=date.today(), vence=date.today() + timedelta(days=5),
+                score=88, aprobada=True))
+            generar(al, "https://ejemplo.test", Path(tmp))
+            al.cerrar()
+
+            copia = Path(tmp) / "datos" / "ofertas.js"
+            self.assertTrue(copia.exists(),
+                            "el exportador ni siquiera escribió en la carpeta temporal")
+
+        despues = real.read_bytes() if real.exists() else None
+        self.assertEqual(antes, despues,
+                         "los tests sobrescribieron datos/ofertas.js del proyecto")
