@@ -279,6 +279,27 @@ class Almacen:
             },
         }
 
+    def limpiar_titulos(self) -> int:
+        """
+        Vuelve a pasar el limpiador de títulos por lo ya guardado.
+
+        Hace falta porque las mejoras al limpiador no alcanzan a los avisos que
+        ya estaban en la base: solo se reescriben cuando el motor los vuelve a
+        visitar, y eso puede tardar semanas. Esto los arregla de una.
+        """
+        from .normalizar import limpiar_puesto
+
+        arreglados = 0
+        for fila in self.con.execute("SELECT huella, puesto FROM ofertas").fetchall():
+            limpio = limpiar_puesto(fila["puesto"])
+            if limpio and limpio != fila["puesto"]:
+                self.con.execute("UPDATE ofertas SET puesto = ? WHERE huella = ?",
+                                 (limpio, fila["huella"]))
+                arreglados += 1
+        if arreglados:
+            self.con.commit()
+        return arreglados
+
     # ---------------- transparencia salarial ----------------
 
     def transparencia(self, minimo_avisos: int = 3) -> dict:
@@ -319,6 +340,13 @@ class Almacen:
         periodo = self.con.execute(
             "SELECT MIN(date(capturado)), MAX(date(capturado)) FROM ofertas").fetchone()
 
+        # Las tablas se ordenan por transparencia, que es de lo que hablan.
+        # A igual porcentaje manda el volumen: 100% sobre 12 avisos dice más
+        # que 100% sobre 3.
+        def por_transparencia(filas, ascendente=False):
+            return sorted(filas, key=lambda e: (e["pct"] if ascendente else -e["pct"],
+                                                -e["total"]))
+
         empresas = agrupar("empresa", minimo_avisos)
         return {
             "total": total,
@@ -329,11 +357,11 @@ class Almacen:
             "desde": periodo[0] or "", "hasta": periodo[1] or "",
             "minimo_avisos": minimo_avisos,
             "empresas": empresas,
-            "transparentes": [e for e in empresas if e["pct"] >= 80][:20],
-            "opacas": [e for e in empresas if e["pct"] == 0][:20],
-            "por_fuente": agrupar("fuente"),
-            "por_categoria": agrupar("categoria", 3),
-            "por_ciudad": agrupar("ciudad", 3),
+            "transparentes": por_transparencia([e for e in empresas if e["pct"] >= 80])[:20],
+            "opacas": por_transparencia([e for e in empresas if e["pct"] == 0], True)[:20],
+            "por_fuente": por_transparencia(agrupar("fuente")),
+            "por_categoria": por_transparencia(agrupar("categoria", 3)),
+            "por_ciudad": por_transparencia(agrupar("ciudad", 3)),
         }
 
     @staticmethod

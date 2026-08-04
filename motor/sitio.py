@@ -437,6 +437,9 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
     sitio = (sitio or sitio_publicado(raiz)).rstrip("/")
     al = almacen or Almacen()
     al.depurar()
+    # Los títulos guardados antes de la última mejora del limpiador se
+    # reescriben ahora, sin esperar a que el motor vuelva a ver cada aviso.
+    titulos = al.limpiar_titulos()
     filas = al.aprobadas(1000)
     ofertas = [_preparar(f, i + 1) for i, f in enumerate(filas)]
 
@@ -485,7 +488,7 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
             portada.write_text(texto, encoding="utf-8")
 
     return {"paginas": len(ofertas), "retiradas": retiradas, "sitio": sitio,
-            "legales": legales,
+            "titulos_limpiados": titulos, "legales": legales,
             "pct_sin_sueldo": informe["pct_sin_sueldo"],
             "empresas_analizadas": len(informe["empresas"]),
             "generado": datetime.now().isoformat(timespec="seconds")}
