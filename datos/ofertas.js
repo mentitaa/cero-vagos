@@ -1,6 +1,6 @@
 /* Generado por el motor de Cero Vagos. No editar a mano. */
 window.CERO_VAGOS = {
- "generado": "2026-08-04T00:17:41",
+ "generado": "2026-08-04T02:29:18",
  "total": 63,
  "stats": {
   "total_procesadas": 1207,
@@ -1600,7 +1600,7 @@ window.CERO_VAGOS = {
   },
   {
    "id": 38,
-   "puesto": "Técnico de Aire Acondicionado / Villa el Salvador",
+   "puesto": "Técnico de Aire Acondicionado",
    "empresa": "CONSERH",
    "cat": "Tecnología",
    "min": 2200,
@@ -1929,7 +1929,7 @@ window.CERO_VAGOS = {
   },
   {
    "id": 46,
-   "puesto": "Asistente de Despacho/Turnos Rotativos/Huachipa - Huachipa (Lurigancho)",
+   "puesto": "Asistente de Despacho",
    "empresa": "Lavoro Perú",
    "cat": "Ingeniería",
    "min": 33800,
@@ -2484,7 +2484,7 @@ window.CERO_VAGOS = {
   },
   {
    "id": 59,
-   "puesto": "Operario de planta/ Sueldo fijo + bono fijo mensual + planilla completa",
+   "puesto": "Operario de planta",
    "empresa": "NG Restaurants",
    "cat": "Ingeniería",
    "min": 45760,
@@ -2633,7 +2633,7 @@ window.CERO_VAGOS = {
   },
   {
    "id": 63,
-   "puesto": "¡Gana más de 1800 Soles! Operario de Producción — Sta Anita / Planilla completa + Alimentación - Ingreso inmediato + Horas extra",
+   "puesto": "Operario de Producción",
    "empresa": "CONSERH",
    "cat": "Ingeniería",
    "min": 41600,
