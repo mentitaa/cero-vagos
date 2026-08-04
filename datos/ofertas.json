@@ -1,12 +1,12 @@
 {
- "generado": "2026-08-04T19:02:28",
+ "generado": "2026-08-04T20:05:06",
  "total": 60,
  "stats": {
-  "total_procesadas": 1207,
+  "total_procesadas": 1325,
   "aprobadas_vigentes": 60,
-  "tasa_aprobacion": 5.0,
-  "sin_sueldo": 908,
-  "pct_sin_sueldo": 75,
+  "tasa_aprobacion": 4.5,
+  "sin_sueldo": 1026,
+  "pct_sin_sueldo": 77,
   "sueldo_mediano": 1380,
   "por_fuente": {
    "Bumeran": 32,
