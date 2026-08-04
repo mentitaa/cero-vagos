@@ -6,10 +6,17 @@ quedan guardados en el panel de Formspree.
 La dirección que los recibe está en `index.html`, en una sola línea:
 
 ```js
-const ALERTAS_ENDPOINT = 'https://formspree.io/f/xrpzzoln';
+const ALERTAS_ENDPOINT = 'https://formspree.io/f/xqpzzjeb';
 ```
 
 ---
+
+**Ojo:** esta dirección cambia si alguna vez se borra y se recrea el
+formulario en Formspree. Pasó una vez, al mover el correo del proyecto a
+`info@cerovagos.com`: Formspree no deja borrar un correo que esté enlazado a
+un formulario, y el plan gratis solo admite dos correos. La salida fue rehacer
+el formulario. Si vuelve a pasar, hay que cambiar esa línea de `index.html` y
+volver a poner la restricción de dominio.
 
 ## Cómo se conectó (por si hay que rehacerlo)
 
