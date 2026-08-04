@@ -22,7 +22,11 @@ from pathlib import Path
 
 from .transparencia import ESTILOS
 
-CORREO = "hola@cerovagos.com"          # cambiar cuando exista el correo real
+# Un correo que sí existe. Las páginas legales prometen que se puede pedir
+# la baja de un dato o reportar un aviso: si la dirección rebota, esa
+# promesa es papel mojado. Cambiar por contacto@cerovagos.com el día que
+# se compre el dominio.
+CORREO = "cerovagos.alertas@gmail.com"
 
 # Se agregan al sitemap desde sitio.py.
 PAGINAS = ("como-trabajamos", "terminos", "privacidad", "reclamaciones")
@@ -66,7 +70,10 @@ box-shadow:5px 5px 0 var(--negro)}}
 <body>
 
 <div class="barra-sup"><div class="wrap">
-  <a href="{_e(sitio)}/"><img src="{_e(sitio)}/assets/logo-mono.svg" alt="Cero Vagos"></a>
+  <a href="{_e(sitio)}/" class="volver">
+    <img src="{_e(sitio)}/assets/logo-mono.svg" alt="Cero Vagos">
+    <span>← Volver a las ofertas</span>
+  </a>
 </div></div>
 
 <header class="hero">

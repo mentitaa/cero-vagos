@@ -81,17 +81,29 @@ a{color:inherit}
 .wrap{max-width:900px;margin:0 auto;padding:0 18px}
 .barra-sup{background:var(--rojo);color:#fff;border-bottom:var(--bd);padding:12px 0;
 font-family:var(--display);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
-.barra-sup a{text-decoration:none;display:inline-block}
-.barra-sup img{width:auto;height:34px;display:block}
-@media(max-width:600px){.barra-sup img{height:28px}}
+.barra-sup a{text-decoration:none}
+/* El logo solo no se entiende como "volver": mucha gente no sabe que se le
+   puede dar clic. El texto al lado lo dice sin ambigüedad. */
+.barra-sup .volver{display:inline-flex;align-items:center;gap:14px}
+.barra-sup .volver img{width:auto;height:34px;display:block;flex:0 0 auto}
+.barra-sup .volver span{font-family:var(--display);font-size:12.5px;
+letter-spacing:.05em;text-transform:uppercase;border-bottom:2px solid rgba(255,255,255,.55);
+padding-bottom:2px}
+.barra-sup .volver:hover span{border-bottom-color:#fff}
+@media(max-width:560px){.barra-sup .volver img{height:27px}
+.barra-sup .volver span{font-size:11px}}
 .hero{border-bottom:var(--bd);background:var(--negro);color:#fff;padding:52px 0 46px}
+/* Título a la izquierda, el dato a la derecha. En pantallas angostas se
+   apilan solos: el dato queda debajo, que es donde se lee mejor. */
+.hero__reja{display:flex;align-items:center;justify-content:space-between;gap:38px;flex-wrap:wrap}
+.hero__reja>div:first-child{flex:1 1 380px;min-width:0}
 .hero h1{font-size:clamp(30px,6vw,58px);color:#fff;margin-bottom:18px}
 .hero p{font-size:17px;font-weight:500;line-height:1.5;max-width:640px;opacity:.9}
 /* El recuadro se ajusta al número: antes ocupaba todo el ancho y quedaba
    medio vacío. Ahora el porcentaje y su explicación van uno al lado del otro. */
-.cifra{display:inline-flex;align-items:center;gap:22px;border:var(--bd);
-background:var(--rojo);color:#fff;box-shadow:9px 9px 0 var(--negro);
-padding:20px 28px;margin:34px 0;max-width:100%}
+.cifra{display:inline-flex;align-items:center;gap:22px;border:3px solid #fff;
+background:var(--rojo);color:#fff;box-shadow:9px 9px 0 #fff;
+padding:20px 28px;flex:0 0 auto;max-width:100%}
 .cifra b{font-family:var(--display);font-size:clamp(46px,9vw,76px);line-height:.85}
 .cifra span{font-size:14.5px;font-weight:700;text-transform:uppercase;
 letter-spacing:.03em;line-height:1.35;max-width:230px}
@@ -120,7 +132,7 @@ font-size:15px;line-height:1.5;font-weight:500}
 font-family:var(--display);font-size:14px;text-transform:uppercase;padding:14px 22px;
 text-decoration:none;box-shadow:4px 4px 0 var(--negro);margin-top:8px}
 footer{padding:26px 0;font-size:13px;font-weight:500}
-@media(max-width:600px){.cifra{box-shadow:5px 5px 0 var(--negro)}}
+@media(max-width:600px){.cifra{box-shadow:5px 5px 0 #fff}}
 """
 
 
@@ -164,24 +176,26 @@ def pagina(datos: dict, sitio: str) -> str:
 <body>
 
 <div class="barra-sup"><div class="wrap">
-  <a href="{_e(sitio)}/"><img src="{_e(sitio)}/assets/logo-mono.svg" alt="Cero Vagos"></a>
+  <a href="{_e(sitio)}/" class="volver">
+    <img src="{_e(sitio)}/assets/logo-mono.svg" alt="Cero Vagos">
+    <span>← Volver a las ofertas</span>
+  </a>
 </div></div>
 
 <header class="hero">
-  <div class="wrap">
-    <h1>¿Quién dice<br>cuánto paga?</h1>
-    <p>Nuestro motor revisa cada día los avisos de empleo publicados en el Perú.
-    Este es el conteo de cuántos declaran el sueldo y cuántos lo esconden, empresa
-    por empresa. No es una opinión: es contar.</p>
+  <div class="wrap hero__reja">
+    <div>
+      <h1>¿Quién dice<br>cuánto paga?</h1>
+      <p>Nuestro motor revisa cada día los avisos de empleo publicados en el Perú.
+      Este es el conteo de cuántos declaran el sueldo y cuántos lo esconden, empresa
+      por empresa. No es una opinión: es contar.</p>
+    </div>
+    <div class="cifra">
+      <b>{datos['pct_sin_sueldo']}%</b>
+      <span>de los avisos revisados no dice cuánto paga</span>
+    </div>
   </div>
 </header>
-
-<div class="wrap">
-  <div class="cifra">
-    <b>{datos['pct_sin_sueldo']}%</b>
-    <span>de los avisos revisados no dice cuánto paga</span>
-  </div>
-</div>
 
 <section>
   <div class="wrap">
