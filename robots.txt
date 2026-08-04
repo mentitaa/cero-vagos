@@ -1,0 +1,5 @@
+# Cero Vagos
+User-agent: *
+Allow: /
+
+Sitemap: https://mentitaa.github.io/cero-vagos/sitemap.xml
