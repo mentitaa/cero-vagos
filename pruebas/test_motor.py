@@ -170,6 +170,34 @@ class TestLimpiarPuesto(unittest.TestCase):
         self.assertEqual(limpiar_puesto("¡POSTULA YA!"), "¡POSTULA YA!")
         self.assertEqual(limpiar_puesto(""), "")
 
+    def test_quita_los_arranques_que_no_dicen_el_cargo(self):
+        from motor.normalizar import limpiar_puesto
+        casos = {
+            "IMPORTANTE EMPRESA REQUIERE PERSONAL PARA EL AREA DE ALMACEN CON "
+            "EXPERIENCIA MINIMA DE 6 MESES": "Personal para el Area de Almacen",
+            "SE NECESITA COCINERO CON EXPERIENCIA PARA RESTAURANTE": "Cocinero",
+            "Buscamos un Analista de Sistemas": "Analista de Sistemas",
+            "GANA HASTA S/2500 - ASESOR DE VENTAS CALL CENTER":
+                "Asesor de Ventas Call Center",
+        }
+        for bruto, esperado in casos.items():
+            with self.subTest(bruto=bruto[:40]):
+                self.assertEqual(limpiar_puesto(bruto), esperado)
+
+    def test_ningun_titulo_queda_como_un_cartel(self):
+        """
+        Red de seguridad: pase lo que pase, un puesto no tiene doce palabras.
+        Pero un cargo largo de verdad se respeta.
+        """
+        from motor.normalizar import limpiar_puesto, MAX_PALABRAS_PUESTO
+
+        parrafada = ("OPORTUNIDAD LABORAL EXCELENTE PARA PERSONAS DINAMICAS QUE DESEEN "
+                     "INTEGRAR NUESTRO GRAN EQUIPO DE TRABAJO EN LA MEJOR EMPRESA DEL RUBRO")
+        self.assertLessEqual(len(limpiar_puesto(parrafada).split()), MAX_PALABRAS_PUESTO)
+
+        largo_legitimo = "Analista de Costos para Licitaciones y Proyectos en Minería Subterránea"
+        self.assertEqual(limpiar_puesto(largo_legitimo), largo_legitimo)
+
 
 class TestNormalizar(unittest.TestCase):
 
@@ -421,12 +449,65 @@ class TestAlmacen(unittest.TestCase):
         self.assertEqual(vistas, {"https://x.pe/aviso-1", "https://x.pe/aviso-2"})
         self.assertNotIn("https://x.pe/aviso-3", vistas)
 
+    def test_la_corrida_diaria_no_repite_trabajo(self):
+        """
+        El caso que importa: la corrida es cada 24 horas. Si la memoria durara
+        menos que eso, cada noche se volvería a descargar todo.
+        """
+        self.almacen.guardar(self._oferta(
+            huella="a" * 16, url="https://x.pe/rechazada", puesto="Sin sueldo",
+            aprobada=False))
+        self.almacen.guardar(self._oferta(
+            huella="b" * 16, url="https://x.pe/aprobada", puesto="Con sueldo",
+            funciones=["Atender casos"], aprobada=True))
+
+        # Al día siguiente, las dos siguen sin necesidad de revisarse.
+        self.almacen.con.execute(
+            "UPDATE ofertas SET visto_ultima_vez = datetime('now', '-25 hours')")
+        self.almacen.con.commit()
+        self.assertEqual(len(self.almacen.urls_a_saltar()), 2)
+
+    def test_una_aprobada_se_revisa_cada_semana(self):
+        self.almacen.guardar(self._oferta(
+            huella="b" * 16, url="https://x.pe/aprobada",
+            funciones=["Atender casos"], aprobada=True))
+        self.almacen.con.execute(
+            "UPDATE ofertas SET visto_ultima_vez = datetime('now', '-9 days')")
+        self.almacen.con.commit()
+        self.assertEqual(self.almacen.urls_a_saltar(), set())
+
+    def test_una_rechazada_se_deja_en_paz_un_mes(self):
+        """Una empresa que no puso el sueldo no vuelve a entrar a ponerlo."""
+        self.almacen.guardar(self._oferta(
+            huella="a" * 16, url="https://x.pe/rechazada", aprobada=False))
+        for dias, esperado in ((9, 1), (40, 0)):
+            with self.subTest(dias=dias):
+                self.almacen.con.execute(
+                    f"UPDATE ofertas SET visto_ultima_vez = datetime('now', '-{dias} days')")
+                self.almacen.con.commit()
+                self.assertEqual(len(self.almacen.urls_a_saltar()), esperado)
+
     def test_lo_visto_hace_mucho_se_vuelve_a_revisar(self):
         self.almacen.guardar(self._oferta(url="https://x.pe/viejo", aprobada=True))
         self.almacen.con.execute(
             "UPDATE ofertas SET visto_ultima_vez = datetime('now', '-3 days')")
         self.almacen.con.commit()
         self.assertEqual(self.almacen.urls_vistas(horas=20), set())
+
+    def test_repara_los_titulos_ya_guardados(self):
+        """
+        Las mejoras al limpiador no alcanzan a lo que ya está en la base: solo
+        se reescribe cuando el motor vuelve a ver el aviso, y eso tarda semanas.
+        """
+        sucio = ("¡GANA MÁS DE 1800 SOLES! OPERARIO DE PRODUCCIÓN — STA ANITA / "
+                 "PLANILLA COMPLETA + ALIMENTACIÓN")
+        self.almacen.guardar(self._oferta(huella="s" * 16, puesto=sucio,
+                                          funciones=["Atender"], aprobada=True))
+
+        self.assertEqual(self.almacen.limpiar_titulos(), 1)
+        self.assertEqual(self.almacen.aprobadas()[0]["puesto"], "Operario de Producción")
+        # Correrlo de nuevo no cambia nada: es idempotente.
+        self.assertEqual(self.almacen.limpiar_titulos(), 0)
 
     def test_no_se_duplica_la_misma_oferta(self):
         for _ in range(3):

@@ -48,6 +48,7 @@ def _envoltura(titulo: str, descripcion: str, ruta: str, sitio: str,
 <meta name="description" content="{_e(descripcion)}">
 <link rel="canonical" href="{_e(url)}">
 {'' if indexable else '<meta name="robots" content="noindex">'}
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
 <link rel="icon" href="{_e(sitio)}/assets/icono.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
