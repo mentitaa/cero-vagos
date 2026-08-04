@@ -381,30 +381,30 @@ FIN_MARCA = "<!-- OFERTAS-ESTATICAS:FIN -->"
 
 def bloque_enlaces(ofertas: list[dict]) -> str:
     """
-    Lista de enlaces reales en la portada.
+    Enlaces a cada oferta, dentro de la portada pero sin mostrarse.
 
-    Hace falta porque las tarjetas se dibujan con JavaScript y un buscador
-    puede no verlas. Estos enlaces sí están en el HTML, sirven para navegar y
-    son la puerta por donde Google entra a cada oferta.
+    Las tarjetas bonitas las dibuja JavaScript y un buscador puede no verlas.
+    Estos enlaces sí están en el HTML desde el primer momento, así que
+    cualquier rastreador llega a todas las ofertas siguiendo la portada.
+
+    No se muestran porque la sección visible quedaba fea y no aportaba nada a
+    quien ya tiene el buscador arriba. El descubrimiento principal sigue siendo
+    el sitemap; esto es el refuerzo.
     """
     if not ofertas:
         return f"{INICIO_MARCA}\n{FIN_MARCA}"
 
     filas = "\n".join(
-        f'      <li><a href="{CARPETA_OFERTAS}/{o["slug"]}/">'
-        f'{_e(o["puesto"])} — {_e(o.get("empresa") or "")} '
-        f'({_sueldo_texto(o)}, {_e(o.get("ciudad") or "Perú")})</a></li>'
+        f'    <li><a href="{CARPETA_OFERTAS}/{o["slug"]}/">'
+        f'{_e(o["puesto"])} — {_e(o.get("empresa") or "")}</a></li>'
         for o in ofertas
     )
     return f"""{INICIO_MARCA}
-<section class="indice">
-  <div class="wrap">
-    <h2>Todas las ofertas</h2>
-    <ul>
+<nav class="indice-oculto" aria-label="Todas las ofertas">
+  <ul>
 {filas}
-    </ul>
-  </div>
-</section>
+  </ul>
+</nav>
 {FIN_MARCA}"""
 
 
