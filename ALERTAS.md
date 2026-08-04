@@ -1,6 +1,6 @@
 # Las alertas por WhatsApp
 
-**Ya están activas.** Los registros llegan a `cerovagos.alertas@gmail.com` y
+**Ya están activas.** Los registros llegan a `info@cerovagos.com` y
 quedan guardados en el panel de Formspree.
 
 La dirección que los recibe está en `index.html`, en una sola línea:
@@ -59,9 +59,9 @@ Ojo con dos trampas de esta opción:
 
 - **Si pusieras solo `github.io`**, cualquier web de GitHub Pages del mundo
   podría enviarte datos. Tiene que ir el subdominio completo.
-- **El día que se conecte `cerovagos.com` hay que agregarlo ahí.** Si no, los
-  registros que lleguen del dominio nuevo se van todos a spam **sin avisar**.
-  Está anotado también en `DOMINIO.md`.
+- **Al conectar `cerovagos.com` hay que cambiarlo ahí.** Si no, los registros
+  que lleguen del dominio nuevo se van todos a spam **sin avisar**. Mientras
+  las dos direcciones convivan, deja `mentitaa.github.io` y agrega la nueva.
 
 **Formshield**, el filtro antispam de Formspree: encendido.
 

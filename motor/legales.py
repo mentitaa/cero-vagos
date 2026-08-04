@@ -22,11 +22,9 @@ from pathlib import Path
 
 from .transparencia import ESTILOS
 
-# Un correo que sí existe. Las páginas legales prometen que se puede pedir
-# la baja de un dato o reportar un aviso: si la dirección rebota, esa
-# promesa es papel mojado. Cambiar por contacto@cerovagos.com el día que
-# se compre el dominio.
-CORREO = "cerovagos.alertas@gmail.com"
+# Las páginas legales prometen que se puede pedir la baja de un dato o
+# reportar un aviso: si la dirección rebota, esa promesa es papel mojado.
+CORREO = "info@cerovagos.com"
 
 # Se agregan al sitemap desde sitio.py.
 PAGINAS = ("como-trabajamos", "terminos", "privacidad", "reclamaciones")

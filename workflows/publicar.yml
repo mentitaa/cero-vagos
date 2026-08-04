@@ -1,0 +1,57 @@
+# Regenera el sitio con las ofertas que YA están en la base.
+#
+# Esto es lo que hay que correr cuando se cambia el diseño, un texto o el
+# código de las páginas: no hace falta volver a recolectar, y tarda menos de
+# un minuto en vez de veinte.
+#
+# Se dispara solo cada vez que se sube un cambio a index.html o a motor/,
+# así que normalmente no hay que hacer nada: subes el archivo y el sitio se
+# actualiza en un minuto.
+
+name: Publicar el sitio
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "motor/**"
+
+concurrency:
+  group: publicar
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Traer el proyecto
+        uses: actions/checkout@v5
+
+      - name: Preparar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      # No se instala nada más: generar las páginas solo necesita la base de
+      # datos que ya está en el repositorio. Nada de navegador ni de red.
+      - name: Generar las páginas, el sitemap y la transparencia
+        run: python -u -m motor publicar
+
+      - name: Guardar
+        run: |
+          git config user.name  "Cero Vagos"
+          git config user.email "info@cerovagos.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "El sitio ya estaba al día."
+          else
+            git commit -m "Sitio regenerado"
+            git push
+          fi

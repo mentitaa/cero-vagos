@@ -20,7 +20,9 @@ from collections.abc import Iterator
 
 from ..modelos import OfertaCruda
 
-USER_AGENT = "CeroVagosBot/0.1 (+https://cerovagos.pe/bot; contacto@cerovagos.pe)"
+# Los portales ven esto en cada petición. La dirección de contacto tiene
+# que existir de verdad: es a donde escribirían si quisieran que paremos.
+USER_AGENT = "CeroVagosBot/0.1 (+https://cerovagos.com/como-trabajamos/; info@cerovagos.com)"
 PAUSA_ENTRE_PETICIONES = 2.0   # segundos
 
 

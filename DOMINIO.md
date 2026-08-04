@@ -22,45 +22,84 @@ canónicas salen con `cerovagos.com`.
 
 ## Los pasos
 
-### 1. Comprar el dominio
+El dominio está comprado en **Squarespace** y el correo `info@cerovagos.com`
+funciona con **Google Workspace**. Esas dos cosas cambian el orden y añaden un
+cuidado que no aparece en las guías genéricas.
 
-Donde prefieras (Namecheap, GoDaddy, Cloudflare). `.com` cuesta entre 40 y 60
-soles al año.
+### ⚠️ Antes de tocar nada: no borres los registros del correo
 
-### 2. Apuntar el dominio a GitHub
+Tu dominio tiene dos trabajos a la vez: **apuntar a la web** y **recibir el
+correo**. Los dos viven en la misma pantalla de DNS.
 
-En el panel de tu proveedor, sección **DNS**, agrega estos registros:
+Los registros del correo son los de tipo **MX**, y también unos **TXT** que
+Google usa para verificar que el dominio es tuyo. **No los toques.** Si los
+borras, `info@cerovagos.com` deja de recibir mensajes y no te enteras hasta que
+alguien te reclame que te escribió y nunca respondiste.
+
+Solo vas a agregar registros nuevos y a borrar los que Squarespace puso para
+su propia página de "sitio en construcción".
+
+### 1. Reservar el dominio en GitHub (esto va primero)
+
+GitHub pide hacerlo en este orden por seguridad: si apuntas el DNS antes de
+reclamar el dominio, hay una ventana en la que otra persona podría publicar su
+web en tu dirección.
+
+1. Tu repositorio → **Settings** → menú izquierdo **Pages**
+2. En *Custom domain*, escribe `cerovagos.com` → **Save**
+3. GitHub crea solo un archivo llamado `CNAME` en el repositorio. **Ese
+   archivo es el que hace que todo el sitio se mude solo**: el motor lo lee y
+   reescribe las páginas, el sitemap y los enlaces con la dirección nueva.
+
+Va a aparecer un aviso rojo de que el DNS no está configurado. Es normal:
+todavía no lo has hecho.
+
+### 2. Los registros en Squarespace
+
+En Squarespace: **Settings** → **Domains** → `cerovagos.com` → **DNS Settings**
+(o *DNS*, según la versión).
+
+**Primero borra** los registros de tipo `A` y `CNAME` que apunten a
+Squarespace. Suelen ser un `A` con nombre `@` y un `CNAME` con nombre `www`.
+GitHub lo pide explícitamente: si queda el registro por defecto del proveedor,
+el sitio no carga.
+
+**Después agrega** estos cinco:
 
 | Tipo | Nombre | Valor |
 |---|---|---|
-| A | @ | 185.199.108.153 |
-| A | @ | 185.199.109.153 |
-| A | @ | 185.199.110.153 |
-| A | @ | 185.199.111.153 |
-| CNAME | www | mentitaa.github.io |
+| A | @ | `185.199.108.153` |
+| A | @ | `185.199.109.153` |
+| A | @ | `185.199.110.153` |
+| A | @ | `185.199.111.153` |
+| CNAME | www | `mentitaa.github.io` |
 
-Los cuatro registros A son de GitHub y son siempre los mismos.
+Las cuatro direcciones son de GitHub y son siempre las mismas. Ese `CNAME` del
+`www` es lo que hace que `www.cerovagos.com` lleve al mismo sitio en vez de dar
+error.
 
-### 3. Conectarlo en GitHub
+Ojo: el valor del CNAME es `mentitaa.github.io`, **sin** `/cero-vagos` al
+final. Es el error más común.
 
-1. Tu repositorio → **Settings** → **Pages**
-2. En *Custom domain*, escribe `cerovagos.com` → **Save**
-3. GitHub crea solo el archivo `CNAME` en el repositorio
-4. Espera a que verifique el DNS (de minutos a un par de horas)
-5. Marca **Enforce HTTPS** cuando se habilite la casilla
+### 3. Esperar
 
-### 4. Regenerar el sitio
+El cambio tarda de unos minutos a 24 horas en llegar a todo internet. No hay
+nada que hacer mientras tanto.
 
-No hace falta esperar: entra a **Actions** → **Recolección diaria** →
-**Run workflow**. Al terminar, todo el sitio está con el dominio nuevo.
+Cuando `cerovagos.com` empiece a mostrar tu web, vuelve a **Settings → Pages**
+y marca la casilla **Enforce HTTPS**. Puede tardar hasta un día en habilitarse.
+Sin eso, el candado del navegador no aparece y Chrome avisa que el sitio no es
+seguro.
 
-Si prefieres hacerlo desde tu Mac:
+### 4. Regenerar el sitio con la dirección nueva
 
-```bash
-python3 -m motor publicar     # lee el CNAME solo
-```
+Sube los cambios de código que están pendientes (`index.html`, `motor/`, los
+`.md` y los dos archivos de `.github/workflows/`). Eso dispara solo el
+workflow **Publicar el sitio**, que tarda menos de un minuto y reescribe todo
+con el dominio nuevo.
 
----
+Si quieres lanzarlo a mano: **Actions** → **Publicar el sitio** →
+**Run workflow**. No hace falta volver a recolectar.
 
 ## No te olvides de Formspree
 
@@ -81,10 +120,10 @@ Antes de conectar el dominio, o el mismo día:
 
 Detalle completo en `ALERTAS.md`.
 
-Aprovecha y cambia también el correo de contacto: hoy las páginas legales dan
-`cerovagos.alertas@gmail.com`. Cuando tengas `contacto@cerovagos.com`, se
-cambia en `motor/legales.py` (constante `CORREO`) y en el pie de `index.html`,
-y el motor lo reescribe en todas las páginas de una.
+El correo del proyecto ya es `info@cerovagos.com` (Google Workspace) y está
+puesto en `motor/legales.py` (constante `CORREO`), en el pie de `index.html`,
+en la firma del bot de GitHub Actions y en cómo el bot se presenta ante los
+portales (`motor/fuentes/base.py`, `USER_AGENT`).
 
 ---
 

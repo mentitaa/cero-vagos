@@ -22,9 +22,9 @@ Dueña del proyecto: **Mentita**. Repositorio de GitHub bajo el usuario
 
 **El sitio en vivo: https://mentitaa.github.io/cero-vagos/**
 
-Esa es la dirección de hoy. El dominio elegido es **`cerovagos.com`**, ya
-decidido pero **todavía sin comprar**. Cuando se compre y se conecte en GitHub,
-el sitio se muda solo: el generador lee el archivo `CNAME` y reescribe todas
+Esa es la dirección de hoy. El dominio **`cerovagos.com`** ya está
+**comprado** (Squarespace, con Google Workspace para el correo). Cuando se
+conecte en GitHub, el sitio se muda solo: el generador lee el archivo `CNAME` y reescribe todas
 las páginas, el sitemap y los enlaces (ver `DOMINIO.md`). No hay que tocar
 código.
 
@@ -46,7 +46,7 @@ código.
 | `README.md` | Manual completo: comandos, filtro, fuentes. La referencia larga. |
 | `CLAUDE.md` | Este archivo. Contexto y reglas. |
 | `DESPLIEGUE.md` | Poner el motor en piloto automático con GitHub Actions. |
-| `DOMINIO.md` | Conectar `cerovagos.com` cuando se compre. |
+| `DOMINIO.md` | Conectar `cerovagos.com` (comprado, sin conectar aún). |
 | `ALERTAS.md` | Las alertas: cómo están conectadas y cómo se mandan. |
 | `SEGURIDAD.md` | Auditoría de seguridad: qué se revisó y qué queda abierto. |
 | `EMPRESAS.md` | Estrategia de bolsas de trabajo de empresas. |
@@ -157,28 +157,23 @@ más ofertas, la respuesta es **más fuentes**, no menos exigencia.
 
 Lo que está esperando, en orden aproximado de impacto:
 
-1. **Encender GitHub Actions** para que el motor corra solo cada madrugada y la
-   laptop deje de ser infraestructura (`DESPLIEGUE.md`). El workflow ya está
-   escrito. Ojo con la trampa de quién manda sobre `datos/` y `oferta/` una vez
-   encendido.
+1. **Conectar `cerovagos.com`** (`DOMINIO.md`). Ya está comprado en Squarespace
+   y el correo `info@cerovagos.com` funciona con Google Workspace. Falta poner
+   los registros DNS y el dominio en GitHub Pages. Al hacerlo, cambiar también
+   la restricción de dominio en Formspree o los registros de alertas se van a
+   spam en silencio.
 2. **Más fuentes.** 60 ofertas es poco para que alguien vuelva al día
    siguiente. El camino son las bolsas de empresas (`EMPRESAS.md`), no aflojar
    el filtro.
-3. **Enviar los correos a las universidades** (`PROPUESTA-UNIVERSIDADES.md`).
+3. **Los portales privados se pasan de tiempo.** La primera corrida en la nube
+   terminó en verde pero con un aviso: el paso "Portales privados" se cortó a
+   los 60 minutos. Bajar el límite por portal o subir ese tope.
+4. **Enviar los correos a las universidades** (`PROPUESTA-UNIVERSIDADES.md`).
    No depende de código y las respuestas tardan días.
-4. **Comprar y conectar `cerovagos.com`** (`DOMINIO.md`). No hay archivo
-   `CNAME` todavía. Comprarlo pronto aunque no se conecte: la antigüedad del
-   dominio ayuda.
-5. **Alinear el `.pe` con el `.com`.** El bot todavía se presenta como
-   `cerovagos.pe` en `motor/fuentes/base.py` (`USER_AGENT`) y firma como
-   `bot@cerovagos.pe` en GitHub Actions. Cambiarlos al comprar el dominio, para
-   que la dirección de contacto que ven los portales exista de verdad.
-6. **Páginas por ciudad y rubro** ("Trabajos en Arequipa con sueldo"). Es lo
+5. **Páginas por ciudad y rubro** ("Trabajos en Arequipa con sueldo"). Es lo
    que la gente busca en Google y hoy no hay nada que aparezca para eso.
-7. **Detector de requisitos discriminatorios** (Ley 26772). Se encontró un
+6. **Detector de requisitos discriminatorios** (Ley 26772). Se encontró un
    aviso pidiendo "Edad: entre 20 y 45 años".
-8. Bajar el límite por portal de 150 a ~80 en las corridas nocturnas. La
-   primera corrida larga tomó más de 3 horas.
 
 ## Trampas conocidas
 
@@ -201,7 +196,7 @@ verificar.
 - **El formulario de alertas está restringido a `mentitaa.github.io`** en
   Formspree. Al conectar `cerovagos.com` hay que cambiarlo ahí o todos los
   registros se van a spam en silencio (`DOMINIO.md`).
-- **El correo del proyecto es `cerovagos.alertas@gmail.com`** y sale publicado
+- **El correo del proyecto es `info@cerovagos.com`** (Google Workspace) y sale publicado
   en las páginas legales. No inventar direcciones: la política de privacidad
   promete que se puede pedir la baja de un dato, y si el correo rebota esa
   promesa no vale nada.
