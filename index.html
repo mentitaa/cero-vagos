@@ -15,16 +15,16 @@
 <meta property="og:site_name" content="Cero Vagos">
 <meta property="og:locale" content="es_PE">
 <meta property="og:title" content="Cero Vagos — Solo ofertas de trabajo completas en Perú">
-<meta property="og:description" content="El 77% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
+<meta property="og:description" content="El 75% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
 <meta property="og:url" content="https://mentitaa.github.io/cero-vagos/">
 <meta property="og:image" content="https://mentitaa.github.io/cero-vagos/assets/compartir.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Cero Vagos. El 77% de los avisos de empleo no dice cuánto paga.">
+<meta property="og:image:alt" content="Cero Vagos. El 75% de los avisos de empleo no dice cuánto paga.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Cero Vagos — Solo ofertas de trabajo completas en Perú">
-<meta name="twitter:description" content="El 77% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
+<meta name="twitter:description" content="El 75% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
 <meta name="twitter:image" content="https://mentitaa.github.io/cero-vagos/assets/compartir.png">
 <link rel="canonical" href="https://mentitaa.github.io/cero-vagos/">
 <!-- COMPARTIR:FIN -->
@@ -202,10 +202,14 @@ section{position:relative}
 .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:32px}
 .sec-head h2{font-size:clamp(30px,4.2vw,54px)}
 .sec-head p{max-width:460px;font-weight:500;font-size:15.5px;line-height:1.5}
-/* La línea de "actualizado el…": informativa, no protagonista. */
+/* La línea de "actualizado el…": informativa, no protagonista.
+   flex:0 0 auto es lo que evita los tres puntitos: sin eso, el título de al
+   lado la aprieta hasta que no cabe y el navegador la recorta. Así conserva
+   su ancho, y si de verdad no hay sitio se baja entera a la línea siguiente
+   en vez de cortarse. */
 .linea-info{
-  max-width:none;font-size:12.5px;font-weight:600;opacity:.65;
-  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  flex:0 0 auto;max-width:none;font-size:11.5px;font-weight:600;opacity:.65;
+  white-space:nowrap;
 }
 @media(max-width:820px){.linea-info{white-space:normal}}
 .kicker{
@@ -745,7 +749,7 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
         <span class="kicker">100% APROBADAS</span>
         <h2>Ofertas de hoy</h2>
       </div>
-      <p id="actualizado" class="linea-info">Cada aviso muestra su puntaje de completitud y de qué portal salió.</p>
+      <p id="actualizado" class="linea-info">Cada aviso con su puntaje y su portal de origen</p>
     </div>
 
     <div class="toolbar">
@@ -793,10 +797,8 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
     <li><a href="oferta/asistente-de-tesoreria-coverprime-8ce4f80f/">Asistente de Tesoreria — CoverPrime</a></li>
     <li><a href="oferta/asesor-de-seguros-vida-rimac-cia-de-seguros-y-reaseguros-s-a-e0e617dd/">Asesor de Seguros Vida — Rimac Cia de Seguros y Reaseguros S.A.</a></li>
     <li><a href="oferta/asesor-de-seguros-vida-rimac-cia-de-seguros-y-reaseguros-s-a-eaadc2a1/">Asesor de Seguros Vida — Rimac Cia de Seguros y Reaseguros S.A.</a></li>
-    <li><a href="oferta/operario-de-produccion-cyl-68d1ca8f/">Operario de Producción — CYL</a></li>
     <li><a href="oferta/operaria-de-produccion-cyl-850c2083/">Operaria de Producción — CYL</a></li>
     <li><a href="oferta/asesor-de-seguros-vida-rimac-cia-de-seguros-y-reaseguros-s-a-792d89ce/">Asesor de Seguros Vida — Rimac Cia de Seguros y Reaseguros S.A.</a></li>
-    <li><a href="oferta/operario-de-limpieza-de-piezas-produccion-con-cyl-6798faf0/">Operario de Limpieza de Piezas-producción con — CYL</a></li>
     <li><a href="oferta/operario-de-limpieza-de-piezas-cyl-bc41c158/">Operario de Limpieza de Piezas — CYL</a></li>
     <li><a href="oferta/asistente-de-marketing-y-comercial-coverprime-907a9d56/">Asistente de Marketing y Comercial — CoverPrime</a></li>
     <li><a href="oferta/asesor-de-ventas-camara-de-comercio-exterior-s-a-c-dbf7f819/">Asesor de Ventas — CAMARA DE COMERCIO EXTERIOR S.A.C.</a></li>
@@ -813,10 +815,12 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
     <li><a href="oferta/supervisor-a-de-energias-renovables-talento-humano-peru-6eab5463/">Supervisor(a) de Energías Renovables — Talento Humano Perú</a></li>
     <li><a href="oferta/operaria-de-limpieza-de-produccion-cyl-7c248e65/">Operaria de Limpieza de Producción — CYL</a></li>
     <li><a href="oferta/operario-de-almacen-cyl-06d9a5a6/">Operario de Almacén — CYL</a></li>
+    <li><a href="oferta/operario-de-limpieza-de-piezas-produccion-con-cyl-6798faf0/">Operario de Limpieza de Piezas-producción con — CYL</a></li>
     <li><a href="oferta/operador-de-monitoreo-vehicular-confidencial-6885c9de/">Operador de Monitoreo Vehicular — Confidencial</a></li>
     <li><a href="oferta/practicante-de-soporte-tecnico-bold-ascent-e214b931/">Practicante de Soporte Técnico — BOLD ASCENT</a></li>
     <li><a href="oferta/jefe-de-marketing-confidencial-71cedd35/">Jefe de Marketing — Confidencial</a></li>
     <li><a href="oferta/labora-de-lunes-a-viernes-fijo-atencion-al-cliente-manpowergroup-peru-e2840414/">Labora de Lunes a Viernes FIJO! Atención al cliente — ManpowerGroup Perú</a></li>
+    <li><a href="oferta/operario-de-produccion-cyl-68d1ca8f/">Operario de Producción — CYL</a></li>
     <li><a href="oferta/practicante-de-contabilidad-confidencial-4c57301d/">Practicante de Contabilidad — Confidencial</a></li>
     <li><a href="oferta/auxiliar-administrativo-proyecto-especial-regional-plan-copesco-del-go-2ecdca0c/">Auxiliar Administrativo — Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco</a></li>
     <li><a href="oferta/carpintero-de-melamina-y-mobiliario-comercial-conserh-8d80ab71/">Carpintero de Melamina y Mobiliario Comercial — CONSERH</a></li>
@@ -1504,7 +1508,7 @@ if(!DEMO && MOTOR && MOTOR.stats){
   $('#sTasa').nextElementSibling.textContent = 'No dice cuánto paga';
   const fecha = new Date(MOTOR.generado);
   $('#actualizado').textContent =
-    `Actualizado el ${fecha.toLocaleDateString('es-PE')} · cada aviso muestra su puntaje y de qué portal salió`;
+    `Actualizado el ${fecha.toLocaleDateString('es-PE')} · cada aviso con su puntaje y su portal`;
 }
 
 pintarChips();
