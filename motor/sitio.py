@@ -280,8 +280,14 @@ def pagina_oferta(o: dict, sitio: str) -> str:
 
 def sitemap(ofertas: list[dict], sitio: str) -> str:
     hoy = date.today().isoformat()
-    entradas = [f"  <url><loc>{sitio}/</loc><lastmod>{hoy}</lastmod>"
-                f"<changefreq>daily</changefreq><priority>1.0</priority></url>"]
+    entradas = [
+        f"  <url><loc>{sitio}/</loc><lastmod>{hoy}</lastmod>"
+        f"<changefreq>daily</changefreq><priority>1.0</priority></url>",
+        # La página de transparencia va alto a propósito: es el contenido que
+        # puede traer visitas por sí solo.
+        f"  <url><loc>{sitio}/transparencia/</loc><lastmod>{hoy}</lastmod>"
+        f"<changefreq>daily</changefreq><priority>0.9</priority></url>",
+    ]
     for o in ofertas:
         mod = o.get("publicado_iso") or hoy
         entradas.append(
@@ -443,6 +449,11 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
             shutil.rmtree(vieja, ignore_errors=True)
             retiradas += 1
 
+    # El ranking de transparencia salarial: contenido propio que atrae
+    # búsquedas y da material para compartir.
+    from .transparencia import generar as generar_transparencia
+    informe = generar_transparencia(al, sitio, raiz)
+
     (raiz / "sitemap.xml").write_text(sitemap(ofertas, sitio), encoding="utf-8")
     (raiz / "robots.txt").write_text(robots(sitio), encoding="utf-8")
     # GitHub Pages muestra este archivo cuando alguien llega a una dirección
@@ -462,4 +473,6 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
             portada.write_text(texto, encoding="utf-8")
 
     return {"paginas": len(ofertas), "retiradas": retiradas, "sitio": sitio,
+            "pct_sin_sueldo": informe["pct_sin_sueldo"],
+            "empresas_analizadas": len(informe["empresas"]),
             "generado": datetime.now().isoformat(timespec="seconds")}

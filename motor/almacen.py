@@ -208,18 +208,46 @@ class Almacen:
         ).fetchall()
         return [self._a_dict(f) for f in filas]
 
-    def urls_vistas(self, horas: int = 20) -> set[str]:
-        """
-        URLs ya revisadas hace poco, aprobadas o no.
+    # Cada cuánto vale la pena volver a mirar un aviso que ya se revisó.
+    #
+    # Un aviso RECHAZADO casi nunca cambia: una empresa que no puso el sueldo
+    # no vuelve a entrar a ponerlo. Revisarlo cada noche es gastar por gusto.
+    #
+    # Uno APROBADO sí conviene mirarlo de vez en cuando, por si lo bajaron o le
+    # cambiaron la fecha de cierre.
+    DIAS_RECHAZADAS = 30
+    DIAS_APROBADAS = 7
 
-        Sirve para retomar una corrida interrumpida sin volver a descargar lo
-        mismo. Si la Mac se suspendió a mitad de camino, al reanudar se salta
-        todo lo que ya se miró y sigue donde quedó.
+    def urls_a_saltar(self) -> set[str]:
         """
+        URLs que no hace falta volver a descargar en esta corrida.
+
+        Esto es lo que hace que la recolección diaria sea barata: después de
+        unos días, cada noche solo se bajan los avisos NUEVOS. También permite
+        retomar una corrida que se cortó a la mitad.
+        """
+        # El instante se calcula en Python y se pasa como dato. SQLite usa UTC
+        # y Python la hora local: en Perú, después de las 7 de la tarde ya no
+        # son el mismo día, y mezclarlos hacía que las cuentas salieran
+        # corridas por 24 horas.
+        ahora = datetime.now().isoformat(sep=" ", timespec="seconds")
+        filas = self.con.execute(
+            "SELECT url FROM ofertas WHERE visto_ultima_vez IS NOT NULL AND ("
+            "  (aprobada = 0 AND julianday(?) - julianday(visto_ultima_vez) < ?)"
+            "  OR"
+            "  (aprobada = 1 AND julianday(?) - julianday(visto_ultima_vez) < ?)"
+            ")",
+            (ahora, self.DIAS_RECHAZADAS, ahora, self.DIAS_APROBADAS),
+        ).fetchall()
+        return {f["url"] for f in filas if f["url"]}
+
+    def urls_vistas(self, horas: int = 20) -> set[str]:
+        """URLs revisadas en las últimas N horas. Se mantiene para pruebas."""
+        ahora = datetime.now().isoformat(sep=" ", timespec="seconds")
         filas = self.con.execute(
             "SELECT url FROM ofertas WHERE visto_ultima_vez IS NOT NULL "
-            "AND (julianday('now') - julianday(visto_ultima_vez)) * 24 < ?",
-            (horas,),
+            "AND (julianday(?) - julianday(visto_ultima_vez)) * 24 < ?",
+            (ahora, horas),
         ).fetchall()
         return {f["url"] for f in filas if f["url"]}
 
@@ -249,6 +277,63 @@ class Almacen:
                     " GROUP BY fuente ORDER BY n DESC"
                 ).fetchall()
             },
+        }
+
+    # ---------------- transparencia salarial ----------------
+
+    def transparencia(self, minimo_avisos: int = 3) -> dict:
+        """
+        Quién dice cuánto paga y quién no.
+
+        Sale de los avisos que el motor ya revisó, publicados y rechazados por
+        igual. No es una opinión: es contar cuántos de sus avisos traían un
+        monto y cuántos no.
+
+        Se exige un mínimo de avisos por empresa a propósito. Con uno o dos no
+        se puede afirmar nada de nadie, y señalar a alguien con una muestra
+        pequeña sería injusto además de flojo.
+        """
+        def agrupar(campo: str, minimo: int = 1) -> list[dict]:
+            filas = self.con.execute(
+                f"SELECT {campo} AS nombre, COUNT(*) AS total, "
+                f"       SUM(CASE WHEN sueldo_min > 0 THEN 1 ELSE 0 END) AS con_sueldo "
+                f"FROM ofertas WHERE {campo} IS NOT NULL AND TRIM({campo}) != '' "
+                f"GROUP BY LOWER(TRIM({campo})) HAVING total >= ? "
+                f"ORDER BY total DESC",
+                (minimo,),
+            ).fetchall()
+            salida = []
+            for f in filas:
+                total, con = f["total"], f["con_sueldo"] or 0
+                salida.append({
+                    "nombre": f["nombre"], "total": total, "con_sueldo": con,
+                    "sin_sueldo": total - con,
+                    "pct": round(con / total * 100) if total else 0,
+                })
+            return salida
+
+        total = self.con.execute("SELECT COUNT(*) FROM ofertas").fetchone()[0]
+        con_sueldo = self.con.execute(
+            "SELECT COUNT(*) FROM ofertas WHERE sueldo_min > 0").fetchone()[0]
+
+        periodo = self.con.execute(
+            "SELECT MIN(date(capturado)), MAX(date(capturado)) FROM ofertas").fetchone()
+
+        empresas = agrupar("empresa", minimo_avisos)
+        return {
+            "total": total,
+            "con_sueldo": con_sueldo,
+            "sin_sueldo": total - con_sueldo,
+            "pct_con_sueldo": round(con_sueldo / total * 100) if total else 0,
+            "pct_sin_sueldo": round((total - con_sueldo) / total * 100) if total else 0,
+            "desde": periodo[0] or "", "hasta": periodo[1] or "",
+            "minimo_avisos": minimo_avisos,
+            "empresas": empresas,
+            "transparentes": [e for e in empresas if e["pct"] >= 80][:20],
+            "opacas": [e for e in empresas if e["pct"] == 0][:20],
+            "por_fuente": agrupar("fuente"),
+            "por_categoria": agrupar("categoria", 3),
+            "por_ciudad": agrupar("ciudad", 3),
         }
 
     @staticmethod

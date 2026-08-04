@@ -109,9 +109,11 @@ class Pipeline:
                    "fuentes_sin_datos": []}
         vistas: set[str] = set()
 
-        urls_previas: set[str] = self.almacen.urls_vistas() if self.retomar else set()
+        urls_previas: set[str] = self.almacen.urls_a_saltar() if self.retomar else set()
         if urls_previas:
-            self._log(f"Retomando: {len(urls_previas)} avisos ya revisados hoy se saltarán.")
+            self._log(f"{len(urls_previas)} avisos ya revisados se saltarán "
+                      f"(rechazados hace menos de {self.almacen.DIAS_RECHAZADAS} días, "
+                      f"aprobados hace menos de {self.almacen.DIAS_APROBADAS}).")
 
         for fuente in self.fuentes:
             if hasattr(fuente, "ya_visto"):
