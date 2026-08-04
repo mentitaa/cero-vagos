@@ -1,0 +1,45 @@
+name: Publicar el sitio
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "motor/**"
+
+concurrency:
+  group: publicar
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Traer el proyecto
+        uses: actions/checkout@v5
+
+      - name: Preparar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Generar las páginas, el sitemap y la transparencia
+        run: python -u -m motor publicar
+
+      - name: Guardar
+        run: |
+          git config user.name  "Cero Vagos"
+          git config user.email "bot@cerovagos.pe"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "El sitio ya estaba al día."
+          else
+            git commit -m "Sitio regenerado"
+            git push
+          fi
