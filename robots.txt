@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mentitaa.github.io/cero-vagos/sitemap.xml
+Sitemap: https://cerovagos.com/sitemap.xml
