@@ -15,16 +15,16 @@
 <meta property="og:site_name" content="Cero Vagos">
 <meta property="og:locale" content="es_PE">
 <meta property="og:title" content="Cero Vagos — Solo ofertas de trabajo completas en Perú">
-<meta property="og:description" content="El 77% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
+<meta property="og:description" content="El 75% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
 <meta property="og:url" content="https://mentitaa.github.io/cero-vagos/">
 <meta property="og:image" content="https://mentitaa.github.io/cero-vagos/assets/compartir.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Cero Vagos. El 77% de los avisos de empleo no dice cuánto paga.">
+<meta property="og:image:alt" content="Cero Vagos. El 75% de los avisos de empleo no dice cuánto paga.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Cero Vagos — Solo ofertas de trabajo completas en Perú">
-<meta name="twitter:description" content="El 77% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
+<meta name="twitter:description" content="El 75% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
 <meta name="twitter:image" content="https://mentitaa.github.io/cero-vagos/assets/compartir.png">
 <link rel="canonical" href="https://mentitaa.github.io/cero-vagos/">
 <!-- COMPARTIR:FIN -->
@@ -400,6 +400,18 @@ section{position:relative}
 .form{display:flex;flex-direction:column;gap:12px;max-width:430px}
 .form input,.form select{border:var(--bd);padding:15px 16px;font-size:15px;font-weight:500;outline:none;background:var(--blanco)}
 .form input:focus{box-shadow:var(--sh-sm)}
+.form input.mal,.form select.mal{border-color:var(--rojo);box-shadow:4px 4px 0 var(--rojo)}
+/* La trampa antirrobots: fuera de pantalla, no oculta con display:none,
+   porque algunos robots saltan lo que está en display:none. */
+.trampa{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.consiento{display:flex;gap:10px;align-items:flex-start;font-size:13px;
+line-height:1.45;font-weight:500;cursor:pointer}
+.consiento input{width:19px;height:19px;flex:0 0 19px;margin-top:1px;accent-color:var(--rojo)}
+.consiento a{font-weight:700;text-decoration:underline}
+.form__aviso{font-size:13.5px;font-weight:700;line-height:1.4;margin:0}
+.form__aviso:empty{display:none}
+.form__aviso.bien{color:#0B6B22}
+.form__aviso.mal{color:var(--rojo-osc)}
 .alerta__r{display:grid;place-items:center;padding:34px;background:var(--magenta)}
 
 /* ---------- footer ---------- */
@@ -771,10 +783,8 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
     <li><a href="oferta/asistente-de-tesoreria-coverprime-8ce4f80f/">Asistente de Tesoreria — CoverPrime</a></li>
     <li><a href="oferta/asesor-de-seguros-vida-rimac-cia-de-seguros-y-reaseguros-s-a-e0e617dd/">Asesor de Seguros Vida — Rimac Cia de Seguros y Reaseguros S.A.</a></li>
     <li><a href="oferta/asesor-de-seguros-vida-rimac-cia-de-seguros-y-reaseguros-s-a-eaadc2a1/">Asesor de Seguros Vida — Rimac Cia de Seguros y Reaseguros S.A.</a></li>
-    <li><a href="oferta/operario-de-produccion-cyl-68d1ca8f/">Operario de Producción — CYL</a></li>
     <li><a href="oferta/operaria-de-produccion-cyl-850c2083/">Operaria de Producción — CYL</a></li>
     <li><a href="oferta/asesor-de-seguros-vida-rimac-cia-de-seguros-y-reaseguros-s-a-792d89ce/">Asesor de Seguros Vida — Rimac Cia de Seguros y Reaseguros S.A.</a></li>
-    <li><a href="oferta/operario-de-limpieza-de-piezas-produccion-con-cyl-6798faf0/">Operario de Limpieza de Piezas-producción con — CYL</a></li>
     <li><a href="oferta/operario-de-limpieza-de-piezas-cyl-bc41c158/">Operario de Limpieza de Piezas — CYL</a></li>
     <li><a href="oferta/asistente-de-marketing-y-comercial-coverprime-907a9d56/">Asistente de Marketing y Comercial — CoverPrime</a></li>
     <li><a href="oferta/asesor-de-ventas-camara-de-comercio-exterior-s-a-c-dbf7f819/">Asesor de Ventas — CAMARA DE COMERCIO EXTERIOR S.A.C.</a></li>
@@ -791,10 +801,12 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
     <li><a href="oferta/supervisor-a-de-energias-renovables-talento-humano-peru-6eab5463/">Supervisor(a) de Energías Renovables — Talento Humano Perú</a></li>
     <li><a href="oferta/operaria-de-limpieza-de-produccion-cyl-7c248e65/">Operaria de Limpieza de Producción — CYL</a></li>
     <li><a href="oferta/operario-de-almacen-cyl-06d9a5a6/">Operario de Almacén — CYL</a></li>
+    <li><a href="oferta/operario-de-limpieza-de-piezas-produccion-con-cyl-6798faf0/">Operario de Limpieza de Piezas-producción con — CYL</a></li>
     <li><a href="oferta/operador-de-monitoreo-vehicular-confidencial-6885c9de/">Operador de Monitoreo Vehicular — Confidencial</a></li>
     <li><a href="oferta/practicante-de-soporte-tecnico-bold-ascent-e214b931/">Practicante de Soporte Técnico — BOLD ASCENT</a></li>
     <li><a href="oferta/jefe-de-marketing-confidencial-71cedd35/">Jefe de Marketing — Confidencial</a></li>
     <li><a href="oferta/labora-de-lunes-a-viernes-fijo-atencion-al-cliente-manpowergroup-peru-e2840414/">Labora de Lunes a Viernes FIJO! Atención al cliente — ManpowerGroup Perú</a></li>
+    <li><a href="oferta/operario-de-produccion-cyl-68d1ca8f/">Operario de Producción — CYL</a></li>
     <li><a href="oferta/practicante-de-contabilidad-confidencial-4c57301d/">Practicante de Contabilidad — Confidencial</a></li>
     <li><a href="oferta/auxiliar-administrativo-proyecto-especial-regional-plan-copesco-del-go-2ecdca0c/">Auxiliar Administrativo — Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco</a></li>
     <li><a href="oferta/carpintero-de-melamina-y-mobiliario-comercial-conserh-8d80ab71/">Carpintero de Melamina y Mobiliario Comercial — CONSERH</a></li>
@@ -860,16 +872,45 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
         <span class="kicker">GRATIS, SIN LETRA CHICA</span>
         <h2>Que la chamba te llegue al WhatsApp</h2>
         <p>Elige tu rubro y tu sueldo mínimo. Te avisamos apenas entre una oferta que pase el filtro. Sin spam, sin publicidad de cursos.</p>
-        <form class="form" onsubmit="event.preventDefault();this.querySelector('.btn').textContent='¡Listo! Te avisamos ✓';">
-          <input type="text" placeholder="Tu nombre" required>
-          <input type="tel" placeholder="Tu WhatsApp (9 dígitos)" pattern="[0-9]{9}" required>
-          <select required>
+        <form class="form" id="formAlertas" novalidate>
+          <input type="text" name="nombre" placeholder="Tu nombre" required autocomplete="name">
+          <input type="tel" name="whatsapp" placeholder="Tu WhatsApp (9 dígitos)"
+                 inputmode="numeric" maxlength="9" required autocomplete="tel-national">
+          <select name="rubro" required>
             <option value="">¿Qué buscas?</option>
             <option>Tecnología</option><option>Ventas</option><option>Contabilidad</option>
             <option>Salud</option><option>Logística</option><option>Marketing</option>
             <option>Administración</option><option>Prácticas</option>
           </select>
+          <select name="sueldo_minimo">
+            <option value="">Sueldo mínimo (opcional)</option>
+            <option>Desde S/ 1,500</option><option>Desde S/ 2,500</option>
+            <option>Desde S/ 4,000</option><option>Desde S/ 7,000</option>
+          </select>
+
+          <!-- Para que el correo que llega no diga solo "New submission". -->
+          <input type="hidden" name="_subject" value="Cero Vagos: alguien quiere alertas">
+
+          <!-- Trampa para robots: es invisible y una persona nunca la llena.
+               Si viene con algo, el envío se descarta sin decir nada. -->
+          <div class="trampa" aria-hidden="true">
+            <label>No llenar este campo
+              <input type="text" name="apellido_materno" tabindex="-1" autocomplete="off">
+            </label>
+          </div>
+
+          <!-- La Ley 29733 exige consentimiento y decir para qué se usa el
+               dato. No es un trámite: es la diferencia entre pedir un número
+               y quedárselo. -->
+          <label class="consiento">
+            <input type="checkbox" name="consentimiento" required>
+            <span>Acepto que guarden mi número para avisarme de ofertas de mi
+              rubro. Puedo pedir que lo borren cuando quiera.
+              <a href="privacidad/" target="_blank" rel="noopener">Cómo tratamos tus datos</a>.</span>
+          </label>
+
           <button class="btn btn--rojo" type="submit">Activar mis alertas</button>
+          <p class="form__aviso" id="avisoAlertas" role="status" aria-live="polite"></p>
         </form>
       </div>
       <div class="alerta__r">
@@ -937,7 +978,7 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
           <li><a href="terminos/">Términos y condiciones</a></li>
           <li><a href="privacidad/">Política de privacidad</a></li>
           <li><a href="reclamaciones/">Libro de reclamaciones</a></li>
-          <li><a href="mailto:hola@cerovagos.com">Contacto</a></li>
+          <li><a href="mailto:cerovagos.alertas@gmail.com">Contacto</a></li>
         </ul>
       </div>
     </div>
@@ -1274,6 +1315,93 @@ function abrir(id){
 function cerrar(){ $('#modal').classList.remove('on'); document.body.style.overflow=''; }
 $('#modal').addEventListener('click', e=>{ if(e.target.id==='modal') cerrar(); });
 document.addEventListener('keydown', e=>{ if(e.key==='Escape') cerrar(); });
+
+/* ---------- alertas por WhatsApp ----------
+   Antes este formulario mentía: cambiaba el texto del botón a "¡Listo!" y
+   tiraba el dato a la basura. Ahora lo manda de verdad a un servicio que lo
+   guarda, y si algo falla lo dice en vez de fingir.
+
+   Para activarlo hay que pegar abajo la dirección que da Formspree
+   (formspree.io, gratis). Mientras esté vacía, el formulario avisa que las
+   alertas todavía no están listas — que es la verdad — en lugar de tragarse
+   los números de la gente sin que lleguen a ningún lado. */
+const ALERTAS_ENDPOINT = 'https://formspree.io/f/xrpzzoln';
+// Los registros llegan a cerovagos.alertas@gmail.com y quedan además
+// guardados en el panel de Formspree.
+
+(function(){
+  const form = $('#formAlertas');
+  if (!form) return;
+  const aviso  = $('#avisoAlertas');
+  // form.elements.X y no form.X: un campo llamado "id" o "submit" tapa la
+  // propiedad del formulario y el error es dificilísimo de encontrar.
+  const campo  = n => form.elements[n];
+  const boton  = form.querySelector('button[type=submit]');
+  let enviando = false;
+
+  const decir = (texto, ok) => {
+    aviso.textContent = texto;
+    aviso.className = 'form__aviso ' + (ok ? 'bien' : 'mal');
+  };
+  const marcar = (campo, mal) => campo.classList.toggle('mal', mal);
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    if (enviando) return;
+
+    const d = new FormData(form);
+    const nombre   = (d.get('nombre')   || '').trim();
+    const whatsapp = (d.get('whatsapp') || '').replace(/\D/g, '');
+    const rubro    = d.get('rubro') || '';
+
+    // Si vino lleno el campo invisible, fue un robot. Se descarta en silencio:
+    // decirle que falló solo le enseña a evitarlo la próxima vez.
+    if ((d.get('apellido_materno') || '').trim()) { decir('¡Listo! Te avisamos ✓', true); return; }
+
+    marcar(campo('nombre'), nombre.length < 2);
+    // En Perú los celulares son 9 dígitos y empiezan con 9.
+    const telOk = /^9\d{8}$/.test(whatsapp);
+    marcar(campo('whatsapp'), !telOk);
+    marcar(campo('rubro'), !rubro);
+
+    if (nombre.length < 2)     return decir('Escribe tu nombre.', false);
+    if (!telOk)                return decir('El WhatsApp son 9 dígitos y empieza con 9.', false);
+    if (!rubro)                return decir('Elige qué tipo de trabajo buscas.', false);
+    if (!campo('consentimiento').checked)
+      return decir('Marca la casilla para que podamos guardar tu número.', false);
+
+    if (!ALERTAS_ENDPOINT) {
+      return decir('Las alertas todavía no están activas. Falta poco: por ahora '
+                 + 'revisa las ofertas de hoy más arriba.', false);
+    }
+
+    enviando = true;
+    boton.disabled = true;
+    boton.textContent = 'Enviando…';
+    decir('', true);
+
+    try {
+      const r = await fetch(ALERTAS_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form),
+      });
+      if (!r.ok) throw new Error(r.status);
+      form.reset();
+      boton.textContent = '¡Listo! Te avisamos ✓';
+      decir('Guardamos tu número. Te escribimos apenas entre una oferta de ' + rubro + '.', true);
+    } catch (err) {
+      boton.disabled = false;
+      boton.textContent = 'Activar mis alertas';
+      decir('No se pudo enviar. Revisa tu conexión e inténtalo de nuevo.', false);
+    } finally {
+      enviando = false;
+    }
+  });
+
+  // Al corregir un campo se le quita el rojo, sin esperar a reenviar.
+  form.addEventListener('input', e => e.target.classList.remove('mal'));
+})();
 
 /* ---------- listeners ---------- */
 $('#q').addEventListener('input', e=>{ estado.q = e.target.value; render(); });
