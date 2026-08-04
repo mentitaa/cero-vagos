@@ -529,12 +529,18 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
     # Los títulos guardados antes de la última mejora del limpiador se
     # reescriben ahora, sin esperar a que el motor vuelva a ver cada aviso.
     titulos = al.limpiar_titulos()
+    # Y la regla del título: los que no dicen qué puesto es se reescriben con
+    # el oficio que nombra el propio aviso, o se bajan si no lo nombra.
+    vagos = al.revisar_titulos_vagos()
 
     # El listado de la portada vive en datos/ofertas.js y se regenera aparte.
     # Sin esto, arreglar un título o un sueldo no se veía nunca en las tarjetas:
     # las páginas de oferta salían corregidas y la portada seguía con lo viejo.
     from .exportar import exportar
-    exportar(al)
+    # Se le pasa la misma carpeta en la que se está generando todo lo demás.
+    # Sin esto, los tests (que trabajan sobre una carpeta temporal) escribían
+    # el ofertas.js de verdad y dejaban la web con dos ofertas inventadas.
+    exportar(al, raiz=raiz)
 
     filas = al.aprobadas(1000)
     ofertas = [_preparar(f, i + 1) for i, f in enumerate(filas)]
@@ -593,7 +599,7 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
             portada.write_text(texto, encoding="utf-8")
 
     return {"paginas": len(ofertas), "retiradas": retiradas, "sitio": sitio,
-            "titulos_limpiados": titulos, "legales": legales,
+            "titulos_limpiados": titulos, "titulos_vagos": vagos, "legales": legales,
             "pct_sin_sueldo": informe["pct_sin_sueldo"],
             "empresas_analizadas": len(informe["empresas"]),
             "generado": datetime.now().isoformat(timespec="seconds")}

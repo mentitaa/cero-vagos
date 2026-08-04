@@ -18,6 +18,16 @@ SALIDA_JS = RAIZ / "datos" / "ofertas.js"
 SALIDA_JSON = RAIZ / "datos" / "ofertas.json"
 
 
+def _salidas(raiz: Path | None):
+    """
+    A dónde se escribe. El parámetro existe porque los tests corren sobre una
+    carpeta temporal: sin esto escribían encima del archivo de verdad y
+    dejaban la web con las dos ofertas de prueba. Pasó.
+    """
+    base = Path(raiz) if raiz else RAIZ
+    return base / "datos" / "ofertas.js", base / "datos" / "ofertas.json"
+
+
 def _dias_desde(valor: str | None) -> int | None:
     if not valor:
         return None
@@ -56,7 +66,8 @@ def _a_formato_web(fila: dict, indice: int) -> dict:
     }
 
 
-def exportar(almacen: Almacen | None = None, limite: int = 500) -> dict:
+def exportar(almacen: Almacen | None = None, limite: int = 500,
+             raiz: Path | None = None) -> dict:
     al = almacen or Almacen()
     # Nunca se exporta sin depurar antes: si no, una oferta cuyo plazo cerró
     # anoche seguiría publicada hasta la próxima recolección.
@@ -72,11 +83,12 @@ def exportar(almacen: Almacen | None = None, limite: int = 500) -> dict:
         "ofertas": ofertas,
     }
 
-    SALIDA_JS.parent.mkdir(parents=True, exist_ok=True)
+    salida_js, salida_json = _salidas(raiz)
+    salida_js.parent.mkdir(parents=True, exist_ok=True)
     cuerpo = json.dumps(payload, ensure_ascii=False, indent=1)
 
-    SALIDA_JSON.write_text(cuerpo, encoding="utf-8")
-    SALIDA_JS.write_text(
+    salida_json.write_text(cuerpo, encoding="utf-8")
+    salida_js.write_text(
         "/* Generado por el motor de Cero Vagos. No editar a mano. */\n"
         f"window.CERO_VAGOS = {cuerpo};\n",
         encoding="utf-8",

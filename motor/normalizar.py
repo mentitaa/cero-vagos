@@ -463,3 +463,132 @@ def es_relleno(texto: str) -> bool:
     """True si la línea es puro adorno corporativo sin información."""
     plano = sin_tildes(texto)
     return any(sin_tildes(f) in plano for f in FRASES_RELLENO) and len(texto) < 60
+
+
+# --------------------------------------------------------------------------
+# Cuando el título no dice qué es el trabajo
+# --------------------------------------------------------------------------
+#
+# Hay avisos cuyo título es el nombre del local ("Primax Cerro Azul"), la
+# marca ("Papa Johns") o un gancho ("Trabaja cerca al Parque de la Amistad").
+# El aviso está completo —sueldo, funciones, requisitos y beneficios— pero el
+# título no dice si es cocina, caja o reparto.
+#
+# Eso es justo lo que Cero Vagos existe para no hacer, así que se deduce el
+# oficio del texto del aviso. Dos reglas estrictas:
+#
+#   1. Solo se usan palabras **escritas en el aviso**. Nunca se inventa.
+#   2. No se miran los beneficios. Ahí viven "seguro médico" y "servicio de
+#      limpieza", que hacían deducir que un puesto de call center era de
+#      médico. Un beneficio nunca dice cuál es el trabajo.
+
+# Oficios de una palabra. Van sin tildes porque se comparan sin tildes.
+OFICIOS = (
+    "asesor", "asistente", "operario", "operaria", "operador", "operadora",
+    "analista", "ingeniero", "ingeniera", "tecnico", "tecnica", "practicante",
+    "supervisor", "supervisora", "coordinador", "coordinadora", "jefe", "jefa",
+    "gerente", "auxiliar", "administrador", "administradora", "vendedor",
+    "vendedora", "cajero", "cajera", "promotor", "promotora", "representante",
+    "arquitecto", "arquitecta", "contador", "contadora", "abogado", "abogada",
+    "enfermero", "enfermera", "docente", "profesor", "profesora", "chofer",
+    "conductor", "conductora", "almacenero", "almacenera", "carpintero",
+    "panadero", "panadera", "recepcionista", "secretaria", "desarrollador",
+    "desarrolladora", "disenador", "disenadora", "especialista", "ejecutivo",
+    "ejecutiva", "consultor", "consultora", "gestor", "gestora", "anfitrion",
+    "anfitriona", "despachador", "despachadora", "ayudante", "mozo", "moza",
+    "azafata", "cocinero", "cocinera", "pizzero", "pizzera", "barista",
+    "mecanico", "mecanica", "electricista", "soldador", "gasfitero",
+    "vigilante", "reponedor", "reponedora", "digitador", "digitadora",
+    "teleoperador", "teleoperadora", "capacitador", "capacitadora", "cobrador",
+)
+
+# Cargos de dos o tres palabras. Sin esto, "Customer Service" y "Back Office"
+# se tomaban por títulos vacíos cuando son el nombre real del puesto.
+CARGOS_COMPUESTOS = (
+    "atencion al cliente", "customer service", "back office", "front office",
+    "call center", "community manager", "project manager", "product owner",
+    "help desk", "soporte tecnico", "mesa de partes", "jefe de tienda",
+    "personal de limpieza", "personal de seguridad", "agente de seguridad",
+    "auxiliar de limpieza", "asesor de ventas", "fuerza de ventas",
+)
+
+# Dónde se corta el cargo deducido.
+_CORTE_CARGO = re.compile(
+    r"[,.;:()\[\]/|]|\s+(?:para|con|en|que|quien|desde|hasta|segun|"
+    r"a\s+partir|y\s+|o\s+)", re.IGNORECASE)
+
+# Palabras que pueden seguir a un oficio y siguen siendo parte del cargo.
+_SIGUE_EL_CARGO = re.compile(r"^(?:de|del|de\s+la|en)\b", re.IGNORECASE)
+
+
+def titulo_nombra_el_puesto(titulo: str) -> bool:
+    """
+    ¿El título dice QUÉ es el trabajo, o solo dónde y para quién?
+
+    "Operario de Producción" sí. "Papa Johns" no. "Trabaja cerca al Parque de
+    la Amistad" tampoco: dice dónde queda, no qué se hace.
+    """
+    plano = sin_tildes(titulo).lower()
+    if any(frase in plano for frase in CARGOS_COMPUESTOS):
+        return True
+    return any(re.search(rf"\b{o}\b", plano) for o in OFICIOS)
+
+
+def deducir_puesto(resumen: str = "", funciones=(), requisitos=()) -> str:
+    """
+    Saca el nombre del oficio del texto del aviso.
+
+    Se busca en este orden porque así de fiable es cada parte: el resumen
+    suele repetir el cargo, las funciones lo nombran de pasada, y los
+    requisitos a veces piden "experiencia como X". Los beneficios no se miran
+    nunca (ver el comentario de arriba).
+
+    Devuelve "" si el aviso no nombra ningún oficio. Ese vacío significa "no
+    se sabe", y quien llama decide: el motor rechaza. Antes que inventar un
+    cargo, se pierde el aviso.
+    """
+    for texto in (resumen, " · ".join(funciones or ()), " · ".join(requisitos or ())):
+        if not texto:
+            continue
+        plano = sin_tildes(texto).lower()
+
+        for frase in CARGOS_COMPUESTOS:
+            i = plano.find(frase)
+            if i >= 0:
+                return _bonito(texto[i:i + len(frase)])
+
+        mejor = None
+        for oficio in OFICIOS:
+            m = re.search(rf"\b{oficio}\w*\b", plano)
+            if m and (mejor is None or m.start() < mejor.start()):
+                mejor = m
+        if mejor:
+            cargo = _recortar_cargo(texto, plano, mejor.start())
+            if cargo:
+                return cargo
+    return ""
+
+
+def _recortar_cargo(original: str, plano: str, inicio: int) -> str:
+    """Toma el oficio y los complementos que de verdad le pertenecen."""
+    resto = plano[inicio:]
+    corte = _CORTE_CARGO.search(resto)
+    tramo = original[inicio:inicio + (corte.start() if corte else len(resto))]
+    palabras = " ".join(tramo.split()).split()
+    if not palabras:
+        return ""
+
+    # Se conserva el oficio y, si lo que sigue es un complemento suyo
+    # ("de producción", "de combustible"), hasta cuatro palabras.
+    cargo = palabras[:1]
+    if len(palabras) > 1 and _SIGUE_EL_CARGO.match(" ".join(palabras[1:])):
+        cargo = palabras[:4]
+
+    texto = " ".join(cargo)
+    return _bonito(texto) if titulo_nombra_el_puesto(texto) else ""
+
+
+def _bonito(texto: str) -> str:
+    if texto.isupper():
+        return _titular(texto)
+    return texto[:1].upper() + texto[1:]

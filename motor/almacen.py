@@ -300,6 +300,49 @@ class Almacen:
             self.con.commit()
         return arreglados
 
+    def revisar_titulos_vagos(self) -> dict:
+        """
+        Pasa la regla del título por lo que ya está publicado.
+
+        La regla nueva (deducir el oficio, y si no se sabe rechazar) solo actúa
+        sobre avisos recién recolectados. Los que ya estaban en la base seguirían
+        publicados con "Papa Johns" de título durante semanas, hasta que el motor
+        volviera a verlos. Esto los arregla ahora.
+
+        Devuelve cuántos se reescribieron y cuántos se bajaron.
+        """
+        from .normalizar import deducir_puesto, titulo_nombra_el_puesto
+
+        reescritos = retirados = 0
+        filas = self.con.execute(
+            "SELECT huella, puesto, resumen, funciones, requisitos, motivos_rechazo "
+            "FROM ofertas WHERE aprobada = 1").fetchall()
+
+        for fila in filas:
+            if titulo_nombra_el_puesto(fila["puesto"]):
+                continue
+
+            deducido = deducir_puesto(
+                fila["resumen"] or "",
+                json.loads(fila["funciones"] or "[]"),
+                json.loads(fila["requisitos"] or "[]"),
+            )
+            if deducido:
+                self.con.execute("UPDATE ofertas SET puesto = ? WHERE huella = ?",
+                                 (deducido, fila["huella"]))
+                reescritos += 1
+            else:
+                motivos = json.loads(fila["motivos_rechazo"] or "[]")
+                motivos.append("El aviso no dice qué puesto es")
+                self.con.execute(
+                    "UPDATE ofertas SET aprobada = 0, motivos_rechazo = ? WHERE huella = ?",
+                    (json.dumps(motivos, ensure_ascii=False), fila["huella"]))
+                retirados += 1
+
+        if reescritos or retirados:
+            self.con.commit()
+        return {"reescritos": reescritos, "retirados": retirados}
+
     # ---------------- transparencia salarial ----------------
 
     def transparencia(self, minimo_avisos: int = 3) -> dict:

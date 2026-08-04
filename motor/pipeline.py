@@ -13,8 +13,9 @@ from .almacen import Almacen
 from .fuentes.base import ErrorFuente, Fuente
 from .modelos import Oferta, OfertaCruda
 from .normalizar import (
-    armar_resumen, detectar_categoria, detectar_modalidad, detectar_ubicacion,
-    extraer_bloques, html_a_lineas, limpiar_puesto,
+    armar_resumen, deducir_puesto, detectar_categoria, detectar_modalidad,
+    detectar_ubicacion, extraer_bloques, html_a_lineas, limpiar_puesto,
+    titulo_nombra_el_puesto,
 )
 from .score import evaluar
 from .sueldo import extraer_sueldo
@@ -61,6 +62,27 @@ def procesar_cruda(cruda: OfertaCruda) -> Oferta:
     vence = _fecha_iso(cruda.extra.get("vence"))
     # El título viene con publicidad encima; se guarda solo el puesto.
     puesto = limpiar_puesto(cruda.puesto)
+
+    # Hay títulos que dicen dónde queda el trabajo o para qué marca es, pero
+    # no qué se hace: "Papa Johns", "Primax Cerro Azul", "Trabaja cerca al
+    # Parque de la Amistad". Publicar eso sería exactamente la oferta vaga que
+    # este motor existe para rechazar, solo que en el titular.
+    #
+    # Se intenta deducir el oficio del texto del propio aviso. Si el aviso no
+    # lo nombra en ninguna parte, el aviso se cae: es preferible perderlo a
+    # inventarle un cargo a una empresa.
+    if not titulo_nombra_el_puesto(puesto):
+        deducido = deducir_puesto(
+            armar_resumen(bloques, cruda.puesto),
+            bloques["funciones"],
+            bloques["requisitos"],
+        )
+        if deducido:
+            puesto = deducido
+        else:
+            # Basta con anotar el motivo: un aviso con motivos no se aprueba,
+            # por definición (ver Resultado.aprobada en score.py).
+            resultado.motivos.append("El aviso no dice qué puesto es")
 
     return Oferta(
         huella=Oferta.calcular_huella(puesto, cruda.empresa, ciudad),
