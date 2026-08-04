@@ -440,6 +440,13 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
     # Los títulos guardados antes de la última mejora del limpiador se
     # reescriben ahora, sin esperar a que el motor vuelva a ver cada aviso.
     titulos = al.limpiar_titulos()
+
+    # El listado de la portada vive en datos/ofertas.js y se regenera aparte.
+    # Sin esto, arreglar un título o un sueldo no se veía nunca en las tarjetas:
+    # las páginas de oferta salían corregidas y la portada seguía con lo viejo.
+    from .exportar import exportar
+    exportar(al)
+
     filas = al.aprobadas(1000)
     ofertas = [_preparar(f, i + 1) for i, f in enumerate(filas)]
 

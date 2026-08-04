@@ -383,31 +383,80 @@ def _titular(texto: str) -> str:
     return " ".join(palabras)
 
 
+# Un puesto no tiene doce palabras. Hay cargos largos de verdad —"Analista de
+# Costos para Licitaciones y Proyectos en Minería Subterránea"— así que el
+# límite es generoso: recortar de más es peor que dejar uno largo.
+MAX_PALABRAS_PUESTO = 11
+
+# Arranques que no dicen el cargo: "IMPORTANTE EMPRESA REQUIERE Personal…"
+_ARRANQUE_VACIO = re.compile(
+    r"^(?:(?:importante|reconocida|prestigiosa|gran)\s+empresa\s+)?"
+    r"(?:requiere|requerimos|solicitamos|solicita|buscamos|busca|necesitamos|"
+    r"necesita|se\s+requiere|se\s+solicita|se\s+necesita|contratamos|"
+    r"estamos\s+buscando)\s+(?:a\s+|un\s+|una\s+|personal\s+para\s+el\s+puesto\s+de\s+)?",
+    re.I,
+)
+
+# Lo que viene después de esto ya no es el cargo, es un requisito o un premio.
+_COLA_REQUISITO = re.compile(
+    r"\s+(?:con|sin)\s+(?:experiencia|exp\b|disponibilidad|movilidad|sueldo|"
+    r"planilla|bono|beneficios|o\s+sin)",
+    re.I,
+)
+
+
+def _recortar_por_largo(puesto: str) -> str:
+    """Última red, por si la publicidad no usó ninguna palabra conocida."""
+    puesto = _COLA_REQUISITO.split(puesto, maxsplit=1)[0].strip()
+    palabras = puesto.split()
+    if len(palabras) <= MAX_PALABRAS_PUESTO:
+        return puesto
+    return " ".join(palabras[:MAX_PALABRAS_PUESTO])
+
+
 def limpiar_puesto(titulo: str) -> str:
     """
-    Deja solo el puesto. Ante la duda, devuelve el título original: es peor
-    recortar de más y perder el nombre del cargo.
+    Deja solo el puesto.
+
+    Los avisos peruanos usan el título como cartel de feria: gancho de sueldo,
+    distrito, beneficios y horario, todo junto. Se aplican cuatro reglas en
+    orden, de la más segura a la más agresiva:
+
+      1. Fuera los ganchos entre signos de admiración.
+      2. Se parte por los separadores y se toma el primer tramo que parezca un
+         cargo y no un beneficio, un distrito ni un monto.
+      3. Se quitan los restos entre paréntesis del final.
+      4. Si aun así quedan más de nueve palabras, se recorta.
+
+    Ante la duda devuelve algo: es peor quedarse sin título que con uno largo.
     """
     if not titulo:
         return ""
 
     texto = re.sub(r"\s+", " ", titulo).strip()
 
-    # Fuera los ganchos entre signos de admiración: "¡GANA MÁS DE 1800 SOLES!"
-    texto = re.sub(r"[¡!][^!¡]{0,80}!", " ", texto).strip(" -–—/|,")
-    texto = re.sub(r"\s+", " ", texto)
+    # 1. Ganchos: "¡GANA MÁS DE 1800 SOLES!", "¡ÚNETE AL EQUIPO!"
+    texto = re.sub(r"[¡!][^!¡]{0,80}!", " ", texto)
+    # Y los que abren sin cerrar: "GANA HASTA S/2000 - Operario"
+    texto = re.sub(r"^[^-–—/|]{0,60}(?:gana|ganaras|ganarás|s/\s*\d)"
+                   r"[^-–—/|]{0,40}[-–—/|]\s*", "", texto, flags=re.I)
+    texto = re.sub(r"\s+", " ", texto).strip(" -–—/|,")
+    # Arranques que no dicen nada: "IMPORTANTE EMPRESA REQUIERE …"
+    texto = _ARRANQUE_VACIO.sub("", texto).strip()
 
+    # 2. El primer tramo que parezca un cargo.
     tramos = [t.strip(" -–—/|,.") for t in _SEPARADORES.split(texto) if t.strip()]
     puesto = next((t for t in tramos if _tramo_es_puesto(t)), "")
-
     if not puesto:
         puesto = tramos[0] if tramos else texto
 
-    # Restos comunes al final: "(Lurigancho)", "- Trujillo", "para Lima"
+    # 3. Restos entre paréntesis: "(Lurigancho)", "(Temporal)"
     puesto = re.sub(r"\s*\((?:[^)]{0,40})\)\s*$", "", puesto).strip(" -–—/|,.")
-    puesto = _titular(puesto)
 
-    return puesto or titulo.strip()
+    # 4. La red de seguridad por largo.
+    puesto = _recortar_por_largo(puesto)
+
+    return _titular(puesto) or titulo.strip()
 
 
 def es_relleno(texto: str) -> bool:
