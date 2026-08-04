@@ -288,6 +288,14 @@ def sitemap(ofertas: list[dict], sitio: str) -> str:
         f"  <url><loc>{sitio}/transparencia/</loc><lastmod>{hoy}</lastmod>"
         f"<changefreq>daily</changefreq><priority>0.9</priority></url>",
     ]
+
+    # Las páginas fijas cambian poco, pero deben ser encontrables.
+    # El libro de reclamaciones se deja fuera: es un canal, no contenido.
+    for fija in ("como-trabajamos", "terminos", "privacidad"):
+        entradas.append(
+            f"  <url><loc>{sitio}/{fija}/</loc><lastmod>{hoy}</lastmod>"
+            f"<changefreq>monthly</changefreq><priority>0.4</priority></url>"
+        )
     for o in ofertas:
         mod = o.get("publicado_iso") or hoy
         entradas.append(
@@ -454,6 +462,10 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
     from .transparencia import generar as generar_transparencia
     informe = generar_transparencia(al, sitio, raiz)
 
+    # Términos, privacidad, reclamaciones y cómo trabajamos.
+    from .legales import generar as generar_legales
+    legales = generar_legales(sitio, raiz)
+
     (raiz / "sitemap.xml").write_text(sitemap(ofertas, sitio), encoding="utf-8")
     (raiz / "robots.txt").write_text(robots(sitio), encoding="utf-8")
     # GitHub Pages muestra este archivo cuando alguien llega a una dirección
@@ -473,6 +485,7 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
             portada.write_text(texto, encoding="utf-8")
 
     return {"paginas": len(ofertas), "retiradas": retiradas, "sitio": sitio,
+            "legales": legales,
             "pct_sin_sueldo": informe["pct_sin_sueldo"],
             "empresas_analizadas": len(informe["empresas"]),
             "generado": datetime.now().isoformat(timespec="seconds")}
