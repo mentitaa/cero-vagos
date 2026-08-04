@@ -15,13 +15,14 @@ servidor propio ni base de datos en línea. Eso elimina de un plumazo la mayorí
 de las formas en que se hackea una web. No hay dónde entrar.
 
 Se encontró **un hueco real** (ya arreglado en su momento) y **un riesgo
-práctico que sigue abierto** y depende de una configuración externa.
+práctico**, que quedó cerrado el mismo día restringiendo el dominio en
+Formspree. No queda nada abierto.
 
 | | Estado |
 |---|---|
 | Código inyectado en las ofertas (XSS) | Arreglado |
 | Falta de política de contenido | Arreglado en esta revisión |
-| Abuso del formulario de alertas | **Abierto** — requiere acción tuya |
+| Abuso del formulario de alertas | Cerrado el 4/8/2026 |
 | Robo de la pestaña al salir a otro portal | Correcto de antes |
 | Inyección en la base de datos | No aplica |
 | Claves o contraseñas expuestas | Ninguna |
@@ -67,9 +68,9 @@ funcionará. Las pruebas en `pruebas/test_seguridad.py` avisan si algo que la
 web usa quedó bloqueado por error — que es el modo silencioso en que esto
 suele salir mal.
 
-### 3. Abuso del formulario de alertas — **abierto**
+### 3. Abuso del formulario de alertas — **cerrado**
 
-**Este es el punto que queda, y es el más probable de todos.**
+**Era el punto más probable de todos.**
 
 El plan gratuito de Formspree aguanta **50 registros al mes**. El formulario
 tiene una trampa que descarta robots, pero esa trampa vive en la página: nada
@@ -81,16 +82,14 @@ cuota del mes.
 registros de gente real dejan de llegar y la web sigue diciendo "¡Listo! Te
 avisamos". Nadie se entera.
 
-**Qué hacer** (en el panel de Formspree, 5 minutos):
+**Qué se hizo** (en el panel de Formspree, ajustes del *proyecto*):
 
-1. **Restringe el dominio.** En los ajustes del formulario hay una opción para
-   aceptar envíos solo desde `mentitaa.github.io`. Es lo que más sirve: corta
-   los envíos hechos desde fuera de tu web.
-2. **Activa la protección antispam** que Formspree trae incluida.
-3. **Revisa el correo de aviso** de cuando se acerque al límite. Si llega, ya
-   sabes que o creciste o te están molestando.
+1. **Restricción de dominio a `mentitaa.github.io`.** Los envíos que no salgan
+   de esa web se marcan como spam. Es lo que corta el ataque.
+2. **Formshield encendido**, el filtro antispam incluido.
 
-Ninguna de las tres se puede hacer desde el código: son ajustes de tu cuenta.
+Ninguna de las dos se puede hacer desde el código: son ajustes de la cuenta.
+El detalle y las trampas de esta opción están en `ALERTAS.md`.
 
 ### 4. Enlaces a otros portales — **correcto**
 

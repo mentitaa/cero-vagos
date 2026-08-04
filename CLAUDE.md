@@ -161,27 +161,23 @@ Lo que está esperando, en orden aproximado de impacto:
    laptop deje de ser infraestructura (`DESPLIEGUE.md`). El workflow ya está
    escrito. Ojo con la trampa de quién manda sobre `datos/` y `oferta/` una vez
    encendido.
-2. **Blindar el formulario de alertas** en el panel de Formspree: restringir el
-   dominio a `mentitaa.github.io` y activar el antispam. Son 5 minutos y es el
-   único hallazgo abierto de la auditoría (`SEGURIDAD.md`). Sin esto alguien
-   puede agotar los 50 registros del mes y los envíos reales fallan en silencio.
-3. **Más fuentes.** 60 ofertas es poco para que alguien vuelva al día
+2. **Más fuentes.** 60 ofertas es poco para que alguien vuelva al día
    siguiente. El camino son las bolsas de empresas (`EMPRESAS.md`), no aflojar
    el filtro.
-4. **Enviar los correos a las universidades** (`PROPUESTA-UNIVERSIDADES.md`).
+3. **Enviar los correos a las universidades** (`PROPUESTA-UNIVERSIDADES.md`).
    No depende de código y las respuestas tardan días.
-5. **Comprar y conectar `cerovagos.com`** (`DOMINIO.md`). No hay archivo
+4. **Comprar y conectar `cerovagos.com`** (`DOMINIO.md`). No hay archivo
    `CNAME` todavía. Comprarlo pronto aunque no se conecte: la antigüedad del
    dominio ayuda.
-6. **Alinear el `.pe` con el `.com`.** El bot todavía se presenta como
+5. **Alinear el `.pe` con el `.com`.** El bot todavía se presenta como
    `cerovagos.pe` en `motor/fuentes/base.py` (`USER_AGENT`) y firma como
    `bot@cerovagos.pe` en GitHub Actions. Cambiarlos al comprar el dominio, para
    que la dirección de contacto que ven los portales exista de verdad.
-7. **Páginas por ciudad y rubro** ("Trabajos en Arequipa con sueldo"). Es lo
+6. **Páginas por ciudad y rubro** ("Trabajos en Arequipa con sueldo"). Es lo
    que la gente busca en Google y hoy no hay nada que aparezca para eso.
-8. **Detector de requisitos discriminatorios** (Ley 26772). Se encontró un
+7. **Detector de requisitos discriminatorios** (Ley 26772). Se encontró un
    aviso pidiendo "Edad: entre 20 y 45 años".
-9. Bajar el límite por portal de 150 a ~80 en las corridas nocturnas. La
+8. Bajar el límite por portal de 150 a ~80 en las corridas nocturnas. La
    primera corrida larga tomó más de 3 horas.
 
 ## Trampas conocidas
@@ -202,6 +198,9 @@ verificar.
   El camino es un acuerdo, o vivir sin él.
 - **SQLite falla en carpetas sincronizadas** (iCloud, Drive, Dropbox) al tomar
   bloqueos. Salida: `export CEROVAGOS_DB=~/cerovagos.db`.
+- **El formulario de alertas está restringido a `mentitaa.github.io`** en
+  Formspree. Al conectar `cerovagos.com` hay que cambiarlo ahí o todos los
+  registros se van a spam en silencio (`DOMINIO.md`).
 - **El correo del proyecto es `cerovagos.alertas@gmail.com`** y sale publicado
   en las páginas legales. No inventar direcciones: la política de privacidad
   promete que se puede pedir la baja de un dato, y si el correo rebota esa

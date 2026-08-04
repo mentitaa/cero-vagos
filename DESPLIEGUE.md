@@ -32,7 +32,22 @@ Tiene que subir, porque ahí vive la automatización.
 
 Abajo, **Commit changes**.
 
-## 3. Encender la automatización
+## 3. Darle permiso de escritura al robot
+
+**Esto es lo primero, y es lo que más se olvida.** Si no lo haces, la corrida
+revisa los 1,200 avisos, tarda su hora larga, y falla en el último paso al
+intentar guardar. Verás un error rojo que dice `403` o *permission denied*.
+
+1. Pestaña **Settings** del repositorio.
+2. Menú izquierdo: **Actions** → **General**.
+3. Baja hasta **Workflow permissions**.
+4. Marca **Read and write permissions**.
+5. **Save**.
+
+GitHub deja esto en solo lectura por defecto. El robot necesita escribir para
+guardar las ofertas que recolectó.
+
+## 4. Encender la automatización
 
 1. Pestaña **Actions** del repositorio.
 2. Si aparece un aviso pidiendo permiso, clic en **I understand my workflows,
@@ -45,7 +60,7 @@ servidores de GitHub, no en tu Mac. Al terminar, un check verde.
 
 Desde ahí en adelante corre sola a la **medianoche hora de Perú**.
 
-## 4. Publicar la web
+## 5. Publicar la web
 
 1. Pestaña **Settings** → menú izquierdo, **Pages**.
 2. En *Source*, elige **Deploy from a branch**.
@@ -58,7 +73,7 @@ https://TU-USUARIO.github.io/cero-vagos/
 ```
 
 Esa dirección ya se puede compartir. Cuando compres un dominio propio
-(cerovagos.pe), se conecta desde esa misma pantalla.
+(cerovagos.com), se conecta desde esa misma pantalla.
 
 ---
 
@@ -76,8 +91,9 @@ las ofertas aprobadas, las rechazadas y por qué.
 Actions → **Recolección diaria** → **Run workflow**. Ahí puedes cambiar dos
 cosas para esa corrida:
 
-- **Avisos por portal**: cuántos revisar. 150 por defecto; súbelo a 400 si
-  quieres una pasada más grande.
+- **Avisos por portal**: cuántos revisar. 120 por defecto; súbelo si quieres
+  una pasada más grande. Ojo: la corrida tiene 150 minutos de tope y una
+  pasada completa de 1,200 avisos tardó más de tres horas.
 - **Días**: solo avisos publicados en los últimos N días. 3 por defecto, que es
   lo lógico para una corrida diaria. Pon 0 para revisar todo lo de los últimos
   dos meses.
@@ -96,6 +112,32 @@ con los demás y guarda lo que consiguió.
 
 **Tu laptop queda libre.** Los comandos locales siguen funcionando igual si
 quieres probar algo, pero ya no son necesarios para el día a día.
+
+## La trampa: quién manda a partir de ahora
+
+Esta es la única forma real de perder trabajo, y conviene entenderla antes de
+encender nada.
+
+Hasta hoy tu carpeta era la verdad y GitHub la copia. **Desde que la corrida
+automática arranca, se invierte:** cada madrugada el bot recolecta ofertas
+nuevas, regenera las páginas y las guarda en GitHub. Tu carpeta se queda
+congelada en donde la dejaste.
+
+Si al día siguiente subes tu copia de `datos/`, `oferta/`, `sitemap.xml` o
+`index.html` por el navegador, **borras lo que el bot recolectó esa noche**. Y
+como la base de datos también se pisa, el motor olvida qué avisos ya había
+revisado y vuelve a descargarlos todos.
+
+La regla, en corto:
+
+| Carpeta | Quién manda |
+|---|---|
+| `datos/`, `oferta/`, `sitemap.xml` | **El bot.** No las subas nunca a mano. |
+| `index.html`, `motor/`, `assets/`, los `.md` | **Tú.** El bot no las inventa. |
+
+Si alguna vez necesitas volver a trabajar sobre lo que hay en GitHub, primero
+**descarga el repositorio** (botón verde *Code* → *Download ZIP*) y reemplaza
+tu carpeta con eso. Nunca al revés.
 
 ## Y si prefieres no usar GitHub
 
