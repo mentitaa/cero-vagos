@@ -5,6 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cero Vagos — Solo ofertas de trabajo completas en Perú</title>
 <meta name="description" content="Recopilamos ofertas laborales de los principales portales del Perú y solo publicamos las que tienen sueldo, funciones, requisitos y beneficios detallados. Cero vagos, cero ofertas vagas.">
+<link rel="icon" href="assets/icono.svg" type="image/svg+xml">
+<!-- Lo de abajo es la tarjeta que sale al pegar el enlace en WhatsApp o
+     Facebook. Lo reescribe el motor en cada publicación (motor/sitio.py,
+     bloque_compartir) para que las direcciones sean absolutas y sigan al
+     dominio. No editar a mano: se pisa. -->
+<!-- COMPARTIR:INICIO -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cero Vagos">
+<meta property="og:locale" content="es_PE">
+<meta property="og:title" content="Cero Vagos — Solo ofertas de trabajo completas en Perú">
+<meta property="og:description" content="El 75% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
+<meta property="og:url" content="https://mentitaa.github.io/cero-vagos/">
+<meta property="og:image" content="https://mentitaa.github.io/cero-vagos/assets/compartir.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cero Vagos. El 75% de los avisos de empleo no dice cuánto paga.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cero Vagos — Solo ofertas de trabajo completas en Perú">
+<meta name="twitter:description" content="El 75% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
+<meta name="twitter:image" content="https://mentitaa.github.io/cero-vagos/assets/compartir.png">
+<link rel="canonical" href="https://mentitaa.github.io/cero-vagos/">
+<!-- COMPARTIR:FIN -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
@@ -93,14 +116,11 @@ img,svg{display:block;max-width:100%}
 header{position:sticky;top:0;z-index:50;background:var(--crema);border-bottom:var(--bd)}
 .nav{display:flex;align-items:stretch;max-width:1360px;margin:0 auto}
 .logo{
-  display:flex;align-items:center;gap:10px;padding:16px 22px;
-  border-right:var(--bd);background:var(--negro);color:var(--blanco);
-  font-family:var(--display);font-size:22px;letter-spacing:-.03em;
+  display:flex;align-items:center;padding:14px 22px;
+  border-right:var(--bd);background:var(--negro);
 }
-.logo__cero{
-  display:grid;place-items:center;width:34px;height:34px;border-radius:50%;
-  border:3px solid var(--rojo);color:var(--rojo);font-size:17px;
-}
+.logo img{width:auto;height:46px;display:block}
+@media(max-width:600px){.logo{padding:10px 14px}.logo img{height:36px}}
 .nav__links{display:flex;align-items:center;gap:4px;flex:1;padding:0 14px;flex-wrap:wrap}
 .nav__links a{
   padding:9px 13px;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.02em;
@@ -389,8 +409,7 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
 .foot__grid ul{list-style:none;display:grid;gap:9px}
 .foot__grid li a{font-size:14px;font-weight:500;opacity:.8}
 .foot__grid li a:hover{opacity:1;text-decoration:underline}
-.foot__logo{font-family:var(--display);font-size:30px;display:flex;align-items:center;gap:11px;margin-bottom:14px}
-.foot__logo .logo__cero{width:40px;height:40px;font-size:20px}
+.foot__logo{width:auto;height:62px;display:block;margin-bottom:10px}
 .foot__bar{border-top:2px solid #2a2a2a;padding:20px 0;font-size:12.5px;font-weight:600;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;opacity:.7}
 
 /* ---------- responsive ---------- */
@@ -458,9 +477,8 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
 <!-- ============ HEADER ============ -->
 <header>
   <div class="nav">
-    <a href="#" class="logo">
-      <span class="logo__cero">0</span>
-      <span class="tachado">VAGOS</span>
+    <a href="#" class="logo" aria-label="Cero Vagos">
+      <img src="assets/logo-claro.svg" alt="Cero Vagos" width="850" height="381">
     </a>
     <nav class="nav__links" id="navLinks">
       <a href="#ofertas">Ofertas</a>
@@ -753,10 +771,8 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
     <li><a href="oferta/asistente-de-tesoreria-coverprime-8ce4f80f/">Asistente de Tesoreria — CoverPrime</a></li>
     <li><a href="oferta/asesor-de-seguros-vida-rimac-cia-de-seguros-y-reaseguros-s-a-e0e617dd/">Asesor de Seguros Vida — Rimac Cia de Seguros y Reaseguros S.A.</a></li>
     <li><a href="oferta/asesor-de-seguros-vida-rimac-cia-de-seguros-y-reaseguros-s-a-eaadc2a1/">Asesor de Seguros Vida — Rimac Cia de Seguros y Reaseguros S.A.</a></li>
-    <li><a href="oferta/operario-de-produccion-cyl-68d1ca8f/">Operario de Producción — CYL</a></li>
     <li><a href="oferta/operaria-de-produccion-cyl-850c2083/">Operaria de Producción — CYL</a></li>
     <li><a href="oferta/asesor-de-seguros-vida-rimac-cia-de-seguros-y-reaseguros-s-a-792d89ce/">Asesor de Seguros Vida — Rimac Cia de Seguros y Reaseguros S.A.</a></li>
-    <li><a href="oferta/operario-de-limpieza-de-piezas-produccion-con-cyl-6798faf0/">Operario de Limpieza de Piezas-producción con — CYL</a></li>
     <li><a href="oferta/operario-de-limpieza-de-piezas-cyl-bc41c158/">Operario de Limpieza de Piezas — CYL</a></li>
     <li><a href="oferta/asistente-de-marketing-y-comercial-coverprime-907a9d56/">Asistente de Marketing y Comercial — CoverPrime</a></li>
     <li><a href="oferta/asesor-de-ventas-camara-de-comercio-exterior-s-a-c-dbf7f819/">Asesor de Ventas — CAMARA DE COMERCIO EXTERIOR S.A.C.</a></li>
@@ -773,10 +789,12 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
     <li><a href="oferta/supervisor-a-de-energias-renovables-talento-humano-peru-6eab5463/">Supervisor(a) de Energías Renovables — Talento Humano Perú</a></li>
     <li><a href="oferta/operaria-de-limpieza-de-produccion-cyl-7c248e65/">Operaria de Limpieza de Producción — CYL</a></li>
     <li><a href="oferta/operario-de-almacen-cyl-06d9a5a6/">Operario de Almacén — CYL</a></li>
+    <li><a href="oferta/operario-de-limpieza-de-piezas-produccion-con-cyl-6798faf0/">Operario de Limpieza de Piezas-producción con — CYL</a></li>
     <li><a href="oferta/operador-de-monitoreo-vehicular-confidencial-6885c9de/">Operador de Monitoreo Vehicular — Confidencial</a></li>
     <li><a href="oferta/practicante-de-soporte-tecnico-bold-ascent-e214b931/">Practicante de Soporte Técnico — BOLD ASCENT</a></li>
     <li><a href="oferta/jefe-de-marketing-confidencial-71cedd35/">Jefe de Marketing — Confidencial</a></li>
     <li><a href="oferta/labora-de-lunes-a-viernes-fijo-atencion-al-cliente-manpowergroup-peru-e2840414/">Labora de Lunes a Viernes FIJO! Atención al cliente — ManpowerGroup Perú</a></li>
+    <li><a href="oferta/operario-de-produccion-cyl-68d1ca8f/">Operario de Producción — CYL</a></li>
     <li><a href="oferta/practicante-de-contabilidad-confidencial-4c57301d/">Practicante de Contabilidad — Confidencial</a></li>
     <li><a href="oferta/auxiliar-administrativo-proyecto-especial-regional-plan-copesco-del-go-2ecdca0c/">Auxiliar Administrativo — Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco</a></li>
     <li><a href="oferta/carpintero-de-melamina-y-mobiliario-comercial-conserh-8d80ab71/">Carpintero de Melamina y Mobiliario Comercial — CONSERH</a></li>
@@ -889,7 +907,7 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
   <div class="wrap">
     <div class="foot__grid">
       <div>
-        <div class="foot__logo"><span class="logo__cero">0</span><span class="tachado" style="--x:1">VAGOS</span></div>
+        <img class="foot__logo" src="assets/logo-claro.svg" alt="Cero Vagos" width="850" height="381">
         <p style="font-size:14.5px;line-height:1.55;opacity:.8;max-width:330px">
           El buscador que solo muestra ofertas laborales completas del Perú. Si no dice cuánto paga, para nosotros no existe.
         </p>

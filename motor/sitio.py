@@ -158,9 +158,11 @@ linear-gradient(90deg,rgba(11,11,11,.045) 1px,transparent 1px);background-size:4
 h1,h2,h3{font-family:var(--display);text-transform:uppercase;letter-spacing:-.02em;line-height:1}
 a{color:inherit}
 .wrap{max-width:820px;margin:0 auto;padding:0 18px}
-.barra{background:var(--rojo);color:#fff;border-bottom:var(--bd);padding:10px 0;
+.barra{background:var(--rojo);color:#fff;border-bottom:var(--bd);padding:12px 0;
 font-family:var(--display);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
-.barra a{text-decoration:none}
+.barra a{text-decoration:none;display:inline-block}
+.barra img{width:auto;height:34px;display:block}
+@media(max-width:600px){.barra img{height:28px}}
 .ficha{border:var(--bd);background:var(--blanco);box-shadow:9px 9px 0 var(--negro);margin:26px 0 40px}
 .cab{background:var(--rojo);color:#fff;padding:26px 24px;border-bottom:var(--bd)}
 .cab h1{font-size:clamp(24px,4.6vw,38px)}
@@ -226,6 +228,14 @@ def pagina_oferta(o: dict, sitio: str) -> str:
 <meta property="og:title" content="{_e(titulo)}">
 <meta property="og:description" content="{_e(descripcion)}">
 <meta property="og:url" content="{_e(url)}">
+<meta property="og:site_name" content="Cero Vagos">
+<meta property="og:locale" content="es_PE">
+<meta property="og:image" content="{_e(sitio)}/assets/compartir.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{_e(sitio)}/assets/compartir.png">
+<link rel="icon" href="{_e(sitio)}/assets/icono.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
@@ -236,7 +246,9 @@ def pagina_oferta(o: dict, sitio: str) -> str:
 </head>
 <body>
 
-<div class="barra"><div class="wrap"><a href="{_e(sitio)}/">← Cero Vagos · solo ofertas completas</a></div></div>
+<div class="barra"><div class="wrap">
+  <a href="{_e(sitio)}/"><img src="{_e(sitio)}/assets/logo-mono.svg" alt="Cero Vagos"></a>
+</div></div>
 
 <div class="wrap">
   <article class="ficha">
@@ -324,6 +336,7 @@ def pagina_404(sitio: str) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Esta oferta ya cerró | Cero Vagos</title>
 <meta name="robots" content="noindex">
+<link rel="icon" href="{_e(sitio)}/assets/icono.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
@@ -337,7 +350,9 @@ def pagina_404(sitio: str) -> str:
 </style>
 </head>
 <body>
-<div class="barra"><div class="wrap"><a href="{_e(sitio)}/">← Cero Vagos · solo ofertas completas</a></div></div>
+<div class="barra"><div class="wrap">
+  <a href="{_e(sitio)}/"><img src="{_e(sitio)}/assets/logo-mono.svg" alt="Cero Vagos"></a>
+</div></div>
 
 <div class="centro">
   <div class="caja">
@@ -406,6 +421,64 @@ def bloque_enlaces(ofertas: list[dict]) -> str:
   </ul>
 </nav>
 {FIN_MARCA}"""
+
+
+# --------------------------------------------------------------------------
+# La tarjeta que sale al compartir el enlace
+# --------------------------------------------------------------------------
+
+INICIO_OG = "<!-- COMPARTIR:INICIO -->"
+FIN_OG = "<!-- COMPARTIR:FIN -->"
+
+IMAGEN_COMPARTIR = "assets/compartir.png"
+
+
+def bloque_compartir(sitio: str, pct_sin_sueldo: int | None = None) -> str:
+    """
+    Las etiquetas que lee WhatsApp, Facebook y LinkedIn al pegar el enlace.
+
+    Sin esto el enlace sale como un recuadro de texto pelado. Con esto sale
+    con imagen, título y descripción.
+
+    Dos detalles que no son opcionales:
+
+      · Las direcciones tienen que ser **absolutas** (empezar con https://).
+        WhatsApp no resuelve rutas relativas: si pones "assets/compartir.png"
+        no muestra nada. Por eso este bloque lo escribe el generador y no está
+        fijo en el HTML: el día que se conecte cerovagos.com se reescribe solo.
+
+      · El ancho y alto declarados hacen que la vista previa se dibuje grande
+        desde el primer momento, sin esperar a descargar la imagen.
+
+    El porcentaje sale de la base, no de una cifra escrita a mano, para que la
+    descripción no envejezca.
+    """
+    pct = pct_sin_sueldo if pct_sin_sueldo else 75
+    titulo = "Cero Vagos — Solo ofertas de trabajo completas en Perú"
+    descripcion = (
+        f"El {pct}% de los avisos de empleo en el Perú no dice cuánto paga. "
+        f"Aquí solo entran los que sí: con sueldo en soles, funciones, "
+        f"requisitos y beneficios. Si falta uno, no se publica."
+    )
+    imagen = f"{sitio}/{IMAGEN_COMPARTIR}"
+    return f"""{INICIO_OG}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cero Vagos">
+<meta property="og:locale" content="es_PE">
+<meta property="og:title" content="{_e(titulo)}">
+<meta property="og:description" content="{_e(descripcion)}">
+<meta property="og:url" content="{_e(sitio)}/">
+<meta property="og:image" content="{_e(imagen)}">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cero Vagos. El {pct}% de los avisos de empleo no dice cuánto paga.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{_e(titulo)}">
+<meta name="twitter:description" content="{_e(descripcion)}">
+<meta name="twitter:image" content="{_e(imagen)}">
+<link rel="canonical" href="{_e(sitio)}/">
+{FIN_OG}"""
 
 
 # --------------------------------------------------------------------------
@@ -485,13 +558,22 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
     # Se inyectan los enlaces en la portada, entre los marcadores.
     portada = raiz / "index.html"
     if portada.exists():
-        texto = portada.read_text(encoding="utf-8")
+        texto = original = portada.read_text(encoding="utf-8")
         nuevo = bloque_enlaces(ofertas)
         if INICIO_MARCA in texto and FIN_MARCA in texto:
             texto = re.sub(
                 re.escape(INICIO_MARCA) + r".*?" + re.escape(FIN_MARCA),
                 lambda _: nuevo, texto, flags=re.S,
             )
+        # Y las etiquetas de compartir, que llevan la dirección completa del
+        # sitio: si mañana cambia el dominio, se reescriben solas.
+        if INICIO_OG in texto and FIN_OG in texto:
+            og = bloque_compartir(sitio, informe.get("pct_sin_sueldo"))
+            texto = re.sub(
+                re.escape(INICIO_OG) + r".*?" + re.escape(FIN_OG),
+                lambda _: og, texto, flags=re.S,
+            )
+        if texto != original:
             portada.write_text(texto, encoding="utf-8")
 
     return {"paginas": len(ofertas), "retiradas": retiradas, "sitio": sitio,

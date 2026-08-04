@@ -44,6 +44,7 @@ def _envoltura(titulo: str, descripcion: str, ruta: str, sitio: str,
 <meta name="description" content="{_e(descripcion)}">
 <link rel="canonical" href="{_e(url)}">
 {'' if indexable else '<meta name="robots" content="noindex">'}
+<link rel="icon" href="{_e(sitio)}/assets/icono.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
@@ -64,7 +65,9 @@ box-shadow:5px 5px 0 var(--negro)}}
 </head>
 <body>
 
-<div class="barra-sup"><div class="wrap"><a href="{_e(sitio)}/">← Cero Vagos · solo ofertas completas</a></div></div>
+<div class="barra-sup"><div class="wrap">
+  <a href="{_e(sitio)}/"><img src="{_e(sitio)}/assets/logo-mono.svg" alt="Cero Vagos"></a>
+</div></div>
 
 <header class="hero">
   <div class="wrap"><h1>{_e(titulo)}</h1></div>
