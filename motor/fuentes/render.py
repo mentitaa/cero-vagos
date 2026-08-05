@@ -34,9 +34,15 @@ class Navegador:
             html = nav.html("https://...")
     """
 
-    def __init__(self, espera_selector: str = "", timeout_ms: int = 25_000):
+    def __init__(self, espera_selector: str = "", timeout_ms: int = 25_000,
+                 espera_ms: int = 8_000):
         self.espera_selector = espera_selector
         self.timeout_ms = timeout_ms
+        # Cuánto se espera a que aparezca el contenido, aparte de lo que se
+        # espera a que responda el servidor. Va MUY por debajo del otro a
+        # propósito: si el aviso no apareció en 8 segundos, es que esa página
+        # no lo tiene, y seguir esperando solo gasta el reloj de la corrida.
+        self.espera_ms = espera_ms
         self._pw = None
         self._navegador = None
         self._contexto = None
@@ -90,7 +96,24 @@ class Navegador:
             pagina.goto(url, timeout=self.timeout_ms, wait_until="domcontentloaded")
             if self.espera_selector:
                 try:
-                    pagina.wait_for_selector(self.espera_selector, timeout=self.timeout_ms)
+                    # state="attached" y no el "visible" de por defecto.
+                    #
+                    # Lo que buscamos es la ficha del aviso en JSON-LD, que vive
+                    # en una etiqueta <script>. Un <script> NUNCA es visible, así
+                    # que con el modo por defecto esa mitad del selector no podía
+                    # cumplirse jamás: la espera solo terminaba si aparecía un h1
+                    # visible, y si la página no tenía ninguno se agotaban los 25
+                    # segundos enteros.
+                    #
+                    # Se pagaba en cada aviso. El mensaje decía "~3 s cada una" y
+                    # la corrida real iba a 30: el 5/8/2026 Bumeran alcanzó a
+                    # revisar 100 de 240 avisos en 50 minutos.
+                    #
+                    # Nos basta con que el nodo exista en la página; no lo vamos
+                    # a mirar, lo vamos a leer.
+                    pagina.wait_for_selector(self.espera_selector,
+                                             state="attached",
+                                             timeout=self.espera_ms)
                 except Exception:                      # noqa: BLE001
                     pass                               # seguimos con lo que haya
             else:

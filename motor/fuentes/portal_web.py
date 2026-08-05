@@ -360,8 +360,12 @@ class PortalWeb(Fuente):
             urls = self.urls_de_avisos(limite * (2 if self.necesita_render else 4))
             if not urls:
                 return
+            # El aviso de tiempo va con un rango y no con un número redondo:
+            # decía "~3 s cada una" cuando en la práctica iban 30, y sobre esa
+            # cifra se calcularon los límites de la corrida automática.
             self._avisar(f"{len(urls)} direcciones por revisar"
-                         + (" (con navegador, ~3 s cada una)" if self.necesita_render else ""))
+                         + (" (con navegador, entre 2 y 8 s cada una)"
+                            if self.necesita_render else ""))
             ilegibles = antiguos = cerrados = entregados = seguidos = 0
             repetidos = 0
             for revisadas, url in enumerate(urls, start=1):
