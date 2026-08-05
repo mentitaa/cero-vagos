@@ -300,6 +300,83 @@ class Almacen:
             self.con.commit()
         return arreglados
 
+    def reevaluar(self) -> dict:
+        """
+        Vuelve a puntuar lo que ya está guardado, con las reglas de hoy.
+
+        Hace falta cada vez que cambia el filtro. Un aviso guardado conserva
+        el veredicto del día en que se leyó, y el motor no vuelve a mirar un
+        aviso rechazado hasta pasados 30 días — así que sin esto, un cambio de
+        regla tarda un mes en notarse.
+
+        A propósito NO se ejecuta sola en cada publicación. Cambiar el filtro
+        es un acto deliberado y repararlo también debe serlo: una reevaluación
+        automática y silenciosa podría despublicar el sitio entero si alguien
+        introduce un error en la rúbrica, y nadie se enteraría hasta mirar.
+        Se lanza a mano:  python3 -m motor reevaluar
+
+        Solo se re-puntúa: no se vuelve a descargar nada. Todo lo que la
+        rúbrica necesita (sueldo, funciones, requisitos, beneficios, fechas)
+        ya está en la base.
+
+        Devuelve cuántos avisos cambiaron de veredicto, en cada dirección.
+        """
+        from datetime import date as _date
+
+        from .score import evaluar
+        from .sueldo import Sueldo
+
+        def _fecha(v):
+            try:
+                return _date.fromisoformat(str(v)[:10]) if v else None
+            except ValueError:
+                return None
+
+        entraron = salieron = 0
+        filas = self.con.execute(
+            "SELECT huella, fuente, empresa, ciudad, modalidad, sueldo_min, sueldo_max, "
+            "moneda, resumen, funciones, requisitos, beneficios, publicado, vence, aprobada "
+            "FROM ofertas").fetchall()
+
+        for f in filas:
+            # El perfil no se guarda: se deduce de la fuente, igual que en la
+            # recolección. Solo las convocatorias del Estado usan la vara
+            # pública (ver PERFILES en score.py).
+            perfil = "publico" if "estado" in (f["fuente"] or "").lower() else "privado"
+            sueldo = (Sueldo(minimo=f["sueldo_min"], maximo=f["sueldo_max"] or f["sueldo_min"],
+                             moneda=f["moneda"] or "PEN", periodo="mensual")
+                      if f["sueldo_min"] else None)
+
+            r = evaluar(
+                sueldo=sueldo,
+                funciones=json.loads(f["funciones"] or "[]"),
+                requisitos=json.loads(f["requisitos"] or "[]"),
+                beneficios=json.loads(f["beneficios"] or "[]"),
+                empresa=f["empresa"] or "",
+                ciudad=f["ciudad"] or "",
+                modalidad=f["modalidad"] or "",
+                publicado=_fecha(f["publicado"]),
+                vence=_fecha(f["vence"]),
+                texto_completo=f["resumen"] or "",
+                perfil=perfil,
+            )
+            if bool(r.aprobada) == bool(f["aprobada"]):
+                continue
+
+            self.con.execute(
+                "UPDATE ofertas SET aprobada = ?, score = ?, motivos_rechazo = ? "
+                "WHERE huella = ?",
+                (int(r.aprobada), r.total,
+                 json.dumps(r.motivos, ensure_ascii=False), f["huella"]))
+            if r.aprobada:
+                entraron += 1
+            else:
+                salieron += 1
+
+        if entraron or salieron:
+            self.con.commit()
+        return {"entraron": entraron, "salieron": salieron}
+
     def revisar_titulos_vagos(self) -> dict:
         """
         Pasa la regla del título por lo que ya está publicado.

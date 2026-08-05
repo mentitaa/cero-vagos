@@ -1,18 +1,18 @@
 /* Generado por el motor de Cero Vagos. No editar a mano. */
 window.CERO_VAGOS = {
- "generado": "2026-08-04T21:19:56",
- "total": 60,
+ "generado": "2026-08-04T21:34:25",
+ "total": 68,
  "stats": {
-  "total_procesadas": 1325,
-  "aprobadas_vigentes": 60,
-  "tasa_aprobacion": 4.5,
-  "sin_sueldo": 1026,
-  "pct_sin_sueldo": 77,
-  "sueldo_mediano": 1380,
+  "total_procesadas": 1207,
+  "aprobadas_vigentes": 68,
+  "tasa_aprobacion": 5.6,
+  "sin_sueldo": 908,
+  "pct_sin_sueldo": 75,
+  "sueldo_mediano": 1500,
   "por_fuente": {
    "Bumeran": 32,
    "Laborum": 27,
-   "Convocatorias del Estado": 1
+   "Convocatorias del Estado": 9
   }
  },
  "ofertas": [
@@ -1423,6 +1423,286 @@ window.CERO_VAGOS = {
   },
   {
    "id": 34,
+   "puesto": "Asistente Técnico De Obra Ii",
+   "empresa": "Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco",
+   "cat": "Construcción",
+   "min": 4000,
+   "max": 4000,
+   "modalidad": "Presencial",
+   "ciudad": "Cusco",
+   "fuente": "Convocatorias del Estado",
+   "dias": 14,
+   "vence": "2026-08-10",
+   "restan": 6,
+   "score": 72,
+   "resumen": "Convocatorias Asistente IA Mi Panel Admin",
+   "funciones": [],
+   "requisitos": [
+    "Título Profesional En Arquitectura, Ingeniería Civil O Afines",
+    "Colegiado, Habilitado",
+    "Experiencia Laboral Igual O Mayor A 02 Años",
+    "01 Año De Experiencia Con La Función A Desempeñar En El Área",
+    "Manejo De Microsoft Office",
+    "Manejo De Microsoft Project O Similares",
+    "Manejo De Software $10 O Similares",
+    "Manejo De Autocad, Civil 3D O Similares",
+    "Trabajo Bajo Presión, Comunicación Asertiva, Iniciativa, Responsabilidad, Capacidad De Resolver Problemas, Organización, Trabajo En Equipo Y Proactividad",
+    "Disponibilidad Inmediata",
+    "Especialización en Contar Con Capacitación Especializada Con La Función A Desempeñar En El Área."
+   ],
+   "beneficios": [
+    "Régimen laboral privado (D. Leg. 728): planilla con todos los beneficios de ley",
+    "Gratificaciones de julio y diciembre",
+    "30 días calendario de vacaciones al año",
+    "Seguro de salud EsSalud y afiliación pensionaria"
+   ],
+   "url": "https://www.convocape.com/convocatorias/asistente-tecnico-de-obra-ii-centro-de-interpretacion-casa-martin-pio-concha-de--proyecto-especial-regional-plan-copesco-del-gobierno-regional-del-cusco-728-2026-07-797483"
+  },
+  {
+   "id": 35,
+   "puesto": "Tecnico Administrativo I",
+   "empresa": "Direccion Regional De Salud Huancavelica",
+   "cat": "Administración",
+   "min": 3000,
+   "max": 3000,
+   "modalidad": "Presencial",
+   "ciudad": "Huancavelica",
+   "fuente": "Convocatorias del Estado",
+   "dias": 14,
+   "vence": "2026-08-10",
+   "restan": 6,
+   "score": 72,
+   "resumen": "Convocatoria para Tecnico Administrativo I en Direccion Regional De Salud Huancavelica. Sueldo S/ 3,000. Postula antes del 10 ago. 2026. Tipo de contrato: 276.",
+   "funciones": [],
+   "requisitos": [
+    "Tècnico Superior Completa O Universitario Incompleto (Titulado En Las Carreras Tècnicas O Estudios Universitarios No Menor A 06 Semestres Acadèmicos En Administraciòn, Contabilidad, Finanzas U Otros Afines Al Òrgano Y Cargo",
+    "Experiencia General: Un (01) Año En Sector Pùblico Y/O Privado B)",
+    "Experiencia Especìfica: Un (01) Año De Experiencia En Cargos O Funciones Similares En El Sector Pùblico Y/O Privado",
+    "Capacitaciones Relacionadas Al Puesto",
+    "Especialización en Conocimientos Técnicos Referentes Al Cargo Que Postula"
+   ],
+   "beneficios": [
+    "Régimen de carrera administrativa (D. Leg. 276): nombramiento o contrato en planilla",
+    "Aguinaldos por Fiestas Patrias y Navidad",
+    "30 días calendario de vacaciones al año",
+    "Seguro de salud EsSalud y afiliación pensionaria",
+    "Escala remunerativa y línea de carrera del sector público"
+   ],
+   "url": "https://www.convocape.com/convocatorias/tecnico-administrativo-i-direccion-regional-de-salud-huancavelica-276-2026-07-797565"
+  },
+  {
+   "id": 36,
+   "puesto": "Especialista En Salud Ambiental Ii",
+   "empresa": "Direccion Regional De Salud Huancavelica",
+   "cat": "Otros",
+   "min": 3000,
+   "max": 3000,
+   "modalidad": "Presencial",
+   "ciudad": "Huancavelica",
+   "fuente": "Convocatorias del Estado",
+   "dias": 14,
+   "vence": "2026-08-10",
+   "restan": 6,
+   "score": 72,
+   "resumen": "Convocatoria para Especialista En Salud Ambiental Ii en Direccion Regional De Salud Huancavelica. Sueldo S/ 3,000. Postula antes del 10 ago. 2026. Tipo de contrato: 276.",
+   "funciones": [],
+   "requisitos": [
+    "Tìtulo En La Carrera Universitaria En Ciencias De La Salud O Ingenieria Sanitaria (Colegiatura Y Habilitaciòn Profesional)",
+    "Experiencia General: Tres (03) Años En Sector Pùblico Y/O Privado B)",
+    "Experiencia Especìfica: Dos (02) Años De Experiencia En Cargos O Funciones Similares En El Sector Pùblico Y/O Privado",
+    "Capacitaciones Relacionadas Al Puesto",
+    "Especialización en Diplomado Concluido En Salud Pùblica O Salud Ambiental O Inocuidad Alimentaria O Afines A Las Funciones Del Cargo En El Òrgano A Desempeñar"
+   ],
+   "beneficios": [
+    "Régimen de carrera administrativa (D. Leg. 276): nombramiento o contrato en planilla",
+    "Aguinaldos por Fiestas Patrias y Navidad",
+    "30 días calendario de vacaciones al año",
+    "Seguro de salud EsSalud y afiliación pensionaria",
+    "Escala remunerativa y línea de carrera del sector público"
+   ],
+   "url": "https://www.convocape.com/convocatorias/especialista-en-salud-ambiental-ii-direccion-regional-de-salud-huancavelica-276-2026-07-797576"
+  },
+  {
+   "id": 37,
+   "puesto": "Asistente Tecnico Ii",
+   "empresa": "Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco",
+   "cat": "Otros",
+   "min": 4000,
+   "max": 4000,
+   "modalidad": "Presencial",
+   "ciudad": "Cusco",
+   "fuente": "Convocatorias del Estado",
+   "dias": 14,
+   "vence": "2026-08-10",
+   "restan": 6,
+   "score": 72,
+   "resumen": "Convocatoria para Asistente Tecnico Ii en Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco. Sueldo S/ 4,000. Postula antes del 10 ago. 2026. Tipo de contrato: 728.",
+   "funciones": [],
+   "requisitos": [
+    "Título Profesional De Ingeniero Civil",
+    "Colegiado Y Habilitado",
+    "Experiencia Laboral Igual O Mayor A 02 Años",
+    "01 Año De Experiencia Con La Función A Desempeñar En El Área",
+    "Manejo De Microsoft Office Avanzado O Similares",
+    "Manejo De Software Autocad",
+    "Manejo De Software De Costos Y Presupuestos",
+    "Conocimiento En Software Revit",
+    "Trabajo Bajo Presión, Comunicación Asertiva, Iniciativa, Responsabilidad, Capacidad De Resolver Problemas, Organización, Trabajo En Equipo Y Proactividad",
+    "Disponibilidad Inmediata",
+    "Especialización en Contar Con Capacitación Especializada Con La Función A Desempeñar En El Área."
+   ],
+   "beneficios": [
+    "Régimen laboral privado (D. Leg. 728): planilla con todos los beneficios de ley",
+    "Gratificaciones de julio y diciembre",
+    "30 días calendario de vacaciones al año",
+    "Seguro de salud EsSalud y afiliación pensionaria"
+   ],
+   "url": "https://www.convocape.com/convocatorias/asistente-tecnico-ii-proyecto-especial-regional-plan-copesco-del-gobierno-regional-del-cusco-728-2026-07-797495"
+  },
+  {
+   "id": 38,
+   "puesto": "Analista De Presupuesto",
+   "empresa": "Municipalidad Distri. De San Jeronimo",
+   "cat": "Otros",
+   "min": 3000,
+   "max": 3000,
+   "modalidad": "Presencial",
+   "ciudad": "Cusco",
+   "fuente": "Convocatorias del Estado",
+   "dias": 14,
+   "vence": "2026-08-10",
+   "restan": 6,
+   "score": 72,
+   "resumen": "Convocatoria para Analista De Presupuesto en Municipalidad Distri. De San Jeronimo. Sueldo S/ 3,000. Postula antes del 10 ago. 2026. Tipo de contrato: CAS.",
+   "funciones": [],
+   "requisitos": [
+    "Grado De Bachiller O Título Profesional En Contabilidad, Economía O Administración",
+    "Experiencia General: 3 Años Experiencia Específica: 1 Año Descripción De Experiencia Específica: Experiencia Especifica No Menor A 01 Año En Gestion Publica",
+    "Conocimiento En Ofimática; Conocimientos En Sistema Intengrado De Administracion Financiera; Conocimientos En Sistema Intengrado De Gestion Administrativa",
+    "Trabajo En Equipo; Orientación A Resultados; Liderazgo",
+    "Especialización en Curso O Diplomado En Gestion Publica; Curso O Diplomado En Sistema Intengrado De Administracion Financiera; Curso O Diplomado En Sistema Intengrado De Gestion Administrativa"
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocape.com/convocatorias/analista-de-presupuesto-municipalidad-distri-de-san-jeronimo-cas-2026-07-797424"
+  },
+  {
+   "id": 39,
+   "puesto": "Tecnico I",
+   "empresa": "Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco",
+   "cat": "Otros",
+   "min": 3000,
+   "max": 3000,
+   "modalidad": "Presencial",
+   "ciudad": "Cusco",
+   "fuente": "Convocatorias del Estado",
+   "dias": 14,
+   "vence": "2026-08-10",
+   "restan": 6,
+   "score": 72,
+   "resumen": "Convocatoria para Tecnico I en Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco. Sueldo S/ 3,000. Postula antes del 10 ago. 2026. Tipo de contrato: 728.",
+   "funciones": [],
+   "requisitos": [
+    "Bachiller Universitario De Las Carreras De Contabilidad O Economía",
+    "Experiencia Laboral Igual O Mayor A 01 Año",
+    "6 Meses De Experiencia Con La Función A Desempeñar En El Área",
+    "Manejo De Microsoft Office Avanzado O Similares",
+    "Conocimiento En La Ley General De Contrataciones",
+    "Conocimiento De Siga, Siaf",
+    "Trabajo Bajo Presión, Comunicación Asertiva, Iniciativa, Responsabilidad, Capacidad De Resolver Problemas, Organización, Trabajo En Equipo Y Proactividad",
+    "Disponibilidad Inmediata",
+    "Especialización en No Aplica."
+   ],
+   "beneficios": [
+    "Régimen laboral privado (D. Leg. 728): planilla con todos los beneficios de ley",
+    "Gratificaciones de julio y diciembre",
+    "30 días calendario de vacaciones al año",
+    "Seguro de salud EsSalud y afiliación pensionaria"
+   ],
+   "url": "https://www.convocape.com/convocatorias/tecnico-i-proyecto-especial-regional-plan-copesco-del-gobierno-regional-del-cusco-728-2026-07-797496"
+  },
+  {
+   "id": 40,
+   "puesto": "Asistente Técnico De Obra Ii",
+   "empresa": "Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco",
+   "cat": "Construcción",
+   "min": 4000,
+   "max": 4000,
+   "modalidad": "Presencial",
+   "ciudad": "Cusco",
+   "fuente": "Convocatorias del Estado",
+   "dias": 14,
+   "vence": "2026-08-10",
+   "restan": 6,
+   "score": 72,
+   "resumen": "Convocatorias Asistente IA Mi Panel Admin",
+   "funciones": [],
+   "requisitos": [
+    "Título Profesional En Arquitectura, Ingeniería Civil O Afines",
+    "Colegiado, Habilitado",
+    "Experiencia Laboral Igual O Mayor A 02 Años",
+    "01 Año De Experiencia Con La Función A Desempeñar En El Área",
+    "Manejo De Microsoft Office",
+    "Manejo De Microsoft Project O Similares",
+    "Manejo De Software $10 O Similares",
+    "Manejo De Autocad, Civil 3D O Similares",
+    "Trabajo Bajo Presión, Comunicación Asertiva, Iniciativa, Responsabilidad, Capacidad De Resolver Problemas, Organización, Trabajo En Equipo Y Proactividad",
+    "Disponibilidad Inmediata",
+    "Especialización en Contar Con Capacitación Especializada Con La Función A Desempeñar En El Área."
+   ],
+   "beneficios": [
+    "Régimen laboral privado (D. Leg. 728): planilla con todos los beneficios de ley",
+    "Gratificaciones de julio y diciembre",
+    "30 días calendario de vacaciones al año",
+    "Seguro de salud EsSalud y afiliación pensionaria"
+   ],
+   "url": "https://www.convocape.com/convocatorias/asistente-tecnico-de-obra-ii-centro-de-interpretacion-casa-martin-pio-concha-de--proyecto-especial-regional-plan-copesco-del-gobierno-regional-del-cusco-728-2026-07-797483"
+  },
+  {
+   "id": 41,
+   "puesto": "Ingeniero",
+   "empresa": "Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco",
+   "cat": "Otros",
+   "min": 4800,
+   "max": 4800,
+   "modalidad": "Presencial",
+   "ciudad": "Cusco",
+   "fuente": "Convocatorias del Estado",
+   "dias": 14,
+   "vence": "2026-08-10",
+   "restan": 6,
+   "score": 72,
+   "resumen": "Convocatoria para Profesional I en Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco. Sueldo S/ 4,800. Postula antes del 10 ago. 2026. Tipo de contrato: 728.",
+   "funciones": [],
+   "requisitos": [
+    "Título Profesional De Ingeniero Civil",
+    "Colegiado Y Habilitado",
+    "Experiencia Laboral Igual O Mayor A 04 Años En El Sector Público Y/O Privado",
+    "02 Años Experiencia Con La Función A Desempeñar En El Área",
+    "Conocimiento En Metodología Bim",
+    "Manejo De Microsoft Office Avanzado O Similares",
+    "Manejo De Software Revit, Autocad, Civil 3D, S10, Dhelpin Express O Similares Y Otros",
+    "Conocimiento En Normativa Vigente De Obras Públicas",
+    "Conocimiento En Gestión De Proyectos",
+    "Trabajo Bajo Presión, Comunicación Asertiva, Iniciativa, Responsabilidad, Capacidad De Resolver Problemas, Organización, Trabajo En Equipo Y Proactividad",
+    "Disponibilidad Inmediata",
+    "Especialización en Especialización En Modelamiento Bim."
+   ],
+   "beneficios": [
+    "Régimen laboral privado (D. Leg. 728): planilla con todos los beneficios de ley",
+    "Gratificaciones de julio y diciembre",
+    "30 días calendario de vacaciones al año",
+    "Seguro de salud EsSalud y afiliación pensionaria"
+   ],
+   "url": "https://www.convocape.com/convocatorias/profesional-i-proyecto-especial-regional-plan-copesco-del-gobierno-regional-del-cusco-728-2026-07-797494"
+  },
+  {
+   "id": 42,
    "puesto": "Carpintero de Melamina y Mobiliario Comercial",
    "empresa": "CONSERH",
    "cat": "Tecnología",
@@ -1466,7 +1746,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/conserh/carpintero-de-melamina-y-mobiliario-comercial-villa-el/6a4998286eff4770744bbc50"
   },
   {
-   "id": 35,
+   "id": 43,
    "puesto": "Asesor(a) de Ventas",
    "empresa": "EsTalent",
    "cat": "Ventas",
@@ -1508,7 +1788,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/estalent/asesor-a-de-ventas-call-center-flexible-con-experiencia/6a499bb76eff4770744bd7bf"
   },
   {
-   "id": 36,
+   "id": 44,
    "puesto": "Técnico de Aire Acondicionado",
    "empresa": "CONSERH",
    "cat": "Tecnología",
@@ -1552,7 +1832,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/conserh/tecnico-de-aire-acondicionado-villa-el-salvador/6a4998d46eff4770744bc160"
   },
   {
-   "id": 37,
+   "id": 45,
    "puesto": "Asistente de Despacho",
    "empresa": "Lavoro Perú",
    "cat": "Ingeniería",
@@ -1600,7 +1880,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/asistente-de-despacho-turnos-rotativos-huachipa-huachipa/6a4999786eff4770744bc683"
   },
   {
-   "id": 38,
+   "id": 46,
    "puesto": "Técnico de Aire Acondicionado",
    "empresa": "CONSERH",
    "cat": "Tecnología",
@@ -1644,7 +1924,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/conserh/tecnico-de-aire-acondicionado-villa-el-salvador/6a4998d46eff4770744bc160"
   },
   {
-   "id": 39,
+   "id": 47,
    "puesto": "Anfitrión de Estacionamientos",
    "empresa": "APPARKA",
    "cat": "Tecnología",
@@ -1684,7 +1964,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/apparka/ingreso-inmediato-sin-experiencia-anfitrion-a-de/6a499a356eff4770744bcba1"
   },
   {
-   "id": 40,
+   "id": 48,
    "puesto": "Ayudante de Planta",
    "empresa": "CONSERH",
    "cat": "Logística",
@@ -1727,7 +2007,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/conserh/ayudante-de-planta-villa-el-salvador/6a4998786eff4770744bbea5"
   },
   {
-   "id": 41,
+   "id": 49,
    "puesto": "Atención al cliente",
    "empresa": "COESTI S.A.",
    "cat": "Atención al Cliente",
@@ -1768,7 +2048,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/coesti-s-a/sueldo-bono-150-primax-cerro-azul-despachador-de-combustible/6a499e4d6eff4770744beacf"
   },
   {
-   "id": 42,
+   "id": 50,
    "puesto": "Despachador",
    "empresa": "COESTI S.A.",
    "cat": "Atención al Cliente",
@@ -1806,7 +2086,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/coesti-s-a/turno-part-time-10-am-a-2-pm-grifo-primax-valle-hermoso/6a499d216eff4770744be203"
   },
   {
-   "id": 43,
+   "id": 51,
    "puesto": "Atención al cliente",
    "empresa": "COESTI S.A.",
    "cat": "Atención al Cliente",
@@ -1844,7 +2124,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/coesti-s-a/trabaja-cerca-al-parque-de-la-amistad-grifos-primax-atc/6a499d016eff4770744be0fb"
   },
   {
-   "id": 44,
+   "id": 52,
    "puesto": "Atención al cliente",
    "empresa": "COESTI S.A.",
    "cat": "Atención al Cliente",
@@ -1882,7 +2162,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/coesti-s-a/trabaja-en-primax-tomas-marsano-turno-tarde-sueldo-bonos/6a499ddc6eff4770744be774"
   },
   {
-   "id": 45,
+   "id": 53,
    "puesto": "Asistente de Almacén Jr",
    "empresa": "Adecco Perú S.A.",
    "cat": "Logística",
@@ -1929,7 +2209,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/adecco-peru-s-a/asistente-de-almacen-jr-rotativo-ate-consumo-masivo-lacteos/6a499dbc6eff4770744be6cd"
   },
   {
-   "id": 46,
+   "id": 54,
    "puesto": "Asistente de Despacho",
    "empresa": "Lavoro Perú",
    "cat": "Ingeniería",
@@ -1977,7 +2257,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/asistente-de-despacho-turnos-rotativos-huachipa-huachipa/6a4999786eff4770744bc683"
   },
   {
-   "id": 47,
+   "id": 55,
    "puesto": "Panadero Junior",
    "empresa": "TALENTUS - Consultoría y Formación",
    "cat": "Ingeniería",
@@ -2018,7 +2298,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/talentus-consultoria-y-formacion/panadero-junior-chorrillos-san-isidro-y-aledanos/6a499e356eff4770744bea27"
   },
   {
-   "id": 48,
+   "id": 56,
    "puesto": "Despachador de combustible Primax",
    "empresa": "COESTI S.A.",
    "cat": "Atención al Cliente",
@@ -2055,7 +2335,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/coesti-s-a/trabaja-en-cerca-a-plaza-lima-sur-despachador-de-combustible/6a499cfb6eff4770744be0d8"
   },
   {
-   "id": 49,
+   "id": 57,
    "puesto": "Operario de producción",
    "empresa": "TALENTUS - Consultoría y Formación",
    "cat": "Ingeniería",
@@ -2098,7 +2378,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/talentus-consultoria-y-formacion/operario-de-produccion-puente-piedra-los-olivos/6a499e276eff4770744be9a7"
   },
   {
-   "id": 50,
+   "id": 58,
    "puesto": "Operario de planta",
    "empresa": "NG Restaurants",
    "cat": "Ingeniería",
@@ -2141,7 +2421,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/ng-restaurants/operario-de-planta-sueldo-fijo-bono-fijo-mensual-planilla/6a499a7a6eff4770744bcdf0"
   },
   {
-   "id": 51,
+   "id": 59,
    "puesto": "Atención al Cliente",
    "empresa": "TALENTUS - Consultoría y Formación",
    "cat": "Atención al Cliente",
@@ -2176,7 +2456,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/talentus-consultoria-y-formacion/atencion-al-cliente-alimentos-y-bebidas-santiago-de-surco-y/6a499df96eff4770744be83d"
   },
   {
-   "id": 52,
+   "id": 60,
    "puesto": "Supervisor (a) de Seguridad y Salud presencial LIMA",
    "empresa": "Lavoro Perú",
    "cat": "Ingeniería",
@@ -2224,7 +2504,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/supervisor-a-de-seguridad-y-salud-presencial-lima/6a499c496eff4770744bdc29"
   },
   {
-   "id": 53,
+   "id": 61,
    "puesto": "Operario de Limpieza para San Borja",
    "empresa": "Lavoro Perú",
    "cat": "Tecnología",
@@ -2265,7 +2545,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/operario-de-limpieza-para-san-borja/6a499e626eff4770744beb93"
   },
   {
-   "id": 54,
+   "id": 62,
    "puesto": "Coordinador de Operaciones",
    "empresa": "Lavoro Perú",
    "cat": "Ingeniería",
@@ -2307,7 +2587,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/coordinado-de-operaciones-rotativos/6a499d786eff4770744be4e6"
   },
   {
-   "id": 55,
+   "id": 63,
    "puesto": "Promotora de Ventas Rubro Belleza Capilar",
    "empresa": "Salesland Pacífico",
    "cat": "Ventas",
@@ -2348,7 +2628,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/salesland-pacifico/trabaja-en-redken-y-loreal-promotora-de-ventas-rubro-belleza/6a499c216eff4770744bdadf"
   },
   {
-   "id": 56,
+   "id": 64,
    "puesto": "Operario de planta",
    "empresa": "NG Restaurants",
    "cat": "Ingeniería",
@@ -2391,7 +2671,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/ng-restaurants/operario-de-planta-sueldo-fijo-bono-fijo-mensual-planilla/6a499a7a6eff4770744bcdf0"
   },
   {
-   "id": 57,
+   "id": 65,
    "puesto": "Operario auxiliar de Almacén c",
    "empresa": "Adecco Perú S.A.",
    "cat": "Logística",
@@ -2427,7 +2707,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/adecco-peru-s-a/operario-auxiliar-de-almacen-c-sin-experiencia-ingreso/6a499bdd6eff4770744bd8eb"
   },
   {
-   "id": 58,
+   "id": 66,
    "puesto": "Back Office",
    "empresa": "Concentrix",
    "cat": "Atención al Cliente",
@@ -2462,7 +2742,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/concentrix/back-office-full-time-madrugada-san-isidro-movilidad/6a499b246eff4770744bd393"
   },
   {
-   "id": 59,
+   "id": 67,
    "puesto": "Operario de Producción",
    "empresa": "CONSERH",
    "cat": "Ingeniería",
@@ -2497,7 +2777,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/conserh/gana-mas-de-1800-soles-operario-de-produccion-sta-anita/6a4998146eff4770744bbbac"
   },
   {
-   "id": 60,
+   "id": 68,
    "puesto": "Operario de Producción",
    "empresa": "CONSERH",
    "cat": "Ingeniería",

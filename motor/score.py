@@ -53,7 +53,19 @@ MAX_DIAS_ANTIGUEDAD = 60
 PERFILES: dict[str, dict[str, object]] = {
     "privado": {"funciones": 3, "requisitos": 3, "beneficios": 2,
                 "dias_sin_cierre": 45},
-    "publico": {"funciones": 1, "requisitos": 3, "beneficios": 2,
+    # Al Estado NO se le exige la lista de funciones. No es una concesión:
+    # es reconocer que publica distinto. Una convocatoria CAS trae el puesto
+    # normado ("Técnico Administrativo I"), el sueldo exacto, los requisitos
+    # detallados y el régimen laboral que fija los beneficios por ley — pero
+    # las funciones viven en el PDF de las bases, que el portal no enlaza.
+    #
+    # La vara del privado se diseñó contra otra cosa: el aviso que dice
+    # "apoyar en labores del área" para no comprometerse. Ese sí esconde.
+    #
+    # Ojo: dejar de ser eliminatorio no es salir gratis. Los 25 puntos de
+    # funciones se pierden enteros, así que el aviso tiene que compensarlos
+    # en todo lo demás para llegar al umbral de 70. Quien no llega, no entra.
+    "publico": {"funciones": 0, "requisitos": 3, "beneficios": 2,
                 "dias_sin_cierre": 21},
 }
 
@@ -129,6 +141,14 @@ def _puntuar_funciones(funciones: list[str], minimo: int, r: Resultado) -> int:
     if len(utiles) < minimo:
         r.motivos.append(f"Solo {len(utiles)} funciones detalladas (mínimo {minimo})")
         return len(utiles) * 4
+
+    if not utiles:
+        # El perfil permite publicar sin lista de funciones (hoy solo el
+        # Estado, ver PERFILES). Se pierden los 25 puntos completos y queda
+        # anotado, para que la ficha pueda decir dónde encontrarlas en vez de
+        # mostrar un hueco.
+        r.notas.append("Las funciones están en las bases del concurso")
+        return 0
 
     # Con menos de tres funciones se aprueba, pero no se premia igual.
     pts = 14 if len(utiles) >= 3 else 9

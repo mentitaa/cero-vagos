@@ -215,6 +215,29 @@ def cmd_stats(_args) -> None:
             print(f"  {n:>5}  {fuente}")
 
 
+def cmd_reevaluar(args) -> None:
+    """
+    Vuelve a puntuar lo guardado con las reglas de hoy.
+
+    Se corre a mano después de cambiar el filtro. Sin esto, un cambio de regla
+    tarda semanas en notarse: el motor no vuelve a mirar un aviso rechazado
+    hasta pasados 30 días, así que conservaría el veredicto viejo.
+    """
+    al = Almacen()
+    antes = al.estadisticas()["aprobadas_vigentes"]
+    r = al.reevaluar()
+    despues = al.estadisticas()["aprobadas_vigentes"]
+
+    if not r["entraron"] and not r["salieron"]:
+        print("Nada cambió: las reglas de hoy dan el mismo veredicto que antes.")
+        return
+
+    print(f"{r['entraron']} avisos pasaron a publicarse")
+    print(f"{r['salieron']} avisos dejaron de publicarse")
+    print(f"\nPublicadas: {antes} → {despues}")
+    print("\nFalta regenerar el sitio:  python3 -m motor publicar")
+
+
 def cmd_rechazos(args) -> None:
     for f in Almacen().rechazadas(args.limite):
         motivo = f["motivos_rechazo"][0] if f["motivos_rechazo"] else "—"
@@ -276,6 +299,10 @@ def main() -> None:
 
     s = sub.add_parser("stats", help="estado de la base")
     s.set_defaults(func=cmd_stats)
+
+    rv = sub.add_parser("reevaluar",
+                        help="volver a puntuar lo guardado con las reglas de hoy")
+    rv.set_defaults(func=cmd_reevaluar)
 
     x = sub.add_parser("rechazos", help="ver qué se rechazó y por qué")
     x.add_argument("--limite", type=int, default=30)

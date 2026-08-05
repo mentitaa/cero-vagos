@@ -184,6 +184,9 @@ display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap
 .puntaje{background:var(--negro);color:var(--lima);padding:6px 12px;font-weight:700;font-size:12px;text-transform:uppercase}
 .bloque{padding:22px 24px;border-bottom:var(--bd)}
 .bloque:last-of-type{border-bottom:none}
+.bases{background:var(--crema)}
+.bases p{font-size:15px;line-height:1.5;font-weight:500;margin-bottom:10px}
+.bases a{font-weight:700}
 .bloque h2{font-size:16px;margin-bottom:13px}
 .bloque ul{list-style:none;display:grid;gap:9px}
 .bloque li{font-size:15px;line-height:1.45;font-weight:500;padding-left:19px;position:relative}
@@ -206,6 +209,31 @@ def _lista(titulo: str, items: list[str], clase: str = "") -> str:
     filas = "".join(f"<li>{_e(i)}</li>" for i in items)
     return (f'<section class="bloque {clase}"><h2>{titulo}</h2>'
             f"<ul>{filas}</ul></section>")
+
+
+def _funciones_en_las_bases(o: dict) -> str:
+    """
+    Qué se muestra cuando una convocatoria del Estado no lista sus funciones.
+
+    Un hueco en blanco donde el diseño promete "Qué vas a hacer" se lee como
+    un error del sitio. Y callarlo sería peor: la promesa de Cero Vagos es
+    decir lo que hay y lo que no.
+
+    Así que se dice dónde están, con el enlace al aviso oficial — que es el
+    documento que la persona va a tener que leer igual para postular.
+    """
+    if o.get("funciones"):
+        return ""
+    return (
+        '<section class="bloque bases"><h2>Qué vas a hacer</h2>'
+        '<p><b>Esta convocatoria no publica la lista de funciones.</b> '
+        'En el sector público las funciones van dentro de las bases del '
+        'concurso, un documento aparte que la entidad publica y que vas a '
+        'necesitar leer para postular.</p>'
+        f'<p><a href="{_e(o.get("url") or "#")}" target="_blank" '
+        'rel="noopener noreferrer">Ver la convocatoria oficial →</a></p>'
+        "</section>"
+    )
 
 
 def pagina_oferta(o: dict, sitio: str) -> str:
@@ -276,7 +304,7 @@ def pagina_oferta(o: dict, sitio: str) -> str:
     </div>
 
     {f'<section class="bloque"><h2>De qué se trata</h2><p style="font-size:15px;line-height:1.5;font-weight:500">{_e(o["resumen"])}</p></section>' if o.get("resumen") else ""}
-    {_lista("Qué vas a hacer", o.get("funciones") or [])}
+    {_lista("Qué vas a hacer", o.get("funciones") or []) or _funciones_en_las_bases(o)}
     {_lista("Qué piden", o.get("requisitos") or [])}
     {_lista("Qué te dan", o.get("beneficios") or [], "beneficios")}
 

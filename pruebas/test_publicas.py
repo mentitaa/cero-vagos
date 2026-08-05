@@ -113,10 +113,14 @@ class TestConvocatoriaSinFunciones(unittest.TestCase):
         )
         self.cruda = parsear_convocatoria(recortada, URL, "Convocatorias del Estado")
 
-    def test_se_rechaza_y_dice_por_que(self):
+    def test_se_publica_aunque_no_liste_funciones(self):
+        """
+        Cambió el 4 de agosto de 2026. Antes se rechazaba; ahora al Estado no
+        se le exige la lista, porque sus funciones viven en el PDF de las
+        bases y el portal no lo enlaza. Lo demás sí se le exige igual.
+        """
         o = procesar_cruda(self.cruda)
-        self.assertFalse(o.aprobada)
-        self.assertTrue(any("funciones" in m.lower() for m in o.motivos_rechazo))
+        self.assertNotIn("funciones", " ".join(o.motivos_rechazo).lower())
         self.assertGreater(o.sueldo_min, 0)      # el sueldo sí se leyó
 
 
@@ -151,9 +155,15 @@ class TestConvocatoriaDelPoderJudicial(unittest.TestCase):
     def test_detecta_que_el_plazo_cerro(self):
         self.assertEqual(self.cruda.extra["vence"], "2026-07-24")
 
-    def test_se_rechaza(self):
+    def test_se_rechaza_por_el_plazo_no_por_las_funciones(self):
+        """
+        Esta convocatoria cerró el 24/07. Se cae por eso, y ya no por no
+        listar funciones: al Estado eso dejó de ser eliminatorio.
+        """
         self.assertFalse(self.oferta.aprobada)
-        self.assertTrue(any("funciones" in m.lower() for m in self.oferta.motivos_rechazo))
+        motivos = " ".join(self.oferta.motivos_rechazo).lower()
+        self.assertIn("plazo", motivos)
+        self.assertNotIn("funciones", motivos)
 
 
 class TestCatalogoDeBeneficios(unittest.TestCase):

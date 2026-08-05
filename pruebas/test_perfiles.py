@@ -74,8 +74,28 @@ class TestPerfiles(unittest.TestCase):
                 self.assertFalse(r.aprobada)
 
     def test_los_perfiles_estan_definidos(self):
-        self.assertEqual(PERFILES["publico"]["funciones"], 1)
+        """
+        Al Estado no se le exige lista de funciones; al privado sí, y tres.
+        Son varas distintas a propósito: el Estado publica las funciones en
+        el PDF de las bases, el privado que las calla está escondiendo algo.
+        """
+        self.assertEqual(PERFILES["publico"]["funciones"], 0)
         self.assertEqual(PERFILES["privado"]["funciones"], 3)
+
+    def test_al_estado_sin_funciones_se_le_quitan_los_25_puntos(self):
+        """
+        Que no sea eliminatorio no significa que salga gratis. El aviso
+        pierde el bloque entero y tiene que compensarlo en todo lo demás.
+        """
+        r = evaluar(**dict(BASE, funciones=[]), perfil="publico")
+        self.assertEqual(r.detalle["funciones"], 0)
+        self.assertNotIn("funciones", " ".join(r.motivos).lower())
+
+    def test_un_aviso_publico_flojo_igual_se_cae(self):
+        """La vara la pone el umbral, no una excepción que deje pasar todo."""
+        r = evaluar(**dict(BASE, funciones=[], beneficios=["Buen ambiente laboral"]),
+                    perfil="publico")
+        self.assertFalse(r.aprobada)
 
 
 class TestPoliticaDeFechas(unittest.TestCase):
