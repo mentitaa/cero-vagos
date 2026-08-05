@@ -1,16 +1,17 @@
 /* Generado por el motor de Cero Vagos. No editar a mano. */
 window.CERO_VAGOS = {
- "generado": "2026-08-05T18:41:59",
- "total": 37,
+ "generado": "2026-08-05T19:15:27",
+ "total": 42,
  "stats": {
-  "total_procesadas": 1672,
-  "aprobadas_vigentes": 37,
-  "tasa_aprobacion": 2.2,
-  "sin_sueldo": 1360,
-  "pct_sin_sueldo": 81,
-  "sueldo_mediano": 1500,
+  "total_procesadas": 1784,
+  "aprobadas_vigentes": 42,
+  "tasa_aprobacion": 2.4,
+  "sin_sueldo": 1409,
+  "pct_sin_sueldo": 79,
+  "sueldo_mediano": 1470,
   "por_fuente": {
    "Bumeran": 36,
+   "Laborum": 5,
    "Convocatorias del Estado": 1
   }
  },
@@ -1549,6 +1550,209 @@ window.CERO_VAGOS = {
   },
   {
    "id": 37,
+   "puesto": "Asesor de atención al cliente venta seguro vehicular",
+   "empresa": "A365",
+   "cat": "Atención al Cliente",
+   "min": 1130,
+   "max": 1130,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 6,
+   "vence": "2026-08-30",
+   "restan": 25,
+   "score": 89,
+   "resumen": "RESUMEN: En A365 estamos buscando el mejor talento! Nos encontramos en la búsqueda de Asesores de Ventas para seguros vehiculares.",
+   "funciones": [
+    "Contactar a clientes para ofrecer seguros vehiculares.",
+    "Brindar asesoría sobre los beneficios del producto.",
+    "Cumplir con los objetivos comerciales e indicadores de ventas.",
+    "Registrar la información de las gestiones realizadas en el sistema."
+   ],
+   "requisitos": [
+    "Disponibilidad para trabajar de Lunes a Viernes de 9:00 AM a 6:00 PM y los Sábados de 9:00 AM a 2:00 PM (Descanso fijo domingos y feriados).",
+    "Disponibilidad para laborar de forma 100% presencial en Magdalena del Mar",
+    "Actitud orientada al cliente, fluidez verbal y capacidad de negociación"
+   ],
+   "beneficios": [
+    "Sueldo fijo de S/. 1130 + Comisiones Ilimitadas.",
+    "Ingreso a Planilla Completa desde el 1 de agosto con todos los beneficios de ley.",
+    "Asignación Familiar de S/. 113 (si corresponde).",
+    "Pagos puntuales de manera quincenal.",
+    "Capacitación corta y pagada (3 días).",
+    "Excelente clima laboral y línea de carrera a corto plazo.-Requerimientos- Educación mínima: Educación Secundaria años de experienciaEdad: entre 18 y 60 añosPalabras clave: advisor, asesor, care, costumer, cliente, callcenter, teleoperador, telefonista, telephonist, telefonico"
+   ],
+   "url": "https://www.laborum.pe/job/a365/asesor-de-atencion-al-cliente-venta-seguro-vehicular-call/6a6a9a2d2020b210c81a4af1"
+  },
+  {
+   "id": 38,
+   "puesto": "Atención al cliente",
+   "empresa": "Partner Service",
+   "cat": "Atención al Cliente",
+   "min": 1130,
+   "max": 1130,
+   "modalidad": "Remoto",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 6,
+   "vence": "2026-08-30",
+   "restan": 25,
+   "score": 86,
+   "resumen": "RESUMEN: Si cuentas con experiencia en atención al cliente por call center y buscas una oportunidad para trabajar desde casa, esta vacante es para ti.",
+   "funciones": [
+    "Brindar atención telefónica a clientes de Claro Postpago.",
+    "Resolver consultas y brindar soluciones oportunas.",
+    "Ofrecer una excelente experiencia de atención al cliente.",
+    "Cumplir con los indicadores de calidad y servicio."
+   ],
+   "requisitos": [
+    "Experiencia mínima de 3 meses en Call Center.",
+    "Residir en Lima.",
+    "Contar con PC o Laptop.",
+    "Windows 10 u 11.",
+    "Procesador Core i3 de 5ta generación o superior.",
+    "Memoria RAM de 8 GB como mínimo.",
+    "Internet cableado de 50 Mbps o más.",
+    "Audífonos con conexión USB.",
+    "Jornada laboral",
+    "Descansos rotativos.",
+    "Gestión de 7 horas 30 minutos + 45 minutos de refrigerio.",
+    "Si te apasiona brindar un excelente servicio y deseas desarrollarte en una empresa con más de 10 años de experiencia, ¡postula con nosotros!"
+   ],
+   "beneficios": [
+    "Modalidad 100% Remota.",
+    "Sueldo fijo de S/ 1,130.",
+    "Bono variable de hasta S/ 300.",
+    "Bono de permanencia de S/ 300.",
+    "Capacitación pagada (S/ 240).",
+    "Oportunidad de crecimiento y desarrollo."
+   ],
+   "url": "https://www.laborum.pe/job/partner-service/trabaja-desde-casa-asesor-de-atencion-al-cliente-sueldo/6a6bda162020b210c81aca60"
+  },
+  {
+   "id": 39,
+   "puesto": "solo Atención al Cliente",
+   "empresa": "Partner Service",
+   "cat": "Atención al Cliente",
+   "min": 600,
+   "max": 600,
+   "modalidad": "Remoto",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 6,
+   "vence": "2026-08-30",
+   "restan": 25,
+   "score": 86,
+   "resumen": "RESUMEN: ¡Únete a Partner Service y desarrolla tu carrera profesional con nosotros!",
+   "funciones": [
+    "Atender llamadas de clientes Claro Perú.",
+    "Brindar una excelente atención al cliente.",
+    "Realizar gestión comercial de acuerdo con los lineamientos de la campaña."
+   ],
+   "requisitos": [
+    "Secundaria completa.",
+    "Disponibilidad para trabajar de manera presencial en Santa Anita.",
+    "Disponibilidad para horarios rotativos.",
+    "Con o sin experiencia."
+   ],
+   "beneficios": [
+    "Sueldo fijo Full Time: S/ 1,200.",
+    ". Sueldo fijo Semi Full Time: s/800.",
+    "Sueldo fijo Part Time: S/ 600.",
+    "Bono de permanencia hasta S/ 300 (S/ 100 por mes).",
+    "Bono variable hasta S/ 300.",
+    "Bono de movilidad S/ 100.",
+    "Bono nocturno S/ 100.",
+    "Capacitaciones pagadas.",
+    "Línea de carrera.",
+    "Excelente ambiente laboral.",
+    "Lunes a domingo con un día de descanso rotativo a la semana.",
+    "Rango 1: 12:00 pm a 8:15 pm / 1:00 pm a 9:15 pm"
+   ],
+   "url": "https://www.laborum.pe/job/partner-service/solo-atencion-al-cliente-sin-experiencia-capacitacion-remota/6a6bd8702020b210c81ac253"
+  },
+  {
+   "id": 40,
+   "puesto": "Auxiliar de Almacén",
+   "empresa": "Lavoro Perú",
+   "cat": "Tecnología",
+   "min": 1130,
+   "max": 1130,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 6,
+   "vence": "2026-08-30",
+   "restan": 25,
+   "score": 85,
+   "resumen": "RESUMEN: Nuestro cliente, importante empresa localizada en el mercado de Huachipa, destacada en el rubro de repuestos se encuentra en la búsqueda del/ los mejor(es) talento(s) para ocupar el puesto de AUXILIAR DE ALMACÉN",
+   "funciones": [
+    "Picking de productos",
+    "Empaquetado de productos",
+    "Estiba (carga y descarga)",
+    "Orden/limpieza en almacén",
+    "Ubicación de productos de descarga"
+   ],
+   "requisitos": [
+    "Secundaria Completa",
+    "Experiencia de 3 meses en cargos similares o trabajando en planta",
+    "Disponibilidad inmediata",
+    "Con Domicilio en zonas cercanas a Huachipa, Ate, San Juan de Lurigancho, Santa Anita, entre otros.",
+    "HORARIO DE TRABAJO",
+    "Horario: Lunes a Sábado de (2:00 PM - 10:00 PM)",
+    "Descansos fijos Domingos",
+    "Dirección: Av. Priale con la Av. La Paz"
+   ],
+   "beneficios": [
+    "Sueldo básico: S/ 1,130",
+    "Asignación Familiar: S/ 113",
+    "Bono de asistencia perfecta: S/ 150",
+    "Bono de movilidad: S/. 150",
+    "Pagos quincenales y mensuales",
+    "Seguro SCTR y Vida Ley.",
+    "Somos una empresa que promueve la igualdad de oportunidades y no discriminamos por motivo de origen, edad, sexo, discapacidad u otra condición , así como la inclusión laboral de personas con discapacidad."
+   ],
+   "url": "https://www.laborum.pe/job/lavoro-peru/auxiliar-de-almacen-turno-tarde-huachipa-aje/6a6bd8972020b210c81ac324"
+  },
+  {
+   "id": 41,
+   "puesto": "Agente Call Center",
+   "empresa": "A365",
+   "cat": "Ventas",
+   "min": 1300,
+   "max": 1300,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 6,
+   "vence": "2026-08-30",
+   "restan": 25,
+   "score": 77,
+   "resumen": "RESUMEN: Asesor de Ventas CALL CENTER 100% PRESENCIAL EN JESÚS MARÍA",
+   "funciones": [
+    "Gestión de ventas y contacto con clientes",
+    "Cumplimiento de objetivos comerciales",
+    "Registro y seguimiento de información"
+   ],
+   "requisitos": [
+    "Actitud positiva y orientación a resultados",
+    "Interés por las ventas",
+    "Buena comunicación y trato con el cliente",
+    "Empatía y compromiso"
+   ],
+   "beneficios": [
+    "Sueldo fijo S/ 1,300",
+    "Comisiones sin tope (ingresos superiores a S/1800)",
+    "Planilla completa desde el primer día",
+    "Bono de Permanencia hasta S/300",
+    "Pagos quincenales puntuales",
+    "Asignación familiar S/ 113",
+    "Capacitación constante, convenios y línea de carrera"
+   ],
+   "url": "https://www.laborum.pe/job/a365/fijo-s-1300-agente-call-center-comisiones-y-bonos-pagos/6a6adc932020b210c81a800c"
+  },
+  {
+   "id": 42,
    "puesto": "Auxiliar Administrativo",
    "empresa": "Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco",
    "cat": "Tecnología",
