@@ -20,13 +20,11 @@ todo lo demás está subordinado a ella.
 Dueña del proyecto: **Mentita**. Repositorio de GitHub bajo el usuario
 `mentitaa`. El sitio se publica con GitHub Pages.
 
-**El sitio en vivo: https://mentitaa.github.io/cero-vagos/**
+**El sitio en vivo: https://cerovagos.com/**
 
-Esa es la dirección de hoy. El dominio **`cerovagos.com`** ya está
-**comprado** (Squarespace, con Google Workspace para el correo). Cuando se
-conecte en GitHub, el sitio se muda solo: el generador lee el archivo `CNAME` y reescribe todas
-las páginas, el sitemap y los enlaces (ver `DOMINIO.md`). No hay que tocar
-código.
+Conectado el 4 de agosto de 2026: dominio en Squarespace, correo
+`info@cerovagos.com` con Google Workspace, HTTPS forzado.
+`mentitaa.github.io/cero-vagos/` redirige aquí (`DOMINIO.md`).
 
 ## Cómo hablarle a Mentita
 
@@ -46,7 +44,7 @@ código.
 | `README.md` | Manual completo: comandos, filtro, fuentes. La referencia larga. |
 | `CLAUDE.md` | Este archivo. Contexto y reglas. |
 | `DESPLIEGUE.md` | Poner el motor en piloto automático con GitHub Actions. |
-| `DOMINIO.md` | Conectar `cerovagos.com` (comprado, sin conectar aún). |
+| `DOMINIO.md` | Cómo se conectó el dominio y qué revisar si vuelve a cambiar. |
 | `ALERTAS.md` | Las alertas: cómo están conectadas y cómo se mandan. |
 | `SEGURIDAD.md` | Auditoría de seguridad: qué se revisó y qué queda abierto. |
 | `EMPRESAS.md` | Estrategia de bolsas de trabajo de empresas. |
@@ -72,7 +70,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **207** y pasan todos. Ojo: el `README.md` todavía dice 43, quedó
+Los tests son **209** y pasan todos. Ojo: el `README.md` todavía dice 43, quedó
 viejo.
 
 ## Las reglas que no se tocan
@@ -96,7 +94,13 @@ preguntar antes**, no decidirlo en el camino.
    ordenamos.
 6. **Si no se puede leer el `robots.txt`, se asume que no hay permiso.** El bot
    va identificado (`CeroVagosBot`) y respeta el `Crawl-delay`.
-7. **El título tiene que decir qué es el trabajo.** "Papa Johns" o "Primax
+7. **Al cambiar el filtro hay que correr `python3 -m motor reevaluar`.** Los
+   avisos guardados conservan el veredicto del día en que se leyeron, y el
+   motor no vuelve a mirar un rechazado hasta pasados 30 días. Sin ese
+   comando, un cambio de regla tarda un mes en notarse. **No se ejecuta solo
+   en cada publicación a propósito**: una reevaluación automática y silenciosa
+   podría despublicar el sitio entero si alguien mete un error en la rúbrica.
+8. **El título tiene que decir qué es el trabajo.** "Papa Johns" o "Primax
    Cerro Azul" dicen la marca o el local, no el oficio: es una oferta vaga en
    el titular. El motor deduce el cargo del texto del propio aviso
    (`deducir_puesto`) y, si el aviso no lo nombra en ninguna parte, lo
@@ -110,15 +114,27 @@ eliminatorios — no se puede tapar un vacío con puntos de otro lado.
 | Bloque | Puntos | Eliminatorio |
 |---|---|---|
 | Sueldo mensual detectado | 30 | sí |
-| Funciones | 25 | sí (3 privado / 1 público) |
+| Funciones | 25 | **solo privado** (mínimo 3). Al Estado no |
 | Requisitos | 20 | sí (mínimo 3) |
 | Beneficios | 15 | sí (mínimo 2, y concretos) |
 | Empresa, ciudad, modalidad, frescura | 10 | vencido o +60 días, se bota |
 
-Dos varas distintas (`PERFILES` en `motor/score.py`): al sector privado se le
-exige más porque él escribe el aviso y pone la fecha; al Estado se le exige
-distinto porque sus funciones están en el PDF de las bases y muchas veces no
-publica fecha de cierre.
+Dos varas distintas (`PERFILES` en `motor/score.py`), y esto es deliberado:
+
+**Al Estado no se le exige la lista de funciones** (decidido el 4/8/2026). Una
+convocatoria CAS trae puesto normado, sueldo exacto, requisitos detallados y
+beneficios fijados por ley — pero sus funciones viven en el PDF de las bases,
+que el portal no enlaza. Se verificó: la propia página dice "Funciones no
+especificadas en la convocatoria extraída".
+
+La vara del privado se diseñó contra otra cosa: el aviso que dice "apoyar en
+labores del área" para no comprometerse. Ese sí esconde algo.
+
+**Que no sea eliminatorio no es salir gratis.** Los 25 puntos se pierden
+enteros, así que el aviso tiene que compensarlos en todo lo demás para llegar
+a 70. La vara la pone el umbral, no una excepción. Y la ficha lo dice de
+frente: en vez de un hueco, explica que las funciones están en las bases y
+enlaza al aviso oficial.
 
 Detalle completo en `README.md` › *El filtro*.
 
@@ -130,8 +146,11 @@ Primera corrida larga completada. Números de la base (`datos/cerovagos.db`):
 |---|---|---|
 | Bumeran | 779 | 32 |
 | Laborum | 327 | 30 |
-| Convocatorias del Estado | 101 | 12 |
-| **Total** | **1207** | **60** publicadas hoy |
+| Convocatorias del Estado | 101 | 20 |
+| **Total** | **1207** | **68** publicadas |
+
+Ojo: el bot ya corre solo y estos números crecen cada madrugada. Al 4 de
+agosto por la noche la base iba por 1,325 avisos revisados.
 
 Por qué se rechazaron (un aviso puede fallar en varias):
 
@@ -157,22 +176,21 @@ más ofertas, la respuesta es **más fuentes**, no menos exigencia.
 
 Lo que está esperando, en orden aproximado de impacto:
 
-1. **Conectar `cerovagos.com`** (`DOMINIO.md`). Ya está comprado en Squarespace
-   y el correo `info@cerovagos.com` funciona con Google Workspace. Falta poner
-   los registros DNS y el dominio en GitHub Pages. Al hacerlo, cambiar también
-   la restricción de dominio en Formspree o los registros de alertas se van a
-   spam en silencio.
-2. **Más fuentes.** 60 ofertas es poco para que alguien vuelva al día
-   siguiente. El camino son las bolsas de empresas (`EMPRESAS.md`), no aflojar
-   el filtro.
-3. **Los portales privados se pasan de tiempo.** La primera corrida en la nube
+1. **Más fuentes.** 60 ofertas es poco para que alguien vuelva al día
+   siguiente. Dos caminos: subir el peso de **Convocatorias del Estado** (el
+   100% declara sueldo y es lo que da ciudades fuera de Lima) y las bolsas de
+   empresas (`EMPRESAS.md`). Nunca aflojar el filtro.
+2. **Los portales privados se pasan de tiempo.** La primera corrida en la nube
    terminó en verde pero con un aviso: el paso "Portales privados" se cortó a
    los 60 minutos. Bajar el límite por portal o subir ese tope.
-4. **Enviar los correos a las universidades** (`PROPUESTA-UNIVERSIDADES.md`).
+3. **Enviar los correos a las universidades** (`PROPUESTA-UNIVERSIDADES.md`).
    No depende de código y las respuestas tardan días.
-5. **Páginas por ciudad y rubro** ("Trabajos en Arequipa con sueldo"). Es lo
+4. **Páginas por ciudad y rubro** ("Trabajos en Arequipa con sueldo"). Es lo
    que la gente busca en Google y hoy no hay nada que aparezca para eso.
-6. **Detector de requisitos discriminatorios** (Ley 26772). Se encontró un
+   **Todavía no hay volumen**: al 4 de agosto solo Lima pasa de 5 ofertas
+   publicadas (53 de 60). Hacer páginas casi vacías le dice a Google que el
+   sitio es de baja calidad. Primero más fuentes, después las páginas.
+5. **Detector de requisitos discriminatorios** (Ley 26772). Se encontró un
    aviso pidiendo "Edad: entre 20 y 45 años".
 
 ## Trampas conocidas
@@ -193,9 +211,9 @@ verificar.
   El camino es un acuerdo, o vivir sin él.
 - **SQLite falla en carpetas sincronizadas** (iCloud, Drive, Dropbox) al tomar
   bloqueos. Salida: `export CEROVAGOS_DB=~/cerovagos.db`.
-- **El formulario de alertas está restringido a `mentitaa.github.io`** en
-  Formspree. Al conectar `cerovagos.com` hay que cambiarlo ahí o todos los
-  registros se van a spam en silencio (`DOMINIO.md`).
+- **El formulario de alertas está restringido a `cerovagos.com`** en Formspree.
+  Si el dominio cambia, hay que cambiarlo ahí el mismo día o todos los
+  registros se van a spam en silencio (`ALERTAS.md`).
 - **El correo del proyecto es `info@cerovagos.com`** (Google Workspace) y sale publicado
   en las páginas legales. No inventar direcciones: la política de privacidad
   promete que se puede pedir la baja de un dato, y si el correo rebota esa
@@ -225,6 +243,7 @@ python3 -m motor publicar --sitio https://mentitaa.github.io/cero-vagos
 python3 -m motor diagnostico                 # ¿cada fuente se puede leer?
 python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
+python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
 python3 -m unittest discover pruebas -v      # los 154 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
