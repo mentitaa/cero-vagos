@@ -94,12 +94,16 @@ preguntar antes**, no decidirlo en el camino.
    ordenamos.
 6. **Si no se puede leer el `robots.txt`, se asume que no hay permiso.** El bot
    va identificado (`CeroVagosBot`) y respeta el `Crawl-delay`.
-7. **Al cambiar el filtro hay que correr `python3 -m motor reevaluar`.** Los
-   avisos guardados conservan el veredicto del día en que se leyeron, y el
-   motor no vuelve a mirar un rechazado hasta pasados 30 días. Sin ese
-   comando, un cambio de regla tarda un mes en notarse. **No se ejecuta solo
-   en cada publicación a propósito**: una reevaluación automática y silenciosa
-   podría despublicar el sitio entero si alguien mete un error en la rúbrica.
+7. **Al cambiar el filtro hay que reevaluar, y se hace EN GITHUB:** Actions →
+   *Publicar el sitio* → Run workflow → marcar la casilla `reevaluar`.
+   Hace falta porque los avisos guardados conservan el veredicto del día en
+   que se leyeron, y el motor no vuelve a mirar un rechazado hasta pasados 30
+   días: sin esto un cambio de regla tarda un mes en notarse.
+   **No corre sola en cada publicación a propósito** — una reevaluación
+   silenciosa podría despublicar el sitio entero si alguien mete un error en
+   la rúbrica. Y **nunca en local**: reevaluar en la laptop y subir `datos/`
+   pisa lo que el bot recolectó esa noche. Pasó el 4/8/2026 y borró 118
+   avisos (`DESPLIEGUE.md`).
 8. **El título tiene que decir qué es el trabajo.** "Papa Johns" o "Primax
    Cerro Azul" dicen la marca o el local, no el oficio: es una oferta vaga en
    el titular. El motor deduce el cargo del texto del propio aviso
@@ -180,9 +184,10 @@ Lo que está esperando, en orden aproximado de impacto:
    siguiente. Dos caminos: subir el peso de **Convocatorias del Estado** (el
    100% declara sueldo y es lo que da ciudades fuera de Lima) y las bolsas de
    empresas (`EMPRESAS.md`). Nunca aflojar el filtro.
-2. **Los portales privados se pasan de tiempo.** La primera corrida en la nube
-   terminó en verde pero con un aviso: el paso "Portales privados" se cortó a
-   los 60 minutos. Bajar el límite por portal o subir ese tope.
+2. **Ver si la corrida ya alcanza.** El 4/8 se reequilibró: el trabajo pasó de
+   150 a 180 minutos, el paso de privados de 60 a 100, y al Estado se le subió
+   el límite de 120 a 300 avisos. Revisar en la siguiente corrida si el aviso
+   de tiempo agotado desapareció.
 3. **Enviar los correos a las universidades** (`PROPUESTA-UNIVERSIDADES.md`).
    No depende de código y las respuestas tardan días.
 4. **Páginas por ciudad y rubro** ("Trabajos en Arequipa con sueldo"). Es lo

@@ -91,9 +91,10 @@ las ofertas aprobadas, las rechazadas y por qué.
 Actions → **Recolección diaria** → **Run workflow**. Ahí puedes cambiar dos
 cosas para esa corrida:
 
-- **Avisos por portal**: cuántos revisar. 120 por defecto; súbelo si quieres
-  una pasada más grande. Ojo: la corrida tiene 150 minutos de tope y una
-  pasada completa de 1,200 avisos tardó más de tres horas.
+- **Avisos por portal privado**: 120 por defecto (Bumeran, Laborum).
+- **Avisos de Convocatorias del Estado**: 300 por defecto. Va más alto a
+  propósito: de sus avisos el 100% declara sueldo, contra el 6% de Bumeran, y
+  es la única fuente que trae ciudades fuera de Lima.
 - **Días**: solo avisos publicados en los últimos N días. 3 por defecto, que es
   lo lógico para una corrida diaria. Pon 0 para revisar todo lo de los últimos
   dos meses.
@@ -138,6 +139,19 @@ La regla, en corto:
 Si alguna vez necesitas volver a trabajar sobre lo que hay en GitHub, primero
 **descarga el repositorio** (botón verde *Code* → *Download ZIP*) y reemplaza
 tu carpeta con eso. Nunca al revés.
+
+### Esto ya pasó (4 de agosto de 2026)
+
+Se cambió una regla del filtro, se reevaluó la base **en local** y se subió el
+resultado. Eso pisó los 118 avisos que el bot había recolectado esa madrugada:
+la web pasó de decir "1,325 avisos revisados" a "1,207".
+
+No se perdió nada permanente —el bot los volvió a descubrir— pero es la forma
+más fácil de tirar trabajo a la basura sin enterarse.
+
+**Por eso la reevaluación se corre en GitHub, no en la laptop:**
+Actions → **Publicar el sitio** → *Run workflow* → marcar la casilla
+**reevaluar**. Así trabaja sobre la base buena.
 
 ## Y si prefieres no usar GitHub
 
