@@ -114,6 +114,33 @@ class TestSitemap(unittest.TestCase):
         sin_dudosos = filtrar_recientes(urls, dias=30, incluir_sin_fecha=False)
         self.assertEqual(len(sin_dudosos), 1)
 
+    def test_devuelve_lo_mas_reciente_primero(self):
+        """
+        De un sitemap de 50 mil direcciones solo se revisan las primeras
+        doscientas y pico. Si vienen en el orden en que el portal las escribió,
+        esas son las más viejas del archivo.
+
+        Le pasaba a Laborum: el 5/8/2026 revisó 240 avisos, 237 tenían más de
+        3 días publicados y la corrida diaria se quedó sin traer ni uno, con el
+        paso en verde y sin ningún error.
+
+        Las que no traen fecha van al final: no saber cuándo se tocó una página
+        no es lo mismo que saber que es vieja.
+        """
+        ayer = date.today() - timedelta(days=1)
+        anteayer = date.today() - timedelta(days=2)
+        urls = [
+            ("https://x.pe/vieja", anteayer),
+            ("https://x.pe/sin-fecha", None),
+            ("https://x.pe/nueva", date.today()),
+            ("https://x.pe/media", ayer),
+        ]
+        self.assertEqual(
+            filtrar_recientes(urls, dias=30),
+            ["https://x.pe/nueva", "https://x.pe/media",
+             "https://x.pe/vieja", "https://x.pe/sin-fecha"],
+        )
+
 
 class TestRobots(unittest.TestCase):
 

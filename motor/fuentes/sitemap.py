@@ -97,13 +97,34 @@ def filtrar_recientes(
     dias: int = 30,
     incluir_sin_fecha: bool = True,
 ) -> list[str]:
-    """Deja solo los avisos actualizados dentro de la ventana que publicamos."""
+    """
+    Deja solo los avisos actualizados dentro de la ventana que publicamos, y los
+    devuelve **del más reciente al más viejo**.
+
+    Lo segundo importa tanto como lo primero. Un sitemap grande trae decenas de
+    miles de direcciones y de ahí solo se revisan las primeras doscientas y
+    pico: si vienen en el orden en que el portal las escribió, esas doscientas
+    son las más antiguas del archivo. Es lo que le pasaba a Laborum — el
+    5/8/2026 revisó 240 avisos y 237 salieron con más de 3 días de publicados,
+    así que la corrida diaria no traía ni uno.
+
+    Ojo con qué se hace con el `lastmod`: sirve para **priorizar**, nunca para
+    decidir. Dice cuándo el portal tocó la página, no cuándo se publicó el
+    aviso; usarlo como veredicto es lo que una vez dejó la corrida en cero. La
+    fecha de verdad se lee después, en la propia página.
+
+    Las direcciones sin fecha van al final, no se descartan: no saber cuándo se
+    tocó una página no es lo mismo que saber que es vieja.
+    """
     corte = date.today() - timedelta(days=dias)
-    salida = []
+    con_fecha: list[tuple[str, date]] = []
+    sin_fecha: list[str] = []
     for loc, mod in urls:
         if mod is None:
             if incluir_sin_fecha:
-                salida.append(loc)
+                sin_fecha.append(loc)
         elif mod >= corte:
-            salida.append(loc)
-    return salida
+            con_fecha.append((loc, mod))
+
+    con_fecha.sort(key=lambda par: par[1], reverse=True)
+    return [loc for loc, _ in con_fecha] + sin_fecha
