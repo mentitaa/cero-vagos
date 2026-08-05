@@ -425,6 +425,36 @@ class TestAlmacen(unittest.TestCase):
         vigentes = {f["puesto"] for f in self.almacen.aprobadas()}
         self.assertEqual(vigentes, {"Vigente", "Sin fecha reciente"})
 
+    def test_depurar_usa_la_vara_de_cada_fuente(self):
+        """
+        Un aviso sin fecha de cierre aguanta 21 días si es del Estado y 45 si es
+        privado. La diferencia no es un capricho: una convocatoria CAS dura unas
+        semanas, mientras que un aviso de Bumeran sigue abierto mucho más tiempo.
+
+        Durante un tiempo `depurar()` aplicó los 21 días del Estado a TODOS los
+        avisos. El efecto era invisible: los privados sin fecha desaparecían de
+        la web 24 días antes de tiempo, sin quedar registrados en ningún rechazo
+        y sin que nadie los volviera a mirar. Solo se notaba en que el listado
+        encogía sin explicación.
+        """
+        from datetime import timedelta
+
+        hace30 = date.today() - timedelta(days=30)
+        self.almacen.guardar(self._oferta(
+            huella="e" * 16, fuente="Bumeran", puesto="Privado sin fecha",
+            funciones=["Atender clientes"], score=85, aprobada=True, publicado=hace30))
+        self.almacen.guardar(self._oferta(
+            huella="f" * 16, fuente="Convocatorias del Estado", puesto="Estado sin fecha",
+            funciones=["Atender casos"], score=85, aprobada=True, publicado=hace30))
+
+        self.almacen.depurar()
+
+        vigentes = {f["puesto"] for f in self.almacen.aprobadas()}
+        self.assertIn("Privado sin fecha", vigentes,
+                      "al privado se le retiró con la vara del Estado")
+        self.assertNotIn("Estado sin fecha", vigentes,
+                         "la convocatoria del Estado ya pasó sus 21 días")
+
     def test_depurar_dos_veces_no_cuenta_de_nuevo(self):
         from datetime import timedelta
         self.almacen.guardar(self._oferta(

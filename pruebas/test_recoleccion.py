@@ -232,10 +232,34 @@ class TestConfiguracionFuentes(unittest.TestCase):
         nombres = [f.nombre for f in fuentes_de_arranque()]
         self.assertEqual(len(nombres), len(set(nombres)), nombres)
 
-    def test_las_sin_verificar_estan_marcadas(self):
+    def test_cada_candidata_declara_en_que_estado_esta(self):
+        """
+        Ninguna candidata puede quedar con una nota ambigua. Tiene que decir de
+        frente una de tres cosas: que nadie la ha probado, que ya se probó y
+        sirve, o que ya se probó y no sirve.
+
+        Antes esto exigía literalmente "SIN VERIFICAR", y por eso se cayó el día
+        que se anotaron los primeros resultados del diagnóstico. El punto nunca
+        fue esa frase: era que nadie pueda leer la lista y creer que una fuente
+        está lista cuando no lo está.
+        """
+        estados = ("SIN VERIFICAR", "VERIFICADA", "DESCARTADA")
         for f in fuentes_por_verificar():
             with self.subTest(portal=f.nombre):
-                self.assertIn("SIN VERIFICAR", f.nota)
+                self.assertTrue(
+                    any(e in f.nota for e in estados),
+                    f"la nota de {f.nombre} debe empezar por una de {estados}",
+                )
+
+    def test_ninguna_candidata_esta_tambien_en_la_corrida(self):
+        """
+        Verificar una fuente NO la enciende: hay que moverla a mano. Si aparece
+        en las dos listas, se recolectaría dos veces y nadie se enteraría.
+        """
+        activas = {f.nombre for f in portales_peru()}
+        for f in fuentes_por_verificar():
+            with self.subTest(portal=f.nombre):
+                self.assertNotIn(f.nombre, activas)
 
     def test_las_spa_quedan_inactivas_sin_playwright(self):
         from motor.fuentes.render import HAY_PLAYWRIGHT
