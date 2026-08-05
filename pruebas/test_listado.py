@@ -68,6 +68,27 @@ class PruebaListadoPorTandas(unittest.TestCase):
         self.assertIn("grid--hay-mas", self.html)
         self.assertIn("mask-image", self.html)
 
+    def test_el_difuminado_no_le_corta_la_cabeza_a_la_primera_fila(self):
+        """
+        Una máscara recorta todo lo que sobresalga de la caja del elemento, y de
+        las tarjetas sobresalen la etiqueta de "cierra en N días" (11px por
+        encima) y la sombra sólida (4px por la derecha).
+
+        Al poner el difuminado, la primera fila apareció decapitada. Se arregla
+        agrandando la caja con relleno y compensando con margen negativo, que
+        deja las tarjetas exactamente donde estaban.
+        """
+        regla = re.search(r"\.grid--hay-mas\{(.*?)\}", self.html, flags=re.S)
+        self.assertIsNotNone(regla, "desapareció la regla del difuminado")
+        cuerpo = regla.group(1)
+        arriba = re.search(r"padding:\s*(\d+)px", cuerpo)
+        self.assertIsNotNone(arriba, "la grilla con máscara necesita respiro arriba")
+        self.assertGreaterEqual(
+            int(arriba.group(1)), 11,
+            "el respiro tiene que cubrir los 11px que sobresale la etiqueta")
+        self.assertIn("margin:-", cuerpo.replace(" ", ""),
+                      "sin margen negativo, el relleno movería todas las tarjetas")
+
     def test_el_contador_no_miente(self):
         """
         Decía "Mostrando N ofertas" cuando pintaba todas. Ahora pinta seis filas,

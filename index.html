@@ -23,16 +23,16 @@
 <meta property="og:site_name" content="Cero Vagos">
 <meta property="og:locale" content="es_PE">
 <meta property="og:title" content="Cero Vagos — Solo ofertas de trabajo completas en Perú">
-<meta property="og:description" content="El 81% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
+<meta property="og:description" content="El 75% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
 <meta property="og:url" content="https://cerovagos.com/">
 <meta property="og:image" content="https://cerovagos.com/assets/compartir.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Cero Vagos. El 81% de los avisos de empleo no dice cuánto paga.">
+<meta property="og:image:alt" content="Cero Vagos. El 75% de los avisos de empleo no dice cuánto paga.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Cero Vagos — Solo ofertas de trabajo completas en Perú">
-<meta name="twitter:description" content="El 81% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
+<meta name="twitter:description" content="El 75% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
 <meta name="twitter:image" content="https://cerovagos.com/assets/compartir.png">
 <link rel="canonical" href="https://cerovagos.com/">
 <!-- COMPARTIR:FIN -->
@@ -294,6 +294,15 @@ section{position:relative}
    taparía la cuadrícula del fondo y se vería un parche. La máscara solo afecta
    a las tarjetas. */
 .grid--hay-mas{
+  /* El relleno con margen negativo NO mueve nada: agranda la caja de la grilla
+     sin cambiar dónde caen las tarjetas.
+     Hace falta porque una máscara recorta todo lo que sobresalga de la caja, y
+     de las tarjetas sobresalen dos cosas: la etiqueta de "cierra en N días",
+     que va 11px por encima del borde superior, y la sombra sólida, que asoma
+     4px por la derecha. Sin este respiro, la máscara le cortaba la cabeza a
+     toda la primera fila. */
+  padding:16px 6px 0;
+  margin:-16px -6px 0;
   -webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - 155px),transparent 100%);
           mask-image:linear-gradient(to bottom,#000 calc(100% - 155px),transparent 100%);
 }
@@ -817,10 +826,6 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
 <!-- OFERTAS-ESTATICAS:INICIO -->
 <nav class="indice-oculto" aria-label="Todas las ofertas">
   <ul>
-    <li><a href="oferta/reponedor-a-full-time-hrd-sac-consultora-en-rrhh-241688db/">Reponedor(a) Full Time — HRD SAC Consultora en RRHH</a></li>
-    <li><a href="oferta/asistente-administrativo-a-para-grifo-grupo-copetrol-a33014f2/">Asistente Administrativo(a) para grifo — GRUPO COPETROL</a></li>
-    <li><a href="oferta/tecnica-mind-selection-7d6ae09f/">Técnica — Mind selection</a></li>
-    <li><a href="oferta/auxiliar-contable-confidencial-74c5b32f/">Auxiliar Contable — Confidencial</a></li>
     <li><a href="oferta/asesor-a-de-ventas-coverprime-33ebccb1/">Asesor(a) de Ventas — CoverPrime</a></li>
     <li><a href="oferta/anfitriona-automotriz-a1-a-rc-consultores-6d1b4a8c/">Anfitriona Automotriz A1 — A&amp;RC Consultores</a></li>
     <li><a href="oferta/arquitecto-a-supervisor-de-obra-coverprime-0d9a9768/">Arquitecto(a) Supervisor de Obra — CoverPrime</a></li>
@@ -854,6 +859,41 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
     <li><a href="oferta/operario-de-produccion-cyl-68d1ca8f/">Operario de Producción — CYL</a></li>
     <li><a href="oferta/practicante-de-contabilidad-confidencial-4c57301d/">Practicante de Contabilidad — Confidencial</a></li>
     <li><a href="oferta/auxiliar-administrativo-proyecto-especial-regional-plan-copesco-del-go-2ecdca0c/">Auxiliar Administrativo — Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco</a></li>
+    <li><a href="oferta/asistente-tecnico-de-obra-ii-proyecto-especial-regional-plan-copesco-d-75e8068d/">Asistente Técnico De Obra Ii — Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco</a></li>
+    <li><a href="oferta/tecnico-administrativo-i-direccion-regional-de-salud-huancavelica-ee4515f6/">Tecnico Administrativo I — Direccion Regional De Salud Huancavelica</a></li>
+    <li><a href="oferta/especialista-en-salud-ambiental-ii-direccion-regional-de-salud-huancav-f7984dcc/">Especialista En Salud Ambiental Ii — Direccion Regional De Salud Huancavelica</a></li>
+    <li><a href="oferta/asistente-tecnico-ii-proyecto-especial-regional-plan-copesco-del-gobie-451e903b/">Asistente Tecnico Ii — Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco</a></li>
+    <li><a href="oferta/analista-de-presupuesto-municipalidad-distri-de-san-jeronimo-355d5533/">Analista De Presupuesto — Municipalidad Distri. De San Jeronimo</a></li>
+    <li><a href="oferta/tecnico-i-proyecto-especial-regional-plan-copesco-del-gobierno-regiona-7f74d460/">Tecnico I — Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco</a></li>
+    <li><a href="oferta/asistente-tecnico-de-obra-ii-proyecto-especial-regional-plan-copesco-d-527aa356/">Asistente Técnico De Obra Ii — Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco</a></li>
+    <li><a href="oferta/ingeniero-proyecto-especial-regional-plan-copesco-del-gobierno-regiona-adc3a1e8/">Ingeniero — Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco</a></li>
+    <li><a href="oferta/carpintero-de-melamina-y-mobiliario-comercial-conserh-8d80ab71/">Carpintero de Melamina y Mobiliario Comercial — CONSERH</a></li>
+    <li><a href="oferta/asesor-a-de-ventas-estalent-89d2d8f2/">Asesor(a) de Ventas — EsTalent</a></li>
+    <li><a href="oferta/tecnico-de-aire-acondicionado-conserh-dbd7eba1/">Técnico de Aire Acondicionado — CONSERH</a></li>
+    <li><a href="oferta/asistente-de-despacho-lavoro-peru-e8456dc5/">Asistente de Despacho — Lavoro Perú</a></li>
+    <li><a href="oferta/tecnico-de-aire-acondicionado-conserh-bebcb7a2/">Técnico de Aire Acondicionado — CONSERH</a></li>
+    <li><a href="oferta/anfitrion-de-estacionamientos-apparka-b237710d/">Anfitrión de Estacionamientos — APPARKA</a></li>
+    <li><a href="oferta/ayudante-de-planta-conserh-07909630/">Ayudante de Planta — CONSERH</a></li>
+    <li><a href="oferta/atencion-al-cliente-coesti-s-a-cd486f1a/">Atención al cliente — COESTI S.A.</a></li>
+    <li><a href="oferta/despachador-coesti-s-a-d13eb1a3/">Despachador — COESTI S.A.</a></li>
+    <li><a href="oferta/atencion-al-cliente-coesti-s-a-96ec76f9/">Atención al cliente — COESTI S.A.</a></li>
+    <li><a href="oferta/atencion-al-cliente-coesti-s-a-4b001c1a/">Atención al cliente — COESTI S.A.</a></li>
+    <li><a href="oferta/asistente-de-almacen-jr-adecco-peru-s-a-95f7add8/">Asistente de Almacén Jr — Adecco Perú S.A.</a></li>
+    <li><a href="oferta/asistente-de-despacho-lavoro-peru-10fc06c3/">Asistente de Despacho — Lavoro Perú</a></li>
+    <li><a href="oferta/panadero-junior-talentus-consultoria-y-formacion-972135af/">Panadero Junior — TALENTUS - Consultoría y Formación</a></li>
+    <li><a href="oferta/despachador-de-combustible-primax-coesti-s-a-6b3aaab4/">Despachador de combustible Primax — COESTI S.A.</a></li>
+    <li><a href="oferta/operario-de-produccion-talentus-consultoria-y-formacion-fbc7433a/">Operario de producción — TALENTUS - Consultoría y Formación</a></li>
+    <li><a href="oferta/operario-de-planta-ng-restaurants-14553ddb/">Operario de planta — NG Restaurants</a></li>
+    <li><a href="oferta/atencion-al-cliente-talentus-consultoria-y-formacion-aec20e60/">Atención al Cliente — TALENTUS - Consultoría y Formación</a></li>
+    <li><a href="oferta/supervisor-a-de-seguridad-y-salud-presencial-lima-lavoro-peru-5505123b/">Supervisor (a) de Seguridad y Salud presencial LIMA — Lavoro Perú</a></li>
+    <li><a href="oferta/operario-de-limpieza-para-san-borja-lavoro-peru-e4577eb2/">Operario de Limpieza para San Borja — Lavoro Perú</a></li>
+    <li><a href="oferta/coordinador-de-operaciones-lavoro-peru-528f7ba8/">Coordinador de Operaciones — Lavoro Perú</a></li>
+    <li><a href="oferta/promotora-de-ventas-rubro-belleza-capilar-salesland-pacifico-10c2e821/">Promotora de Ventas Rubro Belleza Capilar — Salesland Pacífico</a></li>
+    <li><a href="oferta/operario-de-planta-ng-restaurants-fd3b3574/">Operario de planta — NG Restaurants</a></li>
+    <li><a href="oferta/operario-auxiliar-de-almacen-c-adecco-peru-s-a-24acab9f/">Operario auxiliar de Almacén c — Adecco Perú S.A.</a></li>
+    <li><a href="oferta/back-office-concentrix-ee43eee1/">Back Office — Concentrix</a></li>
+    <li><a href="oferta/operario-de-produccion-conserh-172292c2/">Operario de Producción — CONSERH</a></li>
+    <li><a href="oferta/operario-de-produccion-conserh-a92e07ec/">Operario de Producción — CONSERH</a></li>
   </ul>
 </nav>
 <!-- OFERTAS-ESTATICAS:FIN -->
