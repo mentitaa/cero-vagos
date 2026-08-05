@@ -218,6 +218,18 @@ verificar.
 - **`lastmod` del sitemap ≠ fecha de publicación.** El primero dice cuándo el
   portal tocó la página. Filtrar el descubrimiento con esa fecha deja la
   corrida en cero.
+- **Cada portal necesita su propia ventana de días, y Laborum va sin ninguna.**
+  Su sitemap trae 50 mil direcciones sin orden de fecha, así que las 240 que se
+  alcanzan a mirar son un trozo cualquiera del archivo. Con la ventana de 3
+  días se descartaban 239 de 240 antes de leerlas y la fuente aportaba **cero
+  todas las noches, en verde y sin un solo error**. Sin ventana, de esas mismas
+  240 pasa el filtro un 4%. No entra nada viejo por esto: el filtro sigue
+  botando todo lo de más de 60 días. Bumeran sí funciona con 3 días porque su
+  sitemap viene con lo nuevo primero.
+- **Una fuente que devuelve cero no falla: sale en verde.** Los pasos llevan
+  `continue-on-error` a propósito (un portal caído no debe tumbar la corrida),
+  así que el check verde no dice que haya funcionado. Lo que hay que mirar es
+  el bloque *Fuentes que no entregaron nada* del resumen.
 - **Bumeran y Laborum cargan por JavaScript**: por HTTP simple devuelven "You
   need to enable JavaScript". Necesitan Playwright.
 - **Computrabajo está detrás de un WAF** y no se raspa. El motor lo salta solo.
