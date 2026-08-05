@@ -1,13 +1,13 @@
 /* Generado por el motor de Cero Vagos. No editar a mano. */
 window.CERO_VAGOS = {
- "generado": "2026-08-05T04:22:43",
+ "generado": "2026-08-05T08:47:03",
  "total": 33,
  "stats": {
-  "total_procesadas": 1325,
+  "total_procesadas": 1443,
   "aprobadas_vigentes": 33,
-  "tasa_aprobacion": 2.5,
-  "sin_sueldo": 1026,
-  "pct_sin_sueldo": 77,
+  "tasa_aprobacion": 2.3,
+  "sin_sueldo": 1144,
+  "pct_sin_sueldo": 79,
   "sueldo_mediano": 1500,
   "por_fuente": {
    "Bumeran": 32,
