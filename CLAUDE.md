@@ -70,8 +70,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **209** y pasan todos. Ojo: el `README.md` todavía dice 43, quedó
-viejo.
+Los tests son **217** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -181,9 +180,18 @@ más ofertas, la respuesta es **más fuentes**, no menos exigencia.
 Lo que está esperando, en orden aproximado de impacto:
 
 1. **Más fuentes.** 60 ofertas es poco para que alguien vuelva al día
-   siguiente. Dos caminos: subir el peso de **Convocatorias del Estado** (el
-   100% declara sueldo y es lo que da ciudades fuera de Lima) y las bolsas de
-   empresas (`EMPRESAS.md`). Nunca aflojar el filtro.
+   siguiente. Nunca aflojar el filtro. Revisado el mercado el 4/8/2026, quedan
+   tres caminos y en este orden:
+
+   - **Pasada de recuperación.** La corrida diaria solo mira lo publicado en
+     los últimos 3 días, y nunca se leyó lo de entre 3 y 60 días atrás. No
+     necesita código: una corrida con `dias = 0` y el límite privado en 400.
+   - **BuscoTrabajo** (`buscotrabajo.pe`). Verificada: robots permite y
+     descubre avisos. Es la única bolsa privada peruana que no es de Jobient.
+     Necesita lector propio porque no trae JSON-LD — o sea, hay que sacarle el
+     sueldo del texto corrido, que es exactamente donde nació el error de los
+     S/ 33,800. Es el trabajo delicado.
+   - **Convocatorias del Estado** y las bolsas de empresas (`EMPRESAS.md`).
 2. **Ver si la corrida ya alcanza.** El 4/8 se reequilibró: el trabajo pasó de
    150 a 180 minutos, el paso de privados de 60 a 100, y al Estado se le subió
    el límite de 120 a 300 avisos. Revisar en la siguiente corrida si el aviso
@@ -214,6 +222,16 @@ verificar.
   need to enable JavaScript". Necesitan Playwright.
 - **Computrabajo está detrás de un WAF** y no se raspa. El motor lo salta solo.
   El camino es un acuerdo, o vivir sin él.
+- **Bumeran y Laborum son la misma empresa.** Las dos son del grupo **Jobint**
+  (que además opera ZonaJobs, Konzerta y Multitrabajos). Y **Aptitus**, el otro
+  portal grande del Perú, lo compró Bumeran y lo absorbió bajo su marca. Parece
+  que hubiera dos fuentes privadas: es una casa con dos puertas. Por eso sus
+  tasas de aprobación se parecen tanto, y por eso agregar Aptitus no sumaría
+  nada. Fuera de Jobint solo quedan Computrabajo (bloqueado) y BuscoTrabajo.
+- **Los agregadores no sirven aquí.** Jora, Indeed y Jooble no publican oferta
+  propia: repiten la de otros portales y mandan al usuario a un tercer sitio.
+  Eso choca de frente con la regla 5. Jora además tiene el `robots.txt` caído
+  (502), o sea que por la regla 6 ni se toca.
 - **SQLite falla en carpetas sincronizadas** (iCloud, Drive, Dropbox) al tomar
   bloqueos. Salida: `export CEROVAGOS_DB=~/cerovagos.db`.
 - **El formulario de alertas está restringido a `cerovagos.com`** en Formspree.
@@ -250,7 +268,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 154 tests
+python3 -m unittest discover pruebas -v      # los 217 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```

@@ -40,6 +40,44 @@ Para los portales que son aplicaciones React (ver *Estado de las fuentes*):
 pip install playwright && playwright install chromium
 ```
 
+## Que Google encuentre las ofertas
+
+```bash
+python3 -m motor publicar --sitio https://mentitaa.github.io/cero-vagos
+```
+
+Genera una página propia por oferta en `oferta/<direccion>/`, el `sitemap.xml`
+y el `robots.txt`, y mete en la portada una lista de enlaces reales.
+
+Por qué hace falta: la portada dibuja las tarjetas con JavaScript, así que un
+buscador puede no verlas, y todas las ofertas comparten una sola dirección.
+Con esto cada oferta tiene su URL, su título, su descripción y sus datos
+estructurados `JobPosting` — los mismos que este motor lee de otros portales,
+ahora publicados por nosotros. Es lo que permite aparecer en Google Empleos.
+
+Dos decisiones que conviene no tocar:
+
+- **La dirección se arma con la huella de la oferta, no con su posición.** Si
+  dependiera de la posición, al retirarse una oferta cambiarían las direcciones
+  de todas las demás y Google perdería lo indexado.
+- **Las ofertas retiradas pierden su página.** Una convocatoria cerrada que
+  sigue indexada es peor que no tenerla.
+
+Falta un paso manual, una sola vez: registrar el sitio en
+[Google Search Console](https://search.google.com/search-console) y enviar el
+`sitemap.xml`.
+
+## Dos automatismos, y no hay que confundirlos
+
+| | Qué hace | Cuánto tarda | Cuándo corre |
+|---|---|---|---|
+| **Recolección diaria** | Sale a los portales a buscar ofertas nuevas | 20-30 min | Cada medianoche, o a mano |
+| **Publicar el sitio** | Regenera las páginas con lo que ya está en la base | menos de 1 min | Solo, al subir un cambio a `index.html` o `motor/` |
+
+Si cambiaste un texto, un color o el código de las páginas, **no hace falta
+recolectar**: con publicar basta. Y ni siquiera hay que lanzarlo — se dispara
+solo cuando subes el archivo.
+
 ## En piloto automático (sin tu laptop)
 
 Lo recomendado: que el motor corra solo cada madrugada en los servidores de
@@ -114,7 +152,7 @@ python3 -m motor probar-url "https://..."       # leer UNA oferta y ver si pasar
 python3 -m motor stats                          # cómo va la base
 python3 -m motor rechazos                       # qué se botó y por qué
 python3 -m motor probar "S/ 2,800 a S/ 3,400"   # probar el parser de sueldos
-python3 -m unittest discover pruebas -v         # tests (43)
+python3 -m unittest discover pruebas -v         # tests (217)
 ```
 
 Si el proyecto vive en una carpeta sincronizada (iCloud, Drive, Dropbox),
