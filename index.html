@@ -23,16 +23,16 @@
 <meta property="og:site_name" content="Cero Vagos">
 <meta property="og:locale" content="es_PE">
 <meta property="og:title" content="Cero Vagos — Solo ofertas de trabajo completas en Perú">
-<meta property="og:description" content="El 79% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
+<meta property="og:description" content="El 75% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
 <meta property="og:url" content="https://cerovagos.com/">
 <meta property="og:image" content="https://cerovagos.com/assets/compartir.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Cero Vagos. El 79% de los avisos de empleo no dice cuánto paga.">
+<meta property="og:image:alt" content="Cero Vagos. El 75% de los avisos de empleo no dice cuánto paga.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Cero Vagos — Solo ofertas de trabajo completas en Perú">
-<meta name="twitter:description" content="El 79% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
+<meta name="twitter:description" content="El 75% de los avisos de empleo en el Perú no dice cuánto paga. Aquí solo entran los que sí: con sueldo en soles, funciones, requisitos y beneficios. Si falta uno, no se publica.">
 <meta name="twitter:image" content="https://cerovagos.com/assets/compartir.png">
 <link rel="canonical" href="https://cerovagos.com/">
 <!-- COMPARTIR:FIN -->
@@ -287,6 +287,24 @@ section{position:relative}
 .count b{background:var(--lima);border:var(--bd-fino);padding:3px 9px}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:22px}
+
+/* Cuando quedan ofertas por mostrar, la última fila se desvanece: es la señal
+   de que hay más abajo sin tener que leer nada.
+   Va con máscara y no con un rectángulo de color encima, porque un rectángulo
+   taparía la cuadrícula del fondo y se vería un parche. La máscara solo afecta
+   a las tarjetas. */
+.grid--hay-mas{
+  -webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - 155px),transparent 100%);
+          mask-image:linear-gradient(to bottom,#000 calc(100% - 155px),transparent 100%);
+}
+/* El botón sube un poco para meterse en el degradado: así se lee como el
+   final de la lista y no como un elemento suelto. */
+.masbox{display:flex;justify-content:center;margin-top:-34px;position:relative;z-index:3}
+.masbox .btn{gap:12px}
+.mas__n{
+  background:var(--lima);color:var(--negro);border:var(--bd-fino);
+  padding:2px 9px;font-size:13px;font-family:var(--body);font-weight:700;
+}
 .job{
   border:var(--bd);background:var(--blanco);box-shadow:var(--sh-sm);
   display:flex;flex-direction:column;transition:transform .1s ease,box-shadow .1s ease;
@@ -784,6 +802,7 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
     <div class="chips" id="chips"></div>
     <p class="count" id="count"></p>
     <div class="grid" id="grid"></div>
+    <div class="masbox" id="masbox"></div>
   </div>
 </section>
 
@@ -831,6 +850,41 @@ footer{background:var(--negro);color:var(--blanco);padding:56px 0 0}
     <li><a href="oferta/operario-de-produccion-cyl-68d1ca8f/">Operario de Producción — CYL</a></li>
     <li><a href="oferta/practicante-de-contabilidad-confidencial-4c57301d/">Practicante de Contabilidad — Confidencial</a></li>
     <li><a href="oferta/auxiliar-administrativo-proyecto-especial-regional-plan-copesco-del-go-2ecdca0c/">Auxiliar Administrativo — Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco</a></li>
+    <li><a href="oferta/asistente-tecnico-de-obra-ii-proyecto-especial-regional-plan-copesco-d-75e8068d/">Asistente Técnico De Obra Ii — Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco</a></li>
+    <li><a href="oferta/tecnico-administrativo-i-direccion-regional-de-salud-huancavelica-ee4515f6/">Tecnico Administrativo I — Direccion Regional De Salud Huancavelica</a></li>
+    <li><a href="oferta/especialista-en-salud-ambiental-ii-direccion-regional-de-salud-huancav-f7984dcc/">Especialista En Salud Ambiental Ii — Direccion Regional De Salud Huancavelica</a></li>
+    <li><a href="oferta/asistente-tecnico-ii-proyecto-especial-regional-plan-copesco-del-gobie-451e903b/">Asistente Tecnico Ii — Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco</a></li>
+    <li><a href="oferta/analista-de-presupuesto-municipalidad-distri-de-san-jeronimo-355d5533/">Analista De Presupuesto — Municipalidad Distri. De San Jeronimo</a></li>
+    <li><a href="oferta/tecnico-i-proyecto-especial-regional-plan-copesco-del-gobierno-regiona-7f74d460/">Tecnico I — Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco</a></li>
+    <li><a href="oferta/asistente-tecnico-de-obra-ii-proyecto-especial-regional-plan-copesco-d-527aa356/">Asistente Técnico De Obra Ii — Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco</a></li>
+    <li><a href="oferta/ingeniero-proyecto-especial-regional-plan-copesco-del-gobierno-regiona-adc3a1e8/">Ingeniero — Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco</a></li>
+    <li><a href="oferta/carpintero-de-melamina-y-mobiliario-comercial-conserh-8d80ab71/">Carpintero de Melamina y Mobiliario Comercial — CONSERH</a></li>
+    <li><a href="oferta/asesor-a-de-ventas-estalent-89d2d8f2/">Asesor(a) de Ventas — EsTalent</a></li>
+    <li><a href="oferta/tecnico-de-aire-acondicionado-conserh-dbd7eba1/">Técnico de Aire Acondicionado — CONSERH</a></li>
+    <li><a href="oferta/asistente-de-despacho-lavoro-peru-e8456dc5/">Asistente de Despacho — Lavoro Perú</a></li>
+    <li><a href="oferta/tecnico-de-aire-acondicionado-conserh-bebcb7a2/">Técnico de Aire Acondicionado — CONSERH</a></li>
+    <li><a href="oferta/anfitrion-de-estacionamientos-apparka-b237710d/">Anfitrión de Estacionamientos — APPARKA</a></li>
+    <li><a href="oferta/ayudante-de-planta-conserh-07909630/">Ayudante de Planta — CONSERH</a></li>
+    <li><a href="oferta/atencion-al-cliente-coesti-s-a-cd486f1a/">Atención al cliente — COESTI S.A.</a></li>
+    <li><a href="oferta/despachador-coesti-s-a-d13eb1a3/">Despachador — COESTI S.A.</a></li>
+    <li><a href="oferta/atencion-al-cliente-coesti-s-a-96ec76f9/">Atención al cliente — COESTI S.A.</a></li>
+    <li><a href="oferta/atencion-al-cliente-coesti-s-a-4b001c1a/">Atención al cliente — COESTI S.A.</a></li>
+    <li><a href="oferta/asistente-de-almacen-jr-adecco-peru-s-a-95f7add8/">Asistente de Almacén Jr — Adecco Perú S.A.</a></li>
+    <li><a href="oferta/asistente-de-despacho-lavoro-peru-10fc06c3/">Asistente de Despacho — Lavoro Perú</a></li>
+    <li><a href="oferta/panadero-junior-talentus-consultoria-y-formacion-972135af/">Panadero Junior — TALENTUS - Consultoría y Formación</a></li>
+    <li><a href="oferta/despachador-de-combustible-primax-coesti-s-a-6b3aaab4/">Despachador de combustible Primax — COESTI S.A.</a></li>
+    <li><a href="oferta/operario-de-produccion-talentus-consultoria-y-formacion-fbc7433a/">Operario de producción — TALENTUS - Consultoría y Formación</a></li>
+    <li><a href="oferta/operario-de-planta-ng-restaurants-14553ddb/">Operario de planta — NG Restaurants</a></li>
+    <li><a href="oferta/atencion-al-cliente-talentus-consultoria-y-formacion-aec20e60/">Atención al Cliente — TALENTUS - Consultoría y Formación</a></li>
+    <li><a href="oferta/supervisor-a-de-seguridad-y-salud-presencial-lima-lavoro-peru-5505123b/">Supervisor (a) de Seguridad y Salud presencial LIMA — Lavoro Perú</a></li>
+    <li><a href="oferta/operario-de-limpieza-para-san-borja-lavoro-peru-e4577eb2/">Operario de Limpieza para San Borja — Lavoro Perú</a></li>
+    <li><a href="oferta/coordinador-de-operaciones-lavoro-peru-528f7ba8/">Coordinador de Operaciones — Lavoro Perú</a></li>
+    <li><a href="oferta/promotora-de-ventas-rubro-belleza-capilar-salesland-pacifico-10c2e821/">Promotora de Ventas Rubro Belleza Capilar — Salesland Pacífico</a></li>
+    <li><a href="oferta/operario-de-planta-ng-restaurants-fd3b3574/">Operario de planta — NG Restaurants</a></li>
+    <li><a href="oferta/operario-auxiliar-de-almacen-c-adecco-peru-s-a-24acab9f/">Operario auxiliar de Almacén c — Adecco Perú S.A.</a></li>
+    <li><a href="oferta/back-office-concentrix-ee43eee1/">Back Office — Concentrix</a></li>
+    <li><a href="oferta/operario-de-produccion-conserh-172292c2/">Operario de Producción — CONSERH</a></li>
+    <li><a href="oferta/operario-de-produccion-conserh-a92e07ec/">Operario de Producción — CONSERH</a></li>
   </ul>
 </nav>
 <!-- OFERTAS-ESTATICAS:FIN -->
@@ -1140,6 +1194,7 @@ const OFERTAS = (!DEMO && MOTOR && MOTOR.ofertas && MOTOR.ofertas.length)
    ============================================================ */
 const $ = s => document.querySelector(s);
 const grid = $('#grid'), chipsBox = $('#chips'), countEl = $('#count');
+const masBox = $('#masbox');
 const CATS = [...new Set(OFERTAS.map(o=>o.cat))].sort();
 const CIUDADES = [...new Set(OFERTAS.map(o=>o.ciudad))].sort();
 const COLORES = ['#FFD100','#B8FF2E','#4CE0F5','#FF4FA3','#FF1E1E','#2B37FF'];
@@ -1207,6 +1262,8 @@ function filtrar(){
 }
 
 function vacio(){
+  grid.classList.remove('grid--hay-mas');
+  masBox.innerHTML = '';
   grid.innerHTML = `<div class="vacio" style="grid-column:1/-1">
     <h3>No hay chamba con esos filtros</h3>
     <p style="font-weight:500;margin-bottom:18px">Prueba con menos filtros o activa una alerta para que te avisemos apenas entre una.</p>
@@ -1215,14 +1272,59 @@ function vacio(){
 
 function render(){
   const lista = filtrar();
-  countEl.innerHTML = `Mostrando <b>${lista.length}</b> ofertas completas de ${OFERTAS.length} verificadas`;
+  /* Dice cuántas HAY, no cuántas se ven: ahora se pintan de a tandas y
+     "mostrando" sería mentira apenas pasen de seis filas. */
+  countEl.innerHTML = `Hay <b>${lista.length}</b> ofertas completas de ${OFERTAS.length} verificadas`;
   if(!lista.length){ vacio(); return; }
   pintar(lista);
+}
+
+/* ---------- mostrar de a pocas ----------
+
+   Con 30 ofertas se pueden pintar todas. Con 200 el scroll no termina nunca y
+   nadie llega jamás al pie de la página, donde están las alertas y los enlaces
+   legales. Por eso se muestran seis filas y el resto sale con "Ver más".
+
+   Se suman, no se reemplazan: quien ya venía leyendo no pierde de vista lo que
+   estaba mirando. Por eso tampoco hay paginación con números.               */
+
+const FILAS_POR_TANDA = 6;
+let listaEnPantalla = [];
+let tope = 0;
+
+/* Cuántas tarjetas entran en una fila HOY. Se le pregunta al navegador en vez
+   de dar por hecho que son tres: la grilla cambia de columnas según el ancho y
+   en un teléfono es una sola, donde 18 tarjetas serían 18 filas de scroll. */
+function porTanda(){
+  const cols = getComputedStyle(grid).gridTemplateColumns.split(' ').filter(Boolean).length;
+  return Math.max(1, cols) * FILAS_POR_TANDA;
 }
 
 /* Dibuja las tarjetas. Separado de render() para poder llamarlo con
    cualquier lista, como la de "empleos en provincias" del pie. */
 function pintar(lista){
+  listaEnPantalla = lista;
+  tope = Math.min(porTanda(), lista.length);
+  dibujar();
+}
+
+function verMas(){
+  tope = Math.min(tope + porTanda(), listaEnPantalla.length);
+  dibujar();
+}
+
+function dibujar(){
+  const faltan = listaEnPantalla.length - tope;
+  tarjetas(listaEnPantalla.slice(0, tope));
+  grid.classList.toggle('grid--hay-mas', faltan > 0);
+  masBox.innerHTML = faltan > 0
+    ? `<button class="btn btn--negro" onclick="verMas()">
+         Ver más ofertas <span class="mas__n">quedan ${faltan}</span>
+       </button>`
+    : '';
+}
+
+function tarjetas(lista){
   grid.innerHTML = lista.map((o,i)=>{
     const p = plazo(o);
     const x = o.exclusiva;   // {universidad, siglas, url} cuando la oferta es de una bolsa aliada
@@ -1461,7 +1563,7 @@ function filtrarDesdeElPie(campo, valor){
   if(campo === 'provincias'){
     // Todo lo que no sea Lima ni Callao.
     const fuera = OFERTAS.filter(o => !['Lima','Callao'].includes(o.ciudad));
-    countEl.innerHTML = `Mostrando <b>${fuera.length}</b> ofertas fuera de Lima`;
+    countEl.innerHTML = `Hay <b>${fuera.length}</b> ofertas fuera de Lima`;
     fuera.length ? pintar(fuera) : vacio();
     pintarChips();
     return;
