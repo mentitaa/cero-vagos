@@ -161,8 +161,12 @@ class Almacen:
         from .score import MAX_DIAS_ANTIGUEDAD, PERFILES
 
         hoy = date.today().isoformat()
-        sin_cierre = int(PERFILES["publico"]["dias_sin_cierre"])
         quitadas = {}
+
+        # Un aviso es del Estado o es privado, y se decide igual que en el
+        # filtro: por el nombre de la fuente. No se guarda en la base para no
+        # tener dos versiones de la misma verdad.
+        ES_ESTADO = "LOWER(COALESCE(fuente,'')) LIKE '%estado%'"
 
         # 1. Dijo hasta cuándo, y ya pasó.
         quitadas["plazo cerrado"] = self.con.execute(
@@ -171,11 +175,21 @@ class Almacen:
         ).rowcount
 
         # 2. No dijo hasta cuándo y ya lleva demasiado publicada.
-        quitadas["sin fecha y vieja"] = self.con.execute(
-            "UPDATE ofertas SET vigente = 0 WHERE vigente = 1 "
-            "AND (vence IS NULL OR vence = '') AND publicado IS NOT NULL "
-            "AND julianday(?) - julianday(publicado) > ?", (hoy, sin_cierre),
-        ).rowcount
+        #
+        # Cada perfil tiene su propia paciencia: 21 días al Estado, 45 al
+        # privado. Antes esta consulta aplicaba 21 a TODO el mundo —la vara del
+        # Estado a los avisos privados—, así que un aviso de Bumeran sin fecha
+        # de cierre desaparecía de la web 24 días antes de tiempo, en silencio
+        # y sin aparecer en ningún rechazo.
+        quitadas["sin fecha y vieja"] = 0
+        for perfil, negar in (("publico", ""), ("privado", "NOT ")):
+            tope = int(PERFILES[perfil]["dias_sin_cierre"])
+            quitadas["sin fecha y vieja"] += self.con.execute(
+                "UPDATE ofertas SET vigente = 0 WHERE vigente = 1 "
+                "AND (vence IS NULL OR vence = '') AND publicado IS NOT NULL "
+                f"AND {negar}({ES_ESTADO}) "
+                "AND julianday(?) - julianday(publicado) > ?", (hoy, tope),
+            ).rowcount
 
         # 3. Tope absoluto.
         quitadas["más de dos meses"] = self.con.execute(

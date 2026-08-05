@@ -150,6 +150,24 @@ def cmd_diagnostico(args) -> None:
 def cmd_recolectar(args) -> None:
     fuentes = _fuentes(args)
 
+    # Correr una sola fuente. Existe porque Bumeran y Laborum compartían un
+    # mismo paso de la corrida automática y siempre se recorrían en ese orden:
+    # cuando el reloj se acababa, el que se quedaba a medias era SIEMPRE
+    # Laborum. Por eso llevaba 327 avisos revisados contra 779 de Bumeran, y
+    # por eso el día que el paso se cortó, Laborum no llegó a correr.
+    # Separarlas en dos pasos con su propio reloj hace que una no se coma el
+    # tiempo de la otra.
+    if getattr(args, "fuente", None):
+        pedida = args.fuente.strip().lower()
+        elegidas = [f for f in fuentes if pedida in f.nombre.lower()]
+        if not elegidas:
+            disponibles = ", ".join(f.nombre for f in fuentes)
+            print(f"No hay ninguna fuente que se llame «{args.fuente}».")
+            print(f"Las de esta corrida son: {disponibles}")
+            sys.exit(1)
+        fuentes = elegidas
+        print(f"Solo esta corrida: {', '.join(f.nombre for f in fuentes)}\n")
+
     # Corrida diaria: solo mira lo publicado en los últimos días. Mucho más
     # rápido, porque lo viejo ya está en la base.
     if args.dias:
@@ -264,6 +282,7 @@ def main() -> None:
     r.add_argument("--empresas", action="store_true",
                    help="usar las bolsas de trabajo de empresas")
     r.add_argument("--limite", type=int, default=100, help="avisos por fuente")
+    r.add_argument("--fuente", help="correr solo esta fuente, por nombre (ej: Laborum)")
     r.add_argument("--dias", type=int, default=0,
                    help="solo avisos publicados en los últimos N días (2 para la corrida diaria)")
     r.add_argument("--rehacer", action="store_true",

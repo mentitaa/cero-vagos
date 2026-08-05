@@ -574,4 +574,42 @@ def fuentes_por_verificar() -> list[PortalWeb]:
             nota=("SIN VERIFICAR. gob.pe respondió vacío en la primera revisión: "
                   "puede requerir navegador o bloquear bots."),
         ),
+
+        # --------------------------------------------------------------
+        # Privados, revisión de mercado del 4 de agosto de 2026.
+        #
+        # Van en este orden a propósito: primero los que son dueños de su
+        # propia oferta, después los agregadores. Un agregador repite
+        # avisos que ya tenemos y encima manda al usuario a un tercer
+        # sitio, lo que choca con la regla 5 (enlazar al aviso original).
+        # --------------------------------------------------------------
+        PortalWeb(
+            "BuscoTrabajo", "https://buscotrabajo.pe",
+            sitemaps=("https://buscotrabajo.pe/sitemap.xml",),
+            patron_aviso=r"/(trabajo|empleo|oferta)[^\"'\s]*",
+            necesita_render=True,
+            espera_selector="script[type='application/ld+json'], h1",
+            nota=("VERIFICADA 4/8/2026: robots permite, descubre avisos, HTML "
+                  "completo. La única fuente privada peruana fuera de Jobint. "
+                  "PERO no trae JSON-LD: hay que escribirle un lector propio "
+                  "que saque sueldo y funciones del texto. Ese es el trabajo "
+                  "pendiente, no la conexión."),
+        ),
+        PortalWeb(
+            "Jora Perú", "https://pe.jora.com",
+            sitemaps=("https://pe.jora.com/sitemap.xml",),
+            patron_aviso=r"/job/[^\"'\s]+",
+            necesita_render=True,
+            nota=("DESCARTADA 4/8/2026: su robots.txt devuelve 502, así que el "
+                  "motor la trata como no permitida (regla 6). Además es "
+                  "agregador: repetiría avisos que ya leemos."),
+        ),
+        PortalWeb(
+            "Aptitus", "https://aptitus.com",
+            patron_aviso=r"/(empleos|trabajo)/[^\"'\s]+",
+            necesita_render=True,
+            nota=("DESCARTADA 4/8/2026: no descubre ningún aviso, y de todos "
+                  "modos sería redundante — Bumeran la compró y la absorbió "
+                  "bajo su marca. Sus avisos ya los tenemos."),
+        ),
     ]
