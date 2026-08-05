@@ -48,6 +48,8 @@ def _envoltura(titulo: str, descripcion: str, ruta: str, sitio: str,
 {'' if indexable else '<meta name="robots" content="noindex">'}
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
 <link rel="icon" href="{_e(sitio)}/assets/icono.svg" type="image/svg+xml">
+<link rel="icon" href="{_e(sitio)}/assets/icono-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="{_e(sitio)}/assets/icono-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">

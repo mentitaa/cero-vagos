@@ -1,5 +1,18 @@
 """
-Arma la imagen que sale cuando alguien comparte el enlace del sitio.
+Arma las imágenes de la marca que no se dibujan a mano.
+
+Son dos cosas:
+
+  1. `compartir.png` — la imagen que sale al pegar el enlace en WhatsApp.
+  2. `icono-32.png`, `icono-180.png` y `favicon.ico` — el ícono de la pestaña
+     en formatos que todos los navegadores entienden.
+
+Sobre lo segundo: el ícono está dibujado en SVG (`icono.svg`), que es lo
+correcto porque no pierde nitidez. Pero **Safari no lo muestra**: su soporte de
+íconos SVG es poco fiable y deja la pestaña con el cuadrito genérico. Por eso
+se generan también en PNG y se declaran los tres: cada navegador toma el que
+entiende. El `favicon.ico` en la raíz es el último cable a tierra — los
+navegadores lo piden solos aunque la página no lo mencione.
 
 Cuando pegas el link en WhatsApp, Facebook o LinkedIn, esas apps entran a la
 página, buscan una etiqueta llamada `og:image` y muestran esa imagen en la
@@ -8,7 +21,7 @@ vista previa. Sin ella el enlace sale como un recuadro de texto pelado.
 El tamaño 1200x630 no es un capricho: es la proporción que esas apps esperan
 (1.91:1). Si mandas otra, la recortan por donde quieran.
 
-Se ejecuta solo cuando cambia el logo o la frase:
+Se ejecuta cuando cambia el logo, el ícono o la frase:
 
     python3 assets/generar-og.py
 
@@ -91,7 +104,26 @@ def construir() -> str:
 </svg>"""
 
 
+def generar_iconos() -> None:
+    """Saca del ícono en SVG las versiones que Safari y compañía sí muestran."""
+    from PIL import Image
+
+    fuente = AQUI / "icono.svg"
+    for lado, nombre in ((32, "icono-32.png"), (180, "icono-180.png")):
+        cairosvg.svg2png(url=str(fuente), write_to=str(AQUI / nombre),
+                         output_width=lado, output_height=lado)
+        print(f"assets/{nombre}  {lado}x{lado}")
+
+    # El .ico va en la raíz del sitio, no en assets/: es la ruta que los
+    # navegadores piden por su cuenta cuando no encuentran nada declarado.
+    ico = AQUI.parent / "favicon.ico"
+    Image.open(AQUI / "icono-32.png").save(ico, sizes=[(16, 16), (32, 32)])
+    print(f"favicon.ico  {ico.stat().st_size} bytes")
+
+
 def main() -> None:
+    generar_iconos()
+    print()
     svg = construir()
     (AQUI / "compartir.svg").write_text(svg, encoding="utf-8")
     cairosvg.svg2png(bytestring=svg.encode("utf-8"),
