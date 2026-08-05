@@ -1,22 +1,97 @@
 /* Generado por el motor de Cero Vagos. No editar a mano. */
 window.CERO_VAGOS = {
- "generado": "2026-08-05T14:40:24",
- "total": 33,
+ "generado": "2026-08-05T16:24:57",
+ "total": 35,
  "stats": {
-  "total_procesadas": 1443,
-  "aprobadas_vigentes": 33,
-  "tasa_aprobacion": 2.3,
-  "sin_sueldo": 1144,
-  "pct_sin_sueldo": 79,
+  "total_procesadas": 1557,
+  "aprobadas_vigentes": 35,
+  "tasa_aprobacion": 2.2,
+  "sin_sueldo": 1251,
+  "pct_sin_sueldo": 80,
   "sueldo_mediano": 1500,
   "por_fuente": {
-   "Bumeran": 32,
+   "Bumeran": 34,
    "Convocatorias del Estado": 1
   }
  },
  "ofertas": [
   {
    "id": 1,
+   "puesto": "Asistente Administrativo(a) para grifo",
+   "empresa": "GRUPO COPETROL",
+   "cat": "Administración",
+   "min": 1500,
+   "max": 1800,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 1,
+   "vence": "2026-11-02",
+   "restan": 89,
+   "score": 92,
+   "resumen": "Realizar el seguimiento de las ventas de las promociones.",
+   "funciones": [
+    "Realizar el seguimiento de las ventas de las promociones.",
+    "Elaborar los reportes de ventas y liquidaciones de combustibles y Market.",
+    "Analizar los reportes de ventas para identificar los desvíos sobre los objetivos a cumplir.",
+    "Realizar el recorrido a en la estación para identificar alguna incidencia con los compresores de los diferentes productos de venta en playa.",
+    "Verificar el cumplimiento del ciclo de servicio por parte de todo el personal a su cargo.",
+    "Realizar el chek list diario de la imagen física de los diversos ambientes de la EESS.",
+    "Realizar el check list diario de la imagen del personal: limpieza, trato al cliente, actitud, orden, uso correcto de uniforme, entre otros.",
+    "Gestionar el abastecimiento de los productos de la playa y del Market.",
+    "Asegurar la atención de la EESS de acuerdo a la programación horaria del personal.",
+    "Permanecer en playa realizando la supervisión directa de atención al cliente por su personal a cargo."
+   ],
+   "requisitos": [
+    "Experiencia de 2 años en gestiones administrativas y comerciales de restaurantes, EESS, tiendas por conveniencia, afines.",
+    "Formación académica: Técnicos o universitarios",
+    "Experiencia en liquidaciones de venta, caja e inventarios"
+   ],
+   "beneficios": [
+    "Sueldo: Entre S/ 1500 a S/ 1800",
+    "Planilla Régimen General",
+    "Lugar de trabajo: Villa María del Triunfo",
+    "Horario: Lunes a Viernes de 8:00 a.m. a 5:30 p.m. y Sábados de 8:00 a.m. a 1:30 p.m"
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/asistente-administrativoa-para-grifo--villa-maria-del-triunfo-grupo-copetrol-1118391025.html"
+  },
+  {
+   "id": 2,
+   "puesto": "Auxiliar Contable",
+   "empresa": "Confidencial",
+   "cat": "Tecnología",
+   "min": 1200,
+   "max": 1200,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 1,
+   "vence": "2026-11-02",
+   "restan": 89,
+   "score": 81,
+   "resumen": "Sistema contable Concar (DESEABLE).",
+   "funciones": [
+    "Sistema contable Concar (DESEABLE).",
+    "Ingreso de información contable (compras, ventas, planilla, bancos y provisiones básicas).",
+    "Emisión de comprobantes electrónicos.",
+    "Apoyo en la revisión y cuadre de comprobantes.",
+    "Conciliación operativa de desembolsos coordinando con el área legal, análisis de cuentas por pagar.",
+    "Organización, clasificación y archivo (físico y digital) de toda la documentación contable."
+   ],
+   "requisitos": [
+    "Conocimiento de sistema contable Concar (deseable).",
+    "Manejo básico de registros contables.",
+    "Orden y organización documental."
+   ],
+   "beneficios": [
+    "Sueldo: S/ 1,200.",
+    "Almuerzo de cortesía",
+    "Labores: Lunes a viernes de 8:30am a 6:30pm"
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/auxiliar-contable-1118390901.html"
+  },
+  {
+   "id": 3,
    "puesto": "Asesor(a) de Ventas",
    "empresa": "CoverPrime",
    "cat": "Atención al Cliente",
@@ -67,7 +142,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesora-de-ventas-b2b-sector-industrial-coverprime-1118387558.html"
   },
   {
-   "id": 2,
+   "id": 4,
    "puesto": "Anfitriona Automotriz A1",
    "empresa": "A&RC Consultores",
    "cat": "Tecnología",
@@ -115,7 +190,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/anfitriona-automotriz-a1-2026-marcas-de-autos-arc-consultores-1118387561.html"
   },
   {
-   "id": 3,
+   "id": 5,
    "puesto": "Arquitecto(a) Supervisor de Obra",
    "empresa": "CoverPrime",
    "cat": "Ingeniería",
@@ -157,7 +232,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/arquitectoa-supervisor-de-obra-coverprime-1118387541.html"
   },
   {
-   "id": 4,
+   "id": 6,
    "puesto": "Customer Service",
    "empresa": "CHAMBA TALENT S.A.C.",
    "cat": "Atención al Cliente",
@@ -202,7 +277,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/customer-service-interprete-ingles-avanzado-remoto-chamba-talent-s.a.c.-1118387141.html"
   },
   {
-   "id": 5,
+   "id": 7,
    "puesto": "Asistente de Tesoreria",
    "empresa": "CoverPrime",
    "cat": "Tecnología",
@@ -254,7 +329,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-tesoreria-coverprime-1118387435.html"
   },
   {
-   "id": 6,
+   "id": 8,
    "puesto": "Asesor de Seguros Vida",
    "empresa": "Rimac Cia de Seguros y Reaseguros S.A.",
    "cat": "Tecnología",
@@ -291,7 +366,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-seguros-vida-cusco-rimac-cia-de-seguros-y-reaseguros-s.a.-1118387151.html"
   },
   {
-   "id": 7,
+   "id": 9,
    "puesto": "Asesor de Seguros Vida",
    "empresa": "Rimac Cia de Seguros y Reaseguros S.A.",
    "cat": "Tecnología",
@@ -328,7 +403,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-seguros-vida-piura-rimac-cia-de-seguros-y-reaseguros-s.a.-1118387154.html"
   },
   {
-   "id": 8,
+   "id": 10,
    "puesto": "Operaria de Producción",
    "empresa": "CYL",
    "cat": "Ingeniería",
@@ -366,7 +441,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operaria-de-produccion-maquinaria-con-o-sin-experiencia-santa-anita-cyl-1118387178.html"
   },
   {
-   "id": 9,
+   "id": 11,
    "puesto": "Asesor de Seguros Vida",
    "empresa": "Rimac Cia de Seguros y Reaseguros S.A.",
    "cat": "Tecnología",
@@ -403,7 +478,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-seguros-vida-lima-norte-rimac-cia-de-seguros-y-reaseguros-s.a.-1118387324.html"
   },
   {
-   "id": 10,
+   "id": 12,
    "puesto": "Operario de Limpieza de Piezas",
    "empresa": "CYL",
    "cat": "Ingeniería",
@@ -443,7 +518,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-limpieza-de-piezas-produccion-santa-anita-cyl-1118387172.html"
   },
   {
-   "id": 11,
+   "id": 13,
    "puesto": "Asistente de Marketing y Comercial",
    "empresa": "CoverPrime",
    "cat": "Tecnología",
@@ -495,7 +570,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-marketing-y-comercial-coverprime-1118387417.html"
   },
   {
-   "id": 12,
+   "id": 14,
    "puesto": "Asesor de Ventas",
    "empresa": "CAMARA DE COMERCIO EXTERIOR S.A.C.",
    "cat": "Ventas",
@@ -535,7 +610,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/unete-a-nuestro-equipo-de-ventas-asesor-de-ventas--turno-tarde-camara-de-comercio-exterior-s.a.c.-1118387337.html"
   },
   {
-   "id": 13,
+   "id": 15,
    "puesto": "Coordinador de Mantenimiento",
    "empresa": "Pigmalion Consultores",
    "cat": "Ingeniería",
@@ -576,7 +651,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/coordinador-de-mantenimiento-wimpon-pigmalion-consultores-1118386015.html"
   },
   {
-   "id": 14,
+   "id": 16,
    "puesto": "Ingeniero de Proyectos Gestión SSOMA",
    "empresa": "Engineering Services & Consulting S.A.C",
    "cat": "Ingeniería",
@@ -628,7 +703,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ingeniero-de-proyectos-gestion-ssoma-engineering-services-consulting-s.a.c-1118386028.html"
   },
   {
-   "id": 15,
+   "id": 17,
    "puesto": "Asesor(a) de ventas San Isidro",
    "empresa": "ADECCO",
    "cat": "Ventas",
@@ -669,7 +744,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesora-de-ventas-san-isidro-adecco-1118386014.html"
   },
   {
-   "id": 16,
+   "id": 18,
    "puesto": "Administrador de Operaciones",
    "empresa": "Beliving Talents",
    "cat": "Contabilidad",
@@ -708,7 +783,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/administrador-de-operaciones-outsourcing-beliving-talents-1118386627.html"
   },
   {
-   "id": 17,
+   "id": 19,
    "puesto": "Practicante Profesional de Contabilidad",
    "empresa": "CENTAURO EDITORES SAC",
    "cat": "Contabilidad",
@@ -752,7 +827,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-profesional-de-contabilidad-centauro-editores-sac-1118386941.html"
   },
   {
-   "id": 18,
+   "id": 20,
    "puesto": "Auxiliar Operativo",
    "empresa": "Servicios Postales del Perú S.A.",
    "cat": "Tecnología",
@@ -793,7 +868,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-operativo-almacen-los-olivos-servicios-postales-del-peru-s.a.-1118387001.html"
   },
   {
-   "id": 19,
+   "id": 21,
    "puesto": "Representante de Servicios",
    "empresa": "CAJA CUSCO",
    "cat": "Tecnología",
@@ -833,7 +908,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/representante-de-servicios-agencia-puquio-ref-1308-2026-caja-cusco-1118386570.html"
   },
   {
-   "id": 20,
+   "id": 22,
    "puesto": "Operario de montaje",
    "empresa": "Estanterías Metálicas JRM S.A.C",
    "cat": "Logística",
@@ -873,7 +948,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-montaje-urgente-estanterias-metalicas-jrm-s.a.c-1118386775.html"
   },
   {
-   "id": 21,
+   "id": 23,
    "puesto": "Supervisor Comercial Internacional",
    "empresa": "Talento Humano Perú",
    "cat": "Ventas",
@@ -917,7 +992,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/supervisor-comercial-internacional--seguros-de-vida-y-salud-talento-humano-peru-1118386040.html"
   },
   {
-   "id": 22,
+   "id": 24,
    "puesto": "Técnico de Farmacia para atención al cliente",
    "empresa": "Confidencial",
    "cat": "Atención al Cliente",
@@ -958,7 +1033,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnico-de-farmacia-para-atencion-al-cliente-cuidafarma-1118386056.html"
   },
   {
-   "id": 23,
+   "id": 25,
    "puesto": "Supervisor(a) de Energías Renovables",
    "empresa": "Talento Humano Perú",
    "cat": "Prácticas",
@@ -1001,7 +1076,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/supervisora-de-energias-renovables-|-piura-talara-talento-humano-peru-1118386921.html"
   },
   {
-   "id": 24,
+   "id": 26,
    "puesto": "Operaria de Limpieza de Producción",
    "empresa": "CYL",
    "cat": "Ingeniería",
@@ -1042,7 +1117,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operaria-de-limpieza-de-produccion-ingreso-a-planillabonos-ate-cyl-1118387056.html"
   },
   {
-   "id": 25,
+   "id": 27,
    "puesto": "Operario de Almacén",
    "empresa": "CYL",
    "cat": "Logística",
@@ -1083,7 +1158,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-almacen-|-bonos-planilla-cyl-1118387057.html"
   },
   {
-   "id": 26,
+   "id": 28,
    "puesto": "Operario de Limpieza de Piezas-producción con",
    "empresa": "CYL",
    "cat": "Ingeniería",
@@ -1123,7 +1198,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-limpieza-de-piezas-produccion-con-sin-experiencia-ate-cyl-1118386581.html"
   },
   {
-   "id": 27,
+   "id": 29,
    "puesto": "Operador de Monitoreo Vehicular",
    "empresa": "Confidencial",
    "cat": "Tecnología",
@@ -1173,7 +1248,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operador-de-monitoreo-vehicular--central-de-monitoreo-gps-1118386543.html"
   },
   {
-   "id": 28,
+   "id": 30,
    "puesto": "Practicante de Soporte Técnico",
    "empresa": "BOLD ASCENT",
    "cat": "Tecnología",
@@ -1210,7 +1285,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-de-soporte-tecnico-bold-ascent-1118386254.html"
   },
   {
-   "id": 29,
+   "id": 31,
    "puesto": "Jefe de Marketing",
    "empresa": "Confidencial",
    "cat": "Marketing",
@@ -1257,7 +1332,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/jefe-de-marketing-1118356328.html"
   },
   {
-   "id": 30,
+   "id": 32,
    "puesto": "Labora de Lunes a Viernes FIJO! Atención al cliente",
    "empresa": "ManpowerGroup Perú",
    "cat": "Atención al Cliente",
@@ -1297,7 +1372,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/labora-de-lunes-a-viernes-fijo-atencion-al-cliente-turno-manana-s.-2500-manpowergroup-peru-1118386965.html"
   },
   {
-   "id": 31,
+   "id": 33,
    "puesto": "Operario de Producción",
    "empresa": "CYL",
    "cat": "Ingeniería",
@@ -1336,7 +1411,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/estamos-contratando-operario-de-produccion--ate-cyl-1118387062.html"
   },
   {
-   "id": 32,
+   "id": 34,
    "puesto": "Practicante de Contabilidad",
    "empresa": "Confidencial",
    "cat": "Contabilidad",
@@ -1383,7 +1458,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-de-contabilidad-1118386534.html"
   },
   {
-   "id": 33,
+   "id": 35,
    "puesto": "Auxiliar Administrativo",
    "empresa": "Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco",
    "cat": "Tecnología",
