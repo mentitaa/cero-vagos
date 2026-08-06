@@ -152,7 +152,7 @@ python3 -m motor probar-url "https://..."       # leer UNA oferta y ver si pasar
 python3 -m motor stats                          # cómo va la base
 python3 -m motor rechazos                       # qué se botó y por qué
 python3 -m motor probar "S/ 2,800 a S/ 3,400"   # probar el parser de sueldos
-python3 -m unittest discover pruebas -v         # tests (241)
+python3 -m unittest discover pruebas -v         # tests (278)
 ```
 
 Si el proyecto vive en una carpeta sincronizada (iCloud, Drive, Dropbox),
@@ -273,10 +273,52 @@ diagnostico` cada cierto tiempo: los portales cambian de arquitectura sin avisar
 
 | Portal | robots.txt | Descubrimiento | Lectura del aviso |
 |---|---|---|---|
-| **Convocatorias del Estado** | ✅ Permite `/`, bloquea `/api/`, `/admin/` | ✅ `sitemap.xml` | ✅ HTML server-side, sin navegador. **Sueldo siempre presente** |
+| **Convocatorias CAS** | ✅ Sin restricciones (solo trae las *content signals* de Cloudflare) | ✅ `sitemap.xml`, ~170 convocatorias con `lastmod` real | ✅ HTML server-side. Sueldo etiquetado y plazo de postulación declarado. **Solo se publican las de una plaza** |
+| **Convocatorias del Estado** | ✅ Permite `/`, bloquea `/api/`, `/admin/` | ✅ `sitemap.xml` | ✅ HTML server-side, sin navegador. **Sueldo siempre presente**. Resultó ser un archivo: 413 de sus 512 direcciones ya cerraron |
 | **Bumeran** | Permite `/empleos/*`; bloquea `/empleos/aptitus/*` y filtros de query | ✅ `sitemap_avisos_bum.xml` con `lastmod` | ⚠️ SPA en React: por HTTP llega *"You need to enable JavaScript"*. Necesita Playwright |
 | **Laborum** | Permite todo salvo rutas de cuenta | ✅ índice en `/api/v1/sitemaps/index` | ⚠️ SPA, igual que Bumeran |
 | **Computrabajo** | ❌ Responde vacío detrás de un WAF | — | Bloqueado. El motor lo salta solo |
+
+### Una página, varios puestos: por qué se dejan pasar convocatorias
+
+`convocatoriascas.com` tiene un problema de forma: **una misma dirección puede
+traer varios puestos con sueldos distintos.** La Municipalidad de Surquillo
+lista 6 plazas en 2 puestos, a S/ 1,350 y S/ 2,800; la de Arequipa dice 283
+plazas. El motor asume una dirección, un aviso.
+
+Se eligió la opción más conservadora (Mentita, 5/8/2026): **publicar solo las
+convocatorias de UNA plaza.** No toca la pieza central del motor, y lo que no se
+puede partir bien no se publica. Publicar uno de los dos puestos sería elegir
+por el postulante; publicar los dos bajo una sola dirección sería mentir sobre
+el sueldo.
+
+Filtrar sale gratis porque el número de plazas viene en la propia dirección
+(`…-1-plazas-67463.html`), así que las de varias plazas ni se descargan. Pero
+**se cuentan**, y el número sale en el resumen de la corrida: sin eso, la fuente
+se vería sana entregando la mitad de lo que hay. Si ese número crece mucho, toca
+volver a mirar la decisión.
+
+Las otras dos opciones quedaron descartadas por ahora, no por malas: que el
+motor acepte varias ofertas por dirección (toca la pieza por la que pasa todo,
+incluidas Bumeran y Laborum) o entrar a la página de cada puesto (más lento y
+más frágil).
+
+### Cuánto pesa el PDF de las bases
+
+Vale tenerlo escrito porque es contraintuitivo. Una convocatoria CAS típica,
+leída **solo de la página**, saca **69 sobre 100**. El umbral es 70: no se
+publica por un punto.
+
+No es un error de cálculo. Al Estado no se le exige la lista de funciones, pero
+los 25 puntos de ese bloque **se pierden enteros**, y el aviso tiene que
+compensarlos en todo lo demás. Con un sueldo de monto único (27 de 30) y tres
+requisitos (17 de 20), no llega.
+
+Con las funciones sacadas del PDF de las bases, el mismo aviso pasa de 69 a más
+de 90. O sea: **esta fuente depende de que se pueda leer el PDF.** Si un día
+entrega cero, lo primero que hay que revisar no es el lector, es si
+`pdfplumber` está instalado y si las entidades siguen dejando bajar sus bases.
+Lo vigila `pruebas/test_cas.py`.
 
 ### Por qué las convocatorias del Estado van primero
 

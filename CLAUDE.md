@@ -82,7 +82,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **268** y pasan todos.
+Los tests son **278** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -158,12 +158,19 @@ Detalle completo en `README.md` › *El filtro*.
 **2,201 avisos revisados · 63 publicadas · 77% no dice cuánto paga.**
 Sueldo mediano de lo publicado: **S/ 1,300**.
 
+Tras estrenar Convocatorias CAS el 6/8/2026 el sitio quedó en **94 ofertas**.
+
 | Fuente | Publicadas |
 |---|---|
 | Bumeran | 45 |
 | Laborum | 17 |
 | Convocatorias del Estado | **1** ← es un archivo, casi todo cerrado |
-| Convocatorias CAS | — ← nueva el 6/8/2026, todavía sin correr |
+| Convocatorias CAS | **30** en su primera corrida (38,5% de aprobación) |
+
+La primera corrida de CAS, en números: 174 direcciones en el sitemap, 94
+saltadas por traer más de una plaza (1.263 plazas), 78 avisos leídos, 30
+publicados. Casi todo provincia: Melgar, Pacucha, Tayacaja, Utcubamba, Padre
+Abad, Huaytará, San Martín.
 
 Cómo se llegó aquí en un día, porque las tres cosas se tapaban entre sí:
 
@@ -193,34 +200,42 @@ más ofertas, la respuesta es **más fuentes**, no menos exigencia.
 
 Lo que está esperando, en orden aproximado de impacto:
 
-0. **Ver la primera corrida de Convocatorias CAS.** El lector ya está escrito
-   (`motor/fuentes/cas.py`, 6/8/2026) pero **todavía no ha salido a la red ni
-   una sola vez**: se programó a partir de la lectura del sitio, con muestras
-   guardadas, sin poder descargar. Lo que hay que mirar en la primera corrida,
-   en este orden:
+0. **Decidir qué pasa con las convocatorias CAS sin funciones.** Es la
+   pregunta abierta más importante, y es de Mentita, no técnica.
 
-   - `python3 -m motor diagnostico` → que la fuente aparezca leyendo un aviso
-     de verdad, con puesto y sueldo.
-   - Cuántas ofertas entrega. Si son **cero en verde**, no es que no haya
-     trabajo: es el caso de siempre (ver *Trampas conocidas*). Hay que leer el
-     bloque de problemas del resumen.
-   - **Si los PDF de las bases se dejan leer.** De esto depende todo, ver
-     abajo.
+   *Lo que se sabe.* En la primera corrida, **48 de 78 avisos no llegaron a
+   sus funciones** porque el PDF de las bases no se pudo abrir. Se comprobó el
+   6/8/2026: `munisurquillo.gob.pe` **carga al instante desde Perú y no
+   contesta desde los servidores de GitHub**. No es un bloqueo de la entidad ni
+   un fallo del lector — es desde dónde se pregunta. La regla 6 hace lo
+   correcto (sin robots.txt legible, no se pide nada), pero el efecto es que
+   la fuente rinde mucho menos en la nube que en una laptop peruana.
 
-   *Cómo quedó:* solo se publican las convocatorias de UNA plaza (opción 1,
-   decidida el 5/8/2026). El número de plazas viene en la propia dirección
-   (`…-1-plazas-67463.html`), así que las de varias ni se descargan — pero se
-   cuentan, y el conteo sale en el resumen de la corrida. Si ese número crece,
-   toca volver a mirar la decisión.
+   *Lo que falta para decidir.* El 6/8/2026 se separaron los tres motivos en
+   el registro (`_por_que_no` en `publicas.py`, `pruebas/test_bases_motivos.py`):
+   servidor que no contestó, entidad que dijo que no, y aviso que no enlaza
+   ningún PDF. **La próxima corrida ya reparte los 48 entre los tres.** Sin ese
+   reparto cualquier decisión es a ciegas.
 
-   *El número que hay que tener presente:* una convocatoria CAS leída solo de
-   la página saca **69 sobre 100**, y el umbral es 70. **No se publica por un
-   punto.** No es un error: al Estado no se le exige la lista de funciones,
-   pero los 25 puntos de ese bloque se pierden enteros y hay que compensarlos
-   en todo lo demás. Con las funciones sacadas del PDF de las bases, el mismo
-   aviso pasa a más de 90. O sea que **esta fuente vive del PDF**: si entrega
-   cero, lo primero que se revisa es si `pdfplumber` está instalado y si las
-   entidades siguen dejando bajar sus bases, no el lector.
+   *La incoherencia que hay que resolver, la reparta como la reparta.* Hoy, de
+   dos avisos igual de incompletos, se publica el que trae cinco requisitos y
+   se rechaza el que trae tres:
+
+   - *Ayudante de poda*, Surquillo, S/ 1.800 → 69, **rechazada**
+   - *Jefe*, Municipalidad de Pacucha, S/ 2.200 → 72, **publicada**
+
+   Ninguna de las dos dice qué vas a hacer. La que entró, además, tiene un
+   título que no dice qué es el trabajo ("Jefe", "Técnico", "Especialista",
+   "Asistente"), que es justo lo que la regla 8 existe para evitar. Osea que
+   el sitio está publicando avisos del Estado sin funciones — una de las cuatro
+   cosas que Cero Vagos promete. La decisión del 4/8 de no exigírselas al
+   Estado se tomó con el argumento "las funciones están en el PDF y nosotros lo
+   abrimos"; ahora se sabe que muchas veces no se puede.
+
+   Los caminos, sin que ninguno sea obviamente el correcto: endurecer (sin
+   funciones no se publica, y se caen también las de 72), aflojar (aceptar y
+   arreglar los títulos vagos y la ficha), o recolectar desde Perú (choca con
+   que la carpeta local no debe pisar lo del bot).
 
 1. **Más fuentes.** 63 ofertas siguen siendo pocas para que alguien vuelva al
    día siguiente. Nunca aflojar el filtro. Revisado el mercado el 4/8/2026,
@@ -289,6 +304,25 @@ verificar.
   que hubiera dos fuentes privadas: es una casa con dos puertas. Por eso sus
   tasas de aprobación se parecen tanto, y por eso agregar Aptitus no sumaría
   nada. Fuera de Jobint solo quedan Computrabajo (bloqueado) y BuscoTrabajo.
+- **Muchas webs `.gob.pe` no contestan desde los servidores de GitHub.**
+  Comprobado el 6/8/2026: `munisurquillo.gob.pe` carga al instante desde una
+  conexión peruana y da tiempo de espera agotado desde la nube. Como el motor
+  pide el `robots.txt` antes de bajar nada y la regla 6 dice que sin respuesta
+  no hay permiso, el PDF de las bases no se descarga y el aviso se queda sin
+  funciones. **Un "no contestó" no es un "no nos dejan"**, y el registro ahora
+  los distingue. Antes de culpar al lector, mirar ese reparto.
+- **Los tests escribían en el caché de PDF de verdad** (`datos/pdfs/`), y peor:
+  el PDF que dejaba un test se lo encontraba el siguiente, que entonces ni
+  llamaba a la descarga y comprobaba otra cosa distinta de la que decía. Se
+  desvía `bases_pdf.CACHE` a una carpeta temporal (`CachePropio` en
+  `test_bases_motivos.py`). Es el mismo error que ya había pasado con
+  `datos/ofertas.js`.
+- **GitHub sirve archivos viejos por unos minutos.** Al revisar si un cambio
+  llegó, `raw.githubusercontent.com` puede devolver la versión de antes durante
+  varios minutos y hacer creer que la subida falló. Pasó el 6/8/2026 y costó
+  media hora de dar vueltas. Lo que sí manda es la página del archivo en
+  `github.com`, que muestra el commit y la hora. Para leerlo sin caché, se pide
+  por el número del commit en vez de por `main`.
 - **Una dirección de Convocatorias CAS puede traer varios puestos.** Con
   sueldos distintos: Surquillo lista 6 plazas en 2 puestos (S/ 1,350 y
   S/ 2,800). El motor asume una dirección, un aviso, así que publicar una de
@@ -345,7 +379,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 268 tests
+python3 -m unittest discover pruebas -v      # los 278 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```

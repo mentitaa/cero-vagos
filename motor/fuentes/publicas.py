@@ -246,12 +246,24 @@ def enriquecer_con_bases(cruda: OfertaCruda, html: str, bajar) -> str:
 
     Devuelve un aviso de texto si algo falló (para el registro), o "" si todo
     salió bien o si no había nada que hacer.
+
+    Ese aviso distingue TRES fracasos distintos, y la diferencia importa:
+
+      · el servidor de la entidad no contestó   → no sabemos si nos dejaría
+      · la entidad contestó que no              → nos dijo que no
+      · el PDF se bajó pero no se dejó leer     → problema nuestro o del PDF
+
+    Antes los tres salían con el mismo texto y era imposible saber cuál
+    dominaba. El 6/8/2026 la primera corrida dejó 48 avisos sin funciones y no
+    hubo forma de repartir ese número: se veía igual una entidad que nos
+    bloquea que una cuyo servidor no responde desde el extranjero.
     """
     from ..bases_pdf import (
         desde_cache, enlaces_pdf, extraer_funciones, guardar_en_cache,
         texto_de_pdf, MAX_BYTES,
     )
     from ..normalizar import extraer_bloques
+    from .base import ErrorFuente
 
     # Si la página ya trae funciones, no hay que abrir nada.
     if len(extraer_bloques(cruda.cuerpo())["funciones"]) >= 3:
@@ -260,11 +272,18 @@ def enriquecer_con_bases(cruda: OfertaCruda, html: str, bajar) -> str:
     partes = urlparse(cruda.url)
     base = f"{partes.scheme}://{partes.netloc}"
 
+    # Qué salió mal, y con qué PDF, para poder contarlo después.
+    motivos: dict[str, str] = {}
+
     def intentar(urls_pdf: list[str]) -> bool:
         for url_pdf in urls_pdf[:2]:        # el mejor y su suplente, no más
             datos = desde_cache(url_pdf)
             if datos is None:
-                datos = bajar(url_pdf, MAX_BYTES)
+                try:
+                    datos = bajar(url_pdf, MAX_BYTES)
+                except ErrorFuente as e:
+                    motivos.setdefault(_por_que_no(e), url_pdf)
+                    continue
                 guardar_en_cache(url_pdf, datos)
 
             funciones = extraer_funciones(texto_de_pdf(datos))
@@ -274,6 +293,7 @@ def enriquecer_con_bases(cruda: OfertaCruda, html: str, bajar) -> str:
                 cruda.extra["funciones_desde_pdf"] = url_pdf
                 cruda.extra["funciones_desde"] = url_pdf
                 return True
+            motivos.setdefault("ilegible", url_pdf)
         return False
 
     # 1) ¿El PDF está enlazado en el propio aviso?
@@ -301,8 +321,44 @@ def enriquecer_con_bases(cruda: OfertaCruda, html: str, bajar) -> str:
             cruda.extra["via_anuncio_oficial"] = url_oficial
             return ""
 
-    return ("No se llegó a las funciones: el aviso no enlaza bases en PDF "
-            "legibles ni desde la página de la entidad")
+    # Cada mensaje lleva un ejemplo de PDF, y eso es a propósito: el registro
+    # agrupa los avisos reemplazando la dirección, así que los tres motivos
+    # salen como TRES líneas contadas, cada una con una muestra. Es lo que
+    # permite decir "38 de 48 fueron servidores que no contestaron" en vez de
+    # un solo número sin repartir.
+    if "sin_respuesta" in motivos:
+        return ("No se llegó a las funciones: el servidor de la entidad no "
+                "contestó, así que por la regla 6 no se le pidió el PDF. "
+                f"Ejemplo: {motivos['sin_respuesta']}")
+    if "sin_permiso" in motivos:
+        return ("No se llegó a las funciones: la entidad contestó que no se "
+                f"puede leer ese PDF. Ejemplo: {motivos['sin_permiso']}")
+    if "ilegible" in motivos:
+        return ("No se llegó a las funciones: el PDF de las bases se bajó pero "
+                f"no se le pudieron sacar 3 funciones. Ejemplo: {motivos['ilegible']}")
+    return ("No se llegó a las funciones: el aviso no enlaza ningún PDF de "
+            "bases, ni en el propio aviso ni en la página de la entidad")
+
+
+def _por_que_no(e: Exception) -> str:
+    """
+    Traduce el fallo de una descarga a uno de dos casos, y la diferencia no es
+    cosmética.
+
+    `sin_respuesta` es que el servidor de la entidad nunca contestó: no llegamos
+    a saber si nos dejaría o no. `sin_permiso` es que sí contestó, y la
+    respuesta fue que no.
+
+    Las dos terminan igual —no se baja el PDF, porque la regla 6 dice que sin
+    robots.txt legible se asume que no hay permiso— pero significan cosas
+    distintas. Un 'no contestó' repetido en decenas de entidades apunta a un
+    problema de red nuestro, no a que el Estado peruano nos esté cerrando la
+    puerta.
+    """
+    texto = str(e).lower()
+    if "no se pudo leer robots.txt" in texto:
+        return "sin_respuesta"
+    return "sin_permiso"
 
 
 # Enlaces que salen del agregador hacia la entidad que convoca.
