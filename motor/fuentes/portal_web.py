@@ -608,6 +608,38 @@ def fuentes_por_verificar() -> list[PortalWeb]:
                   "motor la trata como no permitida (regla 6). Además es "
                   "agregador: repetiría avisos que ya leemos."),
         ),
+        # --------------------------------------------------------------
+        # Sector público, revisión del 5 de agosto de 2026.
+        #
+        # Hacen falta porque convocape.com resultó ser sobre todo un archivo:
+        # de sus 512 direcciones, 413 son convocatorias con el plazo ya
+        # cerrado. No está roto —lee bien— pero casi no tiene nada abierto, y
+        # es la única fuente pública que tenemos.
+        #
+        # Ojo al verificarlas: son sitios con mucha publicidad, y hay que
+        # confirmar que enlacen al aviso oficial de la entidad y no se queden
+        # con el tráfico. Si no enlazan al original, no entran (regla 5).
+        # --------------------------------------------------------------
+        PortalWeb(
+            "Convocatorias de Trabajo", "https://www.convocatoriasdetrabajo.com",
+            listados=("https://www.convocatoriasdetrabajo.com/",),
+            patron_aviso=r"/(convocatoria|empleo)[^\"'\s]+",
+            nota="SIN VERIFICAR. Agregador de convocatorias públicas peruanas.",
+        ),
+        PortalWeb(
+            "Convocatorias CAS", "https://www.convocatoriascas.com",
+            listados=("https://www.convocatoriascas.com/",),
+            patron_aviso=r"/[^\"'\s]*convocatoria[^\"'\s]*",
+            nota="SIN VERIFICAR. Centrado en CAS vigentes, que es justo lo que falta.",
+        ),
+        PortalWeb(
+            "Perutrabajos", "https://www.perutrabajos.com",
+            listados=("https://www.perutrabajos.com/",),
+            patron_aviso=r"/(convocatoria|institucion)[^\"'\s]+",
+            nota=("SIN VERIFICAR. Mezcla convocatorias del Estado con prácticas. "
+                  "Publica por institución, lo que ayudaría con ciudades fuera de Lima."),
+        ),
+
         PortalWeb(
             "Aptitus", "https://aptitus.com",
             patron_aviso=r"/(empleos|trabajo)/[^\"'\s]+",
