@@ -93,7 +93,7 @@ jobs:
         timeout-minutes: 50
         run: |
           python -u -m motor recolectar --fuente Laborum \
-            --limite ${{ github.event.inputs.limite || 120 }} \
+            --limite ${{ github.event.inputs.limite || 240 }} \
             --dias 0 \
             --exportar
         continue-on-error: true
