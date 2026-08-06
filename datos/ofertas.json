@@ -1,11 +1,11 @@
 {
- "generado": "2026-08-06T01:52:32",
+ "generado": "2026-08-06T02:26:25",
  "total": 63,
  "stats": {
   "total_procesadas": 2201,
   "aprobadas_vigentes": 63,
   "tasa_aprobacion": 2.9,
-  "sin_sueldo": 1704,
+  "sin_sueldo": 1705,
   "pct_sin_sueldo": 77,
   "sueldo_mediano": 1300,
   "por_fuente": {
@@ -2256,57 +2256,6 @@
   },
   {
    "id": 54,
-   "puesto": "Atención al Cliente",
-   "empresa": "Partner Service",
-   "cat": "Atención al Cliente",
-   "min": 1200,
-   "max": 1200,
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Laborum",
-   "dias": 7,
-   "vence": "2026-08-30",
-   "restan": 24,
-   "score": 88,
-   "resumen": "RESUMEN: En Partner Service nos encontramos en búsqueda de personas comprometidas y con vocación de servicio para incorporarse a nuestro equipo como Asesor(a) de Atención al Cliente en modalidad presencial.",
-   "funciones": [
-    "Atender llamadas de clientes brindando una atención cordial y oportuna.",
-    "Resolver consultas relacionadas con los servicios del cliente.",
-    "Registrar la información de cada atención en el sistema.",
-    "Brindar una experiencia de servicio de calidad.",
-    "Cumplir con los indicadores de atención establecidos."
-   ],
-   "requisitos": [
-    "Secundaria completa.",
-    "Con o sin experiencia en Atención al Cliente o Call Center.",
-    "Manejo básico de computación.",
-    "Facilidad de comunicación.",
-    "Disponibilidad para laborar de manera presencial en turno tarde.",
-    "Actitud de servicio y orientación al cliente.",
-    "Jornada de 7 horas 30 minutos de gestión + 45 minutos de refrigerio.",
-    "Jornada de 6 horas.",
-    "Jornada de 4 horas.",
-    "Descanso rotativo.",
-    "Turnos disponibles en horario PM.",
-    "Personas responsables, proactivas, con actitud positiva y orientación al servicio que deseen desarrollarse en el rubro de atención al cliente."
-   ],
-   "beneficios": [
-    "Full Time: S/1,200",
-    "Semi Full: S/800",
-    "Part Time: S/600",
-    "Bono variable.",
-    "Bono de permanencia.",
-    "Bono de movilidad.",
-    "Incentivo por turno.",
-    "Capacitación pagada.",
-    "Excelente ambiente laboral.",
-    "Oportunidad de crecimiento y línea de carrera.",
-    "Convenios corporativos."
-   ],
-   "url": "https://www.laborum.pe/job/partner-service/asesor-de-atencion-al-cliente-presencial-turno-pm-sueldo/6a6bdaaa2020b210c81acd3d"
-  },
-  {
-   "id": 55,
    "puesto": "Operador Integral de Producción y Embalaje",
    "empresa": "Grupo Tawa",
    "cat": "Ingeniería",
@@ -2342,6 +2291,51 @@
     "Si cumples con los requisitos y estas interesado, postula!. -Requerimientos- Educación mínima: Educación Secundaria1 año de experienciaPalabras clave: operator, operario, operator, production, produce, fabricacion, manufactoring, elaboracion, making, manufactura, produccion"
    ],
    "url": "https://www.laborum.pe/job/grupo-tawa/operador-integral-de-produccion-y-embalaje-santa-clara-ate/6a6adf582020b210c81a8511"
+  },
+  {
+   "id": 55,
+   "puesto": "Atención al cliente",
+   "empresa": "Partner Service",
+   "cat": "Atención al Cliente",
+   "min": 1130,
+   "max": 1130,
+   "modalidad": "Remoto",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 7,
+   "vence": "2026-08-30",
+   "restan": 24,
+   "score": 86,
+   "resumen": "RESUMEN: Si cuentas con experiencia en atención al cliente por call center y buscas una oportunidad para trabajar desde casa, esta vacante es para ti.",
+   "funciones": [
+    "Brindar atención telefónica a clientes de Claro Postpago.",
+    "Resolver consultas y brindar soluciones oportunas.",
+    "Ofrecer una excelente experiencia de atención al cliente.",
+    "Cumplir con los indicadores de calidad y servicio."
+   ],
+   "requisitos": [
+    "Experiencia mínima de 3 meses en Call Center.",
+    "Residir en Lima.",
+    "Contar con PC o Laptop.",
+    "Windows 10 u 11.",
+    "Procesador Core i3 de 5ta generación o superior.",
+    "Memoria RAM de 8 GB como mínimo.",
+    "Internet cableado de 50 Mbps o más.",
+    "Audífonos con conexión USB.",
+    "Jornada laboral",
+    "Descansos rotativos.",
+    "Gestión de 7 horas 30 minutos + 45 minutos de refrigerio.",
+    "Si te apasiona brindar un excelente servicio y deseas desarrollarte en una empresa con más de 10 años de experiencia, ¡postula con nosotros!"
+   ],
+   "beneficios": [
+    "Modalidad 100% Remota.",
+    "Sueldo fijo de S/ 1,130.",
+    "Bono variable de hasta S/ 300.",
+    "Bono de permanencia de S/ 300.",
+    "Capacitación pagada (S/ 240).",
+    "Oportunidad de crecimiento y desarrollo."
+   ],
+   "url": "https://www.laborum.pe/job/partner-service/trabaja-desde-casa-asesor-de-atencion-al-cliente-sueldo/6a6bda162020b210c81aca60"
   },
   {
    "id": 56,
