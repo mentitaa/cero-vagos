@@ -152,34 +152,35 @@ enlaza al aviso oficial.
 
 Detalle completo en `README.md` › *El filtro*.
 
-## Estado real (4 de agosto de 2026)
+## Estado real (5 de agosto de 2026, noche)
 
-Primera corrida larga completada. Números de la base (`datos/cerovagos.db`):
+**2,201 avisos revisados · 63 publicadas · 77% no dice cuánto paga.**
+Sueldo mediano de lo publicado: **S/ 1,300**.
 
-| Fuente | Leídos | Aprobados |
-|---|---|---|
-| Bumeran | 779 | 32 |
-| Laborum | 327 | 30 |
-| Convocatorias del Estado | 101 | 20 |
-| **Total** | **1207** | **68** publicadas |
+| Fuente | Publicadas |
+|---|---|
+| Bumeran | 45 |
+| Laborum | 17 |
+| Convocatorias del Estado | **1** ← roto, ver Pendientes |
 
-Ojo: el bot ya corre solo y estos números crecen cada madrugada. Al 4 de
-agosto por la noche la base iba por 1,325 avisos revisados.
+Cómo se llegó aquí en un día, porque las tres cosas se tapaban entre sí:
 
-Por qué se rechazaron (un aviso puede fallar en varias):
+- El paso de privados **se cortaba a los 60 minutos** y Laborum, que iba
+  segundo, no llegaba a correr. Ahora cada portal tiene su propio paso y su
+  propio reloj.
+- Cada aviso costaba **30 segundos en vez de 3**: se esperaba a que una
+  etiqueta `<script>` se hiciera *visible*, cosa que no pasa nunca. La corrida
+  entera pasó de 1 h 2 min a **15 minutos**.
+- Laborum se quedaba en cero porque su sitemap devuelve un trozo cualquiera de
+  sus 50 mil avisos y **casi ninguno tenía menos de 3 días**. Va sin ventana de
+  días y con el doble de límite.
 
-```
-747×  No declara sueldo
-597×  Beneficios por debajo del mínimo
-491×  Funciones por debajo del mínimo
-471×  Requisitos por debajo del mínimo
-161×  Sueldo "a convenir" o similar
- 44×  Beneficios genéricos
- 24×  El plazo ya cerró
-```
+Ojo: el bot corre solo cada madrugada y estos números se mueven.
 
-**El sueldo mata el 75% de los avisos.** Ese es el dato que resume el mercado
-laboral peruano y la razón de ser del producto.
+Una tasa de aprobación baja es señal de que el filtro funciona, no de que falte
+oferta. No hay que "aflojar el filtro para tener más avisos": eso es
+exactamente lo que hacen los portales que queremos reemplazar. Si hacen falta
+más ofertas, la respuesta es **más fuentes**, no menos exigencia.
 
 Una tasa de aprobación baja es señal de que el filtro funciona, no de que falte
 oferta. No hay que "aflojar el filtro para tener más avisos": eso es
@@ -190,9 +191,14 @@ más ofertas, la respuesta es **más fuentes**, no menos exigencia.
 
 Lo que está esperando, en orden aproximado de impacto:
 
-1. **Más fuentes.** 60 ofertas es poco para que alguien vuelva al día
-   siguiente. Nunca aflojar el filtro. Revisado el mercado el 4/8/2026, quedan
-   tres caminos y en este orden:
+0. **Convocatorias del Estado se cayó de 20 ofertas a 1.** Su paso corre en
+   minuto y medio y sale en verde. Tiene la misma pinta que tuvo Laborum: no
+   falla, simplemente no entrega. Es lo primero a mirar, y además es la fuente
+   con sueldo declarado al 100%.
+
+1. **Más fuentes.** 63 ofertas siguen siendo pocas para que alguien vuelva al
+   día siguiente. Nunca aflojar el filtro. Revisado el mercado el 4/8/2026,
+   quedan tres caminos y en este orden:
 
    - **Pasada de recuperación.** La corrida diaria solo mira lo publicado en
      los últimos 3 días, y nunca se leyó lo de entre 3 y 60 días atrás. No
@@ -229,6 +235,12 @@ verificar.
 - **`lastmod` del sitemap ≠ fecha de publicación.** El primero dice cuándo el
   portal tocó la página. Filtrar el descubrimiento con esa fecha deja la
   corrida en cero.
+- **Cuarenta avisos viejos seguidos cortan la búsqueda.** Cuando una fuente se
+  recorre de lo más nuevo a lo más viejo (`ordenar_por_id`), el motor supone
+  que si ya van 40 seguidos fuera de la ventana, lo que queda también lo está,
+  y para. Es correcto — salvo cuando la ventana está mal puesta. A las
+  Convocatorias del Estado las paró en la dirección 100 de 512 y las dejó en
+  cero, en verde y en minuto y medio.
 - **Cada portal necesita su propia ventana de días, y Laborum va sin ninguna.**
   Su sitemap trae 50 mil direcciones sin orden de fecha, así que las 240 que se
   alcanzan a mirar son un trozo cualquiera del archivo. Con la ventana de 3
