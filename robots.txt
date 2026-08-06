@@ -1,5 +1,6 @@
 # Cero Vagos
 User-agent: *
 Allow: /
+Disallow: /ir/
 
 Sitemap: https://cerovagos.com/sitemap.xml
