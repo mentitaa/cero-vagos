@@ -629,8 +629,27 @@ def fuentes_por_verificar() -> list[PortalWeb]:
         PortalWeb(
             "Convocatorias CAS", "https://www.convocatoriascas.com",
             listados=("https://www.convocatoriascas.com/",),
-            patron_aviso=r"/[^\"'\s]*convocatoria[^\"'\s]*",
-            nota="SIN VERIFICAR. Centrado en CAS vigentes, que es justo lo que falta.",
+            # El patrón anterior (`.*convocatoria.*`) era tan flojo que llegó a
+            # matchear el script de publicidad `convocatoriascas_20765.js`.
+            # Este es el de verdad, mirado en la página el 5/8/2026.
+            patron_aviso=r"/proceso-de-seleccion-CAS-[^\"'\s]+\.html",
+            ordenar_por_id=True,     # el id final es correlativo: 67481, 67480…
+            nota=(
+                "VERIFICADA 5/8/2026 y es la mejor candidata pública, pero "
+                "NECESITA LECTOR PROPIO y uno distinto a los demás.\n"
+                "Lo bueno: sueldo exacto por puesto, plazo de postulación, "
+                "requisitos, y enlace a las bases en el dominio de la propia "
+                "entidad (munisurquillo.gob.pe), que es justo lo que pide la "
+                "regla 5. Y trae provincias a montones: Quellouno, Moquegua, "
+                "Melgar, Pacucha, Arequipa.\n"
+                "Lo difícil: UNA PÁGINA TRAE VARIOS PUESTOS. La de Surquillo "
+                "lista 6 plazas en dos puestos con sueldos distintos "
+                "(S/ 1,350 y S/ 2,800). El motor asume un aviso por dirección, "
+                "así que el lector tiene que partir una página en varias "
+                "ofertas. Las páginas por puesto existen "
+                "(`/concurso-publico-...-274991.html`) pero solo se enlazan "
+                "desde dentro, y el descubrimiento no baja dos niveles."
+            ),
         ),
         PortalWeb(
             "Perutrabajos", "https://www.perutrabajos.com",
