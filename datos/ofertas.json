@@ -1,16 +1,17 @@
 {
- "generado": "2026-08-06T07:59:44",
- "total": 64,
+ "generado": "2026-08-06T23:40:39",
+ "total": 96,
  "stats": {
-  "total_procesadas": 2203,
-  "aprobadas_vigentes": 64,
-  "tasa_aprobacion": 2.9,
-  "sin_sueldo": 1706,
-  "pct_sin_sueldo": 77,
-  "sueldo_mediano": 1300,
+  "total_procesadas": 2446,
+  "aprobadas_vigentes": 96,
+  "tasa_aprobacion": 3.9,
+  "sin_sueldo": 1849,
+  "pct_sin_sueldo": 76,
+  "sueldo_mediano": 1500,
   "por_fuente": {
-   "Bumeran": 45,
-   "Laborum": 18,
+   "Bumeran": 44,
+   "Convocatorias CAS": 30,
+   "Laborum": 21,
    "Convocatorias del Estado": 1
   }
  },
@@ -603,41 +604,6 @@
   },
   {
    "id": 15,
-   "puesto": "Auxiliar Contable",
-   "empresa": "Confidencial",
-   "cat": "Tecnología",
-   "min": 1200,
-   "max": 1200,
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 2,
-   "vence": "2026-11-02",
-   "restan": 88,
-   "score": 81,
-   "resumen": "Sistema contable Concar (DESEABLE).",
-   "funciones": [
-    "Sistema contable Concar (DESEABLE).",
-    "Ingreso de información contable (compras, ventas, planilla, bancos y provisiones básicas).",
-    "Emisión de comprobantes electrónicos.",
-    "Apoyo en la revisión y cuadre de comprobantes.",
-    "Conciliación operativa de desembolsos coordinando con el área legal, análisis de cuentas por pagar.",
-    "Organización, clasificación y archivo (físico y digital) de toda la documentación contable."
-   ],
-   "requisitos": [
-    "Conocimiento de sistema contable Concar (deseable).",
-    "Manejo básico de registros contables.",
-    "Orden y organización documental."
-   ],
-   "beneficios": [
-    "Sueldo: S/ 1,200.",
-    "Almuerzo de cortesía",
-    "Labores: Lunes a viernes de 8:30am a 6:30pm"
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/auxiliar-contable-1118390901.html"
-  },
-  {
-   "id": 16,
    "puesto": "Asesor(a) de Ventas",
    "empresa": "CoverPrime",
    "cat": "Atención al Cliente",
@@ -688,7 +654,7 @@
    "url": "https://www.bumeran.com.pe/empleos/asesora-de-ventas-b2b-sector-industrial-coverprime-1118387558.html"
   },
   {
-   "id": 17,
+   "id": 16,
    "puesto": "Anfitriona Automotriz A1",
    "empresa": "A&RC Consultores",
    "cat": "Tecnología",
@@ -736,7 +702,7 @@
    "url": "https://www.bumeran.com.pe/empleos/anfitriona-automotriz-a1-2026-marcas-de-autos-arc-consultores-1118387561.html"
   },
   {
-   "id": 18,
+   "id": 17,
    "puesto": "Arquitecto(a) Supervisor de Obra",
    "empresa": "CoverPrime",
    "cat": "Ingeniería",
@@ -778,7 +744,7 @@
    "url": "https://www.bumeran.com.pe/empleos/arquitectoa-supervisor-de-obra-coverprime-1118387541.html"
   },
   {
-   "id": 19,
+   "id": 18,
    "puesto": "Atención al cliente",
    "empresa": "ESTUDIO UBILLUS & PARTNERS S.A.C.",
    "cat": "Administración",
@@ -818,7 +784,7 @@
    "url": "https://www.laborum.pe/job/estudio-ubillus-partners-s-a-c/administrativo-a-recepcionista/6a6d64fd2020b210c81cb99f"
   },
   {
-   "id": 20,
+   "id": 19,
    "puesto": "Customer Service",
    "empresa": "CHAMBA TALENT S.A.C.",
    "cat": "Atención al Cliente",
@@ -863,7 +829,7 @@
    "url": "https://www.bumeran.com.pe/empleos/customer-service-interprete-ingles-avanzado-remoto-chamba-talent-s.a.c.-1118387141.html"
   },
   {
-   "id": 21,
+   "id": 20,
    "puesto": "Asistente de Tesoreria",
    "empresa": "CoverPrime",
    "cat": "Tecnología",
@@ -915,7 +881,88 @@
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-tesoreria-coverprime-1118387435.html"
   },
   {
+   "id": 21,
+   "puesto": "Despachador de combustible",
+   "empresa": "COESTI S.A.",
+   "cat": "Atención al Cliente",
+   "min": 1130,
+   "max": 1130,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 5,
+   "vence": "2026-09-01",
+   "restan": 26,
+   "score": 94,
+   "resumen": "Si deseas pertenecer al Grupo Primax y formar parte de un equipo lleno de energía, esta es tu oportunidad para postular al puesto de Despachador(a) de Combustible",
+   "funciones": [
+    "Atención al cliente y despacho de combustible.",
+    "Manejo de vouchers, vales y efectivo.",
+    "Realizar cuadre de caja y reporte de ventas al finalizar el turno.",
+    "Mantener el orden y limpieza de la estación.",
+    "Cumplir con las normas de seguridad y salud en el trabajo."
+   ],
+   "requisitos": [
+    "Secundaria completa.",
+    "Experiencia en atención al cliente (deseable).",
+    "Manejo de caja (deseable).",
+    "Disponibilidad para laborar en turno de 2 PM A 10 PM",
+    "Disponibilidad para trabajar en Primax"
+   ],
+   "beneficios": [
+    "Sueldo de S/1130.",
+    "Bono de movilidad de S/100",
+    "Bonos adicionales",
+    "Ingreso a planilla desde el primer día.",
+    "Asignación familiar.",
+    "Bonos por ventas.",
+    "¡Únete a nuestro gran equipo!. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: controlador, despachador, dispatcher"
+   ],
+   "url": "https://www.laborum.pe/job/coesti-s-a/sueldo-bono-de-movilidad-despachador-de-combustible-primax/6a6d9a4c2020b210c81d137a"
+  },
+  {
    "id": 22,
+   "puesto": "Atención al cliente",
+   "empresa": "COESTI S.A.",
+   "cat": "Atención al Cliente",
+   "min": 1130,
+   "max": 1130,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 5,
+   "vence": "2026-09-01",
+   "restan": 26,
+   "score": 94,
+   "resumen": "RESUMEN: ¡Trabaja en Primax Cerro Azul! Carretera Panamericana km 129",
+   "funciones": [
+    "Atención al cliente y despacho de combustible.",
+    "Manejo de vouchers, vales y efectivo.",
+    "Realizar cuadre de caja y reporte de ventas al finalizar el turno.",
+    "Mantener el orden y limpieza de la estación.",
+    "Cumplir con las normas de seguridad y salud en el trabajo."
+   ],
+   "requisitos": [
+    "Secundaria completa.",
+    "Experiencia en atención al cliente (deseable).",
+    "Manejo de caja (deseable).",
+    "Disponibilidad para laborar en turnos rotativos entre mañana, tarde y noche",
+    "Disponibilidad para trabajar en Primax"
+   ],
+   "beneficios": [
+    "Sueldo de S/1130",
+    "35% adicional por horario nocturno",
+    "Bono de movilidad de 150 soles",
+    "Bonos adicionales",
+    "Ingreso a planilla desde el primer día.",
+    "Asignación familiar.",
+    "Bonos por ventas.",
+    "¡Únete a nuestro gran equipo!. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: controlador, despachador, dispatcher"
+   ],
+   "url": "https://www.laborum.pe/job/coesti-s-a/sueldo-bono-150-primax-cerro-azul-despachador-de-combustible/6a6d9a2b2020b210c81d12da"
+  },
+  {
+   "id": 23,
    "puesto": "Asesor de Seguros Vida",
    "empresa": "Rimac Cia de Seguros y Reaseguros S.A.",
    "cat": "Tecnología",
@@ -952,7 +999,7 @@
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-seguros-vida-cusco-rimac-cia-de-seguros-y-reaseguros-s.a.-1118387151.html"
   },
   {
-   "id": 23,
+   "id": 24,
    "puesto": "Asesor de Seguros Vida",
    "empresa": "Rimac Cia de Seguros y Reaseguros S.A.",
    "cat": "Tecnología",
@@ -989,7 +1036,7 @@
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-seguros-vida-piura-rimac-cia-de-seguros-y-reaseguros-s.a.-1118387154.html"
   },
   {
-   "id": 24,
+   "id": 25,
    "puesto": "Operaria de Producción",
    "empresa": "CYL",
    "cat": "Ingeniería",
@@ -1027,7 +1074,7 @@
    "url": "https://www.bumeran.com.pe/empleos/operaria-de-produccion-maquinaria-con-o-sin-experiencia-santa-anita-cyl-1118387178.html"
   },
   {
-   "id": 25,
+   "id": 26,
    "puesto": "Asesor de Seguros Vida",
    "empresa": "Rimac Cia de Seguros y Reaseguros S.A.",
    "cat": "Tecnología",
@@ -1064,7 +1111,50 @@
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-seguros-vida-lima-norte-rimac-cia-de-seguros-y-reaseguros-s.a.-1118387324.html"
   },
   {
-   "id": 26,
+   "id": 27,
+   "puesto": "Operario",
+   "empresa": "Grupo Expro",
+   "cat": "Ingeniería",
+   "min": 1130,
+   "max": 1130,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 5,
+   "vence": "2026-09-01",
+   "restan": 26,
+   "score": 92,
+   "resumen": "RESUMEN: Operario (a) de Producción C/Sin Exp San Luis· ¡Únete a una empresa del rubro de consumo masivo y comienza a trabajar de inmediato!",
+   "funciones": [
+    "Realizar el ensaque y pesaje de manera correcta a fin de que cumplan las especificaciones requeridas.",
+    "Registrar en el formato de control las actividades que se realizan en fabricación.",
+    "Operar de manera eficiente las máquinas y equipos cumpliendo con los estándares de seguridad, tanto para las personas como para la misma máquina y equipos",
+    "Recoger, limpiar y ordenar dentro de los procesos productivos a fin de mantenerlos disponibles para registrarlo en los formatos de control asignados al puesto."
+   ],
+   "requisitos": [
+    "Secundaria completa",
+    "Con o sin experiencia",
+    "Residir en zonas cercanas a San Luis.",
+    "Disponibilidad inmediata y para laborar en TURNO MAÑANA DE 12 HORAS.",
+    "Lugar de trabajo: San Luis (referencia: Urb. El Pino, a unas cuadras de la Clínica San Juan de Dios)",
+    "Contrato: 3 meses renovable",
+    "¡Vacantes urgentes! Postula ahora y trabaja MAÑANA MISMO.-Requerimientos- Educación mínima: Educación Secundaria años de experienciaEdad: A partir de 18 años"
+   ],
+   "beneficios": [
+    "Ingreso inmediato a planilla régimen general",
+    "Todos los beneficios de ley al 100% (CTS, gratificaciones, vacaciones, asignación familiar, EsSalud)",
+    "Sueldo fijo: S/ 1,130.00 + S/ 113.00 asignación familiar (de tener hijos menores de edad)",
+    "Bono de puntualidad: S/100.00 aprox",
+    "Pago adicional por horas extras: S/300.000 aprox",
+    "Alimentación cubierta al 90% (S/1.00 por almuerzo)",
+    "Participación en UTILIDADES",
+    "Días laborados: Lunes a Domingo con día de descanso fijo elegido por la empresa",
+    "HORARIO FIJO: 7:00 AM A 7:00 PM (8 horas laborales + 1 hora break + 3 horas extras)"
+   ],
+   "url": "https://www.laborum.pe/job/grupo-expro/campana-navidena-50-operarios-c-sin-experiencia-s-1500/6a6e80cf2020b210c81d5686"
+  },
+  {
+   "id": 28,
    "puesto": "Operario de Limpieza de Piezas",
    "empresa": "CYL",
    "cat": "Ingeniería",
@@ -1104,7 +1194,7 @@
    "url": "https://www.bumeran.com.pe/empleos/operario-de-limpieza-de-piezas-produccion-santa-anita-cyl-1118387172.html"
   },
   {
-   "id": 27,
+   "id": 29,
    "puesto": "Asistente de Marketing y Comercial",
    "empresa": "CoverPrime",
    "cat": "Tecnología",
@@ -1156,7 +1246,41 @@
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-marketing-y-comercial-coverprime-1118387417.html"
   },
   {
-   "id": 28,
+   "id": 30,
+   "puesto": "Ejecutivo de Ventas",
+   "empresa": "Financiera QAPAQ",
+   "cat": "Tecnología",
+   "min": 1130,
+   "max": 1130,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 5,
+   "vence": "2026-09-01",
+   "restan": 26,
+   "score": 84,
+   "resumen": "RESUMEN: En QAPAQ, una financiera solidaria, estamos en búsqueda de EJECUTIVOS DE VENTA para nuestra sede de MARISCAL CACERES, que quieran crecer junto a nosotros, ayudando a más personas a acceder a créditos personales.",
+   "funciones": [
+    "Promocionar y colocar créditos personales en campo.",
+    "Prospectar clientes y realizar visitas en la zona asignada.",
+    "Asesorar a clientes en el proceso de crédito.",
+    "Alcanzar metas de ventas mensuales."
+   ],
+   "requisitos": [
+    "Experiencia en ventas o ventas en campo (deseable en servicios financieros, créditos, seguros o afines).",
+    "Deseos de crecer profesionalmente y trabajar bajo metas.",
+    "Disponibilidad para trabajo 100% en campo."
+   ],
+   "beneficios": [
+    "Ingreso a planilla desde el primer día con todos los beneficios de ley.",
+    "Sueldo fijo de S/1130 + comisiones ilimitadas.",
+    "Capacitación constante y línea de carrera.",
+    "Excelente clima laboral y reconocimiento por logros.-Requerimientos- Educación mínima: Técnico años de experienciaPalabras clave: directivo, mando, gobierno, regencia, executive, managing, ejecutivo, cambaceo, sales"
+   ],
+   "url": "https://www.laborum.pe/job/financiera-qapaq/ejecutivo-de-ventas-san-juan-de-lurigancho-mariscal-caceres/6a6d984e2020b210c81d0c4a"
+  },
+  {
+   "id": 31,
    "puesto": "Asesor de Ventas",
    "empresa": "CAMARA DE COMERCIO EXTERIOR S.A.C.",
    "cat": "Ventas",
@@ -1196,7 +1320,7 @@
    "url": "https://www.bumeran.com.pe/empleos/unete-a-nuestro-equipo-de-ventas-asesor-de-ventas--turno-tarde-camara-de-comercio-exterior-s.a.c.-1118387337.html"
   },
   {
-   "id": 29,
+   "id": 32,
    "puesto": "Coordinador de Mantenimiento",
    "empresa": "Pigmalion Consultores",
    "cat": "Ingeniería",
@@ -1237,7 +1361,7 @@
    "url": "https://www.bumeran.com.pe/empleos/coordinador-de-mantenimiento-wimpon-pigmalion-consultores-1118386015.html"
   },
   {
-   "id": 30,
+   "id": 33,
    "puesto": "Ingeniero de Proyectos Gestión SSOMA",
    "empresa": "Engineering Services & Consulting S.A.C",
    "cat": "Ingeniería",
@@ -1289,7 +1413,7 @@
    "url": "https://www.bumeran.com.pe/empleos/ingeniero-de-proyectos-gestion-ssoma-engineering-services-consulting-s.a.c-1118386028.html"
   },
   {
-   "id": 31,
+   "id": 34,
    "puesto": "Asesor(a) de ventas San Isidro",
    "empresa": "ADECCO",
    "cat": "Ventas",
@@ -1330,7 +1454,7 @@
    "url": "https://www.bumeran.com.pe/empleos/asesora-de-ventas-san-isidro-adecco-1118386014.html"
   },
   {
-   "id": 32,
+   "id": 35,
    "puesto": "Administrador de Operaciones",
    "empresa": "Beliving Talents",
    "cat": "Contabilidad",
@@ -1369,7 +1493,7 @@
    "url": "https://www.bumeran.com.pe/empleos/administrador-de-operaciones-outsourcing-beliving-talents-1118386627.html"
   },
   {
-   "id": 33,
+   "id": 36,
    "puesto": "Practicante Profesional de Contabilidad",
    "empresa": "CENTAURO EDITORES SAC",
    "cat": "Contabilidad",
@@ -1413,7 +1537,7 @@
    "url": "https://www.bumeran.com.pe/empleos/practicante-profesional-de-contabilidad-centauro-editores-sac-1118386941.html"
   },
   {
-   "id": 34,
+   "id": 37,
    "puesto": "Auxiliar Operativo",
    "empresa": "Servicios Postales del Perú S.A.",
    "cat": "Tecnología",
@@ -1454,7 +1578,7 @@
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-operativo-almacen-los-olivos-servicios-postales-del-peru-s.a.-1118387001.html"
   },
   {
-   "id": 35,
+   "id": 38,
    "puesto": "Representante de Servicios",
    "empresa": "CAJA CUSCO",
    "cat": "Tecnología",
@@ -1494,7 +1618,7 @@
    "url": "https://www.bumeran.com.pe/empleos/representante-de-servicios-agencia-puquio-ref-1308-2026-caja-cusco-1118386570.html"
   },
   {
-   "id": 36,
+   "id": 39,
    "puesto": "Operario de montaje",
    "empresa": "Estanterías Metálicas JRM S.A.C",
    "cat": "Logística",
@@ -1534,7 +1658,7 @@
    "url": "https://www.bumeran.com.pe/empleos/operario-de-montaje-urgente-estanterias-metalicas-jrm-s.a.c-1118386775.html"
   },
   {
-   "id": 37,
+   "id": 40,
    "puesto": "Supervisor Comercial Internacional",
    "empresa": "Talento Humano Perú",
    "cat": "Ventas",
@@ -1578,7 +1702,7 @@
    "url": "https://www.bumeran.com.pe/empleos/supervisor-comercial-internacional--seguros-de-vida-y-salud-talento-humano-peru-1118386040.html"
   },
   {
-   "id": 38,
+   "id": 41,
    "puesto": "Técnico de Farmacia para atención al cliente",
    "empresa": "Confidencial",
    "cat": "Atención al Cliente",
@@ -1619,7 +1743,7 @@
    "url": "https://www.bumeran.com.pe/empleos/tecnico-de-farmacia-para-atencion-al-cliente-cuidafarma-1118386056.html"
   },
   {
-   "id": 39,
+   "id": 42,
    "puesto": "Supervisor(a) de Energías Renovables",
    "empresa": "Talento Humano Perú",
    "cat": "Prácticas",
@@ -1662,7 +1786,7 @@
    "url": "https://www.bumeran.com.pe/empleos/supervisora-de-energias-renovables-|-piura-talara-talento-humano-peru-1118386921.html"
   },
   {
-   "id": 40,
+   "id": 43,
    "puesto": "Operaria de Limpieza de Producción",
    "empresa": "CYL",
    "cat": "Ingeniería",
@@ -1703,7 +1827,7 @@
    "url": "https://www.bumeran.com.pe/empleos/operaria-de-limpieza-de-produccion-ingreso-a-planillabonos-ate-cyl-1118387056.html"
   },
   {
-   "id": 41,
+   "id": 44,
    "puesto": "Operario de Limpieza de Piezas-producción con",
    "empresa": "CYL",
    "cat": "Ingeniería",
@@ -1743,7 +1867,7 @@
    "url": "https://www.bumeran.com.pe/empleos/operario-de-limpieza-de-piezas-produccion-con-sin-experiencia-ate-cyl-1118386581.html"
   },
   {
-   "id": 42,
+   "id": 45,
    "puesto": "Operador de Monitoreo Vehicular",
    "empresa": "Confidencial",
    "cat": "Tecnología",
@@ -1793,7 +1917,7 @@
    "url": "https://www.bumeran.com.pe/empleos/operador-de-monitoreo-vehicular--central-de-monitoreo-gps-1118386543.html"
   },
   {
-   "id": 43,
+   "id": 46,
    "puesto": "Practicante de Soporte Técnico",
    "empresa": "BOLD ASCENT",
    "cat": "Tecnología",
@@ -1830,7 +1954,7 @@
    "url": "https://www.bumeran.com.pe/empleos/practicante-de-soporte-tecnico-bold-ascent-1118386254.html"
   },
   {
-   "id": 44,
+   "id": 47,
    "puesto": "Jefe de Marketing",
    "empresa": "Confidencial",
    "cat": "Marketing",
@@ -1877,7 +2001,7 @@
    "url": "https://www.bumeran.com.pe/empleos/jefe-de-marketing-1118356328.html"
   },
   {
-   "id": 45,
+   "id": 48,
    "puesto": "Labora de Lunes a Viernes FIJO! Atención al cliente",
    "empresa": "ManpowerGroup Perú",
    "cat": "Atención al Cliente",
@@ -1917,7 +2041,7 @@
    "url": "https://www.bumeran.com.pe/empleos/labora-de-lunes-a-viernes-fijo-atencion-al-cliente-turno-manana-s.-2500-manpowergroup-peru-1118386965.html"
   },
   {
-   "id": 46,
+   "id": 49,
    "puesto": "Practicante de Contabilidad",
    "empresa": "Confidencial",
    "cat": "Contabilidad",
@@ -1964,7 +2088,7 @@
    "url": "https://www.bumeran.com.pe/empleos/practicante-de-contabilidad-1118386534.html"
   },
   {
-   "id": 47,
+   "id": 50,
    "puesto": "Vendedor(a) de Campo",
    "empresa": "Manpower",
    "cat": "Ventas",
@@ -2011,7 +2135,7 @@
    "url": "https://www.laborum.pe/job/manpower/vendedor-a-de-campo-consumo-masivo-ingreso-inmediato/6a6ae6a12020b210c81a8d45"
   },
   {
-   "id": 48,
+   "id": 51,
    "puesto": "Asesor de ventas",
    "empresa": "Impulsate",
    "cat": "Ventas",
@@ -2057,7 +2181,7 @@
    "url": "https://www.laborum.pe/job/impulsate/asesor-de-ventas-call-center-tarjetas-de-credito-sueldo-fijo/6a6a983e2020b210c81a47a7"
   },
   {
-   "id": 49,
+   "id": 52,
    "puesto": "Gestor Documentario Motorizado",
    "empresa": "IBR Perú S.A.",
    "cat": "Tecnología",
@@ -2099,7 +2223,7 @@
    "url": "https://www.laborum.pe/job/ibr-peru-s-a/gestor-documentario-motorizado-planilla-completa-sueldo-fijo/6a6aa0be2020b210c81a5203"
   },
   {
-   "id": 50,
+   "id": 53,
    "puesto": "Call center",
    "empresa": "Partner Service",
    "cat": "Atención al Cliente",
@@ -2144,7 +2268,7 @@
    "url": "https://www.laborum.pe/job/partner-service/asesor-de-atencion-al-cliente-planilla-completa-bonos/6a6ad70f2020b210c81a7680"
   },
   {
-   "id": 51,
+   "id": 54,
    "puesto": "Operario de Limpieza",
    "empresa": "NG Restaurants",
    "cat": "Tecnología",
@@ -2184,7 +2308,7 @@
    "url": "https://www.laborum.pe/job/ng-restaurants/trabaja-en-dunkin-operario-de-limpieza-turno-manana-lince/6a6a95352020b210c81a4145"
   },
   {
-   "id": 52,
+   "id": 55,
    "puesto": "Atención al cliente rotativo entre Miraflores y San Borja",
    "empresa": "Olva Courier S.A.C.",
    "cat": "Logística",
@@ -2221,7 +2345,7 @@
    "url": "https://www.laborum.pe/job/olva-courier-s-a-c/atencion-al-cliente-rotativo-entre-miraflores-y-san-borja/6a6be2722020b210c81ae80c"
   },
   {
-   "id": 53,
+   "id": 56,
    "puesto": "Asesor de atención al cliente venta seguro vehicular",
    "empresa": "A365",
    "cat": "Atención al Cliente",
@@ -2257,7 +2381,7 @@
    "url": "https://www.laborum.pe/job/a365/asesor-de-atencion-al-cliente-venta-seguro-vehicular-call/6a6a9a2d2020b210c81a4af1"
   },
   {
-   "id": 54,
+   "id": 57,
    "puesto": "Operario de Producción",
    "empresa": "Eurofirms Perú",
    "cat": "Logística",
@@ -2295,7 +2419,7 @@
    "url": "https://www.laborum.pe/job/eurofirms-peru/operario-de-produccion-c-s-exp-lurin-alimentos-movilidad/6a6be33c2020b210c81aeac1"
   },
   {
-   "id": 55,
+   "id": 58,
    "puesto": "Operador Integral de Producción y Embalaje",
    "empresa": "Grupo Tawa",
    "cat": "Ingeniería",
@@ -2333,52 +2457,7 @@
    "url": "https://www.laborum.pe/job/grupo-tawa/operador-integral-de-produccion-y-embalaje-santa-clara-ate/6a6adf582020b210c81a8511"
   },
   {
-   "id": 56,
-   "puesto": "Atención al cliente",
-   "empresa": "Partner Service",
-   "cat": "Atención al Cliente",
-   "min": 1130,
-   "max": 1130,
-   "modalidad": "Remoto",
-   "ciudad": "Lima",
-   "fuente": "Laborum",
-   "dias": 7,
-   "vence": "2026-08-30",
-   "restan": 24,
-   "score": 86,
-   "resumen": "RESUMEN: Si cuentas con experiencia en atención al cliente por call center y buscas una oportunidad para trabajar desde casa, esta vacante es para ti.",
-   "funciones": [
-    "Brindar atención telefónica a clientes de Claro Postpago.",
-    "Resolver consultas y brindar soluciones oportunas.",
-    "Ofrecer una excelente experiencia de atención al cliente.",
-    "Cumplir con los indicadores de calidad y servicio."
-   ],
-   "requisitos": [
-    "Experiencia mínima de 3 meses en Call Center.",
-    "Residir en Lima.",
-    "Contar con PC o Laptop.",
-    "Windows 10 u 11.",
-    "Procesador Core i3 de 5ta generación o superior.",
-    "Memoria RAM de 8 GB como mínimo.",
-    "Internet cableado de 50 Mbps o más.",
-    "Audífonos con conexión USB.",
-    "Jornada laboral",
-    "Descansos rotativos.",
-    "Gestión de 7 horas 30 minutos + 45 minutos de refrigerio.",
-    "Si te apasiona brindar un excelente servicio y deseas desarrollarte en una empresa con más de 10 años de experiencia, ¡postula con nosotros!"
-   ],
-   "beneficios": [
-    "Modalidad 100% Remota.",
-    "Sueldo fijo de S/ 1,130.",
-    "Bono variable de hasta S/ 300.",
-    "Bono de permanencia de S/ 300.",
-    "Capacitación pagada (S/ 240).",
-    "Oportunidad de crecimiento y desarrollo."
-   ],
-   "url": "https://www.laborum.pe/job/partner-service/trabaja-desde-casa-asesor-de-atencion-al-cliente-sueldo/6a6bda162020b210c81aca60"
-  },
-  {
-   "id": 57,
+   "id": 59,
    "puesto": "solo Atención al Cliente",
    "empresa": "Partner Service",
    "cat": "Atención al Cliente",
@@ -2420,7 +2499,7 @@
    "url": "https://www.laborum.pe/job/partner-service/solo-atencion-al-cliente-sin-experiencia-capacitacion-remota/6a6bd8702020b210c81ac253"
   },
   {
-   "id": 58,
+   "id": 60,
    "puesto": "Auxiliar de Almacén",
    "empresa": "Lavoro Perú",
    "cat": "Tecnología",
@@ -2463,7 +2542,7 @@
    "url": "https://www.laborum.pe/job/lavoro-peru/auxiliar-de-almacen-turno-tarde-huachipa-aje/6a6bd8972020b210c81ac324"
   },
   {
-   "id": 59,
+   "id": 61,
    "puesto": "Asesor Call Center Ventas Entel",
    "empresa": "SMART MEDIA S.A.C.",
    "cat": "Ventas",
@@ -2499,7 +2578,7 @@
    "url": "https://www.laborum.pe/job/smart-media-s-a-c/asesor-call-center-ventas-entel-l-a-v-s-1400-sin-ojt/6a6aaff22020b210c81a5bdf"
   },
   {
-   "id": 60,
+   "id": 62,
    "puesto": "Asesor Comercial Corporativo",
    "empresa": "Automatizate Negocios",
    "cat": "Ventas",
@@ -2536,7 +2615,7 @@
    "url": "https://www.laborum.pe/job/automatizate-negocios/asesor-comercial-corporativo-culqi-bcp-crecimiento-ingresos/6a6ac99e2020b210c81a691a"
   },
   {
-   "id": 61,
+   "id": 63,
    "puesto": "Asesor Call Center",
    "empresa": "A365",
    "cat": "Atención al Cliente",
@@ -2577,7 +2656,7 @@
    "url": "https://www.laborum.pe/job/a365/asesor-call-center-planilla-completa-atc-y-cross-pagos/6a6ad9362020b210c81a7b21"
   },
   {
-   "id": 62,
+   "id": 64,
    "puesto": "Atención al cliente",
    "empresa": "Grupo Solimano",
    "cat": "Recursos Humanos",
@@ -2611,7 +2690,7 @@
    "url": "https://www.laborum.pe/job/grupo-solimano/impulsadora-mercados-mayoristas-fines-de-semana-mercados-s/6a6bddab2020b210c81ad886"
   },
   {
-   "id": 63,
+   "id": 65,
    "puesto": "Agente Call Center",
    "empresa": "A365",
    "cat": "Ventas",
@@ -2648,7 +2727,7 @@
    "url": "https://www.laborum.pe/job/a365/fijo-s-1300-agente-call-center-comisiones-y-bonos-pagos/6a6adc932020b210c81a800c"
   },
   {
-   "id": 64,
+   "id": 66,
    "puesto": "Auxiliar Administrativo",
    "empresa": "Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco",
    "cat": "Tecnología",
@@ -2684,6 +2763,1255 @@
     "Seguro de salud EsSalud y afiliación pensionaria"
    ],
    "url": "https://www.convocape.com/convocatorias/auxiliar-administrativo-proyecto-especial-regional-plan-copesco-del-gobierno-regional-del-cusco-728-2026-07-797486"
+  },
+  {
+   "id": 67,
+   "puesto": "Especialista en procesos administrativos disciplinarios de docentes y administrativos",
+   "empresa": "UGEL UTCUBAMBA",
+   "cat": "Administración",
+   "min": 2604,
+   "max": 2604,
+   "modalidad": "Presencial",
+   "ciudad": "Amazonas",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-11",
+   "restan": 5,
+   "score": 97,
+   "resumen": "Convocatoria CAS de UGEL UTCUBAMBA en Amazonas. Una plaza.",
+   "funciones": [
+    "Desarrollar acciones para atender las denuncias ingresadas a COPROA y la Secretaría Técnica de las autoridades del PAD",
+    "Elaborar informes, resoluciones y otros documentos para atender los casos que ingresan a la COPROA y la Secretaría Técnica del PAD",
+    "Velar por la resolución de casos de procesos administrativos pendientes",
+    "Registrar los expedientes concluidos y en trámite",
+    "Administrar el usuario del IDENTICOLE para dar respuesta a los reportes y reclamos que lleguen a la UGEL Utcubamba a través del Portal Web",
+    "Atender los casos de denuncias reportadas en el SISEVE e IDENTICOLE que amerite un proceso administrativo de acuerdo a normativa",
+    "Otras funciones asignadas por el inmediato superior, relacionadas a la misión del puesto"
+   ],
+   "requisitos": [
+    "Profesional universitario con título en Derecho, Colegiado y Habilitado.",
+    "Experiencia General: 02 años de experiencia laboral en el sector público o privado.",
+    "Experiencia específica: 01 año de experiencia laboral en el sector público como especialista o asistente de Secretaría Técnica",
+    "De Procedimientos Administrativos Disciplinarios.",
+    "Cursos y/o programas de especialización"
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-utcubamba-agosto-2026-1-plazas-67281.html"
+  },
+  {
+   "id": 68,
+   "puesto": "Especialista Administrativo",
+   "empresa": "UGEL 03 - TRUJILLO NOR OESTE",
+   "cat": "Tecnología",
+   "min": 2346,
+   "max": 2346,
+   "modalidad": "Presencial",
+   "ciudad": "Trujillo",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-11",
+   "restan": 5,
+   "score": 97,
+   "resumen": "Convocatoria CAS de UGEL 03 - TRUJILLO NOR OESTE en La Libertad. Una plaza.",
+   "funciones": [
+    "Coordinar, programar y ejecutar los procesos técnicos del Sistema de Abastecimiento, en cumplimiento del presupuesto aprobado y las normas y procedimientos vigentes",
+    "Participar en el Comité de Distribución del Material Educativo a las II.EE. de la UGEL, según la calendarización y propuesta del MED",
+    "Revisar y refrendar la emisión y tramitación de Solicitudes de Cotizaciones y Cuadros Comparativos de Cotizaciones; Órdenes de Compra, Guías de internamiento de los bienes adquiridos y; Pedidos y Comprobantes de Salida (PECOSA), Notas de Entrada, Pólizas",
+    "Efectuar la afectación presupuestaria del gasto en el Sistema Integrado de Administración Financiera SIAF - Fase Compromiso de las órdenes de compra y de servicios para su posterior cancelación, en base a los requerimientos de bienes y servicio de las diferentes Áreas para el cumplimiento de sus metas",
+    "Formular, elaborar y consolidar el Cuadro de Necesidades de bienes y servicios para la programación del Presupuesto Anual, en coordinación con todas las áreas de la UGEL",
+    "Elaborar el Plan Anual de Adquisiciones y Contrataciones en base al presupuesto aprobado y a los Cuadros de Necesidades de bienes y servicios",
+    "Coordinar con la Jefatura lo concerniente a la implementación de las Comisiones Técnicas para el desarrollo de sus actividades como el Comité de Adquisiciones y el Registro de los Procesos de Selección y de los Contratos suscritos en el SEACE",
+    "Administrar y controlar las ALTAS y BAJAS de los bienes patrimoniales de la UGEL implementando la Comisión de Inventario y Comité de Altas y Bajas",
+    "Registrar la información patrimonial en los Módulos Informativos SIMI, SINABIP, Módulo de Revaluación de Inmuebles, Terrenos y Edificios",
+    "Adoptar o prever medidas de selección y conservación de bienes y servicios, Control de calidad, uso y mantenimiento de vehículos y seguridad en distribución de materiales con criterios de austeridad y prioridad",
+    "Cumplir otras funciones de su competencia que se le asigne",
+    "COORDINACIONES PRINCIPALES Coordinaciones Internas Órganos y Unidades Orgánicas de la Institución. Coordinaciones Externas MINEDU, DRE/GRE, UGEL, director de IE, subdirector, Docentes y personal administrativo organizaciones dentro de la comunidad"
+   ],
+   "requisitos": [
+    "Titulado universitario en Administración, Contabilidad o",
+    "Experiencia General: no menor de dos (02) años en el sector público.",
+    "Experiencia Específica en la función o la materia: Dos (02) años de experiencia laboral especializada el Sistema de Abastecimiento.",
+    "Cursos y/o programas de especialización",
+    "Estar acreditado en el OSCE para desempeñar el cargo de responsable de Abastecimiento."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-trujillo-nor-oeste-agosto-2026-1-plazas-67410.html"
+  },
+  {
+   "id": 69,
+   "puesto": "Docente",
+   "empresa": "UGEL MELGAR",
+   "cat": "Tecnología",
+   "min": 3064,
+   "max": 3064,
+   "modalidad": "Presencial",
+   "ciudad": "Puno",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-18",
+   "restan": 12,
+   "score": 97,
+   "resumen": "Convocatoria CAS de UGEL MELGAR en Puno. Una plaza.",
+   "funciones": [
+    "Participar en el desarrollo de la atención educativa a los estudiantes desde tres modalidades de intervención: como apoyo al docente durante las actividades de aprendizaje, en corresponsabilidad con el docente (docencia compartida) o liderando las actividades de aprendizaje con el apoyo del docente",
+    "Apoyar, acompañar, asesorar e informar a las familias para asegurar su participación y empoderamiento, así como para dar continuidad al desarrollo de competencias y consolidar los logros de aprendizaje, todo ello en el contexto o entorno familiar y social",
+    "Organizar, en colaboración con los docentes, el trabajo con las familias del CEBE desde las diversas estrategias que se abordan: los talleres para familias, las visitas domiciliarias, las entrevistas personales, el trabajo colaborativo en beneficio del aula y otras actividades entre familias",
+    "Otras funciones asignadas por el director del CEBE y relacionadas con la misión del puesto",
+    "COORDINACIONES PRINCIPALES Coordinaciones Internas Áreas del Centro de Educación Básica Especial Coordinaciones Externas Organizaciones que realizan actividades con personas en condición de discapacidad"
+   ],
+   "requisitos": [
+    "Titulado profesional en Educación, Psicología, Trabajo Social, Tecnología médica con",
+    "Especialidad en Terapia Física y Rehabilitación, Terapia Ocupacional o",
+    "Terapia de Lenguaje.",
+    "Experiencia General: 10 meses.",
+    "Experiencia Específica: 03 meses de experiencia en el trabajo con personas con discapacidad."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-melgar-agosto-2026-1-plazas-67477.html"
+  },
+  {
+   "id": 70,
+   "puesto": "Especialista en Contrataciones y Adquisiciones",
+   "empresa": "UGEL-1",
+   "cat": "Tecnología",
+   "min": 5864,
+   "max": 5864,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-10",
+   "restan": 4,
+   "score": 94,
+   "resumen": "Convocatoria CAS de UGEL-1 en Lima. Una plaza.",
+   "funciones": [
+    "Revisión de las especificaciones técnicas y/o términos de referencia emitidos por las áreas usuarias. \"Decenio de la Igualdad de oportunidades para mujeres y hombres\" “Año de la Esperanza y el Fortalecimiento de la Democracia”",
+    "Realizar la indagación de mercado de los bienes y/o servicios a contratar para determinar el valor estimado",
+    "Solicitar la validación de cotizaciones al área usuaria",
+    "Elaborar y visar los cuadros comparativos para la determinación de calor estimado",
+    "Solicitar y gestionar la aprobación de certificaciones de crédito presupuestal y/o previsión presupuestal entre otra documentación necesaria para las contrataciones de bienes y servicios",
+    "Realizar compromiso anual y mensual en el SIAF",
+    "Emisión de órdenes de compra y/o servicios en el SIGA – SIAF, de acuerdo a los TDR y EE.TT",
+    "Preparar el expediente de pago de bienes y/o servicios adjuntando la documentación que sustenta la orden, a efectos de remitir al Equipo de Contabilidad",
+    "Registrar órdenes de compras y órdenes de servicios en el SEACE dentro de los alcances establecidos en la Directiva Nº 003-2020- OSCE/CD",
+    "Revisión en la formulación de los términos de referencia y/o especificaciones técnicas realizadas por Servicios Generales del Área de Administración",
+    "Revisión y elaboración de documentos derivados de los procesos menores a 8 UIT y Procesos de Selección con su respectivo visado del equipo de logística",
+    "Otras funciones o encargos que le asigne la Coordinación del Equipo de Logística"
+   ],
+   "requisitos": [
+    "Título universitario en Administración y/o Contabilidad y/o",
+    "Experiencia General: Tres (03) años de experiencia en el Sector Público y/o Privado.",
+    "Experiencia Específica: Un (01) año de experiencia en la función o la materia en el Sector",
+    "Público y/o Privado.",
+    "Cursos y/o programas de especialización",
+    "Certificación vigente de Profesional Certificado del Órgano",
+    "Encargado de las Contrataciones-OEC DELOSCE.",
+    "Curso y/o Diplomado de SIGA y/o SIAF"
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-agosto-2026-1-plazas-67278.html"
+  },
+  {
+   "id": 71,
+   "puesto": "Especialista en Inversión",
+   "empresa": "CAFED-CALLAO",
+   "cat": "Tecnología",
+   "min": 6864,
+   "max": 6864,
+   "modalidad": "Presencial",
+   "ciudad": "Callao",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-12",
+   "restan": 6,
+   "score": 94,
+   "resumen": "Convocatoria CAS de CAFED-CALLAO en Callao. Una plaza.",
+   "funciones": [
+    "Revisar, verificar y/o supervisar los registros de los formatos en el Banco de Inversiones de los proyectos del COMITÉ DE ADMINISTRACIÓN DEL FONDO EDUCATIVO DEL CALLAO – CAFED",
+    "Elaborar informes y/u opiniones técnicas en materia de seguimiento y ejecución de las inversiones públicas priorizadas por el CAFED de acuerdo a los procedimientos y la normatividad vigente",
+    "Absolver y coordinar la atención de consultas respecto al ciclo de los PIP e IOARR y sus procedimientos",
+    "Analizar y validar la ejecución física y financiera de las inversiones públicas priorizadas por el CAFED, a fin de determinar variaciones respecto al presupuesto autorizado en el marco normativo del INVIERTE.PE",
+    "Realizar el seguimiento a la ejecución presupuestaria de las inversiones del CAFED para el cumplimiento de las metas institucionales",
+    "Elaborar indicadores de desempeño sobre el cumplimiento de las actividades y proyectos ejecutados por el CAFED",
+    "Elaborar evaluaciones periódicas sobre la ejecución presupuestaria de actividades y proyectos programados por el CAFED. CONDICIONES DETALLE Lugar de prestación del Av. Elmer Faucett Nº 3970 – Callao. servicio Tres (03) meses (Con posibilidad de Renovación de"
+   ],
+   "requisitos": [
+    "Título Universitario en Economía,",
+    "Administración, Contabilidad o Ingeniería",
+    "Experiencia General: Mínima de seis (06) años",
+    "En el sector público y/o privado.",
+    "Experiencia Específica: Mínima de tres (03)",
+    "Años desempeñando funciones en el rubro, de",
+    "Los cuales dos (02) años deberán ser en el",
+    "Sector público.",
+    "Cursos y/o programas de especialización",
+    "Diplomado o Especialización en inversión",
+    "Pública: Invierte PE.",
+    "Curso y/o diplomado en Gestión Pública"
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-cafed-callao-agosto-2026-1-plazas-67343.html"
+  },
+  {
+   "id": 72,
+   "puesto": "Técnico",
+   "empresa": "INSTITUTO DE OFTALMOLOGIA(INO)",
+   "cat": "Contabilidad",
+   "min": 2864,
+   "max": 2864,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-11",
+   "restan": 5,
+   "score": 94,
+   "resumen": "Convocatoria CAS de INSTITUTO DE OFTALMOLOGIA(INO) en Lima. Una plaza.",
+   "funciones": [
+    "Registrar en el SIAF la fase de girado de las planillas y los expedientes a ser cancelados mediante transferencia electrónica interbancaria, cheque, carta orden, según corresponda, así como sus correspondientes impuestos de ley y verificar que la información se encuentre debidamente sustentada y aprobada",
+    "Establecer en el Sistema Administrativo de Tesorería y Cobranzas, acciones de control, de acuerdo a la normatividad vigente",
+    "Registrar las operaciones económicas de gasto, emisión de cheque, carta orden, comprobantes de retención, a través del Sistema Informático de Tesorería por todas las fuentes de financiamiento",
+    "Entregar los comprobantes de gastos al personal responsable de Tributos",
+    "Elaborar el Reporte de Retenciones de 4ta. Categoría según SIAF y Sistema de Tesorería",
+    "Aplicar mecanismos de seguridad interna en salvaguarda de los documentos, equipos y/o recursos asignados",
+    "Elaborar informes y documentos de su competencia",
+    "Cumplir con las normas y directivas de acuerdo a su competencia",
+    "Las demás funciones que le sean delegadas o asignadas por el/la Jefe/a de la Oficina de Economía"
+   ],
+   "requisitos": [
+    "Titulado en las carreras técnicas o estudios",
+    "Universitarios no menor a seis (06) semestres",
+    "Académicos en Administración, Contabilidad, Finanzas",
+    "U otros afines relacionados al cargo.",
+    "Experiencia General: Un (01) año, de experiencia general en el sector público y/o privado.",
+    "Experiencia Específica en la función o materia: Un (01) año, de experiencia, realizando funciones relacionados al perfil del puesto.",
+    "Experiencia Específica en el sector público: Un (01) año en el sector público.",
+    "Cursos y/o programas de especialización",
+    "Cursos en estudios de control previo y concurrente.",
+    "Curso en tributación y normas de tesorería.",
+    "Curso en sistemas de administración en la gestión"
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-instituto-oftalmologia-ino-agosto-2026-1-plazas-67356.html"
+  },
+  {
+   "id": 73,
+   "puesto": "Soporte técnico",
+   "empresa": "SUNARP",
+   "cat": "Tecnología",
+   "min": 5500,
+   "max": 5500,
+   "modalidad": "Presencial",
+   "ciudad": "Junín",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-14",
+   "restan": 8,
+   "score": 94,
+   "resumen": "Convocatoria CAS de SUNARP en Junín. Una plaza.",
+   "funciones": [
+    "Ejecutar actividades especializadas relacionadas con los sistemas informáticos y servicios tecnológicos de la Zona Registral",
+    "Participar en la implementación de lineamientos, procedimientos y estrategias tecnológicas establecidos por la entidad y la Sede Central",
+    "Brindar soporte técnico especializado a las unidades orgánicas en materias relacionadas con tecnologías de la información",
+    "Participar en la administración y mantenimiento de la infraestructura tecnológica y centro de cómputo de la Zona Registral",
+    "Ejecutar actividades de administración, mantenimiento y actualización de bases de datos y sistemas de información institucionales",
+    "Elaborar propuestas técnicas para el mantenimiento y soporte de sistemas, equipos informáticos y servicios tecnológicos",
+    "Apoyar en la elaboración de procedimientos y documentos técnicos para la adecuada utilización de los sistemas y equipos informáticos",
+    "Elaborar informes y propuestas técnicas relacionadas con proyectos de mejora e informatización de procesos institucionales",
+    "Elaborar especificaciones técnicas para la adquisición de bienes y servicios informáticos",
+    "Participar en la administración y soporte de los servicios de comunicaciones y conectividad institucional",
+    "Realizar el seguimiento de la operatividad de los equipos y aplicaciones informáticas institucionales",
+    "Emitir opinión especializada y/o informes en materia de su competencia, así como prestar asesoramiento en los asuntos que sean requeridos por la Alta Dirección"
+   ],
+   "requisitos": [
+    "Titulado en Ingeniero de Sistemas, Ingeniero Electrónico, o carrera a fin Estudiante o egresado en maestría en Ingeniería de Sistemas y/o afines.",
+    "Experiencia laboral general (Sea en el Sector Público o Privado). Cuatro (04) años (Entendida como el tiempo computado a partir de la obtención del Grado Académico de Bachiller durante el cual la persona ha acumulado experiencia laboral en materia de su",
+    "Experiencia específica (En la función o la materia) Tres (03) años en cargos similares (Entiéndase como cargos similares a Analista, especialista de Unidades de Informática en el Sector Público o privado).",
+    "A. Detallar cuánto tiempo de experiencia especifica se requiere en el puesto o cargo. (parte “A”) (en caso no sea necesario colocar 0). Dos(02) años desde Analista.",
+    "B. Detallar cuánto tiempo de experiencia en el sector público requiere para el puesto (parte “A”) (en caso no sea necesario colocar 0) Un (01) año desde Analista.",
+    "Conocimiento técnico: Conocimiento en soporte informático, Gestión Publica y/o Gestión de proyectos.",
+    "Cursos y/o programas de especialización",
+    "Curso y/o programas de especialización en ITIL",
+    "Curso y/o programas de especialización de Administración y configuración de redes.",
+    "Curso y/o programas de especialización en Gestión de proyectos.",
+    "Para el caso de Programas de Especialización o Diplomados, deben ser mínimo de noventa (90) horas, en el caso de Programas de Especialización o Diplomados, emitidos por Entes Rectores, mínimo de ochenta (80) horas y en el caso de cursos debe ser mínimo 12 horas."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-sunarp-agosto-2026-1-plazas-67399.html"
+  },
+  {
+   "id": 74,
+   "puesto": "Auxiliar Coactivo",
+   "empresa": "MUNICIPALIDAD DE MIRAFLORES",
+   "cat": "Tecnología",
+   "min": 5600,
+   "max": 5600,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-18",
+   "restan": 12,
+   "score": 94,
+   "resumen": "Convocatoria CAS de MUNICIPALIDAD DE MIRAFLORES en Lima. Una plaza.",
+   "funciones": [
+    "Tramitar y custodiar los expedientes coactivos a su cargo a fin de brindar atención oportuna",
+    "Elaborar los documentos requeridos para promover la gestión del procedimiento Coactivo",
+    "Realizar las diligencias solicitadas por el Ejecutor Coactivo",
+    "Suscribir las notificaciones, actas de embargo y otros documentos que lo ameriten",
+    "Emitir Informes pertinentes de ejecución coactiva",
+    "Garantizar la legalidad y autenticidad de los actos en los que intervenga en el ejercicio de sus funciones",
+    "Otras funciones asignadas por la jefatura inmediata afines a la misión del puesto"
+   ],
+   "requisitos": [
+    "Título Universitario en Administración, Derecho, Contabilidad y/o afines por la formación Colegiado y habilitado",
+    "Experiencia General: Dos(02) años.",
+    "Experiencia específica",
+    "Dos(02) años.",
+    "Experiencia en el sector público",
+    "Dos (02) años.",
+    "Diplomados/Programas de especialización",
+    "Diplomado y/o Curso en Derecho Administrativo y/o",
+    "Procedimiento Administrativo Sancionador y/o",
+    "Diplomado en Gestión Pública.",
+    "Adaptabilidad, capacidad de análisis, redacción, atención,",
+    "Proactividad y planificación."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-municipalidad-miraflores-agosto-2026-1-plazas-67453.html"
+  },
+  {
+   "id": 75,
+   "puesto": "Asistente",
+   "empresa": "PROGRAMA DE CENTROS JUVENILES",
+   "cat": "Tecnología",
+   "min": 5364,
+   "max": 5364,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-06",
+   "restan": 0,
+   "score": 93,
+   "resumen": "Convocatoria CAS de PROGRAMA DE CENTROS JUVENILES en Lima. Una plaza.",
+   "funciones": [
+    "DECLARATORIA DE DESIERTO Y CANCELACIÓN DEL PROCESO 11.1. El proceso puede ser declarado desierto en alguno de los siguientes supuestos",
+    "Cuando no se presenten postulantes al proceso de selección",
+    "Cuando ninguno de los postulantes cumpla y/o acredite los requisitos del perfil del puesto",
+    "Cuando habiendo cumplido los requisitos mínimos, ninguno de las/los postulantes obtengan el puntaje mínimo aprobatorio en las etapas de evaluación del proceso",
+    "Cuando habiendo cumplido los requisitos mínimos, ningún postulante se presente a las evaluaciones programadas en el proceso de selección",
+    "Cuando desaparece la necesidad del servicio de la Entidad con posterioridad al inicio del proceso de selección",
+    "Por restricciones presupuestarias",
+    "Otros supuestos debidamente justificados",
+    "La postergación del proceso de selección deberá ser pública y justificada por la Unidad de Gestión de Recursos Humanos hasta antes de la Etapa de Entrevista Personal"
+   ],
+   "requisitos": [
+    "Título universitario en Trabajo Social o Asistente Social con Colegiatura y Habilitación Vigente. Haber realizado SERUMS.",
+    "Experiencia laboral general mínima de tres (03) años en el sector público y/o privado",
+    "Experiencia laboral específica mínima de dos (02) años en el sector público y/o privado en la función o la materia.",
+    "Cursos y/o programas de especialización",
+    "Curso o programa de especialización relacionado a las funciones del puesto.",
+    "Conocimiento en materias relacionadas a las funciones del puesto y ámbito de acción de la entidad.",
+    "Ofimática nivel básico.",
+    "Pensamiento Analítico",
+    "Vocación de Servicio",
+    "Gestión del Conflicto"
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-programa-centros-juveniles-agosto-2026-1-plazas-67257.html"
+  },
+  {
+   "id": 76,
+   "puesto": "Técnico",
+   "empresa": "DIRECCIÓN REGIONAL DE YAKU TARPUY",
+   "cat": "Logística",
+   "min": 2864,
+   "max": 2864,
+   "modalidad": "Presencial",
+   "ciudad": "Huancavelica",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-07",
+   "restan": 1,
+   "score": 93,
+   "resumen": "Convocatoria CAS de DIRECCIÓN REGIONAL DE YAKU TARPUY en Huancavelica. Una plaza.",
+   "funciones": [
+    "Elaborar el inventario de bienes y enseres del Almacén de la Unidad Ejecutora Dirección Regional de Yaku Tarpuy Para la Lucha Contra la Pobreza",
+    "Llevar el control patrimonial de equipos, maquinarias y todos los bienes con que cuenta la Unidad Ejecutora",
+    "Emitir opinión sobre los bienes obsoletos o en desuso del almacén para su baja",
+    "Emitir informe sobre los bienes faltantes para las acciones correspondientes que el caso amerita",
+    "Mantener debidamente codificado los bienes que obran en la Unidad Ejecutora",
+    "Otras funciones que le asigne el Director de la Oficina de Administración y/o el jefe inmediato superior",
+    "COORDINACIONES ATÍPICAS PARA EL DESEMPEÑO DEL PUESTO NO APLICA"
+   ],
+   "requisitos": [
+    "Título Profesional Técnico en Contabilidad y/o Bachiller en Contabilidad.",
+    "Experiencia General: Dos (02) años",
+    "Experiencia específica en la función o materia: Un (01) año",
+    "Experiencia específica en el sector público: Un (01) año",
+    "Conocimiento técnico",
+    "Conocimiento en análisis de KARDEX Almacén.",
+    "Conocimiento de las cuentas 13 y 15.",
+    "Cursos y/o programas de especialización",
+    "Curso de Sistema Integrado de Administración Financiera (SIAF) y/o Sistema Integrado de Gestión Administrativa (SIGA) Y/O",
+    "Sistema Electrónico de Contrataciones del Estado (SEACE) y/o Perú Compras.",
+    "Contar con Certificado como mínimo en el nivel básico otorgado por el OECE (Indispensable).",
+    "Habilidades o competencias: Responsabilidad, proactividad, iniciativa y trabajo en equipo bajo presión."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-direccion-regional-yaku-tarpuy-agosto-2026-1-plazas-67331.html"
+  },
+  {
+   "id": 77,
+   "puesto": "Asesor Legal en Recursos Humanos",
+   "empresa": "PROINVERSION",
+   "cat": "Legal",
+   "min": 9364,
+   "max": 9364,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-09",
+   "restan": 3,
+   "score": 92,
+   "resumen": "Convocatoria CAS de PROINVERSION en Lima. Una plaza.",
+   "funciones": [
+    "Elaborar informes en temas laborales relacionado con los Regímenes Laborales de la entidad en atención del marco normativo vigente",
+    "Analizar documentos relacionados a temas administrativos, laborales u otros y emitir opinión legal o proyectar respuesta, de acuerdo al marco normativo vigente",
+    "Elaborar o proponer actualizaciones de documentos de gestión, directivas y otros"
+   ],
+   "requisitos": [
+    "Titulado en la carrera de Derecho.",
+    "Seis (06) años de experiencia general en el sector público o privado",
+    "Dos (02) años de experiencia en función o materia nivel mínimo de especialista en el sector público",
+    "Cursos y/o programas de especialización",
+    "Un (01) Diplomado o Especialización en Recursos Humanos, Derecho del Trabajo, Gestión Pública, Relaciones Laborales, Servicio Civil o similares.",
+    "Conocimientos técnicos principales requeridos para el puesto que no requieren sustento: Gestión de recursos humanos, gestión pública, derecho laboral, derecho administrativo.",
+    "Conocimientos de Ofimática e Idiomas/Dialectos: Procesador de textos, hojas de cálculo y programas de presentaciones (nivel básico). Inglés (nivel básico)",
+    "Habilidades o competencias",
+    "Orientación a resultados, trabajo en equipo, vocación de servicio, capacidad de análisis, comunicación asertiva, iniciativa"
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-proinversion-julio-2026-1-plazas-67237.html"
+  },
+  {
+   "id": 78,
+   "puesto": "Secretaria",
+   "empresa": "DIRECCION REGIONAL EDUCACION(DRE) LIMA",
+   "cat": "Administración",
+   "min": 1389,
+   "max": 1389,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-10",
+   "restan": 4,
+   "score": 91,
+   "resumen": "Convocatoria CAS de DIRECCION REGIONAL EDUCACION(DRE) LIMA en Lima. Una plaza.",
+   "funciones": [
+    "Recibir, registrar y clasificar la documentación para su atención en los plazos establecidos",
+    "Preparar y redactar los documentos de gestión (Informes, cartas, memorándum, actas, oficios, entre otros) de la Oficina de Dirección del IESTP “Ramiro Priale Priale”",
+    "Mantener la agenda al día de la Directora y comunicar sobre reuniones, entrevistas y/o participaciones concertadas",
+    "Realizar la reprografía de los documentos (fotocopiado y escaneado) de acuerdo a las indicaciones y foliar los expedientes de acuerdo a la normativa vigente",
+    "Velar por la conservación del archivo de los documentos y demás bienes a cargo de la Dirección",
+    "Redactar los requerimientos de materiales y útiles de escritorio para la Dirección",
+    "Atender al público y personal recurrente a la oficina de Dirección",
+    "Realizar otras funciones que le asigne el directora"
+   ],
+   "requisitos": [
+    "Profesional Técnico y/o Egresado Técnico Superior de",
+    "La carrera de Secretariado Ejecutivo, Computación e",
+    "Informática o Contabilidad.",
+    "Experiencia General: Experiencia laboral mínima de dos (02) años en el",
+    "Sector público o privado.",
+    "Experiencia Específica: Experiencia laboral específica mínima de un (01) año",
+    "En el sector público o privado, como secretaria, auxiliar",
+    "Y/o asistente administrativo realizando funciones afines",
+    "Cursos y/o programas de especialización",
+    "Trámite documentario y gestión de archivos o afines.",
+    "Herramientas de ofimática o afines.",
+    "Asistente administrativo."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-direccion-regional-educacion-dre-lima-agosto-2026-1-plazas-67269.html"
+  },
+  {
+   "id": 79,
+   "puesto": "Analista en Procesos de Selección y Monitoreo",
+   "empresa": "PROGRAMA JÓVENES PRODUCTIVOS",
+   "cat": "Tecnología",
+   "min": 3500,
+   "max": 3500,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-10",
+   "restan": 4,
+   "score": 91,
+   "resumen": "Convocatoria CAS de PROGRAMA JÓVENES PRODUCTIVOS en Lima. Una plaza.",
+   "funciones": [
+    "Planificar, programar, calendarizar y ejecutar los procesos de monitoreo y seguimiento para garantizar el correcto desarrollo del proceso de acercamiento empresarial focalizado de las unidades territoriales",
+    "Gestionar el acercamiento empresarial focalizado en la región Lima",
+    "Realizar las coordinaciones con aliados y potenciales aliados estratégicos del Programa, para la implementación de las acciones de identificación de demanda laboral",
+    "Participar en reuniones de coordinación con aliados y potenciales aliados estratégicos del Programa para la implementación de las líneas de acciones de capacitación laboral y certificación de competencias laborales",
+    "Emitir reportes, informes, matrices sobre la ejecución de las supervisiones realizadas a las unidades territoriales en el marco de la identificación de demanda laboral para los servicios de capacitación laboral, certificación de competencias laborales",
+    "Consolidar y sistematizar los resultados de las supervisiones de las Unidades territoriales",
+    "Identificar y sistematizar las observaciones realizadas a las fichas de identificación de demanda laboral remitidas por las unidades territoriales",
+    "Brindar asistencia técnica permanente a las unidades territoriales para gestionar el acercamiento empresarial focalizado",
+    "Mantener actualizado el directorio empresarial a nivel nacional de aliados estratégicos del Programa",
+    "Gestionar la suscripción y/o renovación de convenios de colaboración interinstitucional con el sector empresarial y organizaciones",
+    "Revisar y validar la información reportada por las Unidades Territoriales, relacionada con las acciones de acercamiento empresarial focalizado del Programa",
+    "Elaborar documentos para la atención de solicitudes de información en asuntos de su competencia"
+   ],
+   "requisitos": [
+    "Grado de Bachiller otorgado por universidad en Administración, Ingeniería, Derecho, Sociología, Economía, Antropología, Psicología, Educación o afines.",
+    "Experiencia General: Tres (03) años.",
+    "Experiencia Especifica",
+    "Un (01) año en cargos similares o desempeñando funciones relacionadas al puesto o a la materia del sector o del Programa o realizando funciones afines al puesto en el sector público o privado.",
+    "Un (01) año en el Sector Público.",
+    "Nivel mínimo: Asistente.",
+    "Cursos y/o programas de especialización",
+    "Curso de Gestión Pública y/o Gestión por Procesos.",
+    "Conocimiento en Gestión Pública.",
+    "Conocimiento de Empleabilidad.",
+    "Ofimática (procesador de textos, hojas de cálculo y programa de presentaciones) a nivel básico.",
+    "Calidad y Mejora Continua."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-programa-jovenes-productivos-agosto-2026-1-plazas-67301.html"
+  },
+  {
+   "id": 80,
+   "puesto": "Especialista en bienestar social",
+   "empresa": "UGEL BELLAVISTA",
+   "cat": "Tecnología",
+   "min": 1800,
+   "max": 1800,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-11",
+   "restan": 5,
+   "score": 91,
+   "resumen": "Convocatoria CAS de UGEL BELLAVISTA en San Martín. Una plaza.",
+   "funciones": [
+    "Apoyar en la Investigación de los Expedientes de Solicitudes de Asistencia Social, para Coadyuvar a la Evaluación del mismo",
+    "Realizar Coordinaciones Logísticas y participar en las visitas programadas, a solicitud de especialistas en servicios sociales, para registrar y elaborar los proyectos de informes de visitas",
+    "Elaborar los informes de procedencia e improcedencia de los administrados de la UGEL",
+    "Emitir opinión técnica sobre las solicitudes de los administrados en relación a acciones de licencias con goce y sin goce",
+    "Llevar el control de los periodos de licencias con goce y sin goce que se hayan otorgado a los administrados",
+    "Revisar y actualizar la inscripción del personal de la UGEL en los sistemas de seguridad social para asegurar la atención oportuna del personal",
+    "Realizar las coordinaciones logísticas y de organización de las actividades de esparcimiento para el personal de la UGEL y sus familiares directos para asegurar que dichos eventos se desarrollen adecuadamente",
+    "Apoyar en la ejecución de las actividades del plan de bienestar y desarrollo del talento humano de la UGEL, para coadyuvar al logro de los objetivos respectivos",
+    "Control, seguimiento y aplicación de fichas, encuestas matrices de desempeño, capacitación y otros dentro de la gestión del talento humano",
+    "Redactar los comunicados internos del personal de la UGEL para difundir las acciones que realiza la institución en beneficio del personal",
+    "Apoyar en la implementación de las acciones para mejorar la cultura y el clima organizacional de la UGEL, para coadyuvar en el cumplimiento de los objetivos planteados"
+   ],
+   "requisitos": [
+    "Bachiller o Técnico en Administración, Trabajo",
+    "Social, Psicología, Gestión o afines.",
+    "Experiencia General: (01) año en el Sector Público",
+    "Privado – desde la obtención del grado.",
+    "Experiencia Específica en la función o materia: seis (06) meses de",
+    "Función o la materia o afines, en el sector público.",
+    "Cursos y/o programas de especialización",
+    "Sistema Administrativo de Gestión de Recursos",
+    "Humanos y Ley Servir.",
+    "Clima Organizacional en la Gestión Pública.",
+    "Gestión Educativa en el Marco Legal.",
+    "Ética e Integridad y/o afines."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-bellavista-agosto-2026-1-plazas-67385.html"
+  },
+  {
+   "id": 81,
+   "puesto": "Analista Técnico",
+   "empresa": "OSIPTEL",
+   "cat": "Tecnología",
+   "min": 5000,
+   "max": 5000,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-11",
+   "restan": 5,
+   "score": 88,
+   "resumen": "Convocatoria CAS de OSIPTEL en Lima. Una plaza.",
+   "funciones": [
+    "Nuestras Políticas",
+    "Legislación Básica",
+    "Sistema de Control Interno",
+    "Gestión por Procesos",
+    "Convocatorias de Trabajo",
+    "Transformación Digital",
+    "Sociedad Telecom",
+    "Pedidos de opinión de instituciones",
+    "Centro de Arbitraje",
+    "Orientación al Usuario",
+    "Libro de Reclamaciones",
+    "Solicitud de Acceso a la información"
+   ],
+   "requisitos": [
+    "Bachiller universitario en Ingeniería de Telecomunicaciones, Electrónica, Informática, Sistemas y/o afines",
+    "Experiencia General: Cuatro (04) años.",
+    "Experiencia Especifica",
+    "Experiencia Especifica en la función o la materia: Dos (02) años.",
+    "Experiencia Especifica en Nivel mínimo de puesto: Un (01) año en el nivel mínimo de auxiliar o asistente.",
+    "Cursos y/o programas de especialización",
+    "Curso de Oracle Database, con un acumulado mínimo de 40 horas.",
+    "Curso de Redes móviles, con un acumulado mínimo de 12 horas.",
+    "Conocimiento de Telecomunicaciones, regulación y marco normativo relacionado al RENTESEG (Decreto Legislativo Nº 1338, Decreto Supremo Nº 007-2019-IN, Resolución de Consejo Directivo Nº 007-2020-CD/OSIPTEL y demás normas que las modifiquen o sustituyan, según sea el caso).",
+    "Procesador de textos, Hojas de cálculo y Programa de presentaciones a nivel intermedio.",
+    "Ingles básico.",
+    "Pensamiento analítico."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-osiptel-agosto-2026-1-plazas-67427.html"
+  },
+  {
+   "id": 82,
+   "puesto": "Auxiliar Coactivo",
+   "empresa": "MUNICIPALDIAD LA VICTORIA",
+   "cat": "Tecnología",
+   "min": 4500,
+   "max": 4500,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-06",
+   "restan": 0,
+   "score": 87,
+   "resumen": "Convocatoria CAS de MUNICIPALDIAD LA VICTORIA en Lima. Una plaza.",
+   "funciones": [
+    "Cursos y/o Diplomados",
+    "Derecho Administrativo y Procedimiento de",
+    "Ejecución Coactivo y/o afines.",
+    "Habilidades o competencias",
+    "Responsabilidad, comunicación oral, disposición al",
+    "Trabajo en equipo y cooperación, capacidad",
+    "Analítica, imparcialidad, trabajo bajo presión."
+   ],
+   "requisitos": [
+    "Bachiller en Derecho",
+    "Experiencia General: Tres (03) años en el sector público y/o privado",
+    "Experiencia específica: Un (01) año de experiencia laboral publica en"
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-municipaldiad-victoria-agosto-2026-1-plazas-67247.html"
+  },
+  {
+   "id": 83,
+   "puesto": "Tecnico Agropecuario",
+   "empresa": "GERENCIA DE AGRICULTURA(GERAGRI) CUSCO",
+   "cat": "Tecnología",
+   "min": 2237,
+   "max": 2237,
+   "modalidad": "Presencial",
+   "ciudad": "Cusco",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-10",
+   "restan": 4,
+   "score": 72,
+   "resumen": "Convocatoria CAS de GERENCIA DE AGRICULTURA(GERAGRI) CUSCO en Cusco. Una plaza.",
+   "funciones": [],
+   "requisitos": [
+    "Titulo técnico Agropecuario o afines al cargo",
+    "Experiencia General: UN (01) AÑO DE EXPERIENCIA.",
+    "Experiencia específica",
+    "Experiencia requerido para el cargo en la función o la materia",
+    "SEIS (06) MESES DE EXPERIENCIA EN CARGOS SIMILARES",
+    "Experiencia requerida para el cargo, señale el tiempo requerido en el sector público",
+    "SEIS (06) MESES DE EXPERIENCIA EN SECTOR PUBLICO",
+    "Conocimiento técnico",
+    "CONOCIMIENTO EN MANEJO DE LOS RECURSOS HIDRICOS Y LAS BUENAS PRACTICAS AGRICOLAS, CONOCIMIENTO DE METODOLOGIAS DE",
+    "CAPACITACIONES A ADULTOS Y EL MANEJO DE SISTEMAS DE RIEGO.",
+    "Cursos y/o programas de especialización",
+    "CURSOS DE CAPACITACION EN GESTION HIDRICA, TALLERES Y SEMINARIOS RELACIONADOS AL SECTOR AGRARIO, GESTION PUBLICA, OFIMATICA."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-gerencia-agricultura-geragri-cusco-agosto-2026-1-plazas-67279.html"
+  },
+  {
+   "id": 84,
+   "puesto": "Analista Iii en Comunicaciones y Producción Audiovisual",
+   "empresa": "PEIP ESCUELAS BICENTENARIO",
+   "cat": "Ingeniería",
+   "min": 8000,
+   "max": 8000,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-11",
+   "restan": 5,
+   "score": 72,
+   "resumen": "Convocatoria CAS de PEIP ESCUELAS BICENTENARIO en Lima. Una plaza.",
+   "funciones": [],
+   "requisitos": [
+    "Bachiller universitario en Ciencias de la Comunicación y/o Comunicación Social",
+    "Experiencia General: Tres (03) años",
+    "Experiencia Especifica",
+    "Experiencia Especifica en la función o la materia: Tres (03) años realizando actividades en fotografía y/o comunicación audiovisual",
+    "Experiencia Especifica en el puesto o cargo (precisando este): Tres (03) años como asistente, que deben formar parte de los tres (03) años en la función o la materia",
+    "Cursos y/o programas de especialización",
+    "Curso y/o Programas de especialización y/o diplomados en Fotografía y/o Producción de televisión y/o Producción audiovisual y/o Realización cinematográfica y/o Gestión estratégica de la comunicación corporativa y/o Prevención de conflictos y/o Gestión social y/o Gestión de reputación.",
+    "Conocimientos en gestión pública, gestión de la comunicación, producción audiovisual, estrategias de comunicación, manejo de cámaras y gestión y prevención de conflictos sociales.",
+    "Habilidades o competencias",
+    "Comunicación, creatividad y trabajo en equipo."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-peip-escuelas-bicentenario-agosto-2026-1-plazas-67313.html"
+  },
+  {
+   "id": 85,
+   "puesto": "Especialista en Gestión de Mecanismos para la Conservación de Bosques",
+   "empresa": "PROGRAMA CONSERVACION DE BOSQUES",
+   "cat": "Tecnología",
+   "min": 7500,
+   "max": 7500,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-12",
+   "restan": 6,
+   "score": 72,
+   "resumen": "Convocatoria CAS de PROGRAMA CONSERVACION DE BOSQUES en Lima. Una plaza.",
+   "funciones": [],
+   "requisitos": [
+    "Título profesional otorgado por universidad en las carreras de Ingeniería Geográfica, Ingeniería Ambiental, Ingeniería Forestal, Biología o afines a la formación",
+    "Experiencia General: Cuatro (04) años.",
+    "Experiencia Especifica",
+    "Experiencia Especifica en la función o la materia: Tres (03) años de experiencia específica en la función o materia.",
+    "Experiencia Especifica en el sector público: Dos (02) años de experiencia específica en el sector público que debe ser parte de los tres (03) años de experiencia específica en la función o materia",
+    "Experiencia Especifica en el puesto o cargo (precisando este): Dos (02) años de experiencia específica puesto o cargos de analista o similares en el sector público o privado.",
+    "Cursos y/o programas de especialización",
+    "Cursos y/o programas de especialización en Monitoreo de Proyectos, Recursos Naturales, Gestión Pública, o relacionados a la materia (mínimo de 90 horas acumuladas)",
+    "Conocimiento en Ofimática a nivel intermedio (Procesador de textos, Hojas de cálculo y Programa de presentaciones).",
+    "Habilidades o competencias"
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-programa-conservacion-bosques-agosto-2026-1-plazas-67373.html"
+  },
+  {
+   "id": 86,
+   "puesto": "Especialista en almacén",
+   "empresa": "UGEL PADRE ABAD",
+   "cat": "Logística",
+   "min": 3164,
+   "max": 3164,
+   "modalidad": "Presencial",
+   "ciudad": "Ucayali",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-11",
+   "restan": 5,
+   "score": 72,
+   "resumen": "Convocatoria CAS de UGEL PADRE ABAD en Ucayali. Una plaza.",
+   "funciones": [],
+   "requisitos": [
+    "Profesional Economista, Licenciado en Administración, Contador Colegiado (habilitado).",
+    "Experiencia General: Tres (03) años de experiencia general en el sector público o privado.",
+    "Experiencia Específica en la función o materia: no menor de un (01) años de experiencia en Gestión Pública en el puesto convocado en el sector Educación.",
+    "Cursos y/o programas de especialización",
+    "Certificado, o Taller SIGA SIAF y Almacén."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-padre-abad-agosto-2026-1-plazas-67383.html"
+  },
+  {
+   "id": 87,
+   "puesto": "Coordinador(a) Iii de Proyectos",
+   "empresa": "INVERMET",
+   "cat": "Tecnología",
+   "min": 12000,
+   "max": 12000,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-13",
+   "restan": 7,
+   "score": 72,
+   "resumen": "Convocatoria CAS de INVERMET en Lima. Una plaza.",
+   "funciones": [],
+   "requisitos": [
+    "Título Profesional Universitario de la carrera de Arquitectura. Con Colegiatura y Habilitación Profesional Vigente.",
+    "Experiencia General: Cinco (05) años de experiencia general, en el Sector Público o en el Sector Privado.",
+    "Experiencia Especifica",
+    "Tres (03) años de experiencia específica en puestos idénticos o similares o en puestos con funciones equivalentes, en el Sector Público o Sector Privado.",
+    "Dos (02) años de experiencia especifica en puestos idénticos o similares o en puestos con funciones equivalentes, en el Sector Público.",
+    "Un (01) año de experiencia en puestos o cargos de especialistas, ejecutivos/as, coordinadores/as, responsables, supervisores/as, asesores/as de Alta Dirección o su equivalencia.",
+    "Experiencia mínima en el puesto como Supervisor/Coordinador en el sector público o privado.",
+    "Diplomado y/o Programa de Especialización en Gerencia de Proyectos y/o Valorización y Liquidación de Obra y/o Presupuesto Público.",
+    "Conocimiento en Gestión Pública.",
+    "Habilidades o competencias",
+    "Orientación a resultados y de servicio al ciudadano, Mejora continua, Trabajo en equipo y Capacidad de análisis"
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-invermet-agosto-2026-1-plazas-67389.html"
+  },
+  {
+   "id": 88,
+   "puesto": "Especialista en Trabajo Social",
+   "empresa": "MINISTERIO DEL AMBIENTE(MINAM)",
+   "cat": "Recursos Humanos",
+   "min": 7000,
+   "max": 7000,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-13",
+   "restan": 7,
+   "score": 72,
+   "resumen": "Convocatoria CAS de MINISTERIO DEL AMBIENTE(MINAM) en Lima. Una plaza.",
+   "funciones": [],
+   "requisitos": [
+    "Titulo profesional en Trabajo Social. Con colegiatura y habilitación vigente.",
+    "Experiencia General: Cinco (05) años.",
+    "Experiencia Especifica: Tres (03) años, de los cuales dos (02) años sean en puestos y/o funciones similares al cargo y en el sector púbico.",
+    "Cursos y/o programas de especialización",
+    "90 horas acumuladas en Gestión de Recursos Humanos y/o Gestión de Relaciones Humanas y/o Gestión del Talento y/o Seguridad y Salud en el Trabajo y/o Seguridad Social.",
+    "Gestión de subsidios y seguros, EPS, bienestar social. Conocimiento en ofimática (Procesador de textos, Hojas de cálculo y Programa de presentaciones) a nivel intermedio.",
+    "Habilidades o competencias",
+    "Planificación, Empatía, Autocontrol, Comunicación Oral."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ministerio-del-ambiente-minam-agosto-2026-1-plazas-67390.html"
+  },
+  {
+   "id": 89,
+   "puesto": "Especialista",
+   "empresa": "UGEL TAYACAJA",
+   "cat": "Tecnología",
+   "min": 2664,
+   "max": 2664,
+   "modalidad": "Presencial",
+   "ciudad": "Huancavelica",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-12",
+   "restan": 6,
+   "score": 72,
+   "resumen": "Convocatoria CAS de UGEL TAYACAJA en Huancavelica. Una plaza.",
+   "funciones": [],
+   "requisitos": [
+    "Titulo universitario Asistente Social,",
+    "Trabajador social, Administrador. requiere colegiatura y habilitación profesional",
+    "Experiencia General: Dos 02 años",
+    "Experiencia Específica",
+    "Experiencia requerida para el puesto en la función o la materia.",
+    "01 Año (Asistente Social, Trabajador Social)",
+    "Experiencia en el sector público: 01 año.",
+    "Cursos y/o programas de especialización",
+    "90 Horas acumuladas en curso de Marco Legal de SERVIR, Marco Legal Laboral, Marco Legal del sector",
+    "Educación, Marco Legal Seguridad Social, Gestión de la cultura y Clima Laboral."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-tayacaja-agosto-2026-1-plazas-67405.html"
+  },
+  {
+   "id": 90,
+   "puesto": "Especialista en Educación",
+   "empresa": "UGEL-7",
+   "cat": "Tecnología",
+   "min": 4364,
+   "max": 4364,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-14",
+   "restan": 8,
+   "score": 72,
+   "resumen": "Convocatoria CAS de UGEL-7 en Lima. Una plaza.",
+   "funciones": [],
+   "requisitos": [
+    "Licenciado y/o profesor en Educación Secundaria o Primaria.",
+    "Experiencia General: Experiencia laboral general de cinco (05) años en el sector público y/o privado",
+    "Experiencia específica",
+    "Experiencia laboral específica de dos (02) años en función o materia en el ámbito educación, en el sector público y/o privado",
+    "Experiencia laboral específica de dos (02) años en el nivel mínimo de Analista, ya sea en el sector público y/o privado.",
+    "Experiencia laboral específica de un (01) año en funciones relacionadas al ámbito educación, en el sector público",
+    "Competencias: Trabajo en equipo, capacidad de análisis, comunicación asertiva, liderazgo",
+    "Cursos y/o programas de especialización: Curso de Gestión Escolar.",
+    "Conocimiento en Normatividad del Sector Educación",
+    "Ley del Procedimiento Administrativo General.",
+    "Ley de los Centros Educativos Privados y su reglamento.",
+    "Manejo de Office a nivel de dominio intermedio."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-agosto-2026-1-plazas-67415.html"
+  },
+  {
+   "id": 91,
+   "puesto": "Especialista Administrativo I",
+   "empresa": "GERENCIA SUB REGIONAL HUAYTARÁ",
+   "cat": "Tecnología",
+   "min": 2664,
+   "max": 2664,
+   "modalidad": "Presencial",
+   "ciudad": "Huancavelica",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-17",
+   "restan": 11,
+   "score": 72,
+   "resumen": "Convocatoria CAS de GERENCIA SUB REGIONAL HUAYTARÁ en Huancavelica. Una plaza.",
+   "funciones": [],
+   "requisitos": [
+    "TITULO EN ADMINISTRACIÓN ., DERECHO Y/O CARRERAS AFINES",
+    "Experiencia General: 1 EXPERIENCIA GENERAL 01 AÑO",
+    "Experiencia específica en la función o materia: EXPERIENCIA MÍNIMA 06 MESES.",
+    "Experiencia específica en el sector público: EXPERIENCIA MÍNIMA 06 MESES.",
+    "Conocimiento técnico",
+    "CONOCIMIENTOS EN PLANEAMIENTO ESTRATEGICO DE RECURSOS HUMANOS",
+    "CONOCIMIENTO DE LA GESTION DE RECURSOS HUMANOS CON UN ENFOQUE POR COMPETENCIAS.",
+    "RECURSOS HUMANOS (NORMAS LEGALES VIGENTES, PRINCIPIOS Y PROCEDIMIENTOS APLICADOS EN LA ADMINISTRACIÓN DE LOS RECURSOS HUMANOS EN EL SECTOR PÚBLICO)",
+    "PRESUPUESTO PUBLICO (NORMAS RELACIONADAS A PERSONAL)",
+    "Cursos y/o programas de especialización",
+    "ACREDITAR CAPACITACIÓN EN LA PROFESIÓN DURANTE LOS ULTIMOS 5 AÑOS.",
+    "ACREDITAR CAPACITACIÓN EN SERVICIO AL CIUDADANO DURANTE EL ULTIMO AÑO."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-gerencia-sub-regional-huaytara-agosto-2026-1-plazas-67426.html"
+  },
+  {
+   "id": 92,
+   "puesto": "Chofer",
+   "empresa": "IPD",
+   "cat": "Logística",
+   "min": 1200,
+   "max": 1200,
+   "modalidad": "Presencial",
+   "ciudad": "Cusco",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-17",
+   "restan": 11,
+   "score": 72,
+   "resumen": "Convocatoria CAS de IPD en Cusco. Una plaza.",
+   "funciones": [],
+   "requisitos": [
+    "Secundaria completa. Licencia de Conducir Categoría A-II-A (Mínimo)",
+    "Experiencia General: Experiencia general no menor a tres (03) años, en el sector público y/o privado.",
+    "Experiencia específica",
+    "Experiencia especifica no menor a dos (02) años en la función o la materia, en el sector público y/o privado.",
+    "Experiencia especifica no menor a un (01) año en funciones relacionadas al puesto como chofer o conductor, en el sector público y/o privado.",
+    "Cursos y/o programas de especialización",
+    "Capacitación relacionada a conducción o transporte o mantenimiento vehicular (mínimo 08 horas).",
+    "Competencias: Proactividad, Adaptabilidad, Trabajo en Equipo, Compromiso Laboral, Planificación, y Comunicación.",
+    "Conocimiento en mecánica básica automotriz.",
+    "Conocimiento básico de primeros auxilios."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ipd-agosto-2026-1-plazas-67431.html"
+  },
+  {
+   "id": 93,
+   "puesto": "Técnico",
+   "empresa": "UGEL LA MAR",
+   "cat": "Tecnología",
+   "min": 1514,
+   "max": 1514,
+   "modalidad": "Presencial",
+   "ciudad": "Ayacucho",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-13",
+   "restan": 7,
+   "score": 72,
+   "resumen": "Convocatoria CAS de UGEL LA MAR en Ayacucho. Una plaza.",
+   "funciones": [],
+   "requisitos": [
+    "Secundaria completa",
+    "Experiencia General: Experiencia laboral; ya sea en el sector público o privado.",
+    "01 año. (leer consideraciones importantes)",
+    "Experiencia específica",
+    "Experiencia requerida para el puesto en la función o la materia",
+    "06 meses en mantenimiento o limpieza",
+    "Conocimiento técnico",
+    "Manejo de insumos y recursos de limpieza y mantenimiento.",
+    "Manejo de procedimientos para la desinfección de ambientes, equipos y materiales de la IE."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-mar-agosto-2026-1-plazas-67432.html"
+  },
+  {
+   "id": 94,
+   "puesto": "Especialista en Ingeniería de Transporte",
+   "empresa": "INVERMET",
+   "cat": "Tecnología",
+   "min": 8500,
+   "max": 8500,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-18",
+   "restan": 12,
+   "score": 72,
+   "resumen": "Convocatoria CAS de INVERMET en Lima. Una plaza.",
+   "funciones": [],
+   "requisitos": [
+    "Título Profesional de la Carrera Universitaria de Ingeniería de Transporte. Con Colegiatura y Habilitación Profesional Vigente.",
+    "Experiencia General: Cinco (05) años de experiencia general, en el Sector Público o en el Sector Privado.",
+    "Experiencia Especifica",
+    "Dos (02) años de experiencia específica en puestos idénticos o similares o en puestos con funciones equivalentes, en el Sector Público o Sector Privado.",
+    "Un (01) año de experiencia especifica en puestos idénticos o similares o en puestos con funciones equivalentes, en el Sector Público.",
+    "Experiencia mínima en el puesto como Especialista en el sector público o privado.",
+    "Cursos y/o programas de especialización",
+    "Curso y/o Diplomado y/o Programa de Especialización en Gestión de la Movilidad y/o Ingeniería de Trasporte y/o Gestión de Infraestructura.",
+    "Conocimiento en Gestión Pública.",
+    "Habilidades o competencias",
+    "Orientación a resultados y de servicio al ciudadano, Mejora continua, Trabajo en equipo y Capacidad de análisis"
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-invermet-agosto-2026-1-plazas-67465.html"
+  },
+  {
+   "id": 95,
+   "puesto": "Jefe",
+   "empresa": "MUNICIPALIDAD DE PACUCHA",
+   "cat": "Ingeniería",
+   "min": 2200,
+   "max": 2200,
+   "modalidad": "Presencial",
+   "ciudad": "Apurímac",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-17",
+   "restan": 11,
+   "score": 72,
+   "resumen": "Convocatoria CAS de MUNICIPALIDAD DE PACUCHA en Apurímac. Una plaza.",
+   "funciones": [],
+   "requisitos": [
+    "Título profesional universitario en Ingeniería Ambiental, Ingeniería Civil o Arquitectura.",
+    "Experiencia General: Mínimo de (2) años en las entidades del sector público y/o privado.",
+    "Experiencia Específica: Mínimo de un (01) año desempeñando funciones como responsable, jefe o encargado de la Unidad de Defensa Civil y/o en cargos vinculados a la Gestión del Riesgo de Desastres.",
+    "Cursos y/o programas de especialización",
+    "Capacitación acreditada en Gestión del Riesgo de Desastres, evaluación de riesgos, Planes de Emergencia y/o afines."
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-municipalidad-pacucha-agosto-2026-1-plazas-67473.html"
+  },
+  {
+   "id": 96,
+   "puesto": "Especialista en Fiscalización de Establecimientos Farmaceuticos",
+   "empresa": "DIRECCION DE SALUD(DIRESA) SAN MARTÍN",
+   "cat": "Prácticas",
+   "min": 5564,
+   "max": 5564,
+   "modalidad": "Presencial",
+   "ciudad": "San Martín",
+   "fuente": "Convocatorias CAS",
+   "dias": null,
+   "vence": "2026-08-07",
+   "restan": 1,
+   "score": 71,
+   "resumen": "Convocatoria CAS de DIRECCION DE SALUD(DIRESA) SAN MARTÍN en San Martín. Una plaza.",
+   "funciones": [],
+   "requisitos": [
+    "Titulo universitario Quimico Farmaceutico requiere colegiatura y habilitación profesional",
+    "Experiencia General: Tres 03 años",
+    "Experiencia específica",
+    "Experiencia especifica requerida en la función o la materia: Tres 03 años",
+    "Experiencia especifica requerida en el sector público: Un 01 año",
+    "Cursos y/o programas de especialización",
+    "Cursos y/o programas de especialización Auditoria en salud o Buenas prácticas de oficina o afines a la función o materia del puesto (como minimo 120 horas acumuladas), con una antigüedad no mayor de cinco 05 años"
+   ],
+   "beneficios": [
+    "Régimen CAS (D. Leg. 1057): afiliación a EsSalud a cargo de la entidad",
+    "Afiliación a un régimen pensionario (ONP o AFP) a elección",
+    "30 días calendario de vacaciones al año",
+    "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
+    "Jornada máxima de 48 horas semanales"
+   ],
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-direccion-salud-diresa-san-martin-agosto-2026-1-plazas-67265.html"
   }
  ]
 }
