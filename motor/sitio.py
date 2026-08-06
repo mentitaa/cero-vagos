@@ -28,6 +28,73 @@ from .almacen import Almacen
 from .modelos import sin_tildes
 
 RAIZ = Path(__file__).resolve().parent.parent
+
+# --------------------------------------------------------------------------
+# Medición de visitas
+#
+# Cloudflare Web Analytics. Se eligió por lo que NO hace: no pone cookies, no
+# sigue a nadie entre sitios y no guarda nada que identifique a una persona.
+# Por eso el sitio no necesita cartel de consentimiento y la política de
+# privacidad sigue siendo cierta tal como está escrita — que es media razón de
+# ser del proyecto.
+#
+# El token no es un secreto: viaja en el HTML de cada página, a la vista de
+# cualquiera. Solo dice a qué sitio pertenecen las visitas; no da acceso a la
+# cuenta ni permite leer los datos.
+#
+# Vive acá, en un solo lugar, y de acá sale para la portada y para la página de
+# cada oferta. Si alguna vez cambia, se cambia una vez.
+#
+# Al agregarlo hubo que sumar dos direcciones a la lista blanca de seguridad de
+# las tres plantillas: de una se baja el archivo y a la otra se le mandan las
+# visitas. Sin eso el navegador lo bloquea y no avisa a nadie.
+ANALITICA_TOKEN = "8025c1f703514128a4b665979e0ee8d3"
+ANALITICA_ORIGEN = "https://static.cloudflareinsights.com"
+ANALITICA_ENVIO = "https://cloudflareinsights.com"
+
+INICIO_ANALITICA = "<!-- ANALITICA:INICIO -->"
+FIN_ANALITICA = "<!-- ANALITICA:FIN -->"
+
+
+def bloque_analitica() -> str:
+    """El fragmento que cuenta las visitas. Vacío si no hay token configurado."""
+    if not ANALITICA_TOKEN:
+        return ""
+    return (f'<script defer src="{ANALITICA_ORIGEN}/beacon.min.js" '
+            f"data-cf-beacon='{{\"token\": \"{ANALITICA_TOKEN}\"}}'></script>")
+
+
+def csp(*, con_formulario: bool = False) -> str:
+    """
+    La lista blanca de la página: qué se permite cargar y a dónde se permite
+    hablar. Todo lo que no esté acá, el navegador lo bloquea.
+
+    Está en una sola función para que las tres plantillas no se desincronicen:
+    antes eran tres textos copiados y bastaba con actualizar dos para dejar un
+    agujero —o para romper algo— sin que se notara.
+    """
+    # La portada lleva su JavaScript escrito dentro del propio HTML y manda el
+    # formulario de alertas; las páginas de oferta no hacen ni lo uno ni lo
+    # otro, y conviene que sigan siendo las más cerradas de las dos.
+    if con_formulario:
+        guiones = "'self' 'unsafe-inline' " + ANALITICA_ORIGEN
+        conectar = "'self' https://formspree.io " + ANALITICA_ENVIO
+        formulario = "'self'"
+    else:
+        guiones = "'self' " + ANALITICA_ORIGEN
+        conectar = ANALITICA_ENVIO
+        formulario = "'none'"
+
+    return (
+        "default-src 'self'; "
+        f"script-src {guiones}; "
+        "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
+        "font-src https://fonts.gstatic.com; "
+        "img-src 'self'; "
+        f"connect-src {conectar}; "
+        f"form-action {formulario}; "
+        "base-uri 'none'; object-src 'none'"
+    )
 CARPETA_OFERTAS = "oferta"
 
 # Mientras no haya dominio propio, la dirección que da GitHub.
@@ -271,7 +338,7 @@ def pagina_oferta(o: dict, sitio: str) -> str:
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{_e(sitio)}/assets/compartir.png">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="{csp()}">
 <link rel="icon" href="{_e(sitio)}/assets/icono.svg" type="image/svg+xml">
 <link rel="icon" href="{_e(sitio)}/assets/icono-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="{_e(sitio)}/assets/icono-180.png">
@@ -282,6 +349,7 @@ def pagina_oferta(o: dict, sitio: str) -> str:
 <script type="application/ld+json">
 {jobposting(o, url)}
 </script>
+{bloque_analitica()}
 </head>
 <body>
 
@@ -378,7 +446,7 @@ def pagina_404(sitio: str) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Esta oferta ya cerró | Cero Vagos</title>
 <meta name="robots" content="noindex">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="{csp()}">
 <link rel="icon" href="{_e(sitio)}/assets/icono.svg" type="image/svg+xml">
 <link rel="icon" href="{_e(sitio)}/assets/icono-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="{_e(sitio)}/assets/icono-180.png">
@@ -393,6 +461,7 @@ def pagina_404(sitio: str) -> str:
 .cuerpo{{padding:24px}}
 .cuerpo p{{font-size:16px;line-height:1.55;font-weight:500;margin-bottom:14px}}
 </style>
+{bloque_analitica()}
 </head>
 <body>
 <div class="barra"><div class="wrap">
