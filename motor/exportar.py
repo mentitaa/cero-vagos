@@ -38,7 +38,14 @@ def _dias_desde(valor: str | None) -> int | None:
 
 
 def _a_formato_web(fila: dict, indice: int) -> dict:
-    dias = _dias_desde(fila.get("publicado")) or 0
+    # Ojo: `dias` puede ser None, y eso NO es lo mismo que cero.
+    #
+    # Antes se hacía `or 0`, y entonces un aviso sin fecha de publicación
+    # aparecía en la web como "Publicada hoy". Las convocatorias CAS no dicen
+    # cuándo se publicaron —dicen hasta cuándo se puede postular, que es lo que
+    # de verdad importa— así que todas habrían salido con una fecha inventada.
+    # Se deja en None y la web se calla en vez de mentir.
+    dias = _dias_desde(fila.get("publicado"))
     restantes = _dias_desde(fila.get("vence"))
     # _dias_desde devuelve días transcurridos; para el cierre queremos los que
     # faltan, que es el mismo número al revés.
@@ -54,7 +61,7 @@ def _a_formato_web(fila: dict, indice: int) -> dict:
         "modalidad": fila["modalidad"] or "Presencial",
         "ciudad": fila["ciudad"] or "Perú",
         "fuente": fila["fuente"],
-        "dias": max(0, dias),
+        "dias": max(0, dias) if dias is not None else None,
         "vence": fila.get("vence") or "",
         "restan": restantes,          # None si el aviso no dice hasta cuándo
         "score": fila["score"],
