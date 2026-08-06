@@ -379,9 +379,9 @@ def pagina_oferta(o: dict, sitio: str) -> str:
     {_lista("Qué te dan", o.get("beneficios") or [], "beneficios")}
 
     <div class="pie">
-      <a class="btn" href="{_e(o.get('url') or '#')}" target="_blank" rel="noopener">Postular en {_e(o.get('fuente') or 'el portal')} →</a>
+      <a class="btn" href="{_e(sitio)}/{CARPETA_SALIDA}/{o['slug']}/" target="_blank" rel="noopener">Postular en {_e(o.get('fuente') or 'el portal')} →</a>
       <a class="btn btn--blanco" href="{_e(sitio)}/#ofertas">Ver más ofertas</a>
-      <span class="nota">Te llevamos al aviso original. Cero Vagos nunca te pide pagar.</span>
+      <span class="nota">Te llevamos al <a href="{_e(o.get('url') or '#')}" target="_blank" rel="noopener nofollow">aviso original</a>. Cero Vagos nunca te pide pagar.</span>
     </div>
   </article>
 </div>
@@ -499,8 +499,83 @@ def pagina_404(sitio: str) -> str:
 def robots(sitio: str) -> str:
     return ("# Cero Vagos\n"
             "User-agent: *\n"
-            "Allow: /\n\n"
+            "Allow: /\n"
+            # Las páginas de salida son un trámite de medio segundo, no
+            # contenido. Indexarlas mandaría a la gente desde Google a una
+            # pantalla de paso, y a Google le diría que el sitio tiene cientos
+            # de páginas sin nada dentro.
+            f"Disallow: /{CARPETA_SALIDA}/\n\n"
             f"Sitemap: {sitio}/sitemap.xml\n")
+
+
+# --------------------------------------------------------------------------
+# Páginas de salida: contar los clics hacia el aviso original
+#
+# El botón de postular ya no va derecho al portal: pasa por una página nuestra
+# que redirige sola. Como esa página cuenta como una visita, el medidor nos
+# dice cuántas personas hicieron clic en CADA aviso — que es el único número
+# que le interesa a una empresa cuando le ofrezcas publicar contigo.
+#
+# Tres decisiones que van juntas y conviene no tocar por separado:
+#
+#   · Redirige con `meta refresh`, no con JavaScript. La lista blanca de las
+#     páginas internas prohíbe el JavaScript escrito dentro del HTML, y no se
+#     va a aflojar por esto: la etiqueta hace exactamente lo mismo, funciona
+#     con el JavaScript desactivado y no obliga a abrir esa puerta.
+#
+#   · Espera un segundo. Suena a lo contrario de lo que uno quiere, pero el
+#     medidor necesita ese momento para mandar el dato; redirigiendo al
+#     instante se perdería justo el clic que queríamos contar. Aun así habrá
+#     algún clic sin contar en conexiones lentas: el número real siempre será
+#     un poco mayor que el que veas.
+#
+#   · Lleva el enlace a la vista y la dirección escrita. No se esconde a dónde
+#     va la persona, y quien no quiera esperar hace clic y ya.
+# --------------------------------------------------------------------------
+
+CARPETA_SALIDA = "ir"
+
+
+def pagina_salida(o: dict, sitio: str) -> str:
+    destino = o.get("url") or ""
+    ficha = f"{sitio}/{CARPETA_OFERTAS}/{o['slug']}/"
+    portal = o.get("fuente") or "el portal"
+    return f"""<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Te llevamos al aviso | Cero Vagos</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="refresh" content="1;url={_e(destino)}">
+<meta http-equiv="Content-Security-Policy" content="{csp()}">
+<link rel="icon" href="{_e(sitio)}/assets/icono.svg" type="image/svg+xml">
+<link rel="icon" href="{_e(sitio)}/assets/icono-32.png" sizes="32x32" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>{_ESTILOS}
+.salida{{max-width:560px;margin:0 auto;padding:90px 18px;text-align:center}}
+.salida h1{{font-size:clamp(24px,5vw,34px);margin-bottom:14px}}
+.salida p{{font-size:16px;font-weight:500;line-height:1.55;margin-bottom:10px}}
+.salida .destino{{font-size:13px;word-break:break-all;opacity:.65;margin:18px 0 26px}}
+.salida .btn{{margin-bottom:22px}}
+.salida .volver{{display:inline-block;font-size:14px;font-weight:700;text-decoration:underline}}
+</style>
+{bloque_analitica()}
+</head>
+<body>
+<main class="salida">
+  <h1>Te llevamos al aviso</h1>
+  <p>Esta oferta se publicó en <b>{_e(portal)}</b> y ahí es donde se postula.
+     Cero Vagos no recibe tu CV ni cobra por postular.</p>
+  <p class="destino">{_e(destino)}</p>
+  <a class="btn btn--rojo" href="{_e(destino)}" rel="noopener nofollow">Ir ahora →</a>
+  <div><a class="volver" href="{_e(ficha)}">Volver a la oferta</a></div>
+</main>
+</body>
+</html>
+"""
 
 
 # --------------------------------------------------------------------------
@@ -649,19 +724,33 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
     carpeta = raiz / CARPETA_OFERTAS
     carpeta.mkdir(parents=True, exist_ok=True)
 
+    # La página de salida por la que pasa el botón de postular. Va en su propia
+    # carpeta y con el mismo nombre que la oferta, para que al mirar el medidor
+    # se sepa de un vistazo qué aviso recibió los clics.
+    salidas = raiz / CARPETA_SALIDA
+    salidas.mkdir(parents=True, exist_ok=True)
+
     vigentes = {o["slug"] for o in ofertas}
     for o in ofertas:
         destino = carpeta / o["slug"]
         destino.mkdir(parents=True, exist_ok=True)
         (destino / "index.html").write_text(pagina_oferta(o, sitio), encoding="utf-8")
 
+        paso = salidas / o["slug"]
+        paso.mkdir(parents=True, exist_ok=True)
+        (paso / "index.html").write_text(pagina_salida(o, sitio), encoding="utf-8")
+
     # Se borran las páginas de ofertas que ya salieron de la web. Una oferta
     # vencida que sigue indexada en Google es peor que no tenerla nunca.
+    # Las de salida se borran con ellas: si la oferta ya no está, su página de
+    # paso llevaría a un aviso cerrado y encima seguiría contando clics.
     retiradas = 0
-    for vieja in carpeta.iterdir():
-        if vieja.is_dir() and vieja.name not in vigentes:
-            shutil.rmtree(vieja, ignore_errors=True)
-            retiradas += 1
+    for lugar in (carpeta, salidas):
+        for vieja in lugar.iterdir():
+            if vieja.is_dir() and vieja.name not in vigentes:
+                shutil.rmtree(vieja, ignore_errors=True)
+                if lugar is carpeta:
+                    retiradas += 1
 
     # El ranking de transparencia salarial: contenido propio que atrae
     # búsquedas y da material para compartir.

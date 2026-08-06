@@ -53,7 +53,18 @@ Conectado el 4 de agosto de 2026: dominio en Squarespace, correo
 
 Código: `motor/` (recolección, filtro, score, publicación), `datos/` (SQLite,
 se genera solo), `pruebas/` (los tests), `index.html` (el sitio, un solo
-archivo), `oferta/` (una página por oferta, generada).
+archivo), `oferta/` (una página por oferta, generada), `ir/` (una página de
+salida por oferta, generada).
+
+Las visitas se miden con **Cloudflare Web Analytics**: sin cookies, así que no
+hace falta cartel de consentimiento y la política de privacidad sigue siendo
+cierta. El token vive en `ANALITICA_TOKEN` (`motor/sitio.py`) y también, a
+mano, en `index.html`; un test vigila que digan lo mismo.
+
+El botón de postular no va derecho al portal: pasa un segundo por `ir/<slug>/`,
+que redirige sola. Ese rodeo existe para **contar cuántos clics recibe cada
+aviso**, que es el número que le va a interesar a una empresa. El segundo de
+espera no es un descuido: sin él, el medidor no alcanza a mandar el dato.
 
 El logo vive en `assets/`, en tres versiones que existen por una razón:
 `logo-oscuro.svg` (rojo + negro) para fondos claros, `logo-claro.svg`
@@ -70,7 +81,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **217** y pasan todos.
+Los tests son **241** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -280,7 +291,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 217 tests
+python3 -m unittest discover pruebas -v      # los 241 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
