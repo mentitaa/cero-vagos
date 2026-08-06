@@ -18,11 +18,16 @@ on:
       limite:
         description: "Avisos por portal privado"
         default: "120"
+      limite_cas:
+        description: "Avisos de Convocatorias CAS"
+        default: "120"
       limite_publicas:
         description: "Avisos de Convocatorias del Estado"
         default: "300"
+      # Solo afecta a Bumeran. El Estado y Laborum van sin ventana por decisión
+      # propia, explicada en cada paso: con ventana entregan cero.
       dias:
-        description: "Solo avisos publicados en los últimos N días (0 = sin límite)"
+        description: "Días hacia atrás, solo para Bumeran (0 = sin límite)"
         default: "3"
 
 # Si una corrida se demora, la siguiente espera en vez de pisarla.
@@ -56,15 +61,46 @@ jobs:
         run: python -m playwright install --with-deps chromium
 
       # Cada fuente tiene su propio reloj: así una lenta no se come el tiempo
-      # de las demás ni tumba la corrida entera.
-      # Al Estado se le da MÁS margen que a los privados, al revés de lo que
-      # parecería por volumen. La razón está en los números: de sus avisos, el
-      # 100% declara sueldo; de los de Bumeran, el 6%. Es también la única
-      # fuente que trae ciudades fuera de Lima.
-      - name: Convocatorias del Estado
-        timeout-minutes: 60
+      # de las demás ni tumba la corrida entera. Los cuatro relojes suman 165
+      # minutos y el trabajo entero tiene 180, o sea que queda margen para
+      # instalar Python y el navegador. Si se sube uno, hay que bajar otro o
+      # subir el `timeout-minutes` del trabajo.
+      #
+      # A las fuentes públicas se les da MÁS margen que a los privados, al revés
+      # de lo que parecería por volumen. La razón está en los números: de sus
+      # avisos, el 100% declara sueldo, contra el 6% de Bumeran.
+      #
+      # Las dos van en pasos SEPARADOS, por la misma lección que ya costó cara
+      # con Bumeran y Laborum: compartir un reloj hace que la segunda se quede
+      # siempre a medias.
+      #
+      # Las dos van SIN ventana de días, igual que Laborum y por una razón
+      # parecida. Una convocatoria CAS se publica y queda abierta dos o tres
+      # semanas, así que casi ninguna tiene menos de 3 días aunque esté
+      # perfectamente vigente. Con la ventana puesta pasaba algo peor que
+      # perderlas: a los 40 avisos viejos seguidos el motor da por agotado lo
+      # nuevo y corta la búsqueda. El 5/8/2026 se detuvo en la dirección 100 de
+      # 512 y la fuente entregó cero, en verde y en minuto y medio.
+      #
+      # `--dias 0` no es "sin límite": la fuente cae a su tope de 60 días, que
+      # es el mismo que ya aplica el filtro.
+
+      # Convocatorias CAS va PRIMERA porque es la que trae convocatorias
+      # abiertas. convocape.com resultó ser un archivo: de sus 512 direcciones,
+      # 413 tienen el plazo cerrado.
+      - name: Convocatorias CAS
+        timeout-minutes: 35
         run: |
-          python -u -m motor recolectar --publicas \
+          python -u -m motor recolectar --fuente "Convocatorias CAS" --publicas \
+            --limite ${{ github.event.inputs.limite_cas || 120 }} \
+            --dias 0 \
+            --exportar
+        continue-on-error: true
+
+      - name: Convocatorias del Estado
+        timeout-minutes: 30
+        run: |
+          python -u -m motor recolectar --fuente "Convocatorias del Estado" --publicas \
             --limite ${{ github.event.inputs.limite_publicas || 300 }} \
             --dias 0 \
             --exportar
@@ -89,6 +125,20 @@ jobs:
             --exportar
         continue-on-error: true
 
+      # Laborum va SIN ventana de días, y no es un descuido.
+      #
+      # Su sitemap tiene 50 mil direcciones y no vienen ordenadas por fecha, así
+      # que las 240 que alcanzamos a mirar son un trozo cualquiera del archivo.
+      # Con la ventana de 3 días se descartaban 239 de 240 sin ni siquiera
+      # mirarlas: la fuente aportaba cero todas las noches, en verde y sin un
+      # solo error. Sin ventana, de esas mismas 240 pasan el filtro un 4%.
+      #
+      # No entra basura vieja por esto: el filtro rechaza igual todo lo de más
+      # de 60 días. Se comprobó el 5/8/2026 — cero avisos vencidos en la pasada.
+      # Y va con el doble de avisos que Bumeran. También a propósito: sin
+      # ventana de días alcanza a mirar mucho más de su archivo, y con el
+      # navegador arreglado cada aviso cuesta unos segundos, no medio minuto.
+      # 240 avisos son unos 16 minutos, cómodos dentro de sus 50.
       - name: Laborum
         timeout-minutes: 50
         run: |
