@@ -66,7 +66,7 @@ jobs:
         run: |
           python -u -m motor recolectar --publicas \
             --limite ${{ github.event.inputs.limite_publicas || 300 }} \
-            --dias ${{ github.event.inputs.dias || 3 }} \
+            --dias 0 \
             --exportar
         continue-on-error: true
 
