@@ -191,10 +191,41 @@ más ofertas, la respuesta es **más fuentes**, no menos exigencia.
 
 Lo que está esperando, en orden aproximado de impacto:
 
-0. **Convocatorias del Estado se cayó de 20 ofertas a 1.** Su paso corre en
-   minuto y medio y sale en verde. Tiene la misma pinta que tuvo Laborum: no
-   falla, simplemente no entrega. Es lo primero a mirar, y además es la fuente
-   con sueldo declarado al 100%.
+0. **Escribir el lector de Convocatorias CAS** (`convocatoriascas.com`). Es la
+   siguiente tarea y ya está decidida — solo falta hacerla.
+
+   *Por qué:* convocape.com, la única fuente pública, resultó ser un archivo:
+   de sus 512 direcciones, 413 tienen el plazo cerrado. No está rota, no tiene
+   nada abierto. Por eso el Estado cayó de 20 ofertas a 1, y eso no fue un
+   fallo sino el calendario: las convocatorias CAS duran una o dos semanas.
+
+   *Lo verificado el 5/8/2026 leyendo el sitio:* su sitemap
+   (`convocatoriascas.com/sitemap.xml`) trae **170 convocatorias con `lastmod`
+   real y fresco**, así que el descubrimiento sale gratis. Cada ficha da el
+   sueldo con etiqueta (`Salario: S/ 1350.00`), el plazo de postulación, los
+   requisitos, y **enlaza las bases en el dominio de la propia entidad**
+   (`munisurquillo.gob.pe`), que cumple la regla 5 y da de dónde sacar las
+   funciones. Y es casi todo provincia: Andahuaylas, Moquegua, Tacna, Cusco,
+   Puno, Tambopata — el mapa que hoy falta.
+
+   *El obstáculo:* **una página trae varios puestos**. Surquillo lista 6 plazas
+   en 2 puestos con sueldos distintos (S/ 1,350 y S/ 2,800); la Municipalidad
+   de Arequipa dice 283 plazas. El motor asume una dirección, un aviso.
+
+   *La decisión (Mentita, 5/8/2026): opción 1 — publicar solo las
+   convocatorias de UNA plaza.* No toca el motor, y lo que no se puede partir
+   bien no se publica, que es la regla 2 de siempre. Son cerca de un tercio del
+   sitemap: unas 50 ofertas, casi todas de provincia. Las de varias plazas se
+   saltan y se anota cuántas, para saber qué se está dejando.
+
+   Las otras dos opciones quedan descartadas por ahora, no por malas: que el
+   motor acepte varias ofertas por dirección (toca la pieza central por la que
+   pasa todo, incluidas Bumeran y Laborum) o entrar a la página de cada puesto
+   (más lento y más frágil).
+
+   Ojo al escribirlo: es el terreno donde nació el error de los S/ 33,800.
+   Aquí el sueldo viene etiquetado y como número único, así que el riesgo es
+   bajo — pero el periodo se busca **pegado** al monto, como siempre.
 
 1. **Más fuentes.** 63 ofertas siguen siendo pocas para que alguien vuelva al
    día siguiente. Nunca aflojar el filtro. Revisado el mercado el 4/8/2026,
