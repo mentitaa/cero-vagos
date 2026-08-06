@@ -48,6 +48,7 @@ Conectado el 4 de agosto de 2026: dominio en Squarespace, correo
 | `ALERTAS.md` | Las alertas: cómo están conectadas y cómo se mandan. |
 | `SEGURIDAD.md` | Auditoría de seguridad: qué se revisó y qué queda abierto. |
 | `EMPRESAS.md` | Estrategia de bolsas de trabajo de empresas. |
+| `PRIMERA-CORRIDA-CAS.md` | Los cuatro comandos para estrenar Convocatorias CAS. Se borra cuando ya corrió bien. |
 | `PROPUESTA-UNIVERSIDADES.md` | Correos listos para las bolsas universitarias. |
 | Bitácora en Notion | Historia del proyecto, ideas pendientes, errores que costaron caro, glosario. Ahí va lo narrativo; aquí va lo operativo. |
 
@@ -81,7 +82,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **241** y pasan todos.
+Los tests son **268** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -161,7 +162,8 @@ Sueldo mediano de lo publicado: **S/ 1,300**.
 |---|---|
 | Bumeran | 45 |
 | Laborum | 17 |
-| Convocatorias del Estado | **1** ← roto, ver Pendientes |
+| Convocatorias del Estado | **1** ← es un archivo, casi todo cerrado |
+| Convocatorias CAS | — ← nueva el 6/8/2026, todavía sin correr |
 
 Cómo se llegó aquí en un día, porque las tres cosas se tapaban entre sí:
 
@@ -191,41 +193,34 @@ más ofertas, la respuesta es **más fuentes**, no menos exigencia.
 
 Lo que está esperando, en orden aproximado de impacto:
 
-0. **Escribir el lector de Convocatorias CAS** (`convocatoriascas.com`). Es la
-   siguiente tarea y ya está decidida — solo falta hacerla.
+0. **Ver la primera corrida de Convocatorias CAS.** El lector ya está escrito
+   (`motor/fuentes/cas.py`, 6/8/2026) pero **todavía no ha salido a la red ni
+   una sola vez**: se programó a partir de la lectura del sitio, con muestras
+   guardadas, sin poder descargar. Lo que hay que mirar en la primera corrida,
+   en este orden:
 
-   *Por qué:* convocape.com, la única fuente pública, resultó ser un archivo:
-   de sus 512 direcciones, 413 tienen el plazo cerrado. No está rota, no tiene
-   nada abierto. Por eso el Estado cayó de 20 ofertas a 1, y eso no fue un
-   fallo sino el calendario: las convocatorias CAS duran una o dos semanas.
+   - `python3 -m motor diagnostico` → que la fuente aparezca leyendo un aviso
+     de verdad, con puesto y sueldo.
+   - Cuántas ofertas entrega. Si son **cero en verde**, no es que no haya
+     trabajo: es el caso de siempre (ver *Trampas conocidas*). Hay que leer el
+     bloque de problemas del resumen.
+   - **Si los PDF de las bases se dejan leer.** De esto depende todo, ver
+     abajo.
 
-   *Lo verificado el 5/8/2026 leyendo el sitio:* su sitemap
-   (`convocatoriascas.com/sitemap.xml`) trae **170 convocatorias con `lastmod`
-   real y fresco**, así que el descubrimiento sale gratis. Cada ficha da el
-   sueldo con etiqueta (`Salario: S/ 1350.00`), el plazo de postulación, los
-   requisitos, y **enlaza las bases en el dominio de la propia entidad**
-   (`munisurquillo.gob.pe`), que cumple la regla 5 y da de dónde sacar las
-   funciones. Y es casi todo provincia: Andahuaylas, Moquegua, Tacna, Cusco,
-   Puno, Tambopata — el mapa que hoy falta.
+   *Cómo quedó:* solo se publican las convocatorias de UNA plaza (opción 1,
+   decidida el 5/8/2026). El número de plazas viene en la propia dirección
+   (`…-1-plazas-67463.html`), así que las de varias ni se descargan — pero se
+   cuentan, y el conteo sale en el resumen de la corrida. Si ese número crece,
+   toca volver a mirar la decisión.
 
-   *El obstáculo:* **una página trae varios puestos**. Surquillo lista 6 plazas
-   en 2 puestos con sueldos distintos (S/ 1,350 y S/ 2,800); la Municipalidad
-   de Arequipa dice 283 plazas. El motor asume una dirección, un aviso.
-
-   *La decisión (Mentita, 5/8/2026): opción 1 — publicar solo las
-   convocatorias de UNA plaza.* No toca el motor, y lo que no se puede partir
-   bien no se publica, que es la regla 2 de siempre. Son cerca de un tercio del
-   sitemap: unas 50 ofertas, casi todas de provincia. Las de varias plazas se
-   saltan y se anota cuántas, para saber qué se está dejando.
-
-   Las otras dos opciones quedan descartadas por ahora, no por malas: que el
-   motor acepte varias ofertas por dirección (toca la pieza central por la que
-   pasa todo, incluidas Bumeran y Laborum) o entrar a la página de cada puesto
-   (más lento y más frágil).
-
-   Ojo al escribirlo: es el terreno donde nació el error de los S/ 33,800.
-   Aquí el sueldo viene etiquetado y como número único, así que el riesgo es
-   bajo — pero el periodo se busca **pegado** al monto, como siempre.
+   *El número que hay que tener presente:* una convocatoria CAS leída solo de
+   la página saca **69 sobre 100**, y el umbral es 70. **No se publica por un
+   punto.** No es un error: al Estado no se le exige la lista de funciones,
+   pero los 25 puntos de ese bloque se pierden enteros y hay que compensarlos
+   en todo lo demás. Con las funciones sacadas del PDF de las bases, el mismo
+   aviso pasa a más de 90. O sea que **esta fuente vive del PDF**: si entrega
+   cero, lo primero que se revisa es si `pdfplumber` está instalado y si las
+   entidades siguen dejando bajar sus bases, no el lector.
 
 1. **Más fuentes.** 63 ofertas siguen siendo pocas para que alguien vuelva al
    día siguiente. Nunca aflojar el filtro. Revisado el mercado el 4/8/2026,
@@ -294,6 +289,21 @@ verificar.
   que hubiera dos fuentes privadas: es una casa con dos puertas. Por eso sus
   tasas de aprobación se parecen tanto, y por eso agregar Aptitus no sumaría
   nada. Fuera de Jobint solo quedan Computrabajo (bloqueado) y BuscoTrabajo.
+- **Una dirección de Convocatorias CAS puede traer varios puestos.** Con
+  sueldos distintos: Surquillo lista 6 plazas en 2 puestos (S/ 1,350 y
+  S/ 2,800). El motor asume una dirección, un aviso, así que publicar una de
+  las dos sería elegir por el postulante. Por eso solo entran las de UNA plaza
+  y las demás se cuentan (`motor/fuentes/cas.py`).
+- **Buscar una etiqueta por simple prefijo agarra el menú.** Al leer
+  «Institución» de la ficha, el enlace «Instituciones» de la barra de arriba
+  calzaba primero y la entidad terminaba siendo «es». La etiqueta tiene que
+  terminar donde corresponde: detrás solo puede venir ':' o un paréntesis
+  (`tras_etiqueta` en `cas.py`).
+- **«Sin fecha de publicación» no es «hoy».** El exportador convertía la
+  ausencia de fecha en cero días y la tarjeta salía diciendo «Publicada hoy».
+  Las convocatorias CAS no dicen cuándo se publicaron —dicen hasta cuándo se
+  puede postular— así que todas habrían salido con una fecha inventada. Ahora
+  el dato viaja en `null` y la web se calla.
 - **Los agregadores no sirven aquí.** Jora, Indeed y Jooble no publican oferta
   propia: repiten la de otros portales y mandan al usuario a un tercer sitio.
   Eso choca de frente con la regla 5. Jora además tiene el `robots.txt` caído
@@ -328,13 +338,14 @@ verificar.
 
 ```bash
 python3 -m motor recolectar --publicas --limite 60 --exportar
+python3 -m motor recolectar --fuente "Convocatorias CAS" --publicas --limite 60
 python3 -m motor publicar --sitio https://mentitaa.github.io/cero-vagos
 python3 -m motor diagnostico                 # ¿cada fuente se puede leer?
 python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 241 tests
+python3 -m unittest discover pruebas -v      # los 268 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
