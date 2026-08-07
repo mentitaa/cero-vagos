@@ -14,6 +14,34 @@ Backends de extracción, en orden de preferencia:
     1. pdfplumber   (mejor respeto del diseño de la página)
     2. pdftotext    (poppler, si está instalado en el sistema)
     3. pypdf        (último recurso, puro Python)
+    4. OCR          (leer las letras de la imagen; lento, ver más abajo)
+
+SOBRE EL OCR
+------------
+Medido el 6/8/2026 en la primera corrida de Convocatorias CAS: de 78 avisos,
+**31 no llegaron a sus funciones porque el PDF de las bases no se dejó leer.**
+Y ese 31 se parte en dos casos que parecen distintos y son el mismo:
+
+  · 11 PDF sin nada de texto: son una foto del documento, escaneada.
+  · 20 PDF *con* texto, pero con el texto roto. A esos alguien ya les pasó un
+    lector de letras antes de subirlos, y le salió mal. Un ejemplo real de las
+    bases de la UGEL San Pablo (Cajamarca):
+
+        Pr¡ncipales funciones a desanollar:
+
+    Debería decir "Principales funciones a desarrollar". La `i` salió `¡` y las
+    dos `rr` se volvieron `n`. El encabezado es el correcto; está mal escrito.
+
+Los dos casos se arreglan igual: **rasterizar la página y volver a leerla
+nosotros**, partiendo de la imagen original en vez del texto roto que trae.
+
+Dos cuidados que no son opcionales:
+
+  · Es LENTO (segundos por página), así que solo entra cuando el camino normal
+    ya falló, mira pocas páginas y tiene un tope de tiempo.
+  · El OCR también se equivoca. Por la regla 2, una función que salga ilegible
+    NO se publica: es preferible un aviso sin funciones que un aviso con
+    funciones que nadie puede leer. De eso se encarga `parece_ilegible`.
 """
 from __future__ import annotations
 
@@ -28,6 +56,18 @@ CACHE = Path(__file__).resolve().parent.parent / "datos" / "pdfs"
 # Hay bases escaneadas que pesan bastante. 40 MB deja pasar casi todas sin
 # arriesgar una descarga eterna.
 MAX_BYTES = 40 * 1024 * 1024
+
+# Cuántas páginas mira el OCR. Las funciones van en el perfil del puesto, que
+# está al principio: en las bases reales revisadas nunca pasó de la página 4.
+# Cada página cuesta entre uno y tres segundos, así que este número es
+# directamente el presupuesto de tiempo de la corrida.
+OCR_PAGINAS = 5
+# Tope duro por PDF. Si una base tarda más que esto, se abandona y el aviso se
+# queda sin funciones: vale más perder uno que colgar la corrida entera.
+OCR_SEGUNDOS = 90
+# Resolución de rasterizado. Por debajo de 200 el OCR empieza a confundir
+# letras; por encima de 300 tarda el doble sin leer mejor.
+OCR_DPI = 250
 
 # --------------------------------------------------------------------------
 # Encabezados
@@ -153,6 +193,119 @@ def texto_de_pdf(datos: bytes, max_paginas: int = 12) -> str:
 
 
 # --------------------------------------------------------------------------
+# Leer las letras de la imagen (OCR)
+# --------------------------------------------------------------------------
+
+def hay_ocr() -> bool:
+    """¿Está el sistema equipado para leer imágenes?"""
+    return bool(shutil.which("pdftoppm") and shutil.which("tesseract"))
+
+
+def idioma_ocr() -> str:
+    """
+    Español si está instalado; si no, inglés.
+
+    No es un capricho: el paquete de español conoce las tildes y la eñe, y sin
+    él "gestión" sale "gestion" o "gestién". El inglés igual sirve de red —
+    comparten alfabeto— pero lee peor. Que falte se nota en la calidad, así que
+    conviene instalar `tesseract-ocr-spa` donde corra el motor.
+    """
+    try:
+        salida = subprocess.run(["tesseract", "--list-langs"],
+                                capture_output=True, timeout=20)
+        idiomas = salida.stdout.decode("utf-8", errors="replace").split()
+    except Exception:                                  # noqa: BLE001
+        return "eng"
+    return "spa" if "spa" in idiomas else "eng"
+
+
+def texto_por_ocr(datos: bytes, max_paginas: int = OCR_PAGINAS) -> str:
+    """
+    Rasteriza las primeras páginas del PDF y les lee las letras.
+
+    Es el último recurso y el más caro. Devuelve "" si el sistema no tiene las
+    herramientas, si el PDF no se deja abrir o si se acaba el tiempo — nunca
+    levanta una excepción, porque un aviso sin funciones es un problema mucho
+    menor que una corrida caída.
+    """
+    if not datos or datos[:4] != b"%PDF" or not hay_ocr():
+        return ""
+
+    idioma = idioma_ocr()
+    try:
+        with tempfile.TemporaryDirectory() as tmp:
+            carpeta = Path(tmp)
+            (carpeta / "b.pdf").write_bytes(datos)
+
+            # Una imagen por página. `-r` es la resolución: de ella depende que
+            # el OCR distinga una 'i' de una 'l'.
+            subprocess.run(
+                ["pdftoppm", "-r", str(OCR_DPI), "-png",
+                 "-f", "1", "-l", str(max_paginas),
+                 str(carpeta / "b.pdf"), str(carpeta / "pg")],
+                capture_output=True, timeout=OCR_SEGUNDOS,
+            )
+
+            partes = []
+            for imagen in sorted(carpeta.glob("pg*.png"))[:max_paginas]:
+                leido = subprocess.run(
+                    ["tesseract", str(imagen), "-", "-l", idioma],
+                    capture_output=True, timeout=OCR_SEGUNDOS,
+                )
+                partes.append(leido.stdout.decode("utf-8", errors="replace"))
+            return "\n".join(partes).strip()
+    except Exception:                                  # noqa: BLE001
+        return ""
+
+
+# --------------------------------------------------------------------------
+# El guardián: lo ilegible no se publica
+# --------------------------------------------------------------------------
+
+# La `¡` y la `¿` solo ABREN frase en español, así que detrás de una letra no
+# pintan nada: "Contab¡l¡zar", "Pr¡ncipales". Esa es la firma del texto mal
+# digitalizado.
+#
+# Ojo con el detalle, que este test lo cazó: se mira solo lo que va DETRÁS de
+# una letra. Mirar también lo que va delante rechazaba "¿Qué funciones tendrá
+# el puesto?", que es español perfectamente correcto.
+_SIGNO_EN_MEDIO = re.compile(r"\w[¡¿]")
+
+
+def parece_ilegible(texto: str) -> bool:
+    """
+    ¿Este texto está tan roto que publicarlo sería peor que no publicar nada?
+
+    Existe por la regla 2. El OCR se equivoca, y los PDF que llegan ya mal
+    digitalizados vienen peor todavía. Una ficha que promete decir qué vas a
+    hacer y muestra un renglón indescifrable rompe la promesa igual que un
+    hueco, pero encima parece un error nuestro.
+
+    Se mira lo que se puede medir sin diccionario:
+
+      · signos de apertura pegados a una letra, que en español no existen;
+      · qué proporción del renglón son letras de verdad. Un texto sano pasa
+        del 80%; la basura del OCR se llena de barras, puntos y símbolos.
+
+    A propósito NO se intenta adivinar si la frase tiene sentido. Eso sería
+    inventar criterio, y el motor prefiere quedarse corto.
+    """
+    limpio = (texto or "").strip()
+    if len(limpio) < 12:
+        return True
+    if _SIGNO_EN_MEDIO.search(limpio):
+        return True
+
+    utiles = sum(1 for c in limpio if c.isalpha() or c.isspace())
+    return (utiles / len(limpio)) < 0.80
+
+
+def descartar_ilegibles(funciones: list[str]) -> list[str]:
+    """Deja solo las funciones que una persona podría leer en voz alta."""
+    return [f for f in funciones if not parece_ilegible(f)]
+
+
+# --------------------------------------------------------------------------
 # Texto -> funciones
 # --------------------------------------------------------------------------
 
@@ -238,7 +391,10 @@ def extraer_funciones(texto: str) -> list[str]:
             if len(bloque) > 60:                       # no seguimos hasta el final del PDF
                 break
 
-        candidatas = _limpiar(_agrupar_items(bloque))
+        # El descarte de lo ilegible va ANTES de comparar candidatas, no
+        # después: si no, un bloque lleno de basura ganaría por cantidad y
+        # dejaría fuera al bueno, para terminar publicando nada.
+        candidatas = descartar_ilegibles(_limpiar(_agrupar_items(bloque)))
         if len(candidatas) > len(mejor):
             mejor = candidatas
 
