@@ -286,14 +286,30 @@ def enriquecer_con_bases(cruda: OfertaCruda, html: str, bajar) -> str:
                     continue
                 guardar_en_cache(url_pdf, datos)
 
-            funciones = extraer_funciones(texto_de_pdf(datos))
+            texto = texto_de_pdf(datos)
+            funciones = extraer_funciones(texto)
             if len(funciones) >= 3:
                 items = "".join(f"<li>{f}</li>" for f in funciones)
                 cruda.descripcion_html += f"<p>Funciones</p><ul>{items}</ul>"
                 cruda.extra["funciones_desde_pdf"] = url_pdf
                 cruda.extra["funciones_desde"] = url_pdf
                 return True
-            motivos.setdefault("ilegible", url_pdf)
+
+            # Otros dos fracasos que parecen uno solo y no lo son:
+            #
+            #   escaneado      → el PDF es una FOTO del documento. No tiene
+            #                    texto dentro, así que no hay nada que buscar.
+            #                    Se arregla con OCR, que es caro y lento.
+            #   sin_encabezado → el PDF sí trae texto, pero la sección de
+            #                    funciones no se llamó como esperábamos. Se
+            #                    arregla mirando UN PDF y agregando el
+            #                    encabezado que use.
+            #
+            # Un PDF de bases con texto pasa de largo los miles de caracteres;
+            # un escaneado devuelve vacío o cuatro letras sueltas de la
+            # carátula. 200 separa los dos casos sin acercarse a ninguno.
+            motivos.setdefault(
+                "escaneado" if len(texto) < 200 else "sin_encabezado", url_pdf)
         return False
 
     # 1) ¿El PDF está enlazado en el propio aviso?
@@ -333,9 +349,14 @@ def enriquecer_con_bases(cruda: OfertaCruda, html: str, bajar) -> str:
     if "sin_permiso" in motivos:
         return ("No se llegó a las funciones: la entidad contestó que no se "
                 f"puede leer ese PDF. Ejemplo: {motivos['sin_permiso']}")
-    if "ilegible" in motivos:
-        return ("No se llegó a las funciones: el PDF de las bases se bajó pero "
-                f"no se le pudieron sacar 3 funciones. Ejemplo: {motivos['ilegible']}")
+    if "sin_encabezado" in motivos:
+        return ("No se llegó a las funciones: el PDF de las bases sí trae texto, "
+                "pero no se reconoció dónde empieza la lista de funciones. "
+                f"Ejemplo: {motivos['sin_encabezado']}")
+    if "escaneado" in motivos:
+        return ("No se llegó a las funciones: el PDF de las bases está escaneado "
+                "(es una foto, no trae texto). Haría falta OCR. "
+                f"Ejemplo: {motivos['escaneado']}")
     return ("No se llegó a las funciones: el aviso no enlaza ningún PDF de "
             "bases, ni en el propio aviso ni en la página de la entidad")
 
