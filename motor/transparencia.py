@@ -7,7 +7,7 @@ cuánto pagan y cuántos no. Después, quién.
 
 Sirve para tres cosas a la vez:
   · atrae búsquedas ("qué empresas publican el sueldo en Perú")
-  · da material para compartir en redes y grupos de empleo
+  · da un dato propio para citar en redes y grupos de empleo
   · demuestra el argumento de la marca con datos propios, no con una opinión
 
 Reglas que se respetan al publicarla, porque señalar empresas exige cuidado:
@@ -40,10 +40,15 @@ def _fecha_larga(iso: str) -> str:
         return iso
 
 
+def _nivel(pct: int) -> str:
+    """Los tres tramos de transparencia, para poder darles color."""
+    return "alta" if pct >= 80 else "media" if pct >= 30 else "baja"
+
+
 def _barra(pct: int) -> str:
-    color = "var(--lima)" if pct >= 80 else "var(--amarillo)" if pct >= 30 else "var(--rojo)"
+    colores = {"alta": "var(--lima)", "media": "var(--amarillo)", "baja": "var(--rojo)"}
     return (f'<div class="barra"><div class="barra__i" '
-            f'style="width:{max(pct, 2)}%;background:{color}"></div></div>')
+            f'style="width:{max(pct, 2)}%;background:{colores[_nivel(pct)]}"></div></div>')
 
 
 def _tabla(titulo: str, filas: list[dict], columna: str = "Empresa") -> str:
@@ -53,7 +58,14 @@ def _tabla(titulo: str, filas: list[dict], columna: str = "Empresa") -> str:
         f"<tr><td>{_e(f['nombre'])}</td>"
         f"<td class=\"num\">{f['total']}</td>"
         f"<td class=\"num\">{f['con_sueldo']}</td>"
-        f"<td class=\"pct\">{_barra(f['pct'])}<b>{f['pct']}%</b></td></tr>"
+        # La barra y el número van dentro de un div, no sueltos en la celda.
+        # Poniéndole `display:flex` a la celda misma, el navegador deja de
+        # tratarla como celda de tabla: se descolgaba del cálculo de columnas
+        # y la barra se pegaba ARRIBA en las filas de dos o tres líneas, en vez
+        # de quedar centrada con su empresa. Se veía en "Municipalidad
+        # Provincial De Yarowilca" (7/8/2026, lo reportó Renzo).
+        f"<td class=\"pct\"><div class=\"pct__caja pct--{_nivel(f['pct'])}\">"
+        f"{_barra(f['pct'])}<b>{f['pct']}%</b></div></td></tr>"
         for f in filas
     )
     return f"""
@@ -119,15 +131,35 @@ text-transform:uppercase;letter-spacing:.04em;padding:10px 12px;text-align:left}
 td{padding:9px 12px;border-bottom:2px solid #e8e0d4;font-weight:500}
 tr:last-child td{border-bottom:none}
 .num{text-align:right;white-space:nowrap}
-.pct{white-space:nowrap;display:flex;align-items:center;gap:9px;min-width:150px}
+/* La celda se queda siendo celda; el flex vive en la caja de adentro. */
+.pct{white-space:nowrap;vertical-align:middle}
+.pct__caja{display:flex;align-items:center;gap:9px;min-width:132px}
 .pct b{font-family:var(--display);font-size:13px}
 .barra{flex:1;height:11px;border:2px solid var(--negro);background:var(--blanco);min-width:56px}
 .barra__i{height:100%}
+
+/* En un celular la tabla no cabe: cuatro columnas más una barra de 132px se
+   salen de la pantalla, y la última columna quedaba cortada por la mitad —
+   el encabezado decía "TRA…" y las barras aparecían recortadas.
+   Se quita la barra, que es un adorno, y su color pasa al número, que es el
+   dato. Así la tabla entra sin necesidad de arrastrarla de lado. */
+@media(max-width:620px){
+  table{font-size:13px}
+  th,td{padding:8px 9px}
+  .barra{display:none}
+  .pct__caja{min-width:0;justify-content:flex-end}
+  .pct b{border:2px solid var(--negro);padding:2px 7px}
+  .pct--alta b{background:var(--lima)}
+  .pct--media b{background:var(--amarillo)}
+  .pct--baja b{background:var(--rojo);color:#fff}
+}
 .nota{border:var(--bd);background:var(--blanco);padding:20px 22px;margin-top:26px;
 font-size:14.5px;line-height:1.55;font-weight:500}
-.compartir{background:var(--amarillo)}
-.compartir .caja{border:var(--bd);background:var(--blanco);padding:18px 20px;margin-bottom:14px;
-font-size:15px;line-height:1.5;font-weight:500}
+/* Solo la salida hacia las ofertas. Antes acá vivía "Para compartir", tres
+   recuadros con frases hechas para copiar y pegar en redes. Se quitó el
+   7/8/2026: quien llega a esta página viene a ver el dato, no a que le
+   dicten qué escribir. */
+.salida{background:var(--amarillo);text-align:center}
 .btn{display:inline-block;border:var(--bd);background:var(--rojo);color:#fff;
 font-family:var(--display);font-size:14px;text-transform:uppercase;padding:14px 22px;
 text-decoration:none;box-shadow:4px 4px 0 var(--negro);margin-top:8px}
@@ -249,18 +281,8 @@ def pagina(datos: dict, sitio: str) -> str:
   </div>
 </section>
 
-<section class="compartir">
+<section class="salida">
   <div class="wrap">
-    <h2>Para compartir</h2>
-    <p class="sub">Copia y pega donde quieras.</p>
-    <div class="caja">Revisamos {datos['total']:,} ofertas de trabajo publicadas en el Perú.
-    {datos['pct_sin_sueldo']}% no dice cuánto paga. Si vas a pedirle a alguien su CV, su tiempo
-    y tres entrevistas, lo mínimo es decirle cuánto vas a pagarle.</div>
-    <div class="caja">Buscar trabajo en Perú es postular a ciegas: de cada 10 avisos,
-    {round(datos['pct_sin_sueldo'] / 10)} esconden el sueldo. Hicimos un buscador que
-    solo muestra los que sí lo dicen.</div>
-    <div class="caja">Ya sabemos qué empresas publican cuánto pagan y cuáles nunca.
-    La lista completa, actualizada cada día 👇</div>
     <a class="btn" href="{_e(sitio)}/#ofertas">Ver las ofertas con sueldo →</a>
   </div>
 </section>
