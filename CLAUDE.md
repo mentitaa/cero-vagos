@@ -67,6 +67,23 @@ que redirige sola. Ese rodeo existe para **contar cuántos clics recibe cada
 aviso**, que es el número que le va a interesar a una empresa. El segundo de
 espera no es un descuido: sin él, el medidor no alcanza a mandar el dato.
 
+**El score ya no se muestra en la web** (7/8/2026). Sigue decidiendo qué se
+publica y en qué orden, pero dejó de salir en la tarjeta y en la ficha. Salió
+de un focus group improvisado: varias personas lo leyeron como una nota al
+TRABAJO, veían S/ 4.000 con 89 al lado de S/ 500 con 98 y no entendían nada.
+Y el número nunca pudo servirles de nada, porque **todo lo que se publica ya
+pasó el filtro**: su único efecto posible era invitar a comparar en una
+dimensión que significa otra cosa. En su lugar van las cuatro cosas que el
+aviso SÍ trae —sueldo, funciones, requisitos, beneficios— marcadas una por una
+(`loQueTiene` en `index.html`). Es el mismo score dicho en lo que significa, y
+no revela la fórmula. Las convocatorias del Estado sin funciones muestran tres
+marcas en vez de cuatro, y **está bien**: es honesto y la ficha explica dónde
+buscarlas. Lo vigila `pruebas/test_tarjeta.py`.
+
+De paso se quitó la inicial de la empresa del recuadro izquierdo. Nadie sabía
+qué era, y no identificaba nada: el color salía de la POSICIÓN de la tarjeta,
+así que la misma empresa cambiaba de color al filtrar o al dar "Ver más".
+
 El logo vive en `assets/`, en tres versiones que existen por una razón:
 `logo-oscuro.svg` (rojo + negro) para fondos claros, `logo-claro.svg`
 (rojo + blanco) para fondos oscuros, y `logo-mono.svg` (todo blanco) para la
@@ -82,7 +99,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **300** y pasan todos.
+Los tests son **310** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -415,7 +432,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 300 tests
+python3 -m unittest discover pruebas -v      # los 310 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
