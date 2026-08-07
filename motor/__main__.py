@@ -176,6 +176,27 @@ def cmd_recolectar(args) -> None:
                 f.dias_publicado = args.dias
         print(f"Buscando solo avisos publicados en los últimos {args.dias} días.\n")
 
+    # Se dice EN VOZ ALTA si esta corrida repara o solo agrega.
+    #
+    # Hizo falta porque reparar un dato mal leído necesita DOS cosas a la vez y
+    # es fácil poner solo una: `rehacer` para no saltarse lo ya visto, y
+    # `--dias 0` para que la fuente vuelva a descubrir avisos viejos. El
+    # 7/8/2026 se corrió tres veces sin las dos, y desde afuera la corrida se
+    # veía perfecta: agregaba ofertas nuevas mientras las viejas seguían con el
+    # dato equivocado. Nada fallaba; simplemente no se estaba reparando.
+    if args.rehacer:
+        if args.dias:
+            print(f"REHACER activado, pero con ventana de {args.dias} días: se "
+                  f"volverán a leer solo los avisos publicados en ese plazo.\n"
+                  f"Para reparar avisos más viejos hace falta además --dias 0.\n")
+        else:
+            print("REHACER activado: se vuelven a leer TODOS los avisos, "
+                  "incluidos los que ya estaban guardados.\n")
+    else:
+        print("Corrida normal: los avisos ya vistos se saltan y conservan lo "
+              "que se les leyó el día que entraron.\n"
+              "Para reparar un dato mal leído: --rehacer y --dias 0.\n")
+
     if getattr(args, "sin_pdf", False):
         for f in fuentes:
             f.enriquecer = None
