@@ -198,6 +198,79 @@ class PruebaElAvisoLeGanaAlPortal(unittest.TestCase):
         self.assertIsNotNone(extraer_sueldo("Sueldo base: S/ 900", solo_etiquetado=True))
 
 
+class PruebaDosSueldosNoSePublican(unittest.TestCase):
+    """
+    Un aviso que convoca varias modalidades declara dos sueldos, y no hay
+    forma de saber cuál corresponde al puesto que mostramos.
+
+    El caso real (7/8/2026): un "Reponedor(a) Full Time" de Bumeran que en
+    realidad ofrecía las dos jornadas —su propia dirección lo delata:
+    `reponedora-full-time-part-time-varios-distritos`— y declaraba
+    "Remuneración: S/ 1,130" y "Remuneración: S/ 565". El motor elegía el más
+    bajo por prudencia y publicaba **S/ 565 bajo un título que decía Full
+    Time**.
+
+    Elegir el más bajo protege de prometer de más, pero no de mentir. Decisión
+    de Mentita: no se publica. Regla 2, y el precio es perder el aviso.
+    """
+
+    DOS = ("Modalidades disponibles. Full Time: Remuneración: S/ 1,130 mensuales. "
+           "Part Time: Remuneración: S/ 565 mensuales.")
+
+    def test_se_detectan_los_dos(self):
+        from motor.sueldo import declara_varios_sueldos
+        self.assertTrue(declara_varios_sueldos(self.DOS))
+
+    def test_el_mismo_monto_repetido_no_es_ambiguo(self):
+        """Un aviso puede nombrar su sueldo dos veces. Eso no es un conflicto."""
+        from motor.sueldo import declara_varios_sueldos
+        self.assertFalse(declara_varios_sueldos(
+            "Sueldo: S/ 2,000 mensuales. Se ofrece un sueldo de S/ 2,000 en planilla."))
+
+    def test_un_sueldo_con_bonos_tampoco(self):
+        from motor.sueldo import declara_varios_sueldos
+        self.assertFalse(declara_varios_sueldos(
+            "Sueldo base: S/.1200. Bono de asistencia: S/.200. Comisiones: S/ 500 a S/ 1000"))
+
+    def test_el_aviso_completo_se_rechaza(self):
+        """
+        Y se rechaza de verdad: no basta con no leer el sueldo del texto,
+        porque entonces el motor caería en la ficha del portal y publicaría
+        igual. Eso pasaba, y era peor: publicaba el 565 igual.
+        """
+        from motor.modelos import OfertaCruda
+        from motor.pipeline import procesar_cruda
+
+        cuerpo = ("<p>Funciones</p><ul><li>Reponer productos en tienda</li>"
+                  "<li>Armar plantillas y vitrinas</li>"
+                  "<li>Registrar productos en el kardex</li></ul>"
+                  "<p>Requisitos</p><ul><li>Secundaria completa</li>"
+                  "<li>Tres meses de experiencia</li>"
+                  "<li>Disponibilidad para horarios rotativos</li></ul>"
+                  f"<p>Beneficios</p><ul><li>Ingreso a planilla</li><li>{self.DOS}</li></ul>")
+        o = procesar_cruda(OfertaCruda(
+            fuente="Bumeran", url="https://x.pe/1", puesto="Reponedor(a) Full Time",
+            empresa="HRD SAC", sueldo_texto="S/ 565", descripcion_html=cuerpo))
+
+        self.assertFalse(o.aprobada)
+        self.assertIn("El aviso declara dos sueldos distintos (varias modalidades)",
+                      o.motivos_rechazo)
+
+    def test_el_motivo_se_explica_solo(self):
+        """
+        "No declara sueldo" mandaría a buscar en el lugar equivocado: el aviso
+        sí lo declara, declara dos. Quien lea el registro tiene que entenderlo
+        sin preguntar.
+        """
+        from motor.modelos import OfertaCruda
+        from motor.pipeline import procesar_cruda
+
+        o = procesar_cruda(OfertaCruda(
+            fuente="Bumeran", url="https://x.pe/1", puesto="Reponedor",
+            empresa="X", descripcion_html=f"<p>{self.DOS}</p>"))
+        self.assertTrue(any("dos sueldos distintos" in m for m in o.motivos_rechazo))
+
+
 class PruebaNoSeRompioLoQueYaFuncionaba(unittest.TestCase):
     """
     Los casos de siempre, para que el arreglo no se lleve por delante lecturas

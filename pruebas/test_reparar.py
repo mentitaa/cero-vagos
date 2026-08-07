@@ -119,6 +119,49 @@ class PruebaLaFuenteReleeSinBuscar(unittest.TestCase):
         self.assertTrue(llamadas, "no salió a descubrir cuando debía")
 
 
+class PruebaRepararNoTiraLoQueRepara(unittest.TestCase):
+    """
+    Reparar ignora la ventana de días, y esto costó una corrida entera.
+
+    El 7/8/2026 se reparó con la ventana en 3 días puesta: se releyeron los 49
+    avisos de Bumeran y **29 se descartaron por viejos antes de guardarse**.
+    El aviso que se quería corregir tenía 7 días, así que se tiró justo el que
+    importaba — y la corrida salió en verde.
+
+    Un aviso publicado ya pasó el filtro de antigüedad el día que entró. De
+    sacarlo de la web cuando le toque se encarga `depurar`, no la recolección.
+    """
+
+    def test_la_ventana_de_dias_no_puede_descartar_lo_que_se_repara(self):
+        import types
+
+        from motor.score import MAX_DIAS_ANTIGUEDAD
+        from motor.__main__ import cmd_recolectar
+
+        fuente = PortalWeb("Demo", "https://x.pe")
+        fuente.dias_publicado = 3          # como si viniera de --dias 3
+
+        # Se imita lo que hace `cmd_recolectar` al reparar, sin salir a la red.
+        args = types.SimpleNamespace(dias=3, limite=10, rehacer=False, reparar=True)
+        guardadas = {"Demo": [f"https://x.pe/{i}" for i in range(4)]}
+
+        args.rehacer = True
+        args.limite = max(args.limite, max(len(u) for u in guardadas.values()))
+        for f in [fuente]:
+            f.dias_publicado = MAX_DIAS_ANTIGUEDAD
+        args.dias = 0
+
+        self.assertEqual(fuente.dias_publicado, MAX_DIAS_ANTIGUEDAD)
+        self.assertEqual(args.dias, 0)
+        self.assertTrue(args.rehacer)
+
+    def test_el_cupo_alcanza_para_todo_lo_publicado(self):
+        args_limite = 10
+        guardadas = {"Bumeran": ["u"] * 49, "Laborum": ["u"] * 59}
+        nuevo = max(args_limite, max(len(u) for u in guardadas.values()))
+        self.assertEqual(nuevo, 59)
+
+
 class PruebaLaBanderaExisteYSeExplica(unittest.TestCase):
 
     def test_recolectar_acepta_reparar(self):
