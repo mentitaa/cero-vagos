@@ -126,11 +126,36 @@ class PruebaMensajes(CachePropio):
         aviso = self._aviso(bajar)
         self.assertIn("contestó que no", aviso)
 
-    def test_pdf_que_no_se_deja_leer(self):
+    def test_pdf_escaneado(self):
+        """
+        Una foto del documento. No hay texto que leer, así que no es culpa del
+        buscador de encabezados: haría falta OCR. El 6/8/2026 este resultó ser
+        el caso más común de todos.
+        """
         def bajar(_url, _max=0):
-            return b"%PDF-1.4 esto no es un PDF de verdad"
+            return b"%PDF-1.4 una foto, sin capa de texto"
         aviso = self._aviso(bajar)
-        self.assertIn("no se le pudieron sacar 3 funciones", aviso)
+        self.assertIn("escaneado", aviso)
+        self.assertIn("OCR", aviso)
+
+    def test_pdf_con_texto_pero_sin_encabezado_reconocido(self):
+        """
+        Este sí es nuestro: el PDF trae texto y no supimos dónde empieza la
+        lista. Se arregla mirando el PDF y agregando el encabezado que usa.
+        """
+        largo = ("BASES DEL CONCURSO CAS N° 006-2026\n"
+                 "TAREAS ENCOMENDADAS AL SERVIDOR\n"
+                 + "a) Redactar informes tecnicos del area correspondiente.\n" * 30)
+        self.assertGreaterEqual(len(largo), 200)
+
+        original = bases_pdf.texto_de_pdf
+        bases_pdf.texto_de_pdf = lambda *_a, **_k: largo
+        try:
+            aviso = self._aviso(lambda _u, _m=0: b"%PDF-1.4 con texto")
+        finally:
+            bases_pdf.texto_de_pdf = original
+
+        self.assertIn("no se reconoció dónde empieza", aviso)
 
     def test_aviso_que_no_enlaza_ningun_pdf(self):
         def bajar(_url, _max=0):
@@ -138,15 +163,15 @@ class PruebaMensajes(CachePropio):
         aviso = self._aviso(bajar, SIN_PDF)
         self.assertIn("no enlaza ningún PDF", aviso)
 
-    def test_los_cuatro_mensajes_son_distintos(self):
+    def test_los_cinco_mensajes_son_distintos(self):
         def sin_respuesta(url, _max=0):
             raise ErrorFuente(f"No se pidió {url}\n motivo: No se pudo leer robots.txt (x)")
 
         def sin_permiso(url, _max=0):
             raise ErrorFuente(f"No se pidió {url}\n motivo: robots.txt no lo permite")
 
-        def ilegible(_url, _max=0):
-            return b"no es un pdf"
+        def escaneado(_url, _max=0):
+            return b"%PDF-1.4 una foto"
 
         def nunca(_url, _max=0):
             raise AssertionError
@@ -154,10 +179,19 @@ class PruebaMensajes(CachePropio):
         avisos = [
             self._aviso(sin_respuesta),
             self._aviso(sin_permiso),
-            self._aviso(ilegible),
+            self._aviso(escaneado),
             self._aviso(nunca, SIN_PDF),
         ]
-        self.assertEqual(len(set(avisos)), 4, "dos motivos comparten texto")
+
+        largo = "BASES\n" + "a) Redactar informes del area.\n" * 30
+        original = bases_pdf.texto_de_pdf
+        bases_pdf.texto_de_pdf = lambda *_a, **_k: largo
+        try:
+            avisos.append(self._aviso(lambda _u, _m=0: b"%PDF-1.4 con texto"))
+        finally:
+            bases_pdf.texto_de_pdf = original
+
+        self.assertEqual(len(set(avisos)), 5, "dos motivos comparten texto")
 
 
 class PruebaNoRompeLoQueYaFuncionaba(CachePropio):
