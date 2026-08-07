@@ -235,10 +235,24 @@ def _en_rango(valor: int, moneda: str) -> bool:
 
 # --------------------------------------------------------------------------
 
-def extraer_sueldo(texto: str) -> Sueldo | None:
+# Las palabras con las que un aviso NOMBRA su sueldo. Decisión de Mentita
+# (7/8/2026): cuando el texto dice una de estas justo antes del monto, eso es
+# el sueldo y le gana a cualquier otra fuente, incluida la ficha del portal.
+#
+# Son deliberadamente pocas. "base" o "básico" a secas no entran: valen como
+# refuerzo de confianza, pero no bastan para contradecir al portal. Sí entran
+# combinadas ("sueldo base", "sueldo básico"), porque llevan "sueldo" dentro.
+_ETIQUETAS_EXPLICITAS = ("sueldo", "salario", "remuneracion", "remuneración")
+
+
+def extraer_sueldo(texto: str, solo_etiquetado: bool = False) -> Sueldo | None:
     """
     Devuelve el sueldo mensual detectado o None si el aviso no lo declara.
     Ante la duda, None: preferimos perder un aviso a publicar un monto falso.
+
+    Con `solo_etiquetado=True` se queda únicamente con montos que el texto
+    llama sueldo por su nombre. Sirve para creerle al aviso por encima de la
+    ficha de datos del portal — ver `procesar_cruda` en `pipeline.py`.
     """
     if not texto:
         return None
@@ -309,6 +323,12 @@ def extraer_sueldo(texto: str) -> Sueldo | None:
                 continue
 
             etiquetado = any(e in ventana for e in _ETIQUETAS_SUELDO)
+
+            # El filtro va ANTES de guardar el candidato, no después: si no,
+            # el `break` de más abajo cortaría la búsqueda con candidatos sin
+            # etiqueta y luego se quedarían fuera todos, devolviendo None.
+            if solo_etiquetado and not any(e in ventana for e in _ETIQUETAS_EXPLICITAS):
+                continue
 
             confianza = 100
             if periodo != "mensual":

@@ -36,8 +36,25 @@ def procesar_cruda(cruda: OfertaCruda) -> Oferta:
     bloques = extraer_bloques(cuerpo)
     texto_plano = " ".join(html_a_lineas(cuerpo))
 
-    # El campo de sueldo del portal manda; si no dice nada, buscamos en el cuerpo.
-    sueldo = extraer_sueldo(cruda.sueldo_texto) or extraer_sueldo(texto_plano)
+    # De dónde sale el sueldo, en orden, y el orden importa:
+    #
+    #   1. El TEXTO DEL AVISO cuando lo nombra: "Sueldo base: S/ 1,200",
+    #      "Remuneración: S/ 1,130". Eso lo escribió el empleador con todas
+    #      sus letras y no admite otra lectura.
+    #   2. La ficha de datos del portal (`baseSalary` del JSON-LD).
+    #   3. Cualquier monto del cuerpo, como último recurso.
+    #
+    # El 1 manda sobre el 2 por decisión de Mentita (7/8/2026), y la razón está
+    # en los avisos que lo destaparon: un asesor de cobranza salía con
+    # S/ 500 – S/ 1,000 y un promotor con S/ 600, mientras el propio aviso
+    # decía "Sueldo base: S/.1200" y "Sueldo básico: S/ 1,130". El empleador
+    # había metido sus COMISIONES en el campo de sueldo del portal.
+    #
+    # No es aflojar la regla 1, es afinarla: entre dos números que dicen ser el
+    # sueldo, gana el que viene con la palabra "sueldo" pegada.
+    sueldo = (extraer_sueldo(texto_plano, solo_etiquetado=True)
+              or extraer_sueldo(cruda.sueldo_texto)
+              or extraer_sueldo(texto_plano))
 
     ciudad, departamento = detectar_ubicacion(cruda.ubicacion_texto, texto_plano)
     modalidad = detectar_modalidad(f"{cruda.ubicacion_texto} {texto_plano}")
