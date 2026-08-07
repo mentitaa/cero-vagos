@@ -82,7 +82,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **279** y pasan todos.
+Los tests son **300** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -227,11 +227,31 @@ Lo que está esperando, en orden aproximado de impacto:
    no supimos sacar las funciones. Ese problema es nuestro y se arregla sin
    tocar ninguna regla.
 
-   Uno de esos PDF resultó estar **escaneado**: es una foto del documento, sin
-   texto adentro. Por eso el 6/8 se partió ese motivo en dos —«escaneado» y
-   «trae texto pero no reconocimos el encabezado»— y falta una corrida más para
-   saber cuál manda. Si son escaneados, hace falta OCR (caro y lento). Si es lo
-   otro, se arregla mirando un PDF y agregando el encabezado que use.
+   *El segundo reparto, y por qué se construyó el OCR.* Al partir ese 31 en dos
+   salieron **11 PDF sin nada de texto** (una foto escaneada) y **20 con texto
+   roto**. Los 20 no usan otro encabezado: usan el correcto, mal escrito. De las
+   bases de la UGEL San Pablo, copiado tal cual:
+
+       Pr¡ncipales funciones a desanollar:
+
+   Debería decir «Principales funciones a desarrollar». La `i` salió `¡` y las
+   dos `rr` se volvieron `n`; el contenido viene además desordenado. Alguien ya
+   les pasó un lector de letras antes de subirlas y le salió mal.
+
+   O sea que los 11 y los 20 son **el mismo problema**: bases que son imágenes.
+   Ensanchar el patrón de encabezados habría sido peor que no hacer nada —
+   encontraría el título y publicaría renglones ilegibles, contra la regla 2.
+
+   *Lo que se hizo (6/8/2026, decisión de Mentita).* Se construyó el OCR:
+   rasterizar la página y leerle las letras nosotros, partiendo de la imagen en
+   vez del texto roto. Vive en `motor/bases_pdf.py` (`texto_por_ocr`), entra
+   **solo cuando el camino normal ya falló**, mira 5 páginas y tiene tope de
+   tiempo. Cuesta segundo y medio por página.
+
+   Y lleva guardián: `parece_ilegible` bota las funciones que salgan rotas, así
+   que un OCR malo no ensucia el sitio. **Falta la primera corrida con esto**:
+   el registro dirá «Las funciones se sacaron leyéndole las letras a la imagen»
+   con su contador, y ese número dice si valió la pena el gasto.
 
    *La incoherencia que hay que resolver, la reparta como la reparta.* Hoy, de
    dos avisos igual de incompletos, se publica el que trae cinco requisitos y
@@ -395,7 +415,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 279 tests
+python3 -m unittest discover pruebas -v      # los 300 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
