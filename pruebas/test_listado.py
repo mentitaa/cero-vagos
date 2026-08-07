@@ -23,6 +23,41 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 
 
+class PruebaLaBarraDeArribaLlegaAlBorde(unittest.TestCase):
+    """
+    La barra de navegación va de punta a punta, como el marquee de arriba y el
+    hero de abajo.
+
+    Estuvo limitada a 1360px y centrada, y en una pantalla más ancha quedaba
+    crema vacía a la derecha del botón de alertas, sin ningún borde que la
+    cerrara. Mentita lo vio enseguida: «el botón parece pegado a la izquierda».
+    No estaba mal alineado — es que la barra se acababa antes que la pantalla.
+
+    El resto de la página sí va a 1360px con `.wrap`, y así debe seguir: esas
+    son columnas de texto y leerlas de borde a borde es incómodo. Lo que va al
+    borde son las franjas de color.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.html = (RAIZ / "index.html").read_text(encoding="utf-8")
+
+    def _regla(self, selector: str) -> str:
+        """Devuelve lo que hay entre llaves de una regla CSS."""
+        m = re.search(re.escape(selector) + r"\{([^}]*)\}", self.html)
+        self.assertIsNotNone(m, f"no se encontró la regla {selector}")
+        return m.group(1)
+
+    def test_la_barra_no_esta_limitada(self):
+        self.assertNotIn("max-width", self._regla(".nav"),
+                         "volvió el tope de ancho a la barra: el botón de "
+                         "alertas se va a ver otra vez abandonado")
+
+    def test_las_columnas_de_texto_si_estan_limitadas(self):
+        """Lo de arriba no debe contagiarse al contenido."""
+        self.assertIn("max-width:1360px", self._regla(".wrap"))
+
+
 class PruebaListadoPorTandas(unittest.TestCase):
 
     @classmethod
