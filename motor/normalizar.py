@@ -108,34 +108,33 @@ PISTAS_CATEGORIA = {
                    "fullstack", "qa", "devops", "data", "datos", "software", "sistemas",
                    "ti ", "it ", "ciberseguridad", "soporte tecnico", "analista funcional",
                    "ux", "ui", "scrum", "cloud", "base de datos", "sre"),
-    "Ventas": ("vendedor", "ventas", "comercial", "ejecutivo comercial", "asesor de ventas",
+    "Ventas": ("vendedor", "venta", "comercial", "seguros", "ejecutivo comercial", "asesor de ventas",
                "key account", "kam", "televentas", "promotor", "impulsador"),
     "Contabilidad": ("contable", "contador", "contabilidad", "tesoreria", "tributario",
-                     "costos", "auditoria", "facturacion", "cobranzas", "finanzas"),
-    "Salud": ("enfermer", "medico", "médico", "tecnico en enfermeria", "odontolog",
+                     "costos", "auditoria", "facturacion", "cobranza", "finanzas"),
+    "Salud": ("enfermer", "medico", "tecnico en enfermeria", "odontolog",
               "psicolog", "nutricionista", "obstetra", "farmac", "laboratorio clinico",
               "tecnologo medico", "fisioterapeuta"),
-    "Prácticas": ("practicante", "practicas", "prácticas", "trainee", "pasante", "intern"),
+    "Prácticas": ("practicante", "practicas", "trainee", "pasante", "intern"),
     "Administración": ("asistente administrativ", "administrativ", "recepcionist",
                        "secretari", "asistente de gerencia", "coordinador administrativo"),
-    "Logística": ("almacen", "almacén", "logistic", "logístic", "despacho", "distribucion",
+    "Logística": ("almacen", "logistic", "despacho", "distribucion",
                   "transporte", "conductor", "chofer", "operario de almacen", "picking",
                   "supply", "compras", "abastecimiento"),
     "Marketing": ("marketing", "community manager", "publicidad", "comunicaciones",
                   "diseñador grafico", "contenido", "redes sociales", "trade marketing",
                   "brand", "seo", "performance"),
-    "Ingeniería": ("ingenier", "mantenimiento", "produccion", "producción", "planta",
+    "Ingeniería": ("ingenier", "mantenimiento", "produccion", "planta",
                    "mecanic", "electric", "civil", "industrial", "seguridad y salud",
                    "sst", "calidad", "proyectos"),
     "Educación": ("docente", "profesor", "tutor", "auxiliar de educacion", "coordinador academico",
                   "capacitador", "instructor"),
-    "Legal": ("abogad", "legal", "juridic", "jurídic", "asesor legal", "compliance"),
+    "Legal": ("abogad", "legal", "juridic", "asesor legal", "compliance"),
     "Recursos Humanos": ("recursos humanos", "rrhh", "reclutador", "reclutamiento",
                          "seleccion de personal", "gestion humana", "talento", "planilla"),
-    "Atención al Cliente": ("call center", "atencion al cliente", "atención al cliente",
-                            "servicio al cliente", "asesor telefonico", "back office",
+    "Atención al Cliente": ("call center", "atencion al cliente", "servicio al cliente", "customer service", "asesor telefonico", "back office",
                             "plataforma de atencion"),
-    "Construcción": ("obra", "construccion", "construcción", "albañil", "maestro de obra",
+    "Construcción": ("obra", "construccion", "albañil", "maestro de obra",
                      "topografo", "capataz", "encofrador"),
     "Gastronomía": ("cocinero", "chef", "mozo", "barista", "bartender", "panadero",
                     "pastelero", "ayudante de cocina", "azafata"),
@@ -309,15 +308,95 @@ def detectar_ubicacion(texto_ubicacion: str, cuerpo: str = "") -> tuple[str, str
     return "", ""
 
 
+# Categorías que describen BAJO QUÉ CONTRATO se trabaja, no de qué es el
+# trabajo. Solo cuentan si están en el título.
+#
+# Reportado por Mentita el 7/8/2026 con dos avisos reales:
+#
+#   · "Especialista en fiscalización de establecimientos farmacéuticos"
+#     salía como Prácticas, porque el aviso habla de "buenas prácticas de
+#     almacenamiento".
+#   · "Supervisor(a) de energías renovables" también, porque su resumen dice
+#     "supervisar a pasantes estudiantes o profesionales".
+#
+# En los dos casos la palabra está ahí, pero describe lo que la persona va a
+# fiscalizar o a supervisar — no su propio contrato. Una práctica se anuncia
+# como tal en el título: "Practicante de Marketing", "Trainee Comercial".
+SOLO_EN_EL_TITULO = ("Prácticas",)
+
+# Cada pista se busca al INICIO DE UNA PALABRA, no en cualquier parte del texto.
+#
+# Buscándola en cualquier parte pasaba esto, y es difícil de ver leyendo el
+# código: "Asesor de Cobranza" salía catalogado como **Construcción**, porque
+# la pista "obra" está dentro de "c-obra-nza". Y "intern" está dentro de
+# "interna" e "internacional", así que cualquier aviso de auditoría interna se
+# iba a Prácticas.
+#
+# El inicio de palabra y no la palabra entera, porque muchas pistas son raíces
+# a propósito: "enfermer" tiene que calzar con enfermera y enfermero,
+# "ingenier" con ingeniero e ingeniería.
+#
+# Las pistas se juntan en un conjunto antes de compilar: "practicas" y
+# "prácticas" son la misma una vez quitadas las tildes, y contadas dos veces
+# le daban a su categoría el doble de puntaje con una sola aparición. Le
+# pasaba a media docena (medico/médico, almacen/almacén, produccion/producción)
+# y desempataba a favor de la equivocada.
+# Pistas que además tienen que terminar donde termina la palabra.
+#
+# "intern" es inglés y en un aviso peruano casi nunca aparece solo: aparece
+# dentro de "interna" e "internacional". Como raíz mandaba a Prácticas
+# cualquier "Asistente de Auditoría Interna".
+_PISTAS_PALABRA_ENTERA = {"intern"}
+
+_PISTAS_COMPILADAS = {
+    categoria: [
+        re.compile(r"\b" + re.escape(p) + (r"\b" if p in _PISTAS_PALABRA_ENTERA else ""))
+        for p in sorted({sin_tildes(x) for x in pistas})
+    ]
+    for categoria, pistas in PISTAS_CATEGORIA.items()
+}
+
+
 def detectar_categoria(puesto: str, cuerpo: str = "") -> str:
-    plano = sin_tildes(f"{puesto} {puesto} {cuerpo[:500]}")   # el puesto pesa doble
-    puntajes = {}
-    for categoria, pistas in PISTAS_CATEGORIA.items():
-        puntaje = sum(1 for p in pistas if sin_tildes(p) in plano)
-        if puntaje:
-            puntajes[categoria] = puntaje
+    """
+    De qué es el trabajo, según su título primero.
+
+    **Manda el título, y el cuerpo solo habla si el título calla.** Antes se
+    sumaban las pistas de los dos juntos, y el cuerpo ganaba siempre por
+    cantidad: un aviso de ventas que menciona "sistemas", "datos" y "soporte"
+    sumaba tres para Tecnología contra uno para Ventas. Así "Asesor(a) de
+    Ventas" terminó catalogado como Atención al Cliente, y "Customer Service"
+    como Ingeniería.
+
+    Es la misma idea de la regla 8: **el título dice qué es el trabajo.** El
+    cuerpo dice con qué herramientas se hace, en qué contexto y qué piden — y
+    eso confunde más de lo que aclara.
+    """
+    titulo = sin_tildes(puesto)
+    plano = sin_tildes(f"{puesto} {cuerpo[:500]}")
+
+    def contar(texto: str) -> dict[str, int]:
+        marcador = {}
+        for categoria, pistas in _PISTAS_COMPILADAS.items():
+            if categoria in SOLO_EN_EL_TITULO and texto is not titulo:
+                continue
+            puntaje = sum(1 for p in pistas if p.search(texto))
+            if puntaje:
+                marcador[categoria] = puntaje
+        return marcador
+
+    puntajes = contar(titulo) or contar(plano)
+
     if not puntajes:
         return "Otros"
+
+    # Si el título dice que es una práctica, es una práctica — aunque el aviso
+    # hable de ventas o de marketing. "Trainee Comercial" también toca Ventas,
+    # pero quien filtra por Prácticas lo está buscando a él.
+    for especial in SOLO_EN_EL_TITULO:
+        if especial in puntajes:
+            return especial
+
     return max(puntajes.items(), key=lambda kv: kv[1])[0]
 
 

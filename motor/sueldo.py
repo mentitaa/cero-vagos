@@ -102,6 +102,55 @@ _ETIQUETAS_SUELDO = (
     "base", "haber", "ingreso mensual", "pago mensual", "renta",
 )
 
+# Palabras que, justo antes del número, dicen que ese monto NO es el sueldo.
+#
+# Este es el error que reportó Mentita el 7/8/2026, y es hermano del de los
+# S/ 33,800. Un aviso de promotor de ventas decía:
+#
+#     Sueldo básico: S/ 1,130.
+#     Comisiones de hasta S/ 600.
+#
+# y el sitio publicaba **S/ 600**. Una comisión, un bono o un vale de alimentos
+# son plata que puedes ganar, pero no son el sueldo: quien busca chamba compara
+# sueldos, y publicar la comisión como si lo fuera es exactamente el tipo de
+# aviso engañoso que Cero Vagos existe para rechazar.
+#
+# Ojo con lo que NO está en esta lista: "subvención" se queda fuera a propósito,
+# porque es como se llama el pago de una práctica preprofesional. Ahí el monto
+# sí es lo que te llevas.
+_NO_ES_SUELDO = (
+    "comision", "comisiones", "bono", "bonific", "incentivo", "premio",
+    "movilidad", "alimentacion", "tarjeta de alimentos", "vale", "canasta",
+    "asignacion familiar", "gratificacion", "cts", "utilidades", "aguinaldo",
+    "descuento", "afiliacion", "seguro", "eps", "refrigerio", "viatico",
+)
+
+
+def _ventana_de_etiqueta(antes: str) -> str:
+    """
+    Recorta lo que va antes del monto para que la etiqueta sea SUYA.
+
+    El error, con el texto real de un aviso:
+
+        Sueldo básico: S/ 1,130. Comisiones de hasta S/ 600.
+
+    Al mirar los 40 caracteres previos al 600, la ventana llegaba hasta el
+    "básico:" del monto anterior. Los dos montos salían "etiquetados como
+    sueldo", empataban en confianza, y el desempate —que elige el más bajo por
+    prudencia— se quedaba con la comisión.
+
+    La regla es la misma que ya se aplicó al PERIODO después del error de los
+    S/ 33,800: **lo que califica a un monto tiene que estar pegado a él.** Se
+    corta en el último punto, punto y coma, o monto anterior, lo que venga
+    después.
+    """
+    corte = 0
+    for marca in (".", ";", "s/", "us$"):
+        pos = antes.rfind(marca)
+        if pos >= 0:
+            corte = max(corte, pos + len(marca))
+    return antes[corte:]
+
 
 @dataclass
 class Sueldo:
@@ -249,7 +298,17 @@ def extraer_sueldo(texto: str) -> Sueldo | None:
             if n_grupos == 2 and hi > lo * 6:      # rango absurdo: 1500 a 90000
                 continue
 
-            etiquetado = any(e in antes[-40:] for e in _ETIQUETAS_SUELDO)
+            # La ventana se recorta para que la etiqueta sea de ESTE monto y no
+            # se contagie del anterior. Ver `_ventana_de_etiqueta`.
+            ventana = _ventana_de_etiqueta(antes)[-40:]
+
+            # Si lo que precede al monto dice que es una comisión, un bono o un
+            # vale, no es el sueldo y no se usa. Perder el aviso es preferible a
+            # publicar como sueldo algo que no lo es (regla 2).
+            if any(n in ventana for n in _NO_ES_SUELDO):
+                continue
+
+            etiquetado = any(e in ventana for e in _ETIQUETAS_SUELDO)
 
             confianza = 100
             if periodo != "mensual":
