@@ -236,6 +236,23 @@ def parsear_convocatoria(html: str, url: str, fuente: str) -> OfertaCruda | None
 
 # --------------------------------------------------------------------------
 
+def _bloque_funciones(items: str) -> str:
+    """
+    Pega la sección de funciones al final del aviso, con un salto POR DELANTE.
+
+    Ese `<br>` no es adorno. El cuerpo que traía el aviso puede terminar en
+    cualquier cosa —un enlace, un `</a>`— y al normalizar, la última línea del
+    texto anterior y la palabra "Funciones" quedaban en el mismo renglón:
+
+        Ver aquí Bases Funciones
+
+    Así el encabezado deja de reconocerse, y las funciones que tanto costó
+    sacar del PDF terminan contadas como requisitos. El aviso pasa de tener
+    funciones a no tenerlas sin que nada falle a la vista.
+    """
+    return f"<br><p>Funciones</p><ul>{items}</ul>"
+
+
 def enriquecer_con_bases(cruda: OfertaCruda, html: str, bajar) -> str:
     """
     Abre el PDF de las bases y le saca las funciones del puesto.
@@ -260,7 +277,7 @@ def enriquecer_con_bases(cruda: OfertaCruda, html: str, bajar) -> str:
     """
     from ..bases_pdf import (
         desde_cache, enlaces_pdf, extraer_funciones, guardar_en_cache,
-        texto_de_pdf, MAX_BYTES,
+        hay_ocr, texto_de_pdf, texto_por_ocr, MAX_BYTES,
     )
     from ..normalizar import extraer_bloques
     from .base import ErrorFuente
@@ -288,11 +305,30 @@ def enriquecer_con_bases(cruda: OfertaCruda, html: str, bajar) -> str:
 
             texto = texto_de_pdf(datos)
             funciones = extraer_funciones(texto)
+
+            # Último recurso: leerle las letras a la imagen.
+            #
+            # Va DESPUÉS de haber fallado por lo normal, nunca antes: cuesta
+            # segundos por página, mientras que sacar el texto que el PDF ya
+            # trae es instantáneo. Y se intenta aunque el PDF sí tuviera texto,
+            # porque el caso más común no es el PDF vacío sino el PDF cuyo
+            # texto está roto — ahí la imagen original es mejor fuente que lo
+            # que el archivo dice traer.
+            por_ocr = False
+            if len(funciones) < 3 and hay_ocr():
+                funciones = extraer_funciones(texto_por_ocr(datos))
+                por_ocr = len(funciones) >= 3
+
             if len(funciones) >= 3:
                 items = "".join(f"<li>{f}</li>" for f in funciones)
-                cruda.descripcion_html += f"<p>Funciones</p><ul>{items}</ul>"
+                cruda.descripcion_html += _bloque_funciones(items)
                 cruda.extra["funciones_desde_pdf"] = url_pdf
                 cruda.extra["funciones_desde"] = url_pdf
+                # Queda anotado para poder contar cuántas convocatorias salvó
+                # el OCR. Si ese número es bajo, no valía la pena el gasto.
+                cruda.extra["funciones_por_ocr"] = por_ocr
+                if por_ocr:
+                    motivos["rescatado_por_ocr"] = url_pdf
                 return True
 
             # Otros dos fracasos que parecen uno solo y no lo son:
@@ -312,9 +348,21 @@ def enriquecer_con_bases(cruda: OfertaCruda, html: str, bajar) -> str:
                 "escaneado" if len(texto) < 200 else "sin_encabezado", url_pdf)
         return False
 
+    def rescate() -> str:
+        """
+        Se salió bien, pero conviene decir CÓMO. Cuando las funciones salieron
+        de la imagen y no del texto, se anota: ese contador es lo único que
+        dice si el OCR se está ganando el tiempo que cuesta.
+        """
+        if "rescatado_por_ocr" in motivos:
+            return ("Las funciones se sacaron leyéndole las letras a la imagen "
+                    "(OCR): las bases venían escaneadas o mal digitalizadas. "
+                    f"Ejemplo: {motivos['rescatado_por_ocr']}")
+        return ""
+
     # 1) ¿El PDF está enlazado en el propio aviso?
     if intentar(enlaces_pdf(html, base)):
-        return ""
+        return rescate()
 
     # 2) Si no, se sigue el enlace al anuncio oficial de la entidad. Ahí es
     #    donde suelen vivir las bases: el agregador solo enlaza a la página.
@@ -328,14 +376,14 @@ def enriquecer_con_bases(cruda: OfertaCruda, html: str, bajar) -> str:
         propias = extraer_bloques(pagina)["funciones"]
         if len(propias) >= 3:
             items = "".join(f"<li>{f}</li>" for f in propias)
-            cruda.descripcion_html += f"<p>Funciones</p><ul>{items}</ul>"
+            cruda.descripcion_html += _bloque_funciones(items)
             cruda.extra["funciones_desde"] = url_oficial
             return ""
 
         # 2b) Si no, se buscan las bases en PDF dentro de esa página.
         if intentar(enlaces_pdf(pagina, url_oficial)):
             cruda.extra["via_anuncio_oficial"] = url_oficial
-            return ""
+            return rescate()
 
     # Cada mensaje lleva un ejemplo de PDF, y eso es a propósito: el registro
     # agrupa los avisos reemplazando la dirección, así que los tres motivos
@@ -349,13 +397,18 @@ def enriquecer_con_bases(cruda: OfertaCruda, html: str, bajar) -> str:
     if "sin_permiso" in motivos:
         return ("No se llegó a las funciones: la entidad contestó que no se "
                 f"puede leer ese PDF. Ejemplo: {motivos['sin_permiso']}")
+    # Si el sistema tiene con qué leer imágenes, entonces el OCR ya se intentó
+    # y también falló. Decirlo cambia el diagnóstico: no es que falte una
+    # herramienta, es que ese PDF no hay por dónde agarrarlo.
+    tambien_ocr = " Ni siquiera leyendo la imagen." if hay_ocr() else \
+                  " Falta instalar tesseract para poder leer la imagen."
     if "sin_encabezado" in motivos:
-        return ("No se llegó a las funciones: el PDF de las bases sí trae texto, "
-                "pero no se reconoció dónde empieza la lista de funciones. "
-                f"Ejemplo: {motivos['sin_encabezado']}")
+        return ("No se llegó a las funciones: el PDF de las bases trae texto, "
+                "pero no se reconoció dónde empieza la lista de funciones."
+                f"{tambien_ocr} Ejemplo: {motivos['sin_encabezado']}")
     if "escaneado" in motivos:
         return ("No se llegó a las funciones: el PDF de las bases está escaneado "
-                "(es una foto, no trae texto). Haría falta OCR. "
+                f"(es una foto, no trae texto).{tambien_ocr} "
                 f"Ejemplo: {motivos['escaneado']}")
     return ("No se llegó a las funciones: el aviso no enlaza ningún PDF de "
             "bases, ni en el propio aviso ni en la página de la entidad")
