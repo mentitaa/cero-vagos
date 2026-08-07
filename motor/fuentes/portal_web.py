@@ -144,6 +144,10 @@ class PortalWeb(Fuente):
         # Lo pone el pipeline: devuelve True si esa URL ya se revisó hace poco.
         # Permite retomar una corrida cortada sin repetir el trabajo.
         self.ya_visto = None
+        # Direcciones concretas a releer, en vez de salir a descubrirlas.
+        # Lo llena `--reparar` con lo que ya está publicado. Ver
+        # `Almacen.urls_publicadas`.
+        self.urls_fijas: list[str] = []
         # Lo pone el pipeline para poder contar qué está pasando. Sin esto, el
         # motor puede tardar minutos en descubrir direcciones o en abrir el
         # navegador sin escribir una sola línea, y desde afuera parece colgado.
@@ -356,8 +360,17 @@ class PortalWeb(Fuente):
             # Se exploran más URLs de las que se necesitan, porque buena parte
             # estará vencida. Con navegador cada página cuesta segundos, así
             # que ahí se explora menos.
-            self._avisar("buscando direcciones de avisos…")
-            urls = self.urls_de_avisos(limite * (2 if self.necesita_render else 4))
+            # Reparar: en vez de salir a descubrir, se releen las direcciones
+            # que ya están publicadas. Va ANTES de `urls_de_avisos` a propósito,
+            # para saltarse también los filtros de descubrimiento de cada
+            # fuente — al reparar no queremos criterios, queremos estas y ya.
+            if self.urls_fijas:
+                self._avisar(f"reparando: {len(self.urls_fijas)} avisos ya "
+                             f"publicados, sin buscar direcciones nuevas")
+                urls = self.urls_fijas[:limite]
+            else:
+                self._avisar("buscando direcciones de avisos…")
+                urls = self.urls_de_avisos(limite * (2 if self.necesita_render else 4))
             if not urls:
                 return
             # El aviso de tiempo va con un rango y no con un número redondo:
