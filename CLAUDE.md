@@ -216,82 +216,45 @@ oferta. No hay que "aflojar el filtro para tener más avisos": eso es
 exactamente lo que hacen los portales que queremos reemplazar. Si hacen falta
 más ofertas, la respuesta es **más fuentes**, no menos exigencia.
 
+## Las convocatorias del Estado sin funciones (decidido el 7/8/2026)
+
+Estuvo abierto tres días y lo cerró Mentita: **se quedan como están.** Del
+Estado se publica lo que traiga, aunque no diga qué vas a hacer, y **no se
+cambia nada más**: ni la promesa de las cuatro cosas, ni el umbral, ni el
+título de la portada.
+
+En la práctica esas convocatorias muestran **tres marcas de cuatro** (sueldo,
+requisitos, beneficios) y en «Qué vas a hacer» va el párrafo que explica que
+las funciones viven en las bases del concurso. Nada más: ni disculpa, ni
+etiqueta, ni advertencia. Se vio en la ficha de *Especialista en Salud
+Ambiental II* (Huancavelica, S/ 3,000) y quedó aprobada tal cual.
+
+**Por qué es defendible.** Cero Vagos no promete que el aviso sea perfecto:
+promete no esconderte lo que falta. Un portal cualquiera te haría postular sin
+enterarte; acá el hueco está señalado, dice dónde buscar y enlaza al documento
+oficial. La convocatoria además trae sueldo exacto, requisitos detallados y
+beneficios de ley, que es más de lo que trae el 95% de los avisos privados.
+
+**Qué se descartó, y por qué.**
+
+- *Endurecer* (sin funciones no se publica) habría botado casi todas las CAS,
+  que hoy son la fuente con mejor tasa de aprobación y casi toda la oferta de
+  provincia del sitio. Se habría perdido el aviso completo por no tener una
+  lista que la entidad nunca publicó.
+- *Recolectar desde Perú* arregla 9 casos de 54 y obliga a que la laptop
+  escriba donde escribe el bot. Mucho riesgo para poco.
+
+**Lo que queda vivo de esto.** Los títulos que no dicen qué es el trabajo
+—«Jefe», «Técnico», «Especialista»— siguen anotados aparte en el tablero. Son
+un problema de la regla 8, no de esta decisión, y se tratan por su cuenta.
+
+*El detalle de cómo se llegó acá —los 54 fallos repartidos por motivo, la
+hipótesis del bloqueo geográfico que resultó falsa, y por qué se construyó el
+OCR— está en la bitácora de Notion.*
+
 ## Pendientes
 
 Lo que está esperando, en orden aproximado de impacto:
-
-0. **Decidir qué pasa con las convocatorias CAS sin funciones.** Es la
-   pregunta abierta más importante, y es de Mentita, no técnica.
-
-   *Lo que se sabe.* En la primera corrida, **48 de 78 avisos no llegaron a
-   sus funciones** porque el PDF de las bases no se pudo abrir. Se comprobó el
-   6/8/2026: `munisurquillo.gob.pe` **carga al instante desde Perú y no
-   contesta desde los servidores de GitHub**. No es un bloqueo de la entidad ni
-   un fallo del lector — es desde dónde se pregunta. La regla 6 hace lo
-   correcto (sin robots.txt legible, no se pide nada), pero el efecto es que
-   la fuente rinde mucho menos en la nube que en una laptop peruana.
-
-   *El reparto, medido el 6/8/2026 (y la sorpresa).* Con los motivos separados
-   en el registro y una corrida forzada con `rehacer`, los ~54 fallos salieron
-   así:
-
-   | Motivo | Veces |
-   |---|---|
-   | El PDF se bajó pero no se le pudieron sacar funciones | **31** |
-   | El aviso no enlaza ningún PDF de bases | 14 |
-   | El servidor de la entidad no contestó | 9 |
-
-   **La hipótesis del bloqueo geográfico era falsa.** Se dio por hecho que el
-   problema era que las webs `.gob.pe` no responden desde la nube, y eso explica
-   solo 9 casos. El grueso —31— son PDF que **sí se descargaron** y de los que
-   no supimos sacar las funciones. Ese problema es nuestro y se arregla sin
-   tocar ninguna regla.
-
-   *El segundo reparto, y por qué se construyó el OCR.* Al partir ese 31 en dos
-   salieron **11 PDF sin nada de texto** (una foto escaneada) y **20 con texto
-   roto**. Los 20 no usan otro encabezado: usan el correcto, mal escrito. De las
-   bases de la UGEL San Pablo, copiado tal cual:
-
-       Pr¡ncipales funciones a desanollar:
-
-   Debería decir «Principales funciones a desarrollar». La `i` salió `¡` y las
-   dos `rr` se volvieron `n`; el contenido viene además desordenado. Alguien ya
-   les pasó un lector de letras antes de subirlas y le salió mal.
-
-   O sea que los 11 y los 20 son **el mismo problema**: bases que son imágenes.
-   Ensanchar el patrón de encabezados habría sido peor que no hacer nada —
-   encontraría el título y publicaría renglones ilegibles, contra la regla 2.
-
-   *Lo que se hizo (6/8/2026, decisión de Mentita).* Se construyó el OCR:
-   rasterizar la página y leerle las letras nosotros, partiendo de la imagen en
-   vez del texto roto. Vive en `motor/bases_pdf.py` (`texto_por_ocr`), entra
-   **solo cuando el camino normal ya falló**, mira 5 páginas y tiene tope de
-   tiempo. Cuesta segundo y medio por página.
-
-   Y lleva guardián: `parece_ilegible` bota las funciones que salgan rotas, así
-   que un OCR malo no ensucia el sitio. **Falta la primera corrida con esto**:
-   el registro dirá «Las funciones se sacaron leyéndole las letras a la imagen»
-   con su contador, y ese número dice si valió la pena el gasto.
-
-   *La incoherencia que hay que resolver, la reparta como la reparta.* Hoy, de
-   dos avisos igual de incompletos, se publica el que trae cinco requisitos y
-   se rechaza el que trae tres:
-
-   - *Ayudante de poda*, Surquillo, S/ 1.800 → 69, **rechazada**
-   - *Jefe*, Municipalidad de Pacucha, S/ 2.200 → 72, **publicada**
-
-   Ninguna de las dos dice qué vas a hacer. La que entró, además, tiene un
-   título que no dice qué es el trabajo ("Jefe", "Técnico", "Especialista",
-   "Asistente"), que es justo lo que la regla 8 existe para evitar. Osea que
-   el sitio está publicando avisos del Estado sin funciones — una de las cuatro
-   cosas que Cero Vagos promete. La decisión del 4/8 de no exigírselas al
-   Estado se tomó con el argumento "las funciones están en el PDF y nosotros lo
-   abrimos"; ahora se sabe que muchas veces no se puede.
-
-   Los caminos, sin que ninguno sea obviamente el correcto: endurecer (sin
-   funciones no se publica, y se caen también las de 72), aflojar (aceptar y
-   arreglar los títulos vagos y la ficha), o recolectar desde Perú (choca con
-   que la carpeta local no debe pisar lo del bot).
 
 1. **Más fuentes.** 63 ofertas siguen siendo pocas para que alguien vuelva al
    día siguiente. Nunca aflojar el filtro. Revisado el mercado el 4/8/2026,
