@@ -59,7 +59,11 @@ color:var(--negro);padding:5px 11px;font-size:12px;font-weight:700;text-transfor
 display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
 .pago b{font-family:var(--display);font-size:29px;display:block}
 .pago span{font-size:12px;font-weight:700;text-transform:uppercase}
-.puntaje{background:var(--negro);color:var(--lima);padding:6px 12px;font-weight:700;font-size:12px;text-transform:uppercase}
+/* Lo mismo que en la tarjeta de la portada: las cuatro cosas que el aviso SÍ
+   trae, en vez del score. Ver .job__tiene en index.html. */
+.tiene{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.tiene span{background:var(--lima);border:2px solid var(--negro);padding:5px 9px;
+font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap}
 .bloque{padding:22px 24px;border-bottom:var(--bd)}
 .bloque:last-of-type{border-bottom:none}
 .bases{background:var(--crema)}
@@ -139,7 +143,7 @@ footer{border-top:var(--bd);padding:22px 0;font-size:13px;font-weight:500}
 
     <div class="pago">
       <div><span>Sueldo mensual</span><b>S/ 1,330</b></div>
-      <span class="puntaje">Score de completitud 92/100</span>
+      <div class="tiene"><span>✓ Sueldo</span><span>✓ Funciones</span><span>✓ Requisitos</span><span>✓ Beneficios</span></div>
     </div>
 
     <section class="bloque"><h2>De qué se trata</h2><p style="font-size:15px;line-height:1.5;font-weight:500">Asesoramiento a clientes en búsqueda de los diversos productos.</p></section>
