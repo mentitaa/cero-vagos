@@ -99,7 +99,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **355** y pasan todos.
+Los tests son **358** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -450,6 +450,15 @@ verificar.
   propia: repiten la de otros portales y mandan al usuario a un tercer sitio.
   Eso choca de frente con la regla 5. Jora además tiene el `robots.txt` caído
   (502), o sea que por la regla 6 ni se toca.
+- **Ponerle `display:flex` a una celda de tabla la saca de la tabla.** En
+  `/transparencia` las barras verdes se pegaban ARRIBA en las filas de dos o
+  tres líneas ("Municipalidad Provincial De Yarowilca") en vez de quedar a la
+  altura de su empresa. La celda tenía `display:flex` encima, y eso hace que el
+  navegador deje de tratarla como celda. Se arregla metiendo el contenido en un
+  recuadro adentro y dejándole el flex a ese. Lo reportó Renzo el 7/8/2026.
+- **El menú de celular tapaba justo lo que ibas a ver.** Los enlaces de arriba
+  llevan a la misma página, así que al tocarlos la página bajaba pero el menú
+  se quedaba encima. En computadora no se nota porque ese menú nunca se abre.
 - **SQLite falla en carpetas sincronizadas** (iCloud, Drive, Dropbox) al tomar
   bloqueos. Salida: `export CEROVAGOS_DB=~/cerovagos.db`.
 - **El formulario de alertas está restringido a `cerovagos.com`** en Formspree.
@@ -487,7 +496,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 355 tests
+python3 -m unittest discover pruebas -v      # los 358 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
