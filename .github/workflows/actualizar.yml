@@ -39,7 +39,18 @@ on:
       # repuntuar tras cambiar el filtro está la casilla `reevaluar` del otro
       # flujo (regla 7).
       rehacer:
-        description: "¿Volver a leer avisos ya vistos? (para diagnosticar o reparar un dato mal leído)"
+        description: "¿Volver a leer avisos ya vistos? (para diagnosticar)"
+        type: boolean
+        default: false
+      # Esta es la que repara de verdad, y la que faltaba.
+      #
+      # `rehacer` solo dice "no te saltes lo ya visto", pero la fuente sigue
+      # descubriendo direcciones en su sitemap y se detiene al llegar a su cupo:
+      # que un aviso guardado caiga dentro de ese corte es cuestión de suerte.
+      # El 7/8/2026 se corrió tres veces para corregir tres avisos y los tres
+      # quedaron fuera las tres. `reparar` le pide las direcciones a la base.
+      reparar:
+        description: "¿Releer las ofertas YA PUBLICADAS? (corrige un dato mal leído; ignora los límites de arriba)"
         type: boolean
         default: false
 
@@ -140,10 +151,11 @@ jobs:
         timeout-minutes: 45
         env:
           REHACER: ${{ github.event.inputs.rehacer == 'true' && '--rehacer' || '' }}
+          REPARAR: ${{ github.event.inputs.reparar == 'true' && '--reparar' || '' }}
         run: |
           python -u -m motor recolectar --fuente "Convocatorias CAS" --publicas \
             --limite ${{ github.event.inputs.limite_cas || 120 }} \
-            --dias 0 $REHACER \
+            --dias 0 $REHACER $REPARAR \
             --exportar
         continue-on-error: true
 
@@ -151,10 +163,11 @@ jobs:
         timeout-minutes: 20
         env:
           REHACER: ${{ github.event.inputs.rehacer == 'true' && '--rehacer' || '' }}
+          REPARAR: ${{ github.event.inputs.reparar == 'true' && '--reparar' || '' }}
         run: |
           python -u -m motor recolectar --fuente "Convocatorias del Estado" --publicas \
             --limite ${{ github.event.inputs.limite_publicas || 300 }} \
-            --dias 0 $REHACER \
+            --dias 0 $REHACER $REPARAR \
             --exportar
         continue-on-error: true
 
@@ -172,10 +185,11 @@ jobs:
         timeout-minutes: 50
         env:
           REHACER: ${{ github.event.inputs.rehacer == 'true' && '--rehacer' || '' }}
+          REPARAR: ${{ github.event.inputs.reparar == 'true' && '--reparar' || '' }}
         run: |
           python -u -m motor recolectar --fuente Bumeran \
             --limite ${{ github.event.inputs.limite || 120 }} \
-            --dias ${{ github.event.inputs.dias || 3 }} $REHACER \
+            --dias ${{ github.event.inputs.dias || 3 }} $REHACER $REPARAR \
             --exportar
         continue-on-error: true
 
@@ -197,10 +211,11 @@ jobs:
         timeout-minutes: 50
         env:
           REHACER: ${{ github.event.inputs.rehacer == 'true' && '--rehacer' || '' }}
+          REPARAR: ${{ github.event.inputs.reparar == 'true' && '--reparar' || '' }}
         run: |
           python -u -m motor recolectar --fuente Laborum \
             --limite ${{ github.event.inputs.limite || 240 }} \
-            --dias 0 $REHACER \
+            --dias 0 $REHACER $REPARAR \
             --exportar
         continue-on-error: true
 
