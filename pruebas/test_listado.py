@@ -58,6 +58,40 @@ class PruebaLaBarraDeArribaLlegaAlBorde(unittest.TestCase):
         self.assertIn("max-width:1360px", self._regla(".wrap"))
 
 
+class PruebaElMenuDeCelularSeCierra(unittest.TestCase):
+    """
+    Al elegir una opción del menú de hamburguesa, el menú se cierra.
+
+    Sin eso se quedaba abierto **tapando justo lo que fuiste a ver**: los tres
+    primeros enlaces (Ofertas, El filtro, Fuentes) llevan a la misma página,
+    así que al tocarlos la página baja y el menú sigue encima. En computadora
+    no se nota, porque ese menú va en la barra y nunca se abre.
+
+    Lo reportó Renzo el 7/8/2026.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.html = (RAIZ / "index.html").read_text(encoding="utf-8")
+
+    def test_los_enlaces_cierran_el_menu(self):
+        self.assertIn("classList.remove('open')", self.html,
+                      "nada cierra el menú al elegir una opción")
+
+    def test_el_boton_lo_sigue_abriendo(self):
+        self.assertIn("classList.toggle('open')", self.html)
+
+    def test_los_enlaces_del_menu_llevan_a_la_misma_pagina(self):
+        """
+        Es la razón de ser del arreglo. Si algún día todos llevaran a otra
+        página, cerrarlo dejaría de importar — pero mientras sean anclas de
+        esta misma, el menú tapa el destino.
+        """
+        menu = re.search(r'<nav class="nav__links".*?</nav>', self.html, re.S).group(0)
+        self.assertTrue(re.search(r'href="#\w+"', menu),
+                        "el menú ya no tiene enlaces a esta misma página")
+
+
 class PruebaListadoPorTandas(unittest.TestCase):
 
     @classmethod
