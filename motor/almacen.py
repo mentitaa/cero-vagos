@@ -232,6 +232,32 @@ class Almacen:
     DIAS_RECHAZADAS = 30
     DIAS_APROBADAS = 7
 
+    def urls_publicadas(self) -> dict[str, list[str]]:
+        """
+        Las direcciones de lo que está publicado ahora mismo, por fuente.
+
+        Existe para poder REPARAR. Cuando se arregla la lectura de un dato —un
+        sueldo, una categoría— lo ya guardado conserva el valor viejo, y la
+        única forma de corregirlo es volver a descargar el aviso.
+
+        Hasta el 7/8/2026 eso se intentaba subiendo el límite de la corrida y
+        cruzando los dedos: cada fuente descubre direcciones en su sitemap y se
+        detiene al llegar a su cupo, así que **que un aviso guardado caiga
+        dentro de ese corte es cuestión de suerte**. Se corrió tres veces con
+        `rehacer` y los mismos tres avisos quedaron fuera las tres.
+
+        Pidiendo las direcciones a la base el asunto deja de ser aleatorio: se
+        vuelve a leer exactamente lo que está publicado, ni más ni menos.
+        """
+        filas = self.con.execute(
+            "SELECT fuente, url FROM ofertas "
+            "WHERE aprobada = 1 AND vigente = 1 AND url IS NOT NULL AND url != ''"
+        ).fetchall()
+        por_fuente: dict[str, list[str]] = {}
+        for f in filas:
+            por_fuente.setdefault(f["fuente"], []).append(f["url"])
+        return por_fuente
+
     def urls_a_saltar(self) -> set[str]:
         """
         URLs que no hace falta volver a descargar en esta corrida.
