@@ -29,6 +29,19 @@ on:
       dias:
         description: "Días hacia atrás, solo para Bumeran (0 = sin límite)"
         default: "3"
+      # El motor no vuelve a mirar un aviso rechazado hasta pasados 30 días.
+      # Está bien para el día a día —ahorra descargar lo mismo cada noche— pero
+      # impide volver a correr una fuente para ver qué pasó con ella. El
+      # 6/8/2026 se corrió CAS dos veces seguidas y la segunda saltó 77 de 80
+      # avisos: el registro salió vacío y no hubo nada que medir.
+      #
+      # Ojo: esto NO vuelve a puntuar lo guardado, vuelve a DESCARGARLO. Para
+      # repuntuar tras cambiar el filtro está la casilla `reevaluar` del otro
+      # flujo (regla 7).
+      rehacer:
+        description: "¿Volver a revisar avisos ya vistos? (solo fuentes públicas, para diagnosticar)"
+        type: boolean
+        default: false
 
 # Si una corrida se demora, la siguiente espera en vez de pisarla.
 concurrency:
@@ -88,21 +101,31 @@ jobs:
       # Convocatorias CAS va PRIMERA porque es la que trae convocatorias
       # abiertas. convocape.com resultó ser un archivo: de sus 512 direcciones,
       # 413 tienen el plazo cerrado.
+      # La casilla `rehacer` solo llega a las fuentes públicas, y a propósito:
+      # se leen por HTTP y cada aviso cuesta segundos. Bumeran y Laborum
+      # necesitan navegador, así que rehacerlas no cabría en su reloj.
+      #
+      # Cuando la casilla va sin marcar, la variable queda vacía y el comando
+      # sale exactamente como antes.
       - name: Convocatorias CAS
         timeout-minutes: 35
+        env:
+          REHACER: ${{ github.event.inputs.rehacer == 'true' && '--rehacer' || '' }}
         run: |
           python -u -m motor recolectar --fuente "Convocatorias CAS" --publicas \
             --limite ${{ github.event.inputs.limite_cas || 120 }} \
-            --dias 0 \
+            --dias 0 $REHACER \
             --exportar
         continue-on-error: true
 
       - name: Convocatorias del Estado
         timeout-minutes: 30
+        env:
+          REHACER: ${{ github.event.inputs.rehacer == 'true' && '--rehacer' || '' }}
         run: |
           python -u -m motor recolectar --fuente "Convocatorias del Estado" --publicas \
             --limite ${{ github.event.inputs.limite_publicas || 300 }} \
-            --dias 0 \
+            --dias 0 $REHACER \
             --exportar
         continue-on-error: true
 
