@@ -155,6 +155,29 @@ def _sueldo_texto(o: dict) -> str:
     return _soles(lo) if not hi or hi == lo else f"{_soles(lo)} – {_soles(hi)}"
 
 
+def _lo_que_tiene(o: dict) -> str:
+    """
+    Las cuatro cosas que el aviso SÍ trae, marcadas una por una.
+
+    Reemplaza al "Score de completitud 92/100" que salía acá. El score se
+    quitó de la tarjeta el 7/8/2026 y esta ficha se quedó atrás: seguía
+    mostrándolo, que es exactamente lo que el focus group leyó mal (lo tomaban
+    por una nota AL TRABAJO) y además deja ver la fórmula, que no se publica.
+
+    Las convocatorias del Estado sin funciones muestran tres marcas en vez de
+    cuatro, y está bien: es honesto, y más abajo la ficha explica dónde
+    buscarlas. Es el mismo criterio de `loQueTiene` en `index.html`.
+    """
+    marcas = [
+        ("Sueldo", (o.get("min") or 0) > 0),
+        ("Funciones", bool(o.get("funciones"))),
+        ("Requisitos", bool(o.get("requisitos"))),
+        ("Beneficios", bool(o.get("beneficios"))),
+    ]
+    tiene = "".join(f"<span>✓ {n}</span>" for n, hay in marcas if hay)
+    return f'<div class="tiene">{tiene}</div>' if tiene else ""
+
+
 # --------------------------------------------------------------------------
 # Datos estructurados: lo que lee Google Empleos
 # --------------------------------------------------------------------------
@@ -248,7 +271,11 @@ color:var(--negro);padding:5px 11px;font-size:12px;font-weight:700;text-transfor
 display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
 .pago b{font-family:var(--display);font-size:29px;display:block}
 .pago span{font-size:12px;font-weight:700;text-transform:uppercase}
-.puntaje{background:var(--negro);color:var(--lima);padding:6px 12px;font-weight:700;font-size:12px;text-transform:uppercase}
+/* Lo mismo que en la tarjeta de la portada: las cuatro cosas que el aviso SÍ
+   trae, en vez del score. Ver .job__tiene en index.html. */
+.tiene{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.tiene span{background:var(--lima);border:2px solid var(--negro);padding:5px 9px;
+font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap}
 .bloque{padding:22px 24px;border-bottom:var(--bd)}
 .bloque:last-of-type{border-bottom:none}
 .bases{background:var(--crema)}
@@ -370,7 +397,7 @@ def pagina_oferta(o: dict, sitio: str) -> str:
 
     <div class="pago">
       <div><span>Sueldo mensual</span><b>{_sueldo_texto(o)}</b></div>
-      <span class="puntaje">Score de completitud {o.get('score', 0)}/100</span>
+      {_lo_que_tiene(o)}
     </div>
 
     {f'<section class="bloque"><h2>De qué se trata</h2><p style="font-size:15px;line-height:1.5;font-weight:500">{_e(o["resumen"])}</p></section>' if o.get("resumen") else ""}
