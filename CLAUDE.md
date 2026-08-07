@@ -99,7 +99,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **310** y pasan todos.
+Los tests son **312** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -432,7 +432,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 310 tests
+python3 -m unittest discover pruebas -v      # los 312 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
