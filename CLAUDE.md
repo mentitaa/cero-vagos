@@ -99,7 +99,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **348** y pasan todos.
+Los tests son **355** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -322,6 +322,19 @@ Lo que está esperando, en orden aproximado de impacto:
 Cosas que ya nos costaron caro. Casi todas vinieron de suponer en vez de
 verificar.
 
+- **Un aviso con DOS sueldos no se publica.** Pasa cuando una sola
+  publicación convoca varias modalidades: un "Reponedor(a) Full Time" que en
+  realidad ofrecía las dos jornadas declaraba "Remuneración: S/ 1,130" y
+  "Remuneración: S/ 565", y el motor elegía el más bajo por prudencia —
+  publicando un sueldo de medio tiempo bajo un título de tiempo completo.
+  Elegir el más bajo protege de prometer de más, pero no de mentir
+  (`declara_varios_sueldos`). El mismo monto repetido no cuenta como conflicto.
+- **`--reparar` ignora la ventana de días, y tiene que ser así.** Reparar con
+  `--dias 3` releía los avisos y después los tiraba por viejos: el 7/8/2026 se
+  releyeron 49 de Bumeran y 29 se descartaron como "vencidos" antes de
+  guardarse, justo el que había que corregir entre ellos. Un aviso publicado ya
+  pasó el filtro de antigüedad el día que entró; de sacarlo de la web se
+  encarga `depurar`.
 - **Cuando el aviso NOMBRA su sueldo, le gana al portal.** Los portales
   publican una ficha de datos con el sueldo aparte del texto, y el motor le
   hacía más caso a esa ficha — razonable, salvo cuando el empleador metió ahí
@@ -474,7 +487,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 348 tests
+python3 -m unittest discover pruebas -v      # los 355 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
