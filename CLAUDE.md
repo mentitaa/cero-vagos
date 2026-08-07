@@ -99,7 +99,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **336** y pasan todos.
+Los tests son **341** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -322,6 +322,20 @@ Lo que está esperando, en orden aproximado de impacto:
 Cosas que ya nos costaron caro. Casi todas vinieron de suponer en vez de
 verificar.
 
+- **Cuando el aviso NOMBRA su sueldo, le gana al portal.** Los portales
+  publican una ficha de datos con el sueldo aparte del texto, y el motor le
+  hacía más caso a esa ficha — razonable, salvo cuando el empleador metió ahí
+  sus comisiones. En ese campo no hay ninguna palabra que diga "comisión",
+  solo un número pelado, así que la defensa del texto no lo alcanzaba. Ahora
+  un monto precedido de "sueldo", "salario" o "remuneración" en el cuerpo
+  manda sobre la ficha (`solo_etiquetado` en `sueldo.py`, orden en
+  `procesar_cruda`). No afloja la regla 1: entre dos números que dicen ser el
+  sueldo, gana el que trae la palabra pegada.
+- **Para reparar avisos viejos no basta `rehacer`: hay que abrir `dias` a 0.**
+  `rehacer` hace que no se salten los avisos ya vistos, pero antes hay que
+  DESCUBRIRLOS, y Bumeran solo busca lo publicado en los últimos 3 días. Un
+  aviso de hace 7 días nunca entra en la búsqueda y conserva lo que se le leyó
+  el día que llegó. Para repararlos: `dias = 0` **y** `rehacer` marcado.
 - **Lo que califica a un monto tiene que estar PEGADO a él.** Es la misma
   lección dos veces. Primero con el periodo (los S/ 33,800, abajo). Y el
   7/8/2026 otra vez con la etiqueta: un aviso decía *"Sueldo básico: S/ 1,130.
@@ -452,7 +466,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 336 tests
+python3 -m unittest discover pruebas -v      # los 341 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
