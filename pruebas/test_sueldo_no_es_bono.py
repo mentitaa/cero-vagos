@@ -120,6 +120,84 @@ class PruebaLoQueNoEsSueldoNoSePublica(unittest.TestCase):
         self.assertEqual(s.minimo, 1200)
 
 
+class PruebaElAvisoLeGanaAlPortal(unittest.TestCase):
+    """
+    Cuando el texto NOMBRA su sueldo, eso manda sobre la ficha de datos del
+    portal. Decisión de Mentita (7/8/2026).
+
+    Hizo falta porque el primer arreglo se quedó corto y ella lo vio enseguida:
+    yo bloqueé las comisiones en el TEXTO del aviso, pero los portales publican
+    además una ficha de datos con el sueldo aparte, y el motor le hacía más
+    caso a esa ficha. Si el empleador metió ahí sus comisiones, en ese campo no
+    hay ninguna palabra que diga "comisión" — solo un número pelado.
+
+    La regla no afloja la regla 1, la afina: entre dos números que dicen ser el
+    sueldo, gana el que viene con la palabra "sueldo" pegada.
+    """
+
+    CUERPO = ("<p>Funciones</p><ul><li>Atender a los clientes del local</li>"
+              "<li>Ordenar la mercadería en tienda</li>"
+              "<li>Registrar las ventas en el sistema</li></ul>"
+              "<p>Requisitos</p><ul><li>Secundaria completa</li>"
+              "<li>Seis meses de experiencia</li>"
+              "<li>Disponibilidad inmediata</li></ul>"
+              "<p>Beneficios</p><ul>{}</ul>")
+
+    def sueldo(self, ficha_del_portal: str, beneficios: str) -> tuple[int, int]:
+        from motor.modelos import OfertaCruda
+        from motor.pipeline import procesar_cruda
+
+        cuerpo = self.CUERPO.format(beneficios)
+        o = procesar_cruda(OfertaCruda(
+            fuente="Bumeran", url="https://x.pe/1", puesto="Promotor de Ventas",
+            empresa="Grupo Tawa", sueldo_texto=ficha_del_portal,
+            descripcion_html=cuerpo))
+        return o.sueldo_min, o.sueldo_max
+
+    def test_el_promotor_de_ventas_real(self):
+        """La ficha del portal traía la comisión; el aviso, el sueldo."""
+        self.assertEqual(
+            self.sueldo("S/ 600",
+                        "<li>Sueldo básico: S/ 1,130.</li>"
+                        "<li>Comisiones de hasta S/ 600.</li>"
+                        "<li>Tarjeta de alimentos: S/ 200</li>"),
+            (1130, 1130))
+
+    def test_el_asesor_de_cobranza_real(self):
+        self.assertEqual(
+            self.sueldo("S/ 500 - S/ 1000",
+                        "<li>Sueldo base: S/.1200</li>"
+                        "<li>Bono de asistencia: S/.200</li>"
+                        "<li>Comisiones : S/ 500 a S/ 1000</li>"),
+            (1200, 1200))
+
+    def test_tambien_vale_la_palabra_remuneracion(self):
+        self.assertEqual(
+            self.sueldo("S/ 565",
+                        "<li>Ingreso a planilla desde el primer día</li>"
+                        "<li>Remuneración: S/ 1,130</li>"),
+            (1130, 1130))
+
+    def test_si_el_aviso_no_lo_nombra_sigue_mandando_el_portal(self):
+        """
+        La ficha del portal no deja de ser la fuente normal. Solo pierde
+        cuando el aviso contradice con todas sus letras.
+        """
+        self.assertEqual(
+            self.sueldo("S/ 2,500",
+                        "<li>Planilla completa</li><li>Seguro EPS</li>"),
+            (2500, 2500))
+
+    def test_una_etiqueta_debil_no_basta_para_contradecir_al_portal(self):
+        """
+        "base" o "básico" a secas suben la confianza, pero no alcanzan para
+        desautorizar al portal: son demasiado ambiguas sueltas.
+        """
+        from motor.sueldo import extraer_sueldo
+        self.assertIsNone(extraer_sueldo("Monto base: S/ 900", solo_etiquetado=True))
+        self.assertIsNotNone(extraer_sueldo("Sueldo base: S/ 900", solo_etiquetado=True))
+
+
 class PruebaNoSeRompioLoQueYaFuncionaba(unittest.TestCase):
     """
     Los casos de siempre, para que el arreglo no se lleve por delante lecturas
