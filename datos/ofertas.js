@@ -1,16 +1,16 @@
 /* Generado por el motor de Cero Vagos. No editar a mano. */
 window.CERO_VAGOS = {
- "generado": "2026-08-07T16:54:02",
- "total": 147,
+ "generado": "2026-08-07T17:12:45",
+ "total": 146,
  "stats": {
   "total_procesadas": 3063,
-  "aprobadas_vigentes": 147,
+  "aprobadas_vigentes": 146,
   "tasa_aprobacion": 4.8,
-  "sin_sueldo": 2283,
+  "sin_sueldo": 2284,
   "pct_sin_sueldo": 75,
-  "sueldo_mediano": 1400,
+  "sueldo_mediano": 1500,
   "por_fuente": {
-   "Laborum": 59,
+   "Laborum": 58,
    "Bumeran": 49,
    "Convocatorias CAS": 32,
    "Convocatorias del Estado": 7
@@ -99,7 +99,7 @@ window.CERO_VAGOS = {
    "id": 3,
    "puesto": "Analista de Planillas",
    "empresa": "Talento Humano Perú",
-   "cat": "Salud",
+   "cat": "Recursos Humanos",
    "min": 3500,
    "max": 4000,
    "modalidad": "Presencial",
@@ -217,52 +217,9 @@ window.CERO_VAGOS = {
   },
   {
    "id": 6,
-   "puesto": "Asesor de Cobranza",
-   "empresa": "GRAFTON LATAM",
-   "cat": "Recursos Humanos",
-   "min": 500,
-   "max": 1000,
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 3,
-   "vence": "2026-11-02",
-   "restan": 87,
-   "score": 98,
-   "resumen": "Realizar llamadas de cobranza a clientes con obligaciones pendientes.",
-   "funciones": [
-    "Realizar llamadas de cobranza a clientes con obligaciones pendientes.",
-    "Negociar alternativas de pago de acuerdo con los lineamientos establecidos por la empresa.",
-    "Realizar seguimiento a compromisos de pago.",
-    "Registrar de manera correcta, completa y oportuna las gestiones realizadas."
-   ],
-   "requisitos": [
-    "Formación académica: Secundaria completa.",
-    "Contar con un mínimo de 02 años de experiencia certificada en el rubro de cobranzas, la cual será validada considerando la continuidad laboral dentro del sector.",
-    "La experiencia puede corresponder a cualquier tramo de morosidad (temprana, intermedia o castigo).",
-    "Disponibilidad para laborar de manera presencial en el distrito de Surquillo.",
-    "Competencias: Trabajo en equipo, orientación a resultados, comunicación efectiva."
-   ],
-   "beneficios": [
-    "Sueldo base: S/.1200",
-    "Bono de asistencia: S/.200 (sujeto al cumplimiento de asistencia y puntualidad)",
-    "Bono de Banco: S/.300",
-    "Comisiones : S/.500 a S/.1000",
-    "Ingreso a planilla MYPE desde el primer día, conforme a ley.",
-    "Gratificación al 100%",
-    "Pago de CTS al 50%",
-    "Seguro de Essalud.",
-    "Vacaciones de 15 días al año.",
-    "Capacitación inicial.",
-    "Línea de carrera y oportunidad de crecimiento."
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/asesor-de-cobranza-1700comisiones-full-time-am-descanso-domingo-grafton-latam-1118390346.html"
-  },
-  {
-   "id": 7,
    "puesto": "Asistente Comercial B2B",
    "empresa": "BUMERAN SELECTA",
-   "cat": "Construcción",
+   "cat": "Ventas",
    "min": 1500,
    "max": 1500,
    "modalidad": "Presencial",
@@ -298,6 +255,49 @@ window.CERO_VAGOS = {
     "Lunes a viernes de 8:00 a.m. a 5:30 p.m. y Sábados de 8:00 a.m. a 12:00 p.m."
    ],
    "url": "https://www.bumeran.com.pe/empleos/asistente-comercial-b2b--herramientas-para-la-construccion-bumeran-selecta-1118390206.html"
+  },
+  {
+   "id": 7,
+   "puesto": "Asesor de Cobranza",
+   "empresa": "GRAFTON LATAM",
+   "cat": "Contabilidad",
+   "min": 1200,
+   "max": 1200,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 3,
+   "vence": "2026-11-02",
+   "restan": 87,
+   "score": 95,
+   "resumen": "Realizar llamadas de cobranza a clientes con obligaciones pendientes.",
+   "funciones": [
+    "Realizar llamadas de cobranza a clientes con obligaciones pendientes.",
+    "Negociar alternativas de pago de acuerdo con los lineamientos establecidos por la empresa.",
+    "Realizar seguimiento a compromisos de pago.",
+    "Registrar de manera correcta, completa y oportuna las gestiones realizadas."
+   ],
+   "requisitos": [
+    "Formación académica: Secundaria completa.",
+    "Contar con un mínimo de 02 años de experiencia certificada en el rubro de cobranzas, la cual será validada considerando la continuidad laboral dentro del sector.",
+    "La experiencia puede corresponder a cualquier tramo de morosidad (temprana, intermedia o castigo).",
+    "Disponibilidad para laborar de manera presencial en el distrito de Surquillo.",
+    "Competencias: Trabajo en equipo, orientación a resultados, comunicación efectiva."
+   ],
+   "beneficios": [
+    "Sueldo base: S/.1200",
+    "Bono de asistencia: S/.200 (sujeto al cumplimiento de asistencia y puntualidad)",
+    "Bono de Banco: S/.300",
+    "Comisiones : S/.500 a S/.1000",
+    "Ingreso a planilla MYPE desde el primer día, conforme a ley.",
+    "Gratificación al 100%",
+    "Pago de CTS al 50%",
+    "Seguro de Essalud.",
+    "Vacaciones de 15 días al año.",
+    "Capacitación inicial.",
+    "Línea de carrera y oportunidad de crecimiento."
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/asesor-de-cobranza-1700comisiones-full-time-am-descanso-domingo-grafton-latam-1118390346.html"
   },
   {
    "id": 8,
@@ -388,7 +388,7 @@ window.CERO_VAGOS = {
    "id": 10,
    "puesto": "Vendedor Salaverry",
    "empresa": "ADN RETAIL S.A.C.",
-   "cat": "Tecnología",
+   "cat": "Ventas",
    "min": 1330,
    "max": 1330,
    "modalidad": "Presencial",
@@ -426,7 +426,7 @@ window.CERO_VAGOS = {
    "id": 11,
    "puesto": "Asistente de Control de Activos Fijos I",
    "empresa": "Caja de Pensiones Militar Policial",
-   "cat": "Logística",
+   "cat": "Ingeniería",
    "min": 2000,
    "max": 2000,
    "modalidad": "Presencial",
@@ -762,7 +762,7 @@ window.CERO_VAGOS = {
    "id": 19,
    "puesto": "Jefe de Departamento de Recaudacion y Recuperaciones",
    "empresa": "Caja de Pensiones Militar Policial",
-   "cat": "Tecnología",
+   "cat": "Ingeniería",
    "min": 6000,
    "max": 6000,
    "modalidad": "Presencial",
@@ -1075,7 +1075,7 @@ window.CERO_VAGOS = {
    "id": 26,
    "puesto": "Técnico de Laboratorio",
    "empresa": "Total Talent Human Resources",
-   "cat": "Tecnología",
+   "cat": "Ingeniería",
    "min": 2779,
    "max": 2779,
    "modalidad": "Presencial",
@@ -1173,8 +1173,8 @@ window.CERO_VAGOS = {
    "puesto": "Fuerza de ventas",
    "empresa": "Grupo Solimano",
    "cat": "Ventas",
-   "min": 750,
-   "max": 750,
+   "min": 1130,
+   "max": 1130,
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
@@ -1209,8 +1209,8 @@ window.CERO_VAGOS = {
    "puesto": "Promotor retail",
    "empresa": "Grupo Tawa",
    "cat": "Ventas",
-   "min": 600,
-   "max": 600,
+   "min": 1130,
+   "max": 1130,
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
@@ -1250,7 +1250,7 @@ window.CERO_VAGOS = {
    "id": 30,
    "puesto": "Técnico de Mantenimiento Integral y Servicios Generales",
    "empresa": "A365",
-   "cat": "Prácticas",
+   "cat": "Ingeniería",
    "min": 1250,
    "max": 1250,
    "modalidad": "Presencial",
@@ -1517,7 +1517,7 @@ window.CERO_VAGOS = {
    "id": 36,
    "puesto": "Atención al cliente",
    "empresa": "ONURIS TALENT S.A.C.",
-   "cat": "Atención al Cliente",
+   "cat": "Recursos Humanos",
    "min": 1130,
    "max": 1130,
    "modalidad": "Presencial",
@@ -1559,7 +1559,7 @@ window.CERO_VAGOS = {
    "id": 37,
    "puesto": "Agente de Seguridad",
    "empresa": "CONSERH",
-   "cat": "Tecnología",
+   "cat": "Logística",
    "min": 1500,
    "max": 1800,
    "modalidad": "Presencial",
@@ -1767,7 +1767,7 @@ window.CERO_VAGOS = {
    "id": 42,
    "puesto": "Operario de Limpieza",
    "empresa": "CONSERH",
-   "cat": "Ingeniería",
+   "cat": "Recursos Humanos",
    "min": 1200,
    "max": 1200,
    "modalidad": "Presencial",
@@ -1880,7 +1880,7 @@ window.CERO_VAGOS = {
    "id": 45,
    "puesto": "Atención al Cliente",
    "empresa": "Nexxo Servicios Comerciales",
-   "cat": "Atención al Cliente",
+   "cat": "Ventas",
    "min": 1130,
    "max": 1130,
    "modalidad": "Presencial",
@@ -2200,7 +2200,7 @@ window.CERO_VAGOS = {
    "id": 53,
    "puesto": "Auxiliar Contable",
    "empresa": "Manpower",
-   "cat": "Tecnología",
+   "cat": "Contabilidad",
    "min": 1800,
    "max": 1800,
    "modalidad": "Presencial",
@@ -2246,7 +2246,7 @@ window.CERO_VAGOS = {
    "id": 54,
    "puesto": "Técnico de fibra óptica con licencia A1",
    "empresa": "BMP CONSULTING",
-   "cat": "Tecnología",
+   "cat": "Ingeniería",
    "min": 2000,
    "max": 2000,
    "modalidad": "Presencial",
@@ -2472,7 +2472,7 @@ window.CERO_VAGOS = {
    "id": 59,
    "puesto": "Despachador de combustible",
    "empresa": "COESTI S.A.",
-   "cat": "Atención al Cliente",
+   "cat": "Logística",
    "min": 1130,
    "max": 1130,
    "modalidad": "Presencial",
@@ -2512,7 +2512,7 @@ window.CERO_VAGOS = {
    "id": 60,
    "puesto": "Atención al cliente",
    "empresa": "COESTI S.A.",
-   "cat": "Atención al Cliente",
+   "cat": "Ventas",
    "min": 1130,
    "max": 1130,
    "modalidad": "Presencial",
@@ -2752,7 +2752,7 @@ window.CERO_VAGOS = {
    "id": 66,
    "puesto": "Operario",
    "empresa": "Grupo Expro",
-   "cat": "Ingeniería",
+   "cat": "Recursos Humanos",
    "min": 1130,
    "max": 1130,
    "modalidad": "Presencial",
@@ -2840,7 +2840,7 @@ window.CERO_VAGOS = {
    "id": 68,
    "puesto": "Ayudante de Reparto C",
    "empresa": "Grupo Expro",
-   "cat": "Logística",
+   "cat": "Recursos Humanos",
    "min": 1300,
    "max": 1300,
    "modalidad": "Presencial",
@@ -2923,7 +2923,7 @@ window.CERO_VAGOS = {
    "id": 70,
    "puesto": "Operario de Produccion",
    "empresa": "Adecco Perú S.A.",
-   "cat": "Logística",
+   "cat": "Ingeniería",
    "min": 1130,
    "max": 1130,
    "modalidad": "Presencial",
@@ -2968,7 +2968,7 @@ window.CERO_VAGOS = {
    "id": 71,
    "puesto": "Asistente Señor de Clima y Cultura",
    "empresa": "Partner Service",
-   "cat": "Tecnología",
+   "cat": "Otros",
    "min": 1600,
    "max": 1600,
    "modalidad": "Remoto",
@@ -3061,7 +3061,7 @@ window.CERO_VAGOS = {
    "id": 73,
    "puesto": "Operario de Producción",
    "empresa": "Eurofirms Perú",
-   "cat": "Logística",
+   "cat": "Ingeniería",
    "min": 1130,
    "max": 1130,
    "modalidad": "Presencial",
@@ -3099,7 +3099,7 @@ window.CERO_VAGOS = {
    "id": 74,
    "puesto": "Auxiliar de almacén",
    "empresa": "Lavoro Perú",
-   "cat": "Tecnología",
+   "cat": "Logística",
    "min": 1130,
    "max": 1130,
    "modalidad": "Presencial",
@@ -3143,9 +3143,9 @@ window.CERO_VAGOS = {
    "id": 75,
    "puesto": "Coordinador de Adquisiciones",
    "empresa": "DANKE SERVICE",
-   "cat": "Logística",
-   "min": 1000,
-   "max": 1000,
+   "cat": "Recursos Humanos",
+   "min": 4000,
+   "max": 4000,
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
@@ -3228,7 +3228,7 @@ window.CERO_VAGOS = {
    "id": 77,
    "puesto": "Ejecutivo de Ventas",
    "empresa": "Financiera QAPAQ",
-   "cat": "Tecnología",
+   "cat": "Ventas",
    "min": 1130,
    "max": 1130,
    "modalidad": "Presencial",
@@ -4114,48 +4114,6 @@ window.CERO_VAGOS = {
   },
   {
    "id": 98,
-   "puesto": "Gestor Documentario Motorizado",
-   "empresa": "IBR Perú S.A.",
-   "cat": "Tecnología",
-   "min": 600,
-   "max": 600,
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Laborum",
-   "dias": 8,
-   "vence": "2026-08-30",
-   "restan": 23,
-   "score": 94,
-   "resumen": "RESUMEN: Somos una empresa transnacional, bajo la línea de negocio de BPO del rubro Automotriz. Actualmente, nos encontramos en búsqueda de un GESTOR MOTORIZADO, que cumpla con los siguientes requisitos para trabajar de forma presencial :",
-   "funciones": [
-    "Llevar documentos a proveedores, clientes y lugares indicados.",
-    "Trasladar activos tecnológicos para gestión de agentes (PC, mouse, teclados, etc).",
-    "Realizar trámites Bancarios y pagos de impuestos.",
-    "Atender cualquier solicitud del área",
-    "Registro de actividades a través de aplicativo",
-    "Apoyar realizando diversas actividades administrativas en oficina"
-   ],
-   "requisitos": [
-    "Experiencia 1 año como motorizado",
-    "Contar con Licencia B-II-A",
-    "Contar con motocicleta propia del 2021 en adelante.",
-    "Experiencia y conocimiento de rutas en todo Lima",
-    "Disponibilidad para desplazarse por Lima Periferia. (Ancón, Santa Rosa, Chosica, Cieneguilla, Lurín, Pachacamac, etc)",
-    "Vehículo motorizado propio en condiciones óptimas y documentos en regla (Licencia y SOAT)"
-   ],
-   "beneficios": [
-    "Ingreso a Planilla desde el primer día (planilla completa)",
-    "Beneficios de ley (seguro, seguro vida ley, CTS, gratificación, etc)",
-    "Salario: S/1200",
-    "Bono de Movilidad: S/600",
-    "Cobertura de SOAT",
-    "Mantenimiento mensual",
-    "Si estás listo para llevar tu carrera al siguiente nivel, ¡esta es tu oportunidad!"
-   ],
-   "url": "https://www.laborum.pe/job/ibr-peru-s-a/gestor-documentario-motorizado-planilla-completa-sueldo-fijo/6a6aa0be2020b210c81a5203"
-  },
-  {
-   "id": 99,
    "puesto": "Call center",
    "empresa": "Partner Service",
    "cat": "Atención al Cliente",
@@ -4200,10 +4158,10 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/partner-service/asesor-de-atencion-al-cliente-planilla-completa-bonos/6a6ad70f2020b210c81a7680"
   },
   {
-   "id": 100,
+   "id": 99,
    "puesto": "Operario de Limpieza",
    "empresa": "NG Restaurants",
-   "cat": "Tecnología",
+   "cat": "Ingeniería",
    "min": 1130,
    "max": 1130,
    "modalidad": "Presencial",
@@ -4240,10 +4198,10 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/ng-restaurants/trabaja-en-dunkin-operario-de-limpieza-turno-manana-lince/6a6a95352020b210c81a4145"
   },
   {
-   "id": 101,
+   "id": 100,
    "puesto": "Atención al cliente rotativo entre Miraflores y San Borja",
    "empresa": "Olva Courier S.A.C.",
-   "cat": "Logística",
+   "cat": "Atención al Cliente",
    "min": 1150,
    "max": 1150,
    "modalidad": "Presencial",
@@ -4277,7 +4235,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/olva-courier-s-a-c/atencion-al-cliente-rotativo-entre-miraflores-y-san-borja/6a6be2722020b210c81ae80c"
   },
   {
-   "id": 102,
+   "id": 101,
    "puesto": "Asesor de atención al cliente venta seguro vehicular",
    "empresa": "A365",
    "cat": "Atención al Cliente",
@@ -4313,7 +4271,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/a365/asesor-de-atencion-al-cliente-venta-seguro-vehicular-call/6a6a9a2d2020b210c81a4af1"
   },
   {
-   "id": 103,
+   "id": 102,
    "puesto": "Operador Integral de Producción y Embalaje",
    "empresa": "Grupo Tawa",
    "cat": "Ingeniería",
@@ -4351,7 +4309,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/grupo-tawa/operador-integral-de-produccion-y-embalaje-santa-clara-ate/6a6adf582020b210c81a8511"
   },
   {
-   "id": 104,
+   "id": 103,
    "puesto": "solo Atención al Cliente",
    "empresa": "Partner Service",
    "cat": "Atención al Cliente",
@@ -4393,7 +4351,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/partner-service/solo-atencion-al-cliente-sin-experiencia-capacitacion-remota/6a6bd8702020b210c81ac253"
   },
   {
-   "id": 105,
+   "id": 104,
    "puesto": "Asesor Call Center Ventas Entel",
    "empresa": "SMART MEDIA S.A.C.",
    "cat": "Ventas",
@@ -4429,12 +4387,12 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/smart-media-s-a-c/asesor-call-center-ventas-entel-l-a-v-s-1400-sin-ojt/6a6aaff22020b210c81a5bdf"
   },
   {
-   "id": 106,
+   "id": 105,
    "puesto": "Asesor Comercial Corporativo",
    "empresa": "Automatizate Negocios",
    "cat": "Ventas",
-   "min": 500,
-   "max": 500,
+   "min": 10000,
+   "max": 10000,
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
@@ -4466,10 +4424,10 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/automatizate-negocios/asesor-comercial-corporativo-culqi-bcp-crecimiento-ingresos/6a6ac99e2020b210c81a691a"
   },
   {
-   "id": 107,
+   "id": 106,
    "puesto": "Atención al cliente",
    "empresa": "Grupo Solimano",
-   "cat": "Recursos Humanos",
+   "cat": "Ventas",
    "min": 1300,
    "max": 1300,
    "modalidad": "Presencial",
@@ -4500,10 +4458,10 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/grupo-solimano/impulsadora-mercados-mayoristas-fines-de-semana-mercados-s/6a6bddab2020b210c81ad886"
   },
   {
-   "id": 108,
+   "id": 107,
    "puesto": "Agente Call Center",
    "empresa": "A365",
-   "cat": "Ventas",
+   "cat": "Atención al Cliente",
    "min": 1300,
    "max": 1300,
    "modalidad": "Presencial",
@@ -4537,7 +4495,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/a365/fijo-s-1300-agente-call-center-comisiones-y-bonos-pagos/6a6adc932020b210c81a800c"
   },
   {
-   "id": 109,
+   "id": 108,
    "puesto": "Auxiliar Administrativo",
    "empresa": "Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco",
    "cat": "Administración",
@@ -4575,7 +4533,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocape.com/convocatorias/auxiliar-administrativo-proyecto-especial-regional-plan-copesco-del-gobierno-regional-del-cusco-728-2026-07-797486"
   },
   {
-   "id": 110,
+   "id": 109,
    "puesto": "Asistente Técnico De Obra Ii",
    "empresa": "Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco",
    "cat": "Construcción",
@@ -4612,7 +4570,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocape.com/convocatorias/asistente-tecnico-de-obra-ii-centro-de-interpretacion-casa-martin-pio-concha-de--proyecto-especial-regional-plan-copesco-del-gobierno-regional-del-cusco-728-2026-07-797483"
   },
   {
-   "id": 111,
+   "id": 110,
    "puesto": "Tecnico Administrativo I",
    "empresa": "Direccion Regional De Salud Huancavelica",
    "cat": "Administración",
@@ -4644,7 +4602,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocape.com/convocatorias/tecnico-administrativo-i-direccion-regional-de-salud-huancavelica-276-2026-07-797565"
   },
   {
-   "id": 112,
+   "id": 111,
    "puesto": "Especialista En Salud Ambiental Ii",
    "empresa": "Direccion Regional De Salud Huancavelica",
    "cat": "Otros",
@@ -4676,7 +4634,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocape.com/convocatorias/especialista-en-salud-ambiental-ii-direccion-regional-de-salud-huancavelica-276-2026-07-797576"
   },
   {
-   "id": 113,
+   "id": 112,
    "puesto": "Asistente Tecnico Ii",
    "empresa": "Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco",
    "cat": "Otros",
@@ -4713,7 +4671,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocape.com/convocatorias/asistente-tecnico-ii-proyecto-especial-regional-plan-copesco-del-gobierno-regional-del-cusco-728-2026-07-797495"
   },
   {
-   "id": 114,
+   "id": 113,
    "puesto": "Analista De Presupuesto",
    "empresa": "Municipalidad Distri. De San Jeronimo",
    "cat": "Otros",
@@ -4745,7 +4703,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocape.com/convocatorias/analista-de-presupuesto-municipalidad-distri-de-san-jeronimo-cas-2026-07-797424"
   },
   {
-   "id": 115,
+   "id": 114,
    "puesto": "Tecnico I",
    "empresa": "Proyecto Especial Regional Plan Copesco Del Gobierno Regional Del Cusco",
    "cat": "Otros",
@@ -4780,7 +4738,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocape.com/convocatorias/tecnico-i-proyecto-especial-regional-plan-copesco-del-gobierno-regional-del-cusco-728-2026-07-797496"
   },
   {
-   "id": 116,
+   "id": 115,
    "puesto": "Especialista en procesos administrativos disciplinarios de docentes y administrativos",
    "empresa": "UGEL UTCUBAMBA",
    "cat": "Administración",
@@ -4820,7 +4778,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-utcubamba-agosto-2026-1-plazas-67281.html"
   },
   {
-   "id": 117,
+   "id": 116,
    "puesto": "Especialista Administrativo",
    "empresa": "UGEL 03 - TRUJILLO NOR OESTE",
    "cat": "Administración",
@@ -4865,7 +4823,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-trujillo-nor-oeste-agosto-2026-1-plazas-67410.html"
   },
   {
-   "id": 118,
+   "id": 117,
    "puesto": "Docente",
    "empresa": "UGEL MELGAR",
    "cat": "Salud",
@@ -4903,7 +4861,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-melgar-agosto-2026-1-plazas-67477.html"
   },
   {
-   "id": 119,
+   "id": 118,
    "puesto": "Especialista en Contrataciones y Adquisiciones",
    "empresa": "UGEL-1",
    "cat": "Contabilidad",
@@ -4951,7 +4909,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-agosto-2026-1-plazas-67278.html"
   },
   {
-   "id": 120,
+   "id": 119,
    "puesto": "Especialista en Inversión",
    "empresa": "CAFED-CALLAO",
    "cat": "Contabilidad",
@@ -4998,7 +4956,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-cafed-callao-agosto-2026-1-plazas-67343.html"
   },
   {
-   "id": 121,
+   "id": 120,
    "puesto": "Técnico",
    "empresa": "INSTITUTO DE OFTALMOLOGIA(INO)",
    "cat": "Administración",
@@ -5046,7 +5004,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-instituto-oftalmologia-ino-agosto-2026-1-plazas-67356.html"
   },
   {
-   "id": 122,
+   "id": 121,
    "puesto": "Soporte técnico",
    "empresa": "SUNARP",
    "cat": "Tecnología",
@@ -5097,7 +5055,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-sunarp-agosto-2026-1-plazas-67399.html"
   },
   {
-   "id": 123,
+   "id": 122,
    "puesto": "Especialista Legal de procedimiento administrativo disciplinario",
    "empresa": "UGEL LAMAS",
    "cat": "Administración",
@@ -5146,7 +5104,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-lamas-agosto-2026-1-plazas-67417.html"
   },
   {
-   "id": 124,
+   "id": 123,
    "puesto": "Auxiliar Coactivo",
    "empresa": "MUNICIPALIDAD DE MIRAFLORES",
    "cat": "Contabilidad",
@@ -5193,7 +5151,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-municipalidad-miraflores-agosto-2026-1-plazas-67453.html"
   },
   {
-   "id": 125,
+   "id": 124,
    "puesto": "Contador I",
    "empresa": "UGEL SAN PABLO",
    "cat": "Contabilidad",
@@ -5239,7 +5197,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-san-pablo-agosto-2026-1-plazas-67474.html"
   },
   {
-   "id": 126,
+   "id": 125,
    "puesto": "Técnico",
    "empresa": "DIRECCIÓN REGIONAL DE YAKU TARPUY",
    "cat": "Administración",
@@ -5286,7 +5244,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-direccion-regional-yaku-tarpuy-agosto-2026-1-plazas-67331.html"
   },
   {
-   "id": 127,
+   "id": 126,
    "puesto": "Asesor Legal en Recursos Humanos",
    "empresa": "PROINVERSION",
    "cat": "Legal",
@@ -5326,7 +5284,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-proinversion-julio-2026-1-plazas-67237.html"
   },
   {
-   "id": 128,
+   "id": 127,
    "puesto": "Secretaria",
    "empresa": "DIRECCION REGIONAL EDUCACION(DRE) LIMA",
    "cat": "Administración",
@@ -5374,7 +5332,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-direccion-regional-educacion-dre-lima-agosto-2026-1-plazas-67269.html"
   },
   {
-   "id": 129,
+   "id": 128,
    "puesto": "Analista en Procesos de Selección y Monitoreo",
    "empresa": "PROGRAMA JÓVENES PRODUCTIVOS",
    "cat": "Salud",
@@ -5426,7 +5384,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-programa-jovenes-productivos-agosto-2026-1-plazas-67301.html"
   },
   {
-   "id": 130,
+   "id": 129,
    "puesto": "Especialista en bienestar social",
    "empresa": "UGEL BELLAVISTA",
    "cat": "Salud",
@@ -5477,7 +5435,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-bellavista-agosto-2026-1-plazas-67385.html"
   },
   {
-   "id": 131,
+   "id": 130,
    "puesto": "Chofer",
    "empresa": "MUNICIPALIDAD DE BREÑA",
    "cat": "Logística",
@@ -5529,7 +5487,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-municipalidad-brena-agosto-2026-1-plazas-67457.html"
   },
   {
-   "id": 132,
+   "id": 131,
    "puesto": "Encargado(a) de Soporte Técnico y Monitoreo Tecnológico",
    "empresa": "MUNICIPALIDAD DE MIRAFLORES-AQP",
    "cat": "Tecnología",
@@ -5563,7 +5521,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-municipalidad-miraflores-aqp-agosto-2026-1-plazas-67458.html"
   },
   {
-   "id": 133,
+   "id": 132,
    "puesto": "Analista Técnico",
    "empresa": "OSIPTEL",
    "cat": "Tecnología",
@@ -5615,7 +5573,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-osiptel-agosto-2026-1-plazas-67427.html"
   },
   {
-   "id": 134,
+   "id": 133,
    "puesto": "Tecnico Agropecuario",
    "empresa": "GERENCIA DE AGRICULTURA(GERAGRI) CUSCO",
    "cat": "Otros",
@@ -5654,7 +5612,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-gerencia-agricultura-geragri-cusco-agosto-2026-1-plazas-67279.html"
   },
   {
-   "id": 135,
+   "id": 134,
    "puesto": "Analista Iii en Comunicaciones y Producción Audiovisual",
    "empresa": "PEIP ESCUELAS BICENTENARIO",
    "cat": "Marketing",
@@ -5691,7 +5649,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-peip-escuelas-bicentenario-agosto-2026-1-plazas-67313.html"
   },
   {
-   "id": 136,
+   "id": 135,
    "puesto": "Especialista en Gestión de Mecanismos para la Conservación de Bosques",
    "empresa": "PROGRAMA CONSERVACION DE BOSQUES",
    "cat": "Ingeniería",
@@ -5728,7 +5686,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-programa-conservacion-bosques-agosto-2026-1-plazas-67373.html"
   },
   {
-   "id": 137,
+   "id": 136,
    "puesto": "Especialista en almacén",
    "empresa": "UGEL PADRE ABAD",
    "cat": "Logística",
@@ -5760,7 +5718,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-padre-abad-agosto-2026-1-plazas-67383.html"
   },
   {
-   "id": 138,
+   "id": 137,
    "puesto": "Coordinador(a) Iii de Proyectos",
    "empresa": "INVERMET",
    "cat": "Ingeniería",
@@ -5798,7 +5756,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-invermet-agosto-2026-1-plazas-67389.html"
   },
   {
-   "id": 139,
+   "id": 138,
    "puesto": "Especialista en Trabajo Social",
    "empresa": "MINISTERIO DEL AMBIENTE(MINAM)",
    "cat": "Recursos Humanos",
@@ -5833,7 +5791,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ministerio-del-ambiente-minam-agosto-2026-1-plazas-67390.html"
   },
   {
-   "id": 140,
+   "id": 139,
    "puesto": "Especialista",
    "empresa": "UGEL TAYACAJA",
    "cat": "Legal",
@@ -5870,7 +5828,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-tayacaja-agosto-2026-1-plazas-67405.html"
   },
   {
-   "id": 141,
+   "id": 140,
    "puesto": "Especialista en Educación",
    "empresa": "UGEL-7",
    "cat": "Educación",
@@ -5909,7 +5867,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-agosto-2026-1-plazas-67415.html"
   },
   {
-   "id": 142,
+   "id": 141,
    "puesto": "Especialista Administrativo I",
    "empresa": "GERENCIA SUB REGIONAL HUAYTARÁ",
    "cat": "Administración",
@@ -5948,7 +5906,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-gerencia-sub-regional-huaytara-agosto-2026-1-plazas-67426.html"
   },
   {
-   "id": 143,
+   "id": 142,
    "puesto": "Chofer",
    "empresa": "IPD",
    "cat": "Logística",
@@ -5985,7 +5943,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ipd-agosto-2026-1-plazas-67431.html"
   },
   {
-   "id": 144,
+   "id": 143,
    "puesto": "Técnico",
    "empresa": "UGEL LA MAR",
    "cat": "Ingeniería",
@@ -6021,7 +5979,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-ugel-mar-agosto-2026-1-plazas-67432.html"
   },
   {
-   "id": 145,
+   "id": 144,
    "puesto": "Especialista en Ingeniería de Transporte",
    "empresa": "INVERMET",
    "cat": "Logística",
@@ -6059,7 +6017,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-invermet-agosto-2026-1-plazas-67465.html"
   },
   {
-   "id": 146,
+   "id": 145,
    "puesto": "Jefe",
    "empresa": "MUNICIPALIDAD DE PACUCHA",
    "cat": "Ingeniería",
@@ -6091,7 +6049,7 @@ window.CERO_VAGOS = {
    "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-municipalidad-pacucha-agosto-2026-1-plazas-67473.html"
   },
   {
-   "id": 147,
+   "id": 146,
    "puesto": "Especialista en Fiscalización de Establecimientos Farmaceuticos",
    "empresa": "DIRECCION DE SALUD(DIRESA) SAN MARTÍN",
    "cat": "Salud",
