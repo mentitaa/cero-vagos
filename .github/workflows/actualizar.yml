@@ -39,7 +39,7 @@ on:
       # repuntuar tras cambiar el filtro está la casilla `reevaluar` del otro
       # flujo (regla 7).
       rehacer:
-        description: "¿Volver a revisar avisos ya vistos? (solo fuentes públicas, para diagnosticar)"
+        description: "¿Volver a leer avisos ya vistos? (para diagnosticar o reparar un dato mal leído)"
         type: boolean
         default: false
 
@@ -117,9 +117,18 @@ jobs:
       # Convocatorias CAS va PRIMERA porque es la que trae convocatorias
       # abiertas. convocape.com resultó ser un archivo: de sus 512 direcciones,
       # 413 tienen el plazo cerrado.
-      # La casilla `rehacer` solo llega a las fuentes públicas, y a propósito:
-      # se leen por HTTP y cada aviso cuesta segundos. Bumeran y Laborum
-      # necesitan navegador, así que rehacerlas no cabría en su reloj.
+      # La casilla `rehacer` llega a las CUATRO fuentes.
+      #
+      # Al principio solo tocaba las públicas, por miedo al reloj del navegador.
+      # Se amplió el 7/8/2026 por una razón concreta: un aviso guardado conserva
+      # el sueldo que se le leyó el día que entró, y `reevaluar` no lo vuelve a
+      # leer —solo lo vuelve a puntuar con el número ya guardado—. Cuando se
+      # arregla la lectura del sueldo, la única forma de reparar lo que ya está
+      # publicado es volver a DESCARGAR el aviso, y los que salieron mal son
+      # sobre todo de Bumeran y Laborum.
+      #
+      # Cabe en sus relojes: con el navegador arreglado cada aviso cuesta entre
+      # 2 y 8 segundos, así que 240 avisos son unos 16 minutos de sus 50.
       #
       # Cuando la casilla va sin marcar, la variable queda vacía y el comando
       # sale exactamente como antes.
@@ -161,10 +170,12 @@ jobs:
       # la otra.
       - name: Bumeran
         timeout-minutes: 50
+        env:
+          REHACER: ${{ github.event.inputs.rehacer == 'true' && '--rehacer' || '' }}
         run: |
           python -u -m motor recolectar --fuente Bumeran \
             --limite ${{ github.event.inputs.limite || 120 }} \
-            --dias ${{ github.event.inputs.dias || 3 }} \
+            --dias ${{ github.event.inputs.dias || 3 }} $REHACER \
             --exportar
         continue-on-error: true
 
@@ -184,10 +195,12 @@ jobs:
       # 240 avisos son unos 16 minutos, cómodos dentro de sus 50.
       - name: Laborum
         timeout-minutes: 50
+        env:
+          REHACER: ${{ github.event.inputs.rehacer == 'true' && '--rehacer' || '' }}
         run: |
           python -u -m motor recolectar --fuente Laborum \
             --limite ${{ github.event.inputs.limite || 240 }} \
-            --dias 0 \
+            --dias 0 $REHACER \
             --exportar
         continue-on-error: true
 
