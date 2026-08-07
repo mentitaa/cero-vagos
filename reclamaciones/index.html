@@ -66,15 +66,35 @@ text-transform:uppercase;letter-spacing:.04em;padding:10px 12px;text-align:left}
 td{padding:9px 12px;border-bottom:2px solid #e8e0d4;font-weight:500}
 tr:last-child td{border-bottom:none}
 .num{text-align:right;white-space:nowrap}
-.pct{white-space:nowrap;display:flex;align-items:center;gap:9px;min-width:150px}
+/* La celda se queda siendo celda; el flex vive en la caja de adentro. */
+.pct{white-space:nowrap;vertical-align:middle}
+.pct__caja{display:flex;align-items:center;gap:9px;min-width:132px}
 .pct b{font-family:var(--display);font-size:13px}
 .barra{flex:1;height:11px;border:2px solid var(--negro);background:var(--blanco);min-width:56px}
 .barra__i{height:100%}
+
+/* En un celular la tabla no cabe: cuatro columnas más una barra de 132px se
+   salen de la pantalla, y la última columna quedaba cortada por la mitad —
+   el encabezado decía "TRA…" y las barras aparecían recortadas.
+   Se quita la barra, que es un adorno, y su color pasa al número, que es el
+   dato. Así la tabla entra sin necesidad de arrastrarla de lado. */
+@media(max-width:620px){
+  table{font-size:13px}
+  th,td{padding:8px 9px}
+  .barra{display:none}
+  .pct__caja{min-width:0;justify-content:flex-end}
+  .pct b{border:2px solid var(--negro);padding:2px 7px}
+  .pct--alta b{background:var(--lima)}
+  .pct--media b{background:var(--amarillo)}
+  .pct--baja b{background:var(--rojo);color:#fff}
+}
 .nota{border:var(--bd);background:var(--blanco);padding:20px 22px;margin-top:26px;
 font-size:14.5px;line-height:1.55;font-weight:500}
-.compartir{background:var(--amarillo)}
-.compartir .caja{border:var(--bd);background:var(--blanco);padding:18px 20px;margin-bottom:14px;
-font-size:15px;line-height:1.5;font-weight:500}
+/* Solo la salida hacia las ofertas. Antes acá vivía "Para compartir", tres
+   recuadros con frases hechas para copiar y pegar en redes. Se quitó el
+   7/8/2026: quien llega a esta página viene a ver el dato, no a que le
+   dicten qué escribir. */
+.salida{background:var(--amarillo);text-align:center}
 .btn{display:inline-block;border:var(--bd);background:var(--rojo);color:#fff;
 font-family:var(--display);font-size:14px;text-transform:uppercase;padding:14px 22px;
 text-decoration:none;box-shadow:4px 4px 0 var(--negro);margin-top:8px}
