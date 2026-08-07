@@ -82,7 +82,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **278** y pasan todos.
+Los tests son **279** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -211,11 +211,27 @@ Lo que está esperando, en orden aproximado de impacto:
    correcto (sin robots.txt legible, no se pide nada), pero el efecto es que
    la fuente rinde mucho menos en la nube que en una laptop peruana.
 
-   *Lo que falta para decidir.* El 6/8/2026 se separaron los tres motivos en
-   el registro (`_por_que_no` en `publicas.py`, `pruebas/test_bases_motivos.py`):
-   servidor que no contestó, entidad que dijo que no, y aviso que no enlaza
-   ningún PDF. **La próxima corrida ya reparte los 48 entre los tres.** Sin ese
-   reparto cualquier decisión es a ciegas.
+   *El reparto, medido el 6/8/2026 (y la sorpresa).* Con los motivos separados
+   en el registro y una corrida forzada con `rehacer`, los ~54 fallos salieron
+   así:
+
+   | Motivo | Veces |
+   |---|---|
+   | El PDF se bajó pero no se le pudieron sacar funciones | **31** |
+   | El aviso no enlaza ningún PDF de bases | 14 |
+   | El servidor de la entidad no contestó | 9 |
+
+   **La hipótesis del bloqueo geográfico era falsa.** Se dio por hecho que el
+   problema era que las webs `.gob.pe` no responden desde la nube, y eso explica
+   solo 9 casos. El grueso —31— son PDF que **sí se descargaron** y de los que
+   no supimos sacar las funciones. Ese problema es nuestro y se arregla sin
+   tocar ninguna regla.
+
+   Uno de esos PDF resultó estar **escaneado**: es una foto del documento, sin
+   texto adentro. Por eso el 6/8 se partió ese motivo en dos —«escaneado» y
+   «trae texto pero no reconocimos el encabezado»— y falta una corrida más para
+   saber cuál manda. Si son escaneados, hace falta OCR (caro y lento). Si es lo
+   otro, se arregla mirando un PDF y agregando el encabezado que use.
 
    *La incoherencia que hay que resolver, la reparta como la reparta.* Hoy, de
    dos avisos igual de incompletos, se publica el que trae cinco requisitos y
@@ -379,7 +395,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 278 tests
+python3 -m unittest discover pruebas -v      # los 279 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
