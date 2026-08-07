@@ -198,6 +198,17 @@ def cmd_recolectar(args) -> None:
         # El cupo de la corrida no puede dejar avisos fuera: reparar a medias
         # es justo el problema que esto viene a resolver.
         args.limite = max(args.limite, max(len(u) for u in guardadas.values()))
+
+        # Y la ventana de días tampoco. Reparar con `--dias 3` descartaba por
+        # viejo justo lo que se estaba reparando: el 7/8/2026 se releyeron 49
+        # avisos de Bumeran y 29 se tiraron como "vencidos" antes de guardarse.
+        # Un aviso publicado ya pasó el filtro de antigüedad el día que entró;
+        # de sacarlo de la web cuando toque se encarga `depurar`, no esto.
+        for f in fuentes:
+            if hasattr(f, "dias_publicado"):
+                from .score import MAX_DIAS_ANTIGUEDAD
+                f.dias_publicado = MAX_DIAS_ANTIGUEDAD
+        args.dias = 0
         print(f"REPARAR: se vuelven a leer las {total} ofertas publicadas, "
               f"sin buscar direcciones nuevas.")
         for f in fuentes:

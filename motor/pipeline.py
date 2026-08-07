@@ -18,7 +18,7 @@ from .normalizar import (
     titulo_nombra_el_puesto,
 )
 from .score import evaluar
-from .sueldo import extraer_sueldo
+from .sueldo import declara_varios_sueldos, extraer_sueldo
 
 
 def _fecha_iso(valor) -> date | None:
@@ -52,9 +52,15 @@ def procesar_cruda(cruda: OfertaCruda) -> Oferta:
     #
     # No es aflojar la regla 1, es afinarla: entre dos números que dicen ser el
     # sueldo, gana el que viene con la palabra "sueldo" pegada.
-    sueldo = (extraer_sueldo(texto_plano, solo_etiquetado=True)
-              or extraer_sueldo(cruda.sueldo_texto)
-              or extraer_sueldo(texto_plano))
+    #
+    # Y hay un caso que no se resuelve eligiendo: cuando el aviso nombra DOS
+    # sueldos distintos porque convoca varias modalidades. Ahí no se publica
+    # (ver `declara_varios_sueldos`), y el motivo se anota más abajo.
+    ambiguo = declara_varios_sueldos(texto_plano)
+    sueldo = None if ambiguo else (
+        extraer_sueldo(texto_plano, solo_etiquetado=True)
+        or extraer_sueldo(cruda.sueldo_texto)
+        or extraer_sueldo(texto_plano))
 
     ciudad, departamento = detectar_ubicacion(cruda.ubicacion_texto, texto_plano)
     modalidad = detectar_modalidad(f"{cruda.ubicacion_texto} {texto_plano}")
@@ -100,6 +106,13 @@ def procesar_cruda(cruda: OfertaCruda) -> Oferta:
             # Basta con anotar el motivo: un aviso con motivos no se aprueba,
             # por definición (ver Resultado.aprobada en score.py).
             resultado.motivos.append("El aviso no dice qué puesto es")
+
+    # Se anota aquí y no antes para que el motivo salga en el registro con
+    # todas sus letras: "no declara sueldo" mandaría a buscar en el lugar
+    # equivocado, porque el aviso sí lo declara — declara dos.
+    if ambiguo:
+        resultado.motivos.append(
+            "El aviso declara dos sueldos distintos (varias modalidades)")
 
     return Oferta(
         huella=Oferta.calcular_huella(puesto, cruda.empresa, ciudad),

@@ -245,24 +245,14 @@ def _en_rango(valor: int, moneda: str) -> bool:
 _ETIQUETAS_EXPLICITAS = ("sueldo", "salario", "remuneracion", "remuneración")
 
 
-def extraer_sueldo(texto: str, solo_etiquetado: bool = False) -> Sueldo | None:
+def _reunir_candidatos(plano: str, solo_etiquetado: bool) -> list[Sueldo]:
     """
-    Devuelve el sueldo mensual detectado o None si el aviso no lo declara.
-    Ante la duda, None: preferimos perder un aviso a publicar un monto falso.
+    Todas las lecturas posibles del texto, ya validadas.
 
-    Con `solo_etiquetado=True` se queda únicamente con montos que el texto
-    llama sueldo por su nombre. Sirve para creerle al aviso por encima de la
-    ficha de datos del portal — ver `procesar_cruda` en `pipeline.py`.
+    Está separado de `extraer_sueldo` para que se pueda preguntar otra cosa
+    distinta de "cuál es el sueldo": también hace falta saber si el aviso
+    declara DOS, que es motivo de rechazo. Ver `declara_varios_sueldos`.
     """
-    if not texto:
-        return None
-
-    plano = re.sub(r"\s+", " ", texto.lower())
-
-    # 1) Sueldo mínimo declarado explícitamente
-    if re.search(r"\b(rmv|remuneraci[oó]n m[ií]nima vital|sueldo m[ií]nimo)\b", plano):
-        return Sueldo(RMV, RMV, "PEN", "mensual", "RMV", confianza=85)
-
     candidatos: list[Sueldo] = []
 
     patrones = [
@@ -348,6 +338,47 @@ def extraer_sueldo(texto: str, solo_etiquetado: bool = False) -> Sueldo | None:
         if candidatos:      # los patrones están ordenados de más a menos fiable
             break
 
+    return candidatos
+
+
+def declara_varios_sueldos(texto: str) -> bool:
+    """
+    ¿El aviso nombra DOS sueldos distintos?
+
+    Pasa cuando una sola publicación convoca varias modalidades. El caso que
+    lo destapó (7/8/2026): un "Reponedor(a) Full Time" que en realidad ofrecía
+    las dos jornadas y declaraba "Remuneración: S/ 1,130" y "Remuneración:
+    S/ 565". No hay forma de saber cuál corresponde al puesto que mostramos,
+    así que el aviso no se publica — regla 2.
+
+    Que el mismo monto aparezca repetido no cuenta: eso no es ambigüedad.
+    """
+    if not texto:
+        return False
+    plano = re.sub(r"\s+", " ", texto.lower())
+    candidatos = _reunir_candidatos(plano, solo_etiquetado=True)
+    return len({(s.minimo, s.maximo) for s in candidatos}) > 1
+
+
+def extraer_sueldo(texto: str, solo_etiquetado: bool = False) -> Sueldo | None:
+    """
+    Devuelve el sueldo mensual detectado o None si el aviso no lo declara.
+    Ante la duda, None: preferimos perder un aviso a publicar un monto falso.
+
+    Con `solo_etiquetado=True` se queda únicamente con montos que el texto
+    llama sueldo por su nombre. Sirve para creerle al aviso por encima de la
+    ficha de datos del portal — ver `procesar_cruda` en `pipeline.py`.
+    """
+    if not texto:
+        return None
+
+    plano = re.sub(r"\s+", " ", texto.lower())
+
+    # 1) Sueldo mínimo declarado explícitamente
+    if re.search(r"\b(rmv|remuneraci[oó]n m[ií]nima vital|sueldo m[ií]nimo)\b", plano):
+        return Sueldo(RMV, RMV, "PEN", "mensual", "RMV", confianza=85)
+
+    candidatos = _reunir_candidatos(plano, solo_etiquetado)
     if not candidatos:
         return None
 
