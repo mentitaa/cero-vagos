@@ -176,6 +176,35 @@ def cmd_recolectar(args) -> None:
                 f.dias_publicado = args.dias
         print(f"Buscando solo avisos publicados en los últimos {args.dias} días.\n")
 
+    # Reparar: releer exactamente lo que está publicado.
+    #
+    # Cada fuente descubre direcciones en su sitemap y se detiene al llegar a
+    # su cupo, así que que un aviso guardado caiga dentro de ese corte es
+    # cuestión de suerte. El 7/8/2026 se corrió tres veces con `rehacer` para
+    # corregir tres avisos y los tres quedaron fuera las tres veces — no por un
+    # fallo, sino porque el cupo se llenó antes de llegar a ellos.
+    #
+    # Pidiéndole las direcciones a la base, deja de ser aleatorio.
+    if getattr(args, "reparar", False):
+        guardadas = Almacen().urls_publicadas()
+        total = 0
+        for f in fuentes:
+            f.urls_fijas = guardadas.get(f.nombre, [])
+            total += len(f.urls_fijas)
+        if not total:
+            print("No hay nada publicado que reparar.")
+            sys.exit(0)
+        args.rehacer = True          # reparar implica no saltarse nada
+        # El cupo de la corrida no puede dejar avisos fuera: reparar a medias
+        # es justo el problema que esto viene a resolver.
+        args.limite = max(args.limite, max(len(u) for u in guardadas.values()))
+        print(f"REPARAR: se vuelven a leer las {total} ofertas publicadas, "
+              f"sin buscar direcciones nuevas.")
+        for f in fuentes:
+            if f.urls_fijas:
+                print(f"  · {f.nombre}: {len(f.urls_fijas)}")
+        print()
+
     # Se dice EN VOZ ALTA si esta corrida repara o solo agrega.
     #
     # Hizo falta porque reparar un dato mal leído necesita DOS cosas a la vez y
@@ -308,6 +337,9 @@ def main() -> None:
                    help="solo avisos publicados en los últimos N días (2 para la corrida diaria)")
     r.add_argument("--rehacer", action="store_true",
                    help="volver a revisar todo, incluso lo ya visto hoy")
+    r.add_argument("--reparar", action="store_true",
+                   help="releer las ofertas YA PUBLICADAS para corregir un dato "
+                        "mal leído, en vez de buscar avisos nuevos")
     r.add_argument("--sin-pdf", dest="sin_pdf", action="store_true",
                    help="no abrir el PDF de las bases (más rápido, menos completo)")
     r.add_argument("--exportar", action="store_true", help="exportar al sitio al terminar")
