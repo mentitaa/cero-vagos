@@ -70,6 +70,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests pdfplumber playwright
 
+      # Para leerle las letras a las bases que vienen escaneadas.
+      #
+      # Medido el 6/8/2026: de 78 convocatorias CAS, 31 se quedaron sin
+      # funciones porque su PDF era una foto (o traía el texto roto por un
+      # escaneo mal hecho). Sin estos dos programas, esas 31 no llegan al
+      # umbral y no se publican.
+      #
+      # `tesseract-ocr-spa` no es opcional aunque el motor funcione sin él: sin
+      # el paquete de español lee sin tildes ni eñes, y "gestión" sale "gestién".
+      # `poppler-utils` trae pdftoppm, que convierte cada página en imagen.
+      - name: Instalar el lector de imágenes
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-spa poppler-utils
+          tesseract --list-langs
+
       - name: Instalar el navegador
         run: python -m playwright install --with-deps chromium
 
@@ -107,8 +123,12 @@ jobs:
       #
       # Cuando la casilla va sin marcar, la variable queda vacía y el comando
       # sale exactamente como antes.
+      # Sube de 35 a 45 minutos por el OCR: leer una página cuesta segundo y
+      # medio, y en una corrida hay unas 45 convocatorias sin funciones a las
+      # que intentárselo. Los 10 minutos salen del paso del Estado, que es un
+      # archivo casi todo cerrado y no los necesita.
       - name: Convocatorias CAS
-        timeout-minutes: 35
+        timeout-minutes: 45
         env:
           REHACER: ${{ github.event.inputs.rehacer == 'true' && '--rehacer' || '' }}
         run: |
@@ -119,7 +139,7 @@ jobs:
         continue-on-error: true
 
       - name: Convocatorias del Estado
-        timeout-minutes: 30
+        timeout-minutes: 20
         env:
           REHACER: ${{ github.event.inputs.rehacer == 'true' && '--rehacer' || '' }}
         run: |
