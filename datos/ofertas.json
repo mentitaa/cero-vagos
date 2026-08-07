@@ -1,11 +1,11 @@
 {
- "generado": "2026-08-07T02:25:18",
+ "generado": "2026-08-07T02:53:34",
  "total": 114,
  "stats": {
   "total_procesadas": 2688,
   "aprobadas_vigentes": 114,
   "tasa_aprobacion": 4.2,
-  "sin_sueldo": 2034,
+  "sin_sueldo": 2035,
   "pct_sin_sueldo": 76,
   "sueldo_mediano": 1500,
   "por_fuente": {
