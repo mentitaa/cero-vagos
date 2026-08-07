@@ -129,14 +129,19 @@ class PruebaMensajes(CachePropio):
     def test_pdf_escaneado(self):
         """
         Una foto del documento. No hay texto que leer, así que no es culpa del
-        buscador de encabezados: haría falta OCR. El 6/8/2026 este resultó ser
-        el caso más común de todos.
+        buscador de encabezados. El 6/8/2026 este resultó ser el caso más común.
+
+        El aviso además tiene que decir si ya se intentó leer la imagen o si
+        falta instalar la herramienta: son dos diagnósticos distintos y llevan
+        a cosas distintas.
         """
+        from motor.bases_pdf import hay_ocr
+
         def bajar(_url, _max=0):
             return b"%PDF-1.4 una foto, sin capa de texto"
         aviso = self._aviso(bajar)
         self.assertIn("escaneado", aviso)
-        self.assertIn("OCR", aviso)
+        self.assertIn("leyendo la imagen" if hay_ocr() else "tesseract", aviso)
 
     def test_pdf_con_texto_pero_sin_encabezado_reconocido(self):
         """
@@ -220,6 +225,68 @@ class PruebaNoRompeLoQueYaFuncionaba(CachePropio):
         aviso = enriquecer_con_bases(c, AVISO, bajar)
         self.assertTrue(aviso)
         self.assertNotIn("funciones_desde_pdf", c.extra)
+
+
+class PruebaLasFuncionesLleganEnteras(CachePropio):
+    """
+    Sacar las funciones del PDF no sirve de nada si después no se reconocen.
+
+    El fallo, encontrado el 6/8/2026 probando el motor completo: la sección se
+    pegaba al final del aviso sin salto de línea, así que al normalizar el
+    texto la última línea de antes y la palabra "Funciones" quedaban juntas:
+
+        Ver aquí Bases Funciones
+
+    El encabezado dejaba de reconocerse y las funciones terminaban contadas
+    como requisitos. El aviso pasaba de tener funciones a no tenerlas **sin que
+    nada fallara a la vista**: ni un error, ni una incidencia. Solo un score
+    más bajo y un aviso que no se publica.
+    """
+
+    # El cuerpo termina en un enlace, que es lo que rompía el caso.
+    CUERPO = ('<p>Requisitos</p><ul>'
+              '<li>Título profesional de Contador Público colegiado</li>'
+              '<li>Experiencia general: dos años en el sector público</li>'
+              '<li>Experiencia específica: un año en el cargo o afines</li></ul>'
+              '<a href="https://x.gob.pe/bases.pdf">Ver aquí Bases</a>')
+
+    BUENAS = ("Principales funciones a desarrollar:\n"
+              "a) Contabilizar las operaciones economicas de la entidad.\n"
+              "b) Formular los estados financieros mensuales del pliego.\n"
+              "c) Revisar y conciliar los anexos del balance de comprobacion.\n")
+
+    def _con_funciones(self):
+        from motor import bases_pdf
+        from motor.modelos import OfertaCruda
+
+        c = OfertaCruda(fuente="Convocatorias CAS", url="https://x.com/a-1-plazas-1.html",
+                        puesto="Contador", empresa="UGEL", descripcion_html=self.CUERPO)
+        real = bases_pdf.texto_de_pdf
+        bases_pdf.texto_de_pdf = lambda *_a, **_k: self.BUENAS
+        try:
+            enriquecer_con_bases(c, self.CUERPO, lambda _u, _m=0: b"%PDF-1.4 x")
+        finally:
+            bases_pdf.texto_de_pdf = real
+        return c
+
+    def test_las_funciones_se_reconocen_como_funciones(self):
+        from motor.normalizar import extraer_bloques
+
+        bloques = extraer_bloques(self._con_funciones().cuerpo())
+        self.assertGreaterEqual(len(bloques["funciones"]), 3)
+
+    def test_no_terminan_contadas_como_requisitos(self):
+        from motor.normalizar import extraer_bloques
+
+        requisitos = " ".join(extraer_bloques(self._con_funciones().cuerpo())["requisitos"])
+        self.assertNotIn("contabilizar", requisitos.lower(),
+                         "una función se coló entre los requisitos")
+
+    def test_la_oferta_terminada_las_muestra(self):
+        from motor.pipeline import procesar_cruda
+
+        oferta = procesar_cruda(self._con_funciones())
+        self.assertGreaterEqual(len(oferta.funciones), 3)
 
 
 if __name__ == "__main__":
