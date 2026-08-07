@@ -1,6 +1,6 @@
 /* Generado por el motor de Cero Vagos. No editar a mano. */
 window.CERO_VAGOS = {
- "generado": "2026-08-07T15:48:55",
+ "generado": "2026-08-07T15:53:28",
  "total": 147,
  "stats": {
   "total_procesadas": 3063,
