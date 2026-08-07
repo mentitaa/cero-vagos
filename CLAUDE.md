@@ -99,7 +99,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **312** y pasan todos.
+Los tests son **336** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -322,6 +322,26 @@ Lo que está esperando, en orden aproximado de impacto:
 Cosas que ya nos costaron caro. Casi todas vinieron de suponer en vez de
 verificar.
 
+- **Lo que califica a un monto tiene que estar PEGADO a él.** Es la misma
+  lección dos veces. Primero con el periodo (los S/ 33,800, abajo). Y el
+  7/8/2026 otra vez con la etiqueta: un aviso decía *"Sueldo básico: S/ 1,130.
+  Comisiones de hasta S/ 600"* y el sitio publicaba **S/ 600**, porque la
+  ventana de 40 caracteres que busca la palabra "sueldo" alcanzaba el
+  "básico:" del monto anterior. Ahora la ventana se corta en el punto o en el
+  monto previo (`_ventana_de_etiqueta`), y además hay una lista de palabras
+  —comisión, bono, vale, movilidad— que dicen que ese monto NO es el sueldo
+  (`_NO_ES_SUELDO`). Vigilado en `pruebas/test_sueldo_no_es_bono.py`.
+- **Una pista buscada como pedazo de texto calza dentro de otra palabra.**
+  «Asesor de Cobranza» salía como **Construcción**, porque la pista `obra`
+  está dentro de «c-obra-nza»; e `intern` está dentro de «interna», así que
+  cualquier auditoría interna se iba a Prácticas. No da error y no se ve
+  leyendo el código: solo se nota mirando una tarjeta. Ahora las pistas se
+  buscan al inicio de palabra (`\b`) y `intern` exige la palabra entera.
+- **Arreglar el motor NO arregla lo ya publicado.** Un aviso guardado conserva
+  el sueldo que se le leyó el día que entró, y `reevaluar` **no lo vuelve a
+  leer**: solo lo vuelve a puntuar con el número ya guardado (el texto original
+  no se guarda). Para reparar un dato mal leído hay que volver a DESCARGAR el
+  aviso: Actions → *Recolección diaria* → Run workflow → marcar `rehacer`.
 - **Un sueldo de S/ 33,800 publicado por error.** El motor leyó "S/ 1,300" y
   una frase suelta a treinta caracteres de distancia lo convirtió en pago
   diario. Por eso el periodo (mensual, diario, anual) solo se busca **pegado**
@@ -432,7 +452,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 312 tests
+python3 -m unittest discover pruebas -v      # los 336 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
