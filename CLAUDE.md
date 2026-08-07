@@ -99,7 +99,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **341** y pasan todos.
+Los tests son **348** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -331,6 +331,14 @@ verificar.
   manda sobre la ficha (`solo_etiquetado` en `sueldo.py`, orden en
   `procesar_cruda`). No afloja la regla 1: entre dos números que dicen ser el
   sueldo, gana el que trae la palabra pegada.
+- **Para reparar un dato mal leído está `--reparar`, no `rehacer`.** `rehacer`
+  solo dice "no te saltes lo ya visto", pero la fuente sigue descubriendo
+  direcciones en su sitemap y **se detiene al llegar a su cupo** (Bumeran lee
+  120 avisos y para, aunque queden miles). Que un aviso guardado caiga dentro
+  de ese corte es cuestión de suerte: el 7/8/2026 se corrió tres veces para
+  corregir tres avisos y los tres quedaron fuera las tres. `--reparar` le pide
+  las direcciones a la base (`urls_publicadas`) y relee exactamente lo que está
+  publicado. En GitHub es la casilla *"¿Releer las ofertas YA PUBLICADAS?"*.
 - **Para reparar avisos viejos no basta `rehacer`: hay que abrir `dias` a 0.**
   `rehacer` hace que no se salten los avisos ya vistos, pero antes hay que
   DESCUBRIRLOS, y Bumeran solo busca lo publicado en los últimos 3 días. Un
@@ -466,7 +474,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 341 tests
+python3 -m unittest discover pruebas -v      # los 348 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
