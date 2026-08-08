@@ -265,7 +265,7 @@ def jobposting(o: dict, url: str) -> str:
 # --------------------------------------------------------------------------
 
 _ESTILOS = """
-:root{--rojo:#FF1E1E;--negro:#0B0B0B;--crema:#FFF3E4;--blanco:#fff;
+:root{color-scheme:light;--rojo:#FF1E1E;--negro:#0B0B0B;--crema:#FFF3E4;--blanco:#fff;
 --amarillo:#FFD100;--azul:#2B37FF;--lima:#B8FF2E;--bd:3px solid var(--negro);
 --display:'Archivo Black','Arial Black',system-ui,sans-serif;
 --body:'Space Grotesk',system-ui,-apple-system,sans-serif}
@@ -379,6 +379,12 @@ def pagina_oferta(o: dict, sitio: str) -> str:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Esta página está diseñada en claro y no tiene versión oscura. Sin
+     esta línea, los navegadores con modo oscuro automático (Brave, y
+     Chrome en Android) la "arreglan" solos: invierten los colores y el
+     crema sale marrón, el amarillo verde oliva y el texto resaltado.
+     Declarándolo, el navegador respeta el diseño. Reportado el 8/8/2026. -->
+<meta name="color-scheme" content="light">
 <title>{_e(titulo)} | Cero Vagos</title>
 <meta name="description" content="{_e(descripcion)}">
 <link rel="canonical" href="{_e(url)}">
@@ -499,6 +505,12 @@ def pagina_404(sitio: str) -> str:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Esta página está diseñada en claro y no tiene versión oscura. Sin
+     esta línea, los navegadores con modo oscuro automático (Brave, y
+     Chrome en Android) la "arreglan" solos: invierten los colores y el
+     crema sale marrón, el amarillo verde oliva y el texto resaltado.
+     Declarándolo, el navegador respeta el diseño. Reportado el 8/8/2026. -->
+<meta name="color-scheme" content="light">
 <title>Esta oferta ya cerró | Cero Vagos</title>
 <meta name="robots" content="noindex">
 <meta http-equiv="Content-Security-Policy" content="{csp()}">
@@ -600,6 +612,12 @@ def pagina_salida(o: dict, sitio: str) -> str:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Esta página está diseñada en claro y no tiene versión oscura. Sin
+     esta línea, los navegadores con modo oscuro automático (Brave, y
+     Chrome en Android) la "arreglan" solos: invierten los colores y el
+     crema sale marrón, el amarillo verde oliva y el texto resaltado.
+     Declarándolo, el navegador respeta el diseño. Reportado el 8/8/2026. -->
+<meta name="color-scheme" content="light">
 <title>Te llevamos al aviso | Cero Vagos</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="refresh" content="1;url={_e(destino)}">

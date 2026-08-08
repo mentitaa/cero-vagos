@@ -42,6 +42,12 @@ def _envoltura(titulo: str, descripcion: str, ruta: str, sitio: str,
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Esta página está diseñada en claro y no tiene versión oscura. Sin
+     esta línea, los navegadores con modo oscuro automático (Brave, y
+     Chrome en Android) la "arreglan" solos: invierten los colores y el
+     crema sale marrón, el amarillo verde oliva y el texto resaltado.
+     Declarándolo, el navegador respeta el diseño. Reportado el 8/8/2026. -->
+<meta name="color-scheme" content="light">
 <title>{_e(titulo)} | Cero Vagos</title>
 <meta name="description" content="{_e(descripcion)}">
 <link rel="canonical" href="{_e(url)}">
