@@ -1,13 +1,13 @@
 /* Generado por el motor de Cero Vagos. No editar a mano. */
 window.CERO_VAGOS = {
- "generado": "2026-08-08T05:10:48",
+ "generado": "2026-08-08T06:05:18",
  "total": 174,
  "stats": {
   "total_procesadas": 3690,
   "aprobadas_vigentes": 174,
   "tasa_aprobacion": 4.7,
-  "sin_sueldo": 2786,
-  "pct_sin_sueldo": 76,
+  "sin_sueldo": 2785,
+  "pct_sin_sueldo": 75,
   "sueldo_mediano": 1500,
   "por_fuente": {
    "Laborum": 80,
@@ -1722,47 +1722,6 @@ window.CERO_VAGOS = {
   },
   {
    "id": 41,
-   "puesto": "Call center",
-   "empresa": "Entel Connect Center",
-   "cat": "Ventas",
-   "min": 1150,
-   "max": 1150,
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Laborum",
-   "dias": 5,
-   "vence": "2026-09-03",
-   "restan": 26,
-   "score": 94,
-   "resumen": "RESUMEN: ¡Forma parte del Entel Connect (EC)!",
-   "funciones": [
-    "Contactar telefónicamente a clientes, para vender multiproductos de Pacífico Seguros (sepelios - accidentes) cumpliendo con los objetivos comerciales de la campaña.· Modalidad de trabajo",
-    "Presencial : Av. España 382 - Cercado de Lima",
-    "Horario laboral",
-    "Lunes a sábado (1 día de descanso fijo : Domingo )",
-    "Franja horaria : Full time.",
-    "Lunes a Viernes :9:00AM A 7:00PM",
-    "Sábados: 9:00AM A 3:00PM",
-    "(dentro de la franja solo se te asignan tus 8 horas de trabajo efectivo + 45 minutos de break diario)"
-   ],
-   "requisitos": [
-    "Disponibilidad para trabajar presencialmente en Cercado de Lima.",
-    "Experiencia mínima de 3 meses en ventas o call center.",
-    "Fluidez verbal, buena comunicación y orientación a resultados."
-   ],
-   "beneficios": [
-    "Sueldo : S/. 1,150 + Comisiones ilimitadas",
-    "Ingreso a planilla desde el primer día con todos los beneficios de ley.",
-    "Cts, Gratificación",
-    "Convenios corporativos.",
-    "Capacitaciones pagadas.",
-    "Linea de carrera.",
-    "En Entel, tu desarrollo es nuestra prioridad.-Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: cambaceo, sales, insurance, aseguradora, seguros, permanent, fijo"
-   ],
-   "url": "https://www.laborum.pe/job/entel-connect-center/capacitate-en-solo-5-dias-asesor-a-de-ventas-pacifico/6a701b5d2020b210c81e9ad9"
-  },
-  {
-   "id": 42,
    "puesto": "Despachador de combustible",
    "empresa": "COESTI S.A.",
    "cat": "Recursos Humanos",
@@ -1802,7 +1761,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/coesti-s-a/primax-chilca-despachador-de-combustible-sueldo-bono-150/6a701ba82020b210c81e9bc4"
   },
   {
-   "id": 43,
+   "id": 42,
    "puesto": "Fuerza de ventas",
    "empresa": "Grupo Solimano",
    "cat": "Ventas",
@@ -1838,8 +1797,8 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/grupo-solimano/impulsador-a-de-ventas-rubro-impresoras-miraflores-altas/6a6fdd162020b210c81e5f5a"
   },
   {
-   "id": 44,
-   "puesto": "Promotor Retail",
+   "id": 43,
+   "puesto": "Promotor retail",
    "empresa": "Grupo Tawa",
    "cat": "Ventas",
    "min": 1130,
@@ -1851,10 +1810,10 @@ window.CERO_VAGOS = {
    "vence": "2026-09-03",
    "restan": 26,
    "score": 92,
-   "resumen": "RESUMEN: ¡Únete a Panasonic, la principal marca de productos electrónicos, como Promotor de Ventas de tecnología",
+   "resumen": "RESUMEN: ¡Únete a Panasonic es la principal marca de los productos electrónicos como Promotor de Ventas de tecnología",
    "funciones": [
     "Serás el embajador de Panasonic en puntos de venta, conectando a los clientes con nuestras últimas innovaciones.",
-    "Asesorar a los clientes sobre los productos Panasonic, comunicando correctamente sus beneficios y diferenciadores a los clientes.",
+    "Asesorar a los clientes de los productos Panasonic, comunicando correctamente sus beneficios y diferenciadores a los clientes.",
     "Harás que los clientes vivan una experiencia única, mostrando cómo todo funciona mejor cuando está conectado.",
     "Informar al supervisor sobre el volumen de ventas diarias.",
     "Reportar quiebres de stock o sobre stock de productos en el punto de venta.",
@@ -1867,21 +1826,20 @@ window.CERO_VAGOS = {
     "Proactividad: Te encanta tomar la iniciativa y superar expectativas.",
     "Experiencia requerida: 6 meses en ventas presenciales en tiendas retail, departamentales o supermercados. (de preferencia en tecnología).",
     "Experiencia en atención al cliente y asesoría de productos tecnológicos, electrodomésticos o similares.",
-    "Disponibilidad para trabajar en horarios: De lunes a jueves (2:00 pm - 9:00 pm) de viernes a domingo (11:00 am - 9:00 pm) (descanso un día a la semana entre Lunes a Miercoles)",
-    "Lugar de trabajo: Tottus de Atocongo y Pachacutec",
-    "Contar con carnet de sanidad sin manipulación de alimentos o estar con la disponibilidad de tramitarlo",
-    "A la mayor brevedad posible."
+    "Disponibilidad para trabajar en horarios: Lunes a viernes (2:00 pm a 8:00 pm)/ Sabado a Domingo (11:00 am a 8:00 pm) Descanso día de semana entre Lunes y Miercoles",
+    "Lugar de trabajo Tiendas Hiraoka en Lima Metropolitana (Hiraoka Abancay, San Miguel, Miraflores, Independencia y San Juan de Lurigancho)",
+    "Contar con carnet de sanidad sin manipulación de alimentos o estar con la disponibilidad de tramitarlo a la brevedad posible."
    ],
    "beneficios": [
     "Capacitación continua sobre la tecnología de Panasonic.",
-    "Remuneración básica: S/1130 + comisiones desde s/600 + Movilidad S/150 + Bono de Alimento S/200+ Beneficios corporativos",
+    "Remuneración básico S/1130 + comisiones s/600 + Movilidad S/250+ Bono de Alimento s/ 200 + Beneficios corporativos",
     "Crecimiento profesional en una marca líder mundial .",
     "Incentivos por metas alcanzadas y acceso a eventos exclusivos ."
    ],
-   "url": "https://www.laborum.pe/job/grupo-tawa/promotor-retail-electro-tottus-atocongo-pachacutec-planilla/6a7018c02020b210c81e9647"
+   "url": "https://www.laborum.pe/job/grupo-tawa/promotor-retail-ruta-electro-linea-blanca-lima-metropolitana/6a7017c72020b210c81e93f4"
   },
   {
-   "id": 45,
+   "id": 44,
    "puesto": "Técnico de Mantenimiento Integral y Servicios Generales",
    "empresa": "A365",
    "cat": "Ingeniería",
@@ -1931,7 +1889,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/a365/tecnico-de-mantenimiento-integral-y-servicios-generales/6a6ff4272020b210c81e7806"
   },
   {
-   "id": 46,
+   "id": 45,
    "puesto": "Asesor de ventas B2B",
    "empresa": "Grupo Solimano",
    "cat": "Ventas",
@@ -1973,7 +1931,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/grupo-solimano/asesor-de-ventas-b2b-promotor-institucional-rubro-de-higiene/6a701cea2020b210c81e9eaa"
   },
   {
-   "id": 47,
+   "id": 46,
    "puesto": "Promotor(a) de Ventas Retail",
    "empresa": "Grupo Tawa",
    "cat": "Ventas",
@@ -1998,7 +1956,7 @@ window.CERO_VAGOS = {
    "requisitos": [
     "Secundaria completa.",
     "Experiencia mínima de 6 meses como Promotor(a) de Ventas o Impulsador(a), preferentemente en canal retail.",
-    "Disponibilidad de trabajar de manera fija en SODIMAC - ANGAMOS",
+    "Disponibilidad de trabajar de manera fija en SODIMAC - ATE",
     "Personas proactivas, con orientación a resultados y excelente actitud comercial.",
     "Lunes a domingo de 11 am a 8 pm",
     "Descanso: martes o miércoles"
@@ -2012,10 +1970,10 @@ window.CERO_VAGOS = {
     "Pagos mensuales puntuales.· ¿Por qué trabajar con nosotros?",
     "En ROM creemos que el talento hace la diferencia. Valoramos a las personas que buscan superarse, disfrutan los retos y quieren crecer junto a una empresa sólida y en constante expansión.-Requerimientos- Educación mínima: Educación Secundaria años de experienciaEdad: entre 20 y 50 añosPalabras clave: cambaceo, sales"
    ],
-   "url": "https://www.laborum.pe/job/grupo-tawa/promotor-a-de-ventas-retail-sodimac-angamos-comisiones-bonos/6a712a3a2020b210c81f01f0"
+   "url": "https://www.laborum.pe/job/grupo-tawa/promotor-a-de-ventas-retail-sodimac-ate-comisiones-bonos/6a712b2a2020b210c81f0671"
   },
   {
-   "id": 48,
+   "id": 47,
    "puesto": "Operario de Producción Sector Alimentos",
    "empresa": "Impulsate",
    "cat": "Ingeniería",
@@ -2059,7 +2017,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/impulsate/operario-de-produccion-sector-alimentos-gana-hasta-s-1400/6a71287f2020b210c81ef950"
   },
   {
-   "id": 49,
+   "id": 48,
    "puesto": "Chofer",
    "empresa": "Cantol S.A.C.",
    "cat": "Logística",
@@ -2104,7 +2062,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/cantol-s-a-c/operarios-y-o-auxiliares-de-almacen-y-despacho-de-lunes-a/6a6fda1f2020b210c81e5780"
   },
   {
-   "id": 50,
+   "id": 49,
    "puesto": "Operario de Producción",
    "empresa": "RRHH CAMBRIDGE",
    "cat": "Ingeniería",
@@ -2148,7 +2106,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/rrhh-cambridge/operario-de-produccion-trabaja-12-horas-s-1600-alimentacion/6a701a3f2020b210c81e9779"
   },
   {
-   "id": 51,
+   "id": 50,
    "puesto": "Atención al cliente",
    "empresa": "ONURIS TALENT S.A.C.",
    "cat": "Recursos Humanos",
@@ -2190,7 +2148,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/onuris-talent-s-a-c/multifuncional-full-time-flora-y-fauna/6a701ce42020b210c81e9e8a"
   },
   {
-   "id": 52,
+   "id": 51,
    "puesto": "Agente de Seguridad",
    "empresa": "CONSERH",
    "cat": "Logística",
@@ -2233,7 +2191,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/conserh/agente-de-seguridad-villa-el-salvador/6a6fdac32020b210c81e593e"
   },
   {
-   "id": 53,
+   "id": 52,
    "puesto": "Operario de Almacén y Despacho",
    "empresa": "WORKING FOR EXCELLENCE S.A.C",
    "cat": "Logística",
@@ -2275,7 +2233,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/working-for-excellence-s-a-c/operario-de-almacen-y-despacho-ingreso-inmediato-descansa/6a7128982020b210c81ef9d0"
   },
   {
-   "id": 54,
+   "id": 53,
    "puesto": "Promotor(a) de Venta Textil",
    "empresa": "CONSERH",
    "cat": "Ventas",
@@ -2316,7 +2274,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/conserh/promotor-a-de-venta-textil-ripley-san-borja-marca-dockers/6a7128f32020b210c81efb90"
   },
   {
-   "id": 55,
+   "id": 54,
    "puesto": "Atención al cliente",
    "empresa": "Overall Strategy",
    "cat": "Ventas",
@@ -2353,12 +2311,13 @@ window.CERO_VAGOS = {
     "Línea de carrera real",
     "Acceso a programa de salud para ti y tu familia",
     "Programa de beneficios: descuentos educativos, tiendas y más",
-    "Reconocimientos por desempeño y excelente clima laboral"
+    "Reconocimientos por desempeño y excelente clima laboral",
+    "¡Postula hoy y comienza tu crecimiento profesional con nosotros!. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaEdad: entre 18 y 40 añosPalabras clave: nominas, sueldo, paga, retribucion, salary, payslip, payroll, wage, pay, payment, nominista, permanent, fijo"
    ],
-   "url": "https://www.laborum.pe/job/overall-strategy/promotores-para-claro-cac-aviacion-c-s-experiencia-ingreso/6a70169c2020b210c81e8fed"
+   "url": "https://www.laborum.pe/job/overall-strategy/promotores-para-claro-cac-aviacion-c-s-experiencia-ingreso/6a7015ea2020b210c81e8cab"
   },
   {
-   "id": 56,
+   "id": 55,
    "puesto": "Con exp en Call center Banco",
    "empresa": "A365",
    "cat": "Atención al Cliente",
@@ -2397,7 +2356,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/a365/banco-bcp-bbva-interbank-solo-atencion-al-cliente-gana-1300/6a712aee2020b210c81f0550"
   },
   {
-   "id": 57,
+   "id": 56,
    "puesto": "Operario de Limpieza",
    "empresa": "CONSERH",
    "cat": "Recursos Humanos",
@@ -2437,7 +2396,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/conserh/ingreso-inmediato-operario-de-limpieza-callao-colonial/6a7014eb2020b210c81e880b"
   },
   {
-   "id": 58,
+   "id": 57,
    "puesto": "Urgente Operario de Producción",
    "empresa": "CALIMOD",
    "cat": "Ingeniería",
@@ -2469,6 +2428,46 @@ window.CERO_VAGOS = {
     "Alimentación cubierta al 100%."
    ],
    "url": "https://www.laborum.pe/job/calimod/urgente-operario-de-produccion-ate-ingreso-inmediato-horario/6a6fdb382020b210c81e5a59"
+  },
+  {
+   "id": 58,
+   "puesto": "Atención al cliente",
+   "empresa": "ManpowerGroup RPO",
+   "cat": "Atención al Cliente",
+   "min": 1300,
+   "max": 1300,
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 5,
+   "vence": "2026-09-03",
+   "restan": 26,
+   "score": 86,
+   "resumen": "RESUMEN: ¡Únete a SCC (Servicios Call Center) como Asesor 100% Atención al cliente Banco BBVA!",
+   "funciones": [
+    "Brindar atención a los clientes del Banco BBVA a través de llamadas.",
+    "Resolver consultas, solicitudes y requerimientos con un servicio de calidad.",
+    "Garantizar una experiencia de atención eficiente y orientada a la satisfacción del cliente."
+   ],
+   "requisitos": [
+    "Experiencia en call center 6 meses o atención presencial en entidades bancarias.",
+    "Buena comunicación y orientación al cliente.",
+    "Disponibilidad para laborar de manera presencial en Centro Cívico Cercado de Lima.",
+    "Horario de trabajo",
+    "Modalidad Full Time. Elige el turno que mejor se adapte a ti",
+    "Turno mañana: Lunes a sábado, Rango 8:00 a. m. y 6:00 p. m.",
+    "Turno noche: Lunes a sábado, Rango 10:00 p. m. y 8:00 a. m.",
+    "Descanso fijo los domingos."
+   ],
+   "beneficios": [
+    "Sueldo fijo de S/ 1,300.",
+    "Capacitación presencial remunerada por 21 días.",
+    "Firma de contrato desde el séptimo día de capacitación.",
+    "Ingreso a planilla con todos los beneficios de ley.",
+    "Pagos mensuales.",
+    "Oportunidades de crecimiento y línea de carrera."
+   ],
+   "url": "https://www.laborum.pe/job/manpowergroup-rpo/banco-bbva-sueldo-1300-atencion-al-cliente-llamadas/6a701b6c2020b210c81e9b19"
   },
   {
    "id": 59,
@@ -2523,7 +2522,7 @@ window.CERO_VAGOS = {
    "vence": "2026-09-03",
    "restan": 26,
    "score": 86,
-   "resumen": "RESUMEN: Nexxo Servicios Comerciales, empresa del rubro de Telecomunicaciones se encuentra en búsqueda de EJECUTIVOS ATENCIÓN AL CLIENTE Y VENTAS para laborar en nuestra tienda de Movistar, que se ubica cerca a la RAMBLA SAN BORJA.",
+   "resumen": "RESUMEN: Nexxo Servicios Comerciales, se encuentra en búsqueda de EJECUTIVO ATENCIÓN AL CLIENTE Y VENTAS para laborar en nuestra tienda de Movistar en CC PLAZA SAN MIGUEL.",
    "funciones": [
     "Atención y venta directa a clientes.",
     "Atender los reclamos de los clientes.",
@@ -2535,12 +2534,12 @@ window.CERO_VAGOS = {
     "Conocimiento de Office (Nivel básico)."
    ],
    "beneficios": [
-    "Sueldo básico: S/. 1130 + Comisiones ilimitadas + Bono de Asistencia (300 soles) + Incentivos de Marcas.",
+    "Sueldo básico: S/. 1130 + Comisiones ilimitadas + Incentivos de Marcas.",
     "Planilla desde primer día de trabajo.",
     "Capacitaciones pagadas.",
-    "Desarrollo Profesional y Línea de carrera."
+    "Desarrollo Profesional y Línea de carrera.-Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: costumer, cliente"
    ],
-   "url": "https://www.laborum.pe/job/nexxo-servicios-comerciales/rambla-san-borja-asesor-atencion-al-cliente-y-ventas-horario/6a6fe4392020b210c81e6d3c"
+   "url": "https://www.laborum.pe/job/nexxo-servicios-comerciales/plaza-san-miguel-atencion-al-cliente-y-ventas-comisiones/6a6fe43f2020b210c81e6d5c"
   },
   {
    "id": 61,
@@ -2579,7 +2578,7 @@ window.CERO_VAGOS = {
     "¡No te dejes sorprender! Overall no solicita ningún tipo de pago para postulación de personal.",
     "Rechazamos actos inescrupulosos de personas que utilizan el nombre de la empresa para realizar convocatorias laborales falsas en las que solicitan dinero a cambio de una oportunidad laboral.-Requerimientos- Educación mínima: Educación Secundaria años de experienciaEdad: entre 20 y 35 años"
    ],
-   "url": "https://www.laborum.pe/job/overall-strategy/promotores-de-venta-linea-blanca-metro-proceres-gana-2180/6a701dbf2020b210c81ea107"
+   "url": "https://www.laborum.pe/job/overall-strategy/promotores-de-venta-linea-blanca-metro-san-juan-de/6a701d9e2020b210c81ea067"
   },
   {
    "id": 62,
@@ -7004,20 +7003,20 @@ window.CERO_VAGOS = {
    "ciudad": "Lima",
    "fuente": "Convocatorias CAS",
    "dias": null,
-   "vence": "2026-08-13",
-   "restan": 5,
+   "vence": "2026-08-11",
+   "restan": 3,
    "score": 72,
    "resumen": "Convocatoria CAS de INVERMET en Lima. Una plaza.",
    "funciones": [],
    "requisitos": [
-    "Título Profesional Universitario de la carrera de Arquitectura. Con Colegiatura y Habilitación Profesional Vigente.",
-    "Experiencia General: Cinco (05) años de experiencia general, en el Sector Público o en el Sector Privado.",
+    "Título Profesional Universitario de la carrera de Arquitectura. Grado académico de Maestro en Gestión Pública.",
+    "Experiencia General: Ocho (08) años de experiencia general, en el Sector Público o en el Sector Privado.",
     "Experiencia Especifica",
-    "Tres (03) años de experiencia específica en puestos idénticos o similares o en puestos con funciones equivalentes, en el Sector Público o Sector Privado.",
-    "Dos (02) años de experiencia especifica en puestos idénticos o similares o en puestos con funciones equivalentes, en el Sector Público.",
-    "Un (01) año de experiencia en puestos o cargos de especialistas, ejecutivos/as, coordinadores/as, responsables, supervisores/as, asesores/as de Alta Dirección o su equivalencia.",
-    "Experiencia mínima en el puesto como Supervisor/Coordinador en el sector público o privado.",
-    "Diplomado y/o Programa de Especialización en Gerencia de Proyectos y/o Valorización y Liquidación de Obra y/o Presupuesto Público.",
+    "Cuatro (04) años de experiencia específica en puestos idénticos o similares o en puestos con funciones equivalentes, en el Sector Público o Sector Privado.",
+    "Tres (03) años de experiencia especifica en puestos idénticos o similares o en puestos con funciones equivalentes, en el Sector Público.",
+    "Experiencia mínima en el puesto como Jefe de Área o Departamento en el sector público o privado.",
+    "Cursos y/o programas de especialización",
+    "Curso y/o Diplomado y/o Programa de Especialización en Gerencia de Proyectos y/o Valorización y Liquidación de Obras y/o Calidad en Pavimentos.",
     "Conocimiento en Gestión Pública.",
     "Habilidades o competencias",
     "Orientación a resultados y de servicio al ciudadano, Mejora continua, Trabajo en equipo y Capacidad de análisis"
@@ -7029,7 +7028,7 @@ window.CERO_VAGOS = {
     "Aguinaldos por Fiestas Patrias y Navidad según la ley de presupuesto",
     "Jornada máxima de 48 horas semanales"
    ],
-   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-invermet-agosto-2026-1-plazas-67389.html"
+   "url": "https://www.convocatoriascas.com/proceso-de-seleccion-CAS-invermet-agosto-2026-1-plazas-67305.html"
   },
   {
    "id": 167,
