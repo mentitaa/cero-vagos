@@ -103,7 +103,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **377** y pasan todos.
+Los tests son **385** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -264,9 +264,8 @@ Lo que está esperando, en orden aproximado de impacto:
    - **Pasada de recuperación.** La corrida diaria solo mira lo publicado en
      los últimos 3 días, y nunca se leyó lo de entre 3 y 60 días atrás. No
      necesita código: una corrida con `dias = 0` y el límite privado en 400.
-   - **Las convocatorias CAS de varias plazas.** Hoy se descartan enteras: en
-     la primera corrida fueron **94 direcciones y 1.263 vacantes**, casi todas
-     de provincia. Es la fuente más rica que ya tienes y no estás usando.
+   - ~~Las convocatorias CAS de varias plazas~~. **Hecho el 8/8/2026**: ahora
+     cada puesto sale como un aviso propio. Ver abajo.
    - **Convocatorias del Estado** y las bolsas de empresas (`EMPRESAS.md`).
 
    **BuscoTrabajo está descartado** (8/8/2026): tiene **4 empleos activos y 10
@@ -407,11 +406,19 @@ verificar.
   media hora de dar vueltas. Lo que sí manda es la página del archivo en
   `github.com`, que muestra el commit y la hora. Para leerlo sin caché, se pide
   por el número del commit en vez de por `main`.
-- **Una dirección de Convocatorias CAS puede traer varios puestos.** Con
-  sueldos distintos: Surquillo lista 6 plazas en 2 puestos (S/ 1,350 y
-  S/ 2,800). El motor asume una dirección, un aviso, así que publicar una de
-  las dos sería elegir por el postulante. Por eso solo entran las de UNA plaza
-  y las demás se cuentan (`motor/fuentes/cas.py`).
+- **Una dirección de Convocatorias CAS trae varios puestos, y cada uno es un
+  aviso.** Desde el 8/8/2026 la página se parte en una ficha por puesto. Tres
+  cosas que van juntas y no se tocan por separado: **un aviso por PUESTO, no
+  por plaza** (5 vacantes son un aviso que dice "5 vacantes", no cinco
+  tarjetas); **el sueldo tiene que estar dentro de la ficha del puesto** —el
+  del resumen no se reparte, porque en Surquillo dice S/ 1,350 y ese es el del
+  operario, no el del especialista de S/ 2,800—; y **dos puestos que se llaman
+  igual con sueldos distintos no entran ninguno**, porque comparten huella y
+  uno pisaría al otro dejando un aviso con el nombre de uno y el sueldo del
+  otro. El puesto sin sueldo legible se cae solo y no arrastra a los demás
+  (decisión de Mentita). Las de varios puestos **no se enriquecen con el PDF
+  de las bases**: trae las funciones de todos mezcladas y no se sabe cuáles son
+  de cuál. Vigilado en `PruebaVariosPuestosEnUnaPagina`.
 - **Buscar una etiqueta por simple prefijo agarra el menú.** Al leer
   «Institución» de la ficha, el enlace «Instituciones» de la barra de arriba
   calzaba primero y la entidad terminaba siendo «es». La etiqueta tiene que
@@ -488,7 +495,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 377 tests
+python3 -m unittest discover pruebas -v      # los 385 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
