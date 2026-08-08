@@ -249,8 +249,11 @@ class Almacen:
         Pidiendo las direcciones a la base el asunto deja de ser aleatorio: se
         vuelve a leer exactamente lo que está publicado, ni más ni menos.
         """
+        # DISTINCT porque una convocatoria del Estado con varios puestos deja
+        # varias ofertas con el MISMO enlace. Sin esto se descargaría la misma
+        # página tres veces para releer los tres puestos que ya salen juntos.
         filas = self.con.execute(
-            "SELECT fuente, url FROM ofertas "
+            "SELECT DISTINCT fuente, url FROM ofertas "
             "WHERE aprobada = 1 AND vigente = 1 AND url IS NOT NULL AND url != ''"
         ).fetchall()
         por_fuente: dict[str, list[str]] = {}
