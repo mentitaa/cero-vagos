@@ -27,6 +27,13 @@ from .pipeline import Pipeline, imprimir_resumen, procesar_cruda
 from .score import explicar
 from .sueldo import extraer_sueldo
 
+# Cuántas ofertas necesita un departamento para merecer su propia página
+# ("Trabajos en Arequipa con sueldo"). Por debajo de esto la página nace casi
+# vacía, y una página casi vacía le dice a Google que el sitio es de baja
+# calidad — hace más daño que bien. Es un piso prudente, no una ley: si un
+# departamento se queda en 4 durante semanas, el problema es de fuentes.
+MINIMO_PARA_PAGINA = 5
+
 
 def _fuentes(args) -> list:
     if args.demo:
@@ -292,6 +299,20 @@ def cmd_stats(_args) -> None:
         print("\nPor fuente:")
         for fuente, n in s["por_fuente"].items():
             print(f"  {n:>5}  {fuente}")
+
+    # El reparto por departamento decide cuándo hacer las páginas por lugar.
+    # Con menos de MINIMO_PARA_PAGINA ofertas la página nacería casi vacía, y
+    # eso le dice a Google que el sitio es de baja calidad: es peor que no
+    # tenerla. Por eso se marca cuáles ya aguantan y cuáles no.
+    if s.get("por_departamento"):
+        listos = [(d, n) for d, n in s["por_departamento"].items()
+                  if n >= MINIMO_PARA_PAGINA and d != "(sin ubicación)"]
+        print(f"\nPor departamento  (✓ = ya aguanta página propia, "
+              f"{MINIMO_PARA_PAGINA} ofertas o más):")
+        for depa, n in s["por_departamento"].items():
+            marca = "✓" if (depa, n) in listos else " "
+            print(f"  {marca} {n:>4}  {depa}")
+        print(f"\n  {len(listos)} departamento(s) con página posible hoy.")
 
 
 def cmd_reevaluar(args) -> None:

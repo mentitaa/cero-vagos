@@ -317,6 +317,22 @@ class Almacen:
                     " GROUP BY fuente ORDER BY n DESC"
                 ).fetchall()
             },
+            # Cuántas ofertas PUBLICADAS hay en cada departamento. Es el número
+            # que decide si una página "Trabajos en Arequipa con sueldo" tiene
+            # con qué llenarse: una página casi vacía le dice a Google que el
+            # sitio es de baja calidad, así que conviene mirarlo antes de
+            # hacerlas, no después.
+            #
+            # Va por departamento y no por ciudad a propósito: la gente busca
+            # "trabajo en Cusco", no "trabajo en Wanchaq", y agrupando así una
+            # provincia junta lo que suelto no alcanzaría para nada.
+            "por_departamento": {
+                f["depa"]: f["n"] for f in self.con.execute(
+                    "SELECT COALESCE(NULLIF(departamento, ''), '(sin ubicación)') depa,"
+                    " COUNT(*) n FROM ofertas WHERE aprobada = 1 AND vigente = 1"
+                    " GROUP BY depa ORDER BY n DESC, depa"
+                ).fetchall()
+            },
         }
 
     def limpiar_titulos(self) -> int:
