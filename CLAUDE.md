@@ -45,6 +45,7 @@ Conectado el 4 de agosto de 2026: dominio en Squarespace, correo
 | `CLAUDE.md` | Este archivo. Contexto y reglas. |
 | `DESPLIEGUE.md` | Poner el motor en piloto automático con GitHub Actions. |
 | `DOMINIO.md` | Cómo se conectó el dominio y qué revisar si vuelve a cambiar. |
+| `GOOGLE.md` | Search Console: verificar el sitio y mandar el sitemap, paso a paso. |
 | `ALERTAS.md` | Las alertas: cómo están conectadas y cómo se mandan. |
 | `SEGURIDAD.md` | Auditoría de seguridad: qué se revisó y qué queda abierto. |
 | `EMPRESAS.md` | Estrategia de bolsas de trabajo de empresas. |
@@ -102,7 +103,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **361** y pasan todos.
+Los tests son **369** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -425,6 +426,14 @@ verificar.
 - **El menú de celular tapaba justo lo que ibas a ver.** Los enlaces de arriba
   llevan a la misma página, así que al tocarlos la página bajaba pero el menú
   se quedaba encima. En computadora no se nota porque ese menú nunca se abre.
+- **Google pide la calle y el código postal, y no se los vamos a inventar.**
+  En Search Console salen tres avisos naranjas en «Ofertas de trabajo»:
+  faltan `streetAddress`, `addressRegion` y `postalCode`. De los tres solo el
+  departamento se podía llenar con un dato real, y se llenó (`_direccion` en
+  `motor/sitio.py`, 7/8/2026). Los otros dos **se quedan vacíos**: los avisos
+  peruanos no dicen la calle, y poner la dirección fiscal de la empresa
+  mandaría a alguien a un sitio que no es. Son avisos, no errores: las ofertas
+  cuentan como válidas igual. Vigilado en `pruebas/test_google_empleos.py`.
 - **SQLite falla en carpetas sincronizadas** (iCloud, Drive, Dropbox) al tomar
   bloqueos. Salida: `export CEROVAGOS_DB=~/cerovagos.db`.
 - **El formulario de alertas está restringido a `cerovagos.com`** en Formspree.
@@ -462,7 +471,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 361 tests
+python3 -m unittest discover pruebas -v      # los 369 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
