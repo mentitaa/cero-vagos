@@ -182,6 +182,39 @@ def _lo_que_tiene(o: dict) -> str:
 # Datos estructurados: lo que lee Google Empleos
 # --------------------------------------------------------------------------
 
+def _direccion(o: dict) -> dict:
+    """
+    La dirección del puesto para Google Empleos.
+
+    Google pide cinco campos y nosotros llenamos tres, a propósito:
+
+      · `addressCountry`  — siempre PE.
+      · `addressLocality` — la ciudad que el aviso nombra.
+      · `addressRegion`   — el departamento. Sirve para que la oferta salga en
+        "trabajos en Cusco" aunque la persona no escriba el nombre del
+        distrito, y es lo que más ayuda a la oferta de provincia. El motor ya
+        lo deduce y lo guarda (`detectar_ubicacion`); solo faltaba pasarlo.
+
+      · `streetAddress` y `postalCode` van **vacíos y así se quedan**. Los
+        avisos de empleo peruanos no dicen la calle ni el código postal, y
+        Google los pide igual: Search Console los marca en naranja, como
+        "podría presentarse mejor". Es un aviso, no un error.
+
+        Inventarlos —poner la dirección fiscal de la empresa, o el código
+        postal del centro de la ciudad— sería exactamente lo que la regla 2
+        prohíbe: rellenar un dato que nadie escribió. Alguien iría a una
+        dirección que no es. Se prefiere el aviso naranja.
+    """
+    direccion = {
+        "@type": "PostalAddress",
+        "addressLocality": o.get("ciudad") or "Lima",
+        "addressCountry": "PE",
+    }
+    if o.get("departamento"):
+        direccion["addressRegion"] = o["departamento"]
+    return direccion
+
+
 def jobposting(o: dict, url: str) -> str:
     """
     Bloque schema.org/JobPosting. Es el mismo formato que este motor lee de
@@ -204,12 +237,7 @@ def jobposting(o: dict, url: str) -> str:
         "identifier": {"@type": "PropertyValue", "name": "Cero Vagos",
                        "value": str(o.get("huella") or o.get("id", ""))},
         "hiringOrganization": {"@type": "Organization", "name": o.get("empresa") or "—"},
-        "jobLocation": {
-            "@type": "Place",
-            "address": {"@type": "PostalAddress",
-                        "addressLocality": o.get("ciudad") or "Lima",
-                        "addressCountry": "PE"},
-        },
+        "jobLocation": {"@type": "Place", "address": _direccion(o)},
         "employmentType": "FULL_TIME",
         "url": url,
     }
@@ -714,6 +742,9 @@ def _preparar(fila: dict, indice: int) -> dict:
 
     o = _a_formato_web(fila, indice)
     o["publicado_iso"] = fila.get("publicado") or ""
+    # El departamento no se manda a la web (la tarjeta muestra la ciudad y con
+    # eso basta), pero Google Empleos lo usa para ubicar la oferta en su mapa.
+    o["departamento"] = fila.get("departamento") or ""
 
     # La dirección se arma con la huella de la oferta, NO con su posición en la
     # lista. Si se usara la posición, al retirarse una oferta cambiarían las
