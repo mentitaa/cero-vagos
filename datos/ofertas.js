@@ -1,6 +1,6 @@
 /* Generado por el motor de Cero Vagos. No editar a mano. */
 window.CERO_VAGOS = {
- "generado": "2026-08-08T03:16:20",
+ "generado": "2026-08-08T03:55:04",
  "total": 175,
  "stats": {
   "total_procesadas": 3689,
@@ -14,6 +14,24 @@ window.CERO_VAGOS = {
    "Bumeran": 56,
    "Convocatorias CAS": 31,
    "Convocatorias del Estado": 7
+  },
+  "por_departamento": {
+   "Lima": 145,
+   "Cusco": 8,
+   "Arequipa": 4,
+   "Huancavelica": 4,
+   "Cajamarca": 2,
+   "La Libertad": 2,
+   "Amazonas": 1,
+   "Apurímac": 1,
+   "Ayacucho": 1,
+   "Callao": 1,
+   "Ica": 1,
+   "Junín": 1,
+   "Piura": 1,
+   "Puno": 1,
+   "San Martín": 1,
+   "Ucayali": 1
   }
  },
  "ofertas": [
