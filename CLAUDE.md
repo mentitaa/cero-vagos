@@ -264,12 +264,13 @@ Lo que está esperando, en orden aproximado de impacto:
    - **Pasada de recuperación.** La corrida diaria solo mira lo publicado en
      los últimos 3 días, y nunca se leyó lo de entre 3 y 60 días atrás. No
      necesita código: una corrida con `dias = 0` y el límite privado en 400.
-   - **BuscoTrabajo** (`buscotrabajo.pe`). Verificada: robots permite y
-     descubre avisos. Es la única bolsa privada peruana que no es de Jobient.
-     Necesita lector propio porque no trae JSON-LD — o sea, hay que sacarle el
-     sueldo del texto corrido, que es exactamente donde nació el error de los
-     S/ 33,800. Es el trabajo delicado.
+   - **Las convocatorias CAS de varias plazas.** Hoy se descartan enteras: en
+     la primera corrida fueron **94 direcciones y 1.263 vacantes**, casi todas
+     de provincia. Es la fuente más rica que ya tienes y no estás usando.
    - **Convocatorias del Estado** y las bolsas de empresas (`EMPRESAS.md`).
+
+   **BuscoTrabajo está descartado** (8/8/2026): tiene **4 empleos activos y 10
+   empresas registradas** en todo el portal. Ver la trampa de abajo.
 2. **Ver si la corrida ya alcanza.** El 4/8 se reequilibró: el trabajo pasó de
    150 a 180 minutos, el paso de privados de 60 a 100, y al Estado se le subió
    el límite de 120 a 300 avisos. Revisar en la siguiente corrida si el aviso
@@ -379,6 +380,14 @@ verificar.
   que hubiera dos fuentes privadas: es una casa con dos puertas. Por eso sus
   tasas de aprobación se parecen tanto, y por eso agregar Aptitus no sumaría
   nada. Fuera de Jobint solo quedan Computrabajo (bloqueado) y BuscoTrabajo.
+- **"Permite el rastreo" no es lo mismo que "tiene avisos suficientes".**
+  BuscoTrabajo estuvo semanas en la lista de pendientes como la gran fuente
+  privada que faltaba. Era cierto que su `robots.txt` permite entrar y que es
+  la única peruana fuera de Jobint — pero nadie contó los avisos. Tiene **4
+  empleos activos y 10 empresas registradas** en todo el portal, 3 de los 4 de
+  la misma empresa. No es un portal chico: está recién arrancando. Verificarlo
+  costó veinte minutos; escribir el lector habría costado un día. **Antes de
+  escribir una fuente, abrir su listado y mirar cuántos avisos dice que hay.**
 - **Muchas webs `.gob.pe` no contestan desde los servidores de GitHub.**
   Comprobado el 6/8/2026: `munisurquillo.gob.pe` carga al instante desde una
   conexión peruana y da tiempo de espera agotado desde la nube. Como el motor
