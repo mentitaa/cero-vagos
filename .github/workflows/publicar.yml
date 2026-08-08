@@ -1,7 +1,22 @@
+# Regenera el sitio con las ofertas que YA están en la base.
+#
+# Esto es lo que hay que correr cuando se cambia el diseño, un texto o el
+# código de las páginas: no hace falta volver a recolectar, y tarda menos de
+# un minuto en vez de veinte.
+#
+# Se dispara solo cada vez que se sube un cambio a index.html o a motor/,
+# así que normalmente no hay que hacer nada: subes el archivo y el sitio se
+# actualiza en un minuto.
+
 name: Publicar el sitio
 
 on:
   workflow_dispatch:
+    inputs:
+      reevaluar:
+        description: "¿Volver a puntuar lo guardado con las reglas de hoy? (sí solo si cambió el filtro)"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -29,13 +44,32 @@ jobs:
         with:
           python-version: "3.12"
 
+      # Solo si se pide a mano. Cambiar el filtro es deliberado y repuntuar
+      # también: una reevaluación silenciosa en cada publicación podría
+      # despublicar el sitio entero si alguien mete un error en la rúbrica.
+      #
+      # Va aquí y no en la laptop porque la base que manda es la de GitHub:
+      # reevaluar en local y subir el resultado pisa lo que el bot recolectó
+      # esa noche. Ya pasó una vez.
+      - name: Volver a puntuar lo guardado
+        if: inputs.reevaluar
+        run: python -u -m motor reevaluar
+
+      # No se instala nada más: generar las páginas solo necesita la base de
+      # datos que ya está en el repositorio. Nada de navegador ni de red.
       - name: Generar las páginas, el sitemap y la transparencia
         run: python -u -m motor publicar
+
+      # Sale gratis y evita tener que correr una recolección de 45 minutos solo
+      # para preguntarle a la base cómo va. Acá se ve, entre otras cosas, qué
+      # departamentos ya tienen ofertas suficientes para su propia página.
+      - name: Cómo quedó la base
+        run: python -u -m motor stats
 
       - name: Guardar
         run: |
           git config user.name  "Cero Vagos"
-          git config user.email "bot@cerovagos.pe"
+          git config user.email "info@cerovagos.com"
           git add -A
           if git diff --staged --quiet; then
             echo "El sitio ya estaba al día."
