@@ -103,7 +103,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **369** y pasan todos.
+Los tests son **372** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -434,6 +434,14 @@ verificar.
   peruanos no dicen la calle, y poner la dirección fiscal de la empresa
   mandaría a alguien a un sitio que no es. Son avisos, no errores: las ofertas
   cuentan como válidas igual. Vigilado en `pruebas/test_google_empleos.py`.
+- **Un navegador con modo oscuro reescribe los colores del sitio si no le
+  dices que no.** En Brave la portada salía irreconocible: el crema en marrón,
+  el amarillo en verde oliva, el texto con recuadros de resalte. En Chrome se
+  veía bien. No era el CSS: era el navegador "arreglando" la página. Se
+  declara `color-scheme:light` en el `:root` y `<meta name="color-scheme">` en
+  el `<head>` — y va en las **cinco** plantillas (`index.html`, ficha, salida,
+  404, transparencia/legales), no solo en la portada. Reportado el 8/8/2026,
+  vigilado en `pruebas/test_modo_oscuro.py`.
 - **SQLite falla en carpetas sincronizadas** (iCloud, Drive, Dropbox) al tomar
   bloqueos. Salida: `export CEROVAGOS_DB=~/cerovagos.db`.
 - **El formulario de alertas está restringido a `cerovagos.com`** en Formspree.
@@ -471,7 +479,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 369 tests
+python3 -m unittest discover pruebas -v      # los 372 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
