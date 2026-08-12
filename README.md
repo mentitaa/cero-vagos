@@ -152,7 +152,7 @@ python3 -m motor probar-url "https://..."       # leer UNA oferta y ver si pasar
 python3 -m motor stats                          # cómo va la base
 python3 -m motor rechazos                       # qué se botó y por qué
 python3 -m motor probar "S/ 2,800 a S/ 3,400"   # probar el parser de sueldos
-python3 -m unittest discover pruebas -v         # tests (385)
+python3 -m unittest discover pruebas -v         # tests (400)
 ```
 
 Si el proyecto vive en una carpeta sincronizada (iCloud, Drive, Dropbox),

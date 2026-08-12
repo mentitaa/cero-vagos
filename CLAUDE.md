@@ -103,7 +103,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **385** y pasan todos.
+Los tests son **400** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -253,6 +253,37 @@ un problema de la regla 8, no de esta decisión, y se tratan por su cuenta.
 hipótesis del bloqueo geográfico que resultó falsa, y por qué se construyó el
 OCR— está en la bitácora de Notion.*
 
+## Las páginas por departamento (12/8/2026)
+
+`/trabajos-en/junin/`, `/trabajos-en/huancavelica/`… Una por departamento que
+tenga **5 ofertas publicadas o más** (`MINIMO_OFERTAS` en `motor/lugares.py`).
+Es lo que la gente escribe en Google y lo que la portada no puede cubrir: la
+portada compite por "ofertas de trabajo Perú", que es pelear contra
+Computrabajo; "trabajos en Huancavelica con sueldo" no lo pelea nadie.
+
+No se pudieron hacer antes porque no había con qué llenarlas: al 8/8 solo Lima
+pasaba de cinco. Lo que lo destrabó fue partir las convocatorias CAS de varios
+puestos — la provincia pasó de 24 a 73 ofertas y de 1 departamento con volumen
+a 4.
+
+**Aparecen y desaparecen solas, y esto no es opcional.** Una convocatoria CAS
+dura una o dos semanas, así que un departamento con 29 ofertas puede quedar en
+3 quince días después. Si baja del mínimo, su página se borra — la misma regla
+4 de las ofertas vencidas. Una página indexada sin contenido le dice a Google
+que el sitio es de baja calidad, y esa señal mancha al resto.
+
+**Cada página trae un dato que no tiene nadie más**: cuántos avisos se
+revisaron en ese departamento y cuántos declaraban sueldo. Sin eso sería un
+listado más, y un listado más no merece existir ni posicionar.
+
+**Lima sí tiene página**, aunque sea el 77% del sitio: apunta a otra búsqueda
+que la portada, tiene su propio título y su propio dato local.
+
+Los enlaces del pie de la portada los escribe el motor entre los marcadores
+`<!-- LUGARES:INICIO -->`, porque cuáles existen cambia cada día. Cada ficha de
+oferta enlaza además a la página de su departamento. Vigilado en
+`pruebas/test_lugares.py`.
+
 ## Pendientes
 
 Lo que está esperando, en orden aproximado de impacto:
@@ -276,11 +307,9 @@ Lo que está esperando, en orden aproximado de impacto:
    de tiempo agotado desapareció.
 3. **Enviar los correos a las universidades** (`PROPUESTA-UNIVERSIDADES.md`).
    No depende de código y las respuestas tardan días.
-4. **Páginas por ciudad y rubro** ("Trabajos en Arequipa con sueldo"). Es lo
-   que la gente busca en Google y hoy no hay nada que aparezca para eso.
-   **Todavía no hay volumen**: al 4 de agosto solo Lima pasa de 5 ofertas
-   publicadas (53 de 60). Hacer páginas casi vacías le dice a Google que el
-   sitio es de baja calidad. Primero más fuentes, después las páginas.
+4. ~~Páginas por ciudad~~ **Hechas el 12/8/2026**: una por departamento con
+   5 ofertas o más, en `/trabajos-en/<departamento>/`. Ver abajo. Quedan
+   pendientes las **por rubro**, que es la otra mitad.
 5. **Detector de requisitos discriminatorios** (Ley 26772). Se encontró un
    aviso pidiendo "Edad: entre 20 y 45 años".
 
@@ -495,7 +524,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 385 tests
+python3 -m unittest discover pruebas -v      # los 400 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
