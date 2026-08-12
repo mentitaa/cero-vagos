@@ -11,6 +11,8 @@ from __future__ import annotations
 
 import sys
 import unittest
+
+from pruebas.plazos import abierto
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -152,7 +154,7 @@ class TestCicloCompleto(unittest.TestCase):
         from motor.pipeline import procesar_cruda
 
         muestras = Path(__file__).parent / "muestras"
-        html = (muestras / "convocatoria_publica.html").read_text(encoding="utf-8")
+        html = abierto((muestras / "convocatoria_publica.html").read_text(encoding="utf-8"))
         pdf = (muestras / "bases_ejemplo.pdf").read_bytes()
 
         # Se le quitan las funciones a la ficha: queda como las reales.
@@ -190,7 +192,7 @@ class TestCicloCompleto(unittest.TestCase):
         from motor.pipeline import procesar_cruda
 
         muestras = Path(__file__).parent / "muestras"
-        html = (muestras / "convocatoria_publica.html").read_text(encoding="utf-8")
+        html = abierto((muestras / "convocatoria_publica.html").read_text(encoding="utf-8"))
         pdf = (muestras / "bases_ejemplo.pdf").read_bytes()
 
         aviso = html.split("<h2>Funciones</h2>")[0] + """
@@ -222,7 +224,7 @@ class TestCicloCompleto(unittest.TestCase):
 
     def test_si_no_hay_pdf_no_pasa_nada(self):
         from motor.fuentes.publicas import enriquecer_con_bases, parsear_convocatoria
-        html = (Path(__file__).parent / "muestras" / "convocatoria_publica.html").read_text(encoding="utf-8")
+        html = abierto((Path(__file__).parent / "muestras" / "convocatoria_publica.html").read_text(encoding="utf-8"))
         cruda = parsear_convocatoria(html, "https://x.pe/c/1", "Estado")
         self.assertEqual(enriquecer_con_bases(cruda, "<p>sin enlaces</p>", lambda u, **k: b""), "")
         self.assertNotIn("funciones_desde_pdf", cruda.extra)

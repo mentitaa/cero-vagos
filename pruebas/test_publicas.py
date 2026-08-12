@@ -20,7 +20,14 @@ from motor.fuentes.publicas import (                    # noqa: E402
 from motor.normalizar import extraer_bloques            # noqa: E402
 from motor.pipeline import procesar_cruda               # noqa: E402
 
-MUESTRA = (RAIZ / "pruebas" / "muestras" / "convocatoria_publica.html").read_text(encoding="utf-8")
+# La muestra lleva una fecha límite escrita ("10 de agosto de 2026") y el motor
+# descarta lo que ya cerró. Sin reescribirla, estos tests pasan hasta esa fecha
+# y fallan para siempre desde el día siguiente — sin que nada se haya roto.
+# Pasó: el 12/8/2026 llevaban dos días en rojo. Ver `pruebas/plazos.py`.
+from pruebas.plazos import abierto                      # noqa: E402
+
+MUESTRA = abierto(
+    (RAIZ / "pruebas" / "muestras" / "convocatoria_publica.html").read_text(encoding="utf-8"))
 URL = "https://www.convocape.com/convocatorias/abogado-de-demuna-cas-2026-07-797413"
 
 
