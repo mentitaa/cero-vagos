@@ -31,19 +31,20 @@ from datetime import date, timedelta
 from pathlib import Path
 
 from motor.almacen import Almacen
-from motor.lugares import MINIMO_OFERTAS, ruta
+from motor.lugares import MINIMO_OFERTAS, MINIMO_RUBRO, ruta, ruta_rubro
 from motor.modelos import Oferta
 
 RAIZ = Path(__file__).resolve().parent.parent
 
 
-def _oferta(puesto: str, ciudad: str, departamento: str, sueldo: int = 2000) -> Oferta:
+def _oferta(puesto: str, ciudad: str, departamento: str, sueldo: int = 2000,
+            categoria: str = "Otros") -> Oferta:
     return Oferta(
         huella=Oferta.calcular_huella(puesto, "Entidad", ciudad),
         fuente="Convocatorias CAS",
         url=f"https://ejemplo.pe/{puesto}".lower().replace(" ", "-"),
         puesto=puesto, empresa="Entidad", ciudad=ciudad, departamento=departamento,
-        sueldo_min=sueldo, sueldo_max=sueldo, categoria="Otros",
+        sueldo_min=sueldo, sueldo_max=sueldo, categoria=categoria,
         funciones=["a", "b", "c"], requisitos=["a", "b", "c"],
         beneficios=["planilla", "eps"],
         publicado=date.today(), vence=date.today() + timedelta(days=10),
@@ -62,10 +63,11 @@ class Base(unittest.TestCase):
     def tearDown(self):
         shutil.rmtree(self.carpeta, ignore_errors=True)
 
-    def poblar(self, departamento: str, ciudad: str, cuantas: int, sueldo: int = 2000):
+    def poblar(self, departamento: str, ciudad: str, cuantas: int, sueldo: int = 2000,
+               categoria: str = "Otros"):
         for i in range(cuantas):
-            self.al.guardar(_oferta(f"Especialista de {ciudad} {i + 1}",
-                                    ciudad, departamento, sueldo))
+            self.al.guardar(_oferta(f"Especialista de {ciudad}{categoria} {i + 1}",
+                                    ciudad, departamento, sueldo, categoria))
 
     def generar(self) -> dict:
         from motor.sitio import generar
@@ -206,6 +208,105 @@ class PruebaLosEnlacesInternos(Base):
         """Un enlace a una página que no existe es peor que ningún enlace."""
         portada = (self.carpeta / "index.html").read_text(encoding="utf-8")
         self.assertNotIn("trabajos-en/tacna/", portada)
+
+
+class PruebaLasPaginasPorRubro(Base):
+    """
+    La otra mitad de lo mismo: `/trabajos-de/ventas/`.
+
+    Comparten plantilla con las de departamento a propósito — son la misma
+    página con otro eje— y por eso lo que se prueba aquí es lo que las
+    distingue, no lo que ya cubren las de arriba.
+    """
+
+    def test_el_piso_del_rubro_es_mas_alto_que_el_del_departamento(self):
+        """
+        Y no es capricho. Una página de "trabajos de ventas" compite contra
+        todas las bolsas del Perú; una de "trabajos en Huancavelica" no compite
+        con casi nadie. Donde la pelea es dura hay que llegar con más avisos.
+        """
+        self.assertGreater(MINIMO_RUBRO, MINIMO_OFERTAS)
+
+    def test_un_rubro_con_pocas_ofertas_no_tiene_pagina(self):
+        self.poblar("Lima", "Lima", MINIMO_RUBRO - 1, categoria="Marketing")
+        self.assertNotIn("Marketing", self.generar()["rubros"])
+
+    def test_al_llegar_al_piso_aparece(self):
+        self.poblar("Lima", "Lima", MINIMO_RUBRO, categoria="Ventas")
+        resultado = self.generar()
+
+        self.assertIn("Ventas", resultado["rubros"])
+        self.assertTrue((self.carpeta / ruta_rubro("Ventas") / "index.html").exists())
+
+    def test_OTROS_nunca_tiene_pagina(self):
+        """
+        "Otros" no es un rubro: es el cajón donde cae lo que el motor no supo
+        clasificar. Nadie busca "trabajos de otros" en Google, y una página con
+        ese título diría que el sitio no sabe lo que publica.
+        """
+        self.poblar("Lima", "Lima", MINIMO_RUBRO * 3, categoria="Otros")
+        resultado = self.generar()
+
+        self.assertEqual(resultado["rubros"], [])
+        self.assertFalse((self.carpeta / ruta_rubro("Otros")).exists())
+
+    def test_el_titular_dice_DE_y_no_EN(self):
+        """"Trabajos de Ventas", no "Trabajos en Ventas"."""
+        self.poblar("Lima", "Lima", MINIMO_RUBRO, categoria="Ventas")
+        self.generar()
+        html = (self.carpeta / ruta_rubro("Ventas") / "index.html").read_text(
+            encoding="utf-8")
+
+        self.assertIn("Trabajos de Ventas", re.search(
+            r"<title>(.*?)</title>", html).group(1))
+        self.assertNotIn("Trabajos en Ventas", html)
+
+    def test_la_direccion_va_en_su_propia_carpeta(self):
+        """
+        Separada de la de los departamentos. Si compartieran carpeta, un rubro
+        y un departamento que se llamaran igual se pisarían.
+        """
+        self.assertEqual(ruta_rubro("Atención al Cliente"),
+                         "trabajos-de/atencion-al-cliente")
+        self.assertTrue(ruta("Lima").startswith("trabajos-en/"))
+        self.assertTrue(ruta_rubro("Ventas").startswith("trabajos-de/"))
+
+    def test_entran_al_sitemap_y_al_pie_de_la_portada(self):
+        self.poblar("Lima", "Lima", MINIMO_RUBRO, categoria="Ventas")
+        self.generar()
+
+        mapa = (self.carpeta / "sitemap.xml").read_text(encoding="utf-8")
+        self.assertIn("/trabajos-de/ventas/", mapa)
+
+        portada = (self.carpeta / "index.html").read_text(encoding="utf-8")
+        bloque = re.search(r"<!-- LUGARES:INICIO -->.*?<!-- LUGARES:FIN -->",
+                           portada, re.S).group(0)
+        self.assertIn("trabajos-de/ventas/", bloque)
+
+
+class PruebaLaLimpiezaCuandoNoQUEDA_NINGUNO(Base):
+    """
+    El fallo que este test cazó al generalizar la plantilla (12/8/2026).
+
+    La carpeta a limpiar se estaba deduciendo del PRIMER grupo publicado. Con
+    cero grupos no había primer grupo, así que no había carpeta que limpiar y
+    las páginas viejas se quedaban publicadas para siempre — justo el caso
+    extremo que la limpieza existe para cubrir.
+    """
+
+    def test_si_no_queda_ningun_rubro_igual_se_borran_las_viejas(self):
+        self.poblar("Lima", "Lima", MINIMO_RUBRO, categoria="Ventas")
+        self.generar()
+        self.assertTrue((self.carpeta / ruta_rubro("Ventas")).exists())
+
+        # Se vencen TODAS: no queda ningún rubro con página posible.
+        self.al.con.execute("UPDATE ofertas SET vigente = 0")
+        self.al.con.commit()
+
+        resultado = self.generar()
+        self.assertEqual(resultado["rubros"], [])
+        self.assertFalse((self.carpeta / ruta_rubro("Ventas")).exists(),
+                         "quedó una página indexada sin ofertas que mostrar")
 
 
 class PruebaLaDireccion(unittest.TestCase):
