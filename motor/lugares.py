@@ -1,5 +1,12 @@
 """
-Una página por departamento: "Trabajos en Junín con sueldo a la vista".
+Las páginas de listado: por departamento y por rubro.
+
+    /trabajos-en/junin/     "Trabajos en Junín con sueldo a la vista"
+    /trabajos-de/ventas/    "Trabajos de Ventas con sueldo a la vista"
+
+(El archivo se llama `lugares` porque nació con las de departamento. Se le
+sumaron las de rubro en vez de duplicar la plantilla entera: son la misma
+página con otro eje, y tenerlas juntas evita que se desincronicen.)
 
 POR QUÉ EXISTEN
 ---------------
@@ -48,6 +55,13 @@ MINIMO_OFERTAS = 5
 
 CARPETA = "trabajos-en"
 
+# Los rubros llevan piso más alto, y no es capricho: una página de "trabajos de
+# ventas" compite contra todas las bolsas del Perú, mientras que "trabajos en
+# Huancavelica" no compite con casi nadie. Donde la pelea es dura hay que
+# llegar con más que cinco avisos.
+MINIMO_RUBRO = 8
+CARPETA_RUBROS = "trabajos-de"
+
 
 def _e(t) -> str:
     return html.escape(str(t or ""), quote=True)
@@ -57,11 +71,19 @@ def _soles(n: int) -> str:
     return f"S/ {n:,}"
 
 
+def _plano(nombre: str) -> str:
+    import re
+    return re.sub(r"[^a-z0-9]+", "-", sin_tildes(nombre)).strip("-")
+
+
 def ruta(departamento: str) -> str:
     """'San Martín' -> 'trabajos-en/san-martin'"""
-    import re
-    plano = re.sub(r"[^a-z0-9]+", "-", sin_tildes(departamento)).strip("-")
-    return f"{CARPETA}/{plano}"
+    return f"{CARPETA}/{_plano(departamento)}"
+
+
+def ruta_rubro(rubro: str) -> str:
+    """'Atención al Cliente' -> 'trabajos-de/atencion-al-cliente'"""
+    return f"{CARPETA_RUBROS}/{_plano(rubro)}"
 
 
 def _mediano(ofertas: list[dict]) -> int:
@@ -85,10 +107,22 @@ def _tarjeta(o: dict, sitio: str, slug: str) -> str:
     )
 
 
+# Lo único que distingue una página de departamento de una de rubro: la
+# preposición del titular, la carpeta y cómo se nombra al conjunto. Todo lo
+# demás —la plantilla, el dato de transparencia, los vecinos— es igual, y por
+# eso viven juntas.
+EJES = {
+    "lugar": {"preposicion": "en", "ruta": ruta,
+              "carpeta": CARPETA, "vecinos": "departamentos"},
+    "rubro": {"preposicion": "de", "ruta": ruta_rubro,
+              "carpeta": CARPETA_RUBROS, "vecinos": "rubros"},
+}
+
+
 def pagina(datos: dict, sitio: str, slugs: dict[str, str],
-           otros: list[str]) -> str:
+           otros: list[str], eje: str = "lugar") -> str:
     """
-    La página de un departamento.
+    La página de un departamento o de un rubro.
 
     `slugs` traduce la huella de cada oferta a la dirección de su ficha; se
     calcula en `sitio.py`, que es quien manda en eso, para que las dos no se
@@ -96,16 +130,20 @@ def pagina(datos: dict, sitio: str, slugs: dict[str, str],
     """
     from .sitio import bloque_analitica, csp
 
-    depa = datos["departamento"]
+    forma = EJES[eje]
+    ruta_de = forma["ruta"]
+    prep = forma["preposicion"]
+
+    depa = datos.get("nombre") or datos["departamento"]
     total = datos["total"]
-    url = f"{sitio}/{ruta(depa)}/"
+    url = f"{sitio}/{ruta_de(depa)}/"
     mediano = _mediano(datos["ofertas"])
 
-    titulo = f"Trabajos en {depa} con sueldo a la vista"
+    titulo = f"Trabajos {prep} {depa} con sueldo a la vista"
     descripcion = (
-        f"{total} ofertas de trabajo en {depa}, todas con el sueldo publicado, "
-        f"funciones y requisitos. Revisamos {datos['revisados']} avisos de la "
-        f"zona: {datos['pct_sin_sueldo']}% no dice cuánto paga."
+        f"{total} ofertas de trabajo {prep} {depa}, todas con el sueldo "
+        f"publicado, funciones y requisitos. Revisamos {datos['revisados']} "
+        f"avisos: {datos['pct_sin_sueldo']}% no dice cuánto paga."
     )
 
     filas = "".join(
@@ -116,9 +154,9 @@ def pagina(datos: dict, sitio: str, slugs: dict[str, str],
     vecinos = ""
     if otros:
         enlaces = " · ".join(
-            f'<a href="{_e(sitio)}/{ruta(d)}/">{_e(d)}</a>' for d in otros)
+            f'<a href="{_e(sitio)}/{ruta_de(d)}/">{_e(d)}</a>' for d in otros)
         vecinos = (f'<p class="vecinos">Trabajos con sueldo en otros '
-                   f'departamentos: {enlaces}</p>')
+                   f'{forma["vecinos"]}: {enlaces}</p>')
 
     return f"""<!DOCTYPE html>
 <html lang="es-PE">
@@ -161,13 +199,13 @@ def pagina(datos: dict, sitio: str, slugs: dict[str, str],
 
 <header class="hero">
   <div class="wrap">
-    <h1>Trabajos en<br>{_e(depa)}</h1>
+    <h1>Trabajos {prep}<br>{_e(depa)}</h1>
     <p>{total} ofertas con el sueldo a la vista. Ninguna dice "a convenir":
     si un aviso no publica cuánto paga, no entra a Cero Vagos.</p>
     <div class="cifras">
       <div><b>{total}</b><span>ofertas publicadas</span></div>
       {f'<div><b>{_soles(mediano)}</b><span>sueldo mediano</span></div>' if mediano else ''}
-      <div><b>{datos['pct_sin_sueldo']}%</b><span>de los avisos de {_e(depa)} no dice cuánto paga</span></div>
+      <div><b>{datos['pct_sin_sueldo']}%</b><span>de los avisos {prep} {_e(depa)} no dice cuánto paga</span></div>
     </div>
   </div>
 </header>
@@ -181,9 +219,9 @@ def pagina(datos: dict, sitio: str, slugs: dict[str, str],
 
 <section class="dato">
   <div class="wrap">
-    <h2>Lo que encontramos en {_e(depa)}</h2>
-    <p>Nuestro motor revisó <b>{datos['revisados']} avisos de empleo</b> de
-    esta zona. Solo <b>{datos['con_sueldo']}</b> decían cuánto pagan — el resto
+    <h2>Lo que encontramos {prep} {_e(depa)}</h2>
+    <p>Nuestro motor revisó <b>{datos['revisados']} avisos de empleo</b>
+    {prep} {_e(depa)}. Solo <b>{datos['con_sueldo']}</b> decían cuánto pagan — el resto
     pide tu CV, tu tiempo y tres entrevistas sin decirte el sueldo.</p>
     <p>Los {total} que ves arriba son los que además traen requisitos y
     beneficios escritos. <a href="{_e(sitio)}/transparencia/">Mira el conteo
@@ -252,7 +290,8 @@ INICIO_LUGARES = "<!-- LUGARES:INICIO -->"
 FIN_LUGARES = "<!-- LUGARES:FIN -->"
 
 
-def bloque_para_la_portada(departamentos: list[str], sitio: str) -> str:
+def bloque_para_la_portada(departamentos: list[str], sitio: str,
+                           rubros: list[str] = ()) -> str:
     """
     Los enlaces del pie de la portada hacia cada página de departamento.
 
@@ -265,64 +304,84 @@ def bloque_para_la_portada(departamentos: list[str], sitio: str) -> str:
     departamento que baja de 5 ofertas pierde su página, y un enlace escrito a
     mano quedaría apuntando a un 404.
     """
-    if not departamentos:
+    if not departamentos and not rubros:
         return f"{INICIO_LUGARES}\n{FIN_LUGARES}"
-    filas = "\n".join(
-        f'          <li><a href="{_e(sitio)}/{ruta(d)}/">Trabajos en {_e(d)}</a></li>'
-        for d in departamentos
-    )
-    return f"""{INICIO_LUGARES}
-        <h4>Por departamento</h4>
-        <ul>
-{filas}
-        </ul>
-        {FIN_LUGARES}"""
+
+    def columna(titulo: str, nombres, ruta_de, prep: str) -> str:
+        if not nombres:
+            return ""
+        filas = "\n".join(
+            f'          <li><a href="{_e(sitio)}/{ruta_de(n)}/">'
+            f'Trabajos {prep} {_e(n)}</a></li>'
+            for n in nombres
+        )
+        return f"        <h4>{titulo}</h4>\n        <ul>\n{filas}\n        </ul>\n"
+
+    return (f"{INICIO_LUGARES}\n"
+            + columna("Por departamento", departamentos, ruta, "en")
+            + columna("Por rubro", rubros, ruta_rubro, "de")
+            + f"        {FIN_LUGARES}")
 
 
-def generar(almacen: Almacen, sitio: str, raiz: Path,
-            slugs: dict[str, str]) -> list[str]:
+def _escribir(grupos: list[dict], sitio: str, raiz: Path,
+              slugs: dict[str, str], eje: str) -> list[str]:
     """
-    Escribe la página de cada departamento con oferta suficiente y borra las
-    de los que se quedaron cortos.
+    Escribe una página por grupo y borra las de los que ya no llegan al mínimo.
 
-    Devuelve los NOMBRES de los departamentos publicados, en orden de más a
-    menos ofertas. La dirección de cada uno se saca con `ruta()`, para que no
-    haya dos formas de armarla.
+    Ese borrado NO es opcional. Las convocatorias CAS duran una o dos semanas,
+    así que un departamento con 29 ofertas puede quedar en 3 quince días
+    después. Una página indexada sin contenido le dice a Google que el sitio es
+    de baja calidad, y esa señal mancha al resto: es la misma regla 4 de las
+    ofertas vencidas.
     """
     import shutil
 
-    lugares = almacen.por_departamento(MINIMO_OFERTAS)
+    forma = EJES[eje]
+    ruta_de = forma["ruta"]
+    nombres = [g["nombre"] for g in grupos]
+    # La carpeta sale de la constante del eje, NO del primer grupo. Sacándola
+    # del primero, una corrida sin ningún grupo que llegue al mínimo no tenía
+    # carpeta que limpiar y las páginas viejas se quedaban publicadas para
+    # siempre — que es justo el caso que la limpieza existe para cubrir.
+    carpeta = raiz / forma["carpeta"]
+
+    for datos in grupos:
+        nombre = datos["nombre"]
+        # Los vecinos son enlaces internos entre páginas hermanas: ayudan a que
+        # Google las encuentre y a que quien entra por una vea que hay más.
+        otros = [n for n in nombres if n != nombre][:8]
+        destino = raiz / ruta_de(nombre)
+        destino.mkdir(parents=True, exist_ok=True)
+        (destino / "index.html").write_text(
+            pagina(datos, sitio, slugs, otros, eje), encoding="utf-8")
+
+    if carpeta.exists():
+        vigentes = {ruta_de(n).split("/")[-1] for n in nombres}
+        for vieja in carpeta.iterdir():
+            if vieja.is_dir() and vieja.name not in vigentes:
+                shutil.rmtree(vieja, ignore_errors=True)
+
+    return nombres
+
+
+def generar(almacen: Almacen, sitio: str, raiz: Path,
+            slugs: dict[str, str]) -> dict[str, list[str]]:
+    """
+    Escribe las páginas de listado: por departamento y por rubro.
+
+    Devuelve los NOMBRES publicados de cada eje, de más a menos ofertas. La
+    dirección de cada uno se saca con `ruta()` o `ruta_rubro()`, para que no
+    haya dos formas de armarla.
+    """
     # Con las ofertas al día, Lima es el 77% del sitio. Su página igual se
     # publica: apunta a otra búsqueda que la portada ("trabajos en Lima con
     # sueldo" frente a "ofertas de trabajo Perú"), tiene su propio título y
     # trae un dato que no está en ningún otro lado — cuántos avisos de Lima
     # revisamos y cuántos escondían el sueldo.
-    nombres = [d["departamento"] for d in lugares]
-
-    carpeta = raiz / CARPETA
-    carpeta.mkdir(parents=True, exist_ok=True)
-
-    publicadas = []
-    for datos in lugares:
-        depa = datos["departamento"]
-        # Los vecinos son enlaces internos entre páginas hermanas: ayudan a que
-        # Google las encuentre y a que quien busca en un departamento vea que
-        # hay más.
-        otros = [d for d in nombres if d != depa][:8]
-        destino = raiz / ruta(depa)
-        destino.mkdir(parents=True, exist_ok=True)
-        (destino / "index.html").write_text(
-            pagina(datos, sitio, slugs, otros), encoding="utf-8")
-        publicadas.append(depa)
-
-    # Y se borran las de los departamentos que ya no llegan al mínimo. Una
-    # página de "Trabajos en Junín" con dos ofertas es peor que ninguna, y una
-    # indexada sin contenido es exactamente lo que la regla 4 evita con las
-    # ofertas vencidas.
-    vigentes = {ruta(d).split("/")[-1] for d in nombres}
-    if carpeta.exists():
-        for vieja in carpeta.iterdir():
-            if vieja.is_dir() and vieja.name not in vigentes:
-                shutil.rmtree(vieja, ignore_errors=True)
-
-    return publicadas
+    lugares = _escribir(almacen.por_departamento(MINIMO_OFERTAS),
+                        sitio, raiz, slugs, "lugar")
+    # "Otros" no entra: es el cajón de lo que el motor no supo clasificar, y
+    # nadie busca "trabajos de otros". Lo filtra `por_rubro`.
+    rubros = _escribir(almacen.por_rubro(MINIMO_RUBRO),
+                       sitio, raiz, slugs, "rubro")
+    return {"lugares": lugares, "rubros": rubros}

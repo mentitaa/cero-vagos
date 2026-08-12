@@ -462,7 +462,8 @@ def pagina_oferta(o: dict, sitio: str) -> str:
 # Sitemap y robots
 # --------------------------------------------------------------------------
 
-def sitemap(ofertas: list[dict], sitio: str, lugares: list[str] = ()) -> str:
+def sitemap(ofertas: list[dict], sitio: str, lugares: list[str] = (),
+            rubros: list[str] = ()) -> str:
     hoy = date.today().isoformat()
     entradas = [
         f"  <url><loc>{sitio}/</loc><lastmod>{hoy}</lastmod>"
@@ -482,10 +483,11 @@ def sitemap(ofertas: list[dict], sitio: str, lugares: list[str] = ()) -> str:
         )
     # Las páginas por departamento van alto: son contenido de búsqueda ("trabajo
     # en Arequipa con sueldo") y cambian cada día con la oferta.
-    from .lugares import ruta as ruta_lugar
-    for depa in lugares:
+    from .lugares import ruta as ruta_lugar, ruta_rubro
+    for nombre, ruta_de in [(l, ruta_lugar) for l in lugares] + \
+                           [(r, ruta_rubro) for r in rubros]:
         entradas.append(
-            f"  <url><loc>{sitio}/{ruta_lugar(depa)}/</loc><lastmod>{hoy}</lastmod>"
+            f"  <url><loc>{sitio}/{ruta_de(nombre)}/</loc><lastmod>{hoy}</lastmod>"
             f"<changefreq>daily</changefreq><priority>0.9</priority></url>"
         )
     for o in ofertas:
@@ -860,13 +862,14 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
     # se arma acá (regla 3) y las dos no pueden desincronizarse.
     from .lugares import generar as generar_lugares
     slugs = {o["huella"]: o["slug"] for o in ofertas if o.get("huella")}
-    lugares = generar_lugares(al, sitio, raiz, slugs)
+    listados = generar_lugares(al, sitio, raiz, slugs)
+    lugares, rubros = listados["lugares"], listados["rubros"]
 
     # Términos, privacidad, reclamaciones y cómo trabajamos.
     from .legales import generar as generar_legales
     legales = generar_legales(sitio, raiz)
 
-    (raiz / "sitemap.xml").write_text(sitemap(ofertas, sitio, lugares), encoding="utf-8")
+    (raiz / "sitemap.xml").write_text(sitemap(ofertas, sitio, lugares, rubros), encoding="utf-8")
     (raiz / "robots.txt").write_text(robots(sitio), encoding="utf-8")
     # GitHub Pages muestra este archivo cuando alguien llega a una dirección
     # que ya no existe: el caso de la oferta retirada.
@@ -889,7 +892,7 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
             FIN_LUGARES, INICIO_LUGARES, bloque_para_la_portada,
         )
         if INICIO_LUGARES in texto and FIN_LUGARES in texto:
-            bloque = bloque_para_la_portada(lugares, sitio)
+            bloque = bloque_para_la_portada(lugares, sitio, rubros)
             texto = re.sub(
                 re.escape(INICIO_LUGARES) + r".*?" + re.escape(FIN_LUGARES),
                 lambda _: bloque, texto, flags=re.S,
@@ -904,7 +907,7 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
             portada.write_text(texto, encoding="utf-8")
 
     return {"paginas": len(ofertas), "retiradas": retiradas, "sitio": sitio,
-            "lugares": lugares,
+            "lugares": lugares, "rubros": rubros,
             "titulos_limpiados": titulos, "titulos_vagos": vagos, "legales": legales,
             "pct_sin_sueldo": informe["pct_sin_sueldo"],
             "empresas_analizadas": len(informe["empresas"]),

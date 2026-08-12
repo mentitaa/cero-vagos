@@ -543,6 +543,22 @@ class Almacen:
             "por_ciudad": por_transparencia(agrupar("ciudad", 3)),
         }
 
+    def por_rubro(self, minimo: int = 8, excluir: tuple[str, ...] = ("Otros",)) -> list[dict]:
+        """
+        Lo mismo que `por_departamento` pero por rubro: Ventas, Salud, Logística.
+
+        **"Otros" se queda fuera y no es negociable.** No es un rubro, es el
+        cajón donde cae lo que el motor no supo clasificar. Nadie busca
+        "trabajos de otros" en Google, y una página con ese título diría que el
+        sitio no sabe lo que publica.
+
+        El piso es más alto que el de los departamentos a propósito. Una página
+        de "trabajos de ventas" compite contra todas las bolsas del Perú; una
+        de "trabajos en Huancavelica" no compite con casi nadie. Donde la
+        competencia es dura hay que llegar con más que cinco avisos.
+        """
+        return self._agrupadas("categoria", minimo, excluir)
+
     def por_departamento(self, minimo: int = 5) -> list[dict]:
         """
         Lo que hace falta para armar la página de cada departamento.
@@ -550,45 +566,60 @@ class Almacen:
         Va por departamento y no por ciudad porque la gente busca "trabajo en
         Cusco", no "trabajo en Wanchaq" — y agrupando así una provincia junta
         lo que suelto no alcanzaría para llenar una página.
+        """
+        return self._agrupadas("departamento", minimo)
 
-        Solo salen los que llegan a `minimo` ofertas publicadas. Una página
-        casi vacía le dice a Google que el sitio es de baja calidad, y esa
-        señal mancha al resto: es peor que no tenerla.
+    def _agrupadas(self, campo: str, minimo: int,
+                   excluir: tuple[str, ...] = ()) -> list[dict]:
+        """
+        Las ofertas publicadas agrupadas por un campo, con su dato propio.
 
-        De cada uno se devuelve también **cuántos avisos se revisaron ahí y
+        Solo salen los grupos que llegan a `minimo` ofertas. Una página casi
+        vacía le dice a Google que el sitio es de baja calidad, y esa señal
+        mancha al resto: es peor que no tenerla.
+
+        De cada grupo se devuelve también **cuántos avisos se revisaron ahí y
         cuántos declaraban sueldo**. Ese es el dato que hace que la página
         valga por sí sola: nadie más en el Perú lo tiene, y es lo que la
         distingue de ser un listado más.
+
+        `campo` viene de una lista cerrada del propio motor (departamento,
+        categoría), nunca de fuera: se interpola en el SQL.
         """
-        publicadas = self.con.execute(
-            "SELECT departamento AS depa, COUNT(*) AS n "
-            "FROM ofertas WHERE aprobada = 1 AND vigente = 1 "
-            "  AND departamento IS NOT NULL AND TRIM(departamento) != '' "
-            "GROUP BY departamento HAVING n >= ? ORDER BY n DESC, departamento",
-            (minimo,),
+        assert campo in ("departamento", "categoria"), campo
+        fuera = " AND ".join(f"{campo} != ?" for _ in excluir)
+        grupos = self.con.execute(
+            f"SELECT {campo} AS nombre, COUNT(*) AS n "
+            f"FROM ofertas WHERE aprobada = 1 AND vigente = 1 "
+            f"  AND {campo} IS NOT NULL AND TRIM({campo}) != '' "
+            + (f"  AND {fuera} " if excluir else "")
+            + f"GROUP BY {campo} HAVING n >= ? ORDER BY n DESC, {campo}",
+            (*excluir, minimo),
         ).fetchall()
 
         salida = []
-        for fila in publicadas:
-            depa = fila["depa"]
+        for grupo in grupos:
+            nombre = grupo["nombre"]
             revision = self.con.execute(
-                "SELECT COUNT(*) AS total, "
-                "       SUM(CASE WHEN sueldo_min > 0 THEN 1 ELSE 0 END) AS con_sueldo "
-                "FROM ofertas WHERE departamento = ?", (depa,),
+                f"SELECT COUNT(*) AS total, "
+                f"       SUM(CASE WHEN sueldo_min > 0 THEN 1 ELSE 0 END) AS con_sueldo "
+                f"FROM ofertas WHERE {campo} = ?", (nombre,),
             ).fetchone()
             revisados = revision["total"] or 0
             con_sueldo = revision["con_sueldo"] or 0
 
             ofertas = self.con.execute(
-                "SELECT * FROM ofertas WHERE aprobada = 1 AND vigente = 1 "
-                "  AND departamento = ? ORDER BY publicado DESC, score DESC",
-                (depa,),
+                f"SELECT * FROM ofertas WHERE aprobada = 1 AND vigente = 1 "
+                f"  AND {campo} = ? ORDER BY publicado DESC, score DESC",
+                (nombre,),
             ).fetchall()
 
             salida.append({
-                "departamento": depa,
+                "nombre": nombre,
+                # Nombre viejo, para no romper lo que ya lo usaba.
+                "departamento": nombre,
                 "ofertas": [self._a_dict(o) for o in ofertas],
-                "total": fila["n"],
+                "total": grupo["n"],
                 "revisados": revisados,
                 "con_sueldo": con_sueldo,
                 "sin_sueldo": revisados - con_sueldo,
