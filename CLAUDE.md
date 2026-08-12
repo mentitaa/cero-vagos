@@ -103,7 +103,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **400** y pasan todos.
+Los tests son **408** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -253,7 +253,7 @@ un problema de la regla 8, no de esta decisión, y se tratan por su cuenta.
 hipótesis del bloqueo geográfico que resultó falsa, y por qué se construyó el
 OCR— está en la bitácora de Notion.*
 
-## Las páginas por departamento (12/8/2026)
+## Las páginas de listado: por departamento y por rubro (12/8/2026)
 
 `/trabajos-en/junin/`, `/trabajos-en/huancavelica/`… Una por departamento que
 tenga **5 ofertas publicadas o más** (`MINIMO_OFERTAS` en `motor/lugares.py`).
@@ -279,10 +279,27 @@ listado más, y un listado más no merece existir ni posicionar.
 **Lima sí tiene página**, aunque sea el 77% del sitio: apunta a otra búsqueda
 que la portada, tiene su propio título y su propio dato local.
 
+**Las de rubro son la misma página con otro eje**: `/trabajos-de/ventas/`,
+`/trabajos-de/salud/`. Viven en el mismo archivo para que no se
+desincronicen. Dos diferencias, las dos deliberadas:
+
+- **Piso más alto** (`MINIMO_RUBRO` = 8 contra 5). Una página de "trabajos de
+  ventas" compite contra todas las bolsas del Perú; "trabajos en Huancavelica"
+  no compite con casi nadie. Donde la pelea es dura hay que llegar con más.
+- **"Otros" nunca tiene página.** No es un rubro: es el cajón de lo que el
+  motor no supo clasificar. Nadie busca "trabajos de otros", y publicarlo diría
+  que el sitio no sabe lo que publica.
+
 Los enlaces del pie de la portada los escribe el motor entre los marcadores
 `<!-- LUGARES:INICIO -->`, porque cuáles existen cambia cada día. Cada ficha de
 oferta enlaza además a la página de su departamento. Vigilado en
 `pruebas/test_lugares.py`.
+
+**La trampa del refactor, anotada porque casi pasa:** al generalizar la
+plantilla para los dos ejes, la carpeta a limpiar se dedujo del PRIMER grupo
+publicado. Con cero grupos no había primer grupo, así que no se limpiaba nada y
+las páginas viejas se quedaban publicadas para siempre — justo el caso extremo
+que la limpieza existe para cubrir. Lo cazó un test que ya estaba escrito.
 
 ## Pendientes
 
@@ -307,9 +324,7 @@ Lo que está esperando, en orden aproximado de impacto:
    de tiempo agotado desapareció.
 3. **Enviar los correos a las universidades** (`PROPUESTA-UNIVERSIDADES.md`).
    No depende de código y las respuestas tardan días.
-4. ~~Páginas por ciudad~~ **Hechas el 12/8/2026**: una por departamento con
-   5 ofertas o más, en `/trabajos-en/<departamento>/`. Ver abajo. Quedan
-   pendientes las **por rubro**, que es la otra mitad.
+4. ~~Páginas por ciudad y por rubro~~ **Hechas el 12/8/2026**. Ver abajo.
 5. **Detector de requisitos discriminatorios** (Ley 26772). Se encontró un
    aviso pidiendo "Edad: entre 20 y 45 años".
 
@@ -524,7 +539,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 400 tests
+python3 -m unittest discover pruebas -v      # los 408 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
