@@ -301,3 +301,112 @@ class PruebaNoSeRompioLoQueYaFuncionaba(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class PruebaLosCuatroAvisosQueRevisoMentita(unittest.TestCase):
+    """
+    12 de agosto de 2026. Al abrir la página de rubro de Ventas, Mentita revisó
+    los cuatro avisos con el sueldo más bajo y desarmó cada uno.
+
+    Su lectura fue mejor que la mía: yo había propuesto un piso por debajo del
+    mínimo legal, y ese piso habría botado el ÚNICO de los cuatro que estaba
+    bien. El problema no era que los sueldos fueran bajos — era que tres de
+    esos números **no eran sueldos**.
+
+    La causa: la lista de palabras que descalifican un monto solo se miraba
+    ANTES del número. En el texto real de los avisos, la palabra que lo
+    descalifica va detrás.
+    """
+
+    def test_1_el_part_time_de_MEYTEN_si_se_publica(self):
+        """
+        S/ 650 por 23.5 horas semanales. Está por debajo del mínimo legal y aun
+        así es correcto: el aviso dice "Sueldo base" pegado al monto y declara
+        que es part time.
+
+        Este es el test que más protege, porque es el que se pierde al ponerse
+        estricto de más.
+        """
+        s = extraer_sueldo(
+            "Ingreso a planilla MYPE desde el primer día (essalud y SNP). "
+            "Sueldo base de S/. 650 + Comisiones ilimitadas + bonos complementarios."
+        )
+        self.assertIsNotNone(s, "se perdió un sueldo real de medio tiempo")
+        self.assertEqual(s.minimo, 650)
+
+    def test_2_el_bono_por_referidos_de_TCONTAKTO_no_es_sueldo(self):
+        """
+        El aviso dice "Sueldo fijo + comisiones" sin decir cuánto es el fijo, y
+        más abajo ofrece plata por traer gente. El sitio publicó ese aviso con
+        un sueldo de S/ 600 — que era lo que pagan por invitar a dos personas.
+        """
+        s = extraer_sueldo(
+            "Sueldo fijo + comisiones ILIMITADAS (sin tope). "
+            "Bonos por desempeño + incentivos semanales. "
+            "Bono referido: Gana S/300 por invitar a 1 persona y S/600 por invitar 02 personas."
+        )
+        self.assertIsNone(s, "publicó un bono por referidos como si fuera el sueldo")
+
+    def test_3_la_movilidad_de_Qualidad_Humana_no_es_sueldo(self):
+        """
+        "Sueldo fijo + S/ 500 de movilidad". La palabra "sueldo" va delante del
+        monto y "movilidad" detrás: mirando solo hacia adelante, los S/ 500 del
+        pasaje se publicaban como el sueldo de un Ejecutivo Comercial Senior.
+        """
+        s = extraer_sueldo(
+            "Sueldo fijo + S/ 500 de movilidad. "
+            "Comisiones del 5% sobre venta (sin IGV). "
+            "Bono por cada cliente nuevo o reactivado."
+        )
+        self.assertIsNone(s, "publicó la movilidad como si fuera el sueldo")
+
+    def test_4_PRESTAMYPE_dice_acorde_al_mercado_y_eso_es_no_decir(self):
+        """
+        El aviso dice "Sueldo acorde al mercado". El motor sabía reconocer esa
+        frase desde el primer día —`declara_sueldo_vago`, con su test— pero esa
+        función **solo se usaba para redactar el motivo del rechazo**, nunca
+        para decidir. Así que el aviso entró con un S/ 300 suelto.
+
+        Para quien postula, "acorde al mercado" es lo mismo que no decir nada.
+        """
+        from motor.sueldo import declara_sueldo_vago
+
+        texto = ("EPS opcional (Pacífico). Sueldo acorde al mercado, planilla "
+                 "desde el primer día. Línea de carrera.")
+        self.assertTrue(declara_sueldo_vago(texto))
+        self.assertIsNone(extraer_sueldo(texto))
+
+
+class PruebaNoPasarseDeListoHaciaAtras(unittest.TestCase):
+    """
+    Los falsos positivos que aparecieron al arreglar lo de arriba, y que hay
+    que seguir cazando: mirar detrás del monto es útil, pero si la ventana se
+    estira demasiado empieza a botar avisos correctos.
+
+    La regla que resolvió las dos: solo descalifica lo que va detrás **si está
+    pegado al monto con un nexo** —"de", "por", "en"— y dentro de la misma
+    frase. Un concepto nuevo empieza con "+", con su propio rótulo o después de
+    un punto, y ese no dice nada sobre este monto.
+    """
+
+    def test_un_bono_en_la_linea_siguiente_no_contamina(self):
+        """"Sueldo base: S/.1200" seguido de "Bono de asistencia: S/.200"."""
+        s = extraer_sueldo(
+            "Sueldo base: S/.1200\n"
+            "Bono de asistencia: S/.200 (sujeto al cumplimiento de asistencia)"
+        )
+        self.assertEqual(s.minimo, 1200)
+
+    def test_las_comisiones_sumadas_con_mas_no_contaminan(self):
+        s = extraer_sueldo("Sueldo base de S/. 650 + Comisiones ilimitadas")
+        self.assertEqual(s.minimo, 650)
+
+    def test_un_vale_en_otra_frase_no_contamina(self):
+        s = extraer_sueldo(
+            "Remuneración S/ 1,600 en planilla. Vale de S/ 200 de alimentación.")
+        self.assertEqual(s.minimo, 1600)
+
+    def test_en_planilla_sigue_siendo_un_sueldo(self):
+        """El nexo "en" es legítimo y no puede volverse sospechoso."""
+        s = extraer_sueldo("Sueldo de S/ 1,800 en planilla con beneficios de ley.")
+        self.assertEqual(s.minimo, 1800)
