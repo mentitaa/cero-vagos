@@ -123,7 +123,70 @@ _NO_ES_SUELDO = (
     "movilidad", "alimentacion", "tarjeta de alimentos", "vale", "canasta",
     "asignacion familiar", "gratificacion", "cts", "utilidades", "aguinaldo",
     "descuento", "afiliacion", "seguro", "eps", "refrigerio", "viatico",
+    # Bonos por traer gente. Un call center ofrecía "Gana S/300 por invitar a 1
+    # persona y S/600 por invitar 02 personas" y el sitio publicó ese aviso con
+    # un sueldo de S/ 600 — cuando el aviso NUNCA dijo cuánto paga el puesto.
+    "invitar", "invita", "referido", "referir", "recomendar", "recomienda",
 )
+
+# Las mismas palabras, pero buscadas DETRÁS del monto.
+#
+# Es el agujero que dejó pasar tres avisos que revisó Mentita el 12/8/2026: la
+# lista de arriba solo se miraba ANTES del número, y en el texto real la
+# palabra que lo descalifica suele ir después.
+#
+#     Sueldo fijo + S/ 500 de movilidad.
+#     ^^^^^^ dice "sueldo"        ^^^^^^^^^ pero el monto es la movilidad
+#
+#     Gana S/600 por invitar 02 personas.
+#                ^^^^^^^^^^ es un bono por traer gente, no un sueldo
+#
+# Lo delicado es no pasarse de listo. Estos DOS avisos son correctos y no
+# pueden perder su sueldo:
+#
+#     Sueldo base de S/. 650 + Comisiones ilimitadas
+#     Sueldo base: S/.1200   Bono de asistencia: S/.200
+#
+# En los dos, la palabra "comisión" o "bono" viene después del monto bueno —
+# pero como OTRO concepto, no como su descripción. La diferencia está en el
+# nexo: un monto que se describe va pegado con "de", "por", "en"…, mientras
+# que un concepto nuevo empieza con "+", con su propio rótulo o en otra línea.
+#
+# Así que solo se descalifica cuando detrás del número viene un nexo Y después
+# la palabra. Es la misma lección de siempre —lo que califica a un monto tiene
+# que estar pegado a él— aplicada al otro lado.
+_NEXOS = ("de", "por", "en", "como", "para", "correspondiente", "concepto")
+
+_PEGADO_ATRAS = re.compile(
+    r"^\s*(?:" + "|".join(_NEXOS) + r")\b(.{0,40})", re.S)
+
+
+def _lo_que_describe_al_monto(despues: str) -> str:
+    """
+    Lo que va detrás del monto SOLO si lo está describiendo.
+
+    Devuelve texto vacío cuando lo que sigue es otro concepto —un "+", un
+    rótulo nuevo, otra frase—, porque entonces no dice nada sobre este monto.
+
+    Y aun habiendo nexo, la ventana se corta en el punto o en el monto
+    siguiente. Sin ese corte pasaba esto:
+
+        Remuneración S/ 1,600 en planilla. Vale de S/ 200 de alimentación.
+
+    El "en" es un nexo legítimo, pero cuarenta caracteres después aparece
+    "vale" —que es de OTRO monto, en otra frase— y el aviso perdía su sueldo
+    de S/ 1,600 siendo correcto.
+    """
+    m = _PEGADO_ATRAS.match(despues or "")
+    if not m:
+        return ""
+    trozo = m.group(1)
+    corte = len(trozo)
+    for marca in (".", ";", "+", "s/", "us$"):
+        pos = trozo.find(marca)
+        if pos >= 0:
+            corte = min(corte, pos)
+    return trozo[:corte]
 
 
 def _ventana_de_etiqueta(antes: str) -> str:
@@ -310,6 +373,14 @@ def _reunir_candidatos(plano: str, solo_etiquetado: bool) -> list[Sueldo]:
             # vale, no es el sueldo y no se usa. Perder el aviso es preferible a
             # publicar como sueldo algo que no lo es (regla 2).
             if any(n in ventana for n in _NO_ES_SUELDO):
+                continue
+
+            # Y lo mismo con lo que viene DETRÁS. "S/ 500 de movilidad" tiene
+            # la palabra "sueldo" delante (de la frase "Sueldo fijo + …") y la
+            # que lo descalifica atrás. Mirando solo adelante, ese monto se
+            # publicaba como si fuera el sueldo del puesto.
+            detras = _lo_que_describe_al_monto(despues)
+            if any(n in detras for n in _NO_ES_SUELDO):
                 continue
 
             etiquetado = any(e in ventana for e in _ETIQUETAS_SUELDO)

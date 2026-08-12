@@ -18,7 +18,9 @@ from .normalizar import (
     titulo_nombra_el_puesto,
 )
 from .score import evaluar
-from .sueldo import declara_varios_sueldos, extraer_sueldo
+from .sueldo import (
+    declara_sueldo_vago, declara_varios_sueldos, extraer_sueldo,
+)
 
 
 def _fecha_iso(valor) -> date | None:
@@ -57,10 +59,29 @@ def procesar_cruda(cruda: OfertaCruda) -> Oferta:
     # sueldos distintos porque convoca varias modalidades. Ahí no se publica
     # (ver `declara_varios_sueldos`), y el motivo se anota más abajo.
     ambiguo = declara_varios_sueldos(texto_plano)
-    sueldo = None if ambiguo else (
-        extraer_sueldo(texto_plano, solo_etiquetado=True)
-        or extraer_sueldo(cruda.sueldo_texto)
-        or extraer_sueldo(texto_plano))
+
+    # Un monto ETIQUETADO en el cuerpo del aviso ("Sueldo: S/ 2,500") es la
+    # única lectura que no admite discusión: el empleador escribió la palabra
+    # al lado del número.
+    etiquetado = None if ambiguo else extraer_sueldo(texto_plano, solo_etiquetado=True)
+
+    # Y si el aviso dice "a convenir" o "acorde al mercado", ahí se acaba.
+    #
+    # Esta comprobación existía desde el principio, estaba probada… y no se
+    # usaba para decidir nada: solo servía para redactar el motivo del rechazo
+    # DESPUÉS. El resultado fue un aviso de PRESTAMYPE que decía literalmente
+    # "Sueldo acorde al mercado" y salió publicado con S/ 300, un número suelto
+    # que el motor encontró en otra parte del texto (lo cazó Mentita el
+    # 12/8/2026 revisando la página de Ventas).
+    #
+    # Un aviso que dice "a convenir" NO declara sueldo, aunque tenga cifras
+    # sueltas por ahí. Eso es la regla 1, y para quien postula "a convenir" es
+    # lo mismo que no decir nada.
+    vago = declara_sueldo_vago(texto_plano)
+
+    sueldo = etiquetado
+    if sueldo is None and not ambiguo and not vago:
+        sueldo = extraer_sueldo(cruda.sueldo_texto) or extraer_sueldo(texto_plano)
 
     ciudad, departamento = detectar_ubicacion(cruda.ubicacion_texto, texto_plano)
     modalidad = detectar_modalidad(f"{cruda.ubicacion_texto} {texto_plano}")
@@ -113,6 +134,12 @@ def procesar_cruda(cruda: OfertaCruda) -> Oferta:
     if ambiguo:
         resultado.motivos.append(
             "El aviso declara dos sueldos distintos (varias modalidades)")
+
+    # Lo mismo con "a convenir": el motivo dice qué pasó de verdad, en vez de
+    # mandar a buscar un sueldo que el aviso decidió no publicar.
+    if vago and sueldo is None:
+        resultado.motivos.append(
+            "El aviso dice que el sueldo es a convenir o acorde al mercado")
 
     return Oferta(
         huella=Oferta.calcular_huella(puesto, cruda.empresa, ciudad),
