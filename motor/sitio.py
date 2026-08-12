@@ -442,6 +442,7 @@ def pagina_oferta(o: dict, sitio: str) -> str:
     <div class="pie">
       <a class="btn" href="{_e(sitio)}/{CARPETA_SALIDA}/{o['slug']}/" target="_blank" rel="noopener">Postular en {_e(o.get('fuente') or 'el portal')} →</a>
       <a class="btn btn--blanco" href="{_e(sitio)}/#ofertas">Ver más ofertas</a>
+      {f'<a class="btn btn--blanco" href="{_e(sitio)}/{o["lugar"]}/">Más trabajos en {_e(o.get("departamento") or "")} →</a>' if o.get("lugar") else ""}
       <span class="nota">Te llevamos al <a href="{_e(o.get('url') or '#')}" target="_blank" rel="noopener nofollow">aviso original</a>. Cero Vagos nunca te pide pagar.</span>
     </div>
   </article>
@@ -461,7 +462,7 @@ def pagina_oferta(o: dict, sitio: str) -> str:
 # Sitemap y robots
 # --------------------------------------------------------------------------
 
-def sitemap(ofertas: list[dict], sitio: str) -> str:
+def sitemap(ofertas: list[dict], sitio: str, lugares: list[str] = ()) -> str:
     hoy = date.today().isoformat()
     entradas = [
         f"  <url><loc>{sitio}/</loc><lastmod>{hoy}</lastmod>"
@@ -478,6 +479,14 @@ def sitemap(ofertas: list[dict], sitio: str) -> str:
         entradas.append(
             f"  <url><loc>{sitio}/{fija}/</loc><lastmod>{hoy}</lastmod>"
             f"<changefreq>monthly</changefreq><priority>0.4</priority></url>"
+        )
+    # Las páginas por departamento van alto: son contenido de búsqueda ("trabajo
+    # en Arequipa con sueldo") y cambian cada día con la oferta.
+    from .lugares import ruta as ruta_lugar
+    for depa in lugares:
+        entradas.append(
+            f"  <url><loc>{sitio}/{ruta_lugar(depa)}/</loc><lastmod>{hoy}</lastmod>"
+            f"<changefreq>daily</changefreq><priority>0.9</priority></url>"
         )
     for o in ofertas:
         mod = o.get("publicado_iso") or hoy
@@ -770,6 +779,10 @@ def _preparar(fila: dict, indice: int) -> dict:
     # guardado un enlace llegaría a un puesto distinto.
     o["huella"] = fila.get("huella") or ""
     o["slug"] = slug(f"{o['puesto']}-{o.get('empresa') or ''}", o["huella"][:8])
+    # Se llena en `generar` si el departamento tiene página propia. Enlazar
+    # cada oferta con su departamento es lo que le dice a Google que esas
+    # páginas son parte del sitio y no islas sueltas.
+    o["lugar"] = ""
     return o
 
 
@@ -796,6 +809,15 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
 
     filas = al.aprobadas(1000)
     ofertas = [_preparar(f, i + 1) for i, f in enumerate(filas)]
+
+    # Qué departamentos tienen página propia hoy. Se calcula ANTES de escribir
+    # las fichas porque cada una enlaza a la suya, y un enlace a una página que
+    # no existe es peor que ningún enlace.
+    from .lugares import MINIMO_OFERTAS, ruta as ruta_lugar
+    con_pagina = {d["departamento"] for d in al.por_departamento(MINIMO_OFERTAS)}
+    for o in ofertas:
+        depa = o.get("departamento") or ""
+        o["lugar"] = ruta_lugar(depa) if depa in con_pagina else ""
 
     carpeta = raiz / CARPETA_OFERTAS
     carpeta.mkdir(parents=True, exist_ok=True)
@@ -833,11 +855,18 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
     from .transparencia import generar as generar_transparencia
     informe = generar_transparencia(al, sitio, raiz)
 
+    # Una página por departamento con oferta suficiente ("Trabajos en Junín").
+    # Se le pasa el mapa de huella→dirección porque la dirección de cada oferta
+    # se arma acá (regla 3) y las dos no pueden desincronizarse.
+    from .lugares import generar as generar_lugares
+    slugs = {o["huella"]: o["slug"] for o in ofertas if o.get("huella")}
+    lugares = generar_lugares(al, sitio, raiz, slugs)
+
     # Términos, privacidad, reclamaciones y cómo trabajamos.
     from .legales import generar as generar_legales
     legales = generar_legales(sitio, raiz)
 
-    (raiz / "sitemap.xml").write_text(sitemap(ofertas, sitio), encoding="utf-8")
+    (raiz / "sitemap.xml").write_text(sitemap(ofertas, sitio, lugares), encoding="utf-8")
     (raiz / "robots.txt").write_text(robots(sitio), encoding="utf-8")
     # GitHub Pages muestra este archivo cuando alguien llega a una dirección
     # que ya no existe: el caso de la oferta retirada.
@@ -855,6 +884,16 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
             )
         # Y las etiquetas de compartir, que llevan la dirección completa del
         # sitio: si mañana cambia el dominio, se reescriben solas.
+        # Los enlaces a las páginas por departamento, en el pie.
+        from .lugares import (
+            FIN_LUGARES, INICIO_LUGARES, bloque_para_la_portada,
+        )
+        if INICIO_LUGARES in texto and FIN_LUGARES in texto:
+            bloque = bloque_para_la_portada(lugares, sitio)
+            texto = re.sub(
+                re.escape(INICIO_LUGARES) + r".*?" + re.escape(FIN_LUGARES),
+                lambda _: bloque, texto, flags=re.S,
+            )
         if INICIO_OG in texto and FIN_OG in texto:
             og = bloque_compartir(sitio, informe.get("pct_sin_sueldo"))
             texto = re.sub(
@@ -865,6 +904,7 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
             portada.write_text(texto, encoding="utf-8")
 
     return {"paginas": len(ofertas), "retiradas": retiradas, "sitio": sitio,
+            "lugares": lugares,
             "titulos_limpiados": titulos, "titulos_vagos": vagos, "legales": legales,
             "pct_sin_sueldo": informe["pct_sin_sueldo"],
             "empresas_analizadas": len(informe["empresas"]),

@@ -543,6 +543,60 @@ class Almacen:
             "por_ciudad": por_transparencia(agrupar("ciudad", 3)),
         }
 
+    def por_departamento(self, minimo: int = 5) -> list[dict]:
+        """
+        Lo que hace falta para armar la página de cada departamento.
+
+        Va por departamento y no por ciudad porque la gente busca "trabajo en
+        Cusco", no "trabajo en Wanchaq" — y agrupando así una provincia junta
+        lo que suelto no alcanzaría para llenar una página.
+
+        Solo salen los que llegan a `minimo` ofertas publicadas. Una página
+        casi vacía le dice a Google que el sitio es de baja calidad, y esa
+        señal mancha al resto: es peor que no tenerla.
+
+        De cada uno se devuelve también **cuántos avisos se revisaron ahí y
+        cuántos declaraban sueldo**. Ese es el dato que hace que la página
+        valga por sí sola: nadie más en el Perú lo tiene, y es lo que la
+        distingue de ser un listado más.
+        """
+        publicadas = self.con.execute(
+            "SELECT departamento AS depa, COUNT(*) AS n "
+            "FROM ofertas WHERE aprobada = 1 AND vigente = 1 "
+            "  AND departamento IS NOT NULL AND TRIM(departamento) != '' "
+            "GROUP BY departamento HAVING n >= ? ORDER BY n DESC, departamento",
+            (minimo,),
+        ).fetchall()
+
+        salida = []
+        for fila in publicadas:
+            depa = fila["depa"]
+            revision = self.con.execute(
+                "SELECT COUNT(*) AS total, "
+                "       SUM(CASE WHEN sueldo_min > 0 THEN 1 ELSE 0 END) AS con_sueldo "
+                "FROM ofertas WHERE departamento = ?", (depa,),
+            ).fetchone()
+            revisados = revision["total"] or 0
+            con_sueldo = revision["con_sueldo"] or 0
+
+            ofertas = self.con.execute(
+                "SELECT * FROM ofertas WHERE aprobada = 1 AND vigente = 1 "
+                "  AND departamento = ? ORDER BY publicado DESC, score DESC",
+                (depa,),
+            ).fetchall()
+
+            salida.append({
+                "departamento": depa,
+                "ofertas": [self._a_dict(o) for o in ofertas],
+                "total": fila["n"],
+                "revisados": revisados,
+                "con_sueldo": con_sueldo,
+                "sin_sueldo": revisados - con_sueldo,
+                "pct_sin_sueldo": (round((revisados - con_sueldo) / revisados * 100)
+                                   if revisados else 0),
+            })
+        return salida
+
     @staticmethod
     def _a_dict(fila: sqlite3.Row) -> dict:
         d = dict(fila)
