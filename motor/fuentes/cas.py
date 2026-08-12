@@ -18,27 +18,44 @@ Qué la hace buena:
   · Es casi todo provincia: Andahuaylas, Moquegua, Tacna, Cusco, Puno,
     Tambopata. El mapa que hoy falta en la web.
 
-EL OBSTÁCULO, Y LA DECISIÓN
----------------------------
-Una página puede traer VARIOS puestos con sueldos distintos. Surquillo lista 6
-plazas en 2 puestos (S/ 1,350 y S/ 2,800); la Municipalidad de Arequipa dice
-283 plazas. El motor asume una dirección, un aviso.
+VARIOS PUESTOS EN UNA MISMA PÁGINA
+----------------------------------
+Una convocatoria puede sacar a concurso varios puestos a la vez, con sueldos
+distintos: Surquillo lista 6 plazas en 2 puestos, uno de S/ 1,350 y otro de
+S/ 2,800.
 
-Decisión de Mentita (5/8/2026), opción 1: **se publican solo las convocatorias
-de UNA plaza.** No toca la pieza central del motor, y lo que no se puede partir
-bien no se publica — que es la regla 2 de siempre.
+Al estrenar la fuente (5/8/2026) esas se descartaban enteras, porque el motor
+asumía una dirección igual a un aviso. En la primera corrida eso dejó fuera
+**94 convocatorias y 1.263 vacantes**, casi todas de provincia — la oferta que
+más falta le hace al sitio.
 
-Las descartadas se CUENTAN y quedan en el registro de la corrida, para saber
-qué se está dejando pasar y poder revisar la decisión con números.
+Desde el 8/8/2026 la página se parte en una ficha por puesto y cada una sale
+como un aviso propio. Tres decisiones que van juntas:
 
-Filtrar sale gratis: el número de plazas viene en la propia dirección
-(`...-1-plazas-67463.html`), así que las de varias plazas ni se descargan.
+  · **Un aviso por PUESTO, no por plaza.** Un puesto con 5 vacantes es un solo
+    aviso que dice "5 vacantes". Cinco tarjetas idénticas serían basura.
+
+  · **El sueldo tiene que estar dentro de la ficha del puesto.** En Surquillo
+    el resumen de arriba dice S/ 1,350, que es el del operario de limpieza:
+    pegárselo también al especialista, que gana S/ 2,800, sería publicar un
+    sueldo falso. El puesto que no declara el suyo **no se publica, y los demás
+    de esa convocatoria sí** (decisión de Mentita, 8/8/2026).
+
+  · **Comparten el enlace al aviso original, y está bien**: la convocatoria de
+    verdad cubre a todos. En Cero Vagos cada uno tiene página propia porque su
+    dirección se arma con su huella, no con su posición (regla 3). La ficha
+    dice de frente que la convocatoria incluye más puestos.
+
+Las de varios puestos NO se enriquecen con el PDF de las bases: ese documento
+trae las funciones de todos mezcladas y no hay forma segura de saber cuáles son
+de cuál. Se quedan sin funciones, que para el Estado está permitido, y la ficha
+explica dónde buscarlas.
 
 LO QUE ESTE LECTOR NO HACE
 --------------------------
-No deduce el sueldo, no deduce el puesto y no rellena huecos. Si el resumen de
-la convocatoria y la ficha del puesto declaran montos distintos, el aviso se
-rechaza en vez de elegir uno. Ante la duda, no se publica.
+No deduce el sueldo, no deduce el puesto y no rellena huecos. Si una ficha
+declara dos montos distintos, ese puesto se descarta en vez de elegir uno.
+Ante la duda, no se publica.
 """
 from __future__ import annotations
 
@@ -59,11 +76,27 @@ MESES = {
 # El número de plazas va en la dirección: '...-agosto-2026-1-plazas-67463.html'
 PLAZAS_EN_URL = re.compile(r"-(\d+)-plazas-\d+\.html$", re.I)
 
-# Etiquetas que cierran la ficha de un puesto. Todo lo que viene después
-# (cómo postular, bases, cronograma) no es requisito.
-_FIN_DE_PUESTO = (
+# Etiquetas que cierran la LISTA DE REQUISITOS de un puesto. Todo lo que viene
+# después (el sueldo, el cómo postular, las bases, el cronograma) ya no es un
+# requisito.
+#
+# Ojo: esto no es lo mismo que el final de la ficha del puesto. "Salario" corta
+# los requisitos pero está DENTRO de la ficha — de hecho es el dato que más
+# falta hace, porque en las convocatorias de varios puestos cada uno trae el
+# suyo. Confundir las dos cosas dejaba el sueldo fuera de su propio bloque.
+_FIN_DE_REQUISITOS = (
     "lugar de labores", "salario", "plazo para postular", "como postular",
     "remuneracion", "ver aqui bases", "descargar aqui",
+)
+
+# Compatibilidad: el nombre viejo apuntaba a esta misma lista.
+_FIN_DE_PUESTO = _FIN_DE_REQUISITOS
+
+# Lo que cierra la ficha ENTERA de un puesto: el pie de la convocatoria, que es
+# común a todos los puestos y no pertenece a ninguno.
+_FIN_DE_FICHA = (
+    "plazo para postular", "como postular", "ver aqui bases", "descargar aqui",
+    "cronograma", "documentos", "informes",
 )
 
 
@@ -165,7 +198,45 @@ def _monto(texto: str) -> int | None:
     return s.minimo if s else None
 
 
-def _requisitos_del_puesto(lineas: list[str], desde: int) -> list[str]:
+def _empieza_con(linea: str, *etiquetas: str) -> bool:
+    plano = sin_tildes(_limpiar_etiqueta(linea))
+    return any(plano.startswith(e) for e in etiquetas)
+
+
+def fichas_de_puesto(lineas: list[str]) -> list[tuple[int, int]]:
+    """
+    Dónde empieza y dónde termina la ficha de cada puesto de la convocatoria.
+
+    Una convocatoria puede sacar a concurso varios puestos en la misma página:
+    Surquillo lista 6 plazas en 2 puestos, uno de S/ 1,350 y otro de S/ 2,800.
+    Cada puesto es un aviso distinto y necesita su propio pedazo de página —
+    sobre todo su propio sueldo.
+
+    El corte se hace en «Vacantes», que es lo que encabeza cada ficha, y cada
+    una termina donde empieza la siguiente. La última se corta en el pie de la
+    convocatoria (cómo postular, bases, cronograma), que es común a todos los
+    puestos y no pertenece a ninguno.
+
+    Devuelve pares (inicio, fin) con el índice del «Vacantes» de cada ficha.
+    """
+    inicios = [i for i, l in enumerate(lineas) if _empieza_con(l, "vacantes")]
+    if not inicios:
+        return []
+
+    # Dónde empieza el pie común. Se busca DESPUÉS del último puesto para no
+    # confundirlo con un "Ver aquí bases" que aparezca antes.
+    pie = len(lineas)
+    for i in range(inicios[-1] + 1, len(lineas)):
+        if _empieza_con(lineas[i], *_FIN_DE_FICHA):
+            pie = i
+            break
+
+    fines = inicios[1:] + [pie]
+    return list(zip(inicios, fines))
+
+
+def _requisitos_del_puesto(lineas: list[str], desde: int,
+                           hasta: int | None = None) -> list[str]:
     """
     Lo que la ficha del puesto pide, en orden: primero la formación
     ('Profesiones/Oficios'), después la experiencia.
@@ -173,13 +244,18 @@ def _requisitos_del_puesto(lineas: list[str], desde: int) -> list[str]:
     Se recorre hacia abajo desde el puesto y se corta en la primera etiqueta
     que ya no es un requisito. Sin ese corte, el 'cómo postular' y la dirección
     de la mesa de partes terminarían contados como requisitos.
+
+    `hasta` es dónde empieza el puesto siguiente. En una convocatoria de varios
+    puestos hace falta: sin él, los requisitos del primero se comerían los del
+    segundo y quien postulara al de limpieza vería que le piden un título en
+    Derecho.
     """
     salida: list[str] = []
     dentro = False
-    for linea in lineas[desde:]:
+    for linea in lineas[desde:hasta]:
         limpia = _limpiar_etiqueta(linea)
 
-        if any(tras_etiqueta(limpia, f) is not None for f in _FIN_DE_PUESTO):
+        if any(tras_etiqueta(limpia, f) is not None for f in _FIN_DE_REQUISITOS):
             break
         if tras_etiqueta(limpia, "Vacantes") is not None:
             continue
@@ -207,139 +283,226 @@ def _requisitos_del_puesto(lineas: list[str], desde: int) -> list[str]:
     return salida
 
 
-def parsear_cas(html: str, url: str, fuente: str) -> OfertaCruda | None:
+def _sueldo_de_la_ficha(bloque: list[str]) -> str:
     """
-    Lee la ficha de una convocatoria CAS.
+    El sueldo que declara la ficha de ESTE puesto. Vacío si no lo declara.
 
-    Devuelve None —es decir, el aviso se descarta— cuando:
-      · la convocatoria trae más de una plaza (decisión: opción 1);
-      · la página no nombra el puesto;
-      · el resumen y la ficha declaran sueldos distintos;
-      · el plazo de postulación ya cerró o no se pudo leer.
+    Es la pieza que hace posible publicar una convocatoria de varios puestos
+    sin mentir. El monto tiene que estar dentro del bloque del puesto, no en el
+    resumen de arriba: en Surquillo el resumen dice S/ 1,350 y ese es el sueldo
+    del operario de limpieza — pegárselo también al especialista, que gana
+    S/ 2,800, sería publicar un sueldo falso.
+
+    Es el mismo principio que ya costó caro dos veces (el periodo en los
+    S/ 33,800, la etiqueta en las comisiones de S/ 600): lo que califica a un
+    monto tiene que estar pegado al monto.
+    """
+    salario = campo(bloque, "Salario")
+    remuneracion = campo(bloque, "Remuneración")
+    a, b = _monto(salario), _monto(remuneracion)
+    if a and b and a != b:
+        return ""              # se contradice a sí misma: no se publica
+    return salario or remuneracion
+
+
+def parsear_cas(html: str, url: str, fuente: str) -> list[OfertaCruda]:
+    """
+    Lee una convocatoria CAS y devuelve UN AVISO POR PUESTO.
+
+    Hasta el 8/8/2026 devolvía como mucho uno y descartaba entera cualquier
+    convocatoria de más de una plaza. Eso dejaba fuera 94 convocatorias y 1.263
+    vacantes en una sola corrida, casi todas de provincia — la oferta que más
+    falta le hace al sitio.
+
+    Ahora la página se parte en una ficha por puesto. Un puesto con 5 vacantes
+    sigue siendo UN aviso que dice "5 vacantes": publicar cinco tarjetas
+    idénticas sería basura para quien busca.
+
+    Los avisos comparten el enlace al aviso original, y está bien: la
+    convocatoria de verdad cubre a todos. En Cero Vagos cada uno tiene página
+    propia porque su dirección se arma con su huella —puesto, entidad y
+    ciudad—, no con su posición (regla 3).
+
+    Se descarta un puesto —no la convocatoria— cuando no se le puede leer el
+    sueldo (decisión de Mentita, 8/8/2026: los demás sí se publican). Y se
+    descarta la convocatoria entera cuando no nombra sus puestos o cuando el
+    plazo de postulación ya cerró o no se pudo leer.
     """
     from ..normalizar import html_a_lineas
 
-    if plazas_en_url(url) != 1:
-        return None
-
     lineas = html_a_lineas(html)
     if not lineas:
-        return None
+        return []
 
-    # ---- una sola plaza, verificado en la página y no solo en la URL ----
-    # La dirección es una pista barata, pero es solo texto: si la página lista
-    # dos puestos, publicar uno sería elegir por el postulante.
-    posiciones = [i for i, l in enumerate(lineas)
-                  if sin_tildes(_limpiar_etiqueta(l)).startswith("vacantes")]
-    if len(posiciones) != 1:
-        return None
-    inicio = posiciones[0]
+    fichas = fichas_de_puesto(lineas)
+    if not fichas:
+        return []
 
-    vacantes = campo(lineas, "N° de vacantes") or campo(lineas, "Vacantes")
-    if vacantes and not re.match(r"^\s*1\b", vacantes):
-        return None
-
-    # ---- puesto ----
-    # Dos fuentes independientes: el encabezado de la ficha (la línea justo
-    # antes de "Vacantes") y el campo del resumen. Se prefiere el encabezado.
-    encabezado = _limpiar_etiqueta(lineas[inicio - 1]) if inicio else ""
-    del_resumen = campo(lineas, "Formación académica")
-    puesto = encabezado if 3 < len(encabezado) <= 90 else del_resumen
-    if not puesto or len(puesto) < 4:
-        return None            # nunca se inventa un cargo (regla 8)
-
-    # ---- sueldo: los dos montos tienen que coincidir ----
-    salario = campo(lineas, "Salario")
-    remuneracion = campo(lineas, "Remuneración")
-    a, b = _monto(salario), _monto(remuneracion)
-    if a and b and a != b:
-        return None            # ante la duda, no se publica (regla 2)
-    sueldo_texto = salario or remuneracion
-    if not sueldo_texto:
-        return None
-
-    # ---- plazo ----
+    # ---- lo que es común a toda la convocatoria ----
     vence = fecha_cas(campo(lineas, "Plazo para postular"))
     if not vence or vence < date.today():
-        return None
+        return []
 
     entidad = campo(lineas, "Institución")
     ubicacion = campo(lineas, "Lugar de trabajo") or campo(lineas, "Lugar de labores")
-
-    # ---- el cuerpo del aviso, armado a mano ----
-    # No se pasa la página entera como hacen otros lectores: el menú, el pie y
-    # el aviso de WhatsApp terminarían contados como requisitos. Se arma solo
-    # con lo que sí es del puesto, bajo encabezados que el normalizador conoce.
-    requisitos = _requisitos_del_puesto(lineas, inicio)
     beneficios = BENEFICIOS_POR_REGIMEN["CAS"]
+    del_resumen = campo(lineas, "Formación académica")
 
-    partes = [f"<p>Convocatoria CAS de {entidad or 'una entidad del Estado'}"
-              f"{f' en {ubicacion}' if ubicacion else ''}. Una plaza.</p>"]
-    if requisitos:
-        partes.append("<p>Requisitos</p><ul>"
-                      + "".join(f"<li>{r}</li>" for r in requisitos) + "</ul>")
-    partes.append("<p>Beneficios</p><ul>"
-                  + "".join(f"<li>{b}</li>" for b in beneficios) + "</ul>")
+    salida: list[OfertaCruda] = []
+    for inicio, fin in fichas:
+        bloque = lineas[inicio:fin]
 
-    return OfertaCruda(
-        fuente=fuente,
-        url=url,
-        puesto=puesto,
-        empresa=entidad,
-        descripcion_html="".join(partes),
-        ubicacion_texto=ubicacion,
-        sueldo_texto=sueldo_texto,
-        # La página no publica fecha de publicación, y el `lastmod` del sitemap
-        # dice cuándo se tocó la página, no cuándo salió el aviso. Se deja
-        # vacía a propósito: el plazo de postulación ya cumple esa función y es
-        # un dato que el propio aviso declara.
-        publicado=None,
-        extra={
-            "perfil": "publico",
-            "regimen": "CAS",
-            "beneficios_de_ley": True,
-            "plazas": 1,
-            "vence": vence.isoformat(),
-        },
-    )
+        # ---- puesto ----
+        # El encabezado es la línea justo antes de "Vacantes". Si no sirve, se
+        # cae al campo del resumen — pero solo cuando hay un puesto: con varios
+        # ese campo describe a la convocatoria, no a este puesto en particular,
+        # y ponérselo sería inventarle el cargo (regla 8).
+        encabezado = _limpiar_etiqueta(lineas[inicio - 1]) if inicio else ""
+        puesto = encabezado if 3 < len(encabezado) <= 90 else (
+            del_resumen if len(fichas) == 1 else "")
+        if not puesto or len(puesto) < 4:
+            continue
+
+        # ---- sueldo: el suyo, o este puesto no va ----
+        if len(fichas) == 1:
+            # Con un solo puesto no hay ambigüedad posible: el sueldo del
+            # resumen es suyo. Y se mira la página entera a propósito, porque
+            # así el resumen y la ficha se contrastan: si declaran montos
+            # distintos, la convocatoria se contradice y no se publica.
+            sueldo_texto = _sueldo_de_la_ficha(lineas)
+        else:
+            # Con varios puestos el monto tiene que estar dentro de SU ficha.
+            # El del resumen no se reparte: en Surquillo dice S/ 1,350, que es
+            # el del operario de limpieza, y dárselo también al especialista
+            # —que gana S/ 2,800— sería publicar un sueldo falso.
+            sueldo_texto = _sueldo_de_la_ficha(bloque)
+        if not sueldo_texto:
+            continue
+
+        # ---- cuántas vacantes ----
+        vacantes = 0
+        m = re.match(r"^\s*(\d+)", campo(bloque, "Vacantes") or "")
+        if m:
+            vacantes = int(m.group(1))
+
+        requisitos = _requisitos_del_puesto(lineas, inicio, fin)
+
+        # ---- el cuerpo del aviso, armado a mano ----
+        # No se pasa la página entera como hacen otros lectores: el menú, el pie
+        # y el aviso de WhatsApp terminarían contados como requisitos. Se arma
+        # solo con lo que sí es del puesto, bajo encabezados que el normalizador
+        # conoce.
+        cuantas = (f"{vacantes} vacantes" if vacantes > 1
+                   else "Una vacante" if vacantes == 1 else "")
+        # Se dice de frente que la convocatoria trae más puestos. Sin esto, la
+        # persona hace clic en "Postular" y se encuentra un documento con seis
+        # plazas sin entender por qué.
+        companeros = (f" La convocatoria incluye {len(fichas)} puestos; este es"
+                      f" uno de ellos." if len(fichas) > 1 else "")
+        partes = [f"<p>Convocatoria CAS de {entidad or 'una entidad del Estado'}"
+                  f"{f' en {ubicacion}' if ubicacion else ''}."
+                  f"{f' {cuantas}.' if cuantas else ''}{companeros}</p>"]
+        if requisitos:
+            partes.append("<p>Requisitos</p><ul>"
+                          + "".join(f"<li>{r}</li>" for r in requisitos) + "</ul>")
+        partes.append("<p>Beneficios</p><ul>"
+                      + "".join(f"<li>{b}</li>" for b in beneficios) + "</ul>")
+
+        salida.append(OfertaCruda(
+            fuente=fuente,
+            url=url,
+            puesto=puesto,
+            empresa=entidad,
+            descripcion_html="".join(partes),
+            ubicacion_texto=ubicacion,
+            sueldo_texto=sueldo_texto,
+            # La página no publica fecha de publicación, y el `lastmod` del
+            # sitemap dice cuándo se tocó la página, no cuándo salió el aviso.
+            # Se deja vacía a propósito: el plazo de postulación ya cumple esa
+            # función y es un dato que el propio aviso declara.
+            publicado=None,
+            extra={
+                "perfil": "publico",
+                "regimen": "CAS",
+                "beneficios_de_ley": True,
+                "plazas": vacantes or 1,
+                "puestos_en_la_convocatoria": len(fichas),
+                "vence": vence.isoformat(),
+            },
+        ))
+
+    return _sin_puestos_ambiguos(salida)
+
+
+def _sin_puestos_ambiguos(avisos: list[OfertaCruda]) -> list[OfertaCruda]:
+    """
+    Quita los puestos que se llaman igual dentro de la misma convocatoria.
+
+    Es el agujero que quedaba abierto. La dirección de cada oferta se arma con
+    su huella —puesto, entidad y ciudad—, así que **dos fichas con el mismo
+    nombre producen la misma huella**: la segunda pisaría a la primera y en la
+    web quedaría un solo aviso, con el nombre de uno y el sueldo del otro. Es
+    exactamente el error que este trabajo existe para evitar, entrando por la
+    puerta de atrás.
+
+    Si los dos declaran el mismo sueldo no hay problema y se juntan en uno: es
+    el mismo puesto listado dos veces. Si declaran sueldos distintos, no hay
+    forma de distinguirlos para quien lee y se van los dos (regla 2).
+    """
+    from ..sueldo import extraer_sueldo
+
+    por_nombre: dict[str, list[OfertaCruda]] = {}
+    for a in avisos:
+        por_nombre.setdefault(sin_tildes(a.puesto).lower(), []).append(a)
+
+    salida = []
+    for grupo in por_nombre.values():
+        if len(grupo) == 1:
+            salida.append(grupo[0])
+            continue
+        montos = {(_monto(a.sueldo_texto) or 0) for a in grupo}
+        if len(montos) == 1:
+            salida.append(grupo[0])       # el mismo puesto listado dos veces
+    return salida
 
 
 # --------------------------------------------------------------------------
 
 class ConvocatoriasCAS(PortalWeb):
     """
-    Igual que cualquier portal, salvo por una cosa: descarta las convocatorias
-    de varias plazas ANTES de descargarlas, y cuenta cuántas descartó.
+    Igual que cualquier portal, salvo por el conteo de plazas.
 
-    Ese conteo es el que dice si la opción 1 se queda corta. Sin él, la fuente
-    se vería sana entregando la mitad de lo que hay.
+    Hasta el 8/8/2026 descartaba aquí mismo las convocatorias de más de una
+    plaza, antes de descargarlas. Ya no: ahora se leen todas y la página se
+    parte en un aviso por puesto (ver `parsear_cas`). El conteo se queda porque
+    sigue diciendo de qué tamaño es lo que entra.
     """
 
     def urls_de_avisos(self, limite: int = 100) -> list[str]:
-        # Se pide de más porque unas dos de cada tres se van a descartar por
-        # traer más de una plaza.
-        todas = super().urls_de_avisos(limite * 3)
-        de_una, saltadas, plazas_perdidas = [], 0, 0
+        todas = super().urls_de_avisos(limite)
+        varias, plazas = 0, 0
         for u in todas:
             n = plazas_en_url(u)
-            if n == 1:
-                de_una.append(u)
-            elif n > 1:
-                saltadas += 1
-                plazas_perdidas += n
+            if n > 1:
+                varias += 1
+                plazas += n
 
-        self.saltadas_por_plazas = saltadas
-        self.plazas_perdidas = plazas_perdidas
-        if saltadas:
+        self.de_varias_plazas = varias
+        self.plazas_en_juego = plazas
+        # Nombres viejos, por si algo los mira: ya no se salta ninguna.
+        self.saltadas_por_plazas = 0
+        self.plazas_perdidas = 0
+        if varias:
             self._anotar(
-                f"{saltadas} convocatorias saltadas por traer más de una plaza "
-                f"({plazas_perdidas} plazas en total). Es la decisión tomada: "
-                f"una página con varios puestos no se puede partir en avisos "
-                f"sin inventar. Si este número crece mucho, toca revisarla."
+                f"{varias} convocatorias traen más de una plaza "
+                f"({plazas} plazas en total). Se leen: cada puesto sale como "
+                f"un aviso propio, y el que no declare su sueldo se cae solo."
             )
-        return de_una[:limite]
+        return todas[:limite]
 
     def recolectar(self, limite: int = 100) -> Iterator[OfertaCruda]:
+        self.de_varias_plazas = 0
+        self.plazas_en_juego = 0
         self.saltadas_por_plazas = 0
         self.plazas_perdidas = 0
         yield from super().recolectar(limite)

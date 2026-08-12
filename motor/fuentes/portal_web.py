@@ -64,6 +64,22 @@ def _plazo_cerrado(cruda: OfertaCruda) -> bool:
         return False
 
 
+def _como_lista(salida) -> list[OfertaCruda]:
+    """
+    Normaliza lo que devuelve un parser: ninguno, uno, o varios.
+
+    Casi todos los lectores devuelven un aviso por dirección. Las
+    convocatorias del Estado son la excepción: una misma página puede sacar a
+    concurso varios puestos, con sueldos distintos, y cada uno es un aviso
+    aparte aunque compartan el enlace original.
+    """
+    if salida is None:
+        return []
+    if isinstance(salida, OfertaCruda):
+        return [salida]
+    return [c for c in salida if c is not None]
+
+
 def _demasiado_antigua(cruda: OfertaCruda, dias_maximo: int) -> bool:
     """
     Se descarta por FECHA DE PUBLICACIÓN, no por plazo de postulación.
@@ -111,7 +127,12 @@ class PortalWeb(Fuente):
         dias_publicado: int = 0,
         ordenar_por_id: bool = False,
         nota: str = "",
-        parser: Callable[[str, str, str], OfertaCruda | None] | None = None,
+        # El parser puede devolver un aviso, ninguno, o VARIOS. Lo último es
+        # para las convocatorias del Estado que sacan a concurso más de un
+        # puesto en la misma página: son puestos distintos, con sueldos
+        # distintos, y comparten el enlace al aviso original.
+        parser: Callable[[str, str, str],
+                         "OfertaCruda | list[OfertaCruda] | None"] | None = None,
         enriquecer: Callable[..., str] | None = None,
     ):
         self.nombre = nombre
@@ -403,11 +424,16 @@ class PortalWeb(Fuente):
                 except ErrorFuente as e:
                     self._anotar(e)
                     continue
-                cruda = self.parser(html, url, self.nombre)
+                crudas = _como_lista(self.parser(html, url, self.nombre))
 
                 # Descartar lo viejo ANTES de enriquecer: abrir el PDF de un
                 # aviso de hace tres meses es tiempo tirado a la basura.
-                if cruda:
+                #
+                # La antigüedad y el plazo son de la PÁGINA, no de cada puesto:
+                # todos los avisos que salen de una misma convocatoria comparten
+                # fecha y fecha de cierre. Se decide una vez, con el primero.
+                if crudas:
+                    cruda = crudas[0]
                     vieja = _demasiado_antigua(cruda, self.dias_publicado)
                     cerrada = _plazo_cerrado(cruda)
                     if vieja or cerrada:
@@ -429,18 +455,27 @@ class PortalWeb(Fuente):
                         continue
                     seguidos = 0
 
-                if cruda and cruda.puesto:
-                    entregados += 1
-                    if self.enriquecer:
-                        try:
-                            aviso = self.enriquecer(cruda, html, self._bajar_bytes)
-                            if aviso:
-                                self._anotar(aviso)
-                        except ErrorFuente as e:
-                            self._anotar(e)
-                        except Exception as e:          # noqa: BLE001
-                            self._anotar(f"Falló el enriquecido: {e}")
-                    yield cruda
+                utiles = [c for c in crudas if c.puesto]
+                if utiles:
+                    for cruda in utiles:
+                        entregados += 1
+                        # Solo se enriquece cuando la página trae UN puesto. El
+                        # PDF de las bases de una convocatoria con tres puestos
+                        # trae las funciones de los tres mezcladas, y no hay
+                        # forma segura de saber cuáles son de cuál: pegárselas a
+                        # uno sería inventarle el trabajo a alguien. Se quedan
+                        # sin funciones, que para el Estado está permitido y la
+                        # ficha explica dónde buscarlas.
+                        if self.enriquecer and len(utiles) == 1:
+                            try:
+                                aviso = self.enriquecer(cruda, html, self._bajar_bytes)
+                                if aviso:
+                                    self._anotar(aviso)
+                            except ErrorFuente as e:
+                                self._anotar(e)
+                            except Exception as e:      # noqa: BLE001
+                                self._anotar(f"Falló el enriquecido: {e}")
+                        yield cruda
                 else:
                     ilegibles += 1
                     if ilegibles == 1:
