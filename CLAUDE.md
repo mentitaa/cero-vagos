@@ -103,7 +103,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **408** y pasan todos.
+Los tests son **416** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -377,6 +377,24 @@ verificar.
   monto previo (`_ventana_de_etiqueta`), y además hay una lista de palabras
   —comisión, bono, vale, movilidad— que dicen que ese monto NO es el sueldo
   (`_NO_ES_SUELDO`). Vigilado en `pruebas/test_sueldo_no_es_bono.py`.
+- **Lo que descalifica a un monto también va DETRÁS de él.** Hasta el
+  12/8/2026 la lista de "esto no es sueldo" (comisión, bono, movilidad) solo se
+  miraba antes del número, y en el texto real suele ir después: *"Sueldo fijo
+  + S/ 500 **de movilidad**"* publicaba el pasaje como sueldo, y *"Gana S/600
+  **por invitar** 02 personas"* publicaba un bono por referidos. Lo cazó
+  Mentita revisando la página de Ventas. **Pero cuidado con pasarse**: en
+  *"Sueldo base de S/. 650 + Comisiones"* y en *"Sueldo base: S/.1200 / Bono de
+  asistencia: S/.200"* la palabra también va detrás y los dos montos SON
+  correctos. La regla que separa los casos: descalifica solo si va pegado con
+  un nexo —"de", "por", "en"— y dentro de la misma frase. Un concepto nuevo
+  empieza con "+", con su rótulo o tras un punto.
+- **"Acorde al mercado" estaba detectado pero desconectado.**
+  `declara_sueldo_vago` existía desde el primer día, con su test, y solo se
+  usaba para REDACTAR el motivo del rechazo — nunca para decidir. Un aviso de
+  PRESTAMYPE que decía literalmente "Sueldo acorde al mercado" salió publicado
+  con un S/ 300 que el motor encontró suelto en otra parte. Ahora, si el aviso
+  lo dice y no hay un monto etiquetado, no se publica. Moraleja: una función
+  probada no sirve de nada si nadie la llama.
 - **Una pista buscada como pedazo de texto calza dentro de otra palabra.**
   «Asesor de Cobranza» salía como **Construcción**, porque la pista `obra`
   está dentro de «c-obra-nza»; e `intern` está dentro de «interna», así que
@@ -539,7 +557,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 408 tests
+python3 -m unittest discover pruebas -v      # los 416 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
