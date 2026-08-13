@@ -509,3 +509,83 @@ class PruebaLaMonedaLlegaHastaLaPantalla(unittest.TestCase):
              "min": 3000, "max": 3000, "moneda": "USD", "ciudad": "Lima"},
             "https://cerovagos.com/oferta/x/"))
         self.assertEqual(datos["baseSalary"]["currency"], "USD")
+
+
+class PruebaElPortalNoResucitaUnMontoDesmentido(unittest.TestCase):
+    """
+    La tercera puerta del mismo aviso, y la más difícil de cerrar.
+
+    Grupo Qualidad Humana lo intentó tres veces:
+
+      1. S/ 500 — la movilidad.            Tapada mirando detrás del monto.
+      2. $1,000 — el ingreso garantizado.  Tapada con `_NO_ES_EL_FIJO`.
+      3. S/ 1,000 — **la casilla de sueldo de Bumeran.**
+
+    Contra la tercera no hay defensa mirando su contenido: es un número pelado
+    que el empleador escribió en un formulario, sin ninguna palabra alrededor
+    que lo delate. La defensa tiene que venir de otro lado.
+
+    Y viene de aquí: **si el propio aviso ya dijo que ese monto no es el
+    sueldo, el portal no puede resucitarlo.** Se compara contra los montos que
+    el texto descartó, no contra el texto en bruto, porque "$1,000" y
+    "S/ 1000" son el mismo número escrito distinto.
+    """
+
+    BENEFICIOS = ("Sueldo fijo + S/ 500 de movilidad. "
+                  "Comisiones del 5% sobre venta. "
+                  "Ingreso garantizado de $1,000 durante los primeros 3 meses, "
+                  "adicional al fijo y la movilidad.")
+
+    def _aviso(self, portal: str):
+        from datetime import date
+
+        from motor.modelos import OfertaCruda
+        from motor.pipeline import procesar_cruda
+
+        cuerpo = (
+            "<p>Funciones</p><ul><li>Gestión de cartera</li>"
+            "<li>Prospección activa de clientes</li>"
+            "<li>Cotizaciones y seguimiento</li></ul>"
+            "<p>Requisitos</p><ul><li>Ingeniería o carrera técnica</li>"
+            "<li>3 a 5 años en ventas B2B</li><li>Dominio de CRM</li></ul>"
+            f"<p>Beneficios</p><ul><li>{self.BENEFICIOS}</li>"
+            "<li>Planilla completa</li></ul>"
+        )
+        return procesar_cruda(OfertaCruda(
+            fuente="Bumeran", url="https://x.pe/1",
+            puesto="Ejecutivo Comercial Senior", empresa="Acme",
+            descripcion_html=cuerpo, sueldo_texto=portal,
+            publicado=date.today()))
+
+    def test_el_monto_que_el_aviso_descarto_no_entra_por_el_portal(self):
+        """El caso real: la casilla decía 1000, que es el ingreso garantizado."""
+        self.assertEqual(self._aviso("S/ 1000").sueldo_min, 0)
+
+    def test_y_el_motivo_dice_lo_que_pasó_de_verdad(self):
+        """
+        "No declara sueldo" mandaría a buscar en el lugar equivocado: el
+        problema no es que falte el dato, es que el dato del portal está
+        desmentido por el propio aviso.
+        """
+        motivos = " ".join(self._aviso("S/ 1000").motivos_rechazo)
+        self.assertIn("el propio aviso descarta", motivos)
+
+    def test_un_sueldo_de_verdad_en_el_portal_SI_se_usa(self):
+        """
+        La regla no puede volverse una excusa para desconfiar del portal
+        siempre. Si la casilla trae un monto que el aviso no ha descartado, se
+        usa: es la última red y hace falta.
+        """
+        self.assertEqual(self._aviso("S/ 2500").sueldo_min, 2500)
+
+    def test_montos_que_no_son_sueldo_ve_los_dos(self):
+        from motor.sueldo import montos_que_no_son_sueldo
+
+        self.assertEqual(sorted(montos_que_no_son_sueldo(self.BENEFICIOS)),
+                         [500, 1000])
+
+    def test_un_aviso_limpio_no_descarta_nada(self):
+        from motor.sueldo import montos_que_no_son_sueldo
+
+        self.assertEqual(montos_que_no_son_sueldo("Sueldo: S/ 2,500 mensuales."),
+                         set())
