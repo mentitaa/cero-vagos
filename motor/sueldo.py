@@ -328,7 +328,8 @@ def _en_rango(valor: int, moneda: str) -> bool:
 _ETIQUETAS_EXPLICITAS = ("sueldo", "salario", "remuneracion", "remuneración")
 
 
-def _reunir_candidatos(plano: str, solo_etiquetado: bool) -> list[Sueldo]:
+def _reunir_candidatos(plano: str, solo_etiquetado: bool,
+                       descartados: set | None = None) -> list[Sueldo]:
     """
     Todas las lecturas posibles del texto, ya validadas.
 
@@ -393,6 +394,8 @@ def _reunir_candidatos(plano: str, solo_etiquetado: bool) -> list[Sueldo]:
             # vale, no es el sueldo y no se usa. Perder el aviso es preferible a
             # publicar como sueldo algo que no lo es (regla 2).
             if any(n in ventana for n in _NO_ES_SUELDO):
+                if descartados is not None:
+                    descartados.update(mensuales)
                 continue
 
             # Y lo mismo con lo que viene DETRÁS. "S/ 500 de movilidad" tiene
@@ -401,6 +404,8 @@ def _reunir_candidatos(plano: str, solo_etiquetado: bool) -> list[Sueldo]:
             # publicaba como si fuera el sueldo del puesto.
             detras = _lo_que_describe_al_monto(despues)
             if any(n in detras for n in _NO_ES_SUELDO):
+                if descartados is not None:
+                    descartados.update(mensuales)
                 continue
 
             # Y las frases que dicen de frente que el monto va aparte del
@@ -409,6 +414,8 @@ def _reunir_candidatos(plano: str, solo_etiquetado: bool) -> list[Sueldo]:
             # coma y de la duración.
             frase = (antes[-60:] + m.group(0) + despues[:80])
             if any(f in frase for f in _NO_ES_EL_FIJO):
+                if descartados is not None:
+                    descartados.update(mensuales)
                 continue
 
             etiquetado = any(e in ventana for e in _ETIQUETAS_SUELDO)
@@ -485,6 +492,31 @@ def extraer_sueldo(texto: str, solo_etiquetado: bool = False) -> Sueldo | None:
     # varias lecturas posibles conviene la conservadora: es peor prometer un
     # sueldo que no existe que quedarse corto.
     return sorted(candidatos, key=lambda s: (-s.confianza, s.minimo))[0]
+
+
+def montos_que_no_son_sueldo(texto: str) -> set[int]:
+    """
+    Los montos que el propio aviso descalificó: comisiones, bonos, movilidad,
+    ingresos garantizados temporales.
+
+    Existe por un caso que se escapó dos veces (Grupo Qualidad Humana). El
+    aviso decía "Sueldo fijo + S/ 500 de movilidad" y más abajo "Ingreso
+    garantizado de $1,000 … adicional al fijo", sin declarar nunca el fijo.
+    Tapadas las dos puertas del TEXTO, el motor cayó a la ficha de datos del
+    portal — donde el empleador había escrito 1000 — y publicó ese número.
+
+    Contra esa casilla no hay defensa posible mirando su contenido: es un
+    número pelado, sin ninguna palabra alrededor que lo delate. La defensa es
+    esta: **si el aviso ya dijo que ese monto no es el sueldo, el portal no
+    puede resucitarlo.**
+
+    Se compara contra lo que el texto descartó, no contra el texto en bruto,
+    porque "$1,000" y "S/ 1000" son el mismo número escrito distinto.
+    """
+    plano = re.sub(r"\s+", " ", (texto or "").lower())
+    descartados: set[int] = set()
+    _reunir_candidatos(plano, solo_etiquetado=False, descartados=descartados)
+    return descartados
 
 
 def declara_sueldo_vago(texto: str) -> bool:

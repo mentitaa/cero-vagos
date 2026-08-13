@@ -20,6 +20,7 @@ from .normalizar import (
 from .score import evaluar
 from .sueldo import (
     declara_sueldo_vago, declara_varios_sueldos, extraer_sueldo,
+    montos_que_no_son_sueldo,
 )
 
 
@@ -81,7 +82,25 @@ def procesar_cruda(cruda: OfertaCruda) -> Oferta:
 
     sueldo = etiquetado
     if sueldo is None and not ambiguo and not vago:
-        sueldo = extraer_sueldo(cruda.sueldo_texto) or extraer_sueldo(texto_plano)
+        # La casilla de sueldo del portal es la última red, y es la más frágil:
+        # un número pelado que el empleador escribió en un formulario, sin
+        # ninguna palabra alrededor que permita comprobarlo.
+        #
+        # Contra ese número no hay defensa mirando su contenido. La defensa es
+        # otra: **si el propio aviso ya dijo que ese monto no es el sueldo, el
+        # portal no puede resucitarlo.** Pasó con Grupo Qualidad Humana, que
+        # tapadas las dos puertas del texto —la movilidad de S/ 500 y el
+        # ingreso garantizado de $1,000— seguía publicándose con S/ 1,000
+        # porque ese era el número de la casilla (12/8/2026).
+        del_portal = extraer_sueldo(cruda.sueldo_texto)
+        if del_portal and del_portal.minimo in montos_que_no_son_sueldo(texto_plano):
+            del_portal = None
+            desmentido = True
+        else:
+            desmentido = False
+        sueldo = del_portal or extraer_sueldo(texto_plano)
+    else:
+        desmentido = False
 
     ciudad, departamento = detectar_ubicacion(cruda.ubicacion_texto, texto_plano)
     modalidad = detectar_modalidad(f"{cruda.ubicacion_texto} {texto_plano}")
@@ -140,6 +159,11 @@ def procesar_cruda(cruda: OfertaCruda) -> Oferta:
     if vago and sueldo is None:
         resultado.motivos.append(
             "El aviso dice que el sueldo es a convenir o acorde al mercado")
+
+    if desmentido and sueldo is None:
+        resultado.motivos.append(
+            "El sueldo del portal es un monto que el propio aviso descarta "
+            "(una comisión, un bono o la movilidad)")
 
     return Oferta(
         huella=Oferta.calcular_huella(puesto, cruda.empresa, ciudad),
