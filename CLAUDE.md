@@ -138,7 +138,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **429** y pasan todos.
+Los tests son **434** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -432,6 +432,20 @@ verificar.
   (`_sueldo_texto` y el `currency` del JobPosting) y `lugares.py`. La mediana
   de las páginas de listado se calcula **solo sobre las ofertas en soles**:
   mezclar S/ 1,800 con US$ 1,000 daría un número sin significado.
+- **La casilla de sueldo del portal puede resucitar un monto ya descartado.**
+  Es la tercera puerta del mismo aviso de Grupo Qualidad Humana: tapada la
+  movilidad de S/ 500 y el ingreso garantizado de $1,000, el sitio seguía
+  publicando S/ 1,000 porque ese era el número que el empleador había escrito
+  en el formulario de Bumeran. Contra esa casilla no hay defensa mirando su
+  contenido —es un número pelado, sin palabras alrededor—, así que la defensa
+  es otra: **si el propio aviso ya dijo que ese monto no es el sueldo, el
+  portal no puede resucitarlo** (`montos_que_no_son_sueldo`). Se compara por
+  NÚMERO y no por texto, porque "$1,000" y "S/ 1000" son el mismo monto
+  escrito distinto.
+- **Un aviso que enumera cinco formas de pago y ninguna es el sueldo va a
+  seguir ofreciendo candidatos hasta que se acaben.** Ese mismo aviso lo
+  intentó tres veces por tres caminos distintos. Con esos conviene mirar el
+  penúltimo número con la misma desconfianza que el último.
 - **Un monto puede decir de frente que NO es el sueldo.** "Ingreso garantizado
   de $1,000 durante los primeros 3 meses, **adicional al fijo**". El aviso
   mismo avisa de que es temporal y que va aparte, y aun así nunca declara el
@@ -607,7 +621,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 429 tests
+python3 -m unittest discover pruebas -v      # los 434 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
