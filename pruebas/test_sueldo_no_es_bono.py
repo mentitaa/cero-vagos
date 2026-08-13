@@ -410,3 +410,102 @@ class PruebaNoPasarseDeListoHaciaAtras(unittest.TestCase):
         """El nexo "en" es legítimo y no puede volverse sospechoso."""
         s = extraer_sueldo("Sueldo de S/ 1,800 en planilla con beneficios de ley.")
         self.assertEqual(s.minimo, 1800)
+
+
+class PruebaElSegundoIntentoDelMismoAviso(unittest.TestCase):
+    """
+    El aviso de Grupo Qualidad Humana volvió, y por otra puerta.
+
+    Tapada la movilidad, la corrida siguiente lo publicó con **S/ 1,000** — que
+    salía de esta línea de sus beneficios:
+
+        Ingreso garantizado de $1,000 durante los primeros 3 meses,
+        adicional al fijo y la movilidad.
+
+    Dos errores encima del otro, y el segundo era el grave:
+
+    1. No es el sueldo. El propio aviso dice que es temporal ("los primeros 3
+       meses") y que va aparte ("adicional al fijo"). Ese aviso nunca declara
+       cuánto paga el puesto.
+    2. **Son dólares y se mostraban como soles.** El motor sí distinguía la
+       moneda al leerla; la perdía al mostrarla.
+    """
+
+    AVISO = ("Sueldo fijo + S/ 500 de movilidad. "
+             "Comisiones del 5% sobre venta (sin IGV). "
+             "Bono por cada cliente nuevo o reactivado. "
+             "Ingreso garantizado de $1,000 durante los primeros 3 meses, "
+             "adicional al fijo y la movilidad.")
+
+    def test_el_aviso_completo_no_declara_sueldo(self):
+        self.assertIsNone(extraer_sueldo(self.AVISO))
+
+    def test_un_ingreso_garantizado_temporal_no_es_el_sueldo(self):
+        self.assertIsNone(extraer_sueldo(
+            "Ingreso garantizado de S/ 3,000 durante los primeros 3 meses."))
+
+    def test_lo_adicional_al_fijo_no_es_el_fijo(self):
+        self.assertIsNone(extraer_sueldo(
+            "Bono de S/ 800, adicional al sueldo fijo."))
+
+    def test_pero_un_sueldo_normal_sigue_entrando(self):
+        """Estas frases no pueden volverse una excusa para rechazar de más."""
+        s = extraer_sueldo("Sueldo de S/ 3,000 mensuales en planilla.")
+        self.assertEqual(s.minimo, 3000)
+
+
+class PruebaLaMonedaLlegaHastaLaPantalla(unittest.TestCase):
+    """
+    Un sueldo en dólares no se escribe con S/.
+
+    El motor distinguía la moneda al leer el aviso y la guardaba en la base
+    — pero al MOSTRARLA escribía "S/" siempre, en la portada, en la ficha de
+    cada oferta y en los datos que lee Google. Una oferta de US$ 1,000
+    aparecía publicada como S/ 1,000: casi cuatro veces menos de lo que paga.
+
+    No era un problema de un aviso: afectaba a todas las ofertas en dólares.
+    """
+
+    def test_el_parser_distingue_la_moneda(self):
+        self.assertEqual(extraer_sueldo("Sueldo: US$ 1,200 mensuales").moneda, "USD")
+        self.assertEqual(extraer_sueldo("Sueldo: S/ 1,200 mensuales").moneda, "PEN")
+
+    def test_la_ficha_escribe_el_simbolo_correcto(self):
+        from motor.sitio import _sueldo_texto
+
+        self.assertEqual(
+            _sueldo_texto({"min": 1000, "max": 1000, "moneda": "USD"}), "US$ 1,000")
+        self.assertEqual(
+            _sueldo_texto({"min": 1000, "max": 1000, "moneda": "PEN"}), "S/ 1,000")
+
+    def test_sin_moneda_declarada_se_asume_soles(self):
+        """Es el 99% del mercado peruano y lo que ya hay guardado."""
+        from motor.sitio import _sueldo_texto
+
+        self.assertEqual(_sueldo_texto({"min": 1500, "max": 1500}), "S/ 1,500")
+
+    def test_la_moneda_viaja_a_la_web(self):
+        """Si el exportador no la manda, la portada no puede mostrarla."""
+        from pathlib import Path
+
+        exportar = (Path(__file__).resolve().parent.parent
+                    / "motor" / "exportar.py").read_text(encoding="utf-8")
+        self.assertIn('"moneda"', exportar)
+
+        portada = (Path(__file__).resolve().parent.parent
+                   / "index.html").read_text(encoding="utf-8")
+        self.assertIn("o.moneda", portada)
+
+    def test_google_recibe_la_moneda_de_verdad(self):
+        """
+        Decirle "PEN" a Google sobre un sueldo en dólares es publicar un dato
+        falso en el sitio más visible que tiene el proyecto.
+        """
+        import json
+        from motor.sitio import jobposting
+
+        datos = json.loads(jobposting(
+            {"puesto": "Gerente", "empresa": "Acme", "huella": "ab12",
+             "min": 3000, "max": 3000, "moneda": "USD", "ciudad": "Lima"},
+            "https://cerovagos.com/oferta/x/"))
+        self.assertEqual(datos["baseSalary"]["currency"], "USD")
