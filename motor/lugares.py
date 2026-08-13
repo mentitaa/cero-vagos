@@ -67,8 +67,9 @@ def _e(t) -> str:
     return html.escape(str(t or ""), quote=True)
 
 
-def _soles(n: int) -> str:
-    return f"S/ {n:,}"
+def _soles(n: int, moneda: str = "PEN") -> str:
+    """El monto con SU símbolo. Un sueldo en dólares no se escribe con S/."""
+    return f"{'US$' if moneda == 'USD' else 'S/'} {n:,}"
 
 
 def _plano(nombre: str) -> str:
@@ -87,14 +88,23 @@ def ruta_rubro(rubro: str) -> str:
 
 
 def _mediano(ofertas: list[dict]) -> int:
-    montos = sorted(o["sueldo_min"] for o in ofertas if o.get("sueldo_min"))
+    """
+    El sueldo mediano, **solo de las ofertas en soles**.
+
+    Mezclar S/ 1,800 con US$ 1,000 en la misma lista y sacar la mediana daría
+    un número que no significa nada. Como el 99% del mercado peruano publica en
+    soles, se calcula sobre esas y las de dólares no ensucian el dato.
+    """
+    montos = sorted(o["sueldo_min"] for o in ofertas
+                    if o.get("sueldo_min") and (o.get("moneda") or "PEN") == "PEN")
     return montos[len(montos) // 2] if montos else 0
 
 
 def _tarjeta(o: dict, sitio: str, slug: str) -> str:
-    sueldo = _soles(o["sueldo_min"]) if o.get("sueldo_min") else ""
+    moneda = o.get("moneda") or "PEN"
+    sueldo = _soles(o["sueldo_min"], moneda) if o.get("sueldo_min") else ""
     if o.get("sueldo_max") and o["sueldo_max"] != o["sueldo_min"]:
-        sueldo += f" – {_soles(o['sueldo_max'])}"
+        sueldo += f" – {_soles(o['sueldo_max'], moneda)}"
     lugar = " · ".join(x for x in (o.get("ciudad"), o.get("modalidad")) if x)
     return (
         f'<li class="oferta">'

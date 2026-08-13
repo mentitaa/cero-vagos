@@ -58,6 +58,11 @@ def _a_formato_web(fila: dict, indice: int) -> dict:
         "cat": fila["categoria"] or "Otros",
         "min": fila["sueldo_min"] or 0,
         "max": fila["sueldo_max"] or fila["sueldo_min"] or 0,
+        # Sin esto, una oferta en dólares se publicaba como si fueran soles:
+        # "US$ 1,000" salía en la web como "S/ 1,000", casi cuatro veces menos
+        # de lo que paga. El motor SÍ distinguía la moneda al leer y la
+        # guardaba — se perdía al mostrarla (12/8/2026).
+        "moneda": fila.get("moneda") or "PEN",
         "modalidad": fila["modalidad"] or "Presencial",
         "ciudad": fila["ciudad"] or "Perú",
         "fuente": fila["fuente"],

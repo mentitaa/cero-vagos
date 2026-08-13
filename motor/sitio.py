@@ -144,15 +144,18 @@ def _e(texto) -> str:
     return html.escape(str(texto or ""), quote=True)
 
 
-def _soles(n: int) -> str:
-    return f"S/ {n:,}".replace(",", ",")
+def _soles(n: int, moneda: str = "PEN") -> str:
+    """El monto con SU símbolo. Un sueldo en dólares no se escribe con S/."""
+    return f"{'US$' if moneda == 'USD' else 'S/'} {n:,}"
 
 
 def _sueldo_texto(o: dict) -> str:
     lo, hi = o.get("min") or 0, o.get("max") or 0
     if not lo:
         return "Sin sueldo declarado"
-    return _soles(lo) if not hi or hi == lo else f"{_soles(lo)} – {_soles(hi)}"
+    m = o.get("moneda") or "PEN"
+    return (_soles(lo, m) if not hi or hi == lo
+            else f"{_soles(lo, m)} – {_soles(hi, m)}")
 
 
 def _lo_que_tiene(o: dict) -> str:
@@ -249,7 +252,9 @@ def jobposting(o: dict, url: str) -> str:
         datos["validThrough"] = o["vence"]
     if o.get("min"):
         datos["baseSalary"] = {
-            "@type": "MonetaryAmount", "currency": "PEN",
+            # La moneda de verdad. Decirle "PEN" a Google sobre un sueldo en
+            # dólares es publicar un dato falso en el sitio más visible.
+            "@type": "MonetaryAmount", "currency": o.get("moneda") or "PEN",
             "value": {"@type": "QuantitativeValue",
                       "minValue": o["min"], "maxValue": o.get("max") or o["min"],
                       "unitText": "MONTH"},

@@ -129,6 +129,26 @@ _NO_ES_SUELDO = (
     "invitar", "invita", "referido", "referir", "recomendar", "recomienda",
 )
 
+# Frases que dicen, con todas sus letras, que el monto NO es el sueldo fijo.
+#
+# Salieron del segundo intento del mismo aviso (Grupo Qualidad Humana). Tapada
+# la movilidad, el motor se fue al otro número de la lista de beneficios:
+#
+#     Ingreso garantizado de $1,000 durante los primeros 3 meses,
+#     adicional al fijo y la movilidad.
+#
+# El propio aviso está diciendo dos cosas: que es temporal ("los primeros 3
+# meses") y que va APARTE del sueldo ("adicional al fijo"). Ese aviso nunca
+# declara cuánto paga el puesto, y no debe publicarse.
+#
+# Se buscan en el aviso entero, no pegadas al monto, porque describen al monto
+# desde lejos: "adicional al fijo" puede ir al final de la frase siguiente.
+_NO_ES_EL_FIJO = (
+    "adicional al fijo", "adicional al sueldo", "adicional a la remuneracion",
+    "ingreso garantizado", "garantizado durante", "aparte del sueldo",
+    "sin contar el sueldo", "no incluye el sueldo",
+)
+
 # Las mismas palabras, pero buscadas DETRÁS del monto.
 #
 # Es el agujero que dejó pasar tres avisos que revisó Mentita el 12/8/2026: la
@@ -381,6 +401,14 @@ def _reunir_candidatos(plano: str, solo_etiquetado: bool) -> list[Sueldo]:
             # publicaba como si fuera el sueldo del puesto.
             detras = _lo_que_describe_al_monto(despues)
             if any(n in detras for n in _NO_ES_SUELDO):
+                continue
+
+            # Y las frases que dicen de frente que el monto va aparte del
+            # sueldo. Estas se buscan en la frase entera del monto, no solo
+            # pegadas: "adicional al fijo" suele ir al final, después de una
+            # coma y de la duración.
+            frase = (antes[-60:] + m.group(0) + despues[:80])
+            if any(f in frase for f in _NO_ES_EL_FIJO):
                 continue
 
             etiquetado = any(e in ventana for e in _ETIQUETAS_SUELDO)
