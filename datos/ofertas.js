@@ -1,6 +1,6 @@
 /* Generado por el motor de Cero Vagos. No editar a mano. */
 window.CERO_VAGOS = {
- "generado": "2026-08-13T22:07:20",
+ "generado": "2026-08-13T22:22:46",
  "total": 281,
  "stats": {
   "total_procesadas": 5433,
@@ -325,6 +325,57 @@ window.CERO_VAGOS = {
   },
   {
    "id": 8,
+   "puesto": "Asistente de Almacén",
+   "empresa": "ISTP ALTA COCINA D´GALLIA SAC",
+   "cat": "Logística",
+   "min": 1130,
+   "max": 1130,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 2,
+   "vence": "2026-11-09",
+   "restan": 88,
+   "score": 97,
+   "resumen": "Instituto Gastronómico peruano cuya misión es formar cocineros íntegros con visión empresarial, artistas comprometidos con el desarrollo del Perú y la difusión de su gastronomía dentro y fuera del país.",
+   "funciones": [
+    "Realizar el armado de las taras con los requerimientos solicitados para cada clase.",
+    "Verificar que las taras contengan todos los insumos requeridos, tanto en calidad de producto como en cantidad.",
+    "Realizar la preproducción de los insumos siguiendo las normas establecidas.",
+    "Cumplir con el proceso de limpieza y desinfección del almacén y las buenas prácticas de manipulación de alimentos (BPM).",
+    "Recepcionar y verificar la mercadería que ingresan los proveedores.",
+    "Almacenar los insumos que ingresan al almacén teniendo en cuenta los estándares de calidad y almacenamiento.",
+    "Realizar mensualmente el inventario de los productos que se encuentran en el almacén.",
+    "Realizar el cruce de información en los cambios de turno (incidencias, pendientes).",
+    "Realizar el recorrido de las cocinas y talleres para el recojo de insumos sobrantes.",
+    "Cuidar con responsabilidad los insumos que se guardan en el almacén.",
+    "Resguardar los insumos que se encuentran en el almacén.",
+    "Verificar entradas y salidas de insumos."
+   ],
+   "requisitos": [
+    "Educación: Nivel Superior – Estudios Técnicos. en carreras carreras afines a gastronomía.",
+    "Conocimiento de BPM.",
+    "Conocimientos de temperaturas de congelación, refrigeración y empaque al vacío de alimentos.",
+    "Experiencia mínima de 06 meses en el área de almacén en alimentos.",
+    "Experiencia mínima de 06 meses en el rubro gastronómico y /o en el sector de hotelería."
+   ],
+   "beneficios": [
+    "Ingreso a planilla desde el primer día (régimen general).",
+    "Descuento en D'Gallia del 50% en carreras y cursos programas entre otros.",
+    "Descuentos Corporativos con otras instituciones.",
+    "Un ambiente dinámico y colaborativo que fomenta la creatividad y el éxito.",
+    "Estabilidad laboral y oportunidad de crecer en una institución reconocida.",
+    "S/. 1,130 básico + 270 movilidad",
+    "Horas Extras reconocidas",
+    "Horario Laboral",
+    "Lunes a Viernes: 01:00 pm a 10:00 pm y sábados de: 07:00 am a 04:00 pm",
+    "¡Forma parte de una comunidad que forma talento con pasión y sabor!"
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/asistente-de-almacen-rubro-alimentos-istp-alta-cocina-dgallia-sac-1118398850.html"
+  },
+  {
+   "id": 9,
    "puesto": "Coordinador(a) de trade de Ejecucion",
    "empresa": "Overall Strategy",
    "cat": "Ventas",
@@ -372,7 +423,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/overall-strategy/coordinador-a-de-trade-de-ejecucion-sede-sjl-y-santa-clara/6a7acdd42020b210c82803fb"
   },
   {
-   "id": 9,
+   "id": 10,
    "puesto": "Atención al cliente",
    "empresa": "Coopac Kori",
    "cat": "Recursos Humanos",
@@ -419,7 +470,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/coopac-kori/analista-de-creditos-con-o-sin-experiencia-agenicia-ceres-y/6a7aa70a2020b210c827ad31"
   },
   {
-   "id": 10,
+   "id": 11,
    "puesto": "Atencion al Cliente Grifo Primax en la Altura de Av. Sucre",
    "empresa": "COESTI S.A.",
    "cat": "Atención al Cliente",
@@ -458,7 +509,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/coesti-s-a/atencion-al-cliente-grifo-primax-en-la-altura-de-av-sucre/6a7a66152020b210c826f071"
   },
   {
-   "id": 11,
+   "id": 12,
    "puesto": "I M A C O! Promotor de ventas",
    "empresa": "Grupo Tawa",
    "cat": "Ventas",
@@ -499,7 +550,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/grupo-tawa/i-m-a-c-o-promotor-de-ventas-ripley-mall-de-sur-la-rambla-y/6a7a684e2020b210c826f956"
   },
   {
-   "id": 12,
+   "id": 13,
    "puesto": "Tecnico",
    "empresa": "Confidencial",
    "cat": "Ingeniería",
@@ -544,58 +595,6 @@ window.CERO_VAGOS = {
     "¡TE ESPERAMOS!"
    ],
    "url": "https://www.bumeran.com.pe/empleos/tecnicos-operadores-de-maquinas-industriales-callao-1118398855.html"
-  },
-  {
-   "id": 13,
-   "puesto": "Asistente de Almacén",
-   "empresa": "ISTP ALTA COCINA D´GALLIA SAC",
-   "cat": "Logística",
-   "min": 1130,
-   "max": 1130,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 2,
-   "vence": "2026-11-09",
-   "restan": 88,
-   "score": 94,
-   "resumen": "Instituto Gastronómico peruano cuya misión es formar cocineros íntegros con visión empresarial, artistas comprometidos con el desarrollo del Perú y la difusión de su gastronomía dentro y fuera del país.",
-   "funciones": [
-    "Realizar el armado de las taras con los requerimientos solicitados para cada clase.",
-    "Verificar que las taras contengan todos los insumos requeridos, tanto en calidad de producto como en cantidad.",
-    "Realizar la preproducción de los insumos siguiendo las normas establecidas.",
-    "Cumplir con el proceso de limpieza y desinfección del almacén y las buenas prácticas de manipulación de alimentos (BPM).",
-    "Recepcionar y verificar la mercadería que ingresan los proveedores.",
-    "Almacenar los insumos que ingresan al almacén teniendo en cuenta los estándares de calidad y almacenamiento.",
-    "Realizar mensualmente el inventario de los productos que se encuentran en el almacén.",
-    "Realizar el cruce de información en los cambios de turno (incidencias, pendientes).",
-    "Realizar el recorrido de las cocinas y talleres para el recojo de insumos sobrantes.",
-    "Cuidar con responsabilidad los insumos que se guardan en el almacén.",
-    "Resguardar los insumos que se encuentran en el almacén.",
-    "Verificar entradas y salidas de insumos."
-   ],
-   "requisitos": [
-    "Educación: Nivel Superior – Estudios Técnicos.",
-    "Formación: Logística y almacenes o carreras afines.",
-    "Conocimiento de BPM.",
-    "Conocimientos de temperaturas de congelación, refrigeración y empaque al vacío.",
-    "Experiencia mínima de 06 meses en el área de almacén.",
-    "Experiencia mínima de 06 meses en el rubro gastronómico."
-   ],
-   "beneficios": [
-    "Ingreso a planilla desde el primer día (régimen general).",
-    "Descuento en D'Gallia del 50% en carreras y cursos programas entre otros.",
-    "Descuentos Corporativos con otras instituciones.",
-    "Un ambiente dinámico y colaborativo que fomenta la creatividad y el éxito.",
-    "Estabilidad laboral y oportunidad de crecer en una institución reconocida.",
-    "S/. 1,130 básico + 270 movilidad",
-    "Horas Extras reconocidas",
-    "Horario Laboral",
-    "Lunes a Viernes: 01:00 pm a 10:00 pm y sábados de: 07:00 am a 04:00 pm",
-    "¡Forma parte de una comunidad que forma talento con pasión y sabor!"
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/asistente-de-almacen-rubro-alimentos-istp-alta-cocina-dgallia-sac-1118398850.html"
   },
   {
    "id": 14,
