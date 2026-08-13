@@ -103,7 +103,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **416** y pasan todos.
+Los tests son **425** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -388,6 +388,21 @@ verificar.
   correctos. La regla que separa los casos: descalifica solo si va pegado con
   un nexo —"de", "por", "en"— y dentro de la misma frase. Un concepto nuevo
   empieza con "+", con su rótulo o tras un punto.
+- **El motor sabía la moneda y la perdía al mostrarla.** `US$ 1,000` salía
+  publicado como `S/ 1,000` — casi cuatro veces menos de lo que paga— en la
+  tarjeta, en la ficha y en los datos que lee Google. El parser SÍ distingue
+  soles de dólares y lo guardaba en la base; lo que faltaba era llevarlo hasta
+  la pantalla (12/8/2026). Van cuatro sitios y hay que tocarlos todos:
+  `exportar.py` (para que viaje), `index.html` (`monto()`), `sitio.py`
+  (`_sueldo_texto` y el `currency` del JobPosting) y `lugares.py`. La mediana
+  de las páginas de listado se calcula **solo sobre las ofertas en soles**:
+  mezclar S/ 1,800 con US$ 1,000 daría un número sin significado.
+- **Un monto puede decir de frente que NO es el sueldo.** "Ingreso garantizado
+  de $1,000 durante los primeros 3 meses, **adicional al fijo**". El aviso
+  mismo avisa de que es temporal y que va aparte, y aun así nunca declara el
+  fijo. Es el mismo aviso que ya había colado la movilidad: tapada una puerta,
+  el motor se fue por la otra. Está en `_NO_ES_EL_FIJO` y se busca en la frase
+  entera del monto, no pegado, porque "adicional al fijo" suele ir al final.
 - **"Acorde al mercado" estaba detectado pero desconectado.**
   `declara_sueldo_vago` existía desde el primer día, con su test, y solo se
   usaba para REDACTAR el motivo del rechazo — nunca para decidir. Un aviso de
@@ -557,7 +572,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 416 tests
+python3 -m unittest discover pruebas -v      # los 425 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
