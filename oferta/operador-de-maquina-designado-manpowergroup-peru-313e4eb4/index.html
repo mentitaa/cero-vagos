@@ -31,18 +31,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{color-scheme:light;--rojo:#FF1E1E;--negro:#0B0B0B;--crema:#FFF3E4;--blanco:#fff;
---amarillo:#FFD100;--azul:#2B37FF;--lima:#B8FF2E;--bd:3px solid var(--negro);
+:root{color-scheme:light;
+/* LA PALETA. Es ley: fuera de aquí no se escribe ningún color.
+   La misma que index.html — si cambia allá, cambia aquí. Elegida el
+   13/8/2026 para que los colores dejen de parecer puestos por poner. */
+--marca:#FF1E1E;      /* rojo: identidad y acción, nada más */
+--marca-osc:#C7150F;
+--tinta:#101B2D;      /* azul tinta: texto, bordes y bloques oscuros */
+--fondo:#F5F1E8;      /* hueso: el fondo de todo */
+--blanco:#fff;
+--acento:#FFB703;     /* ámbar, y uno solo: marca lo que el aviso SÍ trae */
+--tinta-suave:#5A6B85;
+--gris:#E8E0D4;
+--ok:#2A9D5C;         /* solo /transparencia: las que sí publican */
+--alerta:#A81409;     /* solo /transparencia: NO es el rojo de marca */
+--bd:3px solid var(--tinta);
 --display:'Archivo Black','Arial Black',system-ui,sans-serif;
 --body:'Space Grotesk',system-ui,-apple-system,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:var(--body);background:var(--crema);color:var(--negro);
-background-image:linear-gradient(rgba(11,11,11,.045) 1px,transparent 1px),
-linear-gradient(90deg,rgba(11,11,11,.045) 1px,transparent 1px);background-size:44px 44px}
+body{font-family:var(--body);background:var(--fondo);color:var(--tinta);
+background-image:linear-gradient(rgba(16,27,45,.05) 1px,transparent 1px),
+linear-gradient(90deg,rgba(16,27,45,.05) 1px,transparent 1px);background-size:44px 44px}
 h1,h2,h3{font-family:var(--display);text-transform:uppercase;letter-spacing:-.02em;line-height:1}
 a{color:inherit}
 .wrap{max-width:820px;margin:0 auto;padding:0 18px}
-.barra{background:var(--rojo);color:#fff;border-bottom:var(--bd);padding:12px 0;
+.barra{background:var(--marca);color:#fff;border-bottom:var(--bd);padding:12px 0;
 font-family:var(--display);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
 .barra a{text-decoration:none}
 /* El logo solo no se entiende como "volver": mucha gente no sabe que se le
@@ -55,39 +68,39 @@ padding-bottom:2px}
 .barra .volver:hover span{border-bottom-color:#fff}
 @media(max-width:560px){.barra .volver img{height:27px}
 .barra .volver span{font-size:11px}}
-.ficha{border:var(--bd);background:var(--blanco);box-shadow:9px 9px 0 var(--negro);margin:26px 0 40px}
-.cab{background:var(--rojo);color:#fff;padding:26px 24px;border-bottom:var(--bd)}
+.ficha{border:var(--bd);background:var(--blanco);box-shadow:9px 9px 0 var(--tinta);margin:26px 0 40px}
+.cab{background:var(--marca);color:#fff;padding:26px 24px;border-bottom:var(--bd)}
 .cab h1{font-size:clamp(24px,4.6vw,38px)}
 .cab p{font-weight:700;margin-top:9px;font-size:15px}
-.pill{display:inline-block;border:2px solid var(--negro);background:var(--blanco);
-color:var(--negro);padding:5px 11px;font-size:12px;font-weight:700;text-transform:uppercase;margin-top:11px}
-.pago{background:var(--amarillo);border-bottom:var(--bd);padding:19px 24px;
+.pill{display:inline-block;border:2px solid var(--tinta);background:var(--blanco);
+color:var(--tinta);padding:5px 11px;font-size:12px;font-weight:700;text-transform:uppercase;margin-top:11px}
+.pago{background:var(--acento);border-bottom:var(--bd);padding:19px 24px;
 display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
 .pago b{font-family:var(--display);font-size:29px;display:block}
 .pago span{font-size:12px;font-weight:700;text-transform:uppercase}
 /* Lo mismo que en la tarjeta de la portada: las cuatro cosas que el aviso SÍ
    trae, en vez del score. Ver .job__tiene en index.html. */
 .tiene{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
-.tiene span{background:var(--lima);border:2px solid var(--negro);padding:5px 9px;
+.tiene span{background:var(--acento);border:2px solid var(--tinta);padding:5px 9px;
 font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap}
 .bloque{padding:22px 24px;border-bottom:var(--bd)}
 .bloque:last-of-type{border-bottom:none}
-.bases{background:var(--crema)}
+.bases{background:var(--fondo)}
 .bases p{font-size:15px;line-height:1.5;font-weight:500;margin-bottom:10px}
 .bases a{font-weight:700}
 .bloque h2{font-size:16px;margin-bottom:13px}
 .bloque ul{list-style:none;display:grid;gap:9px}
 .bloque li{font-size:15px;line-height:1.45;font-weight:500;padding-left:19px;position:relative}
-.bloque li::before{content:"";position:absolute;left:0;top:7px;width:9px;height:9px;background:var(--negro)}
-.beneficios{background:var(--lima)}
+.bloque li::before{content:"";position:absolute;left:0;top:7px;width:9px;height:9px;background:var(--tinta)}
+.beneficios{background:var(--acento)}
 .pie{padding:22px 24px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-.btn{display:inline-block;border:var(--bd);background:var(--rojo);color:#fff;
+.btn{display:inline-block;border:var(--bd);background:var(--marca);color:#fff;
 font-family:var(--display);font-size:14px;text-transform:uppercase;padding:14px 22px;
-text-decoration:none;box-shadow:4px 4px 0 var(--negro)}
-.btn--blanco{background:var(--blanco);color:var(--negro)}
+text-decoration:none;box-shadow:4px 4px 0 var(--tinta)}
+.btn--blanco{background:var(--blanco);color:var(--tinta)}
 .nota{font-size:12.5px;font-weight:700;opacity:.6}
 footer{border-top:var(--bd);padding:22px 0;font-size:13px;font-weight:500}
-@media(max-width:600px){.ficha{box-shadow:5px 5px 0 var(--negro)}.cab,.pago,.bloque,.pie{padding-left:16px;padding-right:16px}}
+@media(max-width:600px){.ficha{box-shadow:5px 5px 0 var(--tinta)}.cab,.pago,.bloque,.pie{padding-left:16px;padding-right:16px}}
 </style>
 <script type="application/ld+json">
 {
