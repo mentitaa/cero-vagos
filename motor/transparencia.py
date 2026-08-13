@@ -46,7 +46,12 @@ def _nivel(pct: int) -> str:
 
 
 def _barra(pct: int) -> str:
-    colores = {"alta": "var(--lima)", "media": "var(--amarillo)", "baja": "var(--rojo)"}
+    # Estos tres NO son colores de marca, y ahí está el motivo de que existan
+    # `--ok` y `--alerta`: el rojo de la marca no puede significar "empresa que
+    # esconde el sueldo". Sería la identidad del sitio calificando de mal a
+    # alguien, y además haría que el color más presente de la web fuera el de
+    # la peor nota.
+    colores = {"alta": "var(--ok)", "media": "var(--acento)", "baja": "var(--alerta)"}
     return (f'<div class="barra"><div class="barra__i" '
             f'style="width:{max(pct, 2)}%;background:{colores[_nivel(pct)]}"></div></div>')
 
@@ -80,18 +85,31 @@ def _tabla(titulo: str, filas: list[dict], columna: str = "Empresa") -> str:
 
 
 ESTILOS = """
-:root{color-scheme:light;--rojo:#FF1E1E;--negro:#0B0B0B;--crema:#FFF3E4;--blanco:#fff;
---amarillo:#FFD100;--azul:#2B37FF;--lima:#B8FF2E;--bd:3px solid var(--negro);
+:root{color-scheme:light;
+/* LA PALETA. Es ley: fuera de aquí no se escribe ningún color.
+   La misma que index.html — si cambia allá, cambia aquí. Elegida el
+   13/8/2026 para que los colores dejen de parecer puestos por poner. */
+--marca:#FF1E1E;      /* rojo: identidad y acción, nada más */
+--marca-osc:#C7150F;
+--tinta:#101B2D;      /* azul tinta: texto, bordes y bloques oscuros */
+--fondo:#F5F1E8;      /* hueso: el fondo de todo */
+--blanco:#fff;
+--acento:#FFB703;     /* ámbar, y uno solo: marca lo que el aviso SÍ trae */
+--tinta-suave:#5A6B85;
+--gris:#E8E0D4;
+--ok:#2A9D5C;         /* solo /transparencia: las que sí publican */
+--alerta:#A81409;     /* solo /transparencia: NO es el rojo de marca */
+--bd:3px solid var(--tinta);
 --display:'Archivo Black','Arial Black',system-ui,sans-serif;
 --body:'Space Grotesk',system-ui,-apple-system,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:var(--body);background:var(--crema);color:var(--negro);
-background-image:linear-gradient(rgba(11,11,11,.045) 1px,transparent 1px),
-linear-gradient(90deg,rgba(11,11,11,.045) 1px,transparent 1px);background-size:44px 44px}
+body{font-family:var(--body);background:var(--fondo);color:var(--tinta);
+background-image:linear-gradient(rgba(16,27,45,.05) 1px,transparent 1px),
+linear-gradient(90deg,rgba(16,27,45,.05) 1px,transparent 1px);background-size:44px 44px}
 h1,h2,h3{font-family:var(--display);text-transform:uppercase;letter-spacing:-.02em;line-height:1}
 a{color:inherit}
 .wrap{max-width:900px;margin:0 auto;padding:0 18px}
-.barra-sup{background:var(--rojo);color:#fff;border-bottom:var(--bd);padding:12px 0;
+.barra-sup{background:var(--marca);color:#fff;border-bottom:var(--bd);padding:12px 0;
 font-family:var(--display);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
 .barra-sup a{text-decoration:none}
 /* El logo solo no se entiende como "volver": mucha gente no sabe que se le
@@ -104,7 +122,7 @@ padding-bottom:2px}
 .barra-sup .volver:hover span{border-bottom-color:#fff}
 @media(max-width:560px){.barra-sup .volver img{height:27px}
 .barra-sup .volver span{font-size:11px}}
-.hero{border-bottom:var(--bd);background:var(--negro);color:#fff;padding:52px 0 46px}
+.hero{border-bottom:var(--bd);background:var(--tinta);color:#fff;padding:52px 0 46px}
 /* Título a la izquierda, el dato a la derecha. En pantallas angostas se
    apilan solos: el dato queda debajo, que es donde se lee mejor. */
 .hero__reja{display:flex;align-items:center;justify-content:space-between;gap:38px;flex-wrap:wrap}
@@ -114,7 +132,7 @@ padding-bottom:2px}
 /* El recuadro se ajusta al número: antes ocupaba todo el ancho y quedaba
    medio vacío. Ahora el porcentaje y su explicación van uno al lado del otro. */
 .cifra{display:inline-flex;align-items:center;gap:22px;border:3px solid #fff;
-background:var(--rojo);color:#fff;box-shadow:9px 9px 0 #fff;
+background:var(--marca);color:#fff;box-shadow:9px 9px 0 #fff;
 padding:20px 28px;flex:0 0 auto;max-width:100%}
 .cifra b{font-family:var(--display);font-size:clamp(46px,9vw,76px);line-height:.85}
 .cifra span{font-size:14.5px;font-weight:700;text-transform:uppercase;
@@ -124,18 +142,18 @@ section{padding:40px 0;border-bottom:var(--bd)}
 section h2{font-size:clamp(22px,3.4vw,34px);margin-bottom:8px}
 section .sub{font-size:15px;font-weight:500;line-height:1.5;margin-bottom:22px;max-width:640px}
 h3{font-size:15px;margin:26px 0 12px}
-.tabla-envoltura{border:var(--bd);background:var(--blanco);box-shadow:5px 5px 0 var(--negro);overflow-x:auto}
+.tabla-envoltura{border:var(--bd);background:var(--blanco);box-shadow:5px 5px 0 var(--tinta);overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:14px}
-th{background:var(--negro);color:#fff;font-family:var(--display);font-size:11px;
+th{background:var(--tinta);color:#fff;font-family:var(--display);font-size:11px;
 text-transform:uppercase;letter-spacing:.04em;padding:10px 12px;text-align:left}
-td{padding:9px 12px;border-bottom:2px solid #e8e0d4;font-weight:500}
+td{padding:9px 12px;border-bottom:2px solid var(--gris);font-weight:500}
 tr:last-child td{border-bottom:none}
 .num{text-align:right;white-space:nowrap}
 /* La celda se queda siendo celda; el flex vive en la caja de adentro. */
 .pct{white-space:nowrap;vertical-align:middle}
 .pct__caja{display:flex;align-items:center;gap:9px;min-width:132px}
 .pct b{font-family:var(--display);font-size:13px}
-.barra{flex:1;height:11px;border:2px solid var(--negro);background:var(--blanco);min-width:56px}
+.barra{flex:1;height:11px;border:2px solid var(--tinta);background:var(--blanco);min-width:56px}
 .barra__i{height:100%}
 
 /* En un celular la tabla no cabe: cuatro columnas más una barra de 132px se
@@ -148,10 +166,10 @@ tr:last-child td{border-bottom:none}
   th,td{padding:8px 9px}
   .barra{display:none}
   .pct__caja{min-width:0;justify-content:flex-end}
-  .pct b{border:2px solid var(--negro);padding:2px 7px}
-  .pct--alta b{background:var(--lima)}
-  .pct--media b{background:var(--amarillo)}
-  .pct--baja b{background:var(--rojo);color:#fff}
+  .pct b{border:2px solid var(--tinta);padding:2px 7px}
+  .pct--alta b{background:var(--ok);color:#fff}
+  .pct--media b{background:var(--acento)}
+  .pct--baja b{background:var(--alerta);color:#fff}
 }
 .nota{border:var(--bd);background:var(--blanco);padding:20px 22px;margin-top:26px;
 font-size:14.5px;line-height:1.55;font-weight:500}
@@ -159,10 +177,10 @@ font-size:14.5px;line-height:1.55;font-weight:500}
    recuadros con frases hechas para copiar y pegar en redes. Se quitó el
    7/8/2026: quien llega a esta página viene a ver el dato, no a que le
    dicten qué escribir. */
-.salida{background:var(--amarillo);text-align:center}
-.btn{display:inline-block;border:var(--bd);background:var(--rojo);color:#fff;
+.salida{background:var(--acento);text-align:center}
+.btn{display:inline-block;border:var(--bd);background:var(--marca);color:#fff;
 font-family:var(--display);font-size:14px;text-transform:uppercase;padding:14px 22px;
-text-decoration:none;box-shadow:4px 4px 0 var(--negro);margin-top:8px}
+text-decoration:none;box-shadow:4px 4px 0 var(--tinta);margin-top:8px}
 footer{padding:26px 0;font-size:13px;font-weight:500}
 @media(max-width:600px){.cifra{box-shadow:5px 5px 0 #fff}}
 """
