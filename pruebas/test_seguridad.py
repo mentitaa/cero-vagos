@@ -128,3 +128,81 @@ class PruebaEnlacesExternos(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class PruebaLaPaletaEsLey(unittest.TestCase):
+    """
+    La paleta se define en un solo sitio y nadie escribe colores por su cuenta.
+
+    Elegida el 13/8/2026, después de que el feedback dijera que los colores
+    parecían puestos por poner. Y lo parecían porque lo estaban: había SIETE
+    tonos saturados —rojo, amarillo, lima, cyan, magenta, azul y crema— sin
+    ninguna regla de quién manda. El amarillo se usaba 17 veces y el rojo 13:
+    el color de marca no era el que más aparecía en su propia web.
+
+    Estas pruebas no juzgan el gusto. Vigilan lo único que se puede vigilar:
+    que la regla siga en pie cuando alguien toque el CSS dentro de seis meses.
+    """
+
+    ARCHIVOS = ("index.html", "motor/sitio.py",
+                "motor/transparencia.py", "motor/lugares.py")
+
+    # Los siete de antes. Si alguno reaparece, es que volvió el desorden.
+    MUERTOS = ("--rojo", "--negro", "--crema", "--amarillo",
+               "--lima", "--cyan", "--magenta", "--azul")
+
+    def texto(self, archivo: str) -> str:
+        return (RAIZ / archivo).read_text(encoding="utf-8")
+
+    def test_ningun_archivo_usa_los_colores_viejos(self):
+        for archivo in self.ARCHIVOS:
+            texto = self.texto(archivo)
+            for muerto in self.MUERTOS:
+                with self.subTest(archivo=archivo, color=muerto):
+                    self.assertNotIn(f"var({muerto})", texto)
+
+    def test_las_cuatro_plantillas_declaran_la_misma_paleta(self):
+        """
+        Son cuatro archivos distintos y ya nos pasó con el score y con el modo
+        oscuro: uno se queda atrás y nadie lo nota hasta que alguien abre esa
+        página. Los valores tienen que coincidir exactamente.
+        """
+        import re
+
+        esperado = {"--marca": "#FF1E1E", "--tinta": "#101B2D",
+                    "--fondo": "#F5F1E8", "--acento": "#FFB703"}
+        for archivo in self.ARCHIVOS:
+            texto = self.texto(archivo)
+            for nombre, valor in esperado.items():
+                with self.subTest(archivo=archivo, color=nombre):
+                    m = re.search(re.escape(nombre) + r"\s*:\s*(#[0-9A-Fa-f]{6})", texto)
+                    self.assertIsNotNone(m, f"{archivo} no declara {nombre}")
+                    self.assertEqual(m.group(1).upper(), valor,
+                                     f"{archivo} tiene otro {nombre}")
+
+    def test_el_rojo_de_marca_no_significa_MAL(self):
+        """
+        En /transparencia hay que decir "bien" y "mal", y el rojo de la marca
+        no puede ser el "mal": sería la identidad del sitio calificando de
+        malo a alguien, y haría que el color más presente de la web fuera el
+        de la peor nota. Por eso existe `--alerta`, que es otro rojo.
+        """
+        texto = self.texto("motor/transparencia.py")
+        self.assertIn("--alerta", texto)
+        self.assertIn('"baja": "var(--alerta)"', texto)
+        self.assertNotIn('"baja": "var(--marca)"', texto)
+
+    def test_no_quedan_colores_escritos_a_mano_en_la_portada(self):
+        """
+        Un color suelto en mitad del CSS es como se deshace una paleta: nadie
+        lo ve, no rompe nada, y al cabo de un año hay siete otra vez.
+        """
+        import re
+
+        html = self.texto("index.html")
+        raiz = html.index(":root{")
+        fuera = html[html.index("}", raiz):]
+        # El negro de una máscara no es un color: es un recorte.
+        fuera = fuera.replace("#000", "")
+        sueltos = re.findall(r"#[0-9A-Fa-f]{3,8}\b", fuera)
+        self.assertEqual(sueltos, [], f"colores fuera de la paleta: {sueltos}")
