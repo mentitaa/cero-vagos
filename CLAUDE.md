@@ -88,6 +88,41 @@ De paso se quitó la inicial de la empresa del recuadro izquierdo. Nadie sabía
 qué era, y no identificaba nada: el color salía de la POSICIÓN de la tarjeta,
 así que la misma empresa cambiaba de color al filtrar o al dar "Ver más".
 
+## La paleta (13/8/2026)
+
+Vive en el `:root` de `index.html` y se repite igual en las tres plantillas
+generadas (`sitio.py`, `transparencia.py`, `lugares.py`). **Fuera de ahí no se
+escribe ningún color**, y hay un test que lo vigila.
+
+| | | Su único trabajo |
+|---|---|---|
+| `--marca` | `#FF1E1E` | Identidad y acción: barra de arriba, hero, botón de postular. |
+| `--tinta` | `#101B2D` | Texto, bordes, sombras y bloques oscuros. |
+| `--fondo` | `#F5F1E8` | El fondo de todo el sitio. |
+| `--acento` | `#FFB703` | Marcar lo que el aviso SÍ trae, y el sueldo. Nada más. |
+| `--ok` / `--alerta` | | **Solo** en `/transparencia`. No son de marca. |
+
+**Por qué se hizo.** El feedback fue que los colores parecían puestos por
+poner — y lo parecían porque lo estaban: había **siete** tonos saturados (rojo,
+amarillo, lima, cyan, magenta, azul, crema) sin ninguna regla de quién manda.
+El amarillo se usaba 17 veces y el rojo 13: el color de marca no era el que más
+aparecía en su propia web.
+
+**Tres decisiones que conviene no deshacer:**
+
+- **El negro puro pasó a azul tinta.** Sobre tinta el rojo golpea más y vibra
+  menos, y separa el sitio de Laborum, que es rojo y blanco.
+- **Un solo acento.** Amarillo, lima, cyan y magenta eran cuatro decoraciones;
+  ahora son un ámbar con un trabajo. Las cuatro tarjetas del filtro van del
+  MISMO color a propósito: son cuatro reglas que valen lo mismo, y pintarlas
+  distinto insinuaba una jerarquía que no existe.
+- **El rojo de marca no significa "mal".** En `/transparencia` la peor nota
+  usa `--alerta`, otro rojo. Si la marca calificara de malo a alguien, el color
+  más presente de la web sería el de la peor calificación.
+
+El logo va sobre el fondo hueso, sobre la tinta o sobre blanco. **Nunca sobre
+el ámbar**: rojo sobre naranja vibra y se lee mal.
+
 El logo vive en `assets/`, en tres versiones que existen por una razón:
 `logo-oscuro.svg` (rojo + negro) para fondos claros, `logo-claro.svg`
 (rojo + blanco) para fondos oscuros, y `logo-mono.svg` (todo blanco) para la
@@ -103,7 +138,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **425** y pasan todos.
+Los tests son **429** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -572,7 +607,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 425 tests
+python3 -m unittest discover pruebas -v      # los 429 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
