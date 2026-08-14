@@ -17,8 +17,9 @@ casos donde decir que sí costaría una semana de trabajo perdido.
 from __future__ import annotations
 
 import unittest
+from unittest import mock
 
-from motor.sondeo import Aviso, Sondeo, informe
+from motor.sondeo import Aviso, Sondeo, elegir_lector, informe
 
 
 def _aviso(puesto: str, sueldo: int = 0, aprobada: bool = False,
@@ -105,6 +106,71 @@ class PruebaLosDosErroresQueYaPasaron(unittest.TestCase):
 
         self.assertTrue(s.vale_la_pena)
         self.assertIn("Vale la pena", informe(s))
+
+
+class PruebaSabeMirarLoDificil(unittest.TestCase):
+    """
+    La primera versión del sondeo se rendía ante dos cosas: "está hecha en
+    JavaScript" y "ese sistema no tiene lector escrito". Con eso se negó a
+    contar **Falabella y Cencosud** — las dos bolsas grandes, o sea las dos
+    únicas que había que medir. Un sondeo que solo sondea lo fácil no sirve
+    para decidir nada.
+
+    Y lo tonto del caso: el navegador ya estaba. Bumeran y Laborum se leen con
+    Playwright todas las madrugadas.
+    """
+
+    def _lector(self, url, html, con_navegador=True):
+        with mock.patch("motor.sondeo.HAY_PLAYWRIGHT", con_navegador):
+            return elegir_lector(url, html, "Prueba")
+
+    def test_una_pagina_en_javascript_se_mira_con_navegador(self):
+        """El caso Falabella."""
+        fuente, como = self._lector("https://muevete.falabella.com",
+                                    "You need to enable JavaScript to run this app.")
+        self.assertIsNotNone(fuente, "se rindió ante una página que sí se puede mirar")
+        self.assertTrue(fuente.necesita_render)
+        self.assertIn("navegador", como)
+
+    def test_un_ats_sin_lector_propio_tambien(self):
+        """
+        El caso Cencosud. Para CONTAR no hace falta el lector definitivo: un
+        aviso bien hecho publica sus datos en el formato que pide Google, y eso
+        se lee igual venga de Cornerstone o de Workday. El lector prolijo se
+        escribe después, y solo si el sondeo dijo que valía la pena.
+        """
+        fuente, como = self._lector(
+            "https://cencosud.csod.com/ux/ats/careersite/10/home?c=cencosud",
+            "<html>" + "x" * 5000 + "</html>")
+        self.assertIsNotNone(fuente)
+        self.assertTrue(fuente.necesita_render)
+        self.assertIn("Cornerstone", como)
+
+    def test_sin_navegador_instalado_dice_como_instalarlo(self):
+        """
+        Rendirse está bien; rendirse sin decir qué hacer, no. El comando va
+        completo, para copiar y pegar.
+        """
+        fuente, como = self._lector("https://muevete.falabella.com",
+                                    "You need to enable JavaScript to run this app.",
+                                    con_navegador=False)
+        self.assertIsNone(fuente)
+        self.assertIn("pip3 install playwright", como)
+
+    def test_lo_que_ya_tiene_lector_NO_abre_el_navegador(self):
+        """
+        Greenhouse y Lever tienen API pública: abrir un navegador para leer un
+        JSON sería tardarse veinte veces más para el mismo dato.
+        """
+        fuente, como = self._lector("https://boards.greenhouse.io/acme", "")
+        self.assertIn("Greenhouse", como)
+        self.assertFalse(getattr(fuente, "necesita_render", False))
+
+    def test_una_web_normal_sigue_leyendose_sin_navegador(self):
+        fuente, como = self._lector("https://empresa.pe/trabaja-con-nosotros",
+                                    "<html>" + "x" * 5000 + "</html>")
+        self.assertFalse(fuente.necesita_render)
+        self.assertIn("sin navegador", como)
 
 
 class PruebaCuandoNoSePuedeNiEntrar(unittest.TestCase):
