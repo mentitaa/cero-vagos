@@ -33,6 +33,7 @@ from dataclasses import dataclass, field
 
 from .fuentes.base import Fuente
 from .fuentes.empresas import Greenhouse, Lever, detectar_ats, portal_propio
+from .fuentes.render import HAY_PLAYWRIGHT
 from .fuentes.robots import Robots
 from .pipeline import procesar_cruda
 
@@ -114,36 +115,76 @@ def _cuenta_de(patron: str, texto: str) -> str:
     return m.group(1) if m else ""
 
 
+# Cómo se llama la página de UN aviso, según quién armó la bolsa. La lista
+# larga es a propósito: cada sistema de reclutamiento le puso otro nombre a la
+# misma cosa, y si el sondeo no reconoce el nombre no encuentra ni un aviso y
+# reporta un cero que parece una medición y no lo es.
+#   requisition / req  → Cornerstone, Taleo
+#   job / jobs         → Greenhouse, Lever, SmartRecruiters
+#   posting            → Workday
+#   vacante / puesto   → webs peruanas a medida
+_PATRON_AVISO = (r"/(empleo|empleos|vacante|vacantes|oportunidad|oportunidades|"
+                 r"job|jobs|posting|postings|requisition|req|posicion|posiciones|"
+                 r"puesto|puestos|carrera|careers|trabaja|detalle)[^\"'\s]*")
+
+
+def _generico(url: str, nombre: str, con_navegador: bool) -> Fuente:
+    base = re.match(r"https?://[^/]+", url)
+    return portal_propio(nombre, base.group(0) if base else url,
+                         listados=(url,), necesita_render=con_navegador,
+                         patron_aviso=_PATRON_AVISO)
+
+
 def elegir_lector(url: str, html: str, nombre: str = "") -> tuple[Fuente | None, str]:
     """
     Devuelve el lector que sirve para esa bolsa y una frase que explica cómo
-    está hecha. Si no hay lector escrito todavía, devuelve (None, explicación).
+    está hecha. Si no hay forma de mirar adentro, devuelve (None, explicación).
+
+    La primera versión de esto se rendía en dos casos —"está hecha en
+    JavaScript" y "ese sistema no tiene lector escrito"— y con eso se negó a
+    contar Falabella y Cencosud, que son justamente las dos bolsas grandes que
+    había que medir. Era un sondeo que solo sabía sondear lo fácil.
+
+    Y era un error tonto, porque **el navegador ya estaba**: Bumeran y Laborum
+    se leen con Playwright todas las madrugadas. Lo que falta no es la
+    herramienta sino usarla acá.
+
+    Para mirar adentro no hace falta el lector definitivo. Un aviso de empleo
+    bien hecho publica sus datos en el formato que pide Google (JSON-LD), y eso
+    se lee igual venga de Cornerstone, de Workday o de una web a medida. Si el
+    sondeo alcanza a contar los avisos y ver los sueldos, ya contestó la
+    pregunta; el lector rápido y prolijo se escribe DESPUÉS, y solo si la
+    respuesta fue que sí.
     """
     nombre = nombre or "Sondeo"
     ats = detectar_ats(url) or detectar_ats(html)
+    necesita_js = "enable JavaScript" in html or len(html) < 2000
 
     if ats == "greenhouse":
         cuenta = _cuenta_de(r"greenhouse\.io/(?:embed/job_board\?for=|boards/)?"
                             r"([a-z0-9_-]+)", url + " " + html)
         if cuenta:
             return Greenhouse(cuenta, nombre), "Greenhouse (API pública)"
-        return None, "Greenhouse, pero no se ve el nombre del tablero"
 
     if ats == "lever":
         cuenta = _cuenta_de(r"lever\.co/([a-z0-9_-]+)", url + " " + html)
         if cuenta:
             return Lever(cuenta, nombre), "Lever (API pública)"
-        return None, "Lever, pero no se ve el nombre del tablero"
 
-    if ats:
-        return None, f"{ats.title()}: todavía no hay lector escrito para ese sistema"
+    if not ats and not necesita_js:
+        return _generico(url, nombre, False), "Web propia, se lee sin navegador"
 
-    if "enable JavaScript" in html or len(html) < 2000:
-        return None, "Aplicación en JavaScript: hace falta navegador (Playwright)"
+    # Todo lo demás —un ATS sin lector propio, o una página que se arma sola en
+    # el navegador— se mira con Playwright y JSON-LD.
+    como = (f"{ats.title()}: sin lector propio todavía, se mira con navegador"
+            if ats else "Aplicación en JavaScript, se mira con navegador")
 
-    base = re.match(r"https?://[^/]+", url)
-    return portal_propio(nombre, base.group(0) if base else url,
-                         listados=(url,)), "Web propia, se lee sin navegador"
+    if not HAY_PLAYWRIGHT:
+        return None, (f"{como.split(',')[0]}. Falta el navegador. Instalalo con:\n"
+                      f"       pip3 install playwright && python3 -m playwright "
+                      f"install chromium")
+
+    return _generico(url, nombre, True), como
 
 
 # --------------------------------------------------------------------------
