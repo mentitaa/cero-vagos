@@ -600,6 +600,49 @@ _CORTE_CARGO = re.compile(
 _SIGUE_EL_CARGO = re.compile(r"^(?:de|del|de\s+la|en)\b", re.IGNORECASE)
 
 
+# Palabras que nombran un RANGO, no un oficio.
+#
+# Es la diferencia que explica por qué la regla 8 dejaba pasar "Técnico" y
+# "Jefe": las dos están en OFICIOS, así que el título "nombraba un puesto"…
+# pero un rango solo no dice qué es el trabajo. "Enfermera" sí lo dice.
+# "Especialista" obliga a preguntar: ¿especialista en qué?
+#
+# Se ve sobre todo en las convocatorias del Estado, donde el cargo normado a
+# veces es literalmente "Técnico I" o "Auxiliar".
+GENERICOS = {
+    "jefe", "jefa", "tecnico", "tecnica", "especialista", "asistente",
+    "analista", "auxiliar", "coordinador", "coordinadora", "supervisor",
+    "supervisora", "operario", "operaria", "operador", "operadora",
+    "ejecutivo", "ejecutiva", "gestor", "gestora", "practicante", "ayudante",
+    "administrador", "administradora", "consultor", "consultora",
+    "representante", "profesional", "personal", "apoyo", "encargado",
+    "encargada", "promotor", "promotora", "asesor", "asesora",
+}
+
+# Lo que no aporta especialidad: género, niveles de escala y conectores.
+# "Técnico I" es tan vago como "Técnico": el número dice el nivel, no el
+# oficio.
+_SIN_VALOR = {
+    "i", "ii", "iii", "iv", "v", "de", "del", "la", "el", "los", "las", "en",
+    "y", "a", "o", "para", "un", "una", "al", "con", "sr", "jr", "senior",
+}
+
+
+def titulo_vago(titulo: str) -> bool:
+    """
+    ¿El título es solo un rango, sin decir de qué?
+
+        "Técnico"                  -> True
+        "Técnico I"                -> True   (el número es el nivel)
+        "Técnico en Enfermería"    -> False
+        "Enfermera"                -> False  (un oficio se basta solo)
+        "Especialista en Calidad"  -> False
+    """
+    palabras = [p for p in re.findall(r"[a-z]+", sin_tildes(titulo).lower())
+                if p not in _SIN_VALOR]
+    return not palabras or all(p in GENERICOS for p in palabras)
+
+
 def titulo_nombra_el_puesto(titulo: str) -> bool:
     """
     ¿El título dice QUÉ es el trabajo, o solo dónde y para quién?

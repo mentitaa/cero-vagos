@@ -543,6 +543,40 @@ class Almacen:
             "por_ciudad": por_transparencia(agrupar("ciudad", 3)),
         }
 
+    def titulos_vagos(self) -> list[dict]:
+        """
+        Las ofertas publicadas cuyo título es solo un rango: "Técnico", "Jefe",
+        "Especialista" a secas.
+
+        NO se rechazan (decisión de Mentita, 13/8/2026): se miden. La razón de
+        medir antes de decidir es que hay dos casos distintos metidos en el
+        mismo saco, y conviene ver el reparto real antes de tocar el filtro.
+
+          · **Del Estado no esconden nada.** "Técnico I" o "Auxiliar" es el
+            cargo tal como figura en la escala normada. La entidad no está
+            siendo evasiva: así se llama el puesto en la ley.
+          · **Del privado sí es una elección.** Nadie obliga a una consultora
+            a titular su aviso "Asesor" a secas. Esos son primos hermanos de
+            "Papa Johns", que es el caso para el que se escribió la regla 8.
+
+        Si el número del privado crece, hay motivo para endurecer solo ese
+        lado. Si se queda en tres o cuatro, no vale la pena tocar nada.
+        """
+        from .normalizar import titulo_vago
+
+        filas = self.con.execute(
+            "SELECT puesto, empresa, fuente, ciudad FROM ofertas "
+            "WHERE aprobada = 1 AND vigente = 1 ORDER BY fuente, puesto"
+        ).fetchall()
+        return [
+            {"puesto": f["puesto"], "empresa": f["empresa"], "fuente": f["fuente"],
+             "ciudad": f["ciudad"],
+             # Las fuentes del Estado se llaman "Convocatorias …". Es la misma
+             # cuenta que hace el resto del motor.
+             "del_estado": "convocatorias" in (f["fuente"] or "").lower()}
+            for f in filas if titulo_vago(f["puesto"] or "")
+        ]
+
     def por_rubro(self, minimo: int = 8, excluir: tuple[str, ...] = ("Otros",)) -> list[dict]:
         """
         Lo mismo que `por_departamento` pero por rubro: Ventas, Salud, Logística.

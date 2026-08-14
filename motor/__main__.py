@@ -314,6 +314,23 @@ def cmd_stats(_args) -> None:
             print(f"  {marca} {n:>4}  {depa}")
         print(f"\n  {len(listos)} departamento(s) con página posible hoy.")
 
+    # Los títulos que no dicen qué es el trabajo. No se rechazan: se miden.
+    # Ver `Almacen.titulos_vagos` para por qué el reparto Estado/privado es lo
+    # que importa aquí.
+    vagos = Almacen().titulos_vagos()
+    if vagos:
+        del_estado = [v for v in vagos if v["del_estado"]]
+        privados = [v for v in vagos if not v["del_estado"]]
+        print(f"\nTítulos que no dicen qué es el trabajo:  {len(vagos)}")
+        print(f"  {len(del_estado):>4}  del Estado   (cargo normado, no esconden nada)")
+        print(f"  {len(privados):>4}  privados     (aquí sí fue una elección)")
+        if privados:
+            print("\n  Los privados, uno por uno:")
+            for v in privados[:15]:
+                print(f"    · {v['puesto']} — {v['empresa']}")
+            if len(privados) > 15:
+                print(f"    · … y {len(privados) - 15} más")
+
 
 def cmd_reevaluar(args) -> None:
     """
