@@ -149,10 +149,11 @@ Otros comandos:
 ```bash
 python3 -m motor diagnostico                    # revisar si cada fuente se puede leer
 python3 -m motor probar-url "https://..."       # leer UNA oferta y ver si pasaría el filtro
+python3 -m motor sondear "https://..."          # ¿cuántos avisos tiene y cuántos dicen el sueldo?
 python3 -m motor stats                          # cómo va la base
 python3 -m motor rechazos                       # qué se botó y por qué
 python3 -m motor probar "S/ 2,800 a S/ 3,400"   # probar el parser de sueldos
-python3 -m unittest discover pruebas -v         # tests (442)
+python3 -m unittest discover pruebas -v         # tests (451)
 ```
 
 Si el proyecto vive en una carpeta sincronizada (iCloud, Drive, Dropbox),
@@ -411,16 +412,32 @@ rediseñan la web— sino uno por ATS: cinco lectores cubren cientos de empresas
 Ya están escritos los de **Greenhouse** y **Lever** (API pública, JSON limpio).
 Para los demás se usa el JSON-LD que publican para Google Jobs.
 
-Antes de escribir una línea de código para una empresa nueva:
+Antes de escribir una línea de código para una empresa nueva, **sondearla**:
+
+```bash
+python3 -m motor sondear "https://www.empresa.com.pe/trabaja-con-nosotros"
+```
+
+Contesta las tres preguntas que deciden una fuente: si nos dejan entrar,
+cuántos avisos tiene y **cuántos dicen el sueldo**. La última la contesta con
+el filtro de verdad, así que el número no puede prometer más de lo que la
+corrida real va a entregar. No guarda nada.
+
+Existe por los dos errores que ya se pagaron: BuscoTrabajo dejaba entrar y
+tenía 4 avisos; las bolsas universitarias tenían 8,287 vacantes y ni un solo
+sueldo. Si de la muestra no sale ningún aviso con sueldo, ahí se acaba —da lo
+mismo el volumen y da lo mismo qué empresas sean.
+
+Si pasa el sondeo, el siguiente comando dice qué lector agregar:
 
 ```bash
 python3 -m motor conectar "https://www.empresa.com.pe/trabaja-con-nosotros"
 ```
 
-Ese comando revisa el robots.txt, detecta qué ATS usa y te dice exactamente qué
-lector agregar (`motor/fuentes/empresas.py`). Rubros que valen la pena por
-volumen y por sueldos publicados: banca y seguros, retail y consumo masivo,
-minería, agroexportación, telecom y tecnología.
+Revisa el robots.txt, detecta qué ATS usa y nombra el lector
+(`motor/fuentes/empresas.py`). Rubros que valen la pena por volumen y por
+sueldos publicados: banca y seguros, retail y consumo masivo, minería,
+agroexportación, telecom y tecnología.
 
 ```bash
 python3 -m motor recolectar --empresas --exportar

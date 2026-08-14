@@ -52,11 +52,39 @@ Por eso conviene escribir **un lector por ATS y no uno por empresa**: cinco
 lectores cubren cientos de compañías, y no se rompen cuando alguien rediseña la
 web.
 
+## Antes de nada: sondear
+
+**Ninguna bolsa se conecta sin sondearla primero.** No es una recomendación,
+es la lección de los dos únicos errores caros que dio esta lista.
+
+- **BuscoTrabajo** estuvo semanas acá como "la gran fuente privada que falta".
+  Su `robots.txt` nos deja entrar y es la única peruana fuera de Jobint. Nadie
+  contó los avisos: tiene **4 empleos activos**, tres de la misma empresa.
+- **Las bolsas universitarias** tenían 501 empresas y 8,287 vacantes, y se
+  cayeron igual: **ninguna publica el sueldo**.
+
+Los dos habrían muerto en veinte minutos con esto:
+
+```bash
+python3 -m motor sondear "https://la-url-que-encontraste"
+```
+
+Contesta las tres preguntas que deciden una fuente, en orden: **¿nos dejan
+entrar?**, **¿cuántos avisos hay?** y **¿cuántos dicen el sueldo?**. La
+tercera la contesta con el filtro de verdad —cada aviso de la muestra pasa por
+el mismo código que decide qué se publica cada madrugada— así que el número
+que da no puede prometer más de lo que la corrida real va a entregar.
+
+No guarda nada ni toca la base: se puede correr las veces que haga falta.
+
+Si de la muestra no sale ni un solo aviso con sueldo, se acabó. No importa
+cuántas vacantes tenga ni qué empresas sean.
+
 ## Cómo dar de alta una empresa nueva
 
 1. Busca en Google `nombre de la empresa` + `trabaja con nosotros` o `careers`.
    Si la empresa es una marca, busca primero a qué grupo pertenece.
-2. Corre:
+2. Sondéala (arriba). Si pasa, corre:
 
    ```bash
    python3 -m motor conectar "https://la-url-que-encontraste"
