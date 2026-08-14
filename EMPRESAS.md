@@ -102,10 +102,25 @@ cuántas vacantes tenga ni qué empresas sean.
 
 | Empresa / grupo | robots.txt | Tecnología | Estado |
 |---|---|---|---|
-| **Grupo Falabella** (Sodimac, Tottus) | ✅ Permite todo | Portal propio en React | Configurado, necesita Playwright |
-| **Cencosud** (Metro, Wong) | por confirmar | Cornerstone OnDemand | Configurado, sin verificar |
+| **Grupo Falabella** (Sodimac, Tottus) | ✅ Permite todo | Portal propio en React | Sondeado el 13/8/2026: **hace falta el navegador** |
+| **Cencosud** (Metro, Wong) | ✅ Permite | Cornerstone OnDemand | Sondeado el 13/8/2026: **hace falta el navegador** |
 | **Delosi** (KFC, Pizza Hut, BK) | — | Publica en Computrabajo | Sin acceso: Computrabajo nos bloquea |
 | **Camposol** | — | La URL probada no respondió | Hay que ubicar su bolsa real |
+
+**Los dos grandes se leen solo con navegador**, y las dos veces por la misma
+razón: la página llega vacía y se arma sola en el navegador. No es un muro —
+Bumeran y Laborum son iguales y se leen todas las madrugadas— pero significa
+que sondearlos exige tener Playwright instalado en la laptop:
+
+```bash
+pip3 install playwright && python3 -m playwright install chromium
+```
+
+Que hagan falta veinte minutos de instalación para poder CONTAR ya es un dato:
+las bolsas fáciles de leer están en otro lado. En agroexportación —Camposol,
+Danper, Virú, Beta, Agrokasa— las webs son sencillas, se leen sin navegador, y
+además contratan por campaña con jornal declarado, que es lo que a nosotros nos
+sirve.
 
 ## Bolsas universitarias: la puerta está cerrada, y con razón
 
