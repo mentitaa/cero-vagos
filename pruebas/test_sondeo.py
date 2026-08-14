@@ -92,12 +92,69 @@ class PruebaLosDosErroresQueYaPasaron(unittest.TestCase):
         """
         s = Sondeo(url="https://buscotrabajo.pe", permite=True,
                    como_esta_hecha="Web propia, se lee sin navegador",
+                   enlaces_vistos=4,
                    avisos=[_aviso("Vendedor"), _aviso("Cajero"),
                            _aviso("Asesor"), _aviso("Repartidor")])
 
         texto = informe(s)
         self.assertIn("4", texto)
         self.assertIn("no escribas el lector", texto.lower())
+
+
+class PruebaUnCeroNuncaEsUnVeredicto(unittest.TestCase):
+    """
+    El error más caro que puede cometer este comando, y ya lo cometió.
+
+    Falabella y Cencosud devolvieron **0 avisos** y el informe los despachó con
+    un "No hay avisos que contar. No escribas el lector." Los dos portales
+    tienen avisos de sobra: lo que pasó es que el lector genérico no reconoció
+    sus enlaces.
+
+    Desde afuera no hay forma de distinguir "está vacía" de "no supe dónde
+    mirar". Como no se puede distinguir, no se opina. Es la misma trampa de las
+    corridas —*una fuente que devuelve cero sale en verde*— pero peor, porque
+    acá el cero venía con un consejo, y un consejo equivocado mata una fuente
+    buena y nadie vuelve a mirarla.
+    """
+
+    def test_cero_avisos_NO_dice_que_no_escribas_el_lector(self):
+        s = Sondeo(url="https://muevete.falabella.com", permite=True,
+                   como_esta_hecha="Aplicación en JavaScript, se mira con navegador")
+        texto = informe(s)
+
+        self.assertNotIn("No escribas el lector", texto)
+        self.assertNotIn("No hay avisos", texto)
+        self.assertIn("No supe encontrar los avisos", texto)
+
+    def test_con_cero_dice_QUE_HACER_para_salir_de_la_duda(self):
+        """Rendirse sin decir el siguiente paso deja la fuente muerta."""
+        s = Sondeo(url="https://muevete.falabella.com", permite=True)
+        self.assertIn("probar-url", informe(s))
+
+    def test_distingue_no_encontrarlos_de_no_poder_leerlos(self):
+        """
+        Son dos problemas distintos y se arreglan distinto. Si encontró 30
+        enlaces y no leyó ninguno, los avisos están y falta el lector. Si no
+        encontró ni un enlace, ni siquiera supo dónde mirar.
+        """
+        ciego = informe(Sondeo(url="https://x.pe", permite=True))
+        mudo = informe(Sondeo(url="https://x.pe", permite=True, enlaces_vistos=30))
+
+        self.assertIn("No supe encontrar", ciego)
+        self.assertIn("30 enlaces", mudo)
+        self.assertIn("Los avisos están", mudo)
+
+    def test_el_informe_muestra_los_dos_numeros_por_separado(self):
+        """
+        Descubrir y leer no son lo mismo, y el informe tiene que dejar ver la
+        diferencia sin que haya que interpretarla.
+        """
+        s = Sondeo(url="https://x.pe", permite=True, enlaces_vistos=25,
+                   avisos=[_aviso("Analista", 3000, aprobada=True)])
+        texto = informe(s)
+
+        self.assertIn("Enlaces de aviso      25", texto)
+        self.assertIn("Avisos que pudo leer  1", texto)
 
     def test_una_bolsa_que_si_vale_la_pena_lo_dice(self):
         s = Sondeo(url="https://empresa.pe/careers", permite=True, avisos=(
