@@ -70,6 +70,11 @@ class Sondeo:
     como_esta_hecha: str = ""
     avisos: list[Aviso] = field(default_factory=list)
     problema: str = ""
+    # Cuántas direcciones de aviso alcanzó a DESCUBRIR en la página, que es
+    # distinto de cuántas alcanzó a LEER. La diferencia es la que separa "esta
+    # bolsa está vacía" de "no supe dónde mirar", y confundirlas es el peor
+    # error que puede cometer este comando. Ver `_veredicto`.
+    enlaces_vistos: int = 0
 
     # --- los tres números que deciden ---------------------------------------
 
@@ -222,6 +227,20 @@ def sondear(url: str, limite: int = 25, nombre: str = "") -> Sondeo:
         s.problema = s.como_esta_hecha
         return s
 
+    # Primero DESCUBRIR, después LEER, y contar las dos cosas por separado.
+    #
+    # Sin esta separación un cero no se puede interpretar: no se sabe si la
+    # bolsa está vacía o si el lector no supo dónde mirar. La primera versión
+    # de este comando reportó "0 avisos · no escribas el lector" para Falabella
+    # y Cencosud, dos portales que evidentemente tienen avisos. Un cero mal
+    # leído es peor que no medir, porque viene con veredicto.
+    descubrir = getattr(fuente, "urls_de_avisos", None)
+    if callable(descubrir):
+        try:
+            s.enlaces_vistos = len(descubrir(limite))
+        except Exception:                              # noqa: BLE001
+            s.enlaces_vistos = 0
+
     try:
         for cruda in fuente.recolectar(limite):
             oferta = procesar_cruda(cruda)
@@ -234,6 +253,11 @@ def sondear(url: str, limite: int = 25, nombre: str = "") -> Sondeo:
             ))
     except Exception as e:                             # noqa: BLE001
         s.problema = f"Se pudo entrar pero no leer los avisos: {e}"
+
+    # Los lectores de API (Greenhouse, Lever) no descubren direcciones: piden
+    # la lista entera de una. Ahí lo leído ES lo descubierto.
+    if not callable(descubrir):
+        s.enlaces_vistos = s.cuantos
 
     return s
 
@@ -262,7 +286,8 @@ def informe(s: Sondeo) -> str:
             lineas.append("  hay que resolver esto.")
             return "\n".join(lineas)
 
-    lineas.append(f"  Avisos que encontró   {s.cuantos}")
+    lineas.append(f"  Enlaces de aviso      {s.enlaces_vistos}")
+    lineas.append(f"  Avisos que pudo leer  {s.cuantos}")
     lineas.append(f"  Dicen el sueldo       {len(s.con_sueldo)} de {s.cuantos}"
                   f"  ({s.porcentaje_con_sueldo}%)")
     lineas.append(f"  Se publicarían        {len(s.publicables)}")
@@ -283,8 +308,34 @@ def informe(s: Sondeo) -> str:
 
 
 def _veredicto(s: Sondeo) -> str:
+    """
+    La regla que gobierna todo esto: **un cero nunca es un veredicto.**
+
+    Desde afuera no hay forma de distinguir "esta bolsa no tiene avisos" de
+    "no supe dónde mirar", y el sondeo no puede fingir que sí. Falabella y
+    Cencosud devolvieron cero y salieron con un "no escribas el lector" que
+    era falso: los dos portales tienen avisos de sobra, lo que pasó es que el
+    lector genérico no supo reconocer sus enlaces.
+
+    Es la misma trampa que ya está anotada para las corridas —*una fuente que
+    devuelve cero no falla, sale en verde*— y aquí es peor, porque acá el cero
+    viene acompañado de un consejo. Un consejo equivocado mata una fuente
+    buena y nadie vuelve a mirarla.
+
+    Así que solo un número POSITIVO puede producir un veredicto. Con cero, lo
+    único honesto es decir qué hacer para salir de la duda.
+    """
     if not s.cuantos:
-        return "No hay avisos que contar. No escribas el lector."
+        if s.enlaces_vistos:
+            return (f"Encontró {s.enlaces_vistos} enlaces de aviso pero no pudo "
+                    f"leer ninguno.\n  Los avisos están; falta un lector que "
+                    f"entienda ESE formato.\n  Mirá uno a mano:  "
+                    f"python3 -m motor probar-url \"<enlace de un aviso>\"")
+        return ("No supe encontrar los avisos en esa página.\n"
+                "  Eso NO quiere decir que no tenga: quiere decir que el lector "
+                "genérico\n  no reconoció sus enlaces. Abrila en el navegador, "
+                "entrá a un aviso\n  y probá esa dirección con:  "
+                "python3 -m motor probar-url \"<dirección>\"")
     if not s.con_sueldo:
         return ("NINGUNO dice el sueldo. Es la historia de las bolsas "
                 "universitarias: no escribas el lector.")
