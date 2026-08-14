@@ -138,7 +138,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **434** y pasan todos.
+Los tests son **442** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -281,8 +281,8 @@ beneficios de ley, que es más de lo que trae el 95% de los avisos privados.
   escriba donde escribe el bot. Mucho riesgo para poco.
 
 **Lo que queda vivo de esto.** Los títulos que no dicen qué es el trabajo
-—«Jefe», «Técnico», «Especialista»— siguen anotados aparte en el tablero. Son
-un problema de la regla 8, no de esta decisión, y se tratan por su cuenta.
+—«Jefe», «Técnico», «Especialista»— son un problema de la regla 8, no de esta
+decisión. Ver abajo.
 
 *El detalle de cómo se llegó acá —los 54 fallos repartidos por motivo, la
 hipótesis del bloqueo geográfico que resultó falsa, y por qué se construyó el
@@ -336,6 +336,32 @@ publicado. Con cero grupos no había primer grupo, así que no se limpiaba nada 
 las páginas viejas se quedaban publicadas para siempre — justo el caso extremo
 que la limpieza existe para cubrir. Lo cazó un test que ya estaba escrito.
 
+## Los títulos que solo dicen un rango (13/8/2026)
+
+La regla 8 tenía un agujero: daba por bueno **«Técnico»** porque "tecnico"
+está en la lista de oficios. Pero un rango solo no es un puesto — «Enfermera»
+dice qué vas a hacer, «Especialista» obliga a preguntar en qué.
+
+Esa es la distinción, y está en `titulo_vago` (`motor/normalizar.py`): hay
+palabras que nombran un **oficio** y palabras que nombran un **rango**. Un
+número de escala tampoco cuenta: «Técnico I» es tan vago como «Técnico».
+
+**No se rechazan. Se miden** (decisión de Mentita). `motor stats` los cuenta
+separados en dos grupos, porque son dos casos que no se deciden igual:
+
+- **Del Estado no esconden nada.** «Técnico I» es el cargo tal como figura en
+  la escala normada. La entidad no está siendo evasiva.
+- **Del privado sí es una elección.** Nadie obliga a una consultora a titular
+  su aviso «Asesor» a secas. Esos son primos hermanos de «Papa Johns».
+
+Si el número del privado crece, hay motivo para endurecer **solo ese lado**.
+
+**Completarlos solos no se puede**, y se probó: el requisito «Título de técnico
+en enfermería» dice lo que hay que SER, no cuál es el puesto. Con «Jefe» y
+«Título en Ingeniería Civil» saldría «Ingeniero Civil», que puede no ser el
+cargo. Eso es inventar, y la regla 8 lo prohíbe. Vigilado en
+`pruebas/test_titulos_vagos.py`.
+
 ## Pendientes
 
 Lo que está esperando, en orden aproximado de impacto:
@@ -357,8 +383,14 @@ Lo que está esperando, en orden aproximado de impacto:
    150 a 180 minutos, el paso de privados de 60 a 100, y al Estado se le subió
    el límite de 120 a 300 avisos. Revisar en la siguiente corrida si el aviso
    de tiempo agotado desapareció.
-3. **Enviar los correos a las universidades** (`PROPUESTA-UNIVERSIDADES.md`).
-   No depende de código y las respuestas tardan días.
+3. ~~Enviar los correos a las universidades~~ **DESCARTADO el 13/8/2026.**
+   Mentita revisó bolsas universitarias de Trujillo y Lima: **ninguna publica
+   el sueldo**. Eso mata la idea dos veces. La propuesta ya pedía publicar esas
+   ofertas con solo puesto, empresa y enlace —un agujero en la regla 1— con la
+   excusa de que el detalle se veía haciendo clic; ahora se sabe que al hacer
+   clic tampoco está el sueldo. Se rompía la promesa del sitio y encima no
+   servía. `PROPUESTA-UNIVERSIDADES.md` se conserva por si algún día una
+   universidad cambia de práctica.
 4. ~~Páginas por ciudad y por rubro~~ **Hechas el 12/8/2026**. Ver abajo.
 5. **Detector de requisitos discriminatorios** (Ley 26772). Se encontró un
    aviso pidiendo "Edad: entre 20 y 45 años".
@@ -621,7 +653,7 @@ python3 -m motor stats                       # cómo va la base
 python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
-python3 -m unittest discover pruebas -v      # los 434 tests
+python3 -m unittest discover pruebas -v      # los 442 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
