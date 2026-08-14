@@ -50,6 +50,20 @@ def cmd_conectar(args) -> None:
     print(como_conectar(args.url))
 
 
+def cmd_sondear(args) -> None:
+    """
+    Cuenta lo que una bolsa tiene DENTRO antes de escribirle un lector.
+
+    `conectar` contesta si nos dejan entrar y con qué está hecha. Eso nunca
+    alcanzó: BuscoTrabajo dejaba entrar y tenía 4 avisos, y las bolsas
+    universitarias tenían 8,287 vacantes y ni un solo sueldo. Este comando
+    contesta las otras dos preguntas —cuántos hay y cuántos dicen cuánto
+    pagan— y las contesta con el filtro de verdad.
+    """
+    from .sondeo import informe, sondear
+    print(informe(sondear(args.url, args.limite, args.nombre)))
+
+
 def cmd_probar_url(args) -> None:
     """
     Lee UNA oferta real y muestra qué entendió el motor y si aprobaría.
@@ -409,6 +423,14 @@ def main() -> None:
     c = sub.add_parser("conectar", help="ver cómo leer la bolsa de trabajo de una empresa")
     c.add_argument("url", help="URL de la página 'trabaja con nosotros'")
     c.set_defaults(func=cmd_conectar)
+
+    so = sub.add_parser("sondear",
+                        help="contar cuántos avisos tiene una bolsa y cuántos dicen el sueldo")
+    so.add_argument("url", help="URL de la página 'trabaja con nosotros'")
+    so.add_argument("--limite", type=int, default=25,
+                    help="cuántos avisos leer para la muestra (por defecto 25)")
+    so.add_argument("--nombre", default="", help="cómo se llama la empresa")
+    so.set_defaults(func=cmd_sondear)
 
     e = sub.add_parser("exportar", help="generar datos/ofertas.js")
     e.set_defaults(func=cmd_exportar)
