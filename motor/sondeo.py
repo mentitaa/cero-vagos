@@ -140,9 +140,14 @@ def _cuenta_de(patron: str, texto: str) -> str:
 #   job / jobs         → Greenhouse, Lever, SmartRecruiters
 #   posting            → Workday
 #   vacante / puesto   → webs peruanas a medida
+#   trabajo / trabajos → portales peruanos. Ojo: "trabaja" NO cubre "trabajo",
+#                        y por esa letra el sondeo no vio ni un aviso de
+#                        Trabajos Diarios, que resultó ser la mejor fuente
+#                        privada encontrada hasta ahora (13/8/2026).
 _PATRON_AVISO = (r"/(empleo|empleos|vacante|vacantes|oportunidad|oportunidades|"
                  r"job|jobs|posting|postings|requisition|req|posicion|posiciones|"
-                 r"puesto|puestos|carrera|careers|trabaja|detalle)[^\"'\s]*")
+                 r"puesto|puestos|carrera|careers|trabaja|trabajo|trabajos|"
+                 r"detalle)[^\"'\s]*")
 
 
 def _generico(url: str, nombre: str, con_navegador: bool) -> Fuente:
