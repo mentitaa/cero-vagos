@@ -162,6 +162,25 @@ def cmd_probar_url(args) -> None:
         print(f"\n{titulo} ({len(items)})")
         for it in items[:6]:
             print(f"  · {it[:110]}")
+    # Cuando un bloque sale vacío hay dos explicaciones y son opuestas: o el
+    # aviso no lo trae, o el motor no supo leerlo. Desde el resultado no se
+    # distinguen, y confundirlas manda a arreglar lo que no está roto — con
+    # Trabajos Diarios los doce avisos salieron en 0/0/0, un patrón demasiado
+    # parejo para venir de los avisos.
+    #
+    # Así que cuando falta algo, se muestra lo que el motor SÍ leyó. Si el
+    # texto está y aun así no se separó en bloques, el problema es de acá.
+    if not (o.funciones and o.requisitos and o.beneficios):
+        from .normalizar import html_a_lineas
+        lineas = html_a_lineas(cruda.cuerpo())
+        print(f"\nLo que el motor alcanzó a leer del aviso ({len(lineas)} líneas)")
+        if not lineas:
+            print("  (nada: el cuerpo del aviso llegó vacío)")
+        for linea in lineas[:18]:
+            print(f"  | {linea[:100]}")
+        if len(lineas) > 18:
+            print(f"  | … y {len(lineas) - 18} líneas más")
+
     print()
     from .score import Resultado
     r = Resultado(total=o.score, detalle=o.detalle_score, motivos=o.motivos_rechazo)
