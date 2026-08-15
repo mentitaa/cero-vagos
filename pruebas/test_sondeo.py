@@ -230,6 +230,57 @@ class PruebaSabeMirarLoDificil(unittest.TestCase):
         self.assertIn("sin navegador", como)
 
 
+class PruebaReconoceLosEnlacesDeVerdad(unittest.TestCase):
+    """
+    Cada bolsa le puso otro nombre a la página de un aviso. Si el sondeo no
+    reconoce el nombre, no descubre ni un enlace y reporta un cero — que ya
+    sabemos que no es un cero.
+
+    Las direcciones de acá son reales, no inventadas.
+    """
+
+    def _encuentra(self, url_de_aviso: str) -> bool:
+        import re
+        from motor.sondeo import _PATRON_AVISO
+        return bool(re.search(_PATRON_AVISO, url_de_aviso))
+
+    def test_falabella(self):
+        # La que mandó Mentita el 13/8/2026.
+        self.assertTrue(self._encuentra(
+            "https://muevete.falabella.com/detalle-oferta/615876/external"))
+
+    def test_trabajos_diarios(self):
+        """
+        Una letra. El patrón decía "trabaja" y sus avisos viven en /trabajo/,
+        así que no calzaba ni uno — y esta resultó ser la mejor fuente privada
+        que se ha encontrado. Un cero por una vocal.
+        """
+        self.assertTrue(self._encuentra(
+            "https://pe.trabajosdiarios.com/trabajo/3075258/"
+            "auxiliar-de-almacen-y-despacho-en-lima"))
+
+    def test_los_nombres_de_cada_sistema(self):
+        for url in ("https://x.csod.com/ux/ats/careersite/10/requisition/4821",
+                    "https://x.myworkdayjobs.com/es/carreras/job/Lima/Analista_R-9",
+                    "https://boards.greenhouse.io/acme/jobs/5512",
+                    "https://empresa.pe/vacantes/asistente-de-almacen",
+                    "https://empresa.pe/oportunidades/practicante-legal"):
+            with self.subTest(url=url):
+                self.assertTrue(self._encuentra(url))
+
+    def test_no_confunde_el_menu_con_un_aviso(self):
+        """
+        Al descubrir por nombre, media web calza. Lo que NO puede pasar es que
+        el sondeo cuente la página de contacto como si fuera una oferta: sería
+        un número inflado, que es la otra forma de mentir.
+        """
+        for url in ("https://empresa.pe/nosotros",
+                    "https://empresa.pe/contacto",
+                    "https://empresa.pe/politica-de-privacidad"):
+            with self.subTest(url=url):
+                self.assertFalse(self._encuentra(url))
+
+
 class PruebaCuandoNoSePuedeNiEntrar(unittest.TestCase):
 
     def test_sin_permiso_no_inventa_numeros(self):
