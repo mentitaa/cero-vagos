@@ -333,8 +333,20 @@ class PortalWeb(Fuente):
             if not patron.search(html):
                 self._anotar(f"En {origen} no hay enlaces que coincidan con "
                              f"'{self.patron_aviso}' (¿la página carga por JavaScript?)")
-            for cruda in patron.findall(html):
-                url = _limpiar_enlace(cruda, self.base)
+            # `finditer` + group(0) y NO `findall`, y la diferencia no es de
+            # estilo: si el patrón tiene paréntesis —y casi todos los tienen,
+            # porque sirven para enumerar alternativas: `/(trabajo|empleo)...`—
+            # `findall` devuelve SOLO lo que está entre paréntesis. O sea
+            # "trabajo", no "/trabajo/3075258/auxiliar-de-almacen".
+            #
+            # Todos los enlaces quedaban reducidos a la misma palabra, se
+            # deduplicaban entre sí y la página entera terminaba aportando UN
+            # enlace inservible. Trabajos Diarios, con 165 avisos en una sola
+            # categoría, reportó "1 enlace de aviso · 0 leídos" (13/8/2026).
+            #
+            # Fallaba en silencio: no hay error, no hay cero — hay un uno.
+            for encontrado in patron.finditer(html):
+                url = _limpiar_enlace(encontrado.group(0), self.base)
                 if url and url not in encontradas:
                     encontradas.append(url)
                 if len(encontradas) >= limite:
