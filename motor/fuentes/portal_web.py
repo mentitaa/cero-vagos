@@ -27,6 +27,7 @@ from .jsonld import extraer_jobposting
 from .render import HAY_PLAYWRIGHT, Navegador
 from .robots import Robots
 from .sitemap import filtrar_recientes, parsear
+from .trabajos_diarios import parsear as parsear_trabajos_diarios
 
 try:
     import requests
@@ -601,6 +602,31 @@ def portales_peru() -> list[PortalWeb]:
             espera_selector="script[type='application/ld+json'], h1",
             nota=("robots.txt solo bloquea rutas de cuenta. Sitemap en "
                   "/api/v1/sitemaps/index, con 50 mil avisos."),
+        ),
+        # Trabajos Diarios. Descubierta por Mentita el 13/8/2026 y sondeada el
+        # mismo día: 67% de sus avisos declara el sueldo, contra el 23% de
+        # Bumeran y Laborum. Ver motor/fuentes/trabajos_diarios.py.
+        #
+        # Va SIN navegador y SIN sitemap, las dos por comprobación: su HTML
+        # llega completo por HTTP simple, y su /sitemap.xml responde vacío.
+        # Se descubre paginando el listado, que trae 12 avisos por página y
+        # 2,837 en total.
+        #
+        # Las páginas van hasta la 10 y no más: el listado pone primero los
+        # avisos pagados y después los recientes, así que bajar más no trae
+        # avisos más nuevos, solo más viejos. La corrida diaria no necesita
+        # más de 120 direcciones de una fuente.
+        PortalWeb(
+            "Trabajos Diarios", "https://pe.trabajosdiarios.com",
+            listados=tuple(
+                f"https://pe.trabajosdiarios.com/ofertas-trabajo?page={n}"
+                for n in range(1, 11)),
+            patron_aviso=r"/trabajo/\d+/[^\"'\s]+",
+            parser=parsear_trabajos_diarios,
+            nota=("VERIFICADA 13/8/2026. Empresas publican directo (no es "
+                  "agregador), robots permite con Crawl-delay 2, HTML servido "
+                  "de una. El sueldo trae el periodo escrito y el aviso trae "
+                  "fecha de cierre."),
         ),
         PortalWeb(
             "Computrabajo", "https://pe.computrabajo.com",

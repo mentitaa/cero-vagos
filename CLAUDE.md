@@ -138,7 +138,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **470** y pasan todos.
+Los tests son **482** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -222,6 +222,7 @@ Tras estrenar Convocatorias CAS el 6/8/2026 el sitio quedó en **94 ofertas**.
 | Laborum | 17 |
 | Convocatorias del Estado | **1** ← es un archivo, casi todo cerrado |
 | Convocatorias CAS | **30** en su primera corrida (38,5% de aprobación) |
+| Trabajos Diarios | recién conectada (13/8/2026) |
 
 La primera corrida de CAS, en números: 174 direcciones en el sitemap, 94
 saltadas por traer más de una plaza (1.263 plazas), 78 avisos leídos, 30
@@ -523,6 +524,16 @@ verificar.
   240 pasa el filtro un 4%. No entra nada viejo por esto: el filtro sigue
   botando todo lo de más de 60 días. Bumeran sí funciona con 3 días porque su
   sitemap viene con lo nuevo primero.
+- **El JSON-LD puede traer el RESUMEN, no el aviso.** Trabajos Diarios publica
+  sus datos en el formato de Google y de ahí salen bien el puesto, la empresa,
+  el sueldo y las dos fechas — pero su `description` es el resumen corto, el
+  que sale recortado con "…" en los resultados de búsqueda. **Una línea.** Con
+  eso los doce avisos del sondeo salieron en 0 funciones / 0 requisitos / 0
+  beneficios y se cayeron todos. Ese patrón tan parejo es la señal: si fueran
+  los avisos los incompletos habría variación. El cuerpo sí está en la página,
+  bajo el título "Descripción del empleo", y se corta por el TÍTULO y no por
+  el maquetado, porque el título es lo que lee la persona y no lo mueven sin
+  querer (`motor/fuentes/trabajos_diarios.py`).
 - **`findall` con paréntesis devuelve el paréntesis, no el enlace.** Los
   patrones que descubren avisos usan alternativas —`/(trabajo|empleo|oferta)…`—
   porque cada portal le puso otro nombre a la página de un aviso. Al buscarlos
@@ -693,7 +704,7 @@ python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
 python3 -m motor sondear "https://..."       # ¿cuántos avisos tiene y cuántos dicen el sueldo?
-python3 -m unittest discover pruebas -v      # los 470 tests
+python3 -m unittest discover pruebas -v      # los 482 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```

@@ -153,7 +153,7 @@ python3 -m motor sondear "https://..."          # ¿cuántos avisos tiene y cuá
 python3 -m motor stats                          # cómo va la base
 python3 -m motor rechazos                       # qué se botó y por qué
 python3 -m motor probar "S/ 2,800 a S/ 3,400"   # probar el parser de sueldos
-python3 -m unittest discover pruebas -v         # tests (470)
+python3 -m unittest discover pruebas -v         # tests (482)
 ```
 
 Si el proyecto vive en una carpeta sincronizada (iCloud, Drive, Dropbox),
