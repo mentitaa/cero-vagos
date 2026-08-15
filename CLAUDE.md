@@ -138,7 +138,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **460** y pasan todos.
+Los tests son **463** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -545,6 +545,25 @@ verificar.
   que hubiera dos fuentes privadas: es una casa con dos puertas. Por eso sus
   tasas de aprobación se parecen tanto, y por eso agregar Aptitus no sumaría
   nada. Fuera de Jobint solo quedan Computrabajo (bloqueado) y BuscoTrabajo.
+- **El retail corporativo grande no publica sueldos, y perseguirlo era el eje
+  equivocado.** Falabella y Cencosud cayeron el mismo día (13/8/2026) por lo
+  mismo, y Delosi ya estaba fuera por publicar en Computrabajo: el retail
+  grande del Perú, completo. La estrategia de ir por GRUPOS —un portal, muchas
+  marcas— optimiza volumen, y **el volumen nunca fue lo escaso**: Bumeran y
+  Laborum ya traen miles de avisos y el 77% se cae por no decir cuánto pagan.
+  El eje que sirve es **a quién le conviene declarar el sueldo**: al Estado
+  (escala normada), al trabajo por campaña (el jornal ES la oferta) y a quien
+  pelea por gente escasa. Una marca fuerte compite con la marca, no con el
+  sueldo, y no va a cambiar porque le escribamos un lector mejor. Por eso las
+  CAS son hoy la mejor fuente y no fue casualidad. Detalle en `EMPRESAS.md`.
+- **La verificación más barata son los ojos, y va primero.** Con la bolsa de
+  Falabella se gastaron tres rondas de herramienta —sondeo, navegador, lector
+  genérico— y ninguna dio el dato que la decidió. Mentita abrió el portal,
+  leyó diez avisos y lo cerró en cinco minutos: **ninguno dice el sueldo**, y
+  de paso todos tenían cinco meses de publicados (el filtro bota lo de más de
+  60 días, así que no habría entrado ni uno). Antes de programar nada para una
+  fuente nueva, hay que MIRARLA. El sondeo sirve para lo que los ojos no
+  pueden —pasar 25 avisos por el filtro y contar—, no para reemplazarlos.
 - **"Permite el rastreo" no es lo mismo que "tiene avisos suficientes".**
   BuscoTrabajo estuvo semanas en la lista de pendientes como la gran fuente
   privada que faltaba. Era cierto que su `robots.txt` permite entrar y que es
@@ -664,7 +683,7 @@ python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
 python3 -m motor sondear "https://..."       # ¿cuántos avisos tiene y cuántos dicen el sueldo?
-python3 -m unittest discover pruebas -v      # los 460 tests
+python3 -m unittest discover pruebas -v      # los 463 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```

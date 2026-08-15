@@ -25,6 +25,18 @@ publica cada madrugada. Así el sondeo no puede prometer más de lo que la
 corrida real va a entregar.
 
 No guarda nada. No toca la base. Se puede correr las veces que haga falta.
+
+UNA COSA QUE HAY QUE DARLE BIEN
+-------------------------------
+La dirección que se sondea tiene que ser la del **listado de ofertas**, no la
+de la portada. Casi todas las empresas usan su portada de empleo como
+propaganda —"vive el desafío", "conoce nuestra cultura"— y los avisos viven un
+clic más adentro. Sondeando la portada no hay nada que descubrir, y el cero
+que sale de ahí no dice nada de la bolsa.
+
+Pasó con Falabella el 13/8/2026: se sondeó `muevete.falabella.com` y dio cero.
+Sus avisos están en `/detalle-oferta/<número>/external`, un nombre que el
+sondeo sí reconoce. Nunca llegó a verlos porque se le dio la puerta de calle.
 """
 from __future__ import annotations
 

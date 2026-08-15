@@ -213,25 +213,25 @@ def empresas_peru() -> list[Fuente]:
     casas. Ver EMPRESAS.md para el mapa completo.
     """
     return [
-        # Grupo Falabella: Sodimac, Tottus, Falabella Retail, Banco Falabella.
-        # Un solo portal para todas sus marcas.
-        portal_propio(
-            "Grupo Falabella", "https://muevete.falabella.com",
-            listados=("https://muevete.falabella.com/sodimac",
-                      "https://muevete.falabella.com/tottus"),
-            necesita_render=True,
-            nota=("robots.txt permite todo ('Disallow:' vacío). El portal es una "
-                  "aplicación React: sin navegador devuelve la página vacía."),
-        ),
-        # Cencosud: Metro y Wong. Su portal solo enruta hacia Cornerstone,
-        # careersite 10 = Perú.
-        portal_propio(
-            "Cencosud", "https://cencosud.csod.com",
-            listados=("https://cencosud.csod.com/ux/ats/careersite/10/home?c=cencosud",),
-            necesita_render=True,
-            nota=("SIN VERIFICAR. Usa Cornerstone OnDemand (csod.com). Tiene API "
-                  "propia; conviene mirar qué pide antes de raspar la interfaz."),
-        ),
+        # Grupo Falabella NO está acá, y no es un olvido.
+        #
+        # Se revisó su portal a ojo el 13/8/2026 y se cae por tres razones
+        # independientes: ningún aviso declara el sueldo (regla 1), todos
+        # dicen "5 Months Ago" —el filtro bota lo de más de 60 días, así que
+        # no entraría ni uno— y los títulos nombran la tienda y hasta la hora
+        # de la entrevista, pero no el oficio (regla 8).
+        #
+        # Dejarlo configurado "por si acaso" costaría veinte minutos de
+        # navegador cada madrugada para traer cero. Ver EMPRESAS.md.
+        # Cencosud (Metro, Wong) tampoco, y por lo mismo: revisado a ojo el
+        # 13/8/2026, no publica sueldos.
+        #
+        # Con Falabella y Cencosud caídos el mismo día —más Delosi, que publica
+        # en Computrabajo y nos bloquea— el retail corporativo del Perú queda
+        # cerrado. La lección no es sobre estos dos portales sino sobre el eje:
+        # ir por GRUPOS busca volumen, y el volumen nunca fue lo escaso. Una
+        # marca fuerte no compite por sueldo, así que no lo publica. Ver
+        # EMPRESAS.md › El retail corporativo se cierra.
     ]
 
 

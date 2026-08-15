@@ -82,10 +82,25 @@ def cmd_probar_url(args) -> None:
         return
     robots.esperar_turno(args.url)
 
-    resp = requests.get(args.url, headers={"User-Agent": USER_AGENT,
-                                           "Accept-Language": "es-PE,es;q=0.9"}, timeout=25)
-    resp.raise_for_status()
-    html = resp.text
+    # Los portales grandes son aplicaciones que se arman solas en el navegador:
+    # por HTTP simple devuelven "You need to enable JavaScript" y este comando
+    # no puede leer nada. Con --navegador se abre Chromium y se lee lo que ve
+    # una persona. Es más lento y por eso no es lo normal, pero sin esta opción
+    # `probar-url` era inútil justo para los portales que hay que decidir.
+    if getattr(args, "navegador", False):
+        from .fuentes.render import HAY_PLAYWRIGHT, Navegador
+        if not HAY_PLAYWRIGHT:
+            print("Falta el navegador. Instálalo con:\n"
+                  "  pip3 install playwright && python3 -m playwright install chromium")
+            return
+        with Navegador() as nav:
+            html = nav.html(args.url)
+    else:
+        resp = requests.get(args.url, headers={"User-Agent": USER_AGENT,
+                                               "Accept-Language": "es-PE,es;q=0.9"},
+                            timeout=25)
+        resp.raise_for_status()
+        html = resp.text
 
     cruda = (extraer_jobposting(html, args.url, "Prueba")
              if args.parser == "jsonld"
@@ -109,7 +124,17 @@ def cmd_probar_url(args) -> None:
     if cruda is None:
         print("No se pudo leer la oferta.")
         if "enable JavaScript" in html or len(html) < 2000:
-            print("La página llega vacía: es una SPA, hace falta Playwright.")
+            print("La página llega vacía: se arma sola en el navegador.")
+            print("Probá otra vez agregando  --navegador  al final.")
+        elif not getattr(args, "navegador", False):
+            print("La página sí llegó, pero no trae los datos del aviso en el "
+                  "formato que pide Google (JSON-LD).")
+        else:
+            # Con navegador la página se vio entera. Si aun así no hay datos
+            # estructurados, no los publica y punto: habría que leerla a mano.
+            print("Ni con navegador trae los datos del aviso en el formato que "
+                  "pide Google (JSON-LD).")
+            print("Esa bolsa necesitaría un lector escrito a medida.")
         return
 
     o = procesar_cruda(cruda)
@@ -266,6 +291,15 @@ def cmd_recolectar(args) -> None:
         if not backends_disponibles() and any(getattr(f, "enriquecer", None) for f in fuentes):
             print("Aviso: falta con qué leer PDFs, no se podrán sacar las funciones "
                   "de las bases.\n       pip install pdfplumber\n")
+    if not args.demo and not fuentes:
+        # No es lo mismo "no hay ninguna fuente" que "las fuentes no arrancan",
+        # y decir lo segundo cuando pasa lo primero manda a instalar cosas que
+        # ya están. Pasó al vaciarse la lista de empresas el 13/8/2026, cuando
+        # Falabella y Cencosud se descartaron por no publicar sueldos.
+        print("Esa lista no tiene ninguna fuente configurada.")
+        print("No es un error: las bolsas de empresa quedaron vacías tras "
+              "descartar\nFalabella y Cencosud. Ver EMPRESAS.md.")
+        sys.exit(1)
     if not args.demo and not any(f.activa for f in fuentes):
         print("Ninguna fuente activa. Instala requests:  pip install requests")
         print("Mientras tanto puedes correr:  python -m motor recolectar --demo")
@@ -418,6 +452,9 @@ def main() -> None:
     u.add_argument("--parser", choices=("auto", "jsonld"), default="auto")
     u.add_argument("--sin-pdf", dest="sin_pdf", action="store_true",
                    help="no abrir el PDF de las bases")
+    u.add_argument("--navegador", action="store_true",
+                   help="abrir la página en Chromium (para portales que se "
+                        "arman solos, como Falabella o Bumeran)")
     u.set_defaults(func=cmd_probar_url)
 
     c = sub.add_parser("conectar", help="ver cómo leer la bolsa de trabajo de una empresa")
@@ -426,7 +463,8 @@ def main() -> None:
 
     so = sub.add_parser("sondear",
                         help="contar cuántos avisos tiene una bolsa y cuántos dicen el sueldo")
-    so.add_argument("url", help="URL de la página 'trabaja con nosotros'")
+    so.add_argument("url", help="URL del LISTADO de ofertas (no la portada del "
+                                "portal: ahí suele no haber avisos)")
     so.add_argument("--limite", type=int, default=25,
                     help="cuántos avisos leer para la muestra (por defecto 25)")
     so.add_argument("--nombre", default="", help="cómo se llama la empresa")
