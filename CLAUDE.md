@@ -138,7 +138,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **464** y pasan todos.
+Los tests son **470** y pasan todos.
 
 ## Las reglas que no se tocan
 
@@ -523,6 +523,16 @@ verificar.
   240 pasa el filtro un 4%. No entra nada viejo por esto: el filtro sigue
   botando todo lo de más de 60 días. Bumeran sí funciona con 3 días porque su
   sitemap viene con lo nuevo primero.
+- **`findall` con paréntesis devuelve el paréntesis, no el enlace.** Los
+  patrones que descubren avisos usan alternativas —`/(trabajo|empleo|oferta)…`—
+  porque cada portal le puso otro nombre a la página de un aviso. Al buscarlos
+  con `findall`, Python devolvía SOLO lo de adentro del paréntesis: "trabajo",
+  no "/trabajo/3075258/auxiliar-de-almacen". Todos los enlaces de una página se
+  reducían a la misma palabra, se deduplicaban entre sí y una página con 165
+  avisos aportaba **un** enlace, que encima no llevaba a ningún lado. Y no
+  fallaba con un cero —que invita a mirar— sino con un uno, que parece que algo
+  funcionó. Afectaba a TODAS las fuentes que descubren por listado. Se arregla
+  con `finditer` + `group(0)` (`pruebas/test_descubrir_enlaces.py`).
 - **Un cero de `motor sondear` tampoco es un cero.** Es la misma trampa de
   arriba y con la agravante de que el sondeo da un consejo. Falabella y
   Cencosud devolvieron "0 avisos · no escribas el lector", y los dos portales
@@ -683,7 +693,7 @@ python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
 python3 -m motor sondear "https://..."       # ¿cuántos avisos tiene y cuántos dicen el sueldo?
-python3 -m unittest discover pruebas -v      # los 464 tests
+python3 -m unittest discover pruebas -v      # los 470 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```

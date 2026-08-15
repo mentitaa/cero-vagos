@@ -68,6 +68,76 @@ class PruebaLaTarjetaNoMuestraElScore(unittest.TestCase):
             self.assertIn("score", datos["ofertas"][0])
 
 
+class PruebaLaPaginaDeLaOfertaTampocoMuestraElScore(unittest.TestCase):
+    """
+    Las páginas de `oferta/` se generan aparte, con `motor/sitio.py`, y se
+    quedaron atrás: cuando el score salió de la tarjeta, esa ficha siguió
+    diciendo «Score de completitud 92/100».
+
+    No se notó porque son páginas generadas — el cambio se hizo en
+    `index.html` y nadie volvió a abrir una oferta suelta. Se descubrió el
+    7/8/2026 mirando la ficha ya publicada de un aviso.
+
+    Importa por dos razones: es el mismo número que el focus group leyó como
+    una nota AL TRABAJO, y además deja ver la fórmula, que no se publica.
+    """
+
+    OFERTA = {
+        "slug": "asistente-contable-acme-ab12cd34",
+        "puesto": "Asistente Contable",
+        "empresa": "Acme",
+        "ciudad": "Cusco",
+        "modalidad": "Presencial",
+        "fuente": "Bumeran",
+        "url": "https://ejemplo.pe/aviso",
+        "huella": "ab12cd34",
+        "min": 2500,
+        "max": 2500,
+        "score": 92,
+        "resumen": "Llevar la contabilidad del área.",
+        "funciones": ["Registrar comprobantes"],
+        "requisitos": ["Bachiller en Contabilidad"],
+        "beneficios": ["Planilla completa"],
+    }
+
+    @classmethod
+    def setUpClass(cls):
+        from motor.sitio import pagina_oferta
+        cls.pagina = pagina_oferta(dict(cls.OFERTA), "https://cerovagos.com")
+
+    def test_no_escribe_el_numero_en_la_ficha(self):
+        """
+        Se mira la página YA GENERADA, no el código: buscar el texto en el
+        archivo .py daba falsa alarma con este mismo comentario.
+        """
+        self.assertNotIn("Score de completitud", self.pagina,
+                         "la página de la oferta volvió a publicar el score")
+        self.assertNotIn("92/100", self.pagina)
+
+    def test_muestra_las_cuatro_marcas_en_su_lugar(self):
+        for palabra in ("Sueldo", "Funciones", "Requisitos", "Beneficios"):
+            self.assertIn(f"✓ {palabra}", self.pagina,
+                          f"falta la marca de {palabra} en la ficha")
+
+    def test_la_ficha_cuenta_lo_mismo_que_la_tarjeta(self):
+        """
+        Si un día se cambia el criterio en un lado y no en el otro, la misma
+        oferta diría dos cosas distintas según por dónde se entre.
+        """
+        from motor.sitio import _lo_que_tiene
+
+        completa = {"min": 1500, "funciones": ["a"], "requisitos": ["b"],
+                    "beneficios": ["c"]}
+        html = _lo_que_tiene(completa)
+        for palabra in ("Sueldo", "Funciones", "Requisitos", "Beneficios"):
+            self.assertIn(palabra, html)
+
+        del completa["funciones"]
+        sin_funciones = _lo_que_tiene(completa)
+        self.assertNotIn("Funciones", sin_funciones)
+        self.assertIn("Sueldo", sin_funciones)
+
+
 class PruebaSeFueLaInicialDeLaEmpresa(unittest.TestCase):
 
     @classmethod
@@ -131,8 +201,9 @@ class PruebaLasMarcasSalenDeLosDatosReales(unittest.TestCase):
                 continue
             self.assertEqual(faltantes, {"Funciones"},
                              f"{o['puesto']} no muestra {faltantes}")
-            self.assertIn("estado", o["fuente"].lower() + o["fuente"].lower(),
-                          f"{o['puesto']} es privada y le faltan funciones")
+            fuente = o["fuente"].lower()
+            self.assertTrue("estado" in fuente or "cas" in fuente,
+                            f"{o['puesto']} es privada y le faltan funciones")
 
 
 if __name__ == "__main__":
