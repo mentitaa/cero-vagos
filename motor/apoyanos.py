@@ -7,12 +7,18 @@ más ofertas, y este sitio existe justamente para mostrar menos. Un portal que
 gana por aviso mostrado tiene un incentivo a aflojar el filtro; nosotros no
 podemos tener ese incentivo.
 
-Pero el sitio cuesta plata todos los meses —el correo del dominio, las
-herramientas— y esa plata sale del bolsillo de una sola persona. Esta página
-lo dice de frente y deja los canales para quien quiera ayudar.
+Sostenerlo tiene un costo, y esta página lo dice y deja los canales para quien
+quiera ayudar.
 
-DOS REGLAS QUE NO SE TOCAN
---------------------------
+TRES REGLAS QUE NO SE TOCAN
+---------------------------
+0. **Nada de cifras ni de detalles de quién paga** (decisión de Mentita,
+   18/8/2026). La página dice que hay un costo mensual y ahí se queda: no
+   enumera los servicios ni cuánto sale cada uno, y no cuenta que el proyecto
+   lo sostiene una sola persona. Dos razones. Una, pedir apoyo desde la
+   fragilidad —"esto se apaga si nadie ayuda"— presiona a quien lee, y este
+   sitio no presiona a nadie. Dos, un desglose de gastos invita a discutir el
+   gasto en vez de la idea, y la idea es lo que se está apoyando.
 1. **Donar no compra nada.** Ni un puesto en el listado, ni una excepción al
    filtro, ni que un aviso salga más arriba. Está escrito en la página, en
    grande, porque es lo único que hace que pedir plata sea compatible con la
@@ -178,10 +184,8 @@ def pagina(sitio: str) -> str:
       ti no te cobramos nada, nunca.</p>
     </div>
 
-    <p>Pero el sitio cuesta plata todos los meses: el correo del dominio, las
-    herramientas con las que se mantiene el motor, el dominio mismo. Hoy eso
-    sale del bolsillo de una sola persona, y es lo único que puede hacer que
-    esto se apague.</p>
+    <p>Pero mantenerlo en pie tiene un costo fijo todos los meses, y no hay
+    publicidad ni cobro que lo cubra. Por eso existe esta página.</p>
 
     <p>Si el proyecto te sirvió —o te parece que el Perú merece avisos de
     trabajo que digan cuánto pagan— puedes ayudar a que siga.</p>
