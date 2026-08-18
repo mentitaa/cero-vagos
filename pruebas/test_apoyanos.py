@@ -78,7 +78,13 @@ class PruebaLaPromesaNoSeRompe(ConCanales):
 
 
 class PruebaSinConfigurarNoSeDibuja(ConCanales):
-    """Como está el archivo recién escrito: todos los canales en blanco."""
+    """Con todos los canales en blanco, como queda un proyecto recién clonado."""
+
+    canales = {
+        "dale": {"titular": "", "qr": ""},
+        "plin": {"titular": "", "qr": ""},
+        "usdc": {"direccion": "", "red": ""},
+    }
 
     def test_no_hay_canales(self):
         self.assertFalse(hay_algun_canal())
@@ -165,6 +171,48 @@ class PruebaConTodoConfigurado(ConCanales):
     def test_dice_a_nombre_de_quien(self):
         """Quien escanea tiene que poder confirmar que le manda a quien cree."""
         self.assertIn("Nombre Apellido", self.html)
+
+
+class PruebaLosQRQueEstanConfigurados(unittest.TestCase):
+    """
+    Lo que está puesto AHORA en `CANALES`, no un ejemplo.
+
+    El error que esto evita no se ve en una Mac: ahí `qr-plin.png` y
+    `QR-PLIN.PNG` son el mismo archivo. En el servidor donde vive el sitio no
+    lo son, así que una letra mal deja el QR roto en la web mientras en la
+    laptop se ve perfecto. Y un QR roto en la página de donaciones es la única
+    imagen que de verdad importa que cargue.
+    """
+
+    ASSETS = Path(__file__).resolve().parent.parent / "assets"
+
+    def test_los_archivos_existen_tal_como_estan_escritos(self):
+        import os
+        for nombre in ("dale", "plin"):
+            archivo = CANALES[nombre].get("qr", "")
+            if not archivo:
+                continue
+            with self.subTest(canal=nombre):
+                # `os.listdir` compara con mayúsculas y minúsculas de verdad,
+                # aunque el disco de la Mac no lo haga.
+                self.assertIn(archivo, os.listdir(self.ASSETS),
+                              f"assets/{archivo} no existe con ese nombre exacto")
+
+    def test_los_QR_no_pesan_de_mas(self):
+        """
+        Se muestran a 220 píxeles. El de Dale llegó pesando 588 KB: media hoja
+        de descarga en un celular con datos, para una imagen del tamaño de una
+        estampilla. Quien entra a este sitio está buscando trabajo, no le sobra
+        el megabyte.
+        """
+        for nombre in ("dale", "plin"):
+            archivo = CANALES[nombre].get("qr", "")
+            if not archivo:
+                continue
+            with self.subTest(canal=nombre):
+                peso = (self.ASSETS / archivo).stat().st_size
+                self.assertLess(peso, 150_000,
+                                f"{archivo} pesa {peso // 1024} KB")
 
 
 class PruebaEstaEnchufada(unittest.TestCase):

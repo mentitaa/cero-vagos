@@ -139,7 +139,7 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **503** y pasan todos.
+Los tests son **505** y pasan todos.
 
 ## La página de apoyo (18/8/2026)
 
@@ -162,6 +162,9 @@ Dos cosas que no se tocan:
 - **La dirección de cripto no sale sin la red.** USDC vive sobre varias redes
   que no se hablan entre ellas; mandarlo por la que no es no se deshace. Sin
   red configurada, ese bloque no se publica.
+
+Se enlaza **desde la barra de arriba**, no solo desde el pie: ahí abajo
+quedaba debajo de veinte enlaces de departamentos y no la veía nadie.
 
 Vigilado en `pruebas/test_apoyanos.py`.
 
@@ -683,6 +686,12 @@ verificar.
   peruanos no dicen la calle, y poner la dirección fiscal de la empresa
   mandaría a alguien a un sitio que no es. Son avisos, no errores: las ofertas
   cuentan como válidas igual. Vigilado en `pruebas/test_google_empleos.py`.
+- **En la Mac `qr-plin.png` y `QR-PLIN.PNG` son el mismo archivo; en el
+  servidor no.** El disco de macOS no distingue mayúsculas y el de GitHub sí,
+  así que una letra mal escrita deja la imagen rota en la web mientras en la
+  laptop se ve perfecta. Pasa con cualquier archivo de `assets/`, y duele más
+  en los QR de `/apoyanos/`. Lo vigila un test que compara contra el listado
+  real de la carpeta.
 - **Un `var(--color)` que ya no existe no da error: no pinta nada.** El test de
   la paleta vigila que no se escriban colores crudos, pero nadie vigilaba lo
   contrario. Las páginas legales seguían pidiendo `--negro` y `--lima`, dos
@@ -736,7 +745,7 @@ python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
 python3 -m motor sondear "https://..."       # ¿cuántos avisos tiene y cuántos dicen el sueldo?
-python3 -m unittest discover pruebas -v      # los 503 tests
+python3 -m unittest discover pruebas -v      # los 505 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```
