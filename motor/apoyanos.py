@@ -51,14 +51,20 @@ RUTA = "apoyanos"
 # por una red que la billetera no tiene, esa plata no se recupera. Por eso la
 # red se muestra siempre, en grande, y sin red no se publica la dirección.
 
+# OJO CON LAS MAYÚSCULAS DEL NOMBRE DEL ARCHIVO. En una Mac da lo mismo
+# escribir "qr-plin.png" que "QR-PLIN.PNG": encuentra el archivo igual. En los
+# servidores donde vive el sitio NO da lo mismo, y una letra en mayúscula de
+# más deja el QR roto en la web mientras en la laptop se ve perfecto. Por eso
+# hay un test que comprueba que estos archivos existan tal cual están escritos.
+
 CANALES = {
     "dale": {
         "titular": "",          # ej: "Nombre Apellido"
-        "qr": "",               # ej: "qr-dale.png"  (archivo dentro de assets/)
+        "qr": "QR-DALE.png",    # archivo dentro de assets/
     },
     "plin": {
         "titular": "",
-        "qr": "",               # ej: "qr-plin.png"
+        "qr": "QR-PLIN.PNG",
     },
     "usdc": {
         "direccion": "",        # la dirección completa de la billetera

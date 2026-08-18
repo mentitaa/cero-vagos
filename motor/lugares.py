@@ -331,14 +331,32 @@ def bloque_para_la_portada(departamentos: list[str], sitio: str,
         return f"{INICIO_LUGARES}\n{FIN_LUGARES}"
 
     def columna(titulo: str, nombres, ruta_de, prep: str) -> str:
+        """
+        Cada eje va dentro de un bloque plegable.
+
+        Con 10 departamentos y 10 rubros el pie de la portada medía más que la
+        portada misma, y lo que estaba abajo —incluida la página de apoyo— no
+        lo veía nadie. Se pliega con `<details>`, que es HTML de siempre: no
+        necesita JavaScript, funciona con el teclado y los lectores de pantalla
+        lo anuncian solos.
+
+        **Los enlaces siguen en el HTML aunque el bloque esté cerrado**, así
+        que Google los encuentra igual. Plegar no es esconder: si lo fuera, no
+        se podría hacer, porque estas páginas existen justamente para que el
+        buscador las encuentre.
+        """
         if not nombres:
             return ""
         filas = "\n".join(
-            f'          <li><a href="{_e(sitio)}/{ruta_de(n)}/">'
+            f'            <li><a href="{_e(sitio)}/{ruta_de(n)}/">'
             f'Trabajos {prep} {_e(n)}</a></li>'
             for n in nombres
         )
-        return f"        <h4>{titulo}</h4>\n        <ul>\n{filas}\n        </ul>\n"
+        return (f'        <details class="foot__desplegable">\n'
+                f'          <summary>{titulo}'
+                f' <span class="cuantos">{len(nombres)}</span></summary>\n'
+                f'          <ul>\n{filas}\n          </ul>\n'
+                f'        </details>\n')
 
     return (f"{INICIO_LUGARES}\n"
             + columna("Por departamento", departamentos, ruta, "en")
