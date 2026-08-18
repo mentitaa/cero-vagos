@@ -50,6 +50,7 @@ Conectado el 4 de agosto de 2026: dominio en Squarespace, correo
 | `SEGURIDAD.md` | Auditoría de seguridad: qué se revisó y qué queda abierto. |
 | `EMPRESAS.md` | Estrategia de bolsas de trabajo de empresas. |
 | `PRIMERA-CORRIDA-CAS.md` | Los cuatro comandos para estrenar Convocatorias CAS. Se borra cuando ya corrió bien. |
+| `motor/apoyanos.py` | La página `/apoyanos/`. Los canales de aporte se configuran ahí, en `CANALES`. |
 | `PROPUESTA-UNIVERSIDADES.md` | Correos listos para las bolsas universitarias. |
 | Bitácora en Notion | Historia del proyecto, ideas pendientes, errores que costaron caro, glosario. Ahí va lo narrativo; aquí va lo operativo. |
 
@@ -138,7 +139,31 @@ escribe el motor entre los marcadores `<!-- COMPARTIR:INICIO -->` de
 `index.html`. Tienen que llevar la dirección **completa**: con ruta relativa
 WhatsApp no muestra nada. Hay un test que lo vigila.
 
-Los tests son **482** y pasan todos.
+Los tests son **503** y pasan todos.
+
+## La página de apoyo (18/8/2026)
+
+`/apoyanos/`. El sitio **no tiene publicidad y no le cobra a quien busca
+trabajo**, y esta página explica por qué: un portal que gana por aviso mostrado
+tiene un motivo para mostrar más avisos, y este existe para mostrar menos. Los
+dos incentivos no caben en la misma web.
+
+Los canales se configuran en `CANALES` (`motor/apoyanos.py`). **Lo que quede en
+blanco no se dibuja**, a propósito: un cuadro vacío se ve mal, pero una
+dirección de cripto de ejemplo es plata de alguien perdida para siempre.
+
+Dos cosas que no se tocan:
+
+- **El aporte no compra nada**, y está escrito en la página: ni que una oferta
+  se publique, ni que salga más arriba, ni una excepción al filtro, ni salir
+  del ranking de `/transparencia`. Es lo único que hace compatible pedir plata
+  con la promesa del sitio. `/como-trabajamos/` lo repite, porque ahí dice "no
+  te cobramos nada, nunca" y las dos páginas no pueden contradecirse.
+- **La dirección de cripto no sale sin la red.** USDC vive sobre varias redes
+  que no se hablan entre ellas; mandarlo por la que no es no se deshace. Sin
+  red configurada, ese bloque no se publica.
+
+Vigilado en `pruebas/test_apoyanos.py`.
 
 ## Las reglas que no se tocan
 
@@ -658,6 +683,13 @@ verificar.
   peruanos no dicen la calle, y poner la dirección fiscal de la empresa
   mandaría a alguien a un sitio que no es. Son avisos, no errores: las ofertas
   cuentan como válidas igual. Vigilado en `pruebas/test_google_empleos.py`.
+- **Un `var(--color)` que ya no existe no da error: no pinta nada.** El test de
+  la paleta vigila que no se escriban colores crudos, pero nadie vigilaba lo
+  contrario. Las páginas legales seguían pidiendo `--negro` y `--lima`, dos
+  colores borrados en el cambio de paleta del 13/8/2026: sus recuadros llevaban
+  días sin sombra y sin resaltado, y no se veía leyendo el código. Ahora un
+  test comprueba que toda variable usada esté definida en el `:root`
+  (`PruebaLosColoresQueUsaExisten`).
 - **Un navegador con modo oscuro reescribe los colores del sitio si no le
   dices que no.** En Brave la portada salía irreconocible: el crema en marrón,
   el amarillo en verde oliva, el texto con recuadros de resalte. En Chrome se
@@ -704,7 +736,7 @@ python3 -m motor rechazos                    # qué se botó y por qué
 python3 -m motor reevaluar                   # repuntuar lo guardado tras cambiar el filtro
 python3 -m motor probar-url "https://..."    # probar UN aviso contra el filtro
 python3 -m motor sondear "https://..."       # ¿cuántos avisos tiene y cuántos dicen el sueldo?
-python3 -m unittest discover pruebas -v      # los 482 tests
+python3 -m unittest discover pruebas -v      # los 503 tests
 ./noche.sh                                   # corrida larga (2-3 horas)
 ./actualizar.sh                              # corrida diaria
 ```

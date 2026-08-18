@@ -494,7 +494,7 @@ def sitemap(ofertas: list[dict], sitio: str, lugares: list[str] = (),
 
     # Las páginas fijas cambian poco, pero deben ser encontrables.
     # El libro de reclamaciones se deja fuera: es un canal, no contenido.
-    for fija in ("como-trabajamos", "terminos", "privacidad"):
+    for fija in ("como-trabajamos", "terminos", "privacidad", "apoyanos"):
         entradas.append(
             f"  <url><loc>{sitio}/{fija}/</loc><lastmod>{hoy}</lastmod>"
             f"<changefreq>monthly</changefreq><priority>0.4</priority></url>"
@@ -887,6 +887,13 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
     from .legales import generar as generar_legales
     legales = generar_legales(sitio, raiz)
 
+    # La página de apoyo. Se cuenta aparte de las legales a propósito: no es un
+    # texto legal, es la explicación de por qué el sitio no tiene publicidad y
+    # qué NO compra quien aporta. Meterla en la lista de legales hacía que un
+    # test que vigila esa lista empezara a fallar, y con razón.
+    from .apoyanos import generar as generar_apoyanos
+    apoyo = generar_apoyanos(sitio, raiz)
+
     (raiz / "sitemap.xml").write_text(sitemap(ofertas, sitio, lugares, rubros), encoding="utf-8")
     (raiz / "robots.txt").write_text(robots(sitio), encoding="utf-8")
     # GitHub Pages muestra este archivo cuando alguien llega a una dirección
@@ -927,6 +934,7 @@ def generar(almacen: Almacen | None = None, sitio: str = "",
     return {"paginas": len(ofertas), "retiradas": retiradas, "sitio": sitio,
             "lugares": lugares, "rubros": rubros,
             "titulos_limpiados": titulos, "titulos_vagos": vagos, "legales": legales,
+            "apoyo": apoyo,
             "pct_sin_sueldo": informe["pct_sin_sueldo"],
             "empresas_analizadas": len(informe["empresas"]),
             "generado": datetime.now().isoformat(timespec="seconds")}

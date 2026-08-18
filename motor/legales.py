@@ -34,8 +34,9 @@ def _e(t) -> str:
     return html.escape(str(t or ""), quote=True)
 
 
-def _envoltura(titulo: str, descripcion: str, ruta: str, sitio: str,
-               cuerpo: str, indexable: bool = True) -> str:
+def envoltura(titulo: str, descripcion: str, ruta: str, sitio: str,
+              cuerpo: str, indexable: bool = True,
+              estilos_extra: str = "") -> str:
     url = f"{sitio}/{ruta}/"
     return f"""<!DOCTYPE html>
 <html lang="es-PE">
@@ -68,11 +69,11 @@ def _envoltura(titulo: str, descripcion: str, ruta: str, sitio: str,
 .doc ul{{margin:0 0 14px 20px}}
 .doc li{{margin-bottom:7px}}
 .doc .caja{{border:var(--bd);background:var(--blanco);padding:20px 22px;margin:24px 0;
-box-shadow:5px 5px 0 var(--negro)}}
-.doc .destacado{{background:var(--lima)}}
+box-shadow:5px 5px 0 var(--tinta)}}
+.doc .destacado{{background:var(--acento)}}
 .doc .fecha{{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;opacity:.6}}
 .doc a{{font-weight:700}}
-</style>
+{estilos_extra}</style>
 </head>
 <body>
 
@@ -99,7 +100,8 @@ box-shadow:5px 5px 0 var(--negro)}}
   <a href="{_e(sitio)}/como-trabajamos/">Cómo trabajamos</a> ·
   <a href="{_e(sitio)}/terminos/">Términos</a> ·
   <a href="{_e(sitio)}/privacidad/">Privacidad</a> ·
-  <a href="{_e(sitio)}/reclamaciones/">Libro de reclamaciones</a>
+  <a href="{_e(sitio)}/reclamaciones/">Libro de reclamaciones</a> ·
+  <a href="{_e(sitio)}/apoyanos/">Apóyanos</a>
 </div></footer>
 
 </body>
@@ -140,6 +142,10 @@ def como_trabajamos(sitio: str) -> str:
       <li><b>No intermediamos la contratación.</b> No hablamos con las empresas por ti.</li>
       <li><b>No te cobramos nada, nunca.</b> Si alguien te pide dinero diciendo que es
       de Cero Vagos, no lo es.</li>
+      <li><b>No vendemos puestos en el listado.</b> Aceptamos aportes voluntarios
+      para sostener el sitio (<a href="{_e(sitio)}/apoyanos/">Apóyanos</a>), y
+      ese aporte no compra que una oferta se publique, que salga más arriba ni
+      una excepción al filtro. Quien busca trabajo no paga nada.</li>
     </ul>
 
     <h2>De qué respondemos</h2>
@@ -175,7 +181,7 @@ def como_trabajamos(sitio: str) -> str:
       avísanos a <a href="mailto:{CORREO}">{CORREO}</a>.</p>
     </div>
     """
-    return _envoltura(
+    return envoltura(
         "Cómo trabajamos",
         "Qué hace Cero Vagos, qué no hace y de qué responde. Cómo tratamos a los "
         "portales de origen y cómo reconocer una estafa laboral.",
@@ -229,7 +235,7 @@ def terminos(sitio: str) -> str:
     <p>Si cambiamos estos términos, actualizaremos la fecha del encabezado. Los cambios
     rigen desde su publicación.</p>
     """
-    return _envoltura(
+    return envoltura(
         "Términos y condiciones",
         "Condiciones de uso de Cero Vagos, buscador de ofertas de trabajo completas "
         "en el Perú.",
@@ -279,7 +285,7 @@ def privacidad(sitio: str) -> str:
     <p>Si esto cambia —por ejemplo, el día que activemos las alertas— actualizaremos esta
     página y su fecha antes de recoger cualquier dato.</p>
     """
-    return _envoltura(
+    return envoltura(
         "Política de privacidad",
         "Cero Vagos no recoge datos personales, no usa cookies ni herramientas de "
         "medición. Qué pasará cuando activemos las alertas.",
@@ -325,7 +331,7 @@ def reclamaciones(sitio: str) -> str:
     <h2>Si no quedas conforme</h2>
     <p>Puedes acudir a INDECOPI a través de sus canales de atención al consumidor.</p>
     """
-    return _envoltura(
+    return envoltura(
         "Libro de reclamaciones",
         "Canal de reclamos y quejas de Cero Vagos, conforme al Código de Protección y "
         "Defensa del Consumidor.",
