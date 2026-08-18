@@ -70,6 +70,26 @@ class PruebaLaPromesaNoSeRompe(ConCanales):
     def test_ofrece_ayudar_sin_plata(self):
         self.assertIn("sin poner plata", self.html.lower())
 
+    def test_no_publica_cifras_ni_quien_paga(self):
+        """
+        Decisión de Mentita (18/8/2026). La página dice que hay un costo
+        mensual y ahí se queda.
+
+        Pedir apoyo desde la fragilidad —"esto se apaga si nadie ayuda", "sale
+        del bolsillo de una sola persona"— presiona a quien lee, y este sitio
+        no presiona a nadie. Y un desglose de gastos invita a discutir el gasto
+        en vez de la idea, que es lo que se está apoyando.
+        """
+        texto = " ".join(self.html.split()).lower()
+        for filtracion in ("bolsillo", "una sola persona", "se apague",
+                           "google workspace", "s/ ", "dólares"):
+            with self.subTest(filtracion=filtracion):
+                self.assertNotIn(filtracion, texto)
+
+    def test_pero_sigue_diciendo_que_cuesta_sostenerlo(self):
+        """Quitar el dramatismo no es quitar el motivo."""
+        self.assertIn("costo fijo todos los meses", self.html.lower())
+
     def test_aclara_que_no_da_derecho_a_nada(self):
         """Para que quede claro que es una donación y no una compra."""
         texto = self.html.lower()
