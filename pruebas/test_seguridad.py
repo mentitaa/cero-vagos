@@ -53,7 +53,14 @@ class PruebaPoliticaDeContenido(unittest.TestCase):
             ruta = RAIZ / nombre
             if ruta.exists():
                 yield nombre, ruta.read_text(encoding="utf-8")
-        for carpeta in sorted((RAIZ / "oferta").glob("*/"))[:1]:
+        # Solo carpetas de verdad. macOS deja un archivo `.DS_Store` dentro de
+        # cualquier carpeta que se abra en el Finder, y `glob("*/")` lo devuelve
+        # igual: el test se caía con "no es un directorio" por haber mirado la
+        # carpeta con el ratón. No llega a GitHub (está en `.gitignore`), así
+        # que rompía solo en la laptop y por un motivo que no tiene nada que
+        # ver con lo que la prueba vigila.
+        for carpeta in sorted(c for c in (RAIZ / "oferta").glob("*")
+                              if c.is_dir() and (c / "index.html").exists())[:1]:
             yield "una oferta", (carpeta / "index.html").read_text(encoding="utf-8")
 
     def test_todas_las_paginas_tienen_politica(self):
