@@ -396,7 +396,7 @@ el resto difuminado, sello de la universidad y un botón que lleva a su portal.
 El detalle no se publica porque no es nuestro.
 
 Esto existe para poder trabajar **con** las bolsas universitarias en vez de
-raspar lo que tienen detrás de un login. Ver `PROPUESTA-UNIVERSIDADES.md`.
+raspar lo que tienen detrás de un login.
 
 ## Bolsas de trabajo de las empresas
 

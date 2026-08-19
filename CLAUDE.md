@@ -47,12 +47,9 @@ Conectado el 4 de agosto de 2026: dominio en Squarespace, correo
 | `DOMINIO.md` | Cómo se conectó el dominio y qué revisar si vuelve a cambiar. |
 | `GOOGLE.md` | Search Console: verificar el sitio y mandar el sitemap, paso a paso. |
 | `ALERTAS.md` | Las alertas: cómo están conectadas y cómo se mandan. |
-| `SEGURIDAD.md` | Auditoría de seguridad: qué se revisó y qué queda abierto. |
-| `EMPRESAS.md` | Estrategia de bolsas de trabajo de empresas. |
 | `PRIMERA-CORRIDA-CAS.md` | Los cuatro comandos para estrenar Convocatorias CAS. Se borra cuando ya corrió bien. |
 | `motor/apoyanos.py` | La página `/apoyanos/`. Los canales de aporte se configuran ahí, en `CANALES`. |
-| `PROPUESTA-UNIVERSIDADES.md` | Correos listos para las bolsas universitarias. |
-| Bitácora en Notion | Historia del proyecto, ideas pendientes, errores que costaron caro, glosario. Ahí va lo narrativo; aquí va lo operativo. |
+| Bitácora en Notion | Historia del proyecto, ideas pendientes, errores que costaron caro, glosario. **Y desde el 18/8/2026, todo lo estratégico**: el mapa de fuentes, la auditoría de seguridad y el material comercial. Ahí va lo narrativo y lo competitivo; aquí solo lo operativo. |
 
 Código: `motor/` (recolección, filtro, score, publicación), `datos/` (SQLite,
 se genera solo), `pruebas/` (los tests), `index.html` (el sitio, un solo
@@ -237,47 +234,23 @@ enlaza al aviso oficial.
 
 Detalle completo en `README.md` › *El filtro*.
 
-## Estado real (5 de agosto de 2026, noche)
+## Cuántas ofertas hay hoy
 
-**2,201 avisos revisados · 63 publicadas · 77% no dice cuánto paga.**
-Sueldo mediano de lo publicado: **S/ 1,300**.
+No se anota acá, y es a propósito: **este repositorio es público**, y las tasas
+de aprobación por fuente son de las pocas cosas del proyecto que a un
+competidor le sirven de verdad. Los números vivos están en la bitácora de
+Notion.
 
-Tras estrenar Convocatorias CAS el 6/8/2026 el sitio quedó en **94 ofertas**.
+Para verlos en cualquier momento:
 
-| Fuente | Publicadas |
-|---|---|
-| Bumeran | 45 |
-| Laborum | 17 |
-| Convocatorias del Estado | **1** ← es un archivo, casi todo cerrado |
-| Convocatorias CAS | **30** en su primera corrida (38,5% de aprobación) |
-| Trabajos Diarios | recién conectada (13/8/2026) |
+```bash
+python3 -m motor stats
+```
 
-La primera corrida de CAS, en números: 174 direcciones en el sitemap, 94
-saltadas por traer más de una plaza (1.263 plazas), 78 avisos leídos, 30
-publicados. Casi todo provincia: Melgar, Pacucha, Tayacaja, Utcubamba, Padre
-Abad, Huaytará, San Martín.
+Lo que sí conviene tener presente, porque es una regla y no un dato:
 
-Cómo se llegó aquí en un día, porque las tres cosas se tapaban entre sí:
-
-- El paso de privados **se cortaba a los 60 minutos** y Laborum, que iba
-  segundo, no llegaba a correr. Ahora cada portal tiene su propio paso y su
-  propio reloj.
-- Cada aviso costaba **30 segundos en vez de 3**: se esperaba a que una
-  etiqueta `<script>` se hiciera *visible*, cosa que no pasa nunca. La corrida
-  entera pasó de 1 h 2 min a **15 minutos**.
-- Laborum se quedaba en cero porque su sitemap devuelve un trozo cualquiera de
-  sus 50 mil avisos y **casi ninguno tenía menos de 3 días**. Va sin ventana de
-  días y con el doble de límite.
-
-Ojo: el bot corre solo cada madrugada y estos números se mueven.
-
-Una tasa de aprobación baja es señal de que el filtro funciona, no de que falte
-oferta. No hay que "aflojar el filtro para tener más avisos": eso es
-exactamente lo que hacen los portales que queremos reemplazar. Si hacen falta
-más ofertas, la respuesta es **más fuentes**, no menos exigencia.
-
-Una tasa de aprobación baja es señal de que el filtro funciona, no de que falte
-oferta. No hay que "aflojar el filtro para tener más avisos": eso es
+**Una tasa de aprobación baja es señal de que el filtro funciona, no de que
+falte oferta.** No hay que "aflojar el filtro para tener más avisos": eso es
 exactamente lo que hacen los portales que queremos reemplazar. Si hacen falta
 más ofertas, la respuesta es **más fuentes**, no menos exigencia.
 
@@ -404,7 +377,8 @@ Lo que está esperando, en orden aproximado de impacto:
      necesita código: una corrida con `dias = 0` y el límite privado en 400.
    - ~~Las convocatorias CAS de varias plazas~~. **Hecho el 8/8/2026**: ahora
      cada puesto sale como un aviso propio. Ver abajo.
-   - **Convocatorias del Estado** y las bolsas de empresas (`EMPRESAS.md`).
+   - **Convocatorias del Estado** y las bolsas de empresas (la estrategia
+     completa, en Notion).
 
    **BuscoTrabajo está descartado** (8/8/2026): tiene **4 empleos activos y 10
    empresas registradas** en todo el portal. Ver la trampa de abajo.
@@ -418,8 +392,8 @@ Lo que está esperando, en orden aproximado de impacto:
    ofertas con solo puesto, empresa y enlace —un agujero en la regla 1— con la
    excusa de que el detalle se veía haciendo clic; ahora se sabe que al hacer
    clic tampoco está el sueldo. Se rompía la promesa del sitio y encima no
-   servía. `PROPUESTA-UNIVERSIDADES.md` se conserva por si algún día una
-   universidad cambia de práctica.
+   servía. La propuesta se archivó en Notion por si algún día una universidad
+   cambia de práctica.
 4. ~~Páginas por ciudad y por rubro~~ **Hechas el 12/8/2026**. Ver abajo.
 5. **Detector de requisitos discriminatorios** (Ley 26772). Se encontró un
    aviso pidiendo "Edad: entre 20 y 45 años".
@@ -604,7 +578,7 @@ verificar.
   (escala normada), al trabajo por campaña (el jornal ES la oferta) y a quien
   pelea por gente escasa. Una marca fuerte compite con la marca, no con el
   sueldo, y no va a cambiar porque le escribamos un lector mejor. Por eso las
-  CAS son hoy la mejor fuente y no fue casualidad. Detalle en `EMPRESAS.md`.
+  CAS son hoy la mejor fuente y no fue casualidad. El detalle está en Notion.
 - **La verificación más barata son los ojos, y va primero.** Con la bolsa de
   Falabella se gastaron tres rondas de herramienta —sondeo, navegador, lector
   genérico— y ninguna dio el dato que la decidió. Mentita abrió el portal,
@@ -622,7 +596,7 @@ verificar.
   costó veinte minutos; escribir el lector habría costado un día. **Antes de
   escribir una fuente hay que sondearla**, y para eso está
   `motor sondear <url>`: cuenta cuántos avisos tiene y cuántos dicen el
-  sueldo, pasándolos por el filtro de verdad. Es obligatorio (`EMPRESAS.md`).
+  sueldo, pasándolos por el filtro de verdad. Es obligatorio.
 - **Muchas webs `.gob.pe` no contestan desde los servidores de GitHub.**
   Comprobado el 6/8/2026: `munisurquillo.gob.pe` carga al instante desde una
   conexión peruana y da tiempo de espera agotado desde la nube. Como el motor
