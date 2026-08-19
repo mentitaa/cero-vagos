@@ -317,7 +317,7 @@ def cmd_recolectar(args) -> None:
         # Falabella y Cencosud se descartaron por no publicar sueldos.
         print("Esa lista no tiene ninguna fuente configurada.")
         print("No es un error: las bolsas de empresa quedaron vacías tras "
-              "descartar\nFalabella y Cencosud. Ver EMPRESAS.md.")
+              "descartar\nFalabella y Cencosud. El porqué está en Notion.")
         sys.exit(1)
     if not args.demo and not any(f.activa for f in fuentes):
         print("Ninguna fuente activa. Instala requests:  pip install requests")
