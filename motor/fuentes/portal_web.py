@@ -651,7 +651,7 @@ def fuentes_por_verificar() -> list[PortalWeb]:
     return [
         # Las bolsas universitarias peruanas corren sobre la plataforma Reqlut y
         # su listado exige login: son ofertas exclusivas para estudiantes de esa
-        # casa de estudios. No se recolectan a propósito (ver EMPRESAS.md).
+        # casa de estudios. No se recolectan a propósito (el porqué, en Notion).
         PortalWeb(
             "Empleos del MTPE", "https://www.empleosperu.gob.pe",
             patron_aviso=r"/(empleos|ofertas|vacantes)/[^\"'\s]+",

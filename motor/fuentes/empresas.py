@@ -210,7 +210,8 @@ def empresas_peru() -> list[Fuente]:
     las marcas no contratan, contratan los GRUPOS. McDonald's es Arcos Dorados,
     KFC y Pizza Hut son Delosi, Sodimac y Tottus son Falabella, Metro y Wong son
     Cencosud. Perseguir marcas es perseguir cuarenta puertas que llevan a diez
-    casas. Ver EMPRESAS.md para el mapa completo.
+    casas. El mapa de grupos vive en la bitácora de Notion, no acá: es
+    análisis competitivo y este repositorio es público.
     """
     return [
         # Grupo Falabella NO está acá, y no es un olvido.
@@ -222,7 +223,7 @@ def empresas_peru() -> list[Fuente]:
         # de la entrevista, pero no el oficio (regla 8).
         #
         # Dejarlo configurado "por si acaso" costaría veinte minutos de
-        # navegador cada madrugada para traer cero. Ver EMPRESAS.md.
+        # navegador cada madrugada para traer cero. El detalle está en Notion.
         # Cencosud (Metro, Wong) tampoco, y por lo mismo: revisado a ojo el
         # 13/8/2026, no publica sueldos.
         #
@@ -231,7 +232,7 @@ def empresas_peru() -> list[Fuente]:
         # cerrado. La lección no es sobre estos dos portales sino sobre el eje:
         # ir por GRUPOS busca volumen, y el volumen nunca fue lo escaso. Una
         # marca fuerte no compite por sueldo, así que no lo publica. Ver
-        # EMPRESAS.md › El retail corporativo se cierra.
+        # Notion › El retail corporativo se cierra.
     ]
 
 
