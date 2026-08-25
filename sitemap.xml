@@ -1,41 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://cerovagos.com/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://cerovagos.com/transparencia/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/como-trabajamos/</loc><lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://cerovagos.com/terminos/</loc><lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://cerovagos.com/privacidad/</loc><lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://cerovagos.com/apoyanos/</loc><lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/lima/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/ucayali/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/cajamarca/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/loreto/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/la-libertad/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/cusco/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/huancavelica/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/huanuco/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/arequipa/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/ayacucho/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/tacna/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/apurimac/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/puno/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/ingenieria/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/ventas/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/logistica/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/administracion/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/recursos-humanos/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/atencion-al-cliente/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/contabilidad/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/legal/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/salud/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/tecnologia/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/practicas/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://cerovagos.com/transparencia/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/como-trabajamos/</loc><lastmod>2026-08-25</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://cerovagos.com/terminos/</loc><lastmod>2026-08-25</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://cerovagos.com/privacidad/</loc><lastmod>2026-08-25</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://cerovagos.com/apoyanos/</loc><lastmod>2026-08-25</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/lima/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/ucayali/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/cajamarca/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/loreto/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/la-libertad/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/huancavelica/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/cusco/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/huanuco/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/arequipa/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/ayacucho/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/tacna/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/apurimac/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/puno/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/ingenieria/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/ventas/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/logistica/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/recursos-humanos/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/administracion/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/atencion-al-cliente/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/contabilidad/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/legal/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/salud/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/tecnologia/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/practicas/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-grifo-primax-de-av-bolivar-coesti-s-a-79e451ab/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-grifo-en-primax-estacion-ricardo-palma-del-metropo-5f847d38/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-grifo-primax-de-javier-prado-con-flora-tristan-coe-2303135b/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/gestor-de-agendamiento-servicio-de-telecomunicaciones-olitel-s-a-c-cff4e82d/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/ayudante-de-cocina-adecco-peru-s-a-8be9ba80/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-grupo-solimano-0ad16eef/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-de-mantenimiento-chili-s-adecco-peru-s-a-c05614e0/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asesor-de-ventas-call-center-presencial-ampliffica-peru-s-a-c-bb55bd3a/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-de-almacen-inside-empresarial-401330f6/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-overall-strategy-4026273a/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/promotor-overall-strategy-db78595b/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operario-de-limpieza-eulen-del-peru-df717bf2/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/chofer-a1-apparka-9a399fa1/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-electricista-surco-s-eulen-del-peru-f581dd8f/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operario-de-limpieza-ceelimp-group-s-a-c-3fce53b6/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/practicante-profesional-de-comercio-exterior-e-inteligencia-comercial-b6181c25/</loc><lastmod>2026-08-23</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-confidencial-1df23a91/</loc><lastmod>2026-08-23</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-de-almacen-manpowergroup-peru-bd08a771/</loc><lastmod>2026-08-23</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/jefe-a-de-sala-planet-game-s-a-c-7226135e/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-grifo-en-primax-de-la-av-el-ejercito-coesti-s-a-0cddc428/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-en-grifo-primax-al-costado-del-jockey-plaza-coesti-2036be24/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-grifo-primax-frente-al-open-plaza-de-angamos-coest-c48de28b/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/operario-de-almancen-c-eurofirms-peru-e9542481/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-grifo-en-primax-estacion-ricardo-palma-del-metropo-5f847d38/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/operario-embalador-overall-strategy-a6c1e619/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/supervisor-grupo-expro-e436a8b3/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/ejecutivo-de-admision-emergencias-clinica-providencia-8fd73d99/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
@@ -60,15 +77,12 @@
   <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-eurofirms-peru-6527de3e/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/auxiliar-de-almacen-centauros-del-peru-3411385d/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/especialista-en-gestion-de-proyectos-caja-de-pensiones-militar-policia-2e91c3be/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-covisian-peru-1b4b7a1d/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/operario-de-almacen-arimer-consulting-9331c873/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/conductor-corporacion-biolife-92b24f4b/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/asesor-call-center-claro-remoto-recupera-business-partner-sac-38b38786/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/ejecutivo-de-claro-peru-atento-peru-89ebc248/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-de-almacen-s-adecco-peru-s-a-83fabd9a/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/ingreso-directo-full-remoto-asesor-ventas-atento-peru-c2bf0994/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/auxiliar-de-almacen-en-el-nuevo-aeropuerto-consultora-cyl-00ed2ff2/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operario-de-limpieza-eulen-del-peru-df717bf2/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/asesor-de-ventas-callcenter-recupera-business-partner-sac-7aa44131/</loc><lastmod>2026-08-22</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/vendedor-senior-de-celulares-arch-latam-8c3f6bfb/</loc><lastmod>2026-08-21</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/practicante-profesional-caja-de-pensiones-militar-policial-a7131604/</loc><lastmod>2026-08-21</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
@@ -83,7 +97,6 @@
   <url><loc>https://cerovagos.com/oferta/domingos-se-descansa-fijo-atencion-al-cliente-chat-y-voz-atento-peru-d0e34ec2/</loc><lastmod>2026-08-21</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/vendedor-de-campo-basico-alimentos-eps-comisiones-ilimitadas-manpower-b8d84e64/</loc><lastmod>2026-08-21</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-en-grifo-primax-de-javier-prado-con-castanos-coest-3a501925/</loc><lastmod>2026-08-20</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-grifo-primax-de-av-bolivar-coesti-s-a-79e451ab/</loc><lastmod>2026-08-20</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/tecnico-de-refrigeracion-y-hvac-cuadrilla-lider-brevete-eulen-del-peru-bc5bbeb9/</loc><lastmod>2026-08-20</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-en-grifo-primax-a-la-altura-de-av-coesti-s-a-a115fad6/</loc><lastmod>2026-08-20</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/back-office-administrativo-becall-0c9c469f/</loc><lastmod>2026-08-20</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
@@ -94,7 +107,6 @@
   <url><loc>https://cerovagos.com/oferta/operario-de-produccion-ng-restaurants-c79686b3/</loc><lastmod>2026-08-20</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/promotor-a-de-ventas-entel-grupo-tawa-3a6255ee/</loc><lastmod>2026-08-20</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-franquicias-unidas-del-peru-sac-462cfb05/</loc><lastmod>2026-08-19</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/chofer-a1-apparka-9a399fa1/</loc><lastmod>2026-08-19</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/promotora-de-ventas-grupo-solimano-e7093235/</loc><lastmod>2026-08-19</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/ayudante-de-almacen-para-villa-el-salvador-representaciones-martin-s-a-0273e223/</loc><lastmod>2026-08-19</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/anfitrion-a-de-estacionamiento-urbapark-s-a-c-f21f6b37/</loc><lastmod>2026-08-19</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
@@ -114,7 +126,6 @@
   <url><loc>https://cerovagos.com/oferta/auxiliar-de-reparto-signia-soluciones-logisticas-s-a-c-2a3ab476/</loc><lastmod>2026-08-18</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-en-grifo-primax-en-el-cruce-de-angamos-coesti-s-a-27732d20/</loc><lastmod>2026-08-18</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/auxiliar-de-limpieza-adecco-peru-s-a-62c73f7c/</loc><lastmod>2026-08-18</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-grifo-primax-de-javier-prado-con-flora-tristan-coe-2303135b/</loc><lastmod>2026-08-18</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/ejecutivo-grafton-peru-s-a-c-32769ec7/</loc><lastmod>2026-08-18</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/ejecutivo-a-de-cobranzas-biznes-sac-f9cedac2/</loc><lastmod>2026-08-18</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/mercaderista-reponedor-overall-strategy-8202b054/</loc><lastmod>2026-08-18</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
@@ -168,7 +179,6 @@
   <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-surco-aromas-cafe-delicatessen-s-a-c-5a8c6463/</loc><lastmod>2026-08-14</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/call-center-faguel-jess-eirl-e4c58a24/</loc><lastmod>2026-08-14</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-claro-gea-internacional-7a11d192/</loc><lastmod>2026-08-14</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-overall-strategy-4026273a/</loc><lastmod>2026-08-14</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/ejecutivo-comercial-hunter-overall-strategy-17faa075/</loc><lastmod>2026-08-14</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/sip-asesor-de-ventas-sip-2a82ddce/</loc><lastmod>2026-08-13</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/asesor-de-ventas-sip-83ab84b2/</loc><lastmod>2026-08-13</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
@@ -176,7 +186,6 @@
   <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-el-grifo-primax-surco-coesti-s-a-48f1150a/</loc><lastmod>2026-08-12</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/coordinador-de-ejecucion-overall-strategy-7693d6b4/</loc><lastmod>2026-08-12</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-grifo-primax-en-miraflores-coesti-s-a-25381e4a/</loc><lastmod>2026-08-12</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/promotor-eficacia-5bda5d79/</loc><lastmod>2026-08-12</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/asesor-de-ventas-auna-a365-17b96cd9/</loc><lastmod>2026-08-12</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/conductor-operario-grafton-peru-s-a-c-3df40c7b/</loc><lastmod>2026-08-12</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/urgente-promotor-de-ventas-grupo-tawa-c0e98f1a/</loc><lastmod>2026-08-12</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
@@ -209,7 +218,6 @@
   <url><loc>https://cerovagos.com/oferta/supervisor-de-confeccion-grafton-peru-s-a-c-64f84e62/</loc><lastmod>2026-08-11</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/conductor-grafton-peru-s-a-c-88f3ae29/</loc><lastmod>2026-08-11</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/promotor-de-ventas-part-meyten-1df5a085/</loc><lastmod>2026-08-11</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operario-de-limpieza-ceelimp-group-s-a-c-3fce53b6/</loc><lastmod>2026-08-11</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/auxiliar-de-limpieza-retail-services-sac-923fbc85/</loc><lastmod>2026-08-11</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/operario-de-produccion-eurofirms-a02d0426/</loc><lastmod>2026-08-11</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/coordinador-de-trade-marketing-zona-norte-overall-strategy-05736f85/</loc><lastmod>2026-08-11</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
@@ -365,285 +373,264 @@
   <url><loc>https://cerovagos.com/oferta/asesor-de-atencion-al-cliente-venta-seguro-vehicular-a365-8e34d873/</loc><lastmod>2026-07-30</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/asesor-call-center-ventas-entel-smart-media-s-a-c-c26460d0/</loc><lastmod>2026-07-30</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/asesor-comercial-corporativo-automatizate-negocios-c077e661/</loc><lastmod>2026-07-30</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-grupo-solimano-0ad16eef/</loc><lastmod>2026-07-30</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/agente-call-center-a365-2e0e8666/</loc><lastmod>2026-07-30</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-en-imagen-institucional-ugel-huancavelica-f66f5c68/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-legal-en-registro-de-datos-de-autoridades-sunedu-ee02f5aa/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-de-analisis-financiero-y-graduacion-de-multas-sunedu-d348610c/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/jefe-de-la-unidad-territorial-piura-llamkasun-peru-cce7f98d/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-legal-municipalidad-de-miraflores-07dae5fd/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/docente-ugel-03-trujillo-nor-oeste-ef9eff1d/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-legal-en-gestion-publica-y-defensa-legal-ingemmet-4ae36e20/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/ejecutiva-llamkasun-peru-d065d08a/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-legal-iii-en-evaluacion-del-proceso-de-licenciamiento-sunedu-d7f5f5a9/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-para-la-oficina-de-planeamiento-y-presupuesto-escuela-sup-5c6b8153/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/promotor-de-eventos-deportivos-municipalidad-de-miraflores-43ba75a1/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-administrativo-para-la-direccion-general-de-administracio-ff18f571/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-sat-huamanga-99ffa557/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/enfermera-hospital-arzobispo-loayza-b8704673/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/agente-de-seguridad-municipalidad-de-chao-04404d37/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-en-seguimiento-y-evaluacion-de-proyectos-instituto-de-cal-4efadf3a/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-de-abastecimientos-ugel-san-miguel-70687bd7/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/ingeniero-hospital-arzobispo-loayza-10ae7b36/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/enfermero-hospital-arzobispo-loayza-9e0cb56b/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-intermedio-de-sanidad-e-inocuidad-de-productos-agricolas-sena-6ada7c60/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-ministerio-relaciones-exteriores-rree-c23203b1/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-en-laboratorio-inpe-e96006a9/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-inpe-295c6a70/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-i-de-sistemas-inpe-50a9d7e1/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/jefe-de-la-unidad-de-imagen-institucional-municipalidad-de-antauta-1491327e/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/abogado-municipalidad-de-antauta-e964f598/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-municipalidad-de-antauta-f7feaf3c/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/arquitecto-municipalidad-de-antauta-b1b5e151/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-municipalidad-de-challhuahuacho-c9acd603/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-administrativo-iii-municipalidad-de-challhuahuacho-7a08f762/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-legal-municipalidad-de-lince-8e491758/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-de-monitoreo-poder-judicial-ccdfeadc/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-de-atencion-integral-poder-judicial-05d9dd1a/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-municipalidad-de-huatasani-436ca509/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-iii-en-interculturalidad-senace-e942bd99/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-red-de-salud-coracora-4860db55/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-electronico-red-de-salud-coracora-a6757337/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-sanitaria-i-red-de-salud-coracora-7969e0ab/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-mecanico-red-de-salud-coracora-03123344/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-municipalidad-de-lajas-5528019e/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-academico-universidad-agraria-la-molina-72bb0f73/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-administrativo-universidad-agraria-la-molina-9e611867/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-informatico-universidad-agraria-la-molina-5bd63a64/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-de-convenios-universidad-agraria-la-molina-b26fb779/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-agropecuario-universidad-agraria-la-molina-ff7aa1a8/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-de-laboratorio-universidad-agraria-la-molina-654f02c3/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-laboratorio-universidad-agraria-la-molina-4c89028c/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/coordinador-de-planeamiento-estrategico-y-modernizacion-de-la-gestion-20311400/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/conductor-de-la-camioneta-oficial-municipalidad-de-chuschi-72c8ba5d/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/coordinador-de-macroregiones-autoridad-nacional-de-infraestructura-28dc6015/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-en-gestion-de-proyectos-autoridad-nacional-de-infraestructur-529a8452/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/gerente-de-proyectos-autoridad-nacional-de-infraestructura-7970ee91/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-en-formulacion-de-inversiones-autoridad-nacional-de-infraestr-29ec9755/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-en-proyectos-de-inversion-publica-autoridad-nacional-de-i-4f337544/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-mecanico-municipalidad-distrital-de-huancabamba-3384a5d5/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-en-gestion-de-procesos-y-calidad-invermet-976ff98b/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-de-defensa-juridica-del-estado-procuraduria-del-estado-51b7d4eb/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-senior-iii-en-modernizacion-procuraduria-del-estado-4c732268/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-senior-procuraduria-del-estado-a562f55a/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-senior-en-infraestructura-tecnologica-procuraduria-del-es-810e6abf/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/abogado-procuraduria-del-estado-3d06fc20/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-legal-procuraduria-del-estado-182403e9/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-legal-senior-de-defensa-juridica-del-estado-descentralizado-p-644d97d7/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-procuraduria-del-estado-4b18bb37/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/coordinador-a-de-innovacion-y-soporte-tecnologico-ugel-la-mar-8899f4af/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-legal-atu-3c6486d5/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/chofer-de-camioneta-municipalidad-de-carabamba-243b4bfb/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operador-a-de-motoniveladora-municipalidad-de-carabamba-8d8d05fb/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operador-a-de-retro-excavadora-municipalidad-de-carabamba-bbf0a033/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/jefe-a-de-la-oficina-de-abastecimiento-municipalidad-de-carabamba-927dce26/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/promotor-a-de-bienestar-ugel-alto-amazonas-yurimaguas-812252ca/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-en-alcaldia-municipalidad-de-lagunas-loreto-bfb3c2f0/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-de-obras-municipalidad-de-lagunas-loreto-a268c923/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-en-la-sub-gerencia-de-liquidacion-y-supervision-de-obras-mun-ecaba4e0/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-en-oficina-de-la-tecnologia-de-la-informacion-662c824f/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-de-recursos-humanos-municipalidad-de-lagunas-7e75cd1d/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-en-contrataciones-municipalidad-de-lagunas-loreto-22746a4a/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-en-recursos-humanos-municipalidad-de-lagunas-loreto-fd1d4ce2/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/jefe-de-la-oficina-de-programacion-multianual-de-inversiones-municipal-f980961b/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/jefe-de-la-oficina-de-gestion-de-recursos-humanos-municipalidad-de-lag-369a6ae3/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-de-la-sub-gerencia-de-catastro-y-desarrollo-urbano-municipal-2eacb79c/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-en-la-sub-gerencia-de-comercio-licencias-y-control-sanitario-b33b96a1/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-de-secretaria-general-municipalidad-de-lagunas-loreto-fcc680fc/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/secretaria-o-en-la-sub-gerencia-de-empadronamiento-municipalidad-de-la-1f93cd07/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/sub-gerente-de-empadronamiento-municipalidad-de-lagunas-loreto-888db4fb/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/secretaria-o-sub-gerencia-de-atencion-a-la-persona-con-discapacidad-mu-a42a86a5/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/sub-gerente-de-fiscalizacion-y-ejecucion-coactiva-municipalidad-de-lag-9f525e15/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/sub-gerente-de-gestion-ambiental-municipalidad-de-lagunas-loreto-b8c034be/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/sub-gerente-de-recaudacion-y-control-tributario-municipalidad-de-lagun-8cd6816c/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/secretaria-o-en-la-sub-gerencia-de-seguridad-ciudadana-y-serenazgo-mun-43074ca2/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/sub-gerente-de-seguridad-ciudadana-y-serenazgo-municipalidad-de-laguna-a57b227c/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnica-municipalidad-de-lagunas-loreto-da6a2bd4/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-municipalidad-de-lagunas-loreto-62007add/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-agropecuario-direccion-agraria-de-andahuaylas-9ba7df9e/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-i-red-de-salud-puerto-inca-a52fe598/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/ayudante-de-soldador-municipalidad-de-atalaya-9ead0ba2/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/vigilante-ii-municipalidad-de-atalaya-245b7021/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operador-de-excavadora-hidraulica-municipalidad-de-atalaya-39aefeb5/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operador-de-tractor-oruga-municipalidad-de-atalaya-422dc197/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operador-de-rodillo-vibratorio-municipalidad-de-atalaya-32b02446/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operador-de-retroexcavadora-municipalidad-de-atalaya-89968604/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operador-de-motoniveladora-municipalidad-de-atalaya-27b53a7b/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operador-de-cargador-frontal-municipalidad-de-atalaya-34d3f544/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/conductor-de-volquete-municipalidad-de-atalaya-54908569/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/conductor-del-bus-municipal-municipalidad-de-atalaya-807c1859/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-viii-en-obras-municipalidad-de-atalaya-8b86e4d5/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-iii-municipalidad-de-atalaya-8fcdffff/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-iii-en-catastro-y-desarrollo-urbano-municipalidad-de-atal-d9710613/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/vigilante-i-para-el-cementerio-municipal-municipalidad-de-atalaya-c539266a/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/conductor-de-vehiculo-furgon-municipalidad-de-atalaya-bce75aae/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-i-en-la-unidad-formuladora-municipalidad-de-atalaya-19832262/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnica-en-enfermeria-ii-municipalidad-de-atalaya-c5fb6c86/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/vigilante-i-del-albergue-municipal-municipalidad-de-atalaya-88ee9ce0/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-v-fiscalizador-ambiental-municipalidad-de-atalaya-35e87c66/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/vigilante-del-botadero-municipal-municipalidad-de-atalaya-3c551873/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/vigilante-del-vivero-municipal-municipalidad-de-atalaya-77f16634/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/ayudante-de-vivero-municipal-municipalidad-de-atalaya-eeb95088/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operario-de-la-planta-de-valorizacion-municipalidad-de-atalaya-bbdeb1c9/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/ayudante-en-la-segregacion-de-residuos-solidos-municipalidad-de-atalay-99fae104/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/chofer-de-vehiculo-menor-municipalidad-de-atalaya-400597ee/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/chofer-del-camion-compactador-municipalidad-de-atalaya-14454c48/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-i-del-programa-educca-municipalidad-de-atalaya-1d5f5810/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/electricista-municipalidad-de-atalaya-7c9ed8f9/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-administrativo-iii-en-transporte-municipalidad-de-atalaya-1d0b4600/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/personal-de-limpieza-interna-municipalidad-de-atalaya-5536c132/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/personal-de-limpieza-de-drenajes-pluviales-municipalidad-de-atalaya-8d6fbb83/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/personal-de-limpieza-publica-municipalidad-de-atalaya-62248dd8/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/vigilante-i-para-la-captacion-hilario-municipalidad-de-atalaya-b5f0573a/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/vigilante-para-el-reservorio-aeropuerto-municipalidad-de-atalaya-4b5bd8a9/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/vigilante-i-para-la-captacion-alto-maranquiari-municipalidad-de-atalay-3be4f32a/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operador-de-la-ptar-municipalidad-de-atalaya-c5cd3197/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/chofer-del-camion-cisterna-municipalidad-de-atalaya-3490c990/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/chofer-de-retroexcavadora-municipalidad-de-atalaya-954a0bd9/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/chofer-del-camion-hidrojet-municipalidad-de-atalaya-95182c15/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/gasfitero-municipalidad-de-atalaya-c38531bf/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operador-de-la-camara-de-bombeo-de-canuja-municipalidad-de-atalaya-2d9f6a74/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/chofer-sereno-i-municipalidad-de-atalaya-6fbe872b/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-i-municipalidad-de-atalaya-96b9f8ed/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-v-municipalidad-de-atalaya-cd509288/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-vii-en-cuentas-contables-municipalidad-de-atalaya-c16c8419/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/vigilante-ii-en-almacen-municipalidad-de-atalaya-d7ef852e/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-iv-en-patrimonio-municipalidad-de-atalaya-d50c6ea4/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/chofer-i-municipalidad-de-atalaya-aa7e7520/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-ii-en-contrataciones-municipalidad-de-atalaya-8b6db1a4/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-i-en-siricc-municipalidad-de-atalaya-4b8a41d5/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-i-municipalidad-de-atalaya-86f43492/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-i-de-eventos-protocolares-municipalidad-de-atalaya-2f3dddb3/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-v-en-redaccion-municipalidad-de-atalaya-3e063b0c/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-i-en-archivo-general-municipalidad-de-atalaya-ff37aacb/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/vigilante-i-municipalidad-de-atalaya-b53ceb87/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-i-en-la-oficina-de-coordinacion-municipalidad-c0abd3fc/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-municipalidad-de-atalaya-97b10c00/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/chofer-municipalidad-de-atalaya-18b09627/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-i-en-gestion-de-conflictos-sociales-en-la-adjuntia-defens-359f1963/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-en-el-modulo-defensorial-de-huanta-defensoria-5c4ae3f2/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-legal-en-la-oficina-defensorial-de-huancavelica-defensoria-4b5899b6/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-en-planeamiento-i-defensoria-5572c257/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-defensoria-105f7200/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/secretariado-ejecutivo-defensoria-a4abbb6d/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-legal-defensoria-28944a4a/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/contador-municipalidad-de-junin-40dd7780/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-parque-de-las-leyendas-5b97bbd5/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-administrativo-parque-de-las-leyendas-b6fb494c/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-ugel-otuzco-56410bf9/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-en-recursos-humanos-senamhi-53855ac6/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-en-contrataciones-ii-senamhi-b44db5b4/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-en-contrataciones-i-senamhi-e67e4015/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-de-catastro-sunarp-d629c7f9/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-registral-mixto-sunarp-1afc8721/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-registral-cas-sunarp-6f72b44f/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/abogado-sunarp-a447efb4/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/medico-especialista-en-neurocirugia-hospital-docente-de-cajamarca-da612578/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/medico-especialista-en-ortopedia-y-traumatologia-hospital-docente-de-c-c69f667e/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/medico-especialista-en-cirugia-general-hospital-docente-de-cajamarca-a6f6c452/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/medico-especialista-en-cirugia-pediatrica-hospital-docente-de-cajamarc-569f5b65/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/medico-especialista-en-medicina-interna-hospital-docente-de-cajamarca-26cb0334/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/medico-especialista-en-anestesiologia-hospital-docente-de-cajamarca-2fcb0fb6/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/docente-de-cajamarca-hospital-docente-de-cajamarca-12f93469/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/abogado-hospital-docente-de-cajamarca-923a664f/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-administrativo-en-supervision-de-iiee-privadas-ugel-ventanill-a01894c6/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-red-de-salud-cajamarca-a73b36ae/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-en-enfermeria-red-de-salud-cajamarca-e4b29336/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-en-computacion-e-informatica-red-de-salud-cajamarca-e619b34f/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-en-laboratorio-red-de-salud-cajamarca-29b4e324/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-de-calidad-del-servicio-educativo-superior-tecnologico-g-be5ebcdf/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-administrativo-en-tesoreria-universidad-tecnologica-de-fr-bdae9944/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/docente-de-actividades-artisticas-y-culturales-universidad-tecnologica-926e0e32/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/docente-de-actividades-deportivas-universidad-tecnologica-de-frontera-5ff5302c/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/abogado-i-ugel-cutervo-6a5e61dc/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-red-de-salud-pichanaki-cd04cfd6/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-administrativo-para-la-oficina-de-contabilidad-municipalidad-a-b69c184d/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/chofer-municipalidad-de-salaverry-ceee34ef/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operario-de-conduccion-de-camion-volquete-municipalidad-de-pachacamac-bdf4c9a4/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operario-de-conduccion-de-vehiculo-municipalidad-de-pachacamac-6a7e970b/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/gerente-de-infraestructura-y-desarrollo-urbano-rural-municipalidad-bol-ac41a95e/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-ugel-angaraes-bf3e2496/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-en-finanzas-ugel-angaraes-ee881c3b/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/conductor-municipalidad-de-huayopata-fdbc4170/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-de-la-oficina-general-de-planeamiento-y-presupuesto-municipa-55d6e62d/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/abogado-municipalidad-de-huayopata-b8211d8d/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-y-control-personal-municipalidad-de-huayopata-1d90202f/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-ii-municipalidad-de-huayopata-9a52771d/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-informatico-municipalidad-de-huayopata-29a7d935/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-legal-en-recursos-humanos-municipalidad-de-morales-71767478/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-profesional-b-municipalidad-alto-de-la-alianza-6282e8ea/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/sub-gerente-de-obras-y-mantenimiento-municipalidad-alto-de-la-alianza-afe9fc23/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/sub-gerente-de-gestion-de-recursos-humanos-municipalidad-alto-de-la-al-6f035001/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-ugel-huancavelica-f53b7f2b/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-en-procesos-disciplinarios-ugel-huancavelica-1e160867/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-ii-en-fiscalizacion-osiptel-34eb69e6/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-tecnico-ii-osiptel-2accc8b4/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-ii-de-instruccion-osiptel-dbb81c04/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-iii-en-orientacion-osiptel-4dda4951/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-hospital-de-pampas-de-tayacaja-072fba3d/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-en-nutricion-hospital-de-pampas-de-tayacaja-f594b3ae/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/coordinador-de-la-unidad-funcional-de-dialogo-y-gestion-de-conflictos-6e06d67e/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-de-formacion-del-nino-iii-gobierno-regional-de-tacna-95453655/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/ejecutivo-a-de-la-unidad-de-abastecimiento-osinfor-cef7aedb/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-en-contrataciones-municipalidad-de-chao-a35fe731/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/jefe-de-la-oficina-de-tecnologias-de-la-informacion-municipalidad-de-c-9ad975cb/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/coordinador-municipalidad-de-chao-6cb74729/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operador-de-maquinaria-pesada-municipalidad-de-paruro-cb9fa558/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-administrativo-ii-municipalidad-de-paruro-872a3d64/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-municipalidad-de-paruro-2d68dfd7/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asesor-de-gerencia-municipal-municipalidad-de-paruro-54020fd8/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/jefe-de-la-oficina-de-tecnologias-de-la-informacion-y-estadistica-muni-60b1762c/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/soporte-tecnico-red-de-salud-churcampa-c9e4ea9d/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/digitador-red-de-salud-churcampa-bdd3b6fd/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-legal-poder-judicial-282ab595/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-jurisdiccional-poder-judicial-178948c4/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-de-gestion-integral-poder-judicial-efb7cc23/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/chofer-c0d-airhsp-disa-apurimac-ii-129bb89f/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-en-enfermeria-c0d-airhsp-disa-apurimac-ii-ce7ba3f7/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-legal-invermet-1a009ae2/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-en-procedimientos-administrativo-disciplinarios-ministeri-48c09a96/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/contador-gobierno-de-huanuco-1aa8c81d/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/abogado-b-gobierno-de-huanuco-3da3fdc2/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-iii-gobierno-de-huanuco-d3c59ee8/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-vi-gobierno-de-huanuco-cf4fc615/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/personal-de-limpieza-v-gobierno-de-huanuco-ce805a7b/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/personal-de-limpieza-iv-gobierno-de-huanuco-aa9b7802/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/personal-de-limpieza-iii-gobierno-de-huanuco-5eb0c9f7/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/personal-de-limpieza-ii-gobierno-de-huanuco-6774675c/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/personal-de-limpieza-i-gobierno-de-huanuco-e68ba19b/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/coordinador-a-administrativo-a-de-rer-ugel-santiago-de-chuco-e98a57ba/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/coordinador-a-de-rer-ugel-santiago-de-chuco-ba728bfc/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-ugel-tacna-6a019d0b/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/jefe-de-unidad-ejecutora-de-inversiones-universidad-de-trujillo-86778148/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-ii-en-adquisiciones-y-contrataciones-publicas-ministerio-de-e-a81a3d58/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asesor-legal-en-gestion-de-recursos-humanos-ministerio-de-energia-y-mi-3625dcb7/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-en-enfermeria-red-de-salud-la-convencion-4b8dd81a/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/enfermero-red-de-salud-la-convencion-74ca7bc2/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-en-control-previo-sunedu-61fe91db/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-en-desarrollo-agropecuario-municipalidad-de-san-pablo-1aa55add/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-de-tesoreria-municipalidad-de-san-pablo-57be45fe/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-de-estudios-y-proyectos-municipalidad-de-san-pablo-c55640a5/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-de-catastro-y-desarrollo-urbano-municipalidad-de-san-pablo-1a3af9e1/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-de-supervision-y-liquidacion-de-obras-municipalidad-de-san-p-2e102db8/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/abogado-municipalidad-de-san-pablo-dd19e99a/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-de-gerencia-de-desarrollo-territorial-e-infraestructura-munic-9d48df40/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-de-la-gerencia-de-desarrolld-socal-municipalidad-de-san-pabl-67eb918c/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-municipalidad-de-san-pablo-6d656f8c/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-legal-laboral-municipalidad-de-san-pablo-bf99d070/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-de-recursos-humanos-municipalidad-de-san-pablo-d922cae6/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-ambiental-oefa-ebc9863e/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-oefa-2bc5ec25/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-municipalidad-de-santo-domingo-82c5da6c/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-municipalidad-de-santiago-bdda9de7/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-i-municipalidad-de-santiago-c93b2d7a/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-y-contable-municipalidad-de-acostambo-879c1419/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-municipalidad-de-acostambo-57991dc5/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-para-la-sub-gerencia-de-abastecimiento-munici-5a083859/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-para-la-gerencia-municipal-municipalidad-de-a-34844ab6/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/tecnico-en-farmacia-inpe-163c69ee/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-red-de-salud-chepen-77f11012/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/especialista-red-de-salud-chepen-bba59b20/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/medico-especialista-pediatra-red-de-salud-chepen-419a94ee/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/practicante-red-de-salud-chepen-f418a2c6/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/auxiliar-red-de-salud-chepen-47a4e2ad/</loc><lastmod>2026-08-24</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-en-imagen-institucional-ugel-huancavelica-f66f5c68/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-legal-en-registro-de-datos-de-autoridades-sunedu-ee02f5aa/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-de-analisis-financiero-y-graduacion-de-multas-sunedu-d348610c/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/jefe-de-la-unidad-territorial-piura-llamkasun-peru-cce7f98d/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-legal-municipalidad-de-miraflores-07dae5fd/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/ejecutiva-llamkasun-peru-d065d08a/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-legal-iii-en-evaluacion-del-proceso-de-licenciamiento-sunedu-d7f5f5a9/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-para-la-oficina-de-planeamiento-y-presupuesto-escuela-sup-5c6b8153/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/promotor-de-eventos-deportivos-municipalidad-de-miraflores-43ba75a1/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-administrativo-para-la-direccion-general-de-administracio-ff18f571/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-sat-huamanga-99ffa557/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/agente-de-seguridad-municipalidad-de-chao-04404d37/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-en-seguimiento-y-evaluacion-de-proyectos-instituto-de-cal-4efadf3a/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-de-abastecimientos-ugel-san-miguel-70687bd7/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-intermedio-de-sanidad-e-inocuidad-de-productos-agricolas-sena-6ada7c60/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-ministerio-relaciones-exteriores-rree-c23203b1/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-en-laboratorio-inpe-e96006a9/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-inpe-295c6a70/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-i-de-sistemas-inpe-50a9d7e1/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/jefe-de-la-unidad-de-imagen-institucional-municipalidad-de-antauta-1491327e/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/abogado-municipalidad-de-antauta-e964f598/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-municipalidad-de-antauta-f7feaf3c/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/arquitecto-municipalidad-de-antauta-b1b5e151/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-municipalidad-de-challhuahuacho-c9acd603/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-administrativo-iii-municipalidad-de-challhuahuacho-7a08f762/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-legal-municipalidad-de-lince-8e491758/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-de-monitoreo-poder-judicial-ccdfeadc/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-de-atencion-integral-poder-judicial-05d9dd1a/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-municipalidad-de-huatasani-436ca509/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-iii-en-interculturalidad-senace-e942bd99/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-red-de-salud-coracora-4860db55/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-electronico-red-de-salud-coracora-a6757337/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-sanitaria-i-red-de-salud-coracora-7969e0ab/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-mecanico-red-de-salud-coracora-03123344/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-municipalidad-de-lajas-5528019e/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-academico-universidad-agraria-la-molina-72bb0f73/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-administrativo-universidad-agraria-la-molina-9e611867/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-informatico-universidad-agraria-la-molina-5bd63a64/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-de-convenios-universidad-agraria-la-molina-b26fb779/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-agropecuario-universidad-agraria-la-molina-ff7aa1a8/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-de-laboratorio-universidad-agraria-la-molina-654f02c3/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-laboratorio-universidad-agraria-la-molina-4c89028c/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/coordinador-de-planeamiento-estrategico-y-modernizacion-de-la-gestion-20311400/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/conductor-de-la-camioneta-oficial-municipalidad-de-chuschi-72c8ba5d/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/coordinador-de-macroregiones-autoridad-nacional-de-infraestructura-28dc6015/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-en-gestion-de-proyectos-autoridad-nacional-de-infraestructur-529a8452/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/gerente-de-proyectos-autoridad-nacional-de-infraestructura-7970ee91/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-en-formulacion-de-inversiones-autoridad-nacional-de-infraestr-29ec9755/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-en-proyectos-de-inversion-publica-autoridad-nacional-de-i-4f337544/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-en-gestion-de-procesos-y-calidad-invermet-976ff98b/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-de-defensa-juridica-del-estado-procuraduria-del-estado-51b7d4eb/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-senior-iii-en-modernizacion-procuraduria-del-estado-4c732268/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-senior-procuraduria-del-estado-a562f55a/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-senior-en-infraestructura-tecnologica-procuraduria-del-es-810e6abf/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/abogado-procuraduria-del-estado-3d06fc20/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-legal-procuraduria-del-estado-182403e9/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-legal-senior-de-defensa-juridica-del-estado-descentralizado-p-644d97d7/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-procuraduria-del-estado-4b18bb37/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/coordinador-a-de-innovacion-y-soporte-tecnologico-ugel-la-mar-8899f4af/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-legal-atu-3c6486d5/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/chofer-de-camioneta-municipalidad-de-carabamba-243b4bfb/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operador-a-de-motoniveladora-municipalidad-de-carabamba-8d8d05fb/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operador-a-de-retro-excavadora-municipalidad-de-carabamba-bbf0a033/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/jefe-a-de-la-oficina-de-abastecimiento-municipalidad-de-carabamba-927dce26/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-en-alcaldia-municipalidad-de-lagunas-loreto-bfb3c2f0/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-de-obras-municipalidad-de-lagunas-loreto-a268c923/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-en-la-sub-gerencia-de-liquidacion-y-supervision-de-obras-mun-ecaba4e0/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-en-oficina-de-la-tecnologia-de-la-informacion-662c824f/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-de-recursos-humanos-municipalidad-de-lagunas-7e75cd1d/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-en-contrataciones-municipalidad-de-lagunas-loreto-22746a4a/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-en-recursos-humanos-municipalidad-de-lagunas-loreto-fd1d4ce2/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/jefe-de-la-oficina-de-programacion-multianual-de-inversiones-municipal-f980961b/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/jefe-de-la-oficina-de-gestion-de-recursos-humanos-municipalidad-de-lag-369a6ae3/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-de-la-sub-gerencia-de-catastro-y-desarrollo-urbano-municipal-2eacb79c/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-en-la-sub-gerencia-de-comercio-licencias-y-control-sanitario-b33b96a1/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-de-secretaria-general-municipalidad-de-lagunas-loreto-fcc680fc/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/secretaria-o-en-la-sub-gerencia-de-empadronamiento-municipalidad-de-la-1f93cd07/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/sub-gerente-de-empadronamiento-municipalidad-de-lagunas-loreto-888db4fb/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/secretaria-o-sub-gerencia-de-atencion-a-la-persona-con-discapacidad-mu-a42a86a5/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/sub-gerente-de-fiscalizacion-y-ejecucion-coactiva-municipalidad-de-lag-9f525e15/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/sub-gerente-de-gestion-ambiental-municipalidad-de-lagunas-loreto-b8c034be/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/sub-gerente-de-recaudacion-y-control-tributario-municipalidad-de-lagun-8cd6816c/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/secretaria-o-en-la-sub-gerencia-de-seguridad-ciudadana-y-serenazgo-mun-43074ca2/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/sub-gerente-de-seguridad-ciudadana-y-serenazgo-municipalidad-de-laguna-a57b227c/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnica-municipalidad-de-lagunas-loreto-da6a2bd4/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-municipalidad-de-lagunas-loreto-62007add/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-agropecuario-direccion-agraria-de-andahuaylas-9ba7df9e/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-i-red-de-salud-puerto-inca-a52fe598/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/ayudante-de-soldador-municipalidad-de-atalaya-9ead0ba2/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/vigilante-ii-municipalidad-de-atalaya-245b7021/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operador-de-excavadora-hidraulica-municipalidad-de-atalaya-39aefeb5/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operador-de-tractor-oruga-municipalidad-de-atalaya-422dc197/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operador-de-rodillo-vibratorio-municipalidad-de-atalaya-32b02446/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operador-de-retroexcavadora-municipalidad-de-atalaya-89968604/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operador-de-motoniveladora-municipalidad-de-atalaya-27b53a7b/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operador-de-cargador-frontal-municipalidad-de-atalaya-34d3f544/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/conductor-de-volquete-municipalidad-de-atalaya-54908569/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/conductor-del-bus-municipal-municipalidad-de-atalaya-807c1859/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-viii-en-obras-municipalidad-de-atalaya-8b86e4d5/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-iii-municipalidad-de-atalaya-8fcdffff/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-iii-en-catastro-y-desarrollo-urbano-municipalidad-de-atal-d9710613/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/vigilante-i-para-el-cementerio-municipal-municipalidad-de-atalaya-c539266a/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/conductor-de-vehiculo-furgon-municipalidad-de-atalaya-bce75aae/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-i-en-la-unidad-formuladora-municipalidad-de-atalaya-19832262/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnica-en-enfermeria-ii-municipalidad-de-atalaya-c5fb6c86/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/vigilante-i-del-albergue-municipal-municipalidad-de-atalaya-88ee9ce0/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-v-fiscalizador-ambiental-municipalidad-de-atalaya-35e87c66/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/vigilante-del-botadero-municipal-municipalidad-de-atalaya-3c551873/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/vigilante-del-vivero-municipal-municipalidad-de-atalaya-77f16634/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/ayudante-de-vivero-municipal-municipalidad-de-atalaya-eeb95088/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operario-de-la-planta-de-valorizacion-municipalidad-de-atalaya-bbdeb1c9/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/ayudante-en-la-segregacion-de-residuos-solidos-municipalidad-de-atalay-99fae104/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/chofer-de-vehiculo-menor-municipalidad-de-atalaya-400597ee/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/chofer-del-camion-compactador-municipalidad-de-atalaya-14454c48/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-i-del-programa-educca-municipalidad-de-atalaya-1d5f5810/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/electricista-municipalidad-de-atalaya-7c9ed8f9/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-administrativo-iii-en-transporte-municipalidad-de-atalaya-1d0b4600/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/personal-de-limpieza-interna-municipalidad-de-atalaya-5536c132/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/personal-de-limpieza-de-drenajes-pluviales-municipalidad-de-atalaya-8d6fbb83/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/personal-de-limpieza-publica-municipalidad-de-atalaya-62248dd8/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/vigilante-i-para-la-captacion-hilario-municipalidad-de-atalaya-b5f0573a/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/vigilante-para-el-reservorio-aeropuerto-municipalidad-de-atalaya-4b5bd8a9/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/vigilante-i-para-la-captacion-alto-maranquiari-municipalidad-de-atalay-3be4f32a/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operador-de-la-ptar-municipalidad-de-atalaya-c5cd3197/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/chofer-del-camion-cisterna-municipalidad-de-atalaya-3490c990/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/chofer-de-retroexcavadora-municipalidad-de-atalaya-954a0bd9/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/chofer-del-camion-hidrojet-municipalidad-de-atalaya-95182c15/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/gasfitero-municipalidad-de-atalaya-c38531bf/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operador-de-la-camara-de-bombeo-de-canuja-municipalidad-de-atalaya-2d9f6a74/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/chofer-sereno-i-municipalidad-de-atalaya-6fbe872b/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-i-municipalidad-de-atalaya-96b9f8ed/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-v-municipalidad-de-atalaya-cd509288/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-vii-en-cuentas-contables-municipalidad-de-atalaya-c16c8419/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/vigilante-ii-en-almacen-municipalidad-de-atalaya-d7ef852e/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-iv-en-patrimonio-municipalidad-de-atalaya-d50c6ea4/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/chofer-i-municipalidad-de-atalaya-aa7e7520/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-ii-en-contrataciones-municipalidad-de-atalaya-8b6db1a4/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-i-en-siricc-municipalidad-de-atalaya-4b8a41d5/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-i-municipalidad-de-atalaya-86f43492/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-i-de-eventos-protocolares-municipalidad-de-atalaya-2f3dddb3/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-v-en-redaccion-municipalidad-de-atalaya-3e063b0c/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-i-en-archivo-general-municipalidad-de-atalaya-ff37aacb/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/vigilante-i-municipalidad-de-atalaya-b53ceb87/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-i-en-la-oficina-de-coordinacion-municipalidad-c0abd3fc/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-municipalidad-de-atalaya-97b10c00/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/chofer-municipalidad-de-atalaya-18b09627/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-i-en-gestion-de-conflictos-sociales-en-la-adjuntia-defens-359f1963/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-en-el-modulo-defensorial-de-huanta-defensoria-5c4ae3f2/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-legal-en-la-oficina-defensorial-de-huancavelica-defensoria-4b5899b6/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-en-planeamiento-i-defensoria-5572c257/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-defensoria-105f7200/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/secretariado-ejecutivo-defensoria-a4abbb6d/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-legal-defensoria-28944a4a/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/contador-municipalidad-de-junin-40dd7780/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-parque-de-las-leyendas-5b97bbd5/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-administrativo-parque-de-las-leyendas-b6fb494c/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-ugel-otuzco-56410bf9/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-en-recursos-humanos-senamhi-53855ac6/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-en-contrataciones-ii-senamhi-b44db5b4/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-en-contrataciones-i-senamhi-e67e4015/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-de-catastro-sunarp-d629c7f9/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-registral-mixto-sunarp-1afc8721/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-registral-cas-sunarp-6f72b44f/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/abogado-sunarp-a447efb4/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/medico-especialista-en-neurocirugia-hospital-docente-de-cajamarca-da612578/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/medico-especialista-en-ortopedia-y-traumatologia-hospital-docente-de-c-c69f667e/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/medico-especialista-en-cirugia-general-hospital-docente-de-cajamarca-a6f6c452/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/medico-especialista-en-cirugia-pediatrica-hospital-docente-de-cajamarc-569f5b65/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/medico-especialista-en-medicina-interna-hospital-docente-de-cajamarca-26cb0334/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/medico-especialista-en-anestesiologia-hospital-docente-de-cajamarca-2fcb0fb6/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/docente-de-cajamarca-hospital-docente-de-cajamarca-12f93469/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/abogado-hospital-docente-de-cajamarca-923a664f/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-administrativo-en-supervision-de-iiee-privadas-ugel-ventanill-a01894c6/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-red-de-salud-cajamarca-a73b36ae/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-en-enfermeria-red-de-salud-cajamarca-e4b29336/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-en-computacion-e-informatica-red-de-salud-cajamarca-e619b34f/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-en-laboratorio-red-de-salud-cajamarca-29b4e324/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-de-calidad-del-servicio-educativo-superior-tecnologico-g-be5ebcdf/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-administrativo-en-tesoreria-universidad-tecnologica-de-fr-bdae9944/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/docente-de-actividades-artisticas-y-culturales-universidad-tecnologica-926e0e32/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/docente-de-actividades-deportivas-universidad-tecnologica-de-frontera-5ff5302c/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/abogado-i-ugel-cutervo-6a5e61dc/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-red-de-salud-pichanaki-cd04cfd6/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-administrativo-para-la-oficina-de-contabilidad-municipalidad-a-b69c184d/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/chofer-municipalidad-de-salaverry-ceee34ef/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operario-de-conduccion-de-camion-volquete-municipalidad-de-pachacamac-bdf4c9a4/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operario-de-conduccion-de-vehiculo-municipalidad-de-pachacamac-6a7e970b/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/gerente-de-infraestructura-y-desarrollo-urbano-rural-municipalidad-bol-ac41a95e/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-ugel-angaraes-bf3e2496/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-en-finanzas-ugel-angaraes-ee881c3b/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/conductor-municipalidad-de-huayopata-fdbc4170/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-de-la-oficina-general-de-planeamiento-y-presupuesto-municipa-55d6e62d/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/abogado-municipalidad-de-huayopata-b8211d8d/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-y-control-personal-municipalidad-de-huayopata-1d90202f/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-ii-municipalidad-de-huayopata-9a52771d/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-informatico-municipalidad-de-huayopata-29a7d935/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-legal-en-recursos-humanos-municipalidad-de-morales-71767478/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-profesional-b-municipalidad-alto-de-la-alianza-6282e8ea/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/sub-gerente-de-obras-y-mantenimiento-municipalidad-alto-de-la-alianza-afe9fc23/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/sub-gerente-de-gestion-de-recursos-humanos-municipalidad-alto-de-la-al-6f035001/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-ugel-huancavelica-f53b7f2b/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-en-procesos-disciplinarios-ugel-huancavelica-1e160867/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-ii-en-fiscalizacion-osiptel-34eb69e6/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-tecnico-ii-osiptel-2accc8b4/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-ii-de-instruccion-osiptel-dbb81c04/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-iii-en-orientacion-osiptel-4dda4951/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-hospital-de-pampas-de-tayacaja-072fba3d/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-en-nutricion-hospital-de-pampas-de-tayacaja-f594b3ae/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/coordinador-de-la-unidad-funcional-de-dialogo-y-gestion-de-conflictos-6e06d67e/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-de-formacion-del-nino-iii-gobierno-regional-de-tacna-95453655/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/ejecutivo-a-de-la-unidad-de-abastecimiento-osinfor-cef7aedb/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-en-contrataciones-municipalidad-de-chao-a35fe731/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/jefe-de-la-oficina-de-tecnologias-de-la-informacion-municipalidad-de-c-9ad975cb/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/coordinador-municipalidad-de-chao-6cb74729/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-legal-poder-judicial-282ab595/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-jurisdiccional-poder-judicial-178948c4/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-de-gestion-integral-poder-judicial-efb7cc23/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/chofer-c0d-airhsp-disa-apurimac-ii-129bb89f/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-en-enfermeria-c0d-airhsp-disa-apurimac-ii-ce7ba3f7/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-legal-invermet-1a009ae2/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-en-procedimientos-administrativo-disciplinarios-ministeri-48c09a96/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/contador-gobierno-de-huanuco-1aa8c81d/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/abogado-b-gobierno-de-huanuco-3da3fdc2/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-iii-gobierno-de-huanuco-d3c59ee8/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-vi-gobierno-de-huanuco-cf4fc615/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/personal-de-limpieza-v-gobierno-de-huanuco-ce805a7b/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/personal-de-limpieza-iv-gobierno-de-huanuco-aa9b7802/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/personal-de-limpieza-iii-gobierno-de-huanuco-5eb0c9f7/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/personal-de-limpieza-ii-gobierno-de-huanuco-6774675c/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/personal-de-limpieza-i-gobierno-de-huanuco-e68ba19b/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/coordinador-a-administrativo-a-de-rer-ugel-santiago-de-chuco-e98a57ba/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/coordinador-a-de-rer-ugel-santiago-de-chuco-ba728bfc/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-ugel-tacna-6a019d0b/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-ii-en-adquisiciones-y-contrataciones-publicas-ministerio-de-e-a81a3d58/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asesor-legal-en-gestion-de-recursos-humanos-ministerio-de-energia-y-mi-3625dcb7/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-en-enfermeria-red-de-salud-la-convencion-4b8dd81a/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/enfermero-red-de-salud-la-convencion-74ca7bc2/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-en-control-previo-sunedu-61fe91db/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-en-desarrollo-agropecuario-municipalidad-de-san-pablo-1aa55add/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-de-tesoreria-municipalidad-de-san-pablo-57be45fe/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-de-estudios-y-proyectos-municipalidad-de-san-pablo-c55640a5/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-de-catastro-y-desarrollo-urbano-municipalidad-de-san-pablo-1a3af9e1/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-de-supervision-y-liquidacion-de-obras-municipalidad-de-san-p-2e102db8/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/abogado-municipalidad-de-san-pablo-dd19e99a/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-de-gerencia-de-desarrollo-territorial-e-infraestructura-munic-9d48df40/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-de-la-gerencia-de-desarrolld-socal-municipalidad-de-san-pabl-67eb918c/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-municipalidad-de-san-pablo-6d656f8c/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-legal-laboral-municipalidad-de-san-pablo-bf99d070/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-de-recursos-humanos-municipalidad-de-san-pablo-d922cae6/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/especialista-ambiental-oefa-ebc9863e/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-administrativo-oefa-2bc5ec25/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-municipalidad-de-santo-domingo-82c5da6c/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/analista-municipalidad-de-santiago-bdda9de7/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-i-municipalidad-de-santiago-c93b2d7a/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-y-contable-municipalidad-de-acostambo-879c1419/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-municipalidad-de-acostambo-57991dc5/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-para-la-sub-gerencia-de-abastecimiento-munici-5a083859/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-administrativo-para-la-gerencia-municipal-municipalidad-de-a-34844ab6/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-en-farmacia-inpe-163c69ee/</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
 </urlset>
