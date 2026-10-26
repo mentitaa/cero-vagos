@@ -1,21 +1,21 @@
 /* Generado por el motor de Cero Vagos. No editar a mano. */
 window.CERO_VAGOS = {
- "generado": "2026-10-25T10:02:46",
+ "generado": "2026-10-26T11:15:49",
  "total": 500,
  "stats": {
-  "total_procesadas": 24643,
-  "aprobadas_vigentes": 520,
-  "tasa_aprobacion": 2.1,
-  "sin_sueldo": 18377,
-  "pct_sin_sueldo": 75,
+  "total_procesadas": 24812,
+  "aprobadas_vigentes": 535,
+  "tasa_aprobacion": 2.2,
+  "sin_sueldo": 18474,
+  "pct_sin_sueldo": 74,
   "sueldo_mediano": 1400,
   "por_fuente": {
-   "Bumeran": 320,
-   "Laborum": 200
+   "Bumeran": 327,
+   "Laborum": 208
   },
   "por_departamento": {
-   "Lima": 463,
-   "Arequipa": 21,
+   "Lima": 477,
+   "Arequipa": 22,
    "Callao": 6,
    "Cusco": 6,
    "Piura": 6,
@@ -34,6 +34,698 @@ window.CERO_VAGOS = {
  "ofertas": [
   {
    "id": 1,
+   "puesto": "Asesor de Atención al Cliente para Soporte Técnico",
+   "empresa": "Pentafon",
+   "cat": "Tecnología",
+   "min": 1280,
+   "max": 1280,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 0,
+   "vence": "2026-11-26",
+   "restan": 31,
+   "score": 95,
+   "resumen": "Estamos en búsqueda de talentos para nuestra campaña de Atención al Cliente Soporte Técnico, dirigida a personas con experiencia en call center, orientación al cliente y conocimientos básicos de herramientas digitales.",
+   "funciones": [
+    "Atender llamadas de clientes y brindar soporte técnico de primera línea.",
+    "Identificar y resolver incidencias relacionadas con el servicio de internet fijo.",
+    "Registrar las gestiones en los sistemas correspondientes.",
+    "Garantizar una experiencia de atención eficiente y de calidad."
+   ],
+   "requisitos": [
+    "Experiencia mínima de 3 meses en call center.",
+    "Experiencia deseable en soporte técnico o atención al cliente.",
+    "Buen manejo de PC y velocidad de tipeo.",
+    "Disponibilidad para trabajar presencialmente en Lince.",
+    "Disponibilidad para laborar en horario de 2:00 p. m. a 11:00 p. m."
+   ],
+   "beneficios": [
+    "Sueldo básico: S/ 1,280.",
+    "Bono de movilidad: S/ 280.",
+    "Bono de productividad: S/ 300.",
+    "Bono nocturno: S/ 46.",
+    "Ingreso mensual potencial de hasta S/ 1,906, considerando todos los bonos.",
+    "Planilla completa desde el inicio de OJT.",
+    "Capacitación bajo contrato.",
+    "Descanso semanal rotativo entre martes y domingo."
+   ],
+   "url": "https://www.laborum.pe/job/pentafon/asesor-de-atencion-al-cliente-para-soporte-tecnico-turno/6adedbbabfa2481579a68a0a"
+  },
+  {
+   "id": 2,
+   "puesto": "Atención al Cliente",
+   "empresa": "Pentafon",
+   "cat": "Tecnología",
+   "min": 1280,
+   "max": 1280,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 0,
+   "vence": "2026-11-26",
+   "restan": 31,
+   "score": 95,
+   "resumen": "Estamos en búsqueda de talentos para nuestra campaña de Atención al Cliente Soporte Técnico, dirigida a personas con experiencia en call center, orientación al cliente y conocimientos básicos de herramientas digitales.",
+   "funciones": [
+    "Atender llamadas de clientes y brindar soporte técnico de primera línea.",
+    "Identificar y resolver incidencias relacionadas con el servicio de internet fijo.",
+    "Registrar las gestiones en los sistemas correspondientes.",
+    "Garantizar una experiencia de atención eficiente y de calidad."
+   ],
+   "requisitos": [
+    "Experiencia mínima de 3 meses en call center.",
+    "Experiencia deseable en soporte técnico o atención al cliente.",
+    "Buen manejo de PC y velocidad de tipeo.",
+    "Disponibilidad para trabajar presencialmente en Lince.",
+    "Disponibilidad para laborar en horario de 2:00 p. m. a 11:00 p. m."
+   ],
+   "beneficios": [
+    "Sueldo básico: S/ 1,280.",
+    "Bono de movilidad: S/ 280.",
+    "Bono de productividad: S/ 300.",
+    "Bono nocturno: S/ 46.",
+    "Ingreso mensual potencial de hasta S/ 1,906, considerando todos los bonos.",
+    "Planilla completa desde el inicio de OJT.",
+    "Capacitación bajo contrato.",
+    "Descanso semanal rotativo entre martes y domingo.",
+    "¡Postula y forma parte de una empresa con oportunidades de crecimiento profesional!. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: care, costumer, cliente, apoyo, support, soporte, tecnologo, tecnico, tech, technician, technology, tecnologia, technologist"
+   ],
+   "url": "https://www.laborum.pe/job/pentafon/trabaja-en-atencion-al-cliente-soporte-tecnico-gana-s-1900-i/6adeddaabfa2481579a68d80"
+  },
+  {
+   "id": 3,
+   "puesto": "Técnico Todista",
+   "empresa": "Lavoro Perú",
+   "cat": "Recursos Humanos",
+   "min": 1500,
+   "max": 1500,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 0,
+   "vence": "2026-11-26",
+   "restan": 31,
+   "score": 94,
+   "resumen": "RESUMEN: En LAVORO nos encontramos en Búsqueda de un Operario Todista o de Servicios Generales para una planta industrial importante en el sector:",
+   "funciones": [
+    "Gasfitería básica: Reparar fugas de agua menores, cambiar griferías y desatorar sanitarios o lavaderos.",
+    "Electricidad menor: Cambiar luminarias (focos, tubos LED), interruptores, tomacorrientes y solucionar fallas eléctricas simples.",
+    "Pintura y acabados: Resanar paredes con humedad o fisuras y pintar fachadas, oficinas o zonas comunes según el plan de mantenimiento.",
+    "Lunes a Viernes 7:00 A.M. a 4:30 P.M.",
+    "Sábados de 7:00 A.M. a 12:30 P.M."
+   ],
+   "requisitos": [
+    "Experiencia Certificada de 6 meses a 1 año en el rubro (Como Todista, Mantenimiento o Servicios Generales).",
+    "Disponibilidad de Laborar Domingos o Feriados eventualmente (Pago Doble).",
+    "Residir en distritos aledaños a El Agustino ( Puente nuevo)",
+    "Ser mayor de 18 años."
+   ],
+   "beneficios": [
+    "Sueldo Básico de 1,500 S/.",
+    "Bono de Alimentación de 100 S/.",
+    "Bono de Asistencia de 250 S/.",
+    "Ingreso a Planilla de Régimen General (CTS, Gratificación, Vacasiones pagadas al año, Utilidades, Seguro Essalud, Asgnación Familiar)",
+    "Pagos puntuales a quincena y fin de mes. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaEdad: entre 23 y 45 añosPalabras clave: tecnologo, tecnico, tech, technician, technology, tecnologia, technologist, generalista, generalist, general"
+   ],
+   "url": "https://www.laborum.pe/job/lavoro-peru/tecnico-todista-gana-hasta-1850-planilla-de-regimen-general/6ade98d5bfa2481579a64b1c"
+  },
+  {
+   "id": 4,
+   "puesto": "Operario de Producción Con y",
+   "empresa": "Adecco Perú S.A.",
+   "cat": "Ingeniería",
+   "min": 1267,
+   "max": 1600,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 0,
+   "vence": "2026-11-26",
+   "restan": 31,
+   "score": 92,
+   "resumen": "Envasados y preparados de productos",
+   "funciones": [
+    "Envasados y preparados de productos",
+    "Apilado y manipulación de alimentos",
+    "Elección de productos y preparado de cajas",
+    "Armado y acondicionado de productos.",
+    "Apoyo en otras operaciones de planta."
+   ],
+   "requisitos": [
+    "Personal extranjero y nacional",
+    "Deseable 03 meses de experiencia en roles operativos (almacén, producción, planta, reponedor u otros similares).",
+    "Disponibilidad para trabajar en horarios y descansos rotativos. (turno: mañana, tarde y noche)",
+    "Secundaria completa",
+    "Disponibilidad para trabajar en el CALLAO (Av. Nestor Gambetta 7003, Callao)"
+   ],
+   "beneficios": [
+    "Sueldo S/1267- S/. 1600",
+    "Ingreso a planilla completa desde el primer día con todos los beneficios de ley (CTS, gratificaciones, utilidades, vacaciones, seguro, asignación familiar).",
+    "Beneficios corporativos: Bono de movilidad Alimentación subvencionada, Seguro EPS, Línea de carrera, entre otros.",
+    "VEN Y UNETE A NUESTRA GRAN FAMILIA"
+   ],
+   "url": "https://www.laborum.pe/job/adecco-peru-s-a/operario-de-produccion-con-y-sin-experiencia-s-1600-callao/6adea04bbfa2481579a659e6"
+  },
+  {
+   "id": 5,
+   "puesto": "Auxiliar de Ensacado para planta industrial en Cajamarquilla, Chosica",
+   "empresa": "Manpower",
+   "cat": "Ingeniería",
+   "min": 1230,
+   "max": 1230,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 0,
+   "vence": "2026-11-26",
+   "restan": 31,
+   "score": 91,
+   "resumen": "RESUMEN: En Manpower Perú buscamos al mejor talento para asumir el reto como AUXILIAR DE ENSACADO para nuestra sede de Cajamarquilla - Lurigancho, Chosica. (TRABAJA CERCA DE CASA) para nuestro cliente importante en el rubro industrial.",
+   "funciones": [
+    "Realizar el ensacado de harina siguiendo los procedimientos establecidos.",
+    "Ejecutar el correcto sellado de bolsas utilizando la cosedora de sacos.",
+    "Efectuar el paletizado de productos, asegurando el orden y estabilidad de las cargas.",
+    "Trasladar las bolsas hacia las paletas mediante el sistema de carga correspondiente.",
+    "Mantener el área de trabajo limpia y ordenada.",
+    "Participar activamente en las actividades operativas del área."
+   ],
+   "requisitos": [
+    "Contar con secundaria completa.",
+    "Contar con experiencia mínima de 3 meses corno operario de producción, almacén o empaque.",
+    "Experiencia en manufactura o alimentos (deseable).",
+    "Disponibilidad para trabajar en TURNOS ROTATIVOS.",
+    "Compromiso y disciplina.",
+    "HORARIOS ROTATIVOS Y LUGAR DE TRABAJO",
+    "Tumo mañana: 6:00 am a 2:45 pm",
+    "Tumo tarde: 1:15 pm a 10:00 pm",
+    "Turno noche: 10:00 pm a 6:45 am"
+   ],
+   "beneficios": [
+    "Remuneración S/. 1,230",
+    "Movilidad: S/ 100",
+    "Alimentación cubierta al 70%",
+    "Pagos quincenales y mensuales.",
+    "Ingreso a planilla con todos los beneficios de a cuerdo a ley.",
+    "Entrega de EPPS",
+    "Capacitaciones y oportunidades de desarrollo."
+   ],
+   "url": "https://www.laborum.pe/job/manpower/auxiliar-de-ensacado-para-planta-industrial-en-cajamarquilla/6aded5b0bfa2481579a680cc"
+  },
+  {
+   "id": 6,
+   "puesto": "Operario de almacén",
+   "empresa": "Adecco Perú S.A.",
+   "cat": "Logística",
+   "min": 1230,
+   "max": 1230,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 0,
+   "vence": "2026-11-26",
+   "restan": 31,
+   "score": 91,
+   "resumen": "RESUMEN: ¡Adecco, una reconocida empresa de recursos humanos, está buscando un perfil de producción para unirse a nuestro equipo!",
+   "funciones": [
+    "Realizar el relevo de turno con el personal saliente/entrante, que certifique de manera conjunta la conformidad de los bienes que deja o asume.",
+    "Verificar, registrar y trasladar los productos devueltos al almacén, ya sea por retornos de mercado, inspecciones de calidad o traslado entre almacenes.",
+    "Realizar la verificación de las unidades de transporte estacionadas en la zona de expedición, antes de iniciar con el cargo, las cuales deben cumplir con las condiciones físicas necesarios para asegurar la inocuidad de la mercadería.",
+    "Realizar el registro, validación, verificación y conciliación física o virtual de los productos terminados provenientes de la zona de picking de reserva o saldos, asegurando que coincidan con lo solicitado en el reporte de picking de transporte.",
+    "Verificar y controlar la salida de activos (parihuelas de madera, jabas grandes, jabas chicas) garantizando el registro correcto de las cantidades."
+   ],
+   "requisitos": [
+    "Tener su DNI vigente",
+    "Tener secundaria completa",
+    "Poder realizar esfuerzo físico",
+    "Disponibilidad para realizar 2 horas extras como mínimo",
+    "Personas responsables, puntuales y proactivos",
+    "Deseable experiencia como operario de almacén, estibador, reponedor, despacho, etc.",
+    "Lugar de trabajo",
+    "Distrito: Ate, altura de la Av. Santa Rosa de la carretera central",
+    "Referencia: Frente a Sedapal, a 3 cuadras del puente Santa Anita",
+    "Lunes a Sábado de 6:00 am - 2:00 pm (descanso domingos)",
+    "Lunes a Sábado de 3:00 pm - 11:00 pm (descanso domingos)",
+    "Domingo a Sábado 9:00 pm - 5:00 am (descanso sábados)"
+   ],
+   "beneficios": [
+    "Ingreso a planilla régimen general desde el primer día de trabajo con todos los beneficios al 100%",
+    "Sueldo base de S/1230",
+    "Bono de alimentación de S/190",
+    "Bono nocturno de S/430",
+    "Asignación familiar de S/123",
+    "Pago de horas extras de S/300 aprox.",
+    "Beneficios de Ley (CTS, gratificación, vacaciones, seguro EsSalud).",
+    "Pagos puntuales, quincena 40% y fines de mes 60%.",
+    "Oportunidades de crecimiento y desarrollo profesional."
+   ],
+   "url": "https://www.laborum.pe/job/adecco-peru-s-a/ingreso-inmediato-operarios-de-almacen-turno-noche-ate-y/6adeda68bfa2481579a68856"
+  },
+  {
+   "id": 7,
+   "puesto": "Supervisor del área",
+   "empresa": "Lavoro Perú",
+   "cat": "Logística",
+   "min": 500,
+   "max": 500,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 0,
+   "vence": "2026-11-26",
+   "restan": 31,
+   "score": 91,
+   "resumen": "RESUMEN: Por encargo de uno de nuestros clientes, una importante empresa líder multinacional de bebidas; nos encontramos en la búsqueda de:",
+   "funciones": [
+    "Realizar el proceso de picking",
+    "Manejo de transpaleta manual",
+    "Armar parihuelas con productos",
+    "Realizar la clasificación de envases.",
+    "Cargar y descargar de paquetes de botellas.",
+    "Mantener el orden y limpieza del área de trabajo.",
+    "Otras que le sean asignadas por el Supervisor del área."
+   ],
+   "requisitos": [
+    "Experiencia mínima de 3 meses como operario de repack, auxiliar de almacén o picking, etc.",
+    "Disponibilidad para laborar de lunes a sábado (TURNO NOCHE)",
+    "Disponibilidad para laborar horas extras",
+    "Turno Noche: Lunes a Sabado de 9:00pm - 5:00 am + horas extras obligatorias",
+    "Descanso los días Domingos"
+   ],
+   "beneficios": [
+    "S/ 1230 Sueldo básico",
+    "Horas extra aproximado de S/ 500 soles",
+    "S/250 Bono de asistencia perfecta",
+    "S/395 Bono nocturno",
+    "S/123 Asignación familiar",
+    "Horas extras remuneradas",
+    "Ingreso a planilla régimen general con todos los beneficios de ley (Vacaciones, CTS, Gratificación)",
+    "EsSalud para trabajador y derecho habientes.",
+    "Pagos Quincenal",
+    "Buen Clima Laboral",
+    "UBICACIÓN: Cerca al paradero Scania (Ramiro Priale )",
+    "Somos una empresa que promueve la igualdad de oportunidades y no discriminamos por motivo de origen, edad, sexo, discapacidad u otra condición , así como la inclusión laboral de personas con discapacidad."
+   ],
+   "url": "https://www.laborum.pe/job/lavoro-peru/aux-de-picking-turno-nocturno-campoy/6adeb19abfa2481579a667f2"
+  },
+  {
+   "id": 8,
+   "puesto": "Supervisor",
+   "empresa": "Adecco Perú S.A.",
+   "cat": "Ventas",
+   "min": 1230,
+   "max": 1230,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 0,
+   "vence": "2026-11-26",
+   "restan": 31,
+   "score": 91,
+   "resumen": "RESUMEN: Adecco es la empresa de Recursos Humanos más grande del mundo. Somos líderes en gestión humana. Diariamente ayudamos a más de 700,000 personas a encontrar trabajo a través de nuestra amplia red.",
+   "funciones": [
+    "Garantizar la correcta colocación de precios.",
+    "Analizar inventario del punto de venta y solicitar ingreso de productos al punto de venta.",
+    "Realizar una adecuada impulsación del producto y mantenerse informado de las funciones de los mismos.",
+    "Levantar y reportar información de piso de venta (venta, inventario, flooring, precios, acciones de la competencia).",
+    "Retirar el producto de almacén y colocarlo en los exhibidoras asignados.",
+    "Reportar al supervisor sobre las ventas efectuadas, acciones de la competencia e incidencias relevantes al desempeño"
+   ],
+   "requisitos": [
+    "Experiencia mínima de 6 meses como promotor de ventas en tecnología, linea marron, linea blanca, laptops, monitores, o afines",
+    "Experiencia en retail",
+    "Actitud Carismática y facilidad de palabra.",
+    "Horario de trabajo",
+    "Lunes, Miércoles y Jueves de 3pm a 9:00pm",
+    "Viernes, Sabados y Domingos 11am a 9:00pm (Descanso Lunes o Miércoles)"
+   ],
+   "beneficios": [
+    "Ingreso a planilla Adecco desde el primer día de trabajo.",
+    "Básico S/1230 + Movilidad S/200 + Comisión S/250 + Bonos e incentivos de S/200 a más",
+    "Beneficios de ley (CTS, Gratificación, Vacaciones, Seguro Social, Seguro Vida Ley, Asignación Familiar).",
+    "Hasta 75% de descuentos corporativos en los rubros de Educación, Salud, Belleza y Transporte.",
+    "¡Promovemos el empleo formal, brindando trabajo a más personas!. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: promoter, promotor"
+   ],
+   "url": "https://www.laborum.pe/job/adecco-peru-s-a/promotor-de-televisores-y-linea-blanca-s-1680-hiraoka-lima/6ade9e17bfa2481579a656ae"
+  },
+  {
+   "id": 9,
+   "puesto": "Auxiliar de almacén",
+   "empresa": "Manpower",
+   "cat": "Logística",
+   "min": 1300,
+   "max": 1300,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 0,
+   "vence": "2026-11-26",
+   "restan": 31,
+   "score": 91,
+   "resumen": "RESUMEN: Operarios de Almacén MARATHON ¡Se parte de nuestro equipo URGENTE!",
+   "funciones": [
+    "Recepción de mercadería",
+    "Almacenamiento y organización",
+    "Despacho de productos",
+    "Control de inventario",
+    "Manejo de documentos y registros",
+    "Apoyo logístico",
+    "Cumplimiento de normas de seguridad",
+    "LUGAR DE TRABAJO: PLANTA HUACHIPA (limite con Chosica/ate)",
+    "HORARIO: Disponibilidad para trabajar en turnos rotativos: 7am a 4pm, descansa domingos/ 8pm a 5am, descansa sábado."
+   ],
+   "requisitos": [
+    "Vivir en zonas aledañas a Huachipa.",
+    "Con y Sin experiencia o puestos similares.",
+    "Disponibilidad completa",
+    "Secundaria completa.",
+    "Disponibilidad para laborar en horarios rotativos y hacer horas extras."
+   ],
+   "beneficios": [
+    "Planilla completa 100% (EsSalud, gratificaciones, CTS, asignación familiar, utilidades, vacaciones, etc.).",
+    "Salario fijo S/. 1300",
+    "Bono nocturno",
+    "Vale de Alimentación S/. 150",
+    "Plazo fijo 3 meses RENOVABLE",
+    "Descuentos corporativos",
+    "30% de descuento en tiendas MARATHON a nivel nacional presencial /virtual",
+    "Línea de carrera a partir de los 6 meses. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: ayudante, asistente, auxiliar, aux, auxiliary, assistant, helper, aide, nominas, sueldo, paga, retribucion, salary, payslip, payroll, wage, pay, payment, nominista, permanent, fijo"
+   ],
+   "url": "https://www.laborum.pe/job/manpower/auxiliar-de-almacen-marathon-1400-soles-turno-rotativo/6aded461bfa2481579a67c72"
+  },
+  {
+   "id": 10,
+   "puesto": "Operario de Producción S",
+   "empresa": "Adecco Perú S.A.",
+   "cat": "Ingeniería",
+   "min": 1300,
+   "max": 1900,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 0,
+   "vence": "2026-11-26",
+   "restan": 31,
+   "score": 89,
+   "resumen": "RESUMEN: ¡OPORTUNIDAD LABORAL OPERARIO DE PRODUCCIÓN (PERSONAL FEMENINO Y MASCULINO)",
+   "funciones": [
+    "Etiquetado, encajado, embalado y armado de productos.",
+    "Pesado y limpieza de unidades.",
+    "Entrega de productos terminados al área de almacén."
+   ],
+   "requisitos": [
+    "Secundaria completa",
+    "Experiencia mínima de 3 meses en funciones similares.",
+    "Disponibilidad para trabajar en turnos rotativos y horas extras"
+   ],
+   "beneficios": [
+    "Alimentación cubierta al 100%.",
+    "Bono nocturno del 35%.",
+    "Pago de horas extras con sobretasa del 25% y 35%.",
+    "Capacitaciones certificadas por SENATI.",
+    "Descuentos en productos de la empresa y aguinaldo.",
+    "¿Te interesa la oportunidad? POSTULA CON NOSOTROS. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaEdad: entre 18 y 45 añosPalabras clave: operator, operario, operator, production, produce, fabricacion, manufactoring, elaboracion, making, manufactura, produccion"
+   ],
+   "url": "https://www.laborum.pe/job/adecco-peru-s-a/operario-de-produccion-s-1800-ingreso-inmediato-ate/6adea03dbfa2481579a659c3"
+  },
+  {
+   "id": 11,
+   "puesto": "Promotor",
+   "empresa": "Adecco Perú S.A.",
+   "cat": "Ventas",
+   "min": 1230,
+   "max": 1230,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 0,
+   "vence": "2026-11-26",
+   "restan": 31,
+   "score": 89,
+   "resumen": "RESUMEN: Adecco es la empresa de Recursos Humanos más grande del mundo. Somos líderes en gestión humana. Diariamente ayudamos a más de 700,000 personas a encontrar trabajo a través de nuestra amplia red.",
+   "funciones": [
+    "Alcanzar las cuotas comerciales establecidas por tienda.",
+    "Enviar reportes de venta y de asistencia.",
+    "Gestionar horarios y fechas para realizar las capacitaciones teórico/práctico a asesores de tienda y clientes, de productos de diversas categorías."
+   ],
+   "requisitos": [
+    "Experiencia 03 meses como Promotor/Impulsador de ventas CANAL MODERNO.",
+    "CARNET DE SANIDAD VIGENTE",
+    "Disponibilidad para trabajar en Ripley de Lunes a viernes de 2pm a 9pm, sábados y domingos de 11am a 9pm (1 día de descanso rotativo entre lunes y Miercoles)"
+   ],
+   "beneficios": [
+    "Sueldo fijo S/1230+ Comisión S/370 + Movilidad S/100",
+    "Trabajo con contrato renovable",
+    "Ingreso a planilla de Adecco desde el primer día con todos los beneficios de ley (CTS, Gratificación, Vacaciones, Seguro Social, Seguro Vida Ley, Asignación Familiar, entre otros).",
+    "Descuentos corporativos en diversas instituciones.",
+    "¡Promovemos el empleo formal, brindando trabajo a más personas!. -Requerimientos- Educación mínima: Educación Primaria años de experienciaPalabras clave: promoter, promotor, tecnologo, tecnico, tech, technician, technology, tecnologia, technologist"
+   ],
+   "url": "https://www.laborum.pe/job/adecco-peru-s-a/promotor-de-tecnologia-s-1700-oeschle-mall-del-sur-descanso/6ade9debbfa2481579a655eb"
+  },
+  {
+   "id": 12,
+   "puesto": "Atención al Cliente y Cobranza",
+   "empresa": "Pentafon",
+   "cat": "Contabilidad",
+   "min": 1230,
+   "max": 1230,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 0,
+   "vence": "2026-11-26",
+   "restan": 31,
+   "score": 88,
+   "resumen": "RESUMEN: ¿Buscas un empleo que te permita tener las mañanas libres?",
+   "funciones": [
+    "Atender consultas y solicitudes de los clientes.",
+    "Gestionar información relacionada con cobranza y aclaraciones.",
+    "Brindar orientación y soporte de manera cordial.",
+    "Resolver dudas y registrar información en los sistemas internos.",
+    "Mantener una comunicación efectiva con los clientes."
+   ],
+   "requisitos": [
+    "Secundaria completa.",
+    "Manejo básico de computadora.",
+    "Disponibilidad para laborar presencialmente en Lince.",
+    "Deseable buena comunicación y vocación de servicio.",
+    "Con o sin experiencia.",
+    "2:00 p.m. a 10:00 p.m.",
+    "Jornada de 48 horas semanales con descanso rotativo.",
+    "¿Por qué elegir esta oportunidad?",
+    "No necesitas experiencia para postular.",
+    "Recibirás capacitación desde el inicio.",
+    "Tendrás ingresos competitivos y beneficios completos.",
+    "Accederás a oportunidades reales de crecimiento dentro de la empresa."
+   ],
+   "beneficios": [
+    "Ingreso mensual de hasta S/1570.",
+    "Sueldo fijo de S/1230.",
+    "Bono de movilidad de S/100.",
+    "Comisiones de hasta S/240 durante los primeros meses.",
+    "Planilla completa con todos los beneficios de ley.",
+    "Capacitación pagada para el puesto.",
+    "Oportunidades de crecimiento profesional desde los 3 meses.",
+    "Estabilidad laboral."
+   ],
+   "url": "https://www.laborum.pe/job/pentafon/teleoperador-trabaja-en-turno-tarde-atencion-al-cliente-y/6adedda2bfa2481579a68d60"
+  },
+  {
+   "id": 13,
+   "puesto": "Ayudante de almacén",
+   "empresa": "Adecco Perú S.A.",
+   "cat": "Logística",
+   "min": 1230,
+   "max": 1230,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 0,
+   "vence": "2026-11-26",
+   "restan": 31,
+   "score": 86,
+   "resumen": "RESUMEN: ¡INGRESO INMEDIATO! | ¡NO NECESITAS EXPERIENCIA!",
+   "funciones": [
+    "Armado de pedidos y paletizado de mercadería (cajas de productos para supermercados de 5 kg a 20 kg).",
+    "Manejo de radiofrecuencia (RF).",
+    "Traslado de paletas con estoca."
+   ],
+   "requisitos": [
+    "NO REQUERIMOS EXPERIENCIA PREVIA.",
+    "Solo necesitamos muchas ganas de aprender, actitud y compromiso.",
+    "Disponibilidad para laborar en Punta Negra, altura del Peaje de Punta Negra.",
+    "Disponibilidad para trabajar en horarios rotativos",
+    "Turno día: 7:00 a.m. a 4:00 p.m.",
+    "Turno tarde: 1:00 p.m. a 10:00 p.m.",
+    "Turno noche: 10:00 p.m. a 7:00 a.m.",
+    "Contamos con buses de acercamiento gratuitos para todo Lima."
+   ],
+   "beneficios": [
+    "INGRESO INMEDIATO",
+    "Remuneración: S/ 1,230",
+    "Bono de movilidad: S/ 150",
+    "Alimentación al 100%",
+    "Bono de asistencia: S/ 100",
+    "Asignación familiar: S/ 113",
+    "Horas extras + bonificación por horario nocturno.",
+    "Buses de acercamiento gratuitos en todo Lima.",
+    "Ingreso a planilla Adecco desde el primer día de trabajo con todos los beneficios de ley: CTS, gratificaciones, vacaciones, Seguro Social, Seguro Vida Ley y asignación familiar.",
+    "Oportunidad de crecimiento y línea de carrera.",
+    "¡NO DEJES PASAR ESTA OPORTUNIDAD!",
+    "No necesitas experiencia. Si tienes ganas de aprender y trabajar, queremos conocerte.-Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: asistente, auxiliar, aux, auxiliary, assistant, helper, aide, bodega, warehouse, storehouse, almacen, permanent, fijo"
+   ],
+   "url": "https://www.laborum.pe/job/adecco-peru-s-a/ayudante-de-almacen-descanso-fijo-los-domingos-buses-gratis/6adebc43bfa2481579a67068"
+  },
+  {
+   "id": 14,
+   "puesto": "Auxiliar de almacén",
+   "empresa": "Adecco Perú S.A.",
+   "cat": "Logística",
+   "min": 1230,
+   "max": 1230,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 0,
+   "vence": "2026-11-26",
+   "restan": 31,
+   "score": 86,
+   "resumen": "Por encargo de nuestro cliente Importante empresa Retail, nos encontramos en búsqueda de:",
+   "funciones": [
+    "Armado de pedidos paletizando mercadería (productos de supermercado)",
+    "Apoyo en recepción, despacho, picking, packing",
+    "Trasladar paletas con Estoca"
+   ],
+   "requisitos": [
+    "Disponibilidad para laborar en Punta Negra, Altura del Peaje de Punta negra (contamos con buses de acercamiento gratuitos)",
+    "Si cuentas con experiencia podemos considerarte en turnos fijos",
+    "Disponibilidad laborar en horarios rotativos (turno día: 7:00am a 4:00pm // turno tarde: 2:00 pm a 11:00 pm// turno noche: 10:00pm a 7:00am) rotación quincenal"
+   ],
+   "beneficios": [
+    "Remuneración: S/1230",
+    "Bono de movilidad: s/150",
+    "Bono Almuerzo: s/150",
+    "Buses de acercamiento gratis en todo Lima (Villa el Salvador, Surco, San Juan de Miraflores, Lurín, Chorrillos, muchos más!!)",
+    "Bonificación de horario nocturno %35, horas extras, asignación familiar de s/123",
+    "Línea de carrera a partir del sexto mes.",
+    "Ingreso a planilla Adecco desde el primer día de trabajo con todos los Beneficios de ley (CTS, Gratificación, Vacaciones, Seguro Social, Seguro Vida Ley, Asignación Familiar)"
+   ],
+   "url": "https://www.laborum.pe/job/adecco-peru-s-a/ingreso-inmediato-auxiliar-de-almacen-gana-1800-bus-gratis/6aded1d1bfa2481579a6788e"
+  },
+  {
+   "id": 15,
+   "puesto": "Operario de Apoyo para planta industrial en Santa Anita",
+   "empresa": "Manpower",
+   "cat": "Ingeniería",
+   "min": 1269,
+   "max": 1269,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Laborum",
+   "dias": 0,
+   "vence": "2026-11-26",
+   "restan": 31,
+   "score": 85,
+   "resumen": "RESUMEN: En Manpower Perú buscamos al mejor talento para asumir el reto como OPERARIO DE APOYO/PRODUCCION para nuestra sede en Santa Anita - Lima (TRABAJA CERCA DE CASA) para nuestro cliente importante en el rubro industrial.",
+   "funciones": [
+    "Trasladar los materiales de forma manual o con Traspaleta.",
+    "Llenado, sellado y pesado de envases.",
+    "Mezclado de ingredientes",
+    "Estibar los insumos y materia prima.",
+    "Limpieza de la zona de trabajo.",
+    "Otro tipo de labores asignado por el jefe inmediato."
+   ],
+   "requisitos": [
+    "Contar con secundaria completa.",
+    "Contar con mínimo 3 meses de experiencia como operario de producción.",
+    "Contar con carné de sanidad con manipulación de alimentos (VIGENTE).",
+    "Trabajo solo de LUNES A VIERNES de (7:00 am a 4:00 pm)",
+    "Contar con disponibilidad para poder realizar horas extras según la necesidad que hubiese (sábados).",
+    "LUGAR DE TRABAJO"
+   ],
+   "beneficios": [
+    "Salario bruto mensual de S/. 1269",
+    "Bono de movilidad de S/. 100 sujeto a asistencia.",
+    "Bono de alimentación de S/. 200.",
+    "Planilla completa con todos los beneficios de ley desde el primer día.",
+    "Disfruta de beneficios corporativos como descuentos especiales, acceso a actividades, capacitaciones entre otros.",
+    "Seguro vida ley desde el primer día de trabajo.",
+    "Pagos quincenales puntuales."
+   ],
+   "url": "https://www.laborum.pe/job/manpower/operario-de-apoyo-para-planta-industrial-en-santa-anita/6aded4f7bfa2481579a67ef2"
+  },
+  {
+   "id": 16,
+   "puesto": "Asesor",
+   "empresa": "BUMERAN SELECTA",
+   "cat": "Ventas",
+   "min": 4000,
+   "max": 4000,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Arequipa",
+   "fuente": "Bumeran",
+   "dias": 1,
+   "vence": "2027-02-22",
+   "restan": 119,
+   "score": 97,
+   "resumen": "Gestionar y desarrollar comercialmente la cartera de clientes industriales asignada.",
+   "funciones": [
+    "Gestionar y desarrollar comercialmente la cartera de clientes industriales asignada.",
+    "Realizar visitas técnicas y comerciales en campo, identificando necesidades y oportunidades de venta.",
+    "Prospectar y captar nuevos clientes dentro de la ciudad.",
+    "Brindar soporte y asesoría técnica en soluciones de lubricación, equipos y sistemas de lubricación .",
+    "Analizar los procesos y equipos de los clientes para identificar oportunidades de aplicación de las distintas soluciones de la compañía.",
+    "Presentar el portafolio de productos, resaltando su valor agregado, rendimiento y potencial de ahorro de costos.",
+    "Elaborar, presentar y realizar seguimiento a propuestas técnico-comerciales.",
+    "Participar activamente en la negociación y cierre de ventas .",
+    "Realizar seguimiento comercial y postventa a la cartera existente, fortaleciendo relaciones de largo plazo.",
+    "Dictar capacitaciones, presentaciones y charlas técnicas a clientes.",
+    "Identificar oportunidades de venta cruzada entre las distintas líneas de productos de la empresa.",
+    "Comercializar soluciones vinculadas a lubricación, transmisión mecánica, sistemas de aire comprimido y otras soluciones industriales."
+   ],
+   "requisitos": [
+    "Egresado/a de Ingeniería Mecánica, Ingeniería Mecatrónica, Ingeniería Química, Ingeniería Industrial o carreras afines.",
+    "Experiencia mínima de 2 años en ventas B2B a clientes del sector industrial .",
+    "Experiencia en posiciones comerciales con una base técnica sólida , que permita comprender procesos, maquinaria y necesidades del cliente.",
+    "Conocimiento y/o experiencia en lubricación industrial, equipos y sistemas de lubricación .",
+    "Experiencia en negociación, seguimiento y cierre de ventas.",
+    "Capacidad para realizar presentaciones y capacitaciones técnicas a clientes.",
+    "Inglés nivel intermedio.",
+    "Licencia de conducir vigente.",
+    "De preferencia, residencia en Arequipa , considerando cobertura comercial hacia alrededores.",
+    "Orientación comercial, proactividad, comunicación efectiva, capacidad de negociación y orientación a resultados."
+   ],
+   "beneficios": [
+    "Sueldo básico bruto: S/4,000 mensuales.",
+    "Comisiones variables sobre las ventas facturadas.",
+    "Al inicio, el cliente estima un ingreso aproximado de S/2,500 a S/3,000 mensuales en comisiones , sujeto al nivel de ventas y cumplimiento comercial.",
+    "Posibilidad de incrementar progresivamente las comisiones conforme se desarrolle una mayor cartera y volumen de ventas.",
+    "La posición inicia con una base y cartera de clientes existente , por lo que no se parte desde cero.",
+    "Movilidad cubierta por la empresa para los desplazamientos comerciales correspondientes.",
+    "Viáticos cubiertos para viajes , incluyendo traslado, alojamiento y alimentación, sujetos a rendición semanal.",
+    "Capacitación y acompañamiento comercial para el conocimiento de las distintas líneas y soluciones de la empresa.",
+    "Oportunidad de desarrollar una cartera propia y generar mayores ingresos en función de resultados."
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/asesor-a-tecnico-comercial--arequipa-bumeran-selecta-1118495799.html"
+  },
+  {
+   "id": 17,
    "puesto": "Supervisor(a) de Trade Marketing",
    "empresa": "Manpower",
    "cat": "Marketing",
@@ -43,9 +735,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 0,
+   "dias": 1,
    "vence": "2026-11-25",
-   "restan": 31,
+   "restan": 30,
    "score": 97,
    "resumen": "RESUMEN: En Manpower Perú buscamos al mejor talento para asumir el reto como Supervisor(a) de Trade Marketing Lima Sur y Sur Chico para una importante empresa líder del sector Consumo Masivo.",
    "funciones": [
@@ -78,7 +770,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/manpower/supervisor-a-de-trade-marketing-lima-sur-y-sur-chico-ingreso/6add6659bfa2481579a5d677"
   },
   {
-   "id": 2,
+   "id": 18,
    "puesto": "UPC Chorrillos: Gestor de Tiempo Real",
    "empresa": "Laureate",
    "cat": "Recursos Humanos",
@@ -88,9 +780,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 0,
+   "dias": 1,
    "vence": "2026-11-25",
-   "restan": 31,
+   "restan": 30,
    "score": 97,
    "resumen": "En UPC contribuimos a la transformación del Perú a través de una educación inclusiva, accesible y de calidad que transforma vidas.",
    "funciones": [
@@ -126,7 +818,55 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/laureate/upc-chorrillos-gestor-de-tiempo-real-gtr-basico-s-2400/6add48fbbfa2481579a5a1d0"
   },
   {
-   "id": 3,
+   "id": 19,
+   "puesto": "Especialista en Comunicaciones y Contenido",
+   "empresa": "PRESTACLUB",
+   "cat": "Marketing",
+   "min": 1800,
+   "max": 1800,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 1,
+   "vence": "2027-01-23",
+   "restan": 89,
+   "score": 95,
+   "resumen": "Diseñar la estrategia anual y trimestral de comunicaciones, PR y contenido, alineada con los objetivos comerciales y el posicionamiento de Prestaclub.",
+   "funciones": [
+    "Diseñar la estrategia anual y trimestral de comunicaciones, PR y contenido, alineada con los objetivos comerciales y el posicionamiento de Prestaclub.",
+    "Liderar la planificación editorial del canal de YouTube: temáticas, investigación, estructura de episodios, escaletas/guiones, entrevistas, fichas de producción y cronograma de los tres programas.",
+    "Identificar, convocar y gestionar invitados, voceros, aliados, medios, gremios e instituciones; desarrollar oportunidades de entrevistas, colaboraciones y cobertura editorial.",
+    "Administrar la parrilla editorial y la operación de publicaciones de todos los canales: definir mensajes, formatos, briefs, copys, frecuencia y programación; supervisar comentarios, interacciones y mensajes, con derivación de consultas comerciales a Comercial y de incidencias sensibles a las áreas competentes.",
+    "Organizar la reutilización de cada pieza principal en clips, artículos, publicaciones y materiales de difusión; coordinar la producción técnica con Gabriel y el freelance.",
+    "Desarrollar lineamientos de voz, narrativa y comunicación corporativa; revisar consistencia editorial, precisión y adecuación del contenido antes de su publicación.",
+    "Coordinar con el Jefe de Marketing los contenidos de web y blog, SEO, SEM, CRM y campañas de conversión; el especialista es responsable editorial y de los canales de comunicación, mientras Miguel conserva la administración técnica, pauta, automatización y medición de performance.",
+    "Monitorear medios, tendencias, conversación sobre la marca y desempeño de contenidos; proponer mejoras y presentar reportes periódicos.",
+    "Canalizar para validación de Gerencia y Legal cualquier contenido regulatorio, legal, sensible o de posible impacto reputacional."
+   ],
+   "requisitos": [
+    "Estudios universitarios: Bachiller o titulado en Comunicaciones, Periodismo, Publicidad, Marketing o carreras afines.",
+    "Experiencia: Más de 2 años en contenidos, comunicación corporativa, medios, relaciones públicas o branded content, gestionando proyectos editoriales de principio a fin.",
+    "Experiencia comprobable: Portafolio y resultados de contenidos, entrevistas, PR, alianzas o crecimiento de audiencias. Deseable experiencia en YouTube, podcasts o entrevistas.",
+    "Conocimientos: Storytelling, redacción y edición editorial, SEO para contenidos, métricas digitales, reputación, gestión de medios y briefs audiovisuales.",
+    "Herramientas: YouTube Studio, analítica de redes, gestores editoriales, herramientas colaborativas e inteligencia artificial aplicada a investigación y producción.",
+    "Competencias: Criterio editorial, excelente redacción, networking, negociación, autonomía, gestión de proyectos, preparación de voceros, verificación de datos y trabajo transversal.",
+    "Valor agregado: Contactos en medios o ecosistema empresarial; experiencia en servicios financieros, negocios o comunicación B2B.",
+    "Manejo de IA como ChatGPT, Claude, Lovable, etc"
+   ],
+   "beneficios": [
+    "Remuneración: S/ 1,800 soles / según calificación.",
+    "Beneficios de Ley: Planilla General con todos los beneficios correspondientes (CTS, gratificaciones, ESSALUD, vacaciones, etc.).",
+    "Alimentación: Almuerzo provisto por la empresa (cortesía y gratuito).",
+    "Horario de Trabajo (Lunes a Viernes)",
+    "Lunes a Viernes: 8:30 AM a 6:30 PM.",
+    "Sábados, Domingos: Laborables de forma ocasional y previa programación (según requerimiento del área).",
+    "Clima Laboral: Buen ambiente de trabajo y reales oportunidades de desarrollo y crecimiento profesional."
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/especialista-en-comunicaciones-y-contenido-prestaclub-1118495738.html"
+  },
+  {
+   "id": 20,
    "puesto": "Supervisor",
    "empresa": "MARKETING ALTERNO",
    "cat": "Atención al Cliente",
@@ -136,9 +876,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 0,
+   "dias": 1,
    "vence": "2026-11-25",
-   "restan": 31,
+   "restan": 30,
    "score": 95,
    "resumen": "Liderar y gestionar el equipo en los puntos de venta de la marca.",
    "funciones": [
@@ -167,7 +907,96 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/marketing-alterno/supervisor-a-de-ruta-experiencia-en-el-rubro-de-atencion-al/6add4b80bfa2481579a5a8d5"
   },
   {
-   "id": 4,
+   "id": 21,
+   "puesto": "Asistente Comercial",
+   "empresa": "PRESTACLUB",
+   "cat": "Ventas",
+   "min": 1230,
+   "max": 1230,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 1,
+   "vence": "2027-01-23",
+   "restan": 89,
+   "score": 95,
+   "resumen": "La función principal del ASISTENTE COMERCIAL es la de apoyar en la gestión administrativa, comercial y coordinación con otras áreas.",
+   "funciones": [
+    "Apoyar en la gestión administrativa y comercial",
+    "Registrar y dar seguimiento a las consultas frecuentes de clientes para mejorar la comunicación comercial.",
+    "Apoyar en activaciones comerciales u otras actividades externas.",
+    "Realizar revisiones periódicas de los files para prevenir observaciones de auditoría.",
+    "Realizar reportes de rendimiento y gestión solicitados por la jefatura"
+   ],
+   "requisitos": [
+    "Formación académica: Estudiantes últimos ciclos, egresados o bachilleres de las carreras de Administración, Contabilidad, Ingeniería Empresarial, Ingeniería Industrial o afines.",
+    "Experiencia previa: Contar con experiencia mínima en puestos similares de atención al cliente, gestión administrativa o áreas comerciales.",
+    "Herramientas tecnológicas",
+    "Manejo de CRM (indispensable/deseable según prefieras) para el seguimiento y gestión de clientes.",
+    "Dominio de MS Excel y/o herramientas de reporting (Looker Studio, Power BI o similares) será valorado positivamente.",
+    "Competencias clave: Excelente nivel de comunicación interpersonal, orientación a resultados, gran vocación de servicio, amabilidad y empatía."
+   ],
+   "beneficios": [
+    "Sueldo bruto: S/ 1,230.00",
+    "Beneficio adicional: Almuerzo diario 100% asumido por la empresa.",
+    "Desarrollo profesional: Reales oportunidades de crecimiento y línea de carrera.",
+    "Buen clima laboral: Un espacio dinámico para potenciar tus habilidades.",
+    "Horario de trabajo",
+    "Lunes a Viernes: 8:30 a.m. a 6:30 p.m.",
+    "Sábados: 8:30 a.m. a 2:00 p.m.",
+    "Contacto: 9 4 0 6 7 1 3 9 7"
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/asistente-comercial-zona-sur-vmt-prestaclub-1118495743.html"
+  },
+  {
+   "id": 22,
+   "puesto": "Auxiliar de Soporte Operativo",
+   "empresa": "PRESTACLUB",
+   "cat": "Ventas",
+   "min": 1230,
+   "max": 1230,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 1,
+   "vence": "2027-01-23",
+   "restan": 89,
+   "score": 94,
+   "resumen": "Realizar el traslado, entrega y recojo de documentos y encargos entre oficinas, clientes, notarías, proveedores y otras entidades.",
+   "funciones": [
+    "Realizar el traslado, entrega y recojo de documentos y encargos entre oficinas, clientes, notarías, proveedores y otras entidades.",
+    "Visitar clientes para gestionar la firma y recojo de documentos, así como realizar gestiones en puntos comerciales o de interés.",
+    "Apoyar en la cotización, recojo y distribución de material publicitario, merchandising y otros insumos.",
+    "Participar en activaciones comerciales y eventos, apoyando en el traslado, instalación y retiro de mobiliario, equipos y materiales.",
+    "Realizar cotizaciones, compras menores y gestiones diversas con proveedores.",
+    "Apoyar en la organización de reuniones, capacitaciones y actividades institucionales.",
+    "Colaborar con el traslado y organización de muebles, equipos, suministros y enseres de oficina.",
+    "Brindar apoyo en otras tareas operativas y administrativas que le sean asignadas."
+   ],
+   "requisitos": [
+    "Estudios técnicos o universitarios en curso, preferentemente en Administración o carreras afines.",
+    "Deseable experiencia mínima de 6 meses en funciones similares, mensajería, servicios generales o apoyo administrativo.",
+    "Conocimiento de rutas y desplazamientos en Lima Metropolitana.",
+    "Manejo básico de Microsoft Office y aplicaciones móviles.",
+    "Disponibilidad para realizar gestiones externas y desplazarse entre sedes.",
+    "Responsabilidad, puntualidad, proactividad, organización, honestidad y buen trato interpersonal."
+   ],
+   "beneficios": [
+    "Régimen General",
+    "Sueldo bruto: S/ 1,230.00",
+    "Beneficio adicional: Almuerzo de cortesía asumido por la empresa.",
+    "Línea de carrera: Oportunidades de crecimiento profesional dentro de la empresa.",
+    "Capacitaciones constantes: Espacios de formación continua para potenciar tus habilidades.",
+    "Horario de trabajo",
+    "Lunes a Viernes: 8:30 a.m. a 6:30 p.m.",
+    "Sábados: Laborables de forma ocasional y previa programación (según requerimiento operativo)."
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/auxiliar-de-soporte-operativo-prestaclub-1118495726.html"
+  },
+  {
+   "id": 23,
    "puesto": "Coordinador",
    "empresa": "MARKETING ALTERNO",
    "cat": "Atención al Cliente",
@@ -177,9 +1006,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 0,
+   "dias": 1,
    "vence": "2026-11-25",
-   "restan": 31,
+   "restan": 30,
    "score": 92,
    "resumen": "Planificar y liderar la operación de Trade Marketing.",
    "funciones": [
@@ -211,7 +1040,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/marketing-alterno/coordinador-a-de-cuenta-experiencia-en-el-rubro-de-atencion/6add490ebfa2481579a5a211"
   },
   {
-   "id": 5,
+   "id": 24,
    "puesto": "Asistente Administrativo",
    "empresa": "PUM",
    "cat": "Administración",
@@ -221,9 +1050,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 0,
+   "dias": 1,
    "vence": "2026-11-25",
-   "restan": 31,
+   "restan": 30,
    "score": 92,
    "resumen": "RESUMEN: Asistente Administrativo y de Facturación· ¿Cuál será tu principal reto?",
    "funciones": [
@@ -251,7 +1080,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/pum/asistente-administrativo/6add62c1bfa2481579a5d2c6"
   },
   {
-   "id": 6,
+   "id": 25,
    "puesto": "Conductor de Reparto A3C",
    "empresa": "Recreativos Fargo S.A.C",
    "cat": "Logística",
@@ -261,9 +1090,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 0,
+   "dias": 1,
    "vence": "2026-11-25",
-   "restan": 31,
+   "restan": 30,
    "score": 92,
    "resumen": "Revisar y preparar la unidad antes de salir a ruta.",
    "funciones": [
@@ -290,7 +1119,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/recreativos-fargo-s-a-c/conductor-de-reparto-a3c-a3b-camion-sueldo-s-3000-a-mas-bono/6add4c56bfa2481579a5abab"
   },
   {
-   "id": 7,
+   "id": 26,
    "puesto": "Agente de Seguridad Vial para SJM, VES, VMT",
    "empresa": "EULEN del Perú",
    "cat": "Recursos Humanos",
@@ -300,9 +1129,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 0,
+   "dias": 1,
    "vence": "2026-11-25",
-   "restan": 31,
+   "restan": 30,
    "score": 92,
    "resumen": "Importante empresa del sector se encuentra en búsqueda de AGENTES DE PREVENCIÓN VIAL con disponibilidad para trabajar bajo un sistema de trabajo 6x1 y horarios rotativos.",
    "funciones": [
@@ -334,7 +1163,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/eulen-del-peru/agente-de-seguridad-vial-para-sjm-ves-vmt-sin-experiencia-s/6add6872bfa2481579a5d938"
   },
   {
-   "id": 8,
+   "id": 27,
    "puesto": "Auxiliar de reparto",
    "empresa": "OCA GLOBAL PERÚ",
    "cat": "Recursos Humanos",
@@ -344,9 +1173,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 0,
+   "dias": 1,
    "vence": "2026-11-25",
-   "restan": 31,
+   "restan": 30,
    "score": 92,
    "resumen": "RESUMEN: En OCA GLOBAL reconocida empresa del Sector Eléctrico nos encontramos en búsqueda de personal para el puesto de MOTORIZADO de Lecturas y Reparto en la Zona Lima Norte.",
    "funciones": [
@@ -373,105 +1202,90 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/oca-global-peru/motorizado-de-lecturas-lima-norte-planilla-y-beneficios/6add5d75bfa2481579a5cf11"
   },
   {
-   "id": 9,
-   "puesto": "Operario de almacén",
-   "empresa": "Adecco Perú S.A.",
-   "cat": "Logística",
-   "min": 1230,
-   "max": 1230,
+   "id": 28,
+   "puesto": "Atención al Cliente",
+   "empresa": "ManpowerGroup Perú",
+   "cat": "Atención al Cliente",
+   "min": 2100,
+   "max": 2100,
    "moneda": "PEN",
    "modalidad": "Presencial",
    "ciudad": "Lima",
-   "fuente": "Laborum",
-   "dias": 0,
-   "vence": "2026-11-25",
-   "restan": 31,
-   "score": 91,
-   "resumen": "RESUMEN: ¡Adecco, una reconocida empresa de recursos humanos, está buscando un perfil de producción para unirse a nuestro equipo!",
+   "fuente": "Bumeran",
+   "dias": 1,
+   "vence": "2027-01-23",
+   "restan": 89,
+   "score": 89,
+   "resumen": "Por encargo de nuestro cliente líder, nos encontramos en búsqueda de talentos para cubrir la posición de:",
    "funciones": [
-    "Realizar el relevo de turno con el personal saliente/entrante, que certifique de manera conjunta la conformidad de los bienes que deja o asume.",
-    "Verificar, registrar y trasladar los productos devueltos al almacén, ya sea por retornos de mercado, inspecciones de calidad o traslado entre almacenes.",
-    "Realizar la verificación de las unidades de transporte estacionadas en la zona de expedición, antes de iniciar con el cargo, las cuales deben cumplir con las condiciones físicas necesarios para asegurar la inocuidad de la mercadería.",
-    "Realizar el registro, validación, verificación y conciliación física o virtual de los productos terminados provenientes de la zona de picking de reserva o saldos, asegurando que coincidan con lo solicitado en el reporte de picking de transporte.",
-    "Verificar y controlar la salida de activos (parihuelas de madera, jabas grandes, jabas chicas) garantizando el registro correcto de las cantidades.",
-    "¡Promovemos el empleo formal, brindando trabajo a más personas!",
-    "Si estas interesado en nuestra propuesta y cumples con todos los requisitos nos comunicaremos contigo para agendarte nuestra entrevista o escríbenos al 9ocho4siete10cuatro11. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: bodega, warehouse, storehouse, almacen"
+    "Resolver consultas en primera llamada",
+    "Gestionar beneficios, reclamos y cuentas médicas",
+    "Brindar soporte a clientes adultos estadounidenses",
+    "Documentar interacciones con precisión y empatía"
    ],
    "requisitos": [
-    "Tener su DNI vigente",
-    "Tener secundaria completa",
-    "Poder realizar esfuerzo físico",
-    "Disponibilidad para realizar 2 horas extras como mínimo",
-    "Personas responsables, puntuales y proactivos",
-    "Deseable experiencia como operario de almacén, estibador, reponedor, despacho, etc.",
-    "Lugar de trabajo",
-    "Distrito: Ate, altura de la Av. Santa Rosa de la carretera central",
-    "Referencia: Frente a Sedapal, a 3 cuadras del puente Santa Anita",
-    "Lunes a Sábado de 7:00 am - 4:00 pm (descanso domingos)",
-    "Lunes a Sábado de 3:00 pm - 11:00 pm (descanso domingos)",
-    "Domingo a Sábado 9:00 pm - 5:00 am (descanso sábados)"
+    "Secundaria completa",
+    "6 meses en atención al cliente",
+    "Inglés B2 – B2+ (indispensable)",
+    "Manejo de Office (indispensable)",
+    "100% presencial – San Borja"
    ],
    "beneficios": [
-    "Ingreso a planilla régimen general desde el primer día de trabajo con todos los beneficios al 100%",
-    "Sueldo base de S/1230",
-    "Bono de alimentación de S/190",
-    "Bono nocturno de S/430",
-    "Asignación familiar de S/123",
-    "Pago de horas extras de S/300 aprox.",
-    "Beneficios de Ley (CTS, gratificación, vacaciones, seguro EsSalud).",
-    "Pagos puntuales, quincena 40% y fines de mes 60%.",
-    "Oportunidades de crecimiento y desarrollo profesional."
+    "Sueldo: S/ 2,100",
+    "Bono hasta 15%",
+    "Movilidad: S/ 80",
+    "Capacitación pagada: S/ 1,750 + movilidad",
+    "Línea de carrera desde el mes 1",
+    "Lunes a viernes (descanso fines de semana)",
+    "Se pagan feriados peruanos (triple).",
+    ".“En Manpower promovemos la inserción e inclusión laboral de personas con discapacidad\""
    ],
-   "url": "https://www.laborum.pe/job/adecco-peru-s-a/operarios-de-almacen-ate-santa-anita-sin-experiencia/6add97e8bfa2481579a5feff"
+   "url": "https://www.bumeran.com.pe/empleos/urgente-labora-solo-5-dias-atencion-al-cliente-turno-manana-s.-2100-movilidad-manpowergroup-peru-1118495786.html"
   },
   {
-   "id": 10,
-   "puesto": "Auxiliar de almacén",
-   "empresa": "Manpower",
+   "id": 29,
+   "puesto": "Auxiliar de Almacén y reparto",
+   "empresa": "Eurofirms Group",
    "cat": "Logística",
    "min": 1300,
    "max": 1300,
    "moneda": "PEN",
    "modalidad": "Presencial",
    "ciudad": "Lima",
-   "fuente": "Laborum",
-   "dias": 0,
-   "vence": "2026-11-25",
-   "restan": 31,
-   "score": 91,
-   "resumen": "RESUMEN: Operarios de Almacén MARATHON ¡Se parte de nuestro equipo URGENTE!",
+   "fuente": "Bumeran",
+   "dias": 1,
+   "vence": "2027-01-23",
+   "restan": 89,
+   "score": 88,
+   "resumen": "Somos Eurofirms empresa dedicada al Reclutamiento y Selección del mejor talento nos encontramos en búsqueda de Auxiliar de Almacén para importante empresa de productos para el cuidado personal.",
    "funciones": [
-    "Recepción de mercadería",
-    "Almacenamiento y organización",
-    "Despacho de productos",
-    "Control de inventario",
-    "Manejo de documentos y registros",
-    "Apoyo logístico",
-    "Cumplimiento de normas de seguridad",
-    "LUGAR DE TRABAJO: PLANTA HUACHIPA (limite con Chosica/ate)",
-    "HORARIO: Disponibilidad para trabajar en turnos rotativos: 7am a 4pm, descansa domingos/ 8pm a 5am, descansa sábado."
+    "Almacén (picking y packing)",
+    "Salida a campo con el chofer",
+    "Validación de productos con el cliente y reparto",
+    "Manejo y control de inventario",
+    "Mantenimiento de orden y seguridad.",
+    "Apoyo en la carga y descarga de mercadería"
    ],
    "requisitos": [
-    "Vivir en zonas aledañas a Huachipa.",
-    "Con y Sin experiencia o puestos similares.",
-    "Disponibilidad completa",
-    "Secundaria completa.",
-    "Disponibilidad para laborar en horarios rotativos y hacer horas extras."
+    "Experiencia previa en almacenes, logística o distribución.",
+    "Residir en la zona sur de Lima.",
+    "Manejo de apilador eléctrico.",
+    "Habilidades de comunicación para explicar con claridad la información necesaria a los clientes.",
+    "Capacidad para colaborar con compañeros y supervisores.",
+    "Manejo de apilador eléctrico",
+    "Turno disponible: Lunes a viernes de 8:00 am a 5:30 pm / Sábado de 8:00am a 12:12 pm"
    ],
    "beneficios": [
-    "Planilla completa 100% (EsSalud, gratificaciones, CTS, asignación familiar, utilidades, vacaciones, etc.).",
-    "Salario fijo S/. 1300",
-    "Bono nocturno",
-    "Vale de Alimentación S/. 150",
-    "Plazo fijo 3 meses RENOVABLE",
-    "Descuentos corporativos",
-    "30% de descuento en tiendas MARATHON a nivel nacional presencial /virtual",
-    "Línea de carrera a partir de los 6 meses. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: ayudante, asistente, auxiliar, aux, auxiliary, assistant, helper, aide, nominas, sueldo, paga, retribucion, salary, payslip, payroll, wage, pay, payment, nominista, permanent, fijo"
+    "Sueldo base: S/ 1,300",
+    "Bono de asistencia S/. 250.",
+    "Bono de Productividad S/ 200.",
+    "Ingreso a planilla con todos los beneficios de ley.",
+    "Eurofirms promueve la inclusión e inserción laboral sin distinción por razón de discapacidad, género, orientación, identidad y expresión de género."
    ],
-   "url": "https://www.laborum.pe/job/manpower/auxiliar-de-almacen-marathon-1400-soles-turno-rotativo/6add95d8bfa2481579a5f9d5"
+   "url": "https://www.bumeran.com.pe/empleos/auxiliar-de-almacen-y-reparto-full-time-planilla-bonos-de-asistencia-y-produccion-punta-hermosa-eurofirms-group-1118495759.html"
   },
   {
-   "id": 11,
+   "id": 30,
    "puesto": "Ayudante de cocina",
    "empresa": "HVA INVERSIONES",
    "cat": "Gastronomía",
@@ -481,9 +1295,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 0,
+   "dias": 1,
    "vence": "2026-11-25",
-   "restan": 31,
+   "restan": 30,
    "score": 88,
    "resumen": "Apoyar en el mise en place y producción de cocina.",
    "funciones": [
@@ -519,7 +1333,49 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/hva-inversiones/ayudante-de-cocina-centro-de-lima-plaza-de-armas/6add50efbfa2481579a5b7e9"
   },
   {
-   "id": 12,
+   "id": 31,
+   "puesto": "Jefe",
+   "empresa": "Confidencial",
+   "cat": "Ventas",
+   "min": 1300,
+   "max": 1400,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 1,
+   "vence": "2026-11-01",
+   "restan": 6,
+   "score": 87,
+   "resumen": "Referencia: A 1 cuadra de Av Mexico con Av Universitaria.",
+   "funciones": [
+    "Confirmar pedidos por llamada y WhatsApp",
+    "Atender consultas y cerrar ventas con clientes que ya mostraron interés (no es venta en frío)",
+    "Hacer seguimiento a pedidos y entregas en Lima y provincias",
+    "Registrar la información en nuestro sistema de pedidos",
+    "Otras actividades asignadas por el jefe directo.",
+    "Turnos (elige uno o ambos para postular)",
+    "Mañana: 7:00 a.m. – 4:00 p.m. — S/ 1,300 mensuales + comisiones",
+    "Tarde: 2:00 p.m. – 11:00 p.m. — S/ 1,400 mensuales + comisiones",
+    "1 día de descanso a la semana rotativo, con 1 hora de refrigerio."
+   ],
+   "requisitos": [
+    "Experiencia en ventas, call center o atención al cliente (deseable, no indispensable)",
+    "Buena dicción y facilidad de palabra",
+    "Manejo básico de computadora y WhatsApp",
+    "Puntualidad y compromiso",
+    "Disponibilidad inmediata"
+   ],
+   "beneficios": [
+    "Sueldo fijo más comisiones ilimitadas",
+    "Pagos quincenales",
+    "Bonos por metas",
+    "Equipo y puesto de trabajo en oficina"
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/asesoras-de-ventas-call-center-presencial-en-comas-1118495665.html"
+  },
+  {
+   "id": 32,
    "puesto": "Ayudante de Distribución Ate",
    "empresa": "TRBA SAC",
    "cat": "Logística",
@@ -529,9 +1385,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 0,
+   "dias": 1,
    "vence": "2026-11-25",
-   "restan": 31,
+   "restan": 30,
    "score": 86,
    "resumen": "RESUMEN: ¡ÚNETE A UNA GRAN FAMILIA LOGÍSTICA - DECAPOLIS!",
    "funciones": [
@@ -557,7 +1413,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/trba-sac/ayudante-de-distribucion-ate-gana-mas-de-1800-planilla/6add5157bfa2481579a5b8f9"
   },
   {
-   "id": 13,
+   "id": 33,
    "puesto": "Operario de Planta Industrial",
    "empresa": "Lavoro Perú",
    "cat": "Ingeniería",
@@ -567,9 +1423,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 0,
+   "dias": 1,
    "vence": "2026-11-25",
-   "restan": 31,
+   "restan": 30,
    "score": 83,
    "resumen": "Nuestro cliente, importante empresa localizada en el mercado de SAN MATEO destacada en el rubro de INDUSTRIAL, se encuentra en la búsqueda del/ los mejor(es) talento(s) para ocupar el puesto de OPERARIO PLANTA SAN MATEO HUAROCHIRI.",
    "funciones": [
@@ -604,7 +1460,61 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/operario-de-planta-industrial-san-mateo-huarochiri/6add670ebfa2481579a5d78c"
   },
   {
-   "id": 14,
+   "id": 34,
+   "puesto": "Ejecutivo Comercial B2B",
+   "empresa": "CASALINDA",
+   "cat": "Ventas",
+   "min": 1600,
+   "max": 1600,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 2,
+   "vence": "2027-01-22",
+   "restan": 88,
+   "score": 95,
+   "resumen": "Desarrollar el canal institucional y corporativo de CasaLinda mediante la prospección, captación y fidelización de empresas e instituciones. La posición deberá construir una cartera de clientes desde cero, generando nuevas oportunidades de negocio, ventas rentables y relaciones comerciales de largo plazo.",
+   "funciones": [
+    "Desarrollar el canal institucional y corporativo de CasaLinda mediante la prospección, captación y fidelización de empresas e instituciones. La posición deberá construir una cartera de clientes desde cero, generando nuevas oportunidades de negocio, ventas rentables y relaciones comerciales de largo plazo.",
+    "Prospectar y captar nuevos clientes corporativos e institucionales, inicialmente en Lima Metropolitana y progresivamente en otras zonas del país.",
+    "Construir y desarrollar una cartera propia de clientes desde cero; no se requiere que el candidato ingrese con una cartera existente.",
+    "Identificar oportunidades en empresas privadas, instituciones públicas, colegios, universidades, hoteles, restaurantes, clínicas, constructoras, distribuidores y otras organizaciones.",
+    "Ofrecer el portafolio de CasaLinda para compras empresariales, institucionales, por volumen y campañas especiales.",
+    "Contactar prospectos mediante llamadas, correos, visitas comerciales, LinkedIn y otros canales de prospección.",
+    "Preparar cotizaciones y propuestas comerciales; negociar precios y condiciones respetando las políticas de descuentos y márgenes de la empresa.",
+    "Realizar seguimiento a las cotizaciones y oportunidades hasta concretar el cierre de la venta.",
+    "Coordinar órdenes de compra, documentación y atención de pedidos con las áreas de ventas, logística, facturación y cobranzas.",
+    "Mantener actualizada la base de prospectos, clientes, oportunidades y negocios en proceso.",
+    "Gestionar la posventa para impulsar la satisfacción, fidelización y recompra de los clientes.",
+    "Presentar reportes semanales de prospectos contactados, reuniones, visitas, cotizaciones, ventas cerradas y proyección comercial."
+   ],
+   "requisitos": [
+    "Estudios técnicos o universitarios en Administración, Marketing, Gestión Comercial, Negocios o carreras afines.",
+    "Experiencia mínima de 2 años en ventas B2B, ventas corporativas, institucionales o mayoristas.",
+    "Experiencia demostrable en prospección, apertura de mercado y captación de nuevos clientes.",
+    "Conocimiento de cotizaciones, negociación, seguimiento comercial y cierre de ventas.",
+    "Manejo de Excel a nivel intermedio y herramientas digitales de seguimiento comercial.",
+    "Disponibilidad para realizar visitas comerciales y trabajo de campo.",
+    "No es indispensable contar con cartera propia; sí es indispensable tener capacidad para generarla.",
+    "Competencias: Negociación, comunicación efectiva, orientación a resultados, proactividad y capacidad para generar nuevas oportunidades de negocio.",
+    "Condiciones laborales: Remuneración fija acorde con el mercado y la experiencia del candidato. Las metas comerciales y demás condiciones se definirán según lo establecido por la empresa."
+   ],
+   "beneficios": [
+    "Ingreso a planilla completa desde el primer día.",
+    "Descuentos coorporativos",
+    "Todos los beneficios laborales de ley al 100%",
+    "Horario administrativo",
+    "L: 8:30 am - 6:30pm",
+    "M-V: 8:30 - 6:00 pm",
+    "S: 8:30 - 1:30pm",
+    "Domingos y Feriados no se labora.",
+    "Pago Mensuale: S/ 1,600.00"
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/ejecutivo-comercial-b2b-casalinda-1118480086.html"
+  },
+  {
+   "id": 35,
    "puesto": "Anfitrion(a) Club para Casino",
    "empresa": "GLADCON",
    "cat": "Otros",
@@ -614,9 +1524,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 1,
+   "dias": 2,
    "vence": "2026-11-24",
-   "restan": 30,
+   "restan": 29,
    "score": 94,
    "resumen": "RESUMEN: En Casino Mambos, somos un grupo corporativo peruano líder en el sector de juego y entretenimiento, con más de 30 años de experiencia y más de 24 salas tragamonedas y casinos distribuidos en más de 11 provincias del país.",
    "funciones": [
@@ -646,7 +1556,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/gladcon/se-solicita-anfitrion-a-club-para-casino-horario-rotativos/6adc02ccbfa2481579a49290"
   },
   {
-   "id": 15,
+   "id": 36,
    "puesto": "Asesor",
    "empresa": "Integra Retail",
    "cat": "Ventas",
@@ -656,9 +1566,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 1,
+   "dias": 2,
    "vence": "2026-11-24",
-   "restan": 30,
+   "restan": 29,
    "score": 92,
    "resumen": "RESUMEN: ¡ÚNETE A GRUPO CARSA COMO ASESOR(A) DE VENTAS!",
    "funciones": [
@@ -691,7 +1601,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/integra-retail/todo-huaral-oportunidad-laboral-buscamos-vendedores-basico/6adc0139bfa2481579a48ecb"
   },
   {
-   "id": 16,
+   "id": 37,
    "puesto": "Operario de Campo c",
    "empresa": "OCA GLOBAL PERÚ",
    "cat": "Ventas",
@@ -701,9 +1611,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 1,
+   "dias": 2,
    "vence": "2026-11-24",
-   "restan": 30,
+   "restan": 29,
    "score": 89,
    "resumen": "Trasladarse y recorrer los diferentes distritos de Lima Norte, Lima Centro, Lima Este, Callao o Norte Chico (Huacho, Huaral, Huaura), según la programación y la zona asignada para tomar lectura de los medidores del consumo eléctrico de las casas y registrarlo en la aplicación de PLUZ.",
    "funciones": [
@@ -727,7 +1637,45 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/oca-global-peru/operario-de-campo-c-experiencia-lecturista-de-medidores-de/6adc48e3bfa2481579a52687"
   },
   {
-   "id": 17,
+   "id": 38,
+   "puesto": "Asesor Comercial B2C",
+   "empresa": "CHAMBA TALENT S.A.C.",
+   "cat": "Ventas",
+   "min": 2000,
+   "max": 2000,
+   "moneda": "PEN",
+   "modalidad": "Presencial",
+   "ciudad": "Lima",
+   "fuente": "Bumeran",
+   "dias": 2,
+   "vence": "2027-01-22",
+   "restan": 88,
+   "score": 89,
+   "resumen": "Importante empresa del sector retail busca asesor comercial B2C para incorporarse a su equipo de trabajo.",
+   "funciones": [
+    "Buscar nuevos leads mediante ruteo, flyers, visitas a prospectos y consecución de referidos en la cartera actual.",
+    "Atender a los clientes por showroom, WhatsApp, llamadas o correo, brindando asesoría y realizando demostraciones o pruebas técnicas (de agua).",
+    "Dar seguimiento a los prospectos, elaborar contratos (financiamiento o alquiler) y cerrar las operaciones comerciales.",
+    "Gestionar envíos a provincia, coordinar e inspeccionar instalaciones, y atender quejas o reclamos de clientes.",
+    "Mantener el CRM actualizado, presentar reportes de ventas (diario/semanal/mensual) y proponer estrategias para incrementar las ventas."
+   ],
+   "requisitos": [
+    "Minimo secundaria completa certificada.",
+    "Experiencia minima de 02 años en ventas.",
+    "Experiencia vendiendo productos tangibles. (deseable)"
+   ],
+   "beneficios": [
+    "Ingreso a planilla MYPE desde el primer dia de trabajo.",
+    "Sueldo fijo: S/. 2000.00 + comisiones ilimitadas.",
+    "Estabilidad laboral",
+    "Linea de carrera",
+    "Modalidad de trabajo",
+    "Barranco - Presencial | Lunes a Sabado de 9:00 am hasta 6:00 pm"
+   ],
+   "url": "https://www.bumeran.com.pe/empleos/asesor-comercial-b2c-chamba-talent-s.a.c.-1118495550.html"
+  },
+  {
+   "id": 39,
    "puesto": "Operador de Montacarga",
    "empresa": "Inversiones San Gabriel S.A.",
    "cat": "Ingeniería",
@@ -737,9 +1685,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 1,
+   "dias": 2,
    "vence": "2026-11-24",
-   "restan": 30,
+   "restan": 29,
    "score": 88,
    "resumen": "RESUMEN: Inversiones San Gabriel, empresa con más de 35 años experiencia en la producción y distribución de productos de empaques para alimentos, se encuentra en la búsqueda de:",
    "funciones": [
@@ -768,7 +1716,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/inversiones-san-gabriel-s-a/operador-de-montacarga-lurin-fabrica-industrial/6adc3499bfa2481579a51104"
   },
   {
-   "id": 18,
+   "id": 40,
    "puesto": "Auxiliar de empaque para el área de Producción",
    "empresa": "ARCLAD DEL PERU S.A.C.",
    "cat": "Ingeniería",
@@ -778,9 +1726,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 1,
+   "dias": 2,
    "vence": "2026-11-24",
-   "restan": 30,
+   "restan": 29,
    "score": 88,
    "resumen": "Arclad del Perú S.A.C., empresa líder en soluciones adhesivas y etiquetas autoadhesivas, se encuentra en la búsqueda de un Auxiliar de Empaque proactivo, responsable y comprometido, que desee formar parte de nuestro equipo de producción.",
    "funciones": [
@@ -810,7 +1758,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/arclad-del-peru-s-a-c/auxiliar-de-empaque-para-el-area-de-produccion-ate-planilla/6adc15b2bfa2481579a4c715"
   },
   {
-   "id": 19,
+   "id": 41,
    "puesto": "Ayudante de producción",
    "empresa": "Inversiones San Gabriel S.A.",
    "cat": "Ingeniería",
@@ -820,9 +1768,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 1,
+   "dias": 2,
    "vence": "2026-11-24",
-   "restan": 30,
+   "restan": 29,
    "score": 88,
    "resumen": "¡ÚNETE A NUESTRO EQUIPO INDUSTRIAL EN LURÍN!",
    "funciones": [
@@ -854,7 +1802,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/inversiones-san-gabriel-s-a/ayudante-de-produccion-turno-dia-fijo-8h-lurin-planilla/6adc2910bfa2481579a4f451"
   },
   {
-   "id": 20,
+   "id": 42,
    "puesto": "Ayudante de Almacén",
    "empresa": "Inversiones San Gabriel S.A.",
    "cat": "Logística",
@@ -864,9 +1812,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 1,
+   "dias": 2,
    "vence": "2026-11-24",
-   "restan": 30,
+   "restan": 29,
    "score": 86,
    "resumen": "Somos una empresa líder en el sector industrial, con más de 38 años de experiencia fabricando envases y productos plásticos para alimentos.",
    "funciones": [
@@ -901,7 +1849,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/inversiones-san-gabriel-s-a/ayudante-de-almacen-lurin-km40/6adc0f56bfa2481579a4b530"
   },
   {
-   "id": 21,
+   "id": 43,
    "puesto": "Supervisor",
    "empresa": "Inversiones San Gabriel S.A.",
    "cat": "Ingeniería",
@@ -911,9 +1859,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 1,
+   "dias": 2,
    "vence": "2026-11-24",
-   "restan": 30,
+   "restan": 29,
    "score": 85,
    "resumen": "Somos una empresa líder en el sector industrial, con más de 38 años fabricando envases y productos plásticos para alimentos.",
    "funciones": [
@@ -951,7 +1899,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/inversiones-san-gabriel-s-a/ayudante-turno-noche-lurin-pagos-semales/6adc29dbbfa2481579a4f602"
   },
   {
-   "id": 22,
+   "id": 44,
    "puesto": "Técnico Civil",
    "empresa": "Confidencial",
    "cat": "Ingeniería",
@@ -961,9 +1909,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 2,
+   "dias": 3,
    "vence": "2026-10-30",
-   "restan": 5,
+   "restan": 4,
    "score": 98,
    "resumen": "Ejecutar trabajos de taller, incluyendo fabricación, reparación y mantenimiento de equipos o estructuras. Se valorará experiencia en soldadura.",
    "funciones": [
@@ -1003,50 +1951,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnico-civil-mecanico-1118495138.html"
   },
   {
-   "id": 23,
-   "puesto": "Asistente Comercial",
-   "empresa": "PRESTACLUB",
-   "cat": "Ventas",
-   "min": 1230,
-   "max": 1230,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 2,
-   "vence": "2027-01-21",
-   "restan": 88,
-   "score": 95,
-   "resumen": "La función principal del ASISTENTE COMERCIAL es la de apoyar en la gestión administrativa, comercial y coordinación con otras áreas.",
-   "funciones": [
-    "Apoyar en la gestión administrativa y comercial",
-    "Registrar y dar seguimiento a las consultas frecuentes de clientes para mejorar la comunicación comercial.",
-    "Apoyar en activaciones comerciales u otras actividades externas.",
-    "Realizar revisiones periódicas de los files para prevenir observaciones de auditoría.",
-    "Realizar reportes de rendimiento y gestión solicitados por la jefatura"
-   ],
-   "requisitos": [
-    "Formación académica: Estudiantes últimos ciclos, egresados o bachilleres de las carreras de Administración, Contabilidad, Ingeniería Empresarial, Ingeniería Industrial o afines.",
-    "Experiencia previa: Contar con experiencia mínima en puestos similares de atención al cliente, gestión administrativa o áreas comerciales.",
-    "Herramientas tecnológicas",
-    "Manejo de CRM (indispensable/deseable según prefieras) para el seguimiento y gestión de clientes.",
-    "Dominio de MS Excel y/o herramientas de reporting (Looker Studio, Power BI o similares) será valorado positivamente.",
-    "Competencias clave: Excelente nivel de comunicación interpersonal, orientación a resultados, gran vocación de servicio, amabilidad y empatía."
-   ],
-   "beneficios": [
-    "Sueldo bruto: S/ 1,230.00",
-    "Beneficio adicional: Almuerzo diario 100% asumido por la empresa.",
-    "Desarrollo profesional: Reales oportunidades de crecimiento y línea de carrera.",
-    "Buen clima laboral: Un espacio dinámico para potenciar tus habilidades.",
-    "Horario de trabajo",
-    "Lunes a Viernes: 8:30 a.m. a 6:30 p.m.",
-    "Sábados: 8:30 a.m. a 2:00 p.m.",
-    "Contacto: 9 4 0 6 7 1 3 9 7"
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/asistente-comercial-oficina-caqueta-prestaclub-1118495245.html"
-  },
-  {
-   "id": 24,
+   "id": 45,
    "puesto": "Analista de Reclamos Bancarios",
    "empresa": "NTT DATA",
    "cat": "Tecnología",
@@ -1056,9 +1961,9 @@ window.CERO_VAGOS = {
    "modalidad": "Remoto",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 2,
+   "dias": 3,
    "vence": "2027-01-21",
-   "restan": 88,
+   "restan": 87,
    "score": 95,
    "resumen": "Analizar y atender reclamaciones e incidencias registradas en los aplicativos del banco.",
    "funciones": [
@@ -1093,7 +1998,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/analista-de-reclamos-bancarios-|-turno-madrugada-hibrido-ntt-data-1118493463.html"
   },
   {
-   "id": 25,
+   "id": 46,
    "puesto": "Operario de producción",
    "empresa": "GRAFTON LATAM",
    "cat": "Ingeniería",
@@ -1103,9 +2008,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 2,
+   "dias": 3,
    "vence": "2027-01-21",
-   "restan": 88,
+   "restan": 87,
    "score": 94,
    "resumen": "Operarios de Producción – Estables (Lurin)",
    "funciones": [
@@ -1139,7 +2044,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-produccion-grafton-latam-1118495223.html"
   },
   {
-   "id": 26,
+   "id": 47,
    "puesto": "Practicante de Asuntos Regulatorios de Productos Cosméticos",
    "empresa": "SOUL QUALITY",
    "cat": "Prácticas",
@@ -1149,9 +2054,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 2,
+   "dias": 3,
    "vence": "2026-12-22",
-   "restan": 58,
+   "restan": 57,
    "score": 93,
    "resumen": "Apoyar en la gestión de trámites de Asuntos Regulatorios de Productos Sanitarios.",
    "funciones": [
@@ -1179,7 +2084,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-de-asuntos-regulatorios-de-productos-cosmeticos-soul-quality-1118495271.html"
   },
   {
-   "id": 27,
+   "id": 48,
    "puesto": "Practicante Profesional de Gestión de Calidad",
    "empresa": "SOUL QUALITY",
    "cat": "Prácticas",
@@ -1189,9 +2094,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 2,
+   "dias": 3,
    "vence": "2026-12-22",
-   "restan": 58,
+   "restan": 57,
    "score": 90,
    "resumen": "Apoyar en la gestión del soporte documentario de los diferentes casos.",
    "funciones": [
@@ -1217,7 +2122,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-profesional-de-gestion-de-calidad-soul-quality-1118495275.html"
   },
   {
-   "id": 28,
+   "id": 49,
    "puesto": "Supervisor",
    "empresa": "CALIMOD",
    "cat": "Ingeniería",
@@ -1227,9 +2132,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 2,
+   "dias": 3,
    "vence": "2026-11-23",
-   "restan": 29,
+   "restan": 28,
    "score": 89,
    "resumen": "RESUMEN: En GRUPO CALIMOD ConfiamosEnTuTalento",
    "funciones": [
@@ -1253,7 +2158,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/calimod/convocatoria-masiva-operarios-de-produccion-almuerzo/6adaa613bfa2481579a31c27"
   },
   {
-   "id": 29,
+   "id": 50,
    "puesto": "Auxiliar de almacén",
    "empresa": "YOKOHAMA",
    "cat": "Logística",
@@ -1263,9 +2168,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 2,
+   "dias": 3,
    "vence": "2026-11-23",
-   "restan": 29,
+   "restan": 28,
    "score": 88,
    "resumen": "RESUMEN: Estamos en búsqueda de Almaceneros para nuestra operación en San Luis. Si buscas una oportunidad laboral estable y no tienes experiencia, ¡te capacitamos!",
    "funciones": [
@@ -1300,7 +2205,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/yokohama/auxiliar-de-almacen-planilla-completa/6adab183bfa2481579a33e70"
   },
   {
-   "id": 30,
+   "id": 51,
    "puesto": "Asesor(a) de Ventas Telefónicas",
    "empresa": "ESTUDIO UBILLUS Y ASOCIADOS PERU S.A.C.",
    "cat": "Ventas",
@@ -1310,9 +2215,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 2,
+   "dias": 3,
    "vence": "2026-11-23",
-   "restan": 29,
+   "restan": 28,
    "score": 87,
    "resumen": "RESUMEN: ¡Buscamos talento comercial con energía y gran capacidad de comunicación!",
    "funciones": [
@@ -1336,7 +2241,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/estudio-ubillus-y-asociados-peru-s-a-c/asesor-a-de-ventas-telefonicas-call-center-comercial/6adad7a9bfa2481579a3adb5"
   },
   {
-   "id": 31,
+   "id": 52,
    "puesto": "Practicante de Ingeniería Ambiental",
    "empresa": "OUTSOURCING GREEN",
    "cat": "Prácticas",
@@ -1346,9 +2251,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 3,
+   "dias": 4,
    "vence": "2027-01-20",
-   "restan": 87,
+   "restan": 86,
    "score": 100,
    "resumen": "Brindar apoyo administrativo y técnico al área de Servicios Ambientales y Ocupacionales, así mismo participar en las actividades de formación programadas por la empresa y de esta manera lograr su desarrollo de manera integral, poniendo en práctica los conceptos aprendidos durante su etapa de formación universitaria.",
    "funciones": [
@@ -1376,7 +2281,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-de-ingenieria-ambiental-sede-comas-trapiche-outsourcing-green-1118493362.html"
   },
   {
-   "id": 32,
+   "id": 53,
    "puesto": "Administrador E-commerce",
    "empresa": "ADN RETAIL S.A.C.",
    "cat": "Ventas",
@@ -1386,9 +2291,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 3,
+   "dias": 4,
    "vence": "2027-01-20",
-   "restan": 87,
+   "restan": 86,
    "score": 97,
    "resumen": "Planificar y responder por el resultado de venta y rentabilidad de los canales digitales, alineado al presupuesto.",
    "funciones": [
@@ -1423,7 +2328,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/administrador-e-commerce-adn-retail-s.a.c.-1118493356.html"
   },
   {
-   "id": 33,
+   "id": 54,
    "puesto": "Personal de limpieza",
    "empresa": "ADN RETAIL S.A.C.",
    "cat": "Otros",
@@ -1433,9 +2338,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 3,
+   "dias": 4,
    "vence": "2027-01-20",
-   "restan": 87,
+   "restan": 86,
    "score": 92,
    "resumen": "Limpiar las habitaciones asignadas de acuerdo al listado de tareas.",
    "funciones": [
@@ -1458,7 +2363,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/personal-de-limpieza-adn-retail-s.a.c.-1118493354.html"
   },
   {
-   "id": 34,
+   "id": 55,
    "puesto": "Ejecutivo de Ventas",
    "empresa": "Confidencial",
    "cat": "Ventas",
@@ -1468,9 +2373,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 3,
+   "dias": 4,
    "vence": "2027-01-20",
-   "restan": 87,
+   "restan": 86,
    "score": 88,
    "resumen": "Somos una empresa líder del sector salud, y buscamos incorporar a nuestro equipo a un/a Ejecutivo/a de Ventas que disfrute asesorar a las personas, construir relaciones de confianza y cumplir metas.",
    "funciones": [
@@ -1497,7 +2402,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ejecutivo-de-ventas-1118493317.html"
   },
   {
-   "id": 35,
+   "id": 56,
    "puesto": "Asesor Corporativo Remoto",
    "empresa": "SENTICORP",
    "cat": "Ventas",
@@ -1507,9 +2412,9 @@ window.CERO_VAGOS = {
    "modalidad": "Remoto",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 3,
+   "dias": 4,
    "vence": "2027-01-20",
-   "restan": 87,
+   "restan": 86,
    "score": 87,
    "resumen": "Somos el socio #1 de Experian Perú desde 2018.",
    "funciones": [
@@ -1535,7 +2440,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-corporativo-remoto-copia-senticorp-1118493393.html"
   },
   {
-   "id": 36,
+   "id": 57,
    "puesto": "Auxiliar Operativo",
    "empresa": "CICSA PERU S.A.C.",
    "cat": "Otros",
@@ -1545,9 +2450,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 3,
+   "dias": 4,
    "vence": "2026-11-22",
-   "restan": 28,
+   "restan": 27,
    "score": 87,
    "resumen": "RESUMEN: Se parte de uno de los conglomerados más grandes e importantes de Latinoamérica.",
    "funciones": [
@@ -1570,7 +2475,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/cicsa-peru-s-a-c/auxiliar-operativo-digitador-san-isidro/6ad952edbfa2481579a1a1ea"
   },
   {
-   "id": 37,
+   "id": 58,
    "puesto": "Cocinera",
    "empresa": "PLANET GAME S.A.C.",
    "cat": "Otros",
@@ -1580,9 +2485,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 3,
+   "dias": 4,
    "vence": "2026-11-22",
-   "restan": 28,
+   "restan": 27,
    "score": 86,
    "resumen": "Preparar alimentos para clientes.",
    "funciones": [
@@ -1609,7 +2514,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/planet-game-s-a-c/cocinera-canta-callao-full-time/6ad962f6bfa2481579a1cd20"
   },
   {
-   "id": 38,
+   "id": 59,
    "puesto": "Auxiliar de Piscina",
    "empresa": "JOCKEY CLUB DEL PERU",
    "cat": "Ingeniería",
@@ -1619,9 +2524,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 3,
+   "dias": 4,
    "vence": "2026-11-22",
-   "restan": 28,
+   "restan": 27,
    "score": 86,
    "resumen": "RESUMEN: Oportunidad para Técnico de Mantenimiento De Piscina TURNO NOCHE",
    "funciones": [
@@ -1649,7 +2554,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/jockey-club-del-peru/auxiliar-de-piscina-surco/6ad97ebebfa2481579a218d8"
   },
   {
-   "id": 39,
+   "id": 60,
    "puesto": "Administrador de Gimnasio",
    "empresa": "ADECCO PERU S.A.",
    "cat": "Recursos Humanos",
@@ -1659,9 +2564,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2027-02-18",
-   "restan": 116,
+   "restan": 115,
    "score": 97,
    "resumen": "En Adecco Perú, firma global especializada en atracción y selección de personal, nos encontramos en búsqueda del mejor talento para cubrir la siguiente vacante.",
    "funciones": [
@@ -1699,7 +2604,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/administrador-de-gimnasio-adecco-peru-s.a.-1118491304.html"
   },
   {
-   "id": 40,
+   "id": 61,
    "puesto": "Analista Planificación PDI Automotriz",
    "empresa": "RCS Capital Humano",
    "cat": "Ventas",
@@ -1709,9 +2614,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Callao",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2027-02-18",
-   "restan": 116,
+   "restan": 115,
    "score": 97,
    "resumen": "GILDEMEISTER empresa líder en el rubro Automotriz esta en busca de un Analista de Planificación PDI / Planner(Ventanilla)",
    "funciones": [
@@ -1743,7 +2648,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/analista-planificacion-pdi-automotriz-turno-tarde-ventanilla-rcs-capital-humano-1118491336.html"
   },
   {
-   "id": 41,
+   "id": 62,
    "puesto": "Practicante Profesional Administrativo para Droguería Farmacéutica",
    "empresa": "SOUL QUALITY",
    "cat": "Prácticas",
@@ -1753,9 +2658,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2026-10-28",
-   "restan": 3,
+   "restan": 2,
    "score": 97,
    "resumen": "Apoyo en la gestión administrativa diaria.",
    "funciones": [
@@ -1787,7 +2692,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-profesional-administrativo-para-drogueria-farmaceutica-soul-quality-1118491573.html"
   },
   {
-   "id": 42,
+   "id": 63,
    "puesto": "UPC Chorrillos: Gestor en Tiempo Real",
    "empresa": "Laureate Perú",
    "cat": "Atención al Cliente",
@@ -1797,9 +2702,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2027-01-18",
-   "restan": 85,
+   "restan": 84,
    "score": 97,
    "resumen": "En UPC contribuimos a la transformación del Perú a través de una educación inclusiva, accesible y de calidad que transforma vidas .",
    "funciones": [
@@ -1835,7 +2740,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/upc-chorrillos-gestor-en-tiempo-real-gtr-controller-call-center-basico-s-2400-bono-s-1200-laureate-peru-1118491593.html"
   },
   {
-   "id": 43,
+   "id": 64,
    "puesto": "Chofer de Reparto",
    "empresa": "BUMERAN SELECTA",
    "cat": "Logística",
@@ -1845,9 +2750,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2027-01-18",
-   "restan": 85,
+   "restan": 84,
    "score": 97,
    "resumen": "Conducir unidades de reparto para distribuir productos a diferentes puntos de Lima Metropolitana.",
    "funciones": [
@@ -1883,7 +2788,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/chofer-de-reparto-consumo-masivo-ate-bumeran-selecta-1118491611.html"
   },
   {
-   "id": 44,
+   "id": 65,
    "puesto": "Técnico Todista",
    "empresa": "ACADEMIA VONEX",
    "cat": "Ingeniería",
@@ -1893,9 +2798,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 4,
+   "dias": 5,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 97,
    "resumen": "RESUMEN: ¡BUSCAMOS TÉCNICO ELECTRICISTA DE MANTENIMIENTO!",
    "funciones": [
@@ -1925,7 +2830,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/academia-vonex/tecnico-todista-electricista-de-mantenimiento-y-servicios/6ad83788bfa2481579a0f15b"
   },
   {
-   "id": 45,
+   "id": 66,
    "puesto": "Analista de Costos Contable",
    "empresa": "BUMERAN SELECTA",
    "cat": "Contabilidad",
@@ -1935,9 +2840,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2027-01-19",
-   "restan": 86,
+   "restan": 85,
    "score": 95,
    "resumen": "Realizar el análisis, control y seguimiento de los costos de la compañía.",
    "funciones": [
@@ -1978,7 +2883,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/analista-de-costos-contable-los-olivos-bumeran-selecta-1118489556.html"
   },
   {
-   "id": 46,
+   "id": 67,
    "puesto": "Asistente de exportaciones de aduana",
    "empresa": "PALACIOS & ASOCIADOS AGENTES DE ADUANA S.A",
    "cat": "Logística",
@@ -1988,9 +2893,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2027-01-19",
-   "restan": 86,
+   "restan": 85,
    "score": 94,
    "resumen": "Somos un Operador Logístico que provee soluciones integrales en agenciamiento de aduanas, carga, transporte, almacenamiento y asesoramiento en diferentes jurisdicciones del territorio nacional.",
    "funciones": [
@@ -2024,7 +2929,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-exportaciones-de-aduana-asistente-de-operaciones-de-exportaciones-palacios-asociados-agentes-de-aduana-s.a-1118490098.html"
   },
   {
-   "id": 47,
+   "id": 68,
    "puesto": "Asesor de Compra y Recoge",
    "empresa": "ManpowerGroup Perú",
    "cat": "Recursos Humanos",
@@ -2034,9 +2939,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2027-01-19",
-   "restan": 86,
+   "restan": 85,
    "score": 94,
    "resumen": "En Manpower Perú buscamos al mejor talento para asumir un nuevo reto laboral como Atención al cliente/ Compra y Recoge - Real Plaza Puruchuco . ¡La oportunidad de tener un futuro mejor, está aquí!",
    "funciones": [
@@ -2071,7 +2976,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-compra-y-recoge-real-plaza-puruchuco-ingreso-inmediato-manpowergroup-peru-1118489563.html"
   },
   {
-   "id": 48,
+   "id": 69,
    "puesto": "Call center",
    "empresa": "Laureate Perú",
    "cat": "Ventas",
@@ -2081,9 +2986,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2027-01-18",
-   "restan": 85,
+   "restan": 84,
    "score": 94,
    "resumen": "En UPN contribuimos a la transformación del Perú a través de una educación inclusiva, accesible y de calidad que transforma vidas .",
    "funciones": [
@@ -2117,7 +3022,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/upn-sjl-formador-capacitador-de-ventas-en-call-center-fijo-s-3-300-planilla-100-laureate-peru-1118491606.html"
   },
   {
-   "id": 49,
+   "id": 70,
    "puesto": "Técnico",
    "empresa": "ManpowerGroup Perú",
    "cat": "Ventas",
@@ -2127,9 +3032,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2027-01-19",
-   "restan": 86,
+   "restan": 85,
    "score": 94,
    "resumen": "¡Si tienes experiencia en ventas y quieres potenciar tus ingresos, esta oportunidad es para ti!",
    "funciones": [
@@ -2167,7 +3072,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesores-de-ventas-de-creditos-vehiculares-ingreso-inmediato-manpowergroup-peru-1118489559.html"
   },
   {
-   "id": 50,
+   "id": 71,
    "puesto": "Sip: Asesor de Ventas",
    "empresa": "Sip",
    "cat": "Ventas",
@@ -2177,9 +3082,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2027-01-19",
-   "restan": 86,
+   "restan": 85,
    "score": 92,
    "resumen": "Perfilar al cliente, despertar interés, brindar asesoría financiera, ofrecer y vender la combinación de productos establecidos por Sip, según la necesidad del cliente.",
    "funciones": [
@@ -2207,7 +3112,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/sip-asesor-de-ventas-arequipa-sip-1118491298.html"
   },
   {
-   "id": 51,
+   "id": 72,
    "puesto": "Asistente de almacén Piura",
    "empresa": "Grupo Pimentel",
    "cat": "Logística",
@@ -2217,9 +3122,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Piura",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2027-02-18",
-   "restan": 116,
+   "restan": 115,
    "score": 92,
    "resumen": "Control de existencias, emisión de guías, control documentario.",
    "funciones": [
@@ -2244,7 +3149,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-almacen-piura-grupo-pimentel-1118491365.html"
   },
   {
-   "id": 52,
+   "id": 73,
    "puesto": "Sip: Asesor de Ventas",
    "empresa": "Sip",
    "cat": "Ventas",
@@ -2254,9 +3159,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2027-01-18",
-   "restan": 85,
+   "restan": 84,
    "score": 92,
    "resumen": "Perfilar al cliente, despertar interés, brindar asesoría financiera, ofrecer y vender la combinación de productos establecidos por Sip, según la necesidad del cliente.",
    "funciones": [
@@ -2284,7 +3189,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/sip-asesor-de-ventas-independencia-sip-1118491300.html"
   },
   {
-   "id": 53,
+   "id": 74,
    "puesto": "Auxiliar de almacen",
    "empresa": "Wellco Peruana SA",
    "cat": "Logística",
@@ -2294,9 +3199,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 4,
+   "dias": 5,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 91,
    "resumen": "Somos Wellco Peruana, empresa peruana dedicada a la fabricación de calzado de seguridad industrial y militar. Nos encontramos en búsqueda de un Auxiliar de Almacén para integrarse a nuestro equipo de trabajo.",
    "funciones": [
@@ -2332,7 +3237,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/wellco-peruana-sa/auxiliar-de-almacen/6ad82b80bfa2481579a0c107"
   },
   {
-   "id": 54,
+   "id": 75,
    "puesto": "Jefe de TI y Sistemas",
    "empresa": "Confidencial",
    "cat": "Tecnología",
@@ -2342,9 +3247,9 @@ window.CERO_VAGOS = {
    "modalidad": "Remoto",
    "ciudad": "Piura",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2027-02-18",
-   "restan": 116,
+   "restan": 115,
    "score": 90,
    "resumen": "Importante empresa peruana del sector automotriz dedicada a la comercialización, distribución y servicio posventa de motocicletas, repuestos y accesorios, se encuentra en la búsqueda del mejor talento para cubrir el cargo de:",
    "funciones": [
@@ -2370,7 +3275,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/jefe-de-ti-y-sistemas-planilla-inmediata-de-regimen-general-1118491378.html"
   },
   {
-   "id": 55,
+   "id": 76,
    "puesto": "Jefe de TI y Sistemas",
    "empresa": "Confidencial",
    "cat": "Tecnología",
@@ -2380,9 +3285,9 @@ window.CERO_VAGOS = {
    "modalidad": "Remoto",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2027-02-18",
-   "restan": 116,
+   "restan": 115,
    "score": 90,
    "resumen": "Importante empresa peruana del sector automotriz dedicada a la comercialización, distribución y servicio posventa de motocicletas, repuestos y accesorios, se encuentra en la búsqueda del mejor talento para cubrir el cargo de:",
    "funciones": [
@@ -2408,7 +3313,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/jefe-de-ti-y-sistemas-planilla-inmediata-de-regimen-general-1118491380.html"
   },
   {
-   "id": 56,
+   "id": 77,
    "puesto": "Practicante de Atención al Cliente",
    "empresa": "LUZ DEL SUR S.A.A.",
    "cat": "Prácticas",
@@ -2418,9 +3323,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2027-01-19",
-   "restan": 86,
+   "restan": 85,
    "score": 90,
    "resumen": "Absolver consultas y reclamos de clientes como convenios, orientación en requisitos comerciales y técnicos, contratos, ventas, viajes indebidos.",
    "funciones": [
@@ -2444,7 +3349,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-de-atencion-al-cliente-chacarilla-luz-del-sur-s.a.a.-1118489558.html"
   },
   {
-   "id": 57,
+   "id": 78,
    "puesto": "Ayudante de Mantenimiento",
    "empresa": "GRAFTON LATAM",
    "cat": "Ingeniería",
@@ -2454,9 +3359,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2027-01-18",
-   "restan": 85,
+   "restan": 84,
    "score": 89,
    "resumen": "Brindar soporte al Coordinador de Mantenimiento en las actividades de mantenimiento de maquinaria y equipos industriales.",
    "funciones": [
@@ -2484,7 +3389,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ayudante-de-mantenimiento-lavanderia-industrial-grafton-latam-1118491475.html"
   },
   {
-   "id": 58,
+   "id": 79,
    "puesto": "Asistente de ventas",
    "empresa": "Industrias Nacionales de Metales SAC",
    "cat": "Ventas",
@@ -2494,9 +3399,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 4,
+   "dias": 5,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 89,
    "resumen": "RESUMEN: Empresa líder en el sector Comercial ubicada en Villa el Salvador requiere cubrir el puesto de Asistente de Ventas, de preferencia que resida en el Villa el Salvador o cerca de la zona Sur de Lima.",
    "funciones": [
@@ -2520,7 +3425,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/industrias-nacionales-de-metales-sac/asistente-de-ventas/6ad82f6abfa2481579a0d12f"
   },
   {
-   "id": 59,
+   "id": 80,
    "puesto": "Practicante Profesional de Evaluación y Control",
    "empresa": "ACADEMIA VONEX",
    "cat": "Prácticas",
@@ -2530,9 +3435,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 4,
+   "dias": 5,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 86,
    "resumen": "RESUMEN: Buscamos un(a) Practicante Profesional de Evaluación y Control que quiera aplicar sus conocimientos de análisis de datos, automatización, estadística e inteligencia artificial en proyectos que generen valor para la organización.",
    "funciones": [
@@ -2562,7 +3467,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/academia-vonex/practicante-profesional-de-evaluacion-y-control/6ad817d3bfa2481579a0681f"
   },
   {
-   "id": 60,
+   "id": 81,
    "puesto": "Técnica en Enfermería",
    "empresa": "SECCION C CENTRO COMERCIAL ARENALES",
    "cat": "Salud",
@@ -2572,9 +3477,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 4,
+   "dias": 5,
    "vence": "2026-12-20",
-   "restan": 56,
+   "restan": 55,
    "score": 84,
    "resumen": "Brindar atención primaria y primeros auxilios.",
    "funciones": [
@@ -2597,7 +3502,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnica-en-enfermeria-topico-seccion-c-centro-comercial-arenales-1118491350.html"
   },
   {
-   "id": 61,
+   "id": 82,
    "puesto": "Mozo y",
    "empresa": "Afe Service Sac",
    "cat": "Gastronomía",
@@ -2607,9 +3512,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 4,
+   "dias": 5,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 83,
    "resumen": "Restaurante Gourmet, prestigiosa cadena de restaurantes gourmet, se encuentra en la búsqueda de Mozos / Meseras para formar parte de nuestro equipo en la sede de Miraflores.",
    "funciones": [
@@ -2647,7 +3552,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/afe-service-sac/mozo-y-o-azafata-con-exp-urgente-miraflores/6ad81ad9bfa2481579a075df"
   },
   {
-   "id": 62,
+   "id": 83,
    "puesto": "Recepcionista",
    "empresa": "ManpowerGroup Perú",
    "cat": "Administración",
@@ -2657,9 +3562,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 5,
+   "dias": 6,
    "vence": "2027-01-18",
-   "restan": 85,
+   "restan": 84,
    "score": 97,
    "resumen": "En Manpower Perú buscamos al mejor talento para asumir un nuevo reto laboral como Recepcionista para laborar. ¡La oportunidad de tener un futuro mejor, está aquí!",
    "funciones": [
@@ -2693,7 +3598,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/recepcionista-proyecto-2-meses-santiago-de-surco-ingreso-inmediato-manpowergroup-peru-1118487758.html"
   },
   {
-   "id": 63,
+   "id": 84,
    "puesto": "Técnico de servicios generales",
    "empresa": "ACADEMIA VONEX",
    "cat": "Recursos Humanos",
@@ -2703,9 +3608,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 5,
+   "dias": 6,
    "vence": "2026-11-20",
-   "restan": 26,
+   "restan": 25,
    "score": 97,
    "resumen": "RESUMEN: ¿Tienes experiencia en Servicios Generales, Soldadura, Electricidad, Mantenimiento y buscas estabilidad laboral? Buscamos un Técnico en Servicios Generales con conocimientos básicos en soldadura/electricidad/gasfitería.",
    "funciones": [
@@ -2736,7 +3641,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/academia-vonex/tecnico-de-servicios-generales-soldadura-planilla-completa/6ad6e287e076276c795f2b8c"
   },
   {
-   "id": 64,
+   "id": 85,
    "puesto": "Back Office Bancario",
    "empresa": "NTT DATA",
    "cat": "Ventas",
@@ -2746,9 +3651,9 @@ window.CERO_VAGOS = {
    "modalidad": "Híbrido",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 5,
+   "dias": 6,
    "vence": "2027-01-18",
-   "restan": 85,
+   "restan": 84,
    "score": 95,
    "resumen": "¿Te gustaría desarrollar tu experiencia en operaciones financieras dentro de un importante proyecto bancario?",
    "funciones": [
@@ -2785,7 +3690,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/back-office-bancario-|-financiamiento-de-ventas-|-hibrido-ntt-data-1118487756.html"
   },
   {
-   "id": 65,
+   "id": 86,
    "puesto": "Auxiliar de despacho aduanero",
    "empresa": "Eurofirms Group",
    "cat": "Logística",
@@ -2795,9 +3700,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Callao",
    "fuente": "Bumeran",
-   "dias": 5,
+   "dias": 6,
    "vence": "2027-01-17",
-   "restan": 84,
+   "restan": 83,
    "score": 94,
    "resumen": "En Eurofirms Group, creemos en el liderazgo por valores y el crecimiento continuo, poniendo a las personas y su desarrollo profesional primero, potenciando un ambiente de trabajo positivo y colaborativo.",
    "funciones": [
@@ -2830,7 +3735,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-de-despacho-aduanero-acreditado-iat-eurofirms-group-1118489432.html"
   },
   {
-   "id": 66,
+   "id": 87,
    "puesto": "Ejecutivo Comercial B2B",
    "empresa": "ManpowerGroup Perú",
    "cat": "Ventas",
@@ -2840,9 +3745,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 5,
+   "dias": 6,
    "vence": "2027-01-18",
-   "restan": 85,
+   "restan": 84,
    "score": 92,
    "resumen": "Por encargo de nuestro cliente, empresa líder en el sector de Telecomunicaciones, nos encontramos en la búsqueda de un(a) Ejecutivo(a) de Negocios Senior B2B.",
    "funciones": [
@@ -2874,7 +3779,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ejecutivo-comercial-b2b-planilla-comisiones-ilimitadas-eps-bonos-trabaja-l-a-v-san-isidro-manpowergroup-peru-1118489519.html"
   },
   {
-   "id": 67,
+   "id": 88,
    "puesto": "Ingeniero Civil",
    "empresa": "Punto Visual",
    "cat": "Ingeniería",
@@ -2884,9 +3789,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 5,
+   "dias": 6,
    "vence": "2026-12-19",
-   "restan": 55,
+   "restan": 54,
    "score": 92,
    "resumen": "¿Eres Ingeniero Civil colegiado y habilitado y buscas una nueva oportunidad laboral? ¡Esta es tu oportunidad de formar parte de un gran equipo!",
    "funciones": [
@@ -2911,7 +3816,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ingeniero-civil-punto-visual-1118483180.html"
   },
   {
-   "id": 68,
+   "id": 89,
    "puesto": "Secretaria Administrativa y de Ventas",
    "empresa": "RENACER",
    "cat": "Administración",
@@ -2921,9 +3826,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 5,
+   "dias": 6,
    "vence": "2026-12-19",
-   "restan": 55,
+   "restan": 54,
    "score": 92,
    "resumen": "Centro de Prótesis Estéticas Personalizadas RENACER",
    "funciones": [
@@ -2968,7 +3873,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/secretaria-administrativa-y-de-ventas-renacer-1118484226.html"
   },
   {
-   "id": 69,
+   "id": 90,
    "puesto": "Chofer de Furgón A2B",
    "empresa": "Multimoldes S.A.C.",
    "cat": "Ingeniería",
@@ -2978,9 +3883,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 5,
+   "dias": 6,
    "vence": "2026-11-20",
-   "restan": 26,
+   "restan": 25,
    "score": 92,
    "resumen": "Empresa peruana líder en la fabricación de envases de papel se encuentra en la búsqueda de un:",
    "funciones": [
@@ -3007,7 +3912,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/multimoldes-s-a-c/chofer-de-furgon-a2b-con-exp-en-plantas-industriales/6ad6b27ce076276c795ea69d"
   },
   {
-   "id": 70,
+   "id": 91,
    "puesto": "Vendedor de productos Pyme",
    "empresa": "TECHNETSOL SOCIEDAD ANONIMA CERRADA",
    "cat": "Ventas",
@@ -3017,9 +3922,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 5,
+   "dias": 6,
    "vence": "2027-01-18",
-   "restan": 85,
+   "restan": 84,
    "score": 89,
    "resumen": "¿Buscas generar altos ingresos según tu desempeño? ¡Únete a nuestro equipo!",
    "funciones": [
@@ -3047,7 +3952,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/vendedor-de-productos-pyme-sjm-vmt-ves-fuerza-de-ventas-externa-scotiabank-technetsol-sociedad-anonima-cerrada-1118369006.html"
   },
   {
-   "id": 71,
+   "id": 92,
    "puesto": "Vendedor campo scotiabank Pyme",
    "empresa": "TECHNETSOL SOCIEDAD ANONIMA CERRADA",
    "cat": "Ventas",
@@ -3057,9 +3962,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Madre de Dios",
    "fuente": "Bumeran",
-   "dias": 5,
+   "dias": 6,
    "vence": "2027-02-17",
-   "restan": 115,
+   "restan": 114,
    "score": 89,
    "resumen": "¿Buscas generar altos ingresos según tu desempeño? ¡Únete a nuestro equipo!",
    "funciones": [
@@ -3087,7 +3992,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/vendedor-campo-scotiabank-pyme-puerto-maldonado-technetsol-sociedad-anonima-cerrada-1118165163.html"
   },
   {
-   "id": 72,
+   "id": 93,
    "puesto": "Técnico Electrónico Kanta Full time",
    "empresa": "PLANET GAME S.A.C.",
    "cat": "Ingeniería",
@@ -3097,9 +4002,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 5,
+   "dias": 6,
    "vence": "2026-11-20",
-   "restan": 26,
+   "restan": 25,
    "score": 89,
    "resumen": "RESUMEN: TÉCNICO ELECTRÓNICO MANTENIMIENTO DE MÁQUINAS TRAGAMONEDAS",
    "funciones": [
@@ -3129,7 +4034,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/planet-game-s-a-c/tecnico-electronico-kanta-full-time/6ad6b247e076276c795ea59d"
   },
   {
-   "id": 73,
+   "id": 94,
    "puesto": "Vendedor de Aceites Tejeduría",
    "empresa": "SOPORTE TEXTIL",
    "cat": "Ventas",
@@ -3139,9 +4044,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 5,
+   "dias": 6,
    "vence": "2026-11-20",
-   "restan": 26,
+   "restan": 25,
    "score": 83,
    "resumen": "Liderar negociaciones comerciales y generar oportunidades de negocios.",
    "funciones": [
@@ -3167,7 +4072,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/soporte-textil/vendedor-de-aceites-tejeduria/6ad6b88ce076276c795eb88d"
   },
   {
-   "id": 74,
+   "id": 95,
    "puesto": "Técnico motorizado especialista en instalación de baterías",
    "empresa": "Eurofirms Group",
    "cat": "Ventas",
@@ -3177,9 +4082,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 6,
+   "dias": 7,
    "vence": "2027-01-17",
-   "restan": 84,
+   "restan": 83,
    "score": 97,
    "resumen": "En Eurofirms Group, creemos en el liderazgo por valores y el crecimiento continuo, poniendo a las personas y su desarrollo profesional primero, potenciando un ambiente de trabajo positivo y colaborativo.",
    "funciones": [
@@ -3210,7 +4115,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnico-motorizado-especialista-en-instalacion-de-baterias-eurofirms-group-1118487582.html"
   },
   {
-   "id": 75,
+   "id": 96,
    "puesto": "Auxiliar de Inventario textil Yanbal Lurin",
    "empresa": "Adecco Perú S.A.",
    "cat": "Recursos Humanos",
@@ -3220,9 +4125,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 97,
    "resumen": "RESUMEN: AUXILIAR DE ALMACÉN DE UNIFORMES",
    "funciones": [
@@ -3250,7 +4155,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/adecco-peru-s-a/auxiliar-de-inventario-textil-yanbal-lurin-1450-planilla/6ad5b02ce076276c795e4ac5"
   },
   {
-   "id": 76,
+   "id": 97,
    "puesto": "Mercaderista Reponedor Supermercados",
    "empresa": "Overall Strategy",
    "cat": "Recursos Humanos",
@@ -3260,9 +4165,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 94,
    "resumen": "RESUMEN: Nos encontramos en la búsqueda de Mercaderistas para laborar en las principales cadenas de supermercados de Lima Metropolitana.",
    "funciones": [
@@ -3293,51 +4198,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/overall-strategy/mercaderista-reponedor-supermercados-lima-sur-productos-de/6ad5610ee076276c795df7ea"
   },
   {
-   "id": 77,
-   "puesto": "Mercaderista Reponedor",
-   "empresa": "Overall Strategy",
-   "cat": "Recursos Humanos",
-   "min": 1230,
-   "max": 1230,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Laborum",
-   "dias": 6,
-   "vence": "2026-11-19",
-   "restan": 25,
-   "score": 94,
-   "resumen": "RESUMEN: Nos encontramos en la búsqueda de Mercaderistas para laborar en las principales cadenas de supermercados de Lima Metropolitana.",
-   "funciones": [
-    "Reposición y ordenar los productos de la marca.",
-    "Implementación de exhibiciones y cabeceras.",
-    "Cambio de precios y material POP publicitario.",
-    "Levantamiento de quiebres de stock.",
-    "Negociación de espacios adicionales.",
-    "Reporte de incidencias y competencia.",
-    "Lunes a domingo de 7:00 am a 4:00 pm (1 hora de refrigerio) / Descanso días martes."
-   ],
-   "requisitos": [
-    "Experiencia mínima de 3 meses a más como Mercaderista, Reponedor(a), Auxiliar de Reposición o posiciones similares en supermercados, autoservicios o tiendas de conveniencia (Mass, Oxxo, Listo, Tambo, entre otros). Consideramos también canal tradicional, mercados, bodegas, etc.",
-    "Experiencia realizando reposición, rotación de productos y control de fechas de vencimiento.",
-    "Disponibilidad para laborar en horario Full Time.",
-    "Disponibilidad para trasladarse dentro de la zona asignada.",
-    "Contar con carnet de sanidad de Lima Metropolitana vigente o disponibilidad para tramitarlo.",
-    "Buena actitud, proactividad y orientación al cumplimiento de objetivos."
-   ],
-   "beneficios": [
-    "Sueldo básico S/. 1230",
-    "Bono de movilidad: S/ 200.",
-    "Comisiones: S/ 200.",
-    "Ingreso a planilla completa desde el primer día de trabajo.",
-    "Todos los beneficios de ley (CTS, gratificaciones, vacaciones, asignación familiar, ESSALUD, entre otros).",
-    "Descuentos corporativos.",
-    "Oportunidad de crecimiento y línea de carrera.-Requerimientos- Educación mínima: Educación Secundaria años de experienciaEdad: A partir de 19 añosPalabras clave: comerciante, merchandiser, merchant, replenisher, surtidor, brand, trademark, aseo, higiene, cleaning, limpieza"
-   ],
-   "url": "https://www.laborum.pe/job/overall-strategy/mercaderista-reponedor-brena-lima-centro-gana-s-1630-marca/6ad56133e076276c795df86c"
-  },
-  {
-   "id": 78,
+   "id": 98,
    "puesto": "Supervisor",
    "empresa": "GRAFTON LATAM",
    "cat": "Ventas",
@@ -3347,9 +4208,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 6,
+   "dias": 7,
    "vence": "2027-01-17",
-   "restan": 84,
+   "restan": 83,
    "score": 92,
    "resumen": "Supervisar y acompañar al equipo de promotores asignados.",
    "funciones": [
@@ -3381,7 +4242,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/supervisor-a-de-ventas-grafton-latam-1118487634.html"
   },
   {
-   "id": 79,
+   "id": 99,
    "puesto": "Practicante Home Delivery",
    "empresa": "Cencosud Perú S.A",
    "cat": "Prácticas",
@@ -3391,9 +4252,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 6,
+   "dias": 7,
    "vence": "2027-01-17",
-   "restan": 84,
+   "restan": 83,
    "score": 92,
    "resumen": "Somos Cencosud, uno de los más grandes y prestigiosos conglomerados de retail en América Latina. Posicionados en Perú como empresa líder del sector a través de nuestros formatos de supermercados e hipermercados Wong y Metro.",
    "funciones": [
@@ -3420,7 +4281,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-home-delivery-ecommerce-cencosud-peru-s.a-1118473008.html"
   },
   {
-   "id": 80,
+   "id": 100,
    "puesto": "Asistente de Operaciones Mantenimiento",
    "empresa": "EULEN del Perú",
    "cat": "Ingeniería",
@@ -3430,9 +4291,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 92,
    "resumen": "RESUMEN: ASISTENTE DE OPERACIONES MANTENIMIENTO",
    "funciones": [
@@ -3465,7 +4326,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/eulen-del-peru/service-desk-asistente-de-operaciones-sector-retail/6ad562c2e076276c795dfd0c"
   },
   {
-   "id": 81,
+   "id": 101,
    "puesto": "Ayudante Albañil",
    "empresa": "Lavoro Perú",
    "cat": "Recursos Humanos",
@@ -3475,9 +4336,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 92,
    "resumen": "RESUMEN: Importante empresa del rubro logístico se encuentra en la búsqueda del mejor talento para ocupar la posición de Ayudante Albañil.",
    "funciones": [
@@ -3510,7 +4371,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/ayudante-albanil-lurigancho-huachipa-planilla-completa/6ad56318e076276c795dfd69"
   },
   {
-   "id": 82,
+   "id": 102,
    "puesto": "Operario Tecnico de Envasado",
    "empresa": "Lavoro Perú",
    "cat": "Ingeniería",
@@ -3520,9 +4381,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 92,
    "resumen": "Nuestro cliente, importante empresa localizada en el mercado de SANMATEO , destacada en el rubro de INDUSTRIAL, se encuentra en la búsqueda del/ los mejor(es) talento(s) para ocupar el puesto TECNICO INDUSTRIAL",
    "funciones": [
@@ -3554,7 +4415,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/operario-tecnico-de-envasado-san-mateo-huarochiri/6ad573d6e076276c795e0b04"
   },
   {
-   "id": 83,
+   "id": 103,
    "puesto": "Asistente de Operaciones",
    "empresa": "Lavoro Perú",
    "cat": "Ingeniería",
@@ -3564,9 +4425,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 92,
    "resumen": "RESUMEN: Nuestro cliente, importante empresa del sector automotriz, se encuentra en la búsqueda del mejor talento para ocupar el puesto de ASISTENTE DE OPERACIONES (OPERATION ASSISTANT), en Lima.",
    "funciones": [
@@ -3604,7 +4465,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/asistente-de-operaciones-lima-s-2-500/6ad574e5e076276c795e0ea1"
   },
   {
-   "id": 84,
+   "id": 104,
    "puesto": "Asistente de Garantias Automotrices",
    "empresa": "Lavoro Perú",
    "cat": "Ingeniería",
@@ -3614,9 +4475,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 92,
    "resumen": "RESUMEN: Nuestro cliente, importante empresa del sector automotriz, se encuentra en la búsqueda del mejor talento para ocupar el puesto de ASISTENTE DE GARANTÍAS AUTOMOTRICES (WARRANTY ASSISTANT), en SURCO.",
    "funciones": [
@@ -3650,7 +4511,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/asistente-de-garantias-automotrices-lima-s-3-000/6ad57500e076276c795e0f22"
   },
   {
-   "id": 85,
+   "id": 105,
    "puesto": "Analista CRM",
    "empresa": "Lavoro Perú",
    "cat": "Ingeniería",
@@ -3660,9 +4521,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 92,
    "resumen": "RESUMEN: Nuestro cliente, importante empresa del sector automotriz, se encuentra en la búsqueda del mejor talento para ocupar el puesto de ANALISTA CRM, en Lima.",
    "funciones": [
@@ -3701,7 +4562,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/analista-crm-crm-analyst-lima/6ad5753de076276c795e1004"
   },
   {
-   "id": 86,
+   "id": 106,
    "puesto": "Conductor A2B",
    "empresa": "Overall Strategy",
    "cat": "Logística",
@@ -3711,9 +4572,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 92,
    "resumen": "Importante empresa del sector minero se encuentra en búsqueda de un(a) Conductor A2B para incorporarse a un importante proyecto, realizando actividades de transporte y soporte en campo bajo un régimen atípico 14x7.",
    "funciones": [
@@ -3751,7 +4612,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/overall-strategy/conductor-a2b-proyecto-minero-zona-sur-del-peru-regimen-14x7/6ad5a7cbe076276c795e3927"
   },
   {
-   "id": 87,
+   "id": 107,
    "puesto": "Operario de Patio",
    "empresa": "Overall Strategy",
    "cat": "Recursos Humanos",
@@ -3761,9 +4622,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 92,
    "resumen": "RESUMEN: Por encargo de nuestro cliente importante empresa del sector metalmecánico estamos en la búsqueda de OPERARIOS DE PATIO con el siguiente perfil :",
    "funciones": [
@@ -3789,7 +4650,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/overall-strategy/operario-de-patio-sin-experiencia-sueldo-s-1800-12-horas/6ad5c016e076276c795e52f7"
   },
   {
-   "id": 88,
+   "id": 108,
    "puesto": "Operario De Limpieza y Jardinería",
    "empresa": "Consorcio LP",
    "cat": "Ingeniería",
@@ -3799,9 +4660,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 92,
    "resumen": "RESUMEN: COOPERATIVA REAL FELIPE, empresa con más de 35 años de experiencia en el rubro de saneamiento ambiental y limpieza integral, se encuentra en la búsqueda de nuevos colaboradores para incorporarse a nuestra área de mantenimiento.",
    "funciones": [
@@ -3828,7 +4689,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/consorcio-lp/operario-de-limpieza-y-jardineria-chilca/6ad5614fe076276c795df8ed"
   },
   {
-   "id": 89,
+   "id": 109,
    "puesto": "Operario de Limpieza para I.E. Privada",
    "empresa": "Consorcio LP",
    "cat": "Recursos Humanos",
@@ -3838,9 +4699,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 92,
    "resumen": "RESUMEN: OPERARIO DE LIMPIEZA MIRAFLORES",
    "funciones": [
@@ -3873,7 +4734,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/consorcio-lp/operario-de-limpieza-para-i-e-privada-miraflores-turno/6ad5615be076276c795df92d"
   },
   {
-   "id": 90,
+   "id": 110,
    "puesto": "Operario de limpieza",
    "empresa": "Adecco Perú S.A.",
    "cat": "Ventas",
@@ -3883,9 +4744,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 92,
    "resumen": "RESUMEN: Nos encontramos en la búsqueda de Operario de limpieza:",
    "funciones": [
@@ -3911,7 +4772,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/adecco-peru-s-a/horario-part-time-operario-de-limpieza/6ad5b267e076276c795e4c87"
   },
   {
-   "id": 91,
+   "id": 111,
    "puesto": "Operario de Producción 12 Horas",
    "empresa": "Eurofirms Perú",
    "cat": "Ingeniería",
@@ -3921,9 +4782,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 91,
    "resumen": "RESUMEN: En Eurofirms Group, creemos en el liderazgo por valores y el crecimiento continuo, poniendo a las personas y su desarrollo profesional primero, potenciando un ambiente de trabajo positivo y colaborativo.",
    "funciones": [
@@ -3953,7 +4814,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/eurofirms-peru/operario-de-produccion-12-horas-san-luis-gana-s-1800-con-o/6ad5ad19e076276c795e43ec"
   },
   {
-   "id": 92,
+   "id": 112,
    "puesto": "Operario de Almacén",
    "empresa": "Total Talent Human Resources",
    "cat": "Logística",
@@ -3963,9 +4824,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 91,
    "resumen": "RESUMEN: En Total Talent, creemos firmemente en proporcionar oportunidades laborales sin COSTOS o PAGOS asociados para los postulantes.",
    "funciones": [
@@ -4002,7 +4863,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/total-talent-human-resources/operario-de-almacen-alimentacion-y-movilidad-santa-anita/6ad5cc99e076276c795e592d"
   },
   {
-   "id": 93,
+   "id": 113,
    "puesto": "Auxiliar de producción",
    "empresa": "Adecco Perú S.A.",
    "cat": "Ingeniería",
@@ -4012,9 +4873,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 91,
    "resumen": "RESUMEN: Importante empresa del sector industrial se encuentra en la búsqueda de Auxiliar de Producción para su planta ubicada en Lurín-Sapolio",
    "funciones": [
@@ -4057,7 +4918,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/adecco-peru-s-a/auxiliar-de-produccion-sapolio-s-2000-con-o-sin-experiencia/6ad5ae72e076276c795e4757"
   },
   {
-   "id": 94,
+   "id": 114,
    "puesto": "Operario de Producción",
    "empresa": "Eurofirms Perú",
    "cat": "Ingeniería",
@@ -4067,9 +4928,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 91,
    "resumen": "RESUMEN: En Eurofirms Group, creemos en el liderazgo por valores y el crecimiento continuo, poniendo a las personas y su desarrollo profesional primero, potenciando un ambiente de trabajo positivo y colaborativo.",
    "funciones": [
@@ -4099,7 +4960,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/eurofirms-peru/operario-de-produccion-fabrica-de-chocolates-san-luis-bono/6ad5ac18e076276c795e4196"
   },
   {
-   "id": 95,
+   "id": 115,
    "puesto": "Supervisor de Vehiculos",
    "empresa": "Lavoro Perú",
    "cat": "Ingeniería",
@@ -4109,9 +4970,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 89,
    "resumen": "RESUMEN: Nuestro cliente, importante empresa del sector automotriz, se encuentra en la búsqueda del mejor talento para ocupar el puesto de SUPERVISOR DE VEHÍCULOS, en ATE.",
    "funciones": [
@@ -4151,7 +5012,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/supervisor-de-vehiculos-ate/6ad5752fe076276c795e0fe3"
   },
   {
-   "id": 96,
+   "id": 116,
    "puesto": "Asistente de Comercio Exterior",
    "empresa": "Lavoro Perú",
    "cat": "Ingeniería",
@@ -4161,9 +5022,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 89,
    "resumen": "RESUMEN: Nuestro cliente, importante empresa del sector automotriz, se encuentra en la búsqueda del mejor talento para ocupar el puesto de ASISTENTE DE COMERCIO EXTERIOR, en Lima.",
    "funciones": [
@@ -4202,7 +5063,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/asistente-de-comercio-exterior-lima/6ad57543e076276c795e1024"
   },
   {
-   "id": 97,
+   "id": 117,
    "puesto": "Operario de producción Ate S",
    "empresa": "Adecco Perú S.A.",
    "cat": "Salud",
@@ -4212,9 +5073,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 89,
    "resumen": "RESUMEN: ¡OPORTUNIDAD LABORAL OPERARIO DE PRODUCCIÓN (PERSONAL FEMENINO Y MASCULINO)",
    "funciones": [
@@ -4237,7 +5098,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/adecco-peru-s-a/operario-de-produccion-ate-s-1900-sector-farmaceutico/6ad5afb0e076276c795e49a9"
   },
   {
-   "id": 98,
+   "id": 118,
    "puesto": "Labora SOLO 5 Días! Atención al Cliente",
    "empresa": "Manpower",
    "cat": "Atención al Cliente",
@@ -4247,9 +5108,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 89,
    "resumen": "RESUMEN: Por encargo de nuestro cliente líder, nos encontramos en búsqueda de talentos para cubrir la posición de:",
    "funciones": [
@@ -4277,7 +5138,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/manpower/labora-solo-5-dias-atencion-al-cliente-turno-manana-s-2500/6ad5aa7de076276c795e3eb3"
   },
   {
-   "id": 99,
+   "id": 119,
    "puesto": "Supervisor",
    "empresa": "APPARKA",
    "cat": "Recursos Humanos",
@@ -4287,9 +5148,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 89,
    "resumen": "RESUMEN: Somos apparka, una empresa dedicada a transformar la ciudad en un lugar más ordenado y vivible a través de soluciones urbanas.",
    "funciones": [
@@ -4315,7 +5176,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/apparka/metro-barranco-anfitrion-a-de-estacionamiento-sin/6ad5b003e076276c795e4a3f"
   },
   {
-   "id": 100,
+   "id": 120,
    "puesto": "Auxiliar de Almacén y reparto",
    "empresa": "Eurofirms Perú",
    "cat": "Logística",
@@ -4325,9 +5186,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 88,
    "resumen": "RESUMEN: Somos Eurofirms empresa dedicada al Reclutamiento y Selección del mejor talento nos encontramos en búsqueda de Auxiliar de Almacén para importante empresa de productos para el cuidado personal.",
    "funciones": [
@@ -4356,7 +5217,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/eurofirms-peru/auxiliar-de-almacen-y-reparto-planilla-completa-bono-de/6ad5ab31e076276c795e3fa5"
   },
   {
-   "id": 101,
+   "id": 121,
    "puesto": "Auxiliar de Almacén",
    "empresa": "Eurofirms Perú",
    "cat": "Logística",
@@ -4366,9 +5227,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 88,
    "resumen": "RESUMEN: Somos Eurofirms empresa dedicada al Reclutamiento y Selección del mejor talento nos encontramos en búsqueda de Auxiliar de Almacén para importante empresa de productos para el cuidado personal.",
    "funciones": [
@@ -4397,7 +5258,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/eurofirms-peru/urgente-auxiliar-de-almacen-y-reparto-full-time-punta/6ad5ab81e076276c795e408d"
   },
   {
-   "id": 102,
+   "id": 122,
    "puesto": "Promotor",
    "empresa": "Salesland Pacífico",
    "cat": "Ventas",
@@ -4407,9 +5268,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 88,
    "resumen": "RESUMEN: Somos SALESLAND, una empresa con amplia experiencia en gestión de equipos de ventas a nivel internacional , y actualmente nos encontramos en la búsqueda de talentos como tú para formar parte de nuestro equipo:",
    "funciones": [
@@ -4438,44 +5299,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/salesland-pacifico/mercaderista-de-utiles-escolares-full-time-horario-fijo-sjl/6ad5a95fe076276c795e3c6d"
   },
   {
-   "id": 103,
-   "puesto": "Auxiliar de Almacén",
-   "empresa": "Lavoro Perú",
-   "cat": "Logística",
-   "min": 1230,
-   "max": 1230,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Laborum",
-   "dias": 6,
-   "vence": "2026-11-19",
-   "restan": 25,
-   "score": 84,
-   "resumen": "RESUMEN: Por encargo de uno de nuestros clientes, una importante empresa líder multinacional; nos encontramos en la búsqueda de:",
-   "funciones": [
-    "Carga, descarga y apilamiento de productos, parihuelas y envases.",
-    "Lavado y mantenimiento de separadores de bebidas y planchas negras.",
-    "Orden y limpieza constante en las áreas de almacén (5S)."
-   ],
-   "requisitos": [
-    "Experiencia mínima de 3 meses como operario de almacén, producción, picking, estiba, obra, despacho, limpieza, etc",
-    "Disponibilidad para laborar de Lunes a Sábado (descanzo domingo) en un turno de 3 pm a 11 pm",
-    "Contar con DNI vigente y poder realizar horas extras",
-    "HORARIO ROTATIVO",
-    "DE LUNES A SÁBADO",
-    "Turno 2: 3:00am -11:00pm",
-    "1 DÍA DE DESCANSO (DOMINGOS)"
-   ],
-   "beneficios": [
-    "Ingreso a planilla completa con todos los beneficios de ley al 100% desde el primer día de labores",
-    "Sueldo básico S/ 1230 + Bono de Movilidad S/100 + Bono de Asistencia de 100 Asignación familiar S/113",
-    "Pagos puntuales en quincena y fin de mes. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaEdad: A partir de 23 añosPalabras clave: ayudante, asistente, auxiliar, aux, auxiliary, assistant, helper, aide, bodega, warehouse, storehouse, almacen"
-   ],
-   "url": "https://www.laborum.pe/job/lavoro-peru/auxiliar-de-almacen-huachipa-descanso-domingos-planilla/6ad5a37ce076276c795e303b"
-  },
-  {
-   "id": 104,
+   "id": 123,
    "puesto": "Operario de limpieza",
    "empresa": "Consorcio LP",
    "cat": "Recursos Humanos",
@@ -4485,9 +5309,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 6,
+   "dias": 7,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 83,
    "resumen": "RESUMEN: CONSORCIO LP, empresa con más de 35 años de experiencia en el sector, se encuentra en búsqueda de 1 Operario de Limpieza para incorporarse a nuestro equipo de trabajo.",
    "funciones": [
@@ -4514,7 +5338,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/consorcio-lp/operario-de-limpieza-la-victoria-turno-tarde/6ad561c5e076276c795dfa98"
   },
   {
-   "id": 105,
+   "id": 124,
    "puesto": "UPN Ate: Asesor(a) educativo (a) Comercial",
    "empresa": "Laureate",
    "cat": "Ventas",
@@ -4524,9 +5348,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 7,
+   "dias": 8,
    "vence": "2026-11-18",
-   "restan": 24,
+   "restan": 23,
    "score": 95,
    "resumen": "En UPN contribuimos a la transformación del Perú a través de una educación inclusiva, accesible y de calidad que transforma vidas.",
    "funciones": [
@@ -4559,7 +5383,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/laureate/upn-ate-asesor-a-educativo-a-comercial-call-center-fijo-s/6ad41e0fe076276c795d670a"
   },
   {
-   "id": 106,
+   "id": 125,
    "puesto": "Ayudante de Cocina",
    "empresa": "GRAFTON PERU S.A.C.",
    "cat": "Gastronomía",
@@ -4569,9 +5393,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 7,
+   "dias": 8,
    "vence": "2026-11-18",
-   "restan": 24,
+   "restan": 23,
    "score": 94,
    "resumen": "Apoyar en la preparación y producción de alimentos según los procedimientos establecidos.",
    "funciones": [
@@ -4611,7 +5435,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/grafton-peru-s-a-c/ayudante-de-cocina-s-1300-bono-de-movilidad-y-alimentos/6ad43058e076276c795d8535"
   },
   {
-   "id": 107,
+   "id": 126,
    "puesto": "Supervisor para Centro de Atención presencial",
    "empresa": "Overall Strategy",
    "cat": "Ventas",
@@ -4621,9 +5445,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 7,
+   "dias": 8,
    "vence": "2026-11-18",
-   "restan": 24,
+   "restan": 23,
    "score": 92,
    "resumen": "RESUMEN: Convocatoria Laboral Supervisor(a) de Ventas Retail (Telecomunicaciones)",
    "funciones": [
@@ -4654,7 +5478,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/overall-strategy/supervisor-para-centro-de-atencion-presencial-5x2/6ad45645e076276c795da5c0"
   },
   {
-   "id": 108,
+   "id": 127,
    "puesto": "Personal de limpieza y vigilancia",
    "empresa": "MEDVIDA SALUD",
    "cat": "Recursos Humanos",
@@ -4664,9 +5488,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 7,
+   "dias": 8,
    "vence": "2026-11-18",
-   "restan": 24,
+   "restan": 23,
    "score": 92,
    "resumen": "RESUMEN: ¡Estamos buscando talento para Vigilancia y Limpieza!",
    "funciones": [
@@ -4694,7 +5518,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/medvida-salud/personal-de-limpieza-y-vigilancia-san-isidro/6ad414e9e076276c795d58ff"
   },
   {
-   "id": 109,
+   "id": 128,
    "puesto": "Ayudante Carnicero",
    "empresa": "FOCUS TALENT & CO",
    "cat": "Recursos Humanos",
@@ -4704,9 +5528,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 7,
+   "dias": 8,
    "vence": "2026-11-18",
-   "restan": 24,
+   "restan": 23,
    "score": 92,
    "resumen": "RESUMEN: ¡Únete a una de las empresas líderes del sector alimentario!",
    "funciones": [
@@ -4735,7 +5559,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/focus-talent-co/ayudante-carnicero-salario-desde-3000-alimentacion-cubierta/6ad40cc7e076276c795d44f0"
   },
   {
-   "id": 110,
+   "id": 129,
    "puesto": "Ejecutivo",
    "empresa": "Eficacia",
    "cat": "Ventas",
@@ -4745,9 +5569,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 7,
+   "dias": 8,
    "vence": "2026-11-18",
-   "restan": 24,
+   "restan": 23,
    "score": 92,
    "resumen": "RESUMEN: Nos encontramos en búsqueda de un(a) Ejecutivo(a) Comercial Afiliaciones, con experiencia en ventas B2B y fuerte orientación a la prospección, generación de nuevas oportunidades y cierre comercial.",
    "funciones": [
@@ -4779,7 +5603,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/eficacia/ejecutivo-a-comercial-afiliaciones/6ad42ce6e076276c795d7d8a"
   },
   {
-   "id": 111,
+   "id": 130,
    "puesto": "Jefe",
    "empresa": "La Preferida",
    "cat": "Otros",
@@ -4789,9 +5613,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 7,
+   "dias": 8,
    "vence": "2026-11-18",
-   "restan": 24,
+   "restan": 23,
    "score": 91,
    "resumen": "RESUMEN: ¡Forma parte del equipo de La Preferida!",
    "funciones": [
@@ -4821,7 +5645,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/la-preferida/vajillero-limpieza-restaurante-la-preferida-la-mar/6ad41f82e076276c795d6879"
   },
   {
-   "id": 112,
+   "id": 131,
    "puesto": "Atención al cliente",
    "empresa": "PAPERO",
    "cat": "Ingeniería",
@@ -4831,9 +5655,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 7,
+   "dias": 8,
    "vence": "2026-12-17",
-   "restan": 53,
+   "restan": 52,
    "score": 86,
    "resumen": "Brindar una excelente atención al cliente.",
    "funciones": [
@@ -4859,7 +5683,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/personal-multifuncional-full-time-turnos-de-cierre-papero-1118485570.html"
   },
   {
-   "id": 113,
+   "id": 132,
    "puesto": "Operario",
    "empresa": "PERU TRADER - SAC",
    "cat": "Ingeniería",
@@ -4869,9 +5693,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 7,
+   "dias": 8,
    "vence": "2026-12-17",
-   "restan": 53,
+   "restan": 52,
    "score": 84,
    "resumen": "Apoyo en los diferentes procesos de producción.",
    "funciones": [
@@ -4894,7 +5718,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-a-de-planta-peru-trader-sac-1118485591.html"
   },
   {
-   "id": 114,
+   "id": 133,
    "puesto": "Asesor(a) de ventas Junior",
    "empresa": "CONSERH",
    "cat": "Ventas",
@@ -4904,9 +5728,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 7,
+   "dias": 8,
    "vence": "2026-11-18",
-   "restan": 24,
+   "restan": 23,
    "score": 83,
    "resumen": "RESUMEN: Vendedores Marca ONEILL (MIRAFLORES BOUTIQUE )",
    "funciones": [
@@ -4935,7 +5759,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/conserh/asesor-a-de-ventas-junior-trabaja-de-lunes-a-sabado-planilla/6ad45499e076276c795da1a3"
   },
   {
-   "id": 115,
+   "id": 134,
    "puesto": "Asesor Comercial B2B",
    "empresa": "ManpowerGroup Perú",
    "cat": "Ventas",
@@ -4945,9 +5769,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 8,
+   "dias": 9,
    "vence": "2027-01-15",
-   "restan": 82,
+   "restan": 81,
    "score": 97,
    "resumen": "Cumplir con los KPI's comerciales establecidos.",
    "funciones": [
@@ -4979,7 +5803,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-comercial-b2b-sector-industrial-ingreso-inmediato-manpowergroup-peru-1118485185.html"
   },
   {
-   "id": 116,
+   "id": 135,
    "puesto": "Administrador(a) Comercial Junior",
    "empresa": "GRUPO COPETROL",
    "cat": "Ventas",
@@ -4989,9 +5813,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Ica",
    "fuente": "Bumeran",
-   "dias": 8,
+   "dias": 9,
    "vence": "2027-02-14",
-   "restan": 112,
+   "restan": 111,
    "score": 95,
    "resumen": "Identificar de clientes potenciales o nuevos",
    "funciones": [
@@ -5022,7 +5846,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/administradora-comercial-junior--chincha-grupo-copetrol-1118485248.html"
   },
   {
-   "id": 117,
+   "id": 136,
    "puesto": "Supervisor SSOMA de Campo, Obras y Operaciones Industriales",
    "empresa": "J & B SEÑOR DE LA MISERICORDIA S.A.C.",
    "cat": "Ingeniería",
@@ -5032,9 +5856,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 8,
+   "dias": 9,
    "vence": "2027-01-15",
-   "restan": 82,
+   "restan": 81,
    "score": 95,
    "resumen": "J&B SEÑOR DE LA MISERICORDIA S.A.C. se encuentra en la búsqueda de un Supervisor SSOMA para realizar labores de supervisión en campo, obras y operaciones industriales.",
    "funciones": [
@@ -5066,7 +5890,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/supervisor-ssoma-de-campo-obras-y-operaciones-industriales-j-b-senor-de-la-misericordia-s.a.c.-1118485277.html"
   },
   {
-   "id": 118,
+   "id": 137,
    "puesto": "Analista de Verificación de Datos en Suministros",
    "empresa": "ManpowerGroup Perú",
    "cat": "Tecnología",
@@ -5076,9 +5900,9 @@ window.CERO_VAGOS = {
    "modalidad": "Híbrido",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 8,
+   "dias": 9,
    "vence": "2027-01-15",
-   "restan": 82,
+   "restan": 81,
    "score": 95,
    "resumen": "En Manpower Perú buscamos al mejor talento para asumir el reto como Gestor(a)/Analista de Verificación de Datos en Suministros , en el rubro de minero en la ciudad de Lima. ¡La oportunidad de tener un futuro mejor, está aquí!",
    "funciones": [
@@ -5113,7 +5937,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/analista-de-verificacion-de-datos-en-suministros-experiencia-en-mineria-lima-111482-manpowergroup-peru-1118485343.html"
   },
   {
-   "id": 119,
+   "id": 138,
    "puesto": "Técnico Senior de Mantenimiento General",
    "empresa": "CORPORACION KLLPA PERU",
    "cat": "Ingeniería",
@@ -5123,9 +5947,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 8,
+   "dias": 9,
    "vence": "2026-11-17",
-   "restan": 23,
+   "restan": 22,
    "score": 95,
    "resumen": "RESUMEN: TÉCNICO SENIOR DE MANTENIMIENTO GENERAL",
    "funciones": [
@@ -5157,7 +5981,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/corporacion-kllpa-peru/tecnico-senior-de-mantenimiento-general/6ad30508e076276c795c9464"
   },
   {
-   "id": 120,
+   "id": 139,
    "puesto": "Urgente Auxiliar de distribución para huachipa",
    "empresa": "cyl",
    "cat": "Logística",
@@ -5167,9 +5991,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 8,
+   "dias": 9,
    "vence": "2026-12-15",
-   "restan": 51,
+   "restan": 50,
    "score": 94,
    "resumen": "Realizar la estiba, desestiba y traslado de mercadería.",
    "funciones": [
@@ -5210,7 +6034,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/urgente-auxiliar-de-distribucion-para-huachipa-cyl-1118485246.html"
   },
   {
-   "id": 121,
+   "id": 140,
    "puesto": "Diseñador Gráfico Senior Rubro Casino",
    "empresa": "GLADCON",
    "cat": "Marketing",
@@ -5220,9 +6044,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 8,
+   "dias": 9,
    "vence": "2026-11-17",
-   "restan": 23,
+   "restan": 22,
    "score": 92,
    "resumen": "Diseñar y desarrollar conceptos visuales para campañas comerciales, garantizando una comunicación atractiva y efectiva en medios digitales y físicos, alineada a los objetivos del negocio.",
    "funciones": [
@@ -5257,7 +6081,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/gladcon/se-solicita-disenador-grafico-senior-rubro-casino-sede/6ad3003fe076276c795c8829"
   },
   {
-   "id": 122,
+   "id": 141,
    "puesto": "Asesor(a) de Admisiones y Ventas",
    "empresa": "SCALA PERÚ",
    "cat": "Ventas",
@@ -5267,9 +6091,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 8,
+   "dias": 9,
    "vence": "2026-11-17",
-   "restan": 23,
+   "restan": 22,
    "score": 92,
    "resumen": "RESUMEN: ¡Potencia tus ingresos y crece con nosotros!",
    "funciones": [
@@ -5302,7 +6126,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/scala-peru/asesor-a-de-admisiones-y-ventas-sueldo-fijo-comisiones/6ad2dbf5e076276c795c1922"
   },
   {
-   "id": 123,
+   "id": 142,
    "puesto": "Analista de Planeamiento y Abastecimiento",
    "empresa": "Peru Productos Agricolas",
    "cat": "Logística",
@@ -5312,9 +6136,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 8,
+   "dias": 9,
    "vence": "2027-01-15",
-   "restan": 82,
+   "restan": 81,
    "score": 92,
    "resumen": "Creemos en la innovación, la excelencia operativa y el talento de nuestra gente para seguir transformando el agro peruano.",
    "funciones": [
@@ -5340,7 +6164,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/analista-de-planeamiento-y-abastecimiento-cadena-de-suministro-peru-productos-agricolas-1118397718.html"
   },
   {
-   "id": 124,
+   "id": 143,
    "puesto": "Asistente Comercial Junior",
    "empresa": "CAPACITACION & ASESORIA EMPRESARIAL",
    "cat": "Ventas",
@@ -5350,9 +6174,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 8,
+   "dias": 9,
    "vence": "2026-12-16",
-   "restan": 52,
+   "restan": 51,
    "score": 89,
    "resumen": "Identificar y contactar a potenciales clientes.",
    "funciones": [
@@ -5376,7 +6200,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-comercial-junior-capacitacion-asesoria-empresarial-1118485516.html"
   },
   {
-   "id": 125,
+   "id": 144,
    "puesto": "Supervisora de Ventas Retail",
    "empresa": "Confidencial",
    "cat": "Ventas",
@@ -5386,9 +6210,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 9,
+   "dias": 10,
    "vence": "2027-01-14",
-   "restan": 81,
+   "restan": 80,
    "score": 98,
    "resumen": "¿Te apasionan las ventas, liderar equipos y alcanzar metas? ¡Te estamos buscando!",
    "funciones": [
@@ -5415,7 +6239,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/supervisora-de-ventas-retail-1118485074.html"
   },
   {
-   "id": 126,
+   "id": 145,
    "puesto": "Operario de Producción",
    "empresa": "Multimoldes S.A.C.",
    "cat": "Ingeniería",
@@ -5425,9 +6249,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 9,
+   "dias": 10,
    "vence": "2026-11-16",
-   "restan": 22,
+   "restan": 21,
    "score": 95,
    "resumen": "RESUMEN: OPERARIO DE PRODUCCIÓN CON O SIN EXPERIENCIA",
    "funciones": [
@@ -5459,7 +6283,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/multimoldes-s-a-c/operario-de-produccion-sin-exp-en-plantas-industriales-san/6ad171c9e076276c795aaff1"
   },
   {
-   "id": 127,
+   "id": 146,
    "puesto": "Técnico multifuncional",
    "empresa": "ADMINISTRACION INMOBILIARIA SOCIEDAD ANONIMA CERRA",
    "cat": "Ingeniería",
@@ -5469,9 +6293,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 9,
+   "dias": 10,
    "vence": "2027-01-14",
-   "restan": 81,
+   "restan": 80,
    "score": 94,
    "resumen": "Atender todos los trabajos correctivos en instalaciones del cliente asignados por su supervisión",
    "funciones": [
@@ -5504,7 +6328,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnico-multifuncional-administracion-inmobiliaria-sociedad-anonima-cerra-1118485061.html"
   },
   {
-   "id": 128,
+   "id": 147,
    "puesto": "Operario de Almacén",
    "empresa": "Recreativos Fargo S.A.C",
    "cat": "Logística",
@@ -5514,9 +6338,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 9,
+   "dias": 10,
    "vence": "2026-11-16",
-   "restan": 22,
+   "restan": 21,
    "score": 91,
    "resumen": "RESUMEN: Importante empresa de Servicios de Empaque, Embalaje, y Servicio de courie se encuentra en la búsqueda de Operario de Almacén para su planta ubicada en Punta Hermosa.",
    "funciones": [
@@ -5549,7 +6373,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/recreativos-fargo-s-a-c/operario-de-almacen-con-o-sin-experiencia-gana-s-1630-a-s/6ad16e2ae076276c795aa5bb"
   },
   {
-   "id": 129,
+   "id": 148,
    "puesto": "Arquitecto",
    "empresa": "Confidencial",
    "cat": "Ventas",
@@ -5559,9 +6383,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 9,
+   "dias": 10,
    "vence": "2027-01-14",
-   "restan": 81,
+   "restan": 80,
    "score": 90,
    "resumen": "Contactar y calificar los leads provenientes de campañas digitales, redes sociales y otros canales, identificando necesidades, presupuesto, plazos y responsables de la decisión.",
    "funciones": [
@@ -5598,7 +6422,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/arquitecto-a-comercial-|-venta-de-diseno-e-implementacion-1118485168.html"
   },
   {
-   "id": 130,
+   "id": 149,
    "puesto": "Operario de Montacarga",
    "empresa": "T&T Ingeniería y Construcción S.A.",
    "cat": "Ingeniería",
@@ -5608,9 +6432,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 9,
+   "dias": 10,
    "vence": "2026-11-16",
-   "restan": 22,
+   "restan": 21,
    "score": 89,
    "resumen": "Traslado de tuberías de línea de producción a cuadrantes (almacenamiento).",
    "funciones": [
@@ -5636,7 +6460,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/t-t-ingenieria-y-construccion-s-a/operario-de-montacarga/6ad1972ce076276c795b1cac"
   },
   {
-   "id": 131,
+   "id": 150,
    "puesto": "Ejecutivo de Ventas",
    "empresa": "COALITION SALES MANAGEMENT PARTNERS",
    "cat": "Ventas",
@@ -5646,9 +6470,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Huaraz",
    "fuente": "Bumeran",
-   "dias": 9,
+   "dias": 10,
    "vence": "2027-01-14",
-   "restan": 81,
+   "restan": 80,
    "score": 87,
    "resumen": "Gestionar bases de datos de clientes a través de llamadas telefónicas.",
    "funciones": [
@@ -5670,7 +6494,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ejecutivo-de-ventas-productos-financieros-coalition-sales-management-partners-1118485060.html"
   },
   {
-   "id": 132,
+   "id": 151,
    "puesto": "Ejecutivo",
    "empresa": "ManpowerGroup Perú",
    "cat": "Contabilidad",
@@ -5680,9 +6504,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 10,
+   "dias": 11,
    "vence": "2027-01-13",
-   "restan": 80,
+   "restan": 79,
    "score": 92,
    "resumen": "En Manpower Perú buscamos al mejor talento para asumir el reto como Subgerente de Inclusión Financiera para la ciudad de Lima ¡La oportunidad de tener un futuro mejor, está aquí!",
    "funciones": [
@@ -5715,7 +6539,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/subgerente-de-inclusion-financiera--suplencia-temporal-san-isidro-ref.-111799-manpowergroup-peru-1118483181.html"
   },
   {
-   "id": 133,
+   "id": 152,
    "puesto": "Asistente de Liquidaciones I",
    "empresa": "Caja de Pensiones Militar Policial",
    "cat": "Ingeniería",
@@ -5725,9 +6549,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 10,
+   "dias": 11,
    "vence": "2027-01-13",
-   "restan": 80,
+   "restan": 79,
    "score": 92,
    "resumen": "Efectuar la revisión de las pensiones nuevas altas y reingresos efectuadas por el Auxiliar de Liquidaciones II",
    "funciones": [
@@ -5763,7 +6587,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-liquidaciones-i-suplencia-caja-de-pensiones-militar-policial-1118481860.html"
   },
   {
-   "id": 134,
+   "id": 153,
    "puesto": "Operario de Limpieza",
    "empresa": "SARCLETTI",
    "cat": "Otros",
@@ -5773,9 +6597,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 10,
+   "dias": 11,
    "vence": "2027-01-13",
-   "restan": 80,
+   "restan": 79,
    "score": 91,
    "resumen": "Reconocida cadena de restaurante con más de 20 años en el mercado, se encuentra en la búsqueda de OPERARIO DE LIMPIEZA PARA SARCLETTI RESTAURANTE COMAS!",
    "funciones": [
@@ -5803,7 +6627,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-limpieza-comas-sarcletti-1118483187.html"
   },
   {
-   "id": 135,
+   "id": 154,
    "puesto": "Operario de Limpieza",
    "empresa": "Ana Cristina Izarra",
    "cat": "Recursos Humanos",
@@ -5813,9 +6637,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 10,
+   "dias": 11,
    "vence": "2026-12-14",
-   "restan": 50,
+   "restan": 49,
    "score": 87,
    "resumen": "Servicios de Reclutamiento y Selección de Personal",
    "funciones": [
@@ -5839,7 +6663,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-limpieza-ana-cristina-izarra-1118483311.html"
   },
   {
-   "id": 136,
+   "id": 155,
    "puesto": "Asistente de Verificaciones I",
    "empresa": "Caja de Pensiones Militar Policial",
    "cat": "Tecnología",
@@ -5849,9 +6673,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 10,
+   "dias": 11,
    "vence": "2027-01-13",
-   "restan": 80,
+   "restan": 79,
    "score": 86,
    "resumen": "Apoyar en el registro y revisión inicial de los conceptos derivados a través del módulo de reingresos y devengados.",
    "funciones": [
@@ -5885,7 +6709,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-verificaciones-i-caja-de-pensiones-militar-policial-1118480933.html"
   },
   {
-   "id": 137,
+   "id": 156,
    "puesto": "Ejecutivo de Admisiones",
    "empresa": "Visiva",
    "cat": "Ventas",
@@ -5895,9 +6719,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 10,
+   "dias": 11,
    "vence": "2026-11-15",
-   "restan": 21,
+   "restan": 20,
    "score": 83,
    "resumen": "Te estamos buscando como Asesor/a Educativo/a (Ventas) en UCAL EC para asumir las siguientes responsabilidades dentro de nuestro equipo comercial:",
    "funciones": [
@@ -5924,7 +6748,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/visiva/ejecutivo-de-admisiones-asesor-comercial-educativo-ucal/6ad0476ee076276c7959a5b0"
   },
   {
-   "id": 138,
+   "id": 157,
    "puesto": "Analista de Reclutamiento y Selección",
    "empresa": "ARCH LATAM",
    "cat": "Recursos Humanos",
@@ -5934,9 +6758,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 11,
+   "dias": 12,
    "vence": "2027-01-12",
-   "restan": 79,
+   "restan": 78,
    "score": 98,
    "resumen": "Buscamos una persona dinámica, organizada, proactiva y con capacidad de respuesta rápida, que disfrute trabajar en equipo y afrontar nuevos retos.",
    "funciones": [
@@ -5970,7 +6794,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/analista-de-reclutamiento-y-seleccion-arch-latam-1118481206.html"
   },
   {
-   "id": 139,
+   "id": 158,
    "puesto": "Operador de Tratamiento de Aguas",
    "empresa": "ETNA",
    "cat": "Ingeniería",
@@ -5980,9 +6804,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 11,
+   "dias": 12,
    "vence": "2027-01-12",
-   "restan": 79,
+   "restan": 78,
    "score": 94,
    "resumen": "En ETNA, empresa peruana lider en soluciones de energía se encuentra en búsqueda un Operador de PTAR para su planta de tratamiento de agua residual para su sede ubicada en Independencia.",
    "funciones": [
@@ -6014,7 +6838,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operador-de-tratamiento-de-aguas-ptar-etna-1118481362.html"
   },
   {
-   "id": 140,
+   "id": 159,
    "puesto": "Supervisor SST",
    "empresa": "Confidencial",
    "cat": "Ingeniería",
@@ -6024,9 +6848,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 11,
+   "dias": 12,
    "vence": "2027-01-12",
-   "restan": 79,
+   "restan": 78,
    "score": 93,
    "resumen": "Buscamos incorporar a un Supervisor de Seguridad y Salud en el Trabajo (SST) , orientado a la prevención de riesgos y al aseguramiento de condiciones seguras en proyectos del sector industrial, construcción y afines.",
    "funciones": [
@@ -6063,7 +6887,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/supervisor-sst-pachacamac-ica-y-chiclayo-engineering-services-consulting-s.a.c-1118481320.html"
   },
   {
-   "id": 141,
+   "id": 160,
    "puesto": "Practicante Preprofesional de Soporte TI",
    "empresa": "Creditex S.A.A.",
    "cat": "Prácticas",
@@ -6073,9 +6897,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 11,
+   "dias": 12,
    "vence": "2026-11-14",
-   "restan": 20,
+   "restan": 19,
    "score": 91,
    "resumen": "RESUMEN: Nos encontramos en la búsqueda del mejor talento para ocupar el puesto de PRACTICANTE PREPROFESIONAL DE SOPORTE TI para nuestra sede principal en Ate.",
    "funciones": [
@@ -6112,7 +6936,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/creditex-s-a-a/practicante-preprofesional-de-soporte-ti/6acefa63e076276c79584af2"
   },
   {
-   "id": 142,
+   "id": 161,
    "puesto": "Atención al cliente",
    "empresa": "Asociacion Fondo de Investigadores y Editores (AFINED)",
    "cat": "Ingeniería",
@@ -6122,9 +6946,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 11,
+   "dias": 12,
    "vence": "2026-11-14",
-   "restan": 20,
+   "restan": 19,
    "score": 91,
    "resumen": "RESUMEN: ASOCIACIÓN FONDO DE INVESTIGADORES Y EDITORES (AFINED)",
    "funciones": [
@@ -6156,7 +6980,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/asociacion-fondo-de-investigadores-y-editores-afined/prospector-a-educativo-campo-textos-escolares/6acf0bb5e076276c7958639d"
   },
   {
-   "id": 143,
+   "id": 162,
    "puesto": "Abogado Especialista en Laboral",
    "empresa": "Caja de Pensiones Militar Policial",
    "cat": "Legal",
@@ -6166,9 +6990,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 11,
+   "dias": 12,
    "vence": "2027-01-12",
-   "restan": 79,
+   "restan": 78,
    "score": 89,
    "resumen": "Somos la empresa “Caja de Pensiones Militar Policial” ubicada en el distrito de San Isidro, nos encontramos en búsca de un nuevo talento para el puesto de Abogado Especialista en Laboral para el Departamento de Gestión Procesal y Arbitraje.",
    "funciones": [
@@ -6203,7 +7027,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/abogado-especialista-en-laboral-caja-de-pensiones-militar-policial-1118481241.html"
   },
   {
-   "id": 144,
+   "id": 163,
    "puesto": "Operario de Hielo",
    "empresa": "FRIO LA MERCED",
    "cat": "Ingeniería",
@@ -6213,9 +7037,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 11,
+   "dias": 12,
    "vence": "2026-11-14",
-   "restan": 20,
+   "restan": 19,
    "score": 89,
    "resumen": "RESUMEN: Estamos en la búsqueda de un OPERARIO DE PRODUCCION, para incorporar a nuestra empresa que cumpla con el siguiente perfil:",
    "funciones": [
@@ -6241,7 +7065,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/frio-la-merced/operario-de-hielo-puente-piedra/6acec7bbe076276c7957a23f"
   },
   {
-   "id": 145,
+   "id": 164,
    "puesto": "Atención al cliente",
    "empresa": "FOOD PACK S.A.C",
    "cat": "Ventas",
@@ -6251,9 +7075,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 11,
+   "dias": 12,
    "vence": "2026-11-14",
-   "restan": 20,
+   "restan": 19,
    "score": 88,
    "resumen": "Somos Food Pack - Ecofresh, una empresa con más de 20 años de experiencia en el procesamiento y comercialización de jugos naturales, reconocida por nuestra calidad, frescura y compromiso.",
    "funciones": [
@@ -6283,7 +7107,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/food-pack-s-a-c/impulsadora-mercaderista-wong-asia-tiempo-completo/6acedbbce076276c7957e5a0"
   },
   {
-   "id": 146,
+   "id": 165,
    "puesto": "Ayudante de Almacén varones y mujeres",
    "empresa": "Inversiones San Gabriel S.A.",
    "cat": "Logística",
@@ -6293,9 +7117,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 11,
+   "dias": 12,
    "vence": "2026-11-14",
-   "restan": 20,
+   "restan": 19,
    "score": 86,
    "resumen": "Somos una empresa líder en el sector industrial, con más de 38 años de experiencia fabricando envases y productos plásticos para alimentos.",
    "funciones": [
@@ -6330,7 +7154,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/inversiones-san-gabriel-s-a/ayudante-de-almacen-varones-y-mujeres-lunes-a-viernes-lurin/6acf3432e076276c7958add9"
   },
   {
-   "id": 147,
+   "id": 166,
    "puesto": "Azafata",
    "empresa": "PLANET GAME S.A.C.",
    "cat": "Atención al Cliente",
@@ -6340,9 +7164,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 11,
+   "dias": 12,
    "vence": "2026-11-14",
-   "restan": 20,
+   "restan": 19,
    "score": 86,
    "resumen": "RESUMEN: ¡ÚNETE AL EQUIPO DE PLANET GAME S.A.C.!",
    "funciones": [
@@ -6366,7 +7190,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/planet-game-s-a-c/azafata-atencion-al-cliente-full-time/6acecbd3e076276c7957b29b"
   },
   {
-   "id": 148,
+   "id": 167,
    "puesto": "Conductora Licencia A1",
    "empresa": "MUJERES AL VOLANTE E.I.R.L",
    "cat": "Logística",
@@ -6376,9 +7200,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 100,
    "resumen": "Conductora para el puesto de Instructora de Manejo",
    "funciones": [
@@ -6408,7 +7232,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/conductora-licencia-a1-instructora-de-manejo-mujeres-al-volante-e.i.r.l-1118474035.html"
   },
   {
-   "id": 149,
+   "id": 168,
    "puesto": "Vendedor de tienda",
    "empresa": "Executive search",
    "cat": "Ventas",
@@ -6418,9 +7242,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 100,
    "resumen": "Atender y asesorar a clientes de manera presencial, telefónica y digital.",
    "funciones": [
@@ -6450,7 +7274,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/vendedor-de-tienda-jesus-maria-executive-search-1118475871.html"
   },
   {
-   "id": 150,
+   "id": 169,
    "puesto": "Asesor Comercial",
    "empresa": "PERUMIN ALATI S.A.C.",
    "cat": "Ventas",
@@ -6460,9 +7284,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 100,
    "resumen": "¡Únete a nuestro equipo como Asesor Comercial!",
    "funciones": [
@@ -6496,7 +7320,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-comercial-sector-minero-perumin-alati-s.a.c.-1118475053.html"
   },
   {
-   "id": 151,
+   "id": 170,
    "puesto": "Asesor Multiskill",
    "empresa": "MACGA",
    "cat": "Ventas",
@@ -6506,9 +7330,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Chiclayo",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2027-01-11",
-   "restan": 78,
+   "restan": 77,
    "score": 98,
    "resumen": "Realizar llamadas a clientes potenciales y existentes para promocionar productos y servicios.",
    "funciones": [
@@ -6533,7 +7357,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-multiskill-chiclayo-macga-1118476009.html"
   },
   {
-   "id": 152,
+   "id": 171,
    "puesto": "Ingeniero Ssoma",
    "empresa": "XEMA SOLUTION",
    "cat": "Ingeniería",
@@ -6543,9 +7367,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Callao",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2027-01-11",
-   "restan": 78,
+   "restan": 77,
    "score": 97,
    "resumen": "Supervisar las actividades operativas en taller y en las instalaciones de los clientes, verificando el cumplimiento de los estándares y procedimientos de seguridad.",
    "funciones": [
@@ -6589,7 +7413,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ingeniero-ssoma-xema-solution-1118474948.html"
   },
   {
-   "id": 153,
+   "id": 172,
    "puesto": "Asistente administrativo de procesos",
    "empresa": "Wellco Peruana SA",
    "cat": "Administración",
@@ -6599,9 +7423,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-11-13",
-   "restan": 19,
+   "restan": 18,
    "score": 97,
    "resumen": "Verificar y evaluar el consumo de materiales realizados por Producción.",
    "funciones": [
@@ -6633,7 +7457,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/wellco-peruana-sa/asistente-administrativo-de-procesos/6acdb2dce076276c7956d8d5"
   },
   {
-   "id": 154,
+   "id": 173,
    "puesto": "Atención al cliente",
    "empresa": "ATC MULTISERVICIOS",
    "cat": "Contabilidad",
@@ -6643,9 +7467,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 97,
    "resumen": "Realizar el monitoreo de los asesores asignados.",
    "funciones": [
@@ -6686,7 +7510,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/monitor-de-calidad-call-center-cobranzas-1500-comisiones-presencial-en-lince-atc-multiservicios-1118475459.html"
   },
   {
-   "id": 155,
+   "id": 174,
    "puesto": "Técnico de Mantenimiento Mecánico Hidráulico",
    "empresa": "Esmeralda Corp",
    "cat": "Ingeniería",
@@ -6696,9 +7520,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 97,
    "resumen": "Empresa líder de productos alimenticios y de operaciones logísticas, se encuentra en la búsqueda del mejor talento para la vacante de \"Técnico de Mantenimiento Mecánico Hidráulico\"",
    "funciones": [
@@ -6722,7 +7546,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnico-de-mantenimiento-mecanico-hidraulico-esmeralda-corp-1118476003.html"
   },
   {
-   "id": 156,
+   "id": 175,
    "puesto": "Ejecutivo de ventas",
    "empresa": "GALDAMI",
    "cat": "Ventas",
@@ -6732,9 +7556,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 95,
    "resumen": "Cumplir con los objetivos y cuotas comerciales establecidos por la empresa.",
    "funciones": [
@@ -6763,7 +7587,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ejecutivo-de-ventas-galdami-1118472833.html"
   },
   {
-   "id": 157,
+   "id": 176,
    "puesto": "Jefe de Operaciones Call Center",
    "empresa": "GEATEL TELECOM",
    "cat": "Atención al Cliente",
@@ -6773,9 +7597,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 95,
    "resumen": "Si tienes experiencia liderando campañas comerciales para España y buscas una oportunidad de crecimiento profesional con excelentes ingresos, esta es tu oportunidad.",
    "funciones": [
@@ -6815,7 +7639,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/jefe-de-operaciones-call-center--telefonia-espana-san-juan-de-miraflores-geatel-telecom-1118473135.html"
   },
   {
-   "id": 158,
+   "id": 177,
    "puesto": "Asistente de Cocina",
    "empresa": "AL TALENTS PERU",
    "cat": "Ingeniería",
@@ -6825,9 +7649,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 95,
    "resumen": "Si estas interesad en ser parte de un espacio lleno de sabor y buena vibra, en Brasa de mi Raza, nos encontramos buscando a un/a: ASISTENTE DE COCINA",
    "funciones": [
@@ -6859,7 +7683,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-cocina-al-talents-peru-1118474283.html"
   },
   {
-   "id": 159,
+   "id": 178,
    "puesto": "Jefe(a) de Administración, Finanzas y Contabilidad",
    "empresa": "ARKANA HR S.A.C.",
    "cat": "Contabilidad",
@@ -6869,9 +7693,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 95,
    "resumen": "Planificar, organizar y supervisar los procesos contables, financieros, administrativos y de control interno.",
    "funciones": [
@@ -6913,7 +7737,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/jefea-de-administracion-finanzas-y-contabilidad-arkana-hr-s.a.c.-1118474461.html"
   },
   {
-   "id": 160,
+   "id": 179,
    "puesto": "Conductor de Semitrailer",
    "empresa": "BIJACIT TRANSPORTE",
    "cat": "Logística",
@@ -6923,9 +7747,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 95,
    "resumen": "Conducir semitrailers de manera segura y eficiente.",
    "funciones": [
@@ -6950,7 +7774,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/conductor-de-semitrailer-bijacit-transporte-1118474557.html"
   },
   {
-   "id": 161,
+   "id": 180,
    "puesto": "Asistente de Almacén",
    "empresa": "Grupo Editorial I&C SAC",
    "cat": "Logística",
@@ -6960,9 +7784,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 95,
    "resumen": "En Grupo Editorial creamos libros y materiales educativos que acompañan el aprendizaje de miles de niños. Estamos en búsqueda de un(a) Asistente de Logística para apoyar en las operaciones diarias de almacén y distribución.",
    "funciones": [
@@ -6993,7 +7817,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-almacen-grupo-editorial-ic-sac-1118474958.html"
   },
   {
-   "id": 162,
+   "id": 181,
    "puesto": "Asistente Administrativo",
    "empresa": "PET FRIENDLY",
    "cat": "Administración",
@@ -7003,9 +7827,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 95,
    "resumen": ", centro veterinario especializado en emergencias, internamiento y consulta general, se encuentra en búsqueda de un(a) Asistente Administrativo – Finanzas y Operaciones para fortalecer la gestión administrativa y financiera de la clínica.",
    "funciones": [
@@ -7038,7 +7862,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-administrativo--finanzas-y-operaciones-pet-friendly-1118476070.html"
   },
   {
-   "id": 163,
+   "id": 182,
    "puesto": "Recepcionista y asistenta dental",
    "empresa": "Prodent",
    "cat": "Administración",
@@ -7048,9 +7872,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 95,
    "resumen": "Atención presencial, telefónica y por WhatsApp a pacientes.",
    "funciones": [
@@ -7087,7 +7911,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/recepcionista-y-asistenta-dental-prodent-1118475643.html"
   },
   {
-   "id": 164,
+   "id": 183,
    "puesto": "Analista de Finanzas",
    "empresa": "LEGEND PLAY S.A.C.",
    "cat": "Contabilidad",
@@ -7097,9 +7921,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 95,
    "resumen": "Gestionar y analizar información, desarrollando modelos, dashboards y herramientas que permitan optimizar procesos y generar información oportuna para la toma de decisiones.",
    "funciones": [
@@ -7129,7 +7953,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/analista-de-finanzas-legend-play-s.a.c.-1118475995.html"
   },
   {
-   "id": 165,
+   "id": 184,
    "puesto": "Ejecutivo(a) Comercial B2B",
    "empresa": "Infinity Pay",
    "cat": "Ventas",
@@ -7139,9 +7963,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 95,
    "resumen": "Prospectar y captar nuevos clientes corporativos (RUC 1 0 y RUC 2 0).",
    "funciones": [
@@ -7173,7 +7997,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ejecutivoa-comercial-b2b--entel-empresas-infinity-pay-1118474808.html"
   },
   {
-   "id": 166,
+   "id": 185,
    "puesto": "Asistente Comercial",
    "empresa": "Ventitas Home",
    "cat": "Ventas",
@@ -7183,9 +8007,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 94,
    "resumen": "Modalidad: Híbrida (L a V presencial - S Virtual)",
    "funciones": [
@@ -7216,7 +8040,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-comercial-ventitas-home-1118472839.html"
   },
   {
-   "id": 167,
+   "id": 186,
    "puesto": "Supervisor de Cobranzas Call center",
    "empresa": "ATC MULTISERVICIOS",
    "cat": "Contabilidad",
@@ -7226,9 +8050,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 94,
    "resumen": "Supervisar y gestionar el cumplimiento de los objetivos y metas del equipo de cobranzas.",
    "funciones": [
@@ -7261,7 +8085,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/supervisor-de-cobranzas-call-center-1950-comisiones-bonos-e-incentivos-presencial-lince-atc-multiservicios-1118475614.html"
   },
   {
-   "id": 168,
+   "id": 187,
    "puesto": "Director Técnico Químico Farmacéutico",
    "empresa": "shantall garcia",
    "cat": "Salud",
@@ -7271,9 +8095,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 93,
    "resumen": "CONVOCATORIA LABORAL: DIRECTOR TÉCNICO (QUÍMICO FARMACÉUTICO)",
    "funciones": [
@@ -7298,7 +8122,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/director-tecnico-quimico-farmaceutico-shantall-garcia-1118474800.html"
   },
   {
-   "id": 169,
+   "id": 188,
    "puesto": "Analista de Creditos y Cobranzas",
    "empresa": "Books & Co SAC",
    "cat": "Contabilidad",
@@ -7308,9 +8132,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 92,
    "resumen": "Realizar llamada, WhatsApp y correo a los clientes para efectuar la cobranza.",
    "funciones": [
@@ -7348,7 +8172,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/analista-de-creditos-y-cobranzas-books-co-sac-1118472922.html"
   },
   {
-   "id": 170,
+   "id": 189,
    "puesto": "Diseñador Gráfico",
    "empresa": "Rentabilizar",
    "cat": "Marketing",
@@ -7358,9 +8182,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 92,
    "resumen": "Estamos en la búsqueda de un Diseñador Gráfico creativo y proactivo, con un fuerte interés en el sector inmobiliario. El candidato ideal aportará sus habilidades para potenciar nuestras campañas y materiales de comunicación visual.",
    "funciones": [
@@ -7384,7 +8208,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/disenador-grafico-rentabilizar-1118472998.html"
   },
   {
-   "id": 171,
+   "id": 190,
    "puesto": "Administrador General",
    "empresa": "PROTECCION MAXIMA SEGURIDAD SELVA S.A.C.",
    "cat": "Contabilidad",
@@ -7394,9 +8218,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Pucallpa",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2027-01-11",
-   "restan": 78,
+   "restan": 77,
    "score": 92,
    "resumen": "Buscamos un Administrador General con experiencia para supervisar las operaciones diarias de la empresa. El candidato ideal será proactivo, responsable y poseer excelentes habilidades de resolución de conflictos y manejo de personal.",
    "funciones": [
@@ -7424,7 +8248,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/administrador-general-proteccion-maxima-seguridad-selva-s.a.c.-1118473091.html"
   },
   {
-   "id": 172,
+   "id": 191,
    "puesto": "Supervisor de Ventas Call Center España",
    "empresa": "GEATEL TELECOM",
    "cat": "Ventas",
@@ -7434,9 +8258,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 92,
    "resumen": "Supervisar, liderar y consolidar un equipo de 1 2 asesores de ventas.",
    "funciones": [
@@ -7466,7 +8290,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/supervisor-de-ventas-call-center-espana-altas-comisiones-sjl-geatel-telecom-1118473148.html"
   },
   {
-   "id": 173,
+   "id": 192,
    "puesto": "Ejecutivo Comercial",
    "empresa": "Wiñara Asociados",
    "cat": "Ventas",
@@ -7476,9 +8300,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Piura",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2027-01-11",
-   "restan": 78,
+   "restan": 77,
    "score": 92,
    "resumen": "WIÑARA | OPORTUNIDADES QUE IMPULSAN TU DESARROLLO PROFESIONAL",
    "funciones": [
@@ -7511,7 +8335,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ejecutivo-comercial--maquinaria-pesada-winara-asociados-1118473207.html"
   },
   {
-   "id": 174,
+   "id": 193,
    "puesto": "Operador de Salas Tragamonedas Cono Norte",
    "empresa": "PLANET GAME S.A.C.",
    "cat": "Otros",
@@ -7521,9 +8345,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-11-13",
-   "restan": 19,
+   "restan": 18,
    "score": 92,
    "resumen": "RESUMEN: ¡ÚNETE AL EQUIPO DE PLANET GAME S.A.C.!",
    "funciones": [
@@ -7547,7 +8371,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/planet-game-s-a-c/operador-de-salas-tragamonedas-cono-norte/6acd9ed6e076276c7956a8ab"
   },
   {
-   "id": 175,
+   "id": 194,
    "puesto": "Administrador de Restaurante",
    "empresa": "BASILICA",
    "cat": "Administración",
@@ -7557,9 +8381,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Cusco",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2027-01-11",
-   "restan": 78,
+   "restan": 77,
    "score": 92,
    "resumen": "En Basílica creamos experiencias únicas a través de la gastronomía y el servicio. Si te apasiona el trato con clientes y quieres crecer en un ambiente dinámico, este es tu lugar.",
    "funciones": [
@@ -7600,7 +8424,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/administrador-de-restaurante-basilica-1118475159.html"
   },
   {
-   "id": 176,
+   "id": 195,
    "puesto": "Asesor Comercial de Ventas",
    "empresa": "JEAN PAUL COACH",
    "cat": "Ventas",
@@ -7610,9 +8434,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Chiclayo",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2027-01-11",
-   "restan": 78,
+   "restan": 77,
    "score": 92,
    "resumen": "¡ÚNETE A NUESTRO EQUIPO! | ASESOR(A) COMERCIAL DE VENTAS",
    "funciones": [
@@ -7645,7 +8469,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-comercial-de-ventas-jean-paul-coach-1118475716.html"
   },
   {
-   "id": 177,
+   "id": 196,
    "puesto": "Asistente Comercial",
    "empresa": "ENGIPERU",
    "cat": "Ventas",
@@ -7655,9 +8479,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 92,
    "resumen": "Atender leads de cartera de clientes nuevos y activos.",
    "funciones": [
@@ -7691,7 +8515,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-comercial-engiperu-1118475441.html"
   },
   {
-   "id": 178,
+   "id": 197,
    "puesto": "Asesor Fidelizador",
    "empresa": "Impulsa A365",
    "cat": "Ingeniería",
@@ -7701,9 +8525,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 90,
    "resumen": "Estamos en la búsqueda de Asesores Fidelizadores con o sin experiencia para unirse a nuestro equipo en el sector de Contact Center. Si buscas estabilidad, crecimiento y excelentes ingresos, esta es tu oportunidad.",
    "funciones": [
@@ -7729,7 +8553,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-fidelizador-impulsa-a365-1118472852.html"
   },
   {
-   "id": 179,
+   "id": 198,
    "puesto": "Jefe de Departamento de Gobierno y Transformación Digital",
    "empresa": "Caja de Pensiones Militar Policial",
    "cat": "Tecnología",
@@ -7739,9 +8563,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2027-01-11",
-   "restan": 78,
+   "restan": 77,
    "score": 89,
    "resumen": "Proponer procedimientos, estándares y buenas prácticas en materia de gobierno y transformación digital, así como en gobernanza y gestión de datos.",
    "funciones": [
@@ -7776,7 +8600,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/jefe-de-departamento-de-gobierno-y-transformacion-digital-caja-de-pensiones-militar-policial-1118479489.html"
   },
   {
-   "id": 180,
+   "id": 199,
    "puesto": "Asistente Administrativo Comercial",
    "empresa": "S&C HEALTH SOLUTIONS SAC",
    "cat": "Administración",
@@ -7786,9 +8610,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 89,
    "resumen": "Brindar soporte administrativo al área comercial en la gestión de clientes y prospectos.",
    "funciones": [
@@ -7815,7 +8639,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-administrativo-comercial-sc-health-solutions-sac-1118473453.html"
   },
   {
-   "id": 181,
+   "id": 200,
    "puesto": "Huaral Atención al cliente",
    "empresa": "PLANET GAME S.A.C.",
    "cat": "Atención al Cliente",
@@ -7825,9 +8649,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-11-13",
-   "restan": 19,
+   "restan": 18,
    "score": 89,
    "resumen": "RESUMEN: ¡ÚNETE AL EQUIPO DE PLANET GAME S.A.C.!",
    "funciones": [
@@ -7851,7 +8675,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/planet-game-s-a-c/azafata-full-time-huaral-atencion-al-cliente/6acdd501e076276c79572e98"
   },
   {
-   "id": 182,
+   "id": 201,
    "puesto": "Auxiliar de RRHH",
    "empresa": "LEGEND PLAY S.A.C.",
    "cat": "Recursos Humanos",
@@ -7861,9 +8685,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 89,
    "resumen": "Brindar apoyo en los procesos de reclutamiento y selección de personal.",
    "funciones": [
@@ -7892,7 +8716,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-de-rrhh-legend-play-s.a.c.-1118475994.html"
   },
   {
-   "id": 183,
+   "id": 202,
    "puesto": "Operario de limpieza",
    "empresa": "PLANET GAME S.A.C.",
    "cat": "Otros",
@@ -7902,9 +8726,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-11-13",
-   "restan": 19,
+   "restan": 18,
    "score": 87,
    "resumen": "RESUMEN: ¡ÚNETE AL EQUIPO DE PLANET GAME S.A.C.!",
    "funciones": [
@@ -7928,7 +8752,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/planet-game-s-a-c/operario-de-limpieza-huaral-limpieza/6acdd52ee076276c79572f02"
   },
   {
-   "id": 184,
+   "id": 203,
    "puesto": "Atención al cliente y ventas",
    "empresa": "INCA RUMY  SAC PERU",
    "cat": "Ventas",
@@ -7938,9 +8762,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Trujillo",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2027-01-11",
-   "restan": 78,
+   "restan": 77,
    "score": 86,
    "resumen": "¿Te interesa desarrollarte en el área comercial y aprender nuevas estrategias de ventas?",
    "funciones": [
@@ -7968,7 +8792,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/atencion-al-cliente-y-ventas-inca-rumy-sac-peru-1118476043.html"
   },
   {
-   "id": 185,
+   "id": 204,
    "puesto": "Jefe",
    "empresa": "EQUANS Perú",
    "cat": "Recursos Humanos",
@@ -7978,9 +8802,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-11-13",
-   "restan": 19,
+   "restan": 18,
    "score": 86,
    "resumen": "En este momento, nos encontramos en la búsqueda de OPERARIOS DE LIMPIEZA que se sume a nuestro equipo y aporte con su experiencia y energía a nuestros proyectos.",
    "funciones": [
@@ -8007,7 +8831,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/equans-peru/urgente-operarios-de-limpieza-ingreso-inmediato-planilla/6acd9314e076276c79568a72"
   },
   {
-   "id": 186,
+   "id": 205,
    "puesto": "Atención al cliente",
    "empresa": "Escuela de Conductores José Gálvez",
    "cat": "Ventas",
@@ -8017,9 +8841,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-11-13",
-   "restan": 19,
+   "restan": 18,
    "score": 86,
    "resumen": "RESUMEN: ¿Eres buena vendiendo y estás cansada de las ofertas de puras comisiones?",
    "funciones": [
@@ -8047,7 +8871,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/escuela-de-conductores-jose-galvez/asesora-de-ventas-sueldo-fijo-s-1-300-comisiones-sin-tope-y/6acdef9fe076276c79573939"
   },
   {
-   "id": 187,
+   "id": 206,
    "puesto": "Practicante pre de Audiovisuales y Diseño",
    "empresa": "Codilabs",
    "cat": "Prácticas",
@@ -8057,9 +8881,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 85,
    "resumen": "Producción Audiovisual: Ejecución de 2 jornadas de rodaje presencial a la semana para la captura de recursos.",
    "funciones": [
@@ -8085,7 +8909,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-pre-de-audiovisuales-y-diseno-codilabs-1118475497.html"
   },
   {
-   "id": 188,
+   "id": 207,
    "puesto": "Asesor(a) de Ventas",
    "empresa": "LUNA ROJA BEAUTY  EIRL",
    "cat": "Ventas",
@@ -8095,9 +8919,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2027-01-11",
-   "restan": 78,
+   "restan": 77,
    "score": 84,
    "resumen": "LUNA ROJA | Cercado de Arequipa Jornada: Tiempo completo / Medio tiempo Modalidad: Presencial",
    "funciones": [
@@ -8127,7 +8951,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesora-de-ventas--maquillaje-y-skincare-luna-roja-beauty-eirl-1118475958.html"
   },
   {
-   "id": 189,
+   "id": 208,
    "puesto": "Atención al cliente",
    "empresa": "PLANET GAME S.A.C.",
    "cat": "Otros",
@@ -8137,9 +8961,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-11-13",
-   "restan": 19,
+   "restan": 18,
    "score": 84,
    "resumen": "RESUMEN: ¡ÚNETE AL EQUIPO DE PLANET GAME S.A.C.!",
    "funciones": [
@@ -8163,7 +8987,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/planet-game-s-a-c/operadores-de-sala-tragamonedas-huaral/6acd830ce076276c79565da5"
   },
   {
-   "id": 190,
+   "id": 209,
    "puesto": "Operario de almacén",
    "empresa": "Talento Humano Perú",
    "cat": "Ingeniería",
@@ -8173,9 +8997,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2027-01-11",
-   "restan": 78,
+   "restan": 77,
    "score": 83,
    "resumen": "Nuestro cliente, una empresa con más 30 años de experiencia produciendo y comercializando chocolates, nos ha encargado en la búsqueda de cinco (5) Operarios de producción.",
    "funciones": [
@@ -8201,7 +9025,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operarios-de-produccion-|-barranco-|-ingreso-inmediata-talento-humano-peru-1118479449.html"
   },
   {
-   "id": 191,
+   "id": 210,
    "puesto": "Asistente Administrativo Part-Time",
    "empresa": "Corp Angeles",
    "cat": "Administración",
@@ -8211,9 +9035,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 12,
+   "dias": 13,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 81,
    "resumen": "Buscamos un Asistente Administrativo Part-Time proactivo y organizado para integrarse a nuestro equipo. Esta posición es ideal para quienes buscan adquirir experiencia en un entorno dinámico y con horarios flexibles.",
    "funciones": [
@@ -8236,7 +9060,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-administrativo-part-time-corp-angeles-1118475103.html"
   },
   {
-   "id": 192,
+   "id": 211,
    "puesto": "Atención al cliente",
    "empresa": "LIBRERIAS CRISOL S.A.C.",
    "cat": "Ventas",
@@ -8246,9 +9070,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 13,
+   "dias": 14,
    "vence": "2026-11-12",
-   "restan": 18,
+   "restan": 17,
    "score": 95,
    "resumen": "RESUMEN: ¿Te gusta la lectura? ¿Te apasionan los libros? ¿Quisieras ganar dinero por estar en un lugar rodeado de todos los géneros en libros? Si cumples con estos requisitos, te cuento que nos encontramos en búsqueda de:",
    "funciones": [
@@ -8280,7 +9104,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/librerias-crisol-s-a-c/vendedores-de-libros-para-la-feria-lima-lee-campana-del-13/6acc686be076276c7955a3f4"
   },
   {
-   "id": 193,
+   "id": 212,
    "puesto": "Chofer A1",
    "empresa": "APPARKA",
    "cat": "Logística",
@@ -8290,9 +9114,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 13,
+   "dias": 14,
    "vence": "2026-11-12",
-   "restan": 18,
+   "restan": 17,
    "score": 95,
    "resumen": "RESUMEN: En apparka nos encontramos en busqueda de un(a) Conductor(a) A1 para integrarse a nuestro equipo de Valet Parking en nuestra operación ubicada en Clinica SANNA Javier Prado - San Isidro.",
    "funciones": [
@@ -8324,7 +9148,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/apparka/chofer-a1-valetparking-part-time-clinica-sanna-javier-prado/6acc6ac4e076276c7955ab49"
   },
   {
-   "id": 194,
+   "id": 213,
    "puesto": "Promotor de Ventas para Tottus Chorrillos, Plaza Vea, Ripley, Ingreso directo",
    "empresa": "Salesland Pacífico",
    "cat": "Ventas",
@@ -8334,9 +9158,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 13,
+   "dias": 14,
    "vence": "2026-11-12",
-   "restan": 18,
+   "restan": 17,
    "score": 94,
    "resumen": "RESUMEN: ¿Buscas una oportunidad para crecer, ganar comisiones ilimitadas y tener un turno fijo?",
    "funciones": [
@@ -8371,7 +9195,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/salesland-pacifico/buscamos-promotor-de-ventas-para-tottus-chorrillos-plaza-vea/6acc719fe076276c7955b86a"
   },
   {
-   "id": 195,
+   "id": 214,
    "puesto": "Atención al Cliente",
    "empresa": "Total Talent Human Resources",
    "cat": "Atención al Cliente",
@@ -8381,9 +9205,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 13,
+   "dias": 14,
    "vence": "2026-11-12",
-   "restan": 18,
+   "restan": 17,
    "score": 92,
    "resumen": "RESUMEN: Asesora de Ventas por Redes Sociales",
    "funciones": [
@@ -8415,7 +9239,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/total-talent-human-resources/atencion-al-cliente-comisiones-ate/6acc2846e076276c7955722f"
   },
   {
-   "id": 196,
+   "id": 215,
    "puesto": "Anfitrión de Estacionamientos",
    "empresa": "APPARKA",
    "cat": "Recursos Humanos",
@@ -8425,9 +9249,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 13,
+   "dias": 14,
    "vence": "2026-11-12",
-   "restan": 18,
+   "restan": 17,
    "score": 91,
    "resumen": "RESUMEN: En apparka nos encontramos en búsqueda del mejor talento para el puesto de Anfitrión de Estacionamientos.",
    "funciones": [
@@ -8455,7 +9279,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/apparka/s-exp-pagos-quincenales-atencion-al-cliente-en/6acc3e4de076276c79558997"
   },
   {
-   "id": 197,
+   "id": 216,
    "puesto": "Técnico Mecánico Automotriz Motorizado",
    "empresa": "BUMERAN SELECTA",
    "cat": "Ingeniería",
@@ -8465,9 +9289,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 14,
+   "dias": 15,
    "vence": "2027-01-09",
-   "restan": 76,
+   "restan": 75,
    "score": 97,
    "resumen": "Por encargo de nuestro cliente, importante empresa peruana líder en el rubro automotriz y especializada en la fabricación y comercialización de baterías, nos encontramos en búsqueda de un(a):",
    "funciones": [
@@ -8508,7 +9332,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnico-mecanico-automotriz-motorizado--lima-y-callao-bumeran-selecta-1118476402.html"
   },
   {
-   "id": 198,
+   "id": 217,
    "puesto": "Operario de Almacén",
    "empresa": "EMPLEA",
    "cat": "Logística",
@@ -8518,9 +9342,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 14,
+   "dias": 15,
    "vence": "2026-11-11",
-   "restan": 17,
+   "restan": 16,
    "score": 97,
    "resumen": "RESUMEN: Por encargo de una reconocida empresa del rubro de producción y comercialización de alimentos, nos encontramos en búsqueda de un OPERARIO DE ALMACÉN Y DESPACHO para integrarse a su equipo de trabajo.",
    "funciones": [
@@ -8560,7 +9384,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/emplea/operarios-de-almacen-san-juan-de-miraflores-varones-y-damas/6acb00a5e076276c7954f506"
   },
   {
-   "id": 199,
+   "id": 218,
    "puesto": "¡Buscamos Chofer A1! Jesus Maria Maximo Abril 596 6AM a 2:45PM S/1430 - ¡Ingreso directo a Planilla!",
    "empresa": "APPARKA",
    "cat": "Logística",
@@ -8570,9 +9394,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 14,
+   "dias": 15,
    "vence": "2026-11-11",
-   "restan": 17,
+   "restan": 16,
    "score": 97,
    "resumen": "RESUMEN: Nos encontramos en búsqueda de un Conductor A1 para la posición de Valet Parking, para nuestra sede ubicada en Máximo Abril 596, Jesús María.",
    "funciones": [
@@ -8603,7 +9427,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/apparka/buscamos-chofer-a1-jesus-maria-maximo-abril-596-6am-a-2-45pm/6acad544e076276c79549bd7"
   },
   {
-   "id": 200,
+   "id": 219,
    "puesto": "Supervisor de almacen",
    "empresa": "'VARTINI PACKING' S.A.C",
    "cat": "Logística",
@@ -8613,9 +9437,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 14,
+   "dias": 15,
    "vence": "2026-11-11",
-   "restan": 17,
+   "restan": 16,
    "score": 97,
    "resumen": "Recepcionar la mercadería de manera oportuna y conforme a los estándares de la empresa.",
    "funciones": [
@@ -8647,7 +9471,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/vartini-packing-s-a-c/supervisor-de-almacen-san-martin-de-porres/6acae17ce076276c7954c0fe"
   },
   {
-   "id": 201,
+   "id": 220,
    "puesto": "Técnico de Farmacia",
    "empresa": "Confidencial",
    "cat": "Salud",
@@ -8657,9 +9481,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 14,
+   "dias": 15,
    "vence": "2027-01-09",
-   "restan": 76,
+   "restan": 75,
    "score": 96,
    "resumen": "Seguimiento de pedidos y entregas, contacto frecuente con el paciente vía whatsapp y/o llamada.",
    "funciones": [
@@ -8684,7 +9508,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnico-de-farmacia-clinica-1118476301.html"
   },
   {
-   "id": 202,
+   "id": 221,
    "puesto": "Tecnico Instrumentista",
    "empresa": "ANALYTICA MINERAL SERVICES",
    "cat": "Ingeniería",
@@ -8694,9 +9518,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 14,
+   "dias": 15,
    "vence": "2027-02-08",
-   "restan": 106,
+   "restan": 105,
    "score": 95,
    "resumen": "Importante Empresa en el rubro de Minería se encuentra en la búsqueda del mejor talento para cubrir el puesto de TECNICO INSTRUMENTISTA , que cumpla lo siguiente:",
    "funciones": [
@@ -8723,7 +9547,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnico-instrumentista-planta-analytica-mineral-services-1118476258.html"
   },
   {
-   "id": 203,
+   "id": 222,
    "puesto": "Conductor",
    "empresa": "APPARKA",
    "cat": "Logística",
@@ -8733,9 +9557,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 14,
+   "dias": 15,
    "vence": "2026-11-11",
-   "restan": 17,
+   "restan": 16,
    "score": 95,
    "resumen": "RESUMEN: Nos encontramos en búsqueda de un Conductor A1 para la posición de Valet Parking PartTime, para nuestra sede ubicada en Edificio Anglo Cavenecia - San Isidro",
    "funciones": [
@@ -8765,7 +9589,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/apparka/buscamos-chofer-a1-parttime-edificio-anglo-cavenecia-3pm-a/6acad5c3e076276c79549dfd"
   },
   {
-   "id": 204,
+   "id": 223,
    "puesto": "Back Office",
    "empresa": "EsTalent",
    "cat": "Atención al Cliente",
@@ -8775,9 +9599,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 14,
+   "dias": 15,
    "vence": "2026-11-11",
-   "restan": 17,
+   "restan": 16,
    "score": 94,
    "resumen": "RESUMEN: En , consultora especializada en atracción de talento, conectamos a profesionales destacados con oportunidades de crecimiento en empresas que confían en nosotros para incorporar a los mejores talentos.",
    "funciones": [
@@ -8818,7 +9642,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/estalent/back-office-presencial-surquillo/6acafb4fe076276c7954e609"
   },
   {
-   "id": 205,
+   "id": 224,
    "puesto": "Asesor(a) de Ventas Call Center y Whatsapp",
    "empresa": "Recreativos Fargo S.A.C",
    "cat": "Ventas",
@@ -8828,9 +9652,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 14,
+   "dias": 15,
    "vence": "2026-11-11",
-   "restan": 17,
+   "restan": 16,
    "score": 94,
    "resumen": "RESUMEN: Nos encontramos en búsqueda de Ejecutivos(as) de Ventas para comercializar carreras de Pregrado y brindar asesoría a futuros estudiantes.",
    "funciones": [
@@ -8860,7 +9684,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/recreativos-fargo-s-a-c/asesor-a-de-ventas-call-center-y-whatsapp-planilla/6acb0b2ce076276c795509c5"
   },
   {
-   "id": 206,
+   "id": 225,
    "puesto": "Conductor A2B",
    "empresa": "GRAFTON PERU S.A.C.",
    "cat": "Logística",
@@ -8870,9 +9694,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 14,
+   "dias": 15,
    "vence": "2026-11-11",
-   "restan": 17,
+   "restan": 16,
    "score": 91,
    "resumen": "Cumplir con las rutas asignadas.",
    "funciones": [
@@ -8906,7 +9730,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/grafton-peru-s-a-c/conductor-a2b-chorrillos-pago-15cenal-2-500-planilla/6acb0003e076276c7954f29c"
   },
   {
-   "id": 207,
+   "id": 226,
    "puesto": "Practicante de Ingeniería de Medición Avanzada",
    "empresa": "LUZ DEL SUR S.A.A.",
    "cat": "Prácticas",
@@ -8916,9 +9740,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 14,
+   "dias": 15,
    "vence": "2027-01-09",
-   "restan": 76,
+   "restan": 75,
    "score": 90,
    "resumen": "Apoyar en la gestión de los datos provenientes de los sistemas de medición inteligente , mediante análisis en los procesos de recopilación, depuración y visualización de información técnica.",
    "funciones": [
@@ -8943,7 +9767,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-de-ingenieria-de-medicion-avanzada-luz-del-sur-s.a.a.-1118476284.html"
   },
   {
-   "id": 208,
+   "id": 227,
    "puesto": "Operario de Jardinería Miraflores",
    "empresa": "Consorcio LP",
    "cat": "Recursos Humanos",
@@ -8953,9 +9777,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 14,
+   "dias": 15,
    "vence": "2026-11-11",
-   "restan": 17,
+   "restan": 16,
    "score": 89,
    "resumen": "RESUMEN: OPERARIO DE JARDINERÍA MIRAFLORES",
    "funciones": [
@@ -8987,7 +9811,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/consorcio-lp/jardinero-jr-aprendiz-miraflores-pago-quincenal-y-mensual/6acad854e076276c7954a5dc"
   },
   {
-   "id": 209,
+   "id": 228,
    "puesto": "Personal de Limpieza",
    "empresa": "PÍKALO RESTAURANTES",
    "cat": "Atención al Cliente",
@@ -8997,9 +9821,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 14,
+   "dias": 15,
    "vence": "2026-11-11",
-   "restan": 17,
+   "restan": 16,
    "score": 89,
    "resumen": "Mantener la limpieza y orden de los ambientes de salón, baños y juegos del local.",
    "funciones": [
@@ -9027,7 +9851,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/pikalo-restaurantes/personal-de-limpieza-surco-san-borja-pikalo-cadena-de/6acae1bee076276c7954c1e5"
   },
   {
-   "id": 210,
+   "id": 229,
    "puesto": "Anfitrión de estacionamiento Golds Gym",
    "empresa": "APPARKA",
    "cat": "Recursos Humanos",
@@ -9037,9 +9861,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 14,
+   "dias": 15,
    "vence": "2026-11-11",
-   "restan": 17,
+   "restan": 16,
    "score": 89,
    "resumen": "RESUMEN: En Apparka nos encontramos en búsqueda del mejor talento para el puesto de Anfitrión de Estacionamientos.",
    "funciones": [
@@ -9064,7 +9888,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/apparka/trabaja-ya-turno-tarde-1-15pm-a-10-00pm-anfitrion-de/6acb19cde076276c795515ad"
   },
   {
-   "id": 211,
+   "id": 230,
    "puesto": "Anfitrión de estacionamiento Wong Ucello",
    "empresa": "APPARKA",
    "cat": "Recursos Humanos",
@@ -9074,9 +9898,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 14,
+   "dias": 15,
    "vence": "2026-11-11",
-   "restan": 17,
+   "restan": 16,
    "score": 89,
    "resumen": "RESUMEN: En apparka nos encontramos en búsqueda del mejor talento para el puesto de Anfitrión de Estacionamientos.",
    "funciones": [
@@ -9101,7 +9925,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/apparka/trabaja-ya-turno-tarde-1-45pm-a-10-30pm-anfitrion-de/6acb19f3e076276c7955166e"
   },
   {
-   "id": 212,
+   "id": 231,
    "puesto": "Anfitrión de Estacionamiento en Wong Chacarilla",
    "empresa": "APPARKA",
    "cat": "Recursos Humanos",
@@ -9111,9 +9935,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 14,
+   "dias": 15,
    "vence": "2026-11-11",
-   "restan": 17,
+   "restan": 16,
    "score": 88,
    "resumen": "RESUMEN: En Apparka nos encontramos en búsqueda del mejor talento para el puesto de Anfitrión de Estacionamientos.",
    "funciones": [
@@ -9137,7 +9961,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/apparka/anfitrion-de-estacionamiento-en-wong-chacarilla-turno-tarde/6acb19c0e076276c7955158a"
   },
   {
-   "id": 213,
+   "id": 232,
    "puesto": "Anfitrión de estacionamiento en Boulevard Punta mar Part time",
    "empresa": "APPARKA",
    "cat": "Recursos Humanos",
@@ -9147,9 +9971,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 14,
+   "dias": 15,
    "vence": "2026-11-11",
-   "restan": 17,
+   "restan": 16,
    "score": 86,
    "resumen": "RESUMEN: En Apparka nos encontramos en búsqueda del mejor talento para el puesto de Anfitriones de Estacionamientos.",
    "funciones": [
@@ -9173,7 +9997,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/apparka/anfitrion-de-estacionamiento-en-boulevard-punta-mar-part/6acb1a51e076276c79551746"
   },
   {
-   "id": 214,
+   "id": 233,
    "puesto": "Anfitrión de estacionamiento en Boulevard Punta mar Fulltime",
    "empresa": "APPARKA",
    "cat": "Recursos Humanos",
@@ -9183,9 +10007,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 14,
+   "dias": 15,
    "vence": "2026-11-11",
-   "restan": 17,
+   "restan": 16,
    "score": 86,
    "resumen": "RESUMEN: En Apparka nos encontramos en búsqueda del mejor talento para el puesto de Anfitriones de Estacionamientos.",
    "funciones": [
@@ -9209,7 +10033,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/apparka/anfitrion-de-estacionamiento-en-boulevard-punta-mar-fulltime/6acb1a64e076276c79551789"
   },
   {
-   "id": 215,
+   "id": 234,
    "puesto": "Personal de limpieza",
    "empresa": "CORPORACION ARZOBISPO LOAYZA SOCIEDAD ANONIMA CERRADA",
    "cat": "Recursos Humanos",
@@ -9219,9 +10043,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 14,
+   "dias": 15,
    "vence": "2026-11-11",
-   "restan": 17,
+   "restan": 16,
    "score": 75,
    "resumen": "RESUMEN: ¡Te invitamos a formar parte de nuestra Familia! Somos la CORPORACIÓN ARZOBISPO LOAYZA, lideres en la educación técnica de carreras de salud.",
    "funciones": [
@@ -9244,7 +10068,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/corporacion-arzobispo-loayza-sociedad-anonima-cerrada/personal-de-limpieza-planilla-completa-presencial/6acae1cfe076276c7954c227"
   },
   {
-   "id": 216,
+   "id": 235,
    "puesto": "Supervisor Mecanico",
    "empresa": "Intecsa Ind S.A.C.",
    "cat": "Ingeniería",
@@ -9254,9 +10078,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 15,
+   "dias": 16,
    "vence": "2026-11-10",
-   "restan": 16,
+   "restan": 15,
    "score": 98,
    "resumen": "RESUMEN: INTECSA IND SAC : Somos una empresa dedicada a brindar de servicios de fabricación, montaje, desmontaje de equipos industriales en el rubro METAL MECANICA , INDUSTRIAL Y MINERO .",
    "funciones": [
@@ -9294,7 +10118,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/intecsa-ind-s-a-c/supervisor-mecanico-14x7-chincha-nexa-cerro-lindo-titulado-y/6ac99316e076276c79539526"
   },
   {
-   "id": 217,
+   "id": 236,
    "puesto": "Practicante Profesional de Ingeniería Industrial",
    "empresa": "ETNA",
    "cat": "Prácticas",
@@ -9304,9 +10128,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 15,
+   "dias": 16,
    "vence": "2027-01-08",
-   "restan": 75,
+   "restan": 74,
    "score": 97,
    "resumen": "Empresa peruana lider en fabricación y comercialización de baterías, nos encontramos en búsqueda de un Practicante Profesional de Ingeniería de Métodos para su sede ubicada en Independencia.",
    "funciones": [
@@ -9335,7 +10159,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-profesional-de-ingenieria-industrial-etna-1118475961.html"
   },
   {
-   "id": 218,
+   "id": 237,
    "puesto": "Conductor",
    "empresa": "cyl",
    "cat": "Logística",
@@ -9345,9 +10169,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 15,
+   "dias": 16,
    "vence": "2026-12-09",
-   "restan": 45,
+   "restan": 44,
    "score": 94,
    "resumen": "Realizar la estiba, desestiba y traslado de mercadería.",
    "funciones": [
@@ -9388,7 +10212,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/convocatoria-auxiliar-de-distribucion-ingreso-rapido-cyl-1118475973.html"
   },
   {
-   "id": 219,
+   "id": 238,
    "puesto": "Convocatoria Auxiliar de distribución",
    "empresa": "cyl",
    "cat": "Logística",
@@ -9398,9 +10222,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 15,
+   "dias": 16,
    "vence": "2026-12-09",
-   "restan": 45,
+   "restan": 44,
    "score": 94,
    "resumen": "Realizar la estiba, desestiba y traslado de mercadería.",
    "funciones": [
@@ -9441,7 +10265,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/convocatoria-auxiliar-de-distribucion-cyl-1118475977.html"
   },
   {
-   "id": 220,
+   "id": 239,
    "puesto": "Practicante de Administración de Personal",
    "empresa": "FINVIVIR PERU S.A.C.",
    "cat": "Prácticas",
@@ -9451,9 +10275,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 15,
+   "dias": 16,
    "vence": "2026-11-10",
-   "restan": 16,
+   "restan": 15,
    "score": 94,
    "resumen": "RESUMEN: En Finvivir Perú, nos encontramos en la búsqueda del mejor talento para sumarse al equipo de Talento Humano que cuente con el siguiente perfil:· Puesto:",
    "funciones": [
@@ -9479,7 +10303,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/finvivir-peru-s-a-c/practicante-de-administracion-de-personal-administracion-de/6ac9d17ce076276c795438f3"
   },
   {
-   "id": 221,
+   "id": 240,
    "puesto": "Técnica de Mecatrónica industrial",
    "empresa": "FACTORIA SANTA ISOLINA S.A.C",
    "cat": "Ventas",
@@ -9489,9 +10313,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 15,
+   "dias": 16,
    "vence": "2027-01-08",
-   "restan": 75,
+   "restan": 74,
    "score": 92,
    "resumen": "Estudiante de los últimos ciclos o egresado de las carreras técnica de Mecatrónica industrial o diseño industrial/mecánico.",
    "funciones": [
@@ -9525,7 +10349,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ventas-internas-factoria-santa-isolina-s.a.c-1118476019.html"
   },
   {
-   "id": 222,
+   "id": 241,
    "puesto": "Operario de Inventario",
    "empresa": "DATACELL",
    "cat": "Otros",
@@ -9535,9 +10359,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 15,
+   "dias": 16,
    "vence": "2026-12-09",
-   "restan": 45,
+   "restan": 44,
    "score": 92,
    "resumen": "Organizar y mantener el orden del área de trabajo por tipo de producto.",
    "funciones": [
@@ -9566,7 +10390,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-inventario-datacell-1118476127.html"
   },
   {
-   "id": 223,
+   "id": 242,
    "puesto": "Técnico de Mantenimiento Quinquenal",
    "empresa": "OCA GLOBAL PERÚ",
    "cat": "Ingeniería",
@@ -9576,9 +10400,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 15,
+   "dias": 16,
    "vence": "2026-11-10",
-   "restan": 16,
+   "restan": 15,
    "score": 90,
    "resumen": "RESUMEN: En OCA GLOBAL estamos en la búsqueda de nuevos talentos como TECNICO MANTENIMIENTO QUINQUENAL para nuestra linea de gas natural.",
    "funciones": [
@@ -9602,7 +10426,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/oca-global-peru/tecnico-de-mantenimiento-quinquenal-ig1-o-ig2-lima-sur/6ac9dd47e076276c795451e0"
   },
   {
-   "id": 224,
+   "id": 243,
    "puesto": "Asesor Inmobiliario Independiente",
    "empresa": "Radica",
    "cat": "Ventas",
@@ -9612,9 +10436,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 15,
+   "dias": 16,
    "vence": "2026-12-09",
-   "restan": 45,
+   "restan": 44,
    "score": 89,
    "resumen": "Gestionar y desarrollar una cartera de clientes.",
    "funciones": [
@@ -9641,7 +10465,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-inmobiliario-independiente-radica-1118476036.html"
   },
   {
-   "id": 225,
+   "id": 244,
    "puesto": "Ayudante de Ferreteria",
    "empresa": "GRUPO IMWELD",
    "cat": "Logística",
@@ -9651,9 +10475,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 15,
+   "dias": 16,
    "vence": "2027-01-08",
-   "restan": 75,
+   "restan": 74,
    "score": 86,
    "resumen": "Somos una empresa peruana con más de 10 años en el mercado que ofrece la mayor gama de materiales de contrucción.",
    "funciones": [
@@ -9679,7 +10503,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ayudante-de-ferreteria-grupo-imweld-1118476012.html"
   },
   {
-   "id": 226,
+   "id": 245,
    "puesto": "Técnico Todista",
    "empresa": "PLANET GAME S.A.C.",
    "cat": "Ingeniería",
@@ -9689,9 +10513,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 15,
+   "dias": 16,
    "vence": "2026-11-10",
-   "restan": 16,
+   "restan": 15,
    "score": 86,
    "resumen": "RESUMEN: TÉCNICO TODISTA DE MANTENIMIENTO GENERAL",
    "funciones": [
@@ -9727,7 +10551,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/planet-game-s-a-c/tecnico-todista-servicios-generales-cono-norte/6ac99d6ae076276c7953b1ef"
   },
   {
-   "id": 227,
+   "id": 246,
    "puesto": "Ejecutivo de Ventas",
    "empresa": "Financiera QAPAQ",
    "cat": "Ventas",
@@ -9737,9 +10561,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 15,
+   "dias": 16,
    "vence": "2026-11-10",
-   "restan": 16,
+   "restan": 15,
    "score": 84,
    "resumen": "RESUMEN: ¡Únete al equipo de Financiera Qapaq!",
    "funciones": [
@@ -9762,7 +10586,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/financiera-qapaq/ejecutivo-de-ventas-chincha-chincha/6ac9d486e076276c79544059"
   },
   {
-   "id": 228,
+   "id": 247,
    "puesto": "Asesor de Ventas de Motos",
    "empresa": "AUTODISA",
    "cat": "Ventas",
@@ -9772,9 +10596,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2027-01-07",
-   "restan": 74,
+   "restan": 73,
    "score": 100,
    "resumen": "ASESOR(A) DE VENTAS DE MOTOS – AUTODISA BAJAJ",
    "funciones": [
@@ -9809,7 +10633,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-ventas-de-motos-autodisa-1118475766.html"
   },
   {
-   "id": 229,
+   "id": 248,
    "puesto": "Asistente Gestor Comercial Inmobiliario",
    "empresa": "NCF SERVICIOS COMPARTIDOS SA",
    "cat": "Ventas",
@@ -9819,9 +10643,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-12-08",
-   "restan": 44,
+   "restan": 43,
    "score": 98,
    "resumen": "Buscamos un profesional proactivo y con gran capacidad de gestión para unirse a nuestro equipo como Asistente Gestor Comercial Inmobiliario .",
    "funciones": [
@@ -9850,7 +10674,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-gestor-comercial-inmobiliario-ncf-servicios-compartidos-sa-1118471010.html"
   },
   {
-   "id": 230,
+   "id": 249,
    "puesto": "Administrador(a) de Restaurante",
    "empresa": "JKR GROUP S.A.C.",
    "cat": "Ingeniería",
@@ -9860,9 +10684,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-12-08",
-   "restan": 44,
+   "restan": 43,
    "score": 98,
    "resumen": "Ubicación: Lima (Miraflores, Surco, San Borja y San Isidro) | Modalidad: Presencial",
    "funciones": [
@@ -9901,7 +10725,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/administradora-de-restaurante--5-vacantes-jkr-group-s.a.c.-1118471293.html"
   },
   {
-   "id": 231,
+   "id": 250,
    "puesto": "Reponedor",
    "empresa": "GRAFTON LATAM",
    "cat": "Ventas",
@@ -9911,9 +10735,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2027-01-07",
-   "restan": 74,
+   "restan": 73,
    "score": 97,
    "resumen": "Empresa dedicada a la comercialización de productos de consumo masivo, se encuentra en búsqueda de Mercaderistas de Canal Moderno para fortalecer su equipo en diferentes puntos de venta de Lima Metropolitana.",
    "funciones": [
@@ -9948,7 +10772,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/mercaderista-canal-moderno-lima-este-s-1230-hasta-s-450-en-bonos-s-270-movilidad-copia-grafton-latam-1118475793.html"
   },
   {
-   "id": 232,
+   "id": 251,
    "puesto": "Técnico Mecánico Motorizado Lima y Callao",
    "empresa": "Eurofirms Perú",
    "cat": "Ingeniería",
@@ -9958,9 +10782,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-11-09",
-   "restan": 15,
+   "restan": 14,
    "score": 97,
    "resumen": "RESUMEN: En Eurofirms Group, creemos en el liderazgo por valores y el crecimiento continuo, poniendo a las personas y su desarrollo profesional primero, potenciando un ambiente de trabajo positivo y colaborativo.",
    "funciones": [
@@ -9991,7 +10815,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/eurofirms-peru/tecnico-mecanico-motorizado-lima-y-callao/6ac87b3be076276c7953276b"
   },
   {
-   "id": 233,
+   "id": 252,
    "puesto": "UPC Chorrillos: Analista de datos Comercial",
    "empresa": "Laureate",
    "cat": "Tecnología",
@@ -10001,9 +10825,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-11-09",
-   "restan": 15,
+   "restan": 14,
    "score": 97,
    "resumen": "En UPC contribuimos a la transformación del Perú a través de una educación inclusiva, accesible y de calidad que transforma vidas.",
    "funciones": [
@@ -10045,7 +10869,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/laureate/upc-chorrillos-analista-de-datos-comercial-call-center/6ac84497e076276c7952f497"
   },
   {
-   "id": 234,
+   "id": 253,
    "puesto": "UPN Lima Norte: Supervisor",
    "empresa": "Laureate",
    "cat": "Ingeniería",
@@ -10055,9 +10879,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-11-09",
-   "restan": 15,
+   "restan": 14,
    "score": 97,
    "resumen": "En Laureate contribuimos a la transformación del Perú a través de una educación inclusiva, accesible y de calidad que transforma vidas.",
    "funciones": [
@@ -10093,7 +10917,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/laureate/upn-lima-norte-supervisor-a-de-prospeccion-en-campo-lima/6ac844dae076276c7952f57f"
   },
   {
-   "id": 235,
+   "id": 254,
    "puesto": "Practicante Profesional de Data Quality",
    "empresa": "Confidencial",
    "cat": "Prácticas",
@@ -10103,9 +10927,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2027-01-07",
-   "restan": 74,
+   "restan": 73,
    "score": 95,
    "resumen": "Colaborar en el análisis de información clave para apoyar la toma de decisiones de la gerencia.",
    "funciones": [
@@ -10136,7 +10960,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-profesional-de-data-quality-dhl-express-1118475783.html"
   },
   {
-   "id": 236,
+   "id": 255,
    "puesto": "Ingeniero",
    "empresa": "Hunting Consulting SAC",
    "cat": "Ingeniería",
@@ -10146,9 +10970,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2027-01-07",
-   "restan": 74,
+   "restan": 73,
    "score": 95,
    "resumen": "Desarrollar proyectos arquitectónicos y de ingeniería civil, elaborando y revisando la documentación técnica correspondiente.",
    "funciones": [
@@ -10175,7 +10999,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/proyectista-arquitecto-o-ingeniero-en-planilla-en-regimen-general-hunting-consulting-sac-1118475832.html"
   },
   {
-   "id": 237,
+   "id": 256,
    "puesto": "Asesor(a) de Servicios",
    "empresa": "SPORTWAGEN",
    "cat": "Ventas",
@@ -10185,9 +11009,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-12-08",
-   "restan": 44,
+   "restan": 43,
    "score": 95,
    "resumen": "Estamos en búsqueda de un(a) ASESOR(A) DE SERVICIOS para formar parte de nuestro equipo de Postventa.",
    "funciones": [
@@ -10221,7 +11045,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesora-de-servicios-hyundai-sportwagen-miraflores-sportwagen-1118470929.html"
   },
   {
-   "id": 238,
+   "id": 257,
    "puesto": "Asistente Tecnico",
    "empresa": "Ubuntu Corporation",
    "cat": "Ingeniería",
@@ -10231,9 +11055,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2027-01-07",
-   "restan": 74,
+   "restan": 73,
    "score": 95,
    "resumen": "Apoyo en la supervisión y seguimiento del avance de obra.",
    "funciones": [
@@ -10267,7 +11091,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-tecnico-arequipa-ubuntu-corporation-1118470983.html"
   },
   {
-   "id": 239,
+   "id": 258,
    "puesto": "Asesor(a) Comercial B2B",
    "empresa": "Infinity Pay",
    "cat": "Ventas",
@@ -10277,9 +11101,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-12-08",
-   "restan": 44,
+   "restan": 43,
    "score": 95,
    "resumen": "Prospectar y captar nuevos clientes corporativos (RUC 1 0 y RUC 2 0).",
    "funciones": [
@@ -10310,7 +11134,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesora-comercial-b2b--entel-empresas-infinity-pay-1118470984.html"
   },
   {
-   "id": 240,
+   "id": 259,
    "puesto": "Analista de Marketing B2B Industrial",
    "empresa": "Hunting Consulting SAC",
    "cat": "Marketing",
@@ -10320,9 +11144,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2027-01-07",
-   "restan": 74,
+   "restan": 73,
    "score": 92,
    "resumen": "COORDINADORA DE MARKETING B2B INDUSTRIAL",
    "funciones": [
@@ -10349,7 +11173,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/analista-de-marketing-b2b-industrial-en-regimen-general-para-brena-hunting-consulting-sac-1118475779.html"
   },
   {
-   "id": 241,
+   "id": 260,
    "puesto": "Coordinadora de Administración sobre",
    "empresa": "IMPACTO MEDIA & TECH S.A.C.",
    "cat": "Ingeniería",
@@ -10359,9 +11183,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-11-09",
-   "restan": 15,
+   "restan": 14,
    "score": 92,
    "resumen": "Supervisar el funcionamiento de todas las áreas y canales de atención. Organizar las actividades y distribución del personal,según las necesidades de cada turno.",
    "funciones": [
@@ -10399,7 +11223,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/impacto-media-tech-s-a-c/encargado-de-local/6ac83cfae076276c7952ef95"
   },
   {
-   "id": 242,
+   "id": 261,
    "puesto": "Call center",
    "empresa": "Tesis Vip",
    "cat": "Ventas",
@@ -10409,9 +11233,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-12-08",
-   "restan": 44,
+   "restan": 43,
    "score": 92,
    "resumen": "Realizar llamadas a clientes potenciales para presentar nuestros servicios.",
    "funciones": [
@@ -10447,7 +11271,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesora-de-ventas-telefonicas-tesis-vip-1118471052.html"
   },
   {
-   "id": 243,
+   "id": 262,
    "puesto": "Atención al cliente",
    "empresa": "ADN RETAIL S.A.C.",
    "cat": "Atención al Cliente",
@@ -10457,9 +11281,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2027-01-07",
-   "restan": 74,
+   "restan": 73,
    "score": 92,
    "resumen": "Por encargo de una importante clínica veterinaria con mas de 3 años de presencia en el mercado nacional estamos en la búsqueda de incorporar a 1 Ejecutivo(a) de Experiencia al cliente turno noche para trabajar en su sede de La Planicie.",
    "funciones": [
@@ -10485,7 +11309,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/atencion-al-cliente-adn-retail-s.a.c.-1118475778.html"
   },
   {
-   "id": 244,
+   "id": 263,
    "puesto": "Promotor de Ventas",
    "empresa": "Overall Strategy",
    "cat": "Ventas",
@@ -10495,9 +11319,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-11-09",
-   "restan": 15,
+   "restan": 14,
    "score": 91,
    "resumen": "RESUMEN: Buscamos Promotores de Ventas para canal retail (CLARO). Únete a una empresa líder en telecomunicaciones y marca la diferencia desde el primer día",
    "funciones": [
@@ -10531,7 +11355,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/overall-strategy/promotor-de-ventas-claro-real-plaza-centro-civico-c-s/6ac87760e076276c79531f33"
   },
   {
-   "id": 245,
+   "id": 264,
    "puesto": "Técnico de Enfermería",
    "empresa": "CLINICA DEL INCA",
    "cat": "Salud",
@@ -10541,9 +11365,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-12-08",
-   "restan": 44,
+   "restan": 43,
    "score": 90,
    "resumen": "Buscamos un Técnico(a) de Enfermería con vocación de servicio para unirse a nuestro equipo. El candidato ideal será responsable, puntual y estará comprometido con brindar atención de calidad a los pacientes.",
    "funciones": [
@@ -10567,7 +11391,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnico-de-enfermeria-clinica-del-inca-1118471025.html"
   },
   {
-   "id": 246,
+   "id": 265,
    "puesto": "Trabaja en c.comerciales como anfitrion de estacionamiento",
    "empresa": "APPARKA",
    "cat": "Ventas",
@@ -10577,9 +11401,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-11-09",
-   "restan": 15,
+   "restan": 14,
    "score": 89,
    "resumen": "RESUMEN: En apparka nos encontramos en búsqueda del mejor talento para el puesto de Anfitrión de Estacionamientos.",
    "funciones": [
@@ -10604,7 +11428,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/apparka/trabaja-en-c-comerciales-como-anfitrion-de-estacionamiento/6ac876c0e076276c79531d59"
   },
   {
-   "id": 247,
+   "id": 266,
    "puesto": "Asistente Administrativo Comercial",
    "empresa": "ALTISA",
    "cat": "Administración",
@@ -10614,9 +11438,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-12-08",
-   "restan": 44,
+   "restan": 43,
    "score": 89,
    "resumen": "Atender y asesorar a clientes de manera presencial y telefónica.",
    "funciones": [
@@ -10652,7 +11476,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-administrativo-comercial-altisa-1118471011.html"
   },
   {
-   "id": 248,
+   "id": 267,
    "puesto": "Asesor Comercial",
    "empresa": "MIKA OUTDOORS",
    "cat": "Ventas",
@@ -10662,9 +11486,9 @@ window.CERO_VAGOS = {
    "modalidad": "Híbrido",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-12-08",
-   "restan": 44,
+   "restan": 43,
    "score": 87,
    "resumen": "MIKA OUTDOORS busca Ejecutivos(as) Comerciales Freelance con experiencia en ventas corporativas para impulsar la comercialización de nuestros servicios dirigidos al sector empresarial.",
    "funciones": [
@@ -10694,7 +11518,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-comercial-mika-outdoors-1118470917.html"
   },
   {
-   "id": 249,
+   "id": 268,
    "puesto": "Parque La Molina busca personal para Anfitrión(a) de estacionamiento",
    "empresa": "APPARKA",
    "cat": "Recursos Humanos",
@@ -10704,9 +11528,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-11-09",
-   "restan": 15,
+   "restan": 14,
    "score": 86,
    "resumen": "RESUMEN: En Apparka nos encontramos en búsqueda del mejor talento para el puesto de Anfitrión de Estacionamientos.",
    "funciones": [
@@ -10729,7 +11553,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/apparka/parque-la-molina-busca-personal-para-anfitrion-a-de/6ac84598e076276c7952f850"
   },
   {
-   "id": 250,
+   "id": 269,
    "puesto": "Ayudante de Vidrieria",
    "empresa": "Proyectos Garcia",
    "cat": "Logística",
@@ -10739,9 +11563,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-12-08",
-   "restan": 44,
+   "restan": 43,
    "score": 86,
    "resumen": "Apoyo en producción y trabajos operativos.",
    "funciones": [
@@ -10769,7 +11593,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ayudante-de-vidrieria-proyectos-garcia-1118470854.html"
   },
   {
-   "id": 251,
+   "id": 270,
    "puesto": "Auxiliar de Limpieza y Mantenimiento",
    "empresa": "CLINICA DEL INCA",
    "cat": "Ingeniería",
@@ -10779,9 +11603,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-12-08",
-   "restan": 44,
+   "restan": 43,
    "score": 86,
    "resumen": "Clínica del Inca se encuentra en la búsqueda de personal responsable y detallista para incorporarse a nuestro equipo en el área de mantenimiento y limpieza.",
    "funciones": [
@@ -10808,7 +11632,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-de-limpieza-y-mantenimiento-clinica-del-inca-1118470883.html"
   },
   {
-   "id": 252,
+   "id": 271,
    "puesto": "Asesor(a) Inmobiliario Inhouse",
    "empresa": "Ubuntu Corporation",
    "cat": "Marketing",
@@ -10818,9 +11642,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-12-08",
-   "restan": 44,
+   "restan": 43,
    "score": 83,
    "resumen": "Atender y calificar leads.",
    "funciones": [
@@ -10857,7 +11681,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesora-inmobiliario-inhouse-comas-ubuntu-corporation-1118471020.html"
   },
   {
-   "id": 253,
+   "id": 272,
    "puesto": "Asesor de Ventas Remoto",
    "empresa": "Amy Vargas",
    "cat": "Ventas",
@@ -10867,9 +11691,9 @@ window.CERO_VAGOS = {
    "modalidad": "Remoto",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 16,
+   "dias": 17,
    "vence": "2026-12-08",
-   "restan": 44,
+   "restan": 43,
    "score": 83,
    "resumen": "Gestionar y cerrar ventas de manera remota.",
    "funciones": [
@@ -10894,7 +11718,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-ventas-remoto-amy-vargas-1118471024.html"
   },
   {
-   "id": 254,
+   "id": 273,
    "puesto": "Ejecutivo Comercial",
    "empresa": "Montalvo Institute",
    "cat": "Ventas",
@@ -10904,9 +11728,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 17,
+   "dias": 18,
    "vence": "2026-12-07",
-   "restan": 43,
+   "restan": 42,
    "score": 98,
    "resumen": "En MONTALVO INSTITUTE , Institución educativa líder en el rubro de la Cosmetología y Estética, nos encontramos en la búsqueda de un EJECUTIVO COMERCIAL para la Sede de LINCE",
    "funciones": [
@@ -10935,7 +11759,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ejecutivo-comercial-rubro-educativo-lince-montalvo-institute-1118469222.html"
   },
   {
-   "id": 255,
+   "id": 274,
    "puesto": "Gerente Técnico Electrónico",
    "empresa": "KOLFF PERU SAC",
    "cat": "Ingeniería",
@@ -10945,9 +11769,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 17,
+   "dias": 18,
    "vence": "2026-12-07",
-   "restan": 43,
+   "restan": 42,
    "score": 97,
    "resumen": "¡En KOLFF PERÚ buscamos a un Gerente Técnico Electrónico!",
    "funciones": [
@@ -10983,7 +11807,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/gerente-tecnico-electronico-ups-kolff-peru-sac-1118469216.html"
   },
   {
-   "id": 256,
+   "id": 275,
    "puesto": "UPN Cajamarca: Ejecutivo de Prospección Educativa",
    "empresa": "Laureate Perú",
    "cat": "Ingeniería",
@@ -10993,9 +11817,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Cajamarca",
    "fuente": "Bumeran",
-   "dias": 17,
+   "dias": 18,
    "vence": "2027-01-06",
-   "restan": 73,
+   "restan": 72,
    "score": 95,
    "resumen": "En Laureate contribuimos a la transformación del Perú a través de una educación inclusiva, accesible y de calidad que transforma vidas .",
    "funciones": [
@@ -11028,7 +11852,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/upn-cajamarca-ejecutivo-de-prospeccion-educativa-laureate-peru-1118473242.html"
   },
   {
-   "id": 257,
+   "id": 276,
    "puesto": "Practicante pre profesional",
    "empresa": "PRIME ENTERPRISES",
    "cat": "Prácticas",
@@ -11038,9 +11862,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 17,
+   "dias": 18,
    "vence": "2026-12-07",
-   "restan": 43,
+   "restan": 42,
    "score": 94,
    "resumen": "Si te gusta el trato con las personas, tienes facilidad para comunicarte y estás dispuesto(a) a asumir nuevos retos, ¡esta oportunidad es para ti!",
    "funciones": [
@@ -11074,7 +11898,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-pre-profesional-area-comercial-prime-enterprises-1118469341.html"
   },
   {
-   "id": 258,
+   "id": 277,
    "puesto": "Asistente de E-commerce",
    "empresa": "TWINOVO S.A.C.",
    "cat": "Otros",
@@ -11084,9 +11908,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 17,
+   "dias": 18,
    "vence": "2026-12-07",
-   "restan": 43,
+   "restan": 42,
    "score": 92,
    "resumen": "Importante empresa del sector de importaciones de equipos celulares y tecnología, se encuentra en búsqueda de un/a Asistente de E-commerce, con experiencia en procesamiento de pedidos en marketplaces.",
    "funciones": [
@@ -11110,7 +11934,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-e-commerce-twinovo-s.a.c.-1118469051.html"
   },
   {
-   "id": 259,
+   "id": 278,
    "puesto": "Atención al cliente",
    "empresa": "Montalvo Institute",
    "cat": "Ventas",
@@ -11120,9 +11944,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 17,
+   "dias": 18,
    "vence": "2027-01-06",
-   "restan": 73,
+   "restan": 72,
    "score": 91,
    "resumen": "En MONTALVO INSTITUTE , Institución educativa líder en el rubro de la Cosmetología y Estética, nos encontramos en la búsqueda de un ASESORES(AS) DE VENTAS para la Sede de AREQUIPA (Cerro Colorado)",
    "funciones": [
@@ -11156,7 +11980,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesoresas-de-ventas-arequipa-cerro-colorado-montalvo-institute-1118469129.html"
   },
   {
-   "id": 260,
+   "id": 279,
    "puesto": "Asistente de Contabilidad y Administración",
    "empresa": "ESCUELA IBEROAMERICA DE NEGOCIOS",
    "cat": "Contabilidad",
@@ -11166,9 +11990,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 17,
+   "dias": 18,
    "vence": "2026-11-08",
-   "restan": 14,
+   "restan": 13,
    "score": 89,
    "resumen": "RESUMEN: Nos encontramos en búsqueda de un profesional para ocupar la posición de: ASISTENTE DE CONTABILIDAD Y ADMINISTRACIÓN.",
    "funciones": [
@@ -11199,7 +12023,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/escuela-iberoamerica-de-negocios/asistente-de-contabilidad-y-administracion-surquillo/6ac71180e076276c79520db6"
   },
   {
-   "id": 261,
+   "id": 280,
    "puesto": "Ayudante de Carga y Despacho",
    "empresa": "Inversiones San Gabriel S.A.",
    "cat": "Logística",
@@ -11209,9 +12033,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 17,
+   "dias": 18,
    "vence": "2026-11-08",
-   "restan": 14,
+   "restan": 13,
    "score": 86,
    "resumen": "RESUMEN: AYUDANTE DE CARGA Y DESPACHO LURÍN | S/ 1,450 + BONO DE ALIMENTACIÓN",
    "funciones": [
@@ -11248,7 +12072,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/inversiones-san-gabriel-s-a/ayudante-de-carga-y-despacho-lurin-sueldo-1450-bono-de/6ac73203e076276c79525d6e"
   },
   {
-   "id": 262,
+   "id": 281,
    "puesto": "Operario de almacén Chorrillos",
    "empresa": "PLANET GAME S.A.C.",
    "cat": "Logística",
@@ -11258,9 +12082,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 17,
+   "dias": 18,
    "vence": "2026-11-08",
-   "restan": 14,
+   "restan": 13,
    "score": 83,
    "resumen": "RESUMEN: ¡ÚNETE AL EQUIPO DE PLANET GAME S.A.C.!",
    "funciones": [
@@ -11285,7 +12109,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/planet-game-s-a-c/operario-de-almacen-chorrillos-full-time/6ac6e323e076276c79518e9b"
   },
   {
-   "id": 263,
+   "id": 282,
    "puesto": "Practicante de Soporte Técnico",
    "empresa": "UNIVERSIDAD AUTONOMA DEL PERU S.A.C.",
    "cat": "Prácticas",
@@ -11295,9 +12119,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 17,
+   "dias": 18,
    "vence": "2026-11-08",
-   "restan": 14,
+   "restan": 13,
    "score": 81,
    "resumen": "Apoyo en el mantenimiento de equipos informáticos.",
    "funciones": [
@@ -11322,7 +12146,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/universidad-autonoma-del-peru-s-a-c/practicante-de-soporte-tecnico-puente-piedra/6ac732a5e076276c79525f9f"
   },
   {
-   "id": 264,
+   "id": 283,
    "puesto": "Analista de Operaciones B2B",
    "empresa": "Well Consulting Services",
    "cat": "Tecnología",
@@ -11332,9 +12156,9 @@ window.CERO_VAGOS = {
    "modalidad": "Remoto",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 18,
+   "dias": 19,
    "vence": "2027-01-05",
-   "restan": 72,
+   "restan": 71,
    "score": 98,
    "resumen": "Empresa especialista en tecnología preventiva de fatiga y somnolencia para el sector corporativo y minero, se encuentra en la búsqueda de un Analista de Operaciones B2B para integrarse a nuestro equipo.",
    "funciones": [
@@ -11361,7 +12185,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/analista-de-operaciones-b2b-sector-minero-well-consulting-services-1118473130.html"
   },
   {
-   "id": 265,
+   "id": 284,
    "puesto": "Jefe de Tienda",
    "empresa": "ACADEMIA AULA 20",
    "cat": "Recursos Humanos",
@@ -11371,9 +12195,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 18,
+   "dias": 19,
    "vence": "2026-11-07",
-   "restan": 13,
+   "restan": 12,
    "score": 98,
    "resumen": "Puesto: Jefe(a) de Tiendas y Operaciones",
    "funciones": [
@@ -11416,7 +12240,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/academia-aula-20/jefe-de-tienda-academia-preuniversitaria/6ac5c864e076276c794f8472"
   },
   {
-   "id": 266,
+   "id": 285,
    "puesto": "UPN San Juan de Lurigancho: Asesor(a) de ventas Educativas",
    "empresa": "Laureate",
    "cat": "Ventas",
@@ -11426,9 +12250,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 18,
+   "dias": 19,
    "vence": "2026-11-07",
-   "restan": 13,
+   "restan": 12,
    "score": 95,
    "resumen": "En UPN contribuimos a la transformación del Perú a través de una educación inclusiva, accesible y de calidad que transforma vidas.",
    "funciones": [
@@ -11461,7 +12285,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/laureate/upn-san-juan-de-lurigancho-asesor-a-de-ventas-educativas/6ac5b7fde076276c794f6964"
   },
   {
-   "id": 267,
+   "id": 286,
    "puesto": "Asistente de calidad",
    "empresa": "Centro Carnes S.R.L",
    "cat": "Ingeniería",
@@ -11471,9 +12295,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Callao",
    "fuente": "Laborum",
-   "dias": 18,
+   "dias": 19,
    "vence": "2026-11-07",
-   "restan": 13,
+   "restan": 12,
    "score": 94,
    "resumen": "RESUMEN: Somos la empresa Centro Carnes, empresa importadora, comercializadora de productos cárnicos y hamburguesas. Nos encontramos en la búsqueda de un ASISTENTE DE CALIDAD para la SEDE DE VENTANILLA.",
    "funciones": [
@@ -11506,7 +12330,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/centro-carnes-s-r-l/asistente-de-calidad/6ac604e1e076276c79500e18"
   },
   {
-   "id": 268,
+   "id": 287,
    "puesto": "Asesor de Ventas Call Center",
    "empresa": "SCALA PERÚ",
    "cat": "Ventas",
@@ -11516,9 +12340,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 18,
+   "dias": 19,
    "vence": "2026-11-07",
-   "restan": 13,
+   "restan": 12,
    "score": 89,
    "resumen": "Promover e impulsar la venta de servicios educativos ofrecidos por la Institución en Perú.",
    "funciones": [
@@ -11550,7 +12374,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/scala-peru/asesor-de-ventas-call-center-sector-educativo-centro-de-lima/6ac5a271e076276c794f252d"
   },
   {
-   "id": 269,
+   "id": 288,
    "puesto": "Operario de produccion",
    "empresa": "Centro Carnes S.R.L",
    "cat": "Ventas",
@@ -11560,9 +12384,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Callao",
    "fuente": "Laborum",
-   "dias": 18,
+   "dias": 19,
    "vence": "2026-11-07",
-   "restan": 13,
+   "restan": 12,
    "score": 89,
    "resumen": "Ejecutar la operatividad de la producción.",
    "funciones": [
@@ -11597,7 +12421,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/centro-carnes-s-r-l/operario-de-produccion-sede-ventanilla/6ac62a8de076276c7950a580"
   },
   {
-   "id": 270,
+   "id": 289,
    "puesto": "Practicante Profesional Contable",
    "empresa": "Confidencial",
    "cat": "Prácticas",
@@ -11607,9 +12431,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 18,
+   "dias": 19,
    "vence": "2027-01-05",
-   "restan": 72,
+   "restan": 71,
    "score": 87,
    "resumen": "Por encargo de nuestro cliente, reconocida empresa RETAIL líder en el mercado, nos encontramos en la búsqueda de: PRACTICANTE PROFESIONAL CONTABLE.",
    "funciones": [
@@ -11641,7 +12465,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-profesional-contable-miraflores-1118471296.html"
   },
   {
-   "id": 271,
+   "id": 290,
    "puesto": "Jefe de Finanzas",
    "empresa": "SOPORTE TEXTIL",
    "cat": "Contabilidad",
@@ -11651,9 +12475,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-11-06",
-   "restan": 12,
+   "restan": 11,
    "score": 98,
    "resumen": "Diseñar y ejecutar la estrategia financiera alineada a los objetivos del negocio.",
    "funciones": [
@@ -11691,7 +12515,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/soporte-textil/jefe-de-finanzas/6ac499efe076276c794e5270"
   },
   {
-   "id": 272,
+   "id": 291,
    "puesto": "Estudia y trabaja Asesor ventas call center Part Time S",
    "empresa": "DAC Nemo Contact Center",
    "cat": "Ventas",
@@ -11701,9 +12525,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 98,
    "resumen": "¡Se parte del quipo comercial de Claro como Asesor(a) de Call Center!",
    "funciones": [
@@ -11737,7 +12561,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/estudia-y-trabaja-asesor-ventas-call-center-part-time-s-.615-y-full-time-s-1400-dac-nemo-contact-center-1118466140.html"
   },
   {
-   "id": 273,
+   "id": 292,
    "puesto": "Técnico Ayudante",
    "empresa": "Grupo Aenza",
    "cat": "Logística",
@@ -11747,9 +12571,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-11-06",
-   "restan": 12,
+   "restan": 11,
    "score": 97,
    "resumen": "RESUMEN: ¡Únete a UNNA Transporte Línea 1 del Metro de Lima!",
    "funciones": [
@@ -11785,7 +12609,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/grupo-aenza/tecnico-ayudante-servicios-generales-linea-1-del-metro/6ac43df4e076276c794d51ae"
   },
   {
-   "id": 274,
+   "id": 293,
    "puesto": "Asistente de Mantenimiento",
    "empresa": "Soldimix Perú",
    "cat": "Ingeniería",
@@ -11795,9 +12619,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 97,
    "resumen": "Somos SOLDIMIX una empresa Industrial líder de pegamentos en Perú que se encuentra en la búsqueda de un ASISTENTE DE MANTENIMIENTO.",
    "funciones": [
@@ -11832,7 +12656,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-mantenimiento-soldimix-peru-1118466033.html"
   },
   {
-   "id": 275,
+   "id": 294,
    "puesto": "Practicante Comercial",
    "empresa": "IRONMAXX PERÚ",
    "cat": "Prácticas",
@@ -11842,9 +12666,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 97,
    "resumen": "Apoyar en el estudio, análisis y segmentación de mercado.",
    "funciones": [
@@ -11874,7 +12698,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-comercial-ironmaxx-peru-1118466522.html"
   },
   {
-   "id": 276,
+   "id": 295,
    "puesto": "Técnico Electricista",
    "empresa": "ENERTRY S.A.C.",
    "cat": "Ingeniería",
@@ -11884,9 +12708,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 96,
    "resumen": "Ejecutar trabajos de canalización eléctrica (tuberías, bandejas, ductos y cajas de paso) para instalaciones de cargadores eléctricos.",
    "funciones": [
@@ -11912,7 +12736,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnico-electricista-enertry-s.a.c.-1118466499.html"
   },
   {
-   "id": 277,
+   "id": 296,
    "puesto": "Mozo",
    "empresa": "VANADIO SAC",
    "cat": "Gastronomía",
@@ -11922,9 +12746,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 95,
    "resumen": "Somos una empresa dedicada al rubro del entretenimiento, nos encontramos en la búsqueda de 0 2 mozos/azafatas para una sala de juegos tragamonedas, ubicada en el distrito de La Victoria - Gamarra.",
    "funciones": [
@@ -11952,7 +12776,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/mozo-azafata-para-tragamonedas-vanadio-sac-1118466011.html"
   },
   {
-   "id": 278,
+   "id": 297,
    "puesto": "Asistente de Recursos Humanos",
    "empresa": "SINO SUPPLY PERÚ",
    "cat": "Recursos Humanos",
@@ -11962,9 +12786,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 95,
    "resumen": "ASISTENTA DE RECURSOS HUMANOS ¡Forma parte de nuestro equipo y desarrolla tu talento en Gestión Humana!",
    "funciones": [
@@ -11993,7 +12817,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-recursos-humanos-sino-supply-peru-1118466090.html"
   },
   {
-   "id": 279,
+   "id": 298,
    "puesto": "Asesor(a) Comercial",
    "empresa": "ASCENSORES & SERVICIOS PERU S.A.C.",
    "cat": "Ventas",
@@ -12003,9 +12827,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2027-01-04",
-   "restan": 71,
+   "restan": 70,
    "score": 95,
    "resumen": "¡Estamos buscando Consultor(a) Comercial Región Sur!",
    "funciones": [
@@ -12034,7 +12858,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesora-comercial-ascensores-servicios-peru-s.a.c.-1118466388.html"
   },
   {
-   "id": 280,
+   "id": 299,
    "puesto": "Auxiliar de almacén",
    "empresa": "RESTOINVESTMENTS S.A.C.",
    "cat": "Logística",
@@ -12044,9 +12868,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 95,
    "resumen": "En Grupo JV (Restaurantes Amore y Cielo Rosso) nos encontramos en búsqueda del mejor talento para cubrir la posición de un Auxiliar de almacén .",
    "funciones": [
@@ -12073,7 +12897,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-de-almacen-restaurante-restoinvestments-s.a.c.-1118466625.html"
   },
   {
-   "id": 281,
+   "id": 300,
    "puesto": "Asistente de Mantenimiento General con Licencia de Conducir",
    "empresa": "CORPORACION EXPO S.A.C.",
    "cat": "Ingeniería",
@@ -12083,9 +12907,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 94,
    "resumen": "Importante empresa en su rubro se encuentra en la búsqueda de un Asistente de mantenimiento en general, con experiencia en manejo de vehículo particular , para incorporarse a nuestro equipo de trabajo.",
    "funciones": [
@@ -12115,7 +12939,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-mantenimiento-general-con-licencia-de-conducir-corporacion-expo-s.a.c.-1118467140.html"
   },
   {
-   "id": 282,
+   "id": 301,
    "puesto": "Practicante Pre para el Área de Ventas",
    "empresa": "IRONMAXX PERÚ",
    "cat": "Prácticas",
@@ -12125,9 +12949,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 94,
    "resumen": "Identificar y filtrar a prospectos potenciales.",
    "funciones": [
@@ -12153,7 +12977,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-pre-para-el-area-de-ventas-ironmaxx-peru-1118466566.html"
   },
   {
-   "id": 283,
+   "id": 302,
    "puesto": "Asistente Administrativo",
    "empresa": "Afe Service Sac",
    "cat": "Administración",
@@ -12163,9 +12987,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-11-06",
-   "restan": 12,
+   "restan": 11,
    "score": 94,
    "resumen": "Actualmente nos encontramos en la búsqueda del mejor talento para ocupar el puesto de Asistente Administrativo SURQUILLO (Contar con título universitario o técnico)",
    "funciones": [
@@ -12199,7 +13023,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/afe-service-sac/asistente-administrativo-disponibilidad-inmediata-surquillo/6ac43c16e076276c794d4c30"
   },
   {
-   "id": 284,
+   "id": 303,
    "puesto": "Diseñador gráfico",
    "empresa": "IMPORTANTE EMPRESA DEL SECTOR EDUCATIVO",
    "cat": "Marketing",
@@ -12209,9 +13033,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 93,
    "resumen": "¿Te gustaría formar parte de uno de los grupos de empresas más grandes del Perú?",
    "funciones": [
@@ -12241,7 +13065,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/disenador-grafico-importante-empresa-del-sector-educativo-1118466502.html"
   },
   {
-   "id": 285,
+   "id": 304,
    "puesto": "Cocinero Junior universidad",
    "empresa": "USMP",
    "cat": "Gastronomía",
@@ -12251,9 +13075,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-11-06",
-   "restan": 12,
+   "restan": 11,
    "score": 92,
    "resumen": "RESUMEN: Lugar de trabajo: Surquillo, Lima",
    "funciones": [
@@ -12282,7 +13106,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/usmp/cocinero-junior-universidad/6ac44f13e076276c794d87a8"
   },
   {
-   "id": 286,
+   "id": 305,
    "puesto": "Auxiliar Contable y Practicante de Marketing",
    "empresa": "ANGIE  BUSTAMANTE",
    "cat": "Prácticas",
@@ -12292,9 +13116,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 92,
    "resumen": "Estamos en la búsqueda de personas responsables, organizadas y proactivas para integrarse a nuestro equipo en las siguientes posiciones:",
    "funciones": [
@@ -12332,7 +13156,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-contable-y-practicante-de-marketing-angie-bustamante-1118466683.html"
   },
   {
-   "id": 287,
+   "id": 306,
    "puesto": "Ejecutivo Comercial B2B",
    "empresa": "Merce Consulting",
    "cat": "Ventas",
@@ -12342,9 +13166,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 92,
    "resumen": "En Magnavoz , empresa especializada en soluciones tecnológicas y de comunicación para empresas, buscamos incorporar un Ejecutivo Comercial B 2B con experiencia en prospección, captación y desarrollo de nuevos clientes.",
    "funciones": [
@@ -12377,7 +13201,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ejecutivo-comercial-b2b--tecnologia-|-sueldo-comisiones-merce-consulting-1118465828.html"
   },
   {
-   "id": 288,
+   "id": 307,
    "puesto": "Promotora Casino Online Sede Independencia",
    "empresa": "GLADCON",
    "cat": "Ventas",
@@ -12387,9 +13211,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-11-06",
-   "restan": 12,
+   "restan": 11,
    "score": 89,
    "resumen": "Abordar y contactar a los clientes que asisten a las salas físicas para identificar perfiles con potencial interés en el casino online y generar nuevos registros en la página web.",
    "funciones": [
@@ -12418,7 +13242,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/gladcon/promotora-casino-online-sede-independencia/6ac485e9e076276c794e0b3e"
   },
   {
-   "id": 289,
+   "id": 308,
    "puesto": "Vigilante Sede Comas",
    "empresa": "ACADEMIA VONEX",
    "cat": "Recursos Humanos",
@@ -12428,9 +13252,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-11-06",
-   "restan": 12,
+   "restan": 11,
    "score": 89,
    "resumen": "RESUMEN: En Academia Vonex nos encontramos en la búsqueda de un Vigilante / Portero, responsable y comprometido para garantizar la seguridad y el orden en nuestra sede.",
    "funciones": [
@@ -12460,7 +13284,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/academia-vonex/vigilante-sede-comas-turno-tarde-planilla-completa/6ac44b4de076276c794d7afa"
   },
   {
-   "id": 290,
+   "id": 309,
    "puesto": "Recepcionista",
    "empresa": "I8 TRAINING CLUB",
    "cat": "Administración",
@@ -12470,9 +13294,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 89,
    "resumen": "Brindar una excelente atención a socios y visitantes, garantizando una experiencia cálida, ordenada y profesional desde su ingreso al club, contribuyendo al adecuado funcionamiento de las operaciones diarias.",
    "funciones": [
@@ -12509,7 +13333,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/recepcionista-atencion-al-cliente-i8-training-club-1118465789.html"
   },
   {
-   "id": 291,
+   "id": 310,
    "puesto": "Abogado",
    "empresa": "Garay & Attorneys - Abogados corporativos",
    "cat": "Legal",
@@ -12519,9 +13343,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 89,
    "resumen": "Buscamos un profesional del derecho con experiencia para brindar asesoramiento legal externo. El candidato ideal poseerá una sólida formación académica y práctica, con capacidad para gestionar casos de manera autónoma y estratégica.",
    "funciones": [
@@ -12547,7 +13371,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/abogado-a-externo-a-garay-attorneys-abogados-corporativos-1118465956.html"
   },
   {
-   "id": 292,
+   "id": 311,
    "puesto": "Asistente Comercial",
    "empresa": "CORPORACION ATENEA PERU S.A.C.",
    "cat": "Ventas",
@@ -12557,9 +13381,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 89,
    "resumen": "No es indispensable contar con experiencia previa en ventas. Buscamos potencial comercial y brindaremos capacitación en el proyecto y acompañamiento durante el proceso de aprendizaje.",
    "funciones": [
@@ -12595,7 +13419,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-comercial-corporacion-atenea-peru-s.a.c.-1118466256.html"
   },
   {
-   "id": 293,
+   "id": 312,
    "puesto": "Asesor de Ventas Call Center Remoto",
    "empresa": "Nemo Claro Center CC",
    "cat": "Ventas",
@@ -12605,9 +13429,9 @@ window.CERO_VAGOS = {
    "modalidad": "Remoto",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 89,
    "resumen": "Realizar ventas y atención a clientes a través de llamadas telefónicas.",
    "funciones": [
@@ -12638,7 +13462,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-ventas-call-center-remoto-nemo-claro-center-cc-1118466334.html"
   },
   {
-   "id": 294,
+   "id": 313,
    "puesto": "Atención al cliente",
    "empresa": "ENERTRY S.A.C.",
    "cat": "Ventas",
@@ -12648,9 +13472,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 89,
    "resumen": "Atender consultas de clientes a través de llamadas telefónicas, WhatsApp, redes sociales y otros canales digitales.",
    "funciones": [
@@ -12678,7 +13502,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesora-comercial.-enertry-s.a.c.-1118466545.html"
   },
   {
-   "id": 295,
+   "id": 314,
    "puesto": "Cocinero",
    "empresa": "Restcenter",
    "cat": "Gastronomía",
@@ -12688,9 +13512,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2027-01-04",
-   "restan": 71,
+   "restan": 70,
    "score": 87,
    "resumen": "Buscamos incorporar a nuestro equipo un apasionado por la cocina marina. Si tienes sazón, rapidez y buscas estabilidad en un restaurante de prestigio, ¡esta es tu oportunidad!",
    "funciones": [
@@ -12715,7 +13539,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/cocinero-restcenter-1118466509.html"
   },
   {
-   "id": 296,
+   "id": 315,
    "puesto": "Asesor de Ventas",
    "empresa": "CUY ARTS",
    "cat": "Ventas",
@@ -12725,9 +13549,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 19,
+   "dias": 20,
    "vence": "2026-12-05",
-   "restan": 41,
+   "restan": 40,
    "score": 86,
    "resumen": "Asesorar a los clientes sobre nuestra variedad de juegos de mesa.",
    "funciones": [
@@ -12754,7 +13578,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-ventas-juegos-de-mesa-cuy-arts-1118465689.html"
   },
   {
-   "id": 297,
+   "id": 316,
    "puesto": "Auxiliar de Servicios generales",
    "empresa": "San Martin Contratistas Generales S.A",
    "cat": "Construcción",
@@ -12764,9 +13588,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Laborum",
-   "dias": 20,
+   "dias": 21,
    "vence": "2026-11-05",
-   "restan": 11,
+   "restan": 10,
    "score": 95,
    "resumen": "Asegurar el cumplimiento de las políticas, procedimientos, estándares, objetivos y programa de seguridad, salud y ambiente en el campamento de la Obra/Proyecto.",
    "funciones": [
@@ -12796,7 +13620,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/san-martin-contratistas-generales-s-a/auxiliar-de-servicios-generales-monitor-de-seguridad-para/6ac36f1ae076276c794cd03b"
   },
   {
-   "id": 298,
+   "id": 317,
    "puesto": "Practicante Profesional de Ingeniería Eléctrica",
    "empresa": "CICSA PERU S.A.C.",
    "cat": "Prácticas",
@@ -12806,9 +13630,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Laborum",
-   "dias": 20,
+   "dias": 21,
    "vence": "2026-11-05",
-   "restan": 11,
+   "restan": 10,
    "score": 95,
    "resumen": "RESUMEN: Somos una empresa trasnacional del rubro telecomunicaciones y nos encontramos en la búsqueda del mejor talento para la vacante de PRACTICANTE PROFESIONAL de la carrera de Industrial, Sistemas, Informática, Electrónica.",
    "funciones": [
@@ -12834,7 +13658,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/cicsa-peru-s-a-c/practicante-profesional-de-ingenieria-electrica-arequipa/6ac370aae076276c794cd6e5"
   },
   {
-   "id": 299,
+   "id": 318,
    "puesto": "Chofer de Vehículo Liviano(Camioneta,Miniban,MiniBus) Proyecto en Arequipa",
    "empresa": "San Martin Contratistas Generales S.A",
    "cat": "Logística",
@@ -12844,9 +13668,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Laborum",
-   "dias": 20,
+   "dias": 21,
    "vence": "2026-11-05",
-   "restan": 11,
+   "restan": 10,
    "score": 94,
    "resumen": "Realizar la inspección (check list) del vehículo antes de iniciar la jornada.",
    "funciones": [
@@ -12875,7 +13699,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/san-martin-contratistas-generales-s-a/chofer-de-vehiculo-liviano-camioneta-miniban-minibus/6ac3735de076276c794ce291"
   },
   {
-   "id": 300,
+   "id": 319,
    "puesto": "Asesor(a) de ventas",
    "empresa": "Euroheaters Perú",
    "cat": "Ventas",
@@ -12885,9 +13709,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Laborum",
-   "dias": 20,
+   "dias": 21,
    "vence": "2026-11-05",
-   "restan": 11,
+   "restan": 10,
    "score": 89,
    "resumen": "RESUMEN: Buscamos una persona responsable, comunicativa y con iniciativa. Se aceptan estudiantes y candidatos con o sin experiencia comercial, siempre que tengan facilidad para tratar con clientes y disposición para realizar visitas.",
    "funciones": [
@@ -12917,7 +13741,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/euroheaters-peru/asesor-a-de-ventas-atencion-al-cliente-contratacion/6ac35efce076276c794c8bf6"
   },
   {
-   "id": 301,
+   "id": 320,
    "puesto": "Back Office Bancario Financiamiento de Ventas",
    "empresa": "NTT DATA",
    "cat": "Ventas",
@@ -12927,9 +13751,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 21,
+   "dias": 22,
    "vence": "2026-11-04",
-   "restan": 10,
+   "restan": 9,
    "score": 95,
    "resumen": "RESUMEN: En NTT DATA nos encontramos en búsqueda de talentos para incorporarse a nuestro equipo de Back Office Bancario Financiamiento de Ventas.",
    "funciones": [
@@ -12960,7 +13784,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/ntt-data/back-office-bancario-financiamiento-de-ventas-hibrido/6ac1b051e076276c794b9513"
   },
   {
-   "id": 302,
+   "id": 321,
    "puesto": "Enfermero(a) Multifuncional",
    "empresa": "ESCUELA IBEROAMERICA DE NEGOCIOS",
    "cat": "Salud",
@@ -12970,9 +13794,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 21,
+   "dias": 22,
    "vence": "2026-11-04",
-   "restan": 10,
+   "restan": 9,
    "score": 95,
    "resumen": "RESUMEN: Nos encontramos en búsqueda de un profesional para ocupar la posición de ENFERMERO(A) MULTIFUNCIONAL.",
    "funciones": [
@@ -13007,7 +13831,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/escuela-iberoamerica-de-negocios/enfermero-a-multifuncional-salud-ocupacional/6ac1a2aae076276c794b7558"
   },
   {
-   "id": 303,
+   "id": 322,
    "puesto": "Operario de limpieza",
    "empresa": "DeliBakery",
    "cat": "Otros",
@@ -13017,9 +13841,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 21,
+   "dias": 22,
    "vence": "2027-01-02",
-   "restan": 69,
+   "restan": 68,
    "score": 94,
    "resumen": "Nos encontramos en la búsqueda de un(a) Operario(a) de Limpieza para formar parte de nuestro equipo.",
    "funciones": [
@@ -13049,7 +13873,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-limpieza-delibakery-1118467302.html"
   },
   {
-   "id": 304,
+   "id": 323,
    "puesto": "Cajera de cierre Jornada Reducida 37 horas x semana",
    "empresa": "PACHAMAMA Traditional Banquets SAC",
    "cat": "Administración",
@@ -13059,9 +13883,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 21,
+   "dias": 22,
    "vence": "2026-11-04",
-   "restan": 10,
+   "restan": 9,
    "score": 94,
    "resumen": "RESUMEN: CAJERA DE CIERRE JORNADA REDUCIDA",
    "funciones": [
@@ -13105,7 +13929,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/pachamama-traditional-banquets-sac/cajera-de-cierre-jornada-reducida-37-horas-x-semana/6ac19eabe076276c794b68fb"
   },
   {
-   "id": 305,
+   "id": 324,
    "puesto": "Supervisor de Operaciones de Transporte",
    "empresa": "TALENT PERU MAS",
    "cat": "Logística",
@@ -13115,9 +13939,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 21,
+   "dias": 22,
    "vence": "2026-12-03",
-   "restan": 39,
+   "restan": 38,
    "score": 92,
    "resumen": "Supervisar y coordinar al personal operativo en ruta y terminal.",
    "funciones": [
@@ -13141,7 +13965,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/supervisor-de-operaciones-de-transporte-talent-peru-mas-1118467296.html"
   },
   {
-   "id": 306,
+   "id": 325,
    "puesto": "Técnica",
    "empresa": "ESCUELA IBEROAMERICA DE NEGOCIOS",
    "cat": "Salud",
@@ -13151,9 +13975,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 21,
+   "dias": 22,
    "vence": "2026-11-04",
-   "restan": 10,
+   "restan": 9,
    "score": 92,
    "resumen": "RESUMEN: Nos encontramos en búsqueda de un profesional para ocupar la posición de PARAMÉDICO.",
    "funciones": [
@@ -13186,7 +14010,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/escuela-iberoamerica-de-negocios/paramedico-a-manejo-de-ambulancia/6ac1a0afe076276c794b6fa0"
   },
   {
-   "id": 307,
+   "id": 326,
    "puesto": "Call Center",
    "empresa": "SCALA PERÚ",
    "cat": "Recursos Humanos",
@@ -13196,9 +14020,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 21,
+   "dias": 22,
    "vence": "2026-11-04",
-   "restan": 10,
+   "restan": 9,
    "score": 91,
    "resumen": "RESUMEN: ¡ÚNETE A NUESTRO EQUIPO COMERCIAL!",
    "funciones": [
@@ -13231,7 +14055,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/scala-peru/asesores-educativos-1-300-comisiones-planilla-centro-de-lima/6ac1c1d0e076276c794bb128"
   },
   {
-   "id": 308,
+   "id": 327,
    "puesto": "Asesor de Ventas",
    "empresa": "TALENT PERU MAS",
    "cat": "Ventas",
@@ -13241,9 +14065,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 21,
+   "dias": 22,
    "vence": "2026-12-03",
-   "restan": 39,
+   "restan": 38,
    "score": 90,
    "resumen": "Realizar contacto comercial mediante llamadas a potenciales clientes.",
    "funciones": [
@@ -13268,7 +14092,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-ventas-call-center-outbound-talent-peru-mas-1118467297.html"
   },
   {
-   "id": 309,
+   "id": 328,
    "puesto": "Asistente de Marketing y Comunicación",
    "empresa": "BOLSA DE EMPLEOS PERÚ MÁS",
    "cat": "Marketing",
@@ -13278,9 +14102,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 21,
+   "dias": 22,
    "vence": "2027-01-02",
-   "restan": 69,
+   "restan": 68,
    "score": 90,
    "resumen": "Crear contenido de valor para diversas plataformas digitales.",
    "funciones": [
@@ -13304,7 +14128,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-marketing-y-comunicacion-bolsa-de-empleos-peru-mas-1118467458.html"
   },
   {
-   "id": 310,
+   "id": 329,
    "puesto": "Asesor Educativo comercial",
    "empresa": "Recreativos Fargo S.A.C",
    "cat": "Ventas",
@@ -13314,9 +14138,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 21,
+   "dias": 22,
    "vence": "2026-11-04",
-   "restan": 10,
+   "restan": 9,
    "score": 89,
    "resumen": "RESUMEN: Nos encontramos en búsqueda de Ejecutivos(as) de Ventas para comercializar carreras de Pregrado y brindar asesoría a futuros estudiantes.",
    "funciones": [
@@ -13343,7 +14167,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/recreativos-fargo-s-a-c/asesor-educativo-comercial-pregrado-gana-mas-de-s-1900/6ac1abfae076276c794b8f15"
   },
   {
-   "id": 311,
+   "id": 330,
    "puesto": "Asistente De Gestión Documentaria",
    "empresa": "IBC INSTITUTE",
    "cat": "Tecnología",
@@ -13353,9 +14177,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 21,
+   "dias": 22,
    "vence": "2026-11-04",
-   "restan": 10,
+   "restan": 9,
    "score": 89,
    "resumen": "RESUMEN: ASISTENTE DE GESTIÓN DOCUMENTARIA",
    "funciones": [
@@ -13386,7 +14210,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/ibc-institute/asistente-de-gestion-documentaria/6ac1a100e076276c794b7071"
   },
   {
-   "id": 312,
+   "id": 331,
    "puesto": "Atención al Cliente",
    "empresa": "PIEERS",
    "cat": "Ventas",
@@ -13396,9 +14220,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 21,
+   "dias": 22,
    "vence": "2026-11-04",
-   "restan": 10,
+   "restan": 9,
    "score": 87,
    "resumen": "RESUMEN: ATENCIÓN AL CLIENTE - MALL SANTA ANITA",
    "funciones": [
@@ -13423,7 +14247,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/pieers/2-vendedoras-part-time-full-time-sta-anita-mall-aventura/6ac19a13e076276c794b5adc"
   },
   {
-   "id": 313,
+   "id": 332,
    "puesto": "Promotor (a), Asesor (a), Ejecutivo (a) de ventas y atención al",
    "empresa": "Euroheaters Perú",
    "cat": "Ventas",
@@ -13433,9 +14257,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 21,
+   "dias": 22,
    "vence": "2026-11-04",
-   "restan": 10,
+   "restan": 9,
    "score": 86,
    "resumen": "RESUMEN: Buscamos una persona amable, comunicativa, de buena presencia y con facilidad para relacionarse con clientes, interesada en desarrollarse en el área comercial.",
    "funciones": [
@@ -13464,7 +14288,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/euroheaters-peru/promotor-a-asesor-a-ejecutivo-a-de-ventas-y-atencion-al/6ac1a3b3e076276c794b789d"
   },
   {
-   "id": 314,
+   "id": 333,
    "puesto": "Auxiliar de Almacén",
    "empresa": "IMPLEMENTOS PERÚ SAC",
    "cat": "Logística",
@@ -13474,9 +14298,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 22,
+   "dias": 23,
    "vence": "2027-01-01",
-   "restan": 68,
+   "restan": 67,
    "score": 97,
    "resumen": "En Implementos Perú SAC estamos en la búsqueda del mejor talento para ocupar la posición de Auxiliar de Almacén para nuestra Tienda ubicada en Lurín, que cumpla con el siguiente perfil:",
    "funciones": [
@@ -13508,7 +14332,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-de-almacen-montacarguista-lurin-implementos-peru-sac-1118467079.html"
   },
   {
-   "id": 315,
+   "id": 334,
    "puesto": "Practicante profesional de Ingeniería Electrica",
    "empresa": "ADECCO PERU S.A.",
    "cat": "Prácticas",
@@ -13518,9 +14342,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 22,
+   "dias": 23,
    "vence": "2027-01-01",
-   "restan": 68,
+   "restan": 67,
    "score": 97,
    "resumen": "En Adecco Perú, nos encontramos en búsqueda del mejor profesional para cubrir la siguiente vacante.",
    "funciones": [
@@ -13553,7 +14377,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-profesional-de-ingenieria-electrica-adecco-peru-s.a.-1118467179.html"
   },
   {
-   "id": 316,
+   "id": 335,
    "puesto": "Operador de Puente Grúa",
    "empresa": "Eurofirms Group",
    "cat": "Ingeniería",
@@ -13563,9 +14387,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 22,
+   "dias": 23,
    "vence": "2027-01-01",
-   "restan": 68,
+   "restan": 67,
    "score": 97,
    "resumen": "En Eurofirms Group, creemos en el liderazgo por valores y el crecimiento continuo, poniendo a las personas y su desarrollo profesional primero, potenciando un ambiente de trabajo positivo y colaborativo.",
    "funciones": [
@@ -13596,7 +14420,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operador-de-puente-grua-gana-mas-de-2500-solesmovilidadalimentacion-cubiertos-centro-de-lima-eurofirms-group-1118467263.html"
   },
   {
-   "id": 317,
+   "id": 336,
    "puesto": "ASISTENTE de Almacén MONTACARGUISTA",
    "empresa": "Confidencial",
    "cat": "Logística",
@@ -13606,9 +14430,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 22,
+   "dias": 23,
    "vence": "2027-01-01",
-   "restan": 68,
+   "restan": 67,
    "score": 95,
    "resumen": "Estamos en la búsqueda del mejor talento para ocupar la posición de AUXILIAR DE ALMACÉN para nuestra tienda ubicada en Comas que cumpla con el siguiente perfil:",
    "funciones": [
@@ -13642,7 +14466,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-almacen-montacarguista-comas-1118467077.html"
   },
   {
-   "id": 318,
+   "id": 337,
    "puesto": "Asistente de Bienestar Social",
    "empresa": "CAJA CUSCO",
    "cat": "Administración",
@@ -13652,9 +14476,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Cusco",
    "fuente": "Bumeran",
-   "dias": 22,
+   "dias": 23,
    "vence": "2027-01-31",
-   "restan": 98,
+   "restan": 97,
    "score": 95,
    "resumen": "¡Únete a la familia de Caja Cusco como nuestro(a) próximo(a) Asistente de Bienestar Social",
    "funciones": [
@@ -13691,7 +14515,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-bienestar-social-puno-caja-cusco-1118467124.html"
   },
   {
-   "id": 319,
+   "id": 338,
    "puesto": "Contador corporativo",
    "empresa": "Refamij SAC",
    "cat": "Contabilidad",
@@ -13701,9 +14525,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 22,
+   "dias": 23,
    "vence": "2026-11-03",
-   "restan": 9,
+   "restan": 8,
    "score": 95,
    "resumen": "REPRESENTACIONES Y FABRICACIONES M&J S.A.C.",
    "funciones": [
@@ -13744,7 +14568,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/refamij-sac/contador-corporativo/6ac083a6e076276c794a9533"
   },
   {
-   "id": 320,
+   "id": 339,
    "puesto": "Operario de Almacén",
    "empresa": "Grupo BASA-FACUSA-EISAC.",
    "cat": "Logística",
@@ -13754,9 +14578,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 22,
+   "dias": 23,
    "vence": "2026-11-03",
-   "restan": 9,
+   "restan": 8,
    "score": 94,
    "resumen": "Verificar que la producción ingrese a los almacenes de Distribución en los masters correctos empacado y en el pallet correcto y bien ubicado.",
    "funciones": [
@@ -13785,7 +14609,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/grupo-basa-facusa-eisac/operario-de-almacen-despacho/6ac0971ee076276c794acf13"
   },
   {
-   "id": 321,
+   "id": 340,
    "puesto": "Técnico Enfermero",
    "empresa": "Believing Talents",
    "cat": "Salud",
@@ -13795,9 +14619,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 22,
+   "dias": 23,
    "vence": "2026-12-02",
-   "restan": 38,
+   "restan": 37,
    "score": 89,
    "resumen": "ENVIAR CV: dana﹫believingtalents.com (UNICO MEDIO DE RECEPCION)",
    "funciones": [
@@ -13830,7 +14654,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnico-enfermero-believing-talents-1118467062.html"
   },
   {
-   "id": 322,
+   "id": 341,
    "puesto": "Trabajo de Técnico Motorizado",
    "empresa": "cyl",
    "cat": "Recursos Humanos",
@@ -13840,9 +14664,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 22,
+   "dias": 23,
    "vence": "2026-12-02",
-   "restan": 38,
+   "restan": 37,
    "score": 89,
    "resumen": "Los postulantes deberán cumplir con el siguiente perfil:",
    "funciones": [
@@ -13869,7 +14693,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/trabajo-de-tecnico-motorizado-planilla-cyl-1118467068.html"
   },
   {
-   "id": 323,
+   "id": 342,
    "puesto": "Practicante Profesional de Reclutamiento y Selección",
    "empresa": "CAJA CUSCO",
    "cat": "Prácticas",
@@ -13879,9 +14703,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 22,
+   "dias": 23,
    "vence": "2027-01-31",
-   "restan": 98,
+   "restan": 97,
    "score": 89,
    "resumen": "Caja Cusco, entidad financiera líder en la región sur del Perú, especializada en microfinanzas, ahorros y servicios financieros. Con más de 4,500 colaboradores comprometidos que lo hacen posible.",
    "funciones": [
@@ -13908,7 +14732,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-profesional-de-reclutamiento-y-seleccion-arequipa-caja-cusco-1118467110.html"
   },
   {
-   "id": 324,
+   "id": 343,
    "puesto": "Técnico",
    "empresa": "Imer Soportes Sac",
    "cat": "Ingeniería",
@@ -13918,9 +14742,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 22,
+   "dias": 23,
    "vence": "2026-11-03",
-   "restan": 9,
+   "restan": 8,
    "score": 89,
    "resumen": "RESUMEN: INSPECTOR DE PRODUCCIÓN Y CALIDAD PLANTA INDUSTRIAL | ATE",
    "funciones": [
@@ -13959,7 +14783,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/imer-soportes-sac/inspector-de-produccion-y-calidad-metalmecanica/6ac09621e076276c794acc19"
   },
   {
-   "id": 325,
+   "id": 344,
    "puesto": "Asesor",
    "empresa": "ERIKA",
    "cat": "Ventas",
@@ -13969,9 +14793,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 22,
+   "dias": 23,
    "vence": "2027-01-01",
-   "restan": 68,
+   "restan": 67,
    "score": 86,
    "resumen": "ASESOR COMERCIAL DE SEGUROS RED SCTR - AREQUIPA",
    "funciones": [
@@ -13997,7 +14821,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/agente-de-seguros-erika-1118467150.html"
   },
   {
-   "id": 326,
+   "id": 345,
    "puesto": "Operario de Producción",
    "empresa": "Imer Soportes Sac",
    "cat": "Ingeniería",
@@ -14007,9 +14831,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 22,
+   "dias": 23,
    "vence": "2026-11-03",
-   "restan": 9,
+   "restan": 8,
    "score": 86,
    "resumen": "IMER SOPORTES S.A.C., empresa industrial con más de 40 años de experiencia, busca incorporar un Operario de Producción para su planta en Ate.",
    "funciones": [
@@ -14040,7 +14864,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/imer-soportes-sac/operario-de-produccion/6ac0a514e076276c794af454"
   },
   {
-   "id": 327,
+   "id": 346,
    "puesto": "Analista de Inventarios",
    "empresa": "ZAMINE PERU",
    "cat": "Logística",
@@ -14050,9 +14874,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 23,
+   "dias": 24,
    "vence": "2026-12-31",
-   "restan": 67,
+   "restan": 66,
    "score": 100,
    "resumen": "Somos ZAMINE PERU, distribuidor oficial de Equipos para Gran Minería. Estamos en la búsqueda de 01 Analista de Inventarios.",
    "funciones": [
@@ -14092,7 +14916,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/analista-de-inventarios-lurin-zamine-peru-1118466848.html"
   },
   {
-   "id": 328,
+   "id": 347,
    "puesto": "Cocinero Cevichero– Fríos y Calientes",
    "empresa": "HVA INVERSIONES",
    "cat": "Gastronomía",
@@ -14102,9 +14926,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 23,
+   "dias": 24,
    "vence": "2026-11-02",
-   "restan": 8,
+   "restan": 7,
    "score": 97,
    "resumen": "Preparar mise en place para platos de la carta.",
    "funciones": [
@@ -14141,7 +14965,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/hva-inversiones/cocinero-cevichero-frios-y-calientes-centro-de-lima-plaza-de/6abf034ee076276c79487958"
   },
   {
-   "id": 329,
+   "id": 348,
    "puesto": "Practicante Pre de Reclutamiento y Selección",
    "empresa": "OPTICAL NETWORKS S.A.C.",
    "cat": "Prácticas",
@@ -14151,9 +14975,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 23,
+   "dias": 24,
    "vence": "2026-12-31",
-   "restan": 67,
+   "restan": 66,
    "score": 95,
    "resumen": "Importante empresa en el rubro de Telecomunicaciones, se encuentra en búsqueda de Técnico de telecomunicaciones de Planta Externa.",
    "funciones": [
@@ -14193,7 +15017,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-pre-de-reclutamiento-y-seleccion-optical-networks-s.a.c.-1118466915.html"
   },
   {
-   "id": 330,
+   "id": 349,
    "puesto": "Coordinador de Ventas telefónicas",
    "empresa": "BSG Institute",
    "cat": "Ventas",
@@ -14203,9 +15027,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 23,
+   "dias": 24,
    "vence": "2026-11-02",
-   "restan": 8,
+   "restan": 7,
    "score": 95,
    "resumen": "Asegurar que tu equipo cumpla sus metas comerciales y responder directamente por sus resultados.",
    "funciones": [
@@ -14236,7 +15060,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/bsg-institute/coordinador-de-ventas-telefonicas-educacion-ejecutiva-lima/6abf2e16e076276c7949041f"
   },
   {
-   "id": 331,
+   "id": 350,
    "puesto": "Cajera para Pollería",
    "empresa": "HVA INVERSIONES",
    "cat": "Administración",
@@ -14246,9 +15070,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 23,
+   "dias": 24,
    "vence": "2026-11-02",
-   "restan": 8,
+   "restan": 7,
    "score": 94,
    "resumen": "Manejo de caja (efectivo, POS y otros medios de pago)",
    "funciones": [
@@ -14284,7 +15108,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/hva-inversiones/cajera-para-polleria-cerca-a-plaza-de-armas/6abf3396e076276c7949151d"
   },
   {
-   "id": 332,
+   "id": 351,
    "puesto": "Técnico Electricista",
    "empresa": "ADECCO PERU S.A.",
    "cat": "Ingeniería",
@@ -14294,9 +15118,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 23,
+   "dias": 24,
    "vence": "2027-01-30",
-   "restan": 97,
+   "restan": 96,
    "score": 92,
    "resumen": "¡Únete a una empresa líder del sector agroindustrial avícola!",
    "funciones": [
@@ -14325,7 +15149,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnico-electricista-camana-arequipa-adecco-peru-s.a.-1118466870.html"
   },
   {
-   "id": 333,
+   "id": 352,
    "puesto": "8513 Auxiliar de Almacén, Unna Transporte, Proyecto Linea 1 del Metro",
    "empresa": "Grupo Aenza",
    "cat": "Logística",
@@ -14335,9 +15159,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 23,
+   "dias": 24,
    "vence": "2026-11-02",
-   "restan": 8,
+   "restan": 7,
    "score": 91,
    "resumen": "RESUMEN: ¡Únete a UNNA Transporte Proyecto Línea 1 del Metro de Lima!",
    "funciones": [
@@ -14370,7 +15194,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/grupo-aenza/8513-auxiliar-de-almacen-unna-transporte-proyecto-linea-1/6abf2cd7e076276c79490044"
   },
   {
-   "id": 334,
+   "id": 353,
    "puesto": "Auxiliar Contable",
    "empresa": "FARMACHIF",
    "cat": "Contabilidad",
@@ -14380,9 +15204,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 23,
+   "dias": 24,
    "vence": "2026-12-31",
-   "restan": 67,
+   "restan": 66,
    "score": 89,
    "resumen": "Registrar y provisionar facturas locales, recibos por servicios públicos y recibos por honorarios.",
    "funciones": [
@@ -14414,7 +15238,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-contable-farmachif-1118466964.html"
   },
   {
-   "id": 335,
+   "id": 354,
    "puesto": "Asistente Administrativo Contable",
    "empresa": "PLANET GAME S.A.C.",
    "cat": "Administración",
@@ -14424,9 +15248,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 23,
+   "dias": 24,
    "vence": "2026-11-02",
-   "restan": 8,
+   "restan": 7,
    "score": 89,
    "resumen": "RESUMEN: ¡ÚNETE AL EQUIPO DE PLANET GAME S.A.C.!",
    "funciones": [
@@ -14471,7 +15295,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/planet-game-s-a-c/asistente-administrativo-contable-chorrillos-asistente/6abf28a0e076276c7948f367"
   },
   {
-   "id": 336,
+   "id": 355,
    "puesto": "Asesor(a) Comercial Telefónico de Créditos",
    "empresa": "GRUPO CARRILLO ROYALTY S.A.C",
    "cat": "Ventas",
@@ -14481,9 +15305,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 23,
+   "dias": 24,
    "vence": "2026-11-02",
-   "restan": 8,
+   "restan": 7,
    "score": 87,
    "resumen": "RESUMEN: En KapitalizateYa! buscamos personas con actitud comercial y orientación a resultados para formar parte de nuestro equipo.",
    "funciones": [
@@ -14511,7 +15335,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/grupo-carrillo-royalty-s-a-c/asesor-a-comercial-telefonico-de-creditos-rubro-financiero/6abf0878e076276c79488c69"
   },
   {
-   "id": 337,
+   "id": 356,
    "puesto": "Asistente Comercial",
    "empresa": "PETRAMAS S.A.C",
    "cat": "Ventas",
@@ -14521,9 +15345,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 23,
+   "dias": 24,
    "vence": "2026-12-31",
-   "restan": 67,
+   "restan": 66,
    "score": 86,
    "resumen": "Nos encontramos en la búsqueda del mejor talento para la posición de Asistente Comercial",
    "funciones": [
@@ -14550,7 +15374,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-comercial-petramas-s.a.c-1118466866.html"
   },
   {
-   "id": 338,
+   "id": 357,
    "puesto": "Barista",
    "empresa": "PRESTACLUB",
    "cat": "Gastronomía",
@@ -14560,9 +15384,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 23,
+   "dias": 24,
    "vence": "2026-12-31",
-   "restan": 67,
+   "restan": 66,
    "score": 86,
    "resumen": "En Café Libertador , nos encontramos en la búsqueda de Baristas apasionados por el café y el buen servicio, para formar parte de nuestro equipo en crecimiento.",
    "funciones": [
@@ -14592,7 +15416,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/barista--cafe-libertador-prestaclub-1118466869.html"
   },
   {
-   "id": 339,
+   "id": 358,
    "puesto": "Practicante Audivisual",
    "empresa": "ESCUELA NACIONAL DE ALTOS ESTUDIOS",
    "cat": "Prácticas",
@@ -14602,9 +15426,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 23,
+   "dias": 24,
    "vence": "2026-11-02",
-   "restan": 8,
+   "restan": 7,
    "score": 86,
    "resumen": "RESUMEN: En ERCA Educación Continua nos encontramos en búsqueda de un(a) Practicante de Producción Audiovisual con interés en desarrollarse en grabación, edición de contenido y producción de transmisiones en vivo.",
    "funciones": [
@@ -14632,7 +15456,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/escuela-nacional-de-altos-estudios/practicante-audivisual-produccion-audivisual/6abf1e59e076276c7948d365"
   },
   {
-   "id": 340,
+   "id": 359,
    "puesto": "Ejecutivo(a) de Cobranzas",
    "empresa": "GRUPO CARRILLO ROYALTY S.A.C",
    "cat": "Contabilidad",
@@ -14642,9 +15466,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 23,
+   "dias": 24,
    "vence": "2026-11-02",
-   "restan": 8,
+   "restan": 7,
    "score": 86,
    "resumen": "Buscamos un(a) Ejecutivo(a) de Cobranzas MYPE con experiencia en gestión de cartera, negociación y recuperación de créditos.",
    "funciones": [
@@ -14673,7 +15497,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/grupo-carrillo-royalty-s-a-c/ejecutivo-a-de-cobranzas/6abf095ce076276c79488f2b"
   },
   {
-   "id": 341,
+   "id": 360,
    "puesto": "Mozo o Azafata",
    "empresa": "HVA INVERSIONES",
    "cat": "Gastronomía",
@@ -14683,9 +15507,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 23,
+   "dias": 24,
    "vence": "2026-11-02",
-   "restan": 8,
+   "restan": 7,
    "score": 85,
    "resumen": "Asegurar la correcta atención a los clientes.",
    "funciones": [
@@ -14720,7 +15544,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/hva-inversiones/mozo-o-azafata-full-y-part-time-centro-de-lima-plaza-de/6abf1345e076276c7948b2fd"
   },
   {
-   "id": 342,
+   "id": 361,
    "puesto": "Asesor (a) de Cobranzas",
    "empresa": "GRUPO CARRILLO ROYALTY S.A.C",
    "cat": "Contabilidad",
@@ -14730,9 +15554,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 23,
+   "dias": 24,
    "vence": "2026-11-02",
-   "restan": 8,
+   "restan": 7,
    "score": 83,
    "resumen": "Somos una empresa especializada en financiamiento para clientes MYPE y buscamos incorporar un(a) Asesor(a) de Cobranzas con energía, persistencia y orientación a resultados.",
    "funciones": [
@@ -14757,7 +15581,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/grupo-carrillo-royalty-s-a-c/asesor-a-de-cobranzas/6abf0a01e076276c79489197"
   },
   {
-   "id": 343,
+   "id": 362,
    "puesto": "Asistente de Contabilidad Temporal",
    "empresa": "ManpowerGroup Perú",
    "cat": "Contabilidad",
@@ -14767,9 +15591,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 24,
+   "dias": 25,
    "vence": "2026-12-30",
-   "restan": 66,
+   "restan": 65,
    "score": 97,
    "resumen": "En Manpower Perú buscamos al mejor talento para asumir un nuevo reto laboral como Asistente de Contabilidad para laborar. ¡La oportunidad de tener un futuro mejor, está aquí!",
    "funciones": [
@@ -14806,7 +15630,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-contabilidad-temporal-miraflores-manpowergroup-peru-1118465085.html"
   },
   {
-   "id": 344,
+   "id": 363,
    "puesto": "Asistente E-commerce",
    "empresa": "ADN RETAIL S.A.C.",
    "cat": "Ventas",
@@ -14816,9 +15640,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 24,
+   "dias": 25,
    "vence": "2026-12-30",
-   "restan": 66,
+   "restan": 65,
    "score": 94,
    "resumen": "Gestión y actualización de la web",
    "funciones": [
@@ -14850,7 +15674,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-e-commerce-adn-retail-s.a.c.-1118464996.html"
   },
   {
-   "id": 345,
+   "id": 364,
    "puesto": "Operador de Área de Flotación",
    "empresa": "PLANTA ANTAKORI",
    "cat": "Otros",
@@ -14860,9 +15684,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Ica",
    "fuente": "Bumeran",
-   "dias": 24,
+   "dias": 25,
    "vence": "2026-12-30",
-   "restan": 66,
+   "restan": 65,
    "score": 92,
    "resumen": "Conocer y aplicar los parámetros de operación de los circuitos de flotación.",
    "funciones": [
@@ -14887,7 +15711,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operador-de-area-de-flotacion-planta-antakori-1118465051.html"
   },
   {
-   "id": 346,
+   "id": 365,
    "puesto": "Practicante de Cocina",
    "empresa": "Vanessa Charaja",
    "cat": "Prácticas",
@@ -14897,9 +15721,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Puno",
    "fuente": "Bumeran",
-   "dias": 24,
+   "dias": 25,
    "vence": "2026-12-30",
-   "restan": 66,
+   "restan": 65,
    "score": 91,
    "resumen": "Asistir en la preparación de alimentos y platillos, siguiendo las directrices establecidas.",
    "funciones": [
@@ -14926,7 +15750,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-de-cocina-vanessa-charaja-1118465104.html"
   },
   {
-   "id": 347,
+   "id": 366,
    "puesto": "Labora SOLO 5 Días! Atención al Cliente",
    "empresa": "ManpowerGroup Perú",
    "cat": "Atención al Cliente",
@@ -14936,9 +15760,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 24,
+   "dias": 25,
    "vence": "2026-12-30",
-   "restan": 66,
+   "restan": 65,
    "score": 89,
    "resumen": "Por encargo de nuestro cliente líder, nos encontramos en búsqueda de talentos para cubrir la posición de:",
    "funciones": [
@@ -14967,7 +15791,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/labora-solo-5-dias-atencion-al-cliente-turno-manana-s.-2100-movilidad-manpowergroup-peru-1118465145.html"
   },
   {
-   "id": 348,
+   "id": 367,
    "puesto": "Practicante Profesional de Inteligencia Comercial",
    "empresa": "Optima CIC",
    "cat": "Prácticas",
@@ -14977,9 +15801,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 24,
+   "dias": 25,
    "vence": "2026-11-01",
-   "restan": 7,
+   "restan": 6,
    "score": 89,
    "resumen": "RESUMEN: Empresa líder en comercialización del sector inmobiliario, se encuentra en la búsqueda de un Practicante Profesional de Inteligencia Comercial.",
    "funciones": [
@@ -15021,7 +15845,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/optima-cic/practicante-profesional-de-inteligencia-comercial/6abda28fe076276c79470463"
   },
   {
-   "id": 349,
+   "id": 368,
    "puesto": "Chofer Formolizador",
    "empresa": "CAFAE SE",
    "cat": "Logística",
@@ -15031,9 +15855,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 25,
+   "dias": 26,
    "vence": "2026-12-29",
-   "restan": 65,
+   "restan": 64,
    "score": 97,
    "resumen": "Ejecutar el procedimiento de embalsamamiento de acuerdo con la técnica indicada en el proceso de inducción, este será supervisado por el Asistente Operativo, Supervisor Funerario o Asesor de Servicio de turno.",
    "funciones": [
@@ -15072,7 +15896,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/chofer-formolizador-cafae-se-1118463391.html"
   },
   {
-   "id": 350,
+   "id": 369,
    "puesto": "Jefe de Mozos",
    "empresa": "GRUPO ROKYS",
    "cat": "Gastronomía",
@@ -15082,9 +15906,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 25,
+   "dias": 26,
    "vence": "2026-12-29",
-   "restan": 65,
+   "restan": 64,
    "score": 95,
    "resumen": "Asegurar el cumplimiento de los estándares de atención y calidad de servicio definidos por la corporación y la normativa vigente.",
    "funciones": [
@@ -15109,7 +15933,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/jefe-de-mozos--san-luis-grupo-rokys-1118463299.html"
   },
   {
-   "id": 351,
+   "id": 370,
    "puesto": "Jefe de tienda Piura",
    "empresa": "ADN RETAIL S.A.C.",
    "cat": "Ventas",
@@ -15119,9 +15943,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Piura",
    "fuente": "Bumeran",
-   "dias": 25,
+   "dias": 26,
    "vence": "2027-01-28",
-   "restan": 95,
+   "restan": 94,
    "score": 94,
    "resumen": "Alcanzar los objetivos de ventas establecidos por la empresa.",
    "funciones": [
@@ -15152,7 +15976,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/jefe-de-tienda-piura-adn-retail-s.a.c.-1118463331.html"
   },
   {
-   "id": 352,
+   "id": 371,
    "puesto": "Practicante Profesional de Procesos",
    "empresa": "Banco Agropecuario",
    "cat": "Prácticas",
@@ -15162,9 +15986,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 25,
+   "dias": 26,
    "vence": "2026-12-29",
-   "restan": 65,
+   "restan": 64,
    "score": 92,
    "resumen": "Brindar apoyo en el análisis y mejora de procesos, elaboración de flujogramas, documentos normativos y otras actividades propias de la División de Procesos.",
    "funciones": [
@@ -15191,7 +16015,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-profesional-de-procesos-sector-financiero-banco-agropecuario-1118460144.html"
   },
   {
-   "id": 353,
+   "id": 372,
    "puesto": "Asesor Técnico",
    "empresa": "BUMERAN SELECTA",
    "cat": "Tecnología",
@@ -15201,9 +16025,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 25,
+   "dias": 26,
    "vence": "2026-12-29",
-   "restan": 65,
+   "restan": 64,
    "score": 92,
    "resumen": "Brindar soporte técnico especializado a clientes industriales en la selección, aplicación y uso adecuado de lubricantes.",
    "funciones": [
@@ -15244,7 +16068,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-tecnico--linea-de-lubricantes-bumeran-selecta-1118461749.html"
   },
   {
-   "id": 354,
+   "id": 373,
    "puesto": "Practicante Profesional de Inteligencia Comercial",
    "empresa": "Confidencial",
    "cat": "Prácticas",
@@ -15254,9 +16078,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 25,
+   "dias": 26,
    "vence": "2026-12-28",
-   "restan": 64,
+   "restan": 63,
    "score": 84,
    "resumen": "Empresa líder en comercialización del sector inmobiliario, se encuentra en la búsqueda de un Practicante Profesional de Inteligencia Comercial.",
    "funciones": [
@@ -15298,7 +16122,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-profesional-de-inteligencia-comercial-1118463231.html"
   },
   {
-   "id": 355,
+   "id": 374,
    "puesto": "Asesor Comercial Lima",
    "empresa": "ManpowerGroup Perú",
    "cat": "Ventas",
@@ -15308,9 +16132,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 25,
+   "dias": 26,
    "vence": "2026-12-29",
-   "restan": 65,
+   "restan": 64,
    "score": 83,
    "resumen": "VERISURE se encuentra en búsqueda de los mejores talentos para ocupar el puesto de Asesor Comercial Lima.",
    "funciones": [
@@ -15341,7 +16165,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-comercial-lima-basicocomisionesbonoseps-entre-otros-manpowergroup-peru-1118463216.html"
   },
   {
-   "id": 356,
+   "id": 375,
    "puesto": "Asesor",
    "empresa": "ESTUDIO UBILLUS Y ASOCIADOS PERU S.A.C.",
    "cat": "Ventas",
@@ -15351,9 +16175,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 25,
+   "dias": 26,
    "vence": "2026-10-30",
-   "restan": 5,
+   "restan": 4,
    "score": 83,
    "resumen": "RESUMEN: Ubillus & Asociados se encuentra en búsqueda de Asesores(as) de Ventas con orientación a resultados, facilidad de comunicación y capacidad para realizar seguimiento y cierre de oportunidades comerciales.",
    "funciones": [
@@ -15385,7 +16209,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/estudio-ubillus-y-asociados-peru-s-a-c/asesor-a-comercial-con-experiencia-turno-manana/6abc535ee076276c7945ce76"
   },
   {
-   "id": 357,
+   "id": 376,
    "puesto": "Jefe(a) de Tienda",
    "empresa": "LAZOS - CONSULTORA DE TALENTOS",
    "cat": "Recursos Humanos",
@@ -15395,9 +16219,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-11-28",
-   "restan": 34,
+   "restan": 33,
    "score": 100,
    "resumen": "Top Talent | Consultora de Talento Humano se encuentra en búsqueda de un(a) Jefe(a) de Tienda para una importante cafetería ubicada en San Isidro.",
    "funciones": [
@@ -15439,7 +16263,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/jefea-de-tienda--san-isidro-salario-atractivo-lazos-consultora-de-talentos-1118457534.html"
   },
   {
-   "id": 358,
+   "id": 377,
    "puesto": "Asistente de Ventas",
    "empresa": "CONITERICK DE FRUTAS SAC",
    "cat": "Ventas",
@@ -15449,9 +16273,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-11-28",
-   "restan": 34,
+   "restan": 33,
    "score": 97,
    "resumen": "Realizar visitas comerciales y seguimiento a clientes.",
    "funciones": [
@@ -15477,7 +16301,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-ventas-coniterick-de-frutas-sac-1118457580.html"
   },
   {
-   "id": 359,
+   "id": 378,
    "puesto": "Analista de Reclutamiento y Selección",
    "empresa": "EXPERTIS",
    "cat": "Recursos Humanos",
@@ -15487,9 +16311,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-10-29",
-   "restan": 4,
+   "restan": 3,
    "score": 95,
    "resumen": "Gestionar de inicio a fin los procesos de reclutamiento y selección de perfiles operativos, administrativos y especializados.",
    "funciones": [
@@ -15531,7 +16355,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/expertis/analista-de-reclutamiento-y-seleccion/6abb1145e076276c7944b7f1"
   },
   {
-   "id": 360,
+   "id": 379,
    "puesto": "Auxiliar de Reclutamiento y Selección",
    "empresa": "Upscale Company",
    "cat": "Recursos Humanos",
@@ -15541,9 +16365,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-11-28",
-   "restan": 34,
+   "restan": 33,
    "score": 95,
    "resumen": "Buscamos personas dinámicas, con mucha actitud y ganas de aprender.",
    "funciones": [
@@ -15573,7 +16397,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-de-reclutamiento-y-seleccion-santiago-de-surco-el-derby-upscale-company-1118457085.html"
   },
   {
-   "id": 361,
+   "id": 380,
    "puesto": "Operador(a) de Centro de Control",
    "empresa": "WHITE LION S.A.",
    "cat": "Tecnología",
@@ -15583,9 +16407,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Cajamarca",
    "fuente": "Bumeran",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-12-28",
-   "restan": 64,
+   "restan": 63,
    "score": 95,
    "resumen": "¡Únete a nuestro equipo como Operador(a) de Centro de Control!",
    "funciones": [
@@ -15616,7 +16440,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operadora-de-centro-de-control-white-lion-s.a.-1118457675.html"
   },
   {
-   "id": 362,
+   "id": 381,
    "puesto": "Recepcionista y Caja",
    "empresa": "POLICLÍNICO SAN DAMIAN",
    "cat": "Administración",
@@ -15626,9 +16450,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-12-28",
-   "restan": 64,
+   "restan": 63,
    "score": 95,
    "resumen": "En el Policlínico San Damián buscamos un(a) Recepcionista y Cajero(a) con vocación de servicio. Será el primer contacto de nuestros pacientes y se encargará de que tengan una atención cálida, ordenada y eficiente desde que llegan.",
    "funciones": [
@@ -15656,7 +16480,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/recepcionista-y-caja-policlinico-san-damian-1118457832.html"
   },
   {
-   "id": 363,
+   "id": 382,
    "puesto": "Practicante profesional de Administración",
    "empresa": "FINVIVIR PERU S.A.C.",
    "cat": "Prácticas",
@@ -15666,9 +16490,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-10-29",
-   "restan": 4,
+   "restan": 3,
    "score": 94,
    "resumen": "RESUMEN: En Finvivir Perú, nos encontramos en la búsqueda del mejor talento para sumarse al equipo de Talento Humano que cuente con el siguiente perfil:· Puesto:",
    "funciones": [
@@ -15694,7 +16518,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/finvivir-peru-s-a-c/practicante-profesional-de-administracion-santiago-de-surco/6abb11b9e076276c7944b95e"
   },
   {
-   "id": 364,
+   "id": 383,
    "puesto": "Promotor de nuevos negocios C",
    "empresa": "FINVIVIR PERU S.A.C.",
    "cat": "Ventas",
@@ -15704,9 +16528,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-10-29",
-   "restan": 4,
+   "restan": 3,
    "score": 92,
    "resumen": "RESUMEN: En Finvivir Perú, nos encontramos en búsqueda del mejor talento para poder unirse a nuestro equipo en el área de Expansión.· Puesto:",
    "funciones": [
@@ -15734,7 +16558,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/finvivir-peru-s-a-c/promotor-de-nuevos-negocios-c-licencia-a1/6abb02d7e076276c794494d9"
   },
   {
-   "id": 365,
+   "id": 384,
    "puesto": "Vendedor Corporativo",
    "empresa": "Innomedic International EIRL",
    "cat": "Ventas",
@@ -15744,9 +16568,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-11-28",
-   "restan": 34,
+   "restan": 33,
    "score": 92,
    "resumen": "Importante empresa líder en el rubro de la salud ocupacional, se encuentra en la búsqueda del mejor talento para incorporar a su gran familia el perfil de Vendedor Corporativo:",
    "funciones": [
@@ -15772,7 +16596,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/vendedor-corporativo-innomedic-international-eirl-1118457377.html"
   },
   {
-   "id": 366,
+   "id": 385,
    "puesto": "Técnico Electrónico",
    "empresa": "WHITE LION S.A.",
    "cat": "Ingeniería",
@@ -15782,9 +16606,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-11-28",
-   "restan": 34,
+   "restan": 33,
    "score": 92,
    "resumen": "Serás parte del equipo técnico, participando en la instalación, diagnóstico, mantenimiento y reparación de equipos y sistemas electrónicos, incluyendo",
    "funciones": [
@@ -15814,7 +16638,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnico-electronico-white-lion-s.a.-1118457667.html"
   },
   {
-   "id": 367,
+   "id": 386,
    "puesto": "Asesor de Ventas por Whatsapp",
    "empresa": "Agento",
    "cat": "Ventas",
@@ -15824,9 +16648,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-11-28",
-   "restan": 34,
+   "restan": 33,
    "score": 92,
    "resumen": "Lugar de trabajo: Mangomarca – San Juan de Lurigancho Modalidad: Presencial Área: Ventas",
    "funciones": [
@@ -15860,7 +16684,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-ventas-por-whatsapp-agento-1118457705.html"
   },
   {
-   "id": 368,
+   "id": 387,
    "puesto": "Vendedor(a) de Campo Papel Higienico",
    "empresa": "Plasticos Alsersa",
    "cat": "Ventas",
@@ -15870,9 +16694,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-11-28",
-   "restan": 34,
+   "restan": 33,
    "score": 91,
    "resumen": "ATPAPER S.A.C. , empresa dedicada a la comercialización de productos de papel higiénico, papel tissue y productos relacionados, se encuentra en búsqueda de un Vendedor(a) de Campo para nuestra operación en Lurí",
    "funciones": [
@@ -15909,7 +16733,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/vendedora-de-campo-papel-higienico--lurin-plasticos-alsersa-1118456901.html"
   },
   {
-   "id": 369,
+   "id": 388,
    "puesto": "Supervisor de Seguridad y Operaciones YURA",
    "empresa": "EPC INGENIERIA",
    "cat": "Ingeniería",
@@ -15919,9 +16743,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-12-28",
-   "restan": 64,
+   "restan": 63,
    "score": 89,
    "resumen": "Supervisar las operaciones diarias para asegurar la eficiencia y el cumplimiento de los objetivos.",
    "funciones": [
@@ -15948,7 +16772,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/supervisor-de-seguridad-y-operaciones-yura-epc-ingenieria-1118457029.html"
   },
   {
-   "id": 370,
+   "id": 389,
    "puesto": "Operario de Producción",
    "empresa": "PROLABELS S.A.",
    "cat": "Ingeniería",
@@ -15958,9 +16782,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-11-28",
-   "restan": 34,
+   "restan": 33,
    "score": 89,
    "resumen": "PROLABELS, importante corporativo que pertenece al sector de impresión, se encuentra en Búsqueda de un Operario de Producción/Impresión para nuestra área de producción.",
    "funciones": [
@@ -15988,7 +16812,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-produccion-prolabels-s.a.-1118457756.html"
   },
   {
-   "id": 371,
+   "id": 390,
    "puesto": "Atención al cliente",
    "empresa": "Gusanito Lector",
    "cat": "Ventas",
@@ -15998,9 +16822,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-11-28",
-   "restan": 34,
+   "restan": 33,
    "score": 89,
    "resumen": "Corporación Interkambio , empresa especializada en soluciones informáticas y servicios tecnológicos",
    "funciones": [
@@ -16042,7 +16866,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesora-comercial-de-ventas-gusanito-lector-1118457781.html"
   },
   {
-   "id": 372,
+   "id": 391,
    "puesto": "Ejecutiva",
    "empresa": "DANKE",
    "cat": "Otros",
@@ -16052,9 +16876,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-11-28",
-   "restan": 34,
+   "restan": 33,
    "score": 89,
    "resumen": "En Grupo HNG seguimos acelerando nuestra transformación organizacional y digital.",
    "funciones": [
@@ -16089,7 +16913,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/agile-business-analyst-danke-1118457871.html"
   },
   {
-   "id": 373,
+   "id": 392,
    "puesto": "Operario de Limpieza",
    "empresa": "TECNICAS DE ASEO",
    "cat": "Otros",
@@ -16099,9 +16923,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-11-28",
-   "restan": 34,
+   "restan": 33,
    "score": 87,
    "resumen": "Buscamos un Operario de Limpieza proactivo y responsable para unirse a nuestro equipo. El candidato ideal se encargará de mantener la limpieza y el orden en diversas instalaciones, asegurando un ambiente de trabajo agradable y seguro.",
    "funciones": [
@@ -16124,7 +16948,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-limpieza-tecnicas-de-aseo-1118457258.html"
   },
   {
-   "id": 374,
+   "id": 393,
    "puesto": "Auxiliar de Mantenimiento De Piscina",
    "empresa": "JOCKEY CLUB DEL PERU",
    "cat": "Ingeniería",
@@ -16134,9 +16958,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-10-29",
-   "restan": 4,
+   "restan": 3,
    "score": 86,
    "resumen": "RESUMEN: Oportunidad para Técnico de Mantenimiento De Piscina y Caldero en JOCKEY CLUB DEL PERU",
    "funciones": [
@@ -16165,7 +16989,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/jockey-club-del-peru/auxiliar-de-mantenimiento-de-piscina-surco/6abb368ae076276c7945069d"
   },
   {
-   "id": 375,
+   "id": 394,
    "puesto": "Ayudante de Producción Turno Noche en Lurin",
    "empresa": "Inversiones San Gabriel S.A.",
    "cat": "Ingeniería",
@@ -16175,9 +16999,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-10-29",
-   "restan": 4,
+   "restan": 3,
    "score": 85,
    "resumen": "Somos una empresa líder en el sector industrial, con más de 38 años fabricando envases y productos plásticos para alimentos.",
    "funciones": [
@@ -16214,7 +17038,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/inversiones-san-gabriel-s-a/ayudante-de-produccion-turno-noche-en-lurin-pagos-semanales/6abb042ee076276c794498ec"
   },
   {
-   "id": 376,
+   "id": 395,
    "puesto": "Ejecutivo(a) de Ventas B2B",
    "empresa": "AR CONSULTING EMPRESARIAL",
    "cat": "Ventas",
@@ -16224,9 +17048,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 26,
+   "dias": 27,
    "vence": "2026-11-28",
-   "restan": 34,
+   "restan": 33,
    "score": 83,
    "resumen": "se encuentra en la búsqueda de un(a) Ejecutivo(a) de Ventas B 2B para integrarse a nuestro equipo comercial.",
    "funciones": [
@@ -16253,7 +17077,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ejecutivoa-de-ventas-b2b-ar-consulting-empresarial-1118457181.html"
   },
   {
-   "id": 377,
+   "id": 396,
    "puesto": "Asistente de Recursos Humanos",
    "empresa": "JZG ABOGADOS E.I.R.L.",
    "cat": "Recursos Humanos",
@@ -16263,9 +17087,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 27,
+   "dias": 28,
    "vence": "2026-10-28",
-   "restan": 3,
+   "restan": 2,
    "score": 97,
    "resumen": "PUESTO: ASISTENTE DE RECLUTAMIENTO Y SELECCIÓN - Modalidad: 100% Presencial",
    "funciones": [
@@ -16292,7 +17116,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/jzg-abogados-e-i-r-l/asistente-de-recursos-humanos-reclutacion-y-seleccion-de/6ab9b3eeba83cb6e70512dfc"
   },
   {
-   "id": 378,
+   "id": 397,
    "puesto": "Asesor(a) de Tienda",
    "empresa": "BUMERAN SELECTA",
    "cat": "Ventas",
@@ -16302,9 +17126,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 27,
+   "dias": 28,
    "vence": "2026-12-27",
-   "restan": 63,
+   "restan": 62,
    "score": 97,
    "resumen": "Por encargo de nuestro cliente, importante empresa del rubro de entretenimiento y plataformas digitales, nos encontramos en la búsqueda de un(a) Asesor(a) de Tienda para incorporarse a su punto de atención ubicado en Mall Santa Anita .",
    "funciones": [
@@ -16341,7 +17165,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesora-de-tienda-mall-santa-anita-bumeran-selecta-1118458089.html"
   },
   {
-   "id": 379,
+   "id": 398,
    "puesto": "Asesor Comercial en Tienda Mall Santa Anita",
    "empresa": "BUMERAN SELECTA",
    "cat": "Ventas",
@@ -16351,9 +17175,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 27,
+   "dias": 28,
    "vence": "2026-12-27",
-   "restan": 63,
+   "restan": 62,
    "score": 97,
    "resumen": "Por encargo de nuestro cliente, importante empresa del rubro de entretenimiento y plataformas digitales, nos encontramos en la búsqueda de un(a) Asesor(a) de Tienda para incorporarse a su punto de atención ubicado en Mall Santa Anita .",
    "funciones": [
@@ -16390,49 +17214,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-comercial-en-tienda-mall-santa-anita-bumeran-selecta-1118458102.html"
   },
   {
-   "id": 380,
-   "puesto": "Reponedor",
-   "empresa": "Adecco Perú S.A.",
-   "cat": "Recursos Humanos",
-   "min": 1130,
-   "max": 1130,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Laborum",
-   "dias": 27,
-   "vence": "2026-10-28",
-   "restan": 3,
-   "score": 97,
-   "resumen": "RESUMEN: Adecco es la empresa de Recursos Humanos más grande del mundo. Somos líderes en gestión humana. Diariamente ayudamos a más de 700,000 personas a encontrar trabajo a través de nuestra amplia red.",
-   "funciones": [
-    "Recepcionar y verificar el ingreso de mercadería al punto de venta.",
-    "Ingresar, almacenar y organizar los productos en cámaras de frío, garantizando la cadena de frío.",
-    "Realizar la rotación de productos (PEPS) y controlar fechas de vencimiento.",
-    "Verificar stock y reportar quiebres, faltantes o incidencias.",
-    "Implementar material POP y promociones en el punto de venta.",
-    "Realizar inventarios y reportes de gestión.",
-    "Monitorear precios y actividades de la competencia.",
-    "Coordinar con el personal del supermercado para asegurar la disponibilidad y correcta exhibición de los productos."
-   ],
-   "requisitos": [
-    "Con o Sin Experiencia",
-    "Conocimiento en reposición, exhibición e inventarios.",
-    "Manejo de productos refrigerados y cámaras de frío.",
-    "Proactividad, organización y responsabilidad.",
-    "Alta tolerancia a la presión y orientación a resultados."
-   ],
-   "beneficios": [
-    "Ingreso a planilla Adecco desde el primer día de trabajo.",
-    "Horarios fijos: Lunes a Domingo 9 am a 6 pm (solo 8hr de trabajo)",
-    "Básico S/ 1130 + Movilidad S/ 500 + Tarjeta de alimentos S/ 200",
-    "Hasta 75% de descuentos corporativos en los rubros de Educación, Salud, Belleza y Transporte.",
-    "¡Promovemos el empleo formal, brindando trabajo a más personas!. -Requerimientos- Educación mínima: Educación Secundaria años de experienciaPalabras clave: replenisher, surtidor, area"
-   ],
-   "url": "https://www.laborum.pe/job/adecco-peru-s-a/reponedor-con-o-sin-experiencia-supermercados-bono-de/6ab9f0e4ba83cb6e70516228"
-  },
-  {
-   "id": 381,
+   "id": 399,
    "puesto": "Técnico multitareas",
    "empresa": "EULEN del Perú",
    "cat": "Ingeniería",
@@ -16442,9 +17224,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 27,
+   "dias": 28,
    "vence": "2026-10-28",
-   "restan": 3,
+   "restan": 2,
    "score": 95,
    "resumen": "RESUMEN: Técnico Multitareas Buenaventura Begonias San Isidro",
    "funciones": [
@@ -16473,7 +17255,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/eulen-del-peru/tecnico-multitareas-begonias-san-isidro/6ab9ae42ba83cb6e705122bd"
   },
   {
-   "id": 382,
+   "id": 400,
    "puesto": "Agente de Seguridad Vial para SJL, ATE, Chosica",
    "empresa": "EULEN del Perú",
    "cat": "Recursos Humanos",
@@ -16483,9 +17265,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 27,
+   "dias": 28,
    "vence": "2026-10-28",
-   "restan": 3,
+   "restan": 2,
    "score": 92,
    "resumen": "Importante empresa del sector se encuentra en búsqueda de AGENTES DE PREVENCIÓN VIAL con disponibilidad para trabajar bajo un sistema de trabajo 6x1 y horarios rotativos.",
    "funciones": [
@@ -16516,7 +17298,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/eulen-del-peru/agente-de-seguridad-vial-para-sjl-ate-chosica-sin/6ab9c913ba83cb6e70513f3b"
   },
   {
-   "id": 383,
+   "id": 401,
    "puesto": "Operario de Mantenimiento Hotel",
    "empresa": "CONSERH",
    "cat": "Ingeniería",
@@ -16526,9 +17308,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 27,
+   "dias": 28,
    "vence": "2026-10-28",
-   "restan": 3,
+   "restan": 2,
    "score": 92,
    "resumen": "RESUMEN: OPERARIO DE MANTENIMIENTO HOTEL MÉLIA LIMA",
    "funciones": [
@@ -16559,7 +17341,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/conserh/hotel-melia-lima-operario-de-mantenimiento/6ab9eae3ba83cb6e70515ab9"
   },
   {
-   "id": 384,
+   "id": 402,
    "puesto": "Agente de Seguridad Vial para SJM, VES, VMT S",
    "empresa": "EULEN del Perú",
    "cat": "Recursos Humanos",
@@ -16569,9 +17351,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 27,
+   "dias": 28,
    "vence": "2026-10-28",
-   "restan": 3,
+   "restan": 2,
    "score": 92,
    "resumen": "Importante empresa del sector se encuentra en búsqueda de AGENTES DE PREVENCIÓN VIAL con disponibilidad para trabajar bajo un sistema de trabajo 6x1 y horarios rotativos.",
    "funciones": [
@@ -16603,7 +17385,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/eulen-del-peru/agente-de-seguridad-vial-para-sjm-ves-vmt-s-experiencia-s/6ab9c9f1ba83cb6e70514060"
   },
   {
-   "id": 385,
+   "id": 403,
    "puesto": "Fuerza de ventas",
    "empresa": "Arch Latam",
    "cat": "Ventas",
@@ -16613,9 +17395,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 27,
+   "dias": 28,
    "vence": "2026-10-28",
-   "restan": 3,
+   "restan": 2,
    "score": 92,
    "resumen": "RESUMEN: ¡Estamos buscando Mercaderista Canal Tradicional!",
    "funciones": [
@@ -16653,7 +17435,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/arch-latam/urgente-canal-tradicional-te-asignamos-tu-zona-s-1700-00/6aba0fb7ba83cb6e70516f26"
   },
   {
-   "id": 386,
+   "id": 404,
    "puesto": "Asesor aerolinea",
    "empresa": "Concentrix",
    "cat": "Otros",
@@ -16663,9 +17445,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 27,
+   "dias": 28,
    "vence": "2026-10-28",
-   "restan": 3,
+   "restan": 2,
    "score": 90,
    "resumen": "Atención al cliente por LLAMADAS frente a cualquier consulta, duda o pregunta que tenga el usuario frente al servicio ofrecido. (aerolínea)",
    "funciones": [
@@ -16690,7 +17472,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/concentrix/asesor-aerolinea-turismo-contrato-el-1er-dia-rango-madrugada/6ab9ee46ba83cb6e70515fdd"
   },
   {
-   "id": 387,
+   "id": 405,
    "puesto": "Operario de Producción",
    "empresa": "Wellco Peruana SA",
    "cat": "Ingeniería",
@@ -16700,9 +17482,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 27,
+   "dias": 28,
    "vence": "2026-10-28",
-   "restan": 3,
+   "restan": 2,
    "score": 89,
    "resumen": "RESUMEN: Somos Wellco Peruana SA. Empresa Industrial con mas de 30 años en el Mercado Peruano, y nos encontramos en la búsqueda del mejor Talento de Producción",
    "funciones": [
@@ -16732,7 +17514,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/wellco-peruana-sa/operario-de-produccion-rubro-calzado-en-lurin/6ab9b026ba83cb6e70512720"
   },
   {
-   "id": 388,
+   "id": 406,
    "puesto": "Call Center",
    "empresa": "Partner Service",
    "cat": "Otros",
@@ -16742,9 +17524,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 27,
+   "dias": 28,
    "vence": "2026-10-28",
-   "restan": 3,
+   "restan": 2,
    "score": 88,
    "resumen": "RESUMEN: ¡ÚNETE A NUESTRO EQUIPO DE RETENCIONES!",
    "funciones": [
@@ -16784,7 +17566,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/partner-service/canal-escrito-retenciones-para-claro-sin-experiencia-full-y/6ab9ec50ba83cb6e70515d2d"
   },
   {
-   "id": 389,
+   "id": 407,
    "puesto": "Auxiliar Carga",
    "empresa": "Lavoro Perú",
    "cat": "Logística",
@@ -16794,9 +17576,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 27,
+   "dias": 28,
    "vence": "2026-10-28",
-   "restan": 3,
+   "restan": 2,
    "score": 86,
    "resumen": "RESUMEN: Nuestro cliente, importante empresa localizada en el mercado de Huachipa, destacada en el rubro de embotelladora de bebidas se encuentra en la búsqueda del/ los mejor(es) talento(s) para ocupar el puesto de AUXILIAR DE ALMACEN.",
    "funciones": [
@@ -16827,43 +17609,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/lavoro-peru/auxiliar-carga-turno-tarde-fijo-huachipa-huachipa-lurigancho/6ab9ee7eba83cb6e70516066"
   },
   {
-   "id": 390,
-   "puesto": "Atención al Cliente",
-   "empresa": "Concentrix",
-   "cat": "Recursos Humanos",
-   "min": 1130,
-   "max": 1130,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Laborum",
-   "dias": 27,
-   "vence": "2026-10-28",
-   "restan": 3,
-   "score": 84,
-   "resumen": "Atención al cliente por chats y llamadas, para cliente WALLAPOP (Una plataforma virtual de compra y venta español).",
-   "funciones": [
-    "Atención al cliente por chats y llamadas, para cliente WALLAPOP (Una plataforma virtual de compra y venta español).",
-    "TURNO N° 1 FULL TIME MAÑANA: Rango de disponibilidad de 06AM a 5PM / DESCANSO: 1 día a la semana ROTATIVO FINES DE SEMANA ENTRE SABADO A DOMINGO )",
-    "TURNO N° 2 FULL TIME MAÑANA: Rango de disponibilidad de 09AM a 8PM / DESCANSO: 1 día a la semana ROTATIVO FINES DE SEMANA ENTRE SABADO A DOMINGO )"
-   ],
-   "requisitos": [
-    "Ser mayor de edad (18 años o más).",
-    "Secundaria completa mínimo.",
-    "Disponibilidad para laborar en Sede San Isidro (Av. Camino Real 180 )",
-    "Experiencia mínimo de 3 meses en Call center o Atención al cliente presencial comprobada (Bajo planilla completa o Recibo por honorario)."
-   ],
-   "beneficios": [
-    "Salario de S/1130 + Maqueta hasta S./300.",
-    "Ingreso directo a planilla completa.",
-    "Oportunidades de crecimiento profesional con Plan Carrera a partir del tercer mes.",
-    "Estabilidad laboral.",
-    "Cultura de la Felicidad y un excelente clima laboral."
-   ],
-   "url": "https://www.laborum.pe/job/concentrix/atencion-al-cliente-chat-y-llamadas-full-time-manana/6ab9eb9bba83cb6e70515c96"
-  },
-  {
-   "id": 391,
+   "id": 408,
    "puesto": "Asesor",
    "empresa": "Adecco Perú S.A.",
    "cat": "Ventas",
@@ -16873,9 +17619,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 28,
+   "dias": 29,
    "vence": "2026-10-27",
-   "restan": 2,
+   "restan": 1,
    "score": 100,
    "resumen": "RESUMEN: En Adecco Perú, firma global especializada en atracción y selección de personal, nos encontramos en búsqueda del mejor talento para cubrir la siguiente vacante:",
    "funciones": [
@@ -16908,7 +17654,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/adecco-peru-s-a/asesor-a-comercial-de-ventas/6ab8a2d4ba83cb6e7050c3af"
   },
   {
-   "id": 392,
+   "id": 409,
    "puesto": "Técnica de los proyectos",
    "empresa": "GRAFTON LATAM",
    "cat": "Contabilidad",
@@ -16918,9 +17664,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 28,
+   "dias": 29,
    "vence": "2026-12-26",
-   "restan": 62,
+   "restan": 61,
    "score": 98,
    "resumen": "Por encargo de nuestro cliente, importante empresa del sector inmobiliario se encuentra en la búsqueda de un(a)",
    "funciones": [
@@ -16957,7 +17703,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/responsable-de-costos-presupuestos-y-control-de-proyectos-grafton-latam-1118457991.html"
   },
   {
-   "id": 393,
+   "id": 410,
    "puesto": "Jefe de Ventas Inmobiliario",
    "empresa": "BUMERAN SELECTA",
    "cat": "Ventas",
@@ -16967,9 +17713,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 28,
+   "dias": 29,
    "vence": "2026-12-26",
-   "restan": 62,
+   "restan": 61,
    "score": 97,
    "resumen": "Liderar, supervisar y desarrollar al equipo comercial, asegurando el cumplimiento de metas individuales y grupales.",
    "funciones": [
@@ -17010,7 +17756,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/jefe-de-ventas-inmobiliario-bumeran-selecta-1118458083.html"
   },
   {
-   "id": 394,
+   "id": 411,
    "puesto": "UPN San Juan de Lurigancho: Gestor de Tiempo Real",
    "empresa": "Laureate",
    "cat": "Recursos Humanos",
@@ -17020,9 +17766,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 28,
+   "dias": 29,
    "vence": "2026-10-27",
-   "restan": 2,
+   "restan": 1,
    "score": 97,
    "resumen": "En UPN contribuimos a la transformación del Perú a través de una educación inclusiva, accesible y de calidad que transforma vidas.",
    "funciones": [
@@ -17058,7 +17804,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/laureate/upn-san-juan-de-lurigancho-gestor-de-tiempo-real-gtr-basico/6ab8b024ba83cb6e7050d543"
   },
   {
-   "id": 395,
+   "id": 412,
    "puesto": "Atención al cliente",
    "empresa": "CHAMBA TALENT SOCIEDAD ANONIMA CERRADA",
    "cat": "Atención al Cliente",
@@ -17068,9 +17814,9 @@ window.CERO_VAGOS = {
    "modalidad": "Remoto",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 28,
+   "dias": 29,
    "vence": "2026-10-27",
-   "restan": 2,
+   "restan": 1,
    "score": 95,
    "resumen": "RESUMEN: ¡Únete a una empresa líder en servicios de atención al cliente para importantes marcas internacionales!",
    "funciones": [
@@ -17105,7 +17851,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/chamba-talent-sociedad-anonima-cerrada/interprete-customer-service-ingles-avanzado-remoto/6ab87ae7ba83cb6e70509fb5"
   },
   {
-   "id": 396,
+   "id": 413,
    "puesto": "Almacenero",
    "empresa": "TRUST CONSULTING",
    "cat": "Recursos Humanos",
@@ -17115,9 +17861,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 28,
+   "dias": 29,
    "vence": "2026-10-27",
-   "restan": 2,
+   "restan": 1,
    "score": 94,
    "resumen": "RESUMEN: ALMACENERO(A) MONTACARGAS | URGENTE",
    "funciones": [
@@ -17164,7 +17910,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/trust-consulting/urgente-montacarguistas-planilla-completa-movilidad-de/6ab8971bba83cb6e7050bf28"
   },
   {
-   "id": 397,
+   "id": 414,
    "puesto": "Reponedor",
    "empresa": "GRAFTON PERU S.A.C.",
    "cat": "Ventas",
@@ -17174,9 +17920,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 28,
+   "dias": 29,
    "vence": "2026-10-27",
-   "restan": 2,
+   "restan": 1,
    "score": 94,
    "resumen": "RESUMEN: Empresa dedicada a la comercialización de productos de consumo masivo, se encuentra en búsqueda de Mercaderistas de Canal Moderno para fortalecer su equipo en diferentes puntos de venta de Lima Metropolitana.",
    "funciones": [
@@ -17215,7 +17961,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/grafton-peru-s-a-c/mercaderista-canal-moderno-lima-sur-y-moderna-s-1-200-hasta/6ab8aacdba83cb6e7050cb6b"
   },
   {
-   "id": 398,
+   "id": 415,
    "puesto": "Asistente de Operaciones Bancarias",
    "empresa": "NTT DATA",
    "cat": "Tecnología",
@@ -17225,9 +17971,9 @@ window.CERO_VAGOS = {
    "modalidad": "Remoto",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 28,
+   "dias": 29,
    "vence": "2026-12-26",
-   "restan": 62,
+   "restan": 61,
    "score": 92,
    "resumen": "En NTT DATA buscamos profesionales con experiencia en operaciones bancarias y atención de reclamos relacionados con tarjetas para incorporarse a un nuevo servicio del sector financiero.",
    "funciones": [
@@ -17265,7 +18011,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-operaciones-bancarias-|-reclamos-de-tarjetas-ntt-data-1118457905.html"
   },
   {
-   "id": 399,
+   "id": 416,
    "puesto": "Reponedor",
    "empresa": "Arch Latam",
    "cat": "Recursos Humanos",
@@ -17275,9 +18021,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 28,
+   "dias": 29,
    "vence": "2026-10-27",
-   "restan": 2,
+   "restan": 1,
    "score": 89,
    "resumen": "RESUMEN: ¡ÚNETE A ARTESCO COMO MERCADERISTA FULL TIME!",
    "funciones": [
@@ -17309,7 +18055,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/arch-latam/urgente-mercaderistas-s-1-200-canal-tradicional-lima-santa/6ab8b1cdba83cb6e7050d8b7"
   },
   {
-   "id": 400,
+   "id": 417,
    "puesto": "Operario de Embalaje Ingredion!",
    "empresa": "Arch Latam",
    "cat": "Ingeniería",
@@ -17319,9 +18065,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 28,
+   "dias": 29,
    "vence": "2026-10-27",
-   "restan": 2,
+   "restan": 1,
    "score": 86,
    "resumen": "RESUMEN: ¡CONVOCATORIA LABORAL | OPERARIO DE EMBALAJE INGREDION!",
    "funciones": [
@@ -17355,7 +18101,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/arch-latam/100-operarios-de-produccion-hombres-de-25-anos-en-adelante/6ab87dabba83cb6e7050a79b"
   },
   {
-   "id": 401,
+   "id": 418,
    "puesto": "Vendedor",
    "empresa": "CONSERH",
    "cat": "Ventas",
@@ -17365,9 +18111,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 28,
+   "dias": 29,
    "vence": "2026-10-27",
-   "restan": 2,
+   "restan": 1,
    "score": 86,
    "resumen": "RESUMEN: Vendedores Marca ONEILL (JOCKEY BOUTIQUE )",
    "funciones": [
@@ -17395,7 +18141,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/conserh/vendedor-a-retail-o-neill-surf-sueldo-comisiones-jockey/6ab881b9ba83cb6e7050b019"
   },
   {
-   "id": 402,
+   "id": 419,
    "puesto": "Promotora de Ventas Miraflores",
    "empresa": "CONSERH",
    "cat": "Ventas",
@@ -17405,9 +18151,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 28,
+   "dias": 29,
    "vence": "2026-10-27",
-   "restan": 2,
+   "restan": 1,
    "score": 83,
    "resumen": "RESUMEN: Vendedores Marca ONEILL (MIRAFLORES BOUTIQUE )",
    "funciones": [
@@ -17436,7 +18182,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/conserh/promotora-de-ventas-miraflores-trabaja-de-lunes-a-sabado/6ab88270ba83cb6e7050b124"
   },
   {
-   "id": 403,
+   "id": 420,
    "puesto": "Operario de Lavandería",
    "empresa": "GRAFTON PERU S.A.C.",
    "cat": "Ingeniería",
@@ -17446,9 +18192,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 28,
+   "dias": 29,
    "vence": "2026-10-27",
-   "restan": 2,
+   "restan": 1,
    "score": 80,
    "resumen": "Lavado y clasificación de prendas.",
    "funciones": [
@@ -17479,7 +18225,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/grafton-peru-s-a-c/operario-de-lavanderia-s-1-500-con-o-sin-experiencia-turno/6ab884b4ba83cb6e7050b5d6"
   },
   {
-   "id": 404,
+   "id": 421,
    "puesto": "Técnico Mecánico",
    "empresa": "ATLAS ELECTRONIC",
    "cat": "Ingeniería",
@@ -17489,9 +18235,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 29,
+   "dias": 30,
    "vence": "2026-12-25",
-   "restan": 61,
+   "restan": 60,
    "score": 95,
    "resumen": "Esta es tu oportunidad de formar parte de una empresa especializada en la reparación y mantenimiento de equipos electrónicos industriales.",
    "funciones": [
@@ -17523,7 +18269,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnico-mecanico-mantenimiento-atlas-electronic-1118457732.html"
   },
   {
-   "id": 405,
+   "id": 422,
    "puesto": "Anfitriona, azafata, operador, cajera, seguridad",
    "empresa": "PLANET GAME S.A.C.",
    "cat": "Atención al Cliente",
@@ -17533,9 +18279,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 29,
+   "dias": 30,
    "vence": "2026-10-26",
-   "restan": 1,
+   "restan": 0,
    "score": 94,
    "resumen": "RESUMEN: ¡ÚNETE AL EQUIPO DE PLANET GAME S.A.C.!",
    "funciones": [
@@ -17579,7 +18325,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/planet-game-s-a-c/anfitriona-azafata-operador-cajera-seguridad-salas/6ab738aeba83cb6e704f99ad"
   },
   {
-   "id": 406,
+   "id": 423,
    "puesto": "Técnico",
    "empresa": "GS1 PERU",
    "cat": "Ventas",
@@ -17589,9 +18335,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 29,
+   "dias": 30,
    "vence": "2026-12-25",
-   "restan": 61,
+   "restan": 60,
    "score": 92,
    "resumen": "Buscamos un Auditor de Campo proactivo y detallista para unirse a nuestro equipo en modalidad full time , para participar en un proyecto de auditoría en puntos de venta de una importante cadena de retail en Lima.",
    "funciones": [
@@ -17627,7 +18373,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auditor-de-campo--estudios-retail--full-time--lima-gs1-peru-1118457652.html"
   },
   {
-   "id": 407,
+   "id": 424,
    "puesto": "Practicante de Mecánica Automotriz",
    "empresa": "SCAN SERVICE GYC",
    "cat": "Prácticas",
@@ -17637,9 +18383,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 29,
+   "dias": 30,
    "vence": "2026-11-25",
-   "restan": 31,
+   "restan": 30,
    "score": 92,
    "resumen": "Apoyar en la ejecución de mantenimientos preventivos y correctivos.",
    "funciones": [
@@ -17664,7 +18410,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-de-mecanica-automotriz-scan-service-gyc-1118457816.html"
   },
   {
-   "id": 408,
+   "id": 425,
    "puesto": "Técnico 1 MHFC",
    "empresa": "CICSA PERU S.A.C.",
    "cat": "Tecnología",
@@ -17674,9 +18420,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 29,
+   "dias": 30,
    "vence": "2026-10-26",
-   "restan": 1,
+   "restan": 0,
    "score": 92,
    "resumen": "RESUMEN: Se parte de uno de los conglomerados más grandes e importantes de todo Latinoamérica.",
    "funciones": [
@@ -17704,7 +18450,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/cicsa-peru-s-a-c/tecnico-1-mhfc-telecomunicaciones/6ab7536aba83cb6e704fdd2e"
   },
   {
-   "id": 409,
+   "id": 426,
    "puesto": "Call center",
    "empresa": "Grupo Tawa",
    "cat": "Ventas",
@@ -17714,9 +18460,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 29,
+   "dias": 30,
    "vence": "2026-12-25",
-   "restan": 61,
+   "restan": 60,
    "score": 92,
    "resumen": "Importante empresa del sector se encuentra en la búsqueda de Teleoperadores para integrarse al una empresa líder en servicios empresariales en el distrito de Comas.",
    "funciones": [
@@ -17749,7 +18495,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/urgente-teleoperadores-con-experiencia-s-1450-comisiones-sin-tope-comas-lunes-a-viernes-grupo-tawa-1118457836.html"
   },
   {
-   "id": 410,
+   "id": 427,
    "puesto": "Asesor Comercial Factoring",
    "empresa": "ManpowerGroup Perú",
    "cat": "Ventas",
@@ -17759,9 +18505,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 29,
+   "dias": 30,
    "vence": "2026-12-25",
-   "restan": 61,
+   "restan": 60,
    "score": 91,
    "resumen": "En Manpower Perú buscamos al mejor talento para asumir un nuevo reto laboral como Gestor Comercial Factoring para laborar. ¡La oportunidad de tener un futuro mejor, está aquí!",
    "funciones": [
@@ -17795,7 +18541,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-comercial-factoring-|-sector-financiero-y-bancario-|-san-isidro-manpowergroup-peru-1118457611.html"
   },
   {
-   "id": 411,
+   "id": 428,
    "puesto": "Auxiliar de Producción, Ate",
    "empresa": "ilender Perú",
    "cat": "Ingeniería",
@@ -17805,9 +18551,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 29,
+   "dias": 30,
    "vence": "2026-10-26",
-   "restan": 1,
+   "restan": 0,
    "score": 91,
    "resumen": "RESUMEN: GANA HASTA S/ 1,840 AL MES*· TE OFRECEMOS:",
    "funciones": [
@@ -17836,7 +18582,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/ilender-peru/auxiliar-de-produccion-ate/6ab76216ba83cb6e704ffe83"
   },
   {
-   "id": 412,
+   "id": 429,
    "puesto": "Asesores(as) de Ventas Call center San Miguel",
    "empresa": "MONTALVO INSTITUTE CORP SAC",
    "cat": "Ventas",
@@ -17846,9 +18592,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Laborum",
-   "dias": 29,
+   "dias": 30,
    "vence": "2026-10-26",
-   "restan": 1,
+   "restan": 0,
    "score": 88,
    "resumen": "RESUMEN: En Montalvo Institute, institución líder en formación en cosmetología y belleza, buscamos Asesoras de Ventas Telefónicos para formar parte de nuestro equipo comercial.",
    "funciones": [
@@ -17879,7 +18625,7 @@ window.CERO_VAGOS = {
    "url": "https://www.laborum.pe/job/montalvo-institute-corp-sac/asesores-as-de-ventas-call-center-san-miguel-sueldo-fijo/6ab740c2ba83cb6e704fad35"
   },
   {
-   "id": 413,
+   "id": 430,
    "puesto": "Auxiliar de Rampa",
    "empresa": "Consultora CyL",
    "cat": "Recursos Humanos",
@@ -17889,9 +18635,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 29,
+   "dias": 30,
    "vence": "2026-11-25",
-   "restan": 31,
+   "restan": 30,
    "score": 83,
    "resumen": "¡OPORTUNIDAD LABORAL EN EL NUEVO AEROPUERTO!",
    "funciones": [
@@ -17915,7 +18661,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-de-rampa-aeropuerto-jorge-chavez-consultora-cyl-1118457630.html"
   },
   {
-   "id": 414,
+   "id": 431,
    "puesto": "Asistente Administrativo de Compras",
    "empresa": "ManpowerGroup Perú",
    "cat": "Administración",
@@ -17925,9 +18671,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 30,
+   "dias": 31,
    "vence": "2026-12-24",
-   "restan": 60,
+   "restan": 59,
    "score": 97,
    "resumen": "En Manpower Perú buscamos al mejor talento para asumir un nuevo reto laboral como Asistente Administrativo de Compras ¡La oportunidad de tener un futuro mejor, está aquí!",
    "funciones": [
@@ -17961,7 +18707,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-administrativo-de-compras-la-molina-sector-automotriz-manpowergroup-peru-1118456091.html"
   },
   {
-   "id": 415,
+   "id": 432,
    "puesto": "Auxiliar de Centro de Distribución",
    "empresa": "ManpowerGroup Perú",
    "cat": "Logística",
@@ -17971,9 +18717,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 30,
+   "dias": 31,
    "vence": "2026-12-24",
-   "restan": 60,
+   "restan": 59,
    "score": 95,
    "resumen": "En Manpower Perú buscamos al mejor talento para asumir un nuevo reto laboral como Auxiliar de Centro de Distribución - Part time . ¡La oportunidad de tener un futuro mejor, está aquí!",
    "funciones": [
@@ -18009,43 +18755,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-de-centro-de-distribucion-medio-tiempo-villa-el-salvador-manpowergroup-peru-1118456094.html"
   },
   {
-   "id": 416,
-   "puesto": "Técnico mecánico de mantenimiento",
-   "empresa": "Multimoldes S.A.C.",
-   "cat": "Ingeniería",
-   "min": 1900,
-   "max": 1900,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Laborum",
-   "dias": 30,
-   "vence": "2026-10-25",
-   "restan": 0,
-   "score": 92,
-   "resumen": "MULTIMOLDES SAC, empresa líder con más de 25 años en el mercado, dedicada a la producción y comercialización de envases de papel y artículos escolares, ubicada en San Juan de Miraflores, se encuentra en búsqueda de un:",
-   "funciones": [
-    "Supervisar el funcionamiento continuo y correcto de las máquinas de planta.",
-    "Realizar mantenimiento correctivo cuando se requiera.",
-    "Cambio de rodamientos, retenedores, ejes, piñones y empaques, así como lubricación de transmisiones.",
-    "Soporte en mantenimiento de infraestructura (iluminación, tableros eléctricos, etc.)."
-   ],
-   "requisitos": [
-    "Técnico Mecánico de Mantenimiento industrial egresado con mínimo 1 año y medio de experiencia (incluidas prácticas preprofesionales).",
-    "Disponibilidad para trabajar en turnos rotativos.",
-    "Residir en Lima Sur: Chorrillos, San Juan de Miraflores, Villa El Salvador o zonas aledañas."
-   ],
-   "beneficios": [
-    "Sueldo básico: S/ 1,900 + pago de horas extras.",
-    "Movilidad: S/ 200.00.",
-    "Bono de asistencia: S/ 100.00",
-    "Bono de productividad: S/ 200.00",
-    "Ingreso a planilla con todos los beneficios de ley desde el primer día (CTS, gratificaciones, ESSALUD, etc.)."
-   ],
-   "url": "https://www.laborum.pe/job/multimoldes-s-a-c/tecnico-mecanico-de-mantenimiento-exp-en-plantas/6ab5cfbcba83cb6e704e3f4e"
-  },
-  {
-   "id": 417,
+   "id": 433,
    "puesto": "Administrador",
    "empresa": "Confidencial",
    "cat": "Administración",
@@ -18055,9 +18765,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 30,
+   "dias": 31,
    "vence": "2027-01-23",
-   "restan": 90,
+   "restan": 89,
    "score": 90,
    "resumen": "Empresa dedicada al procesamiento de minerales ubicada en Chala nos encontramos en la búsqueda de 01 Administrador para integrarse a nuestro Equipo - Régimen 20x10",
    "funciones": [
@@ -18082,7 +18792,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/administrador-1118456081.html"
   },
   {
-   "id": 418,
+   "id": 434,
    "puesto": "Representante de Servicios B2B Ingresos Hasta S",
    "empresa": "Confidencial",
    "cat": "Tecnología",
@@ -18092,9 +18802,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 31,
+   "dias": 32,
    "vence": "2027-01-22",
-   "restan": 89,
+   "restan": 88,
    "score": 95,
    "resumen": "Prospectar y captar nuevas empresas dentro de la zona asignada.",
    "funciones": [
@@ -18133,7 +18843,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/representante-de-servicios-b2b-ingresos-hasta-s-4000-1118456048.html"
   },
   {
-   "id": 419,
+   "id": 435,
    "puesto": "Vendedora El Polo",
    "empresa": "ADN RETAIL S.A.C.",
    "cat": "Ventas",
@@ -18143,9 +18853,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 31,
+   "dias": 32,
    "vence": "2026-12-23",
-   "restan": 59,
+   "restan": 58,
    "score": 94,
    "resumen": "Responsable de brindar una adecuada atención al cliente de acuerdo a los estándares de la compañía.",
    "funciones": [
@@ -18170,7 +18880,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/vendedora-el-polo-adn-retail-s.a.c.-1118455960.html"
   },
   {
-   "id": 420,
+   "id": 436,
    "puesto": "Jefe Dpto Administración de Personal",
    "empresa": "Servicios Postales del Perú S.A.",
    "cat": "Ingeniería",
@@ -18180,9 +18890,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 31,
+   "dias": 32,
    "vence": "2026-12-23",
-   "restan": 59,
+   "restan": 58,
    "score": 92,
    "resumen": "SERPOST S.A es una empresa pública de derecho privado del sector transporte y comunicaciones y tiene por actividad principal la prestación de servicios postales con cobertura local, nacional e internacional.",
    "funciones": [
@@ -18221,7 +18931,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/jefe-dpto-administracion-de-personal-servicios-postales-del-peru-s.a.-1118455947.html"
   },
   {
-   "id": 421,
+   "id": 437,
    "puesto": "Mozo de Salón",
    "empresa": "KINGDOM  HOTEL",
    "cat": "Gastronomía",
@@ -18231,9 +18941,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 31,
+   "dias": 32,
    "vence": "2026-11-23",
-   "restan": 29,
+   "restan": 28,
    "score": 92,
    "resumen": "Brindar una atención excepcional al cliente en las áreas de restaurante, buffet y eventos.",
    "funciones": [
@@ -18259,7 +18969,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/mozo-de-salon-kingdom-hotel-1118455961.html"
   },
   {
-   "id": 422,
+   "id": 438,
    "puesto": "Marketing Digital: Especialista en Automatización, Funnels de Venta y Lead Gen",
    "empresa": "Confidencial",
    "cat": "Ventas",
@@ -18269,9 +18979,9 @@ window.CERO_VAGOS = {
    "modalidad": "Remoto",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 31,
+   "dias": 32,
    "vence": "2026-12-23",
-   "restan": 59,
+   "restan": 58,
    "score": 90,
    "resumen": "Construir y optimizar funnels automatizados de punta a punta.",
    "funciones": [
@@ -18308,7 +19018,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/especialista-en-automatizacion-y-funnels-de-marketing-1118454354.html"
   },
   {
-   "id": 423,
+   "id": 439,
    "puesto": "Supervisor",
    "empresa": "Servicios Postales del Perú S.A.",
    "cat": "Logística",
@@ -18318,9 +19028,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Huancayo",
    "fuente": "Bumeran",
-   "dias": 31,
+   "dias": 32,
    "vence": "2027-01-22",
-   "restan": 89,
+   "restan": 88,
    "score": 86,
    "resumen": "SERPOST S.A es una empresa pública de derecho privado del sector transporte y comunicaciones y tiene por actividad principal la prestación de servicios postales con cobertura local, nacional e internacional.",
    "funciones": [
@@ -18355,7 +19065,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/oficial-de-servicios-postales-administraciones-la-merced-servicios-postales-del-peru-s.a.-1118455954.html"
   },
   {
-   "id": 424,
+   "id": 440,
    "puesto": "Ejecutivo de Trade Marketing",
    "empresa": "Grupo Lucky",
    "cat": "Marketing",
@@ -18365,9 +19075,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 32,
+   "dias": 33,
    "vence": "2026-12-22",
-   "restan": 58,
+   "restan": 57,
    "score": 95,
    "resumen": "Mantener comunicación fluida y efectiva con el contacto definido por la cuenta para las coordinaciones de lineamiento, actualización de campañas, control y evaluación de indicadores de gestión.",
    "funciones": [
@@ -18402,7 +19112,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ejecutivo-de-trade-marketing-temporal-grupo-lucky-1118454165.html"
   },
   {
-   "id": 425,
+   "id": 441,
    "puesto": "Asesor Comercial",
    "empresa": "CTIYLAND TRAVEL",
    "cat": "Ventas",
@@ -18412,9 +19122,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 32,
+   "dias": 33,
    "vence": "2026-11-22",
-   "restan": 28,
+   "restan": 27,
    "score": 92,
    "resumen": "Gestionar y ejecutar el proceso de ventas, desde el contacto inicial hasta el cierre.",
    "funciones": [
@@ -18443,7 +19153,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-comercial-ctiyland-travel-1118452520.html"
   },
   {
-   "id": 426,
+   "id": 442,
    "puesto": "Jefe de Tienda y Operaciones",
    "empresa": "Carlysse EIRL",
    "cat": "Otros",
@@ -18453,9 +19163,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Chiclayo",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-12-21",
-   "restan": 57,
+   "restan": 56,
    "score": 100,
    "resumen": "Jefa de Tienda y Operaciones – Boutique de Novias",
    "funciones": [
@@ -18501,7 +19211,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/jefe-de-tienda-y-operaciones-carlysse-eirl-1118448422.html"
   },
   {
-   "id": 427,
+   "id": 443,
    "puesto": "Asistente de Finanzas",
    "empresa": "VIETTEL PERU SAC",
    "cat": "Contabilidad",
@@ -18511,9 +19221,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-12-21",
-   "restan": 57,
+   "restan": 56,
    "score": 98,
    "resumen": "En Bitel Digital Solutions nos encontramos en la búsqueda de un nuevo Analista de Finanzas, que tendrá las funciones de:",
    "funciones": [
@@ -18541,7 +19251,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-finanzas-viettel-peru-sac-1118452405.html"
   },
   {
-   "id": 428,
+   "id": 444,
    "puesto": "Auxiliar de Calidad",
    "empresa": "Confidencial",
    "cat": "Ingeniería",
@@ -18551,9 +19261,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-12-21",
-   "restan": 57,
+   "restan": 56,
    "score": 98,
    "resumen": "Ejecutar inspecciones, pruebas y mediciones en línea de acuerdo con los instructivos,especificaciones técnicas, criterios de muestreo y QC Plan aplicables, validando la conformidad del producto fabricado.",
    "funciones": [
@@ -18586,7 +19296,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-de-calidad-1118452434.html"
   },
   {
-   "id": 429,
+   "id": 445,
    "puesto": "Asistente de Certificaciones",
    "empresa": "Pomica Perú SAC",
    "cat": "Otros",
@@ -18596,9 +19306,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Ica",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-12-21",
-   "restan": 57,
+   "restan": 56,
    "score": 98,
    "resumen": "Ejecutar el muestreo de agua, fruta, materia orgánica, superficies y otros, de acuerdo con el programa del área y en coordinación con el laboratorio contratado.",
    "funciones": [
@@ -18633,7 +19343,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-certificaciones-pomica-peru-sac-1118448558.html"
   },
   {
-   "id": 430,
+   "id": 446,
    "puesto": "Cajera de Tienda",
    "empresa": "GRUPO KARODA SAC",
    "cat": "Ventas",
@@ -18643,9 +19353,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 95,
    "resumen": "Realizar cobros en efectivo, tarjeta, Yape, transferencias y otros medios de pago.",
    "funciones": [
@@ -18683,7 +19393,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/cajera-de-tienda-grupo-karoda-sac-1118447624.html"
   },
   {
-   "id": 431,
+   "id": 447,
    "puesto": "Asesor de Ventas",
    "empresa": "MI FONDO",
    "cat": "Ventas",
@@ -18693,9 +19403,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 95,
    "resumen": "En MiFondo , empresa de Fondos Colectivos, nos encontramos en la búsqueda de Asesores/as de Ventas para Lima Norte (Los Olivos, San Martín de Porres, Independencia, Comas, Carabayllo y Puente Piedra).",
    "funciones": [
@@ -18728,7 +19438,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-ventas-lima-norte-mi-fondo-1118448003.html"
   },
   {
-   "id": 432,
+   "id": 448,
    "puesto": "Jefe de Operaciones Call Center Ventas",
    "empresa": "GEATEL TELECOM",
    "cat": "Ventas",
@@ -18738,9 +19448,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 95,
    "resumen": "Si tienes experiencia liderando campañas comerciales para España y buscas una oportunidad de crecimiento profesional con excelentes ingresos, esta es tu oportunidad.",
    "funciones": [
@@ -18779,7 +19489,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/jefe-de-operaciones-call-center-ventas-telefonia-espana-sjm-geatel-telecom-1118448196.html"
   },
   {
-   "id": 433,
+   "id": 449,
    "puesto": "Operador de Maquinaria Pesada",
    "empresa": "CONSORCIO INGENIERIA ANCAHUASI",
    "cat": "Construcción",
@@ -18789,9 +19499,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Cuzco",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-12-21",
-   "restan": 57,
+   "restan": 56,
    "score": 95,
    "resumen": "Buscamos un Operador de Maquinaria Pesada con experiencia para unirse a nuestro equipo. El candidato ideal será responsable de operar y mantener diversos tipos de maquinaria pesada en un entorno de obra.",
    "funciones": [
@@ -18817,7 +19527,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operador-de-maquinaria-pesada-consorcio-ingenieria-ancahuasi-1118448488.html"
   },
   {
-   "id": 434,
+   "id": 450,
    "puesto": "Asesor Comercial",
    "empresa": "EMPORA STORE",
    "cat": "Ventas",
@@ -18827,9 +19537,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 95,
    "resumen": "Brindar asesoramiento y soporte a los clientes, resolviendo sus consultas y necesidades de manera efectiva.",
    "funciones": [
@@ -18856,7 +19566,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-comercial-atencion-al-cliente-empora-store-1118448519.html"
   },
   {
-   "id": 435,
+   "id": 451,
    "puesto": "Call Center",
    "empresa": "GEATEL TELECOM",
    "cat": "Ventas",
@@ -18866,9 +19576,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 95,
    "resumen": "Somos GEATEL TELECOM , empresa con más de 1 3 años de experiencia en el mercado, brindando servicios de Ventas Call Center de telefonía y energía a importantes empresas a nivel mundial.",
    "funciones": [
@@ -18907,7 +19617,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/formador-de-ventas-call-center-telefonia-publico-espanol-sjl-geatel-telecom-1118448228.html"
   },
   {
-   "id": 436,
+   "id": 452,
    "puesto": "Operario de fundición",
    "empresa": "Grupo Tawa",
    "cat": "Ingeniería",
@@ -18917,9 +19627,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-12-21",
-   "restan": 57,
+   "restan": 56,
    "score": 94,
    "resumen": "Importante empresa industrial del rubro metalúrgico, Transformadora de Metales Lima S.A.C. (TM LIMA) , dedicada a la producción de alambrón de cobre, se encuentra en búsqueda de Operarios de Colada para su planta en Ate.",
    "funciones": [
@@ -18958,7 +19668,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/urgente-operario-de-fundicion-ate-sueldo-s-1600-grupo-tawa-1118452386.html"
   },
   {
-   "id": 437,
+   "id": 453,
    "puesto": "Asesor de Ventas en Campo",
    "empresa": "ALABAMA INVERSIONES SALES SAC",
    "cat": "Ventas",
@@ -18968,9 +19678,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Ayacucho",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-12-21",
-   "restan": 57,
+   "restan": 56,
    "score": 94,
    "resumen": "Identificar y contactar clientes potenciales en el territorio asignado.",
    "funciones": [
@@ -19003,7 +19713,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-ventas-en-campo-ayacucho-ingreso-directo-s-.3000-alabama-inversiones-sales-sac-1118447597.html"
   },
   {
-   "id": 438,
+   "id": 454,
    "puesto": "Mecanico de Motos",
    "empresa": "OTSUKI",
    "cat": "Ingeniería",
@@ -19013,9 +19723,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 94,
    "resumen": "Somos una PEQUEÑA EMPRESA dedicada a la venta de repuestos marca Honda y a brindar servicios de mantenimiento y reparación de motocicletas Honda y Motokars.",
    "funciones": [
@@ -19043,7 +19753,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/mecanico-de-motos-otsuki-1118447603.html"
   },
   {
-   "id": 439,
+   "id": 455,
    "puesto": "Asistente Administrativo C",
    "empresa": "OTSUKI",
    "cat": "Administración",
@@ -19053,9 +19763,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 94,
    "resumen": "Somos una PEQUEÑA EMPRESA dedicada a la venta de repuestos marca Honda y a brindar servicios de mantenimiento y reparación de motocicletas Honda y Motokars.",
    "funciones": [
@@ -19091,7 +19801,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-administrativo-c-experiencia-en-facturacion-otsuki-1118447620.html"
   },
   {
-   "id": 440,
+   "id": 456,
    "puesto": "Asesor de Ventas Call Center",
    "empresa": "Amy Vargas",
    "cat": "Ventas",
@@ -19101,9 +19811,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 94,
    "resumen": "Realizar llamadas para ofrecer productos y servicios.",
    "funciones": [
@@ -19131,7 +19841,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-ventas-call-center-amy-vargas-1118447844.html"
   },
   {
-   "id": 441,
+   "id": 457,
    "puesto": "Auxiliar de Almacén, Despacho y Producción",
    "empresa": "PERAGRO SEEDS",
    "cat": "Logística",
@@ -19141,9 +19851,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 94,
    "resumen": "Recepción y Control: Recepcionar y verificar la mercadería e insumos (bolsajes de semillas, sobres, tintas, etiquetas) cotejando cantidad, lote y estado del empaque.",
    "funciones": [
@@ -19176,7 +19886,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-de-almacen-despacho-y-produccion-peragro-seeds-1118447953.html"
   },
   {
-   "id": 442,
+   "id": 458,
    "puesto": "Operario de Limpieza",
    "empresa": "EFCO",
    "cat": "Otros",
@@ -19186,9 +19896,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 94,
    "resumen": "¡Únete a nuestro equipo de limpieza! Buscamos personal responsable y comprometido para cubrir posiciones en supermercados de Lima.",
    "funciones": [
@@ -19215,7 +19925,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/operario-de-limpieza-efco-1118448201.html"
   },
   {
-   "id": 443,
+   "id": 459,
    "puesto": "Tecnico de Telecomunicaciones",
    "empresa": "Movilmax",
    "cat": "Ingeniería",
@@ -19225,9 +19935,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 92,
    "resumen": "🔧 TÉCNICO INSTALADOR DE FIBRA ÓPTICA FTTH 📍 Magdalena del Mar – Lima 👷 Con o sin experiencia",
    "funciones": [
@@ -19257,7 +19967,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnico-de-telecomunicaciones-movilmax-1118447549.html"
   },
   {
-   "id": 444,
+   "id": 460,
    "puesto": "Agente de Seguridad",
    "empresa": "J &amp; O SECURITY SAC",
    "cat": "Otros",
@@ -19267,9 +19977,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 92,
    "resumen": "Buscamos un Agente de Seguridad proactivo y responsable para unirse a nuestro equipo. El candidato ideal poseerá experiencia previa en el área y demostrará un fuerte compromiso con la seguridad y el servicio.",
    "funciones": [
@@ -19296,7 +20006,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/agente-de-seguridad-j-amp-o-security-sac-1118447836.html"
   },
   {
-   "id": 445,
+   "id": 461,
    "puesto": "Asistente Administrativa",
    "empresa": "CARGO CARRASOS S.R.L.",
    "cat": "Administración",
@@ -19306,9 +20016,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 92,
    "resumen": "Empresa del Sector TRANSPORTE TERRESTRE DE CARGA ubicada en LA VICTORIA-LIMA , se encuentra en busca de una ASISTENTE ADMINISTRATIVA que cumpla con los siguientes requisitos:",
    "funciones": [
@@ -19341,7 +20051,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-administrativa-cargo-carrasos-s.r.l.-1118448254.html"
   },
   {
-   "id": 446,
+   "id": 462,
    "puesto": "Promotor Financiero para trabajar en el Banco Scotiabank",
    "empresa": "SEF PERU HOLDING",
    "cat": "Ventas",
@@ -19351,9 +20061,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 92,
    "resumen": "¡¡Oportunidad Laboral – Rubro Financiero!!",
    "funciones": [
@@ -19383,7 +20093,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/promotor-financiero-para-trabajar-en-el-banco-scotiabank-convenios-todo-lima-y-callao-sef-peru-holding-1118448637.html"
   },
   {
-   "id": 447,
+   "id": 463,
    "puesto": "Analista de Marketing",
    "empresa": "ManpowerGroup Perú",
    "cat": "Marketing",
@@ -19393,9 +20103,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-12-21",
-   "restan": 57,
+   "restan": 56,
    "score": 92,
    "resumen": "Modalidad presencial en Santiago de Surco.",
    "funciones": [
@@ -19427,7 +20137,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/analista-de-marketing-temporal-4-meses-santiago-de-surco-manpowergroup-peru-1118441994.html"
   },
   {
-   "id": 448,
+   "id": 464,
    "puesto": "Asesor de ventas call center",
    "empresa": "Pacific Trade",
    "cat": "Ventas",
@@ -19437,9 +20147,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 89,
    "resumen": "¡GANA SIN LÍMITES COMO ASESOR DE VENTAS CALL CENTER!",
    "funciones": [
@@ -19468,7 +20178,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-ventas-call-center-pacific-trade-1118447880.html"
   },
   {
-   "id": 449,
+   "id": 465,
    "puesto": "Recepcionista Frontdesk para Hostel en Miraflores",
    "empresa": "Casaroma Hostels",
    "cat": "Administración",
@@ -19478,9 +20188,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 89,
    "resumen": "Buscamos un/a Recepcionista con vocación de servicio para integrarse a nuestro equipo. Si disfrutas del trato con personas de diversas culturas y te apasiona brindar una experiencia excepcional a los visitantes, esta oportunidad es para ti.",
    "funciones": [
@@ -19505,7 +20215,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/recepcionista-frontdesk-para-hostel-en-miraflores-casaroma-hostels-1118448404.html"
   },
   {
-   "id": 450,
+   "id": 466,
    "puesto": "Administrador Restaurante",
    "empresa": "RESTOINVESTMENTS S.A.C.",
    "cat": "Recursos Humanos",
@@ -19515,9 +20225,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 87,
    "resumen": "Reconocido restaurante 4 tenedores se encuentra en la búsqueda del mejor talento para incorporarse como ADMINISTRADOR y ser parte de nuestro equipo.",
    "funciones": [
@@ -19542,7 +20252,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/administrador-restaurante-restoinvestments-s.a.c.-1118447700.html"
   },
   {
-   "id": 451,
+   "id": 467,
    "puesto": "Conductor de Reparto",
    "empresa": "C Y R INTEGRAL SERVICE SOCIEDAD ANONIMA CERRADA",
    "cat": "Logística",
@@ -19552,9 +20262,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 87,
    "resumen": ", empresa especializada en soluciones de telecomunicaciones, buscamos un Conductor de Despacho o Reparto para brindar apoyo logístico en el traslado de materiales, equipos y documentos dentro de Lima Metropolitana.",
    "funciones": [
@@ -19580,7 +20290,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/conductor-de-reparto--lima-metropolitana-c-y-r-integral-service-sociedad-anonima-cerrada-1118448146.html"
   },
   {
-   "id": 452,
+   "id": 468,
    "puesto": "Practicante Técnico Industrial",
    "empresa": "Rcj Inkpack",
    "cat": "Prácticas",
@@ -19590,9 +20300,9 @@ window.CERO_VAGOS = {
    "modalidad": "Remoto",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 86,
    "resumen": "Si tienes buena base técnica, ganas de aprender y buscas desarrollarte profesionalmente, esta oportunidad puede ser para ti.",
    "funciones": [
@@ -19621,7 +20331,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-tecnico-industrial--soporte-y-mantenimiento-rcj-inkpack-1118448063.html"
   },
   {
-   "id": 453,
+   "id": 469,
    "puesto": "Asesor Comercial Remoto",
    "empresa": "DataThesis",
    "cat": "Ventas",
@@ -19631,9 +20341,9 @@ window.CERO_VAGOS = {
    "modalidad": "Remoto",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 86,
    "resumen": "Captar clientes potenciales interesados en servicios de tesis",
    "funciones": [
@@ -19660,7 +20370,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-comercial-remoto-datathesis-1118448434.html"
   },
   {
-   "id": 454,
+   "id": 470,
    "puesto": "Se busca Teleoperador de Cobranza",
    "empresa": "Clasa Net",
    "cat": "Contabilidad",
@@ -19670,9 +20380,9 @@ window.CERO_VAGOS = {
    "modalidad": "Remoto",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 86,
    "resumen": "CLASA NET – Consultores Legales Asociados, empresa especializada en recuperación de cartera, se encuentra en búsqueda de Asesores de Cobranzas para integrarse a su equipo de trabajo.",
    "funciones": [
@@ -19702,7 +20412,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/se-busca-teleoperador-de-cobranza-gestiona-2-dias-presencial-y-3-remoto-clasa-net-1118448285.html"
   },
   {
-   "id": 455,
+   "id": 471,
    "puesto": "Asesor de Soporte",
    "empresa": "LEGEND PLAY S.A.C.",
    "cat": "Tecnología",
@@ -19712,9 +20422,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 33,
+   "dias": 34,
    "vence": "2026-11-21",
-   "restan": 27,
+   "restan": 26,
    "score": 84,
    "resumen": "Atender y brindar soporte a las consultas de los clientes.",
    "funciones": [
@@ -19737,7 +20447,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-soporte--legend-play-s.a.c.-1118447571.html"
   },
   {
-   "id": 456,
+   "id": 472,
    "puesto": "Atención al cliente",
    "empresa": "PASTIPAN",
    "cat": "Ventas",
@@ -19747,9 +20457,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 35,
+   "dias": 36,
    "vence": "2026-12-19",
-   "restan": 55,
+   "restan": 54,
    "score": 91,
    "resumen": "Buscamos colaboradores multifuncionales (atención al cliente y manipulación de alimentos) para nuestras tiendas ubicadas en Gonzales Prada, Ejército y San Miguel.",
    "funciones": [
@@ -19775,7 +20485,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/colaborador-multifuncional-miraflores-san-miguel-magdalena-pastipan-1118448851.html"
   },
   {
-   "id": 457,
+   "id": 473,
    "puesto": "Atención al cliente",
    "empresa": "TECHNETSOL SOCIEDAD ANONIMA CERRADA",
    "cat": "Ventas",
@@ -19785,9 +20495,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 35,
+   "dias": 36,
    "vence": "2026-12-18",
-   "restan": 54,
+   "restan": 53,
    "score": 89,
    "resumen": "¿Buscas generar altos ingresos según tu desempeño? ¡Únete a nuestro equipo!",
    "funciones": [
@@ -19815,7 +20525,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/vendedores-para-banca-pyme-scotiabank-lima-sur-fuerza-de-ventas-externa-technetsol-sociedad-anonima-cerrada-1118448843.html"
   },
   {
-   "id": 458,
+   "id": 474,
    "puesto": "Técnico Electricista S",
    "empresa": "Confidencial",
    "cat": "Ingeniería",
@@ -19825,9 +20535,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 35,
+   "dias": 36,
    "vence": "2026-11-19",
-   "restan": 25,
+   "restan": 24,
    "score": 87,
    "resumen": "Nos encontramos en la Búsqueda de 02 Técnicos de Electricistas:",
    "funciones": [
@@ -19852,7 +20562,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/tecnico-electricista-s-.-2800-horarios-rotativos-1118448718.html"
   },
   {
-   "id": 459,
+   "id": 475,
    "puesto": "Consultor Comercial de Innovación y Transformación Digital PYMES",
    "empresa": "Capitale Consultores",
    "cat": "Ventas",
@@ -19862,9 +20572,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 36,
+   "dias": 37,
    "vence": "2026-12-18",
-   "restan": 54,
+   "restan": 53,
    "score": 100,
    "resumen": "¿Tienes facilidad para relacionarte con empresarios, identificar oportunidades y cerrar negocios?",
    "funciones": [
@@ -19897,7 +20607,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/consultor-comercial-de-innovacion-y-transformacion-digital-pymes-capitale-consultores-1118448455.html"
   },
   {
-   "id": 460,
+   "id": 476,
    "puesto": "Ejecutivo(a) Comercial",
    "empresa": "Capitale Consultores",
    "cat": "Ventas",
@@ -19907,9 +20617,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 36,
+   "dias": 37,
    "vence": "2026-12-18",
-   "restan": 54,
+   "restan": 53,
    "score": 100,
    "resumen": "Gestionar el proceso comercial de la línea de dispositivos y mobiliario médico, incluyendo equipamiento de cadena de frío, refrigeradoras para vacunas, congeladores y otros equipos especializados, orientados a clínicas, hospitales, laboratorios y farmacias.",
    "funciones": [
@@ -19940,7 +20650,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ejecutivoa-comercial--clinicas-farmacias-y-laboratorios-capitale-consultores-1118448456.html"
   },
   {
-   "id": 461,
+   "id": 477,
    "puesto": "Asesor de Negocios",
    "empresa": "TECHNETSOL SOCIEDAD ANONIMA CERRADA",
    "cat": "Ventas",
@@ -19950,9 +20660,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 36,
+   "dias": 37,
    "vence": "2026-12-17",
-   "restan": 53,
+   "restan": 52,
    "score": 89,
    "resumen": "¿Buscas generar altos ingresos según tu desempeño? ¡Únete a nuestro equipo!",
    "funciones": [
@@ -19980,7 +20690,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-negocios-banca-pyme-scotiabank-agencia-arriola-fuerza-de-ventas-externa-technetsol-sociedad-anonima-cerrada-1118448639.html"
   },
   {
-   "id": 462,
+   "id": 478,
    "puesto": "Asesor de Negocios",
    "empresa": "TECHNETSOL SOCIEDAD ANONIMA CERRADA",
    "cat": "Ventas",
@@ -19990,9 +20700,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Callao",
    "fuente": "Bumeran",
-   "dias": 36,
+   "dias": 37,
    "vence": "2027-01-17",
-   "restan": 84,
+   "restan": 83,
    "score": 89,
    "resumen": "¿Buscas generar altos ingresos según tu desempeño? ¡Únete a nuestro equipo!",
    "funciones": [
@@ -20020,7 +20730,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-negocios-banca-pyme-scotiabank-agencia-faucett-fuerza-de-ventas-externa-technetsol-sociedad-anonima-cerrada-1118448642.html"
   },
   {
-   "id": 463,
+   "id": 479,
    "puesto": "Auxiliar de RRHH",
    "empresa": "Confidencial",
    "cat": "Recursos Humanos",
@@ -20030,9 +20740,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 36,
+   "dias": 37,
    "vence": "2026-11-18",
-   "restan": 24,
+   "restan": 23,
    "score": 85,
    "resumen": "Colaborar en la gestión de publicidad",
    "funciones": [
@@ -20059,7 +20769,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-de-rrhh-1118448478.html"
   },
   {
-   "id": 464,
+   "id": 480,
    "puesto": "Vendedora San Miguel",
    "empresa": "ADN RETAIL S.A.C.",
    "cat": "Ventas",
@@ -20069,9 +20779,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 37,
+   "dias": 38,
    "vence": "2026-12-17",
-   "restan": 53,
+   "restan": 52,
    "score": 92,
    "resumen": "Asesoramiento a clientes en búsqueda de los diversos productos.",
    "funciones": [
@@ -20101,7 +20811,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/vendedora-san-miguel-adn-retail-s.a.c.-1118448268.html"
   },
   {
-   "id": 465,
+   "id": 481,
    "puesto": "Vendedor para tienda de natura",
    "empresa": "ADECCO PERU S.A.",
    "cat": "Ventas",
@@ -20111,9 +20821,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 37,
+   "dias": 38,
    "vence": "2027-01-16",
-   "restan": 83,
+   "restan": 82,
    "score": 92,
    "resumen": "Por encargo de nuestro importante cliente en rubro de belleza, estamos en la búsqueda de buscando ASESOR DE VENTAS PART TIME para la tienda Natura",
    "funciones": [
@@ -20137,7 +20847,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/vendedor-para-tienda-de-natura-part-time-arequipa-adecco-peru-s.a.-1118448299.html"
   },
   {
-   "id": 466,
+   "id": 482,
    "puesto": "Jefe Zonal de Market",
    "empresa": "GRUPO COPETROL",
    "cat": "Ventas",
@@ -20147,9 +20857,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Trujillo",
    "fuente": "Bumeran",
-   "dias": 37,
+   "dias": 38,
    "vence": "2027-01-16",
-   "restan": 83,
+   "restan": 82,
    "score": 92,
    "resumen": "¡Únete a nuestro equipo como JEFE DE MARKET NORTE!",
    "funciones": [
@@ -20174,7 +20884,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/jefe-zonal-de-market-grupo-copetrol-1118448325.html"
   },
   {
-   "id": 467,
+   "id": 483,
    "puesto": "Asesora de Ventas por Call Center y Canales Digitales!",
    "empresa": "ALILOGISTIC",
    "cat": "Ventas",
@@ -20184,9 +20894,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 37,
+   "dias": 38,
    "vence": "2026-12-17",
-   "restan": 53,
+   "restan": 52,
    "score": 89,
    "resumen": "¡Únete a nuestro equipo como Asesora de Ventas por Call Center y Canales Digitales!",
    "funciones": [
@@ -20219,7 +20929,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesora-de-ventas-por-call-center-y-canales-digitales-alilogistic-1118448283.html"
   },
   {
-   "id": 468,
+   "id": 484,
    "puesto": "Practicante Profesional de Asesoría",
    "empresa": "Engineering Services & Consulting S.A.C",
    "cat": "Prácticas",
@@ -20229,9 +20939,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 38,
+   "dias": 39,
    "vence": "2026-12-16",
-   "restan": 52,
+   "restan": 51,
    "score": 92,
    "resumen": "Apoyar en la coordinación y seguimiento de proyectos del área.",
    "funciones": [
@@ -20270,7 +20980,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-profesional-de-asesoria-|-sincro-engineering-services-consulting-s.a.c-1118447054.html"
   },
   {
-   "id": 469,
+   "id": 485,
    "puesto": "Vendedor Piura",
    "empresa": "ADN RETAIL S.A.C.",
    "cat": "Ventas",
@@ -20280,9 +20990,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Piura",
    "fuente": "Bumeran",
-   "dias": 38,
+   "dias": 39,
    "vence": "2026-12-16",
-   "restan": 52,
+   "restan": 51,
    "score": 89,
    "resumen": "Asesoramiento a clientes en búsqueda de los diversos productos.",
    "funciones": [
@@ -20311,7 +21021,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/vendedor-rambla-san-borja-adn-retail-s.a.c.-1118446954.html"
   },
   {
-   "id": 470,
+   "id": 486,
    "puesto": "Community Manager",
    "empresa": "ACUARIUS OPTICAL SAC",
    "cat": "Marketing",
@@ -20321,9 +21031,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 38,
+   "dias": 39,
    "vence": "2026-12-16",
-   "restan": 52,
+   "restan": 51,
    "score": 89,
    "resumen": "Proyectar la mejor imagen de empresa y marcas ante las redes sociales y mundo digital.",
    "funciones": [
@@ -20357,7 +21067,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/community-manager-acuarius-optical-sac-1118446972.html"
   },
   {
-   "id": 471,
+   "id": 487,
    "puesto": "Practicante Pre Profesional de Desarrollo de Sistemas",
    "empresa": "Unibanca",
    "cat": "Prácticas",
@@ -20367,9 +21077,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 39,
+   "dias": 40,
    "vence": "2026-12-14",
-   "restan": 50,
+   "restan": 49,
    "score": 89,
    "resumen": "Realizar el análisis y desarrollos de los requerimientos del área.",
    "funciones": [
@@ -20403,7 +21113,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-pre-profesional-de-desarrollo-de-sistemas-unibanca-1118445473.html"
   },
   {
-   "id": 472,
+   "id": 488,
    "puesto": "Auxiliar Administrativo",
    "empresa": "Awara Human Solutions",
    "cat": "Administración",
@@ -20413,9 +21123,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 39,
+   "dias": 40,
    "vence": "2026-12-15",
-   "restan": 51,
+   "restan": 50,
    "score": 87,
    "resumen": "En Awara Human Solutions nos encontramos en búsqueda de un (a) Auxiliar Administrativo para una importante empresa del sector maquinarias para minería.",
    "funciones": [
@@ -20439,7 +21149,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-administrativo-surco-awara-human-solutions-1118445409.html"
   },
   {
-   "id": 473,
+   "id": 489,
    "puesto": "Asistente de selección de personal",
    "empresa": "Confidencial",
    "cat": "Recursos Humanos",
@@ -20449,9 +21159,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Arequipa",
    "fuente": "Bumeran",
-   "dias": 40,
+   "dias": 41,
    "vence": "2027-01-13",
-   "restan": 80,
+   "restan": 79,
    "score": 92,
    "resumen": "Nos encontramos en la búsqueda del siguiente puesto :",
    "funciones": [
@@ -20489,7 +21199,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-seleccion-de-personal-sede-arequipa-1118442159.html"
   },
   {
-   "id": 474,
+   "id": 490,
    "puesto": "Auxiliar contable",
    "empresa": "Consultora Human Solutions S.A.C",
    "cat": "Contabilidad",
@@ -20499,9 +21209,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 40,
+   "dias": 41,
    "vence": "2026-12-14",
-   "restan": 50,
+   "restan": 49,
    "score": 91,
    "resumen": "Por encargo de nuestro cliente, importante empresa del sector industrial, nos encontramos en búsqueda del mejor talento para el perfil de: Auxiliar de Contabilidad.",
    "funciones": [
@@ -20536,7 +21246,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/auxiliar-contable-surco-consultora-human-solutions-s.a.c-1118443776.html"
   },
   {
-   "id": 475,
+   "id": 491,
    "puesto": "Atención al cliente",
    "empresa": "ALILOGISTIC",
    "cat": "Ventas",
@@ -20546,9 +21256,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 40,
+   "dias": 41,
    "vence": "2026-12-14",
-   "restan": 50,
+   "restan": 49,
    "score": 89,
    "resumen": "¿Tienes experiencia en ventas, atención al cliente y manejo de canales digitales? ¡Esta oportunidad puede ser para ti!",
    "funciones": [
@@ -20575,7 +21285,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesora-ventas-digitales-alilogistic-1118443775.html"
   },
   {
-   "id": 476,
+   "id": 492,
    "puesto": "Asesor(a) de Gerencia General",
    "empresa": "Bigmond Group",
    "cat": "Tecnología",
@@ -20585,9 +21295,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 41,
+   "dias": 42,
    "vence": "2026-12-13",
-   "restan": 49,
+   "restan": 48,
    "score": 97,
    "resumen": "En Mill Hire The Future, firma perteneciente a Bigmond Group, por encargo de nuestro cliente, importante empresa del sector Banca y Finanzas, nos encontramos en la búsqueda de un(a): Asesor de Gerencia Genera, con el siguiente perfil:",
    "funciones": [
@@ -20627,7 +21337,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-de-gerencia-general-bigmond-group-1118442045.html"
   },
   {
-   "id": 477,
+   "id": 493,
    "puesto": "Asistente de Negocios Escuela Mibanco para Agencia Sihuas",
    "empresa": "MANPOWERGROUP",
    "cat": "Educación",
@@ -20637,9 +21347,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Áncash",
    "fuente": "Bumeran",
-   "dias": 41,
+   "dias": 42,
    "vence": "2027-01-11",
-   "restan": 78,
+   "restan": 77,
    "score": 97,
    "resumen": "Cumplir con todas las tareas y actividades que conforman el Programa Formativo- Escuela.",
    "funciones": [
@@ -20677,7 +21387,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asistente-de-negocios-escuela-mibanco-para-agencia-sihuas-ancash-manpowergroup-1118442059.html"
   },
   {
-   "id": 478,
+   "id": 494,
    "puesto": "Ayudante de Cocina",
    "empresa": "GRAFTON LATAM",
    "cat": "Gastronomía",
@@ -20687,9 +21397,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 41,
+   "dias": 42,
    "vence": "2026-12-12",
-   "restan": 48,
+   "restan": 47,
    "score": 92,
    "resumen": "Apoyar en la preparación y producción de alimentos según los procedimientos establecidos.",
    "funciones": [
@@ -20724,7 +21434,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ayudante-de-cocina-full-time-san-borja-la-molina-surco-restaurante-grafton-latam-1118442007.html"
   },
   {
-   "id": 479,
+   "id": 495,
    "puesto": "Practicante de Negocios Internacionales",
    "empresa": "BOLD ASCENT",
    "cat": "Prácticas",
@@ -20734,9 +21444,9 @@ window.CERO_VAGOS = {
    "modalidad": "Remoto",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 41,
+   "dias": 42,
    "vence": "2026-12-13",
-   "restan": 49,
+   "restan": 48,
    "score": 92,
    "resumen": "Programa de Desarrollo de Talento – Bold Ascent Ubicación: Santiago de Surco (frente al Jockey Plaza / Universidad de Lima)",
    "funciones": [
@@ -20769,7 +21479,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/practicante-de-negocios-internacionales-part-time-bold-ascent-1118442116.html"
   },
   {
-   "id": 480,
+   "id": 496,
    "puesto": "Ingeniero Comercial Jr",
    "empresa": "Talento Humano Perú",
    "cat": "Ventas",
@@ -20779,9 +21489,9 @@ window.CERO_VAGOS = {
    "modalidad": "Híbrido",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 41,
+   "dias": 42,
    "vence": "2026-12-13",
-   "restan": 49,
+   "restan": 48,
    "score": 89,
    "resumen": "Previamente la persona que asuma el puesto será capacitada y formada en relación a los servicios que ofrece la empresa.",
    "funciones": [
@@ -20811,7 +21521,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/ingeniero-comercial-jr.--sector-energia-hibrido-talento-humano-peru-1118437746.html"
   },
   {
-   "id": 481,
+   "id": 497,
    "puesto": "Vendedora Part time",
    "empresa": "ADN RETAIL S.A.C.",
    "cat": "Ventas",
@@ -20821,9 +21531,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 43,
+   "dias": 44,
    "vence": "2026-12-11",
-   "restan": 47,
+   "restan": 46,
    "score": 94,
    "resumen": "Responsable de brindar una adecuada atención al cliente de acuerdo a los estándares de la compañía.",
    "funciones": [
@@ -20850,7 +21560,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/vendedora-part-time-adn-retail-s.a.c.-1118439858.html"
   },
   {
-   "id": 482,
+   "id": 498,
    "puesto": "Cajero",
    "empresa": "Eurofirms Group",
    "cat": "Ventas",
@@ -20860,9 +21570,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 43,
+   "dias": 44,
    "vence": "2026-12-11",
-   "restan": 47,
+   "restan": 46,
    "score": 92,
    "resumen": "En Eurofirms Group , creemos en el liderazgo por valores y el crecimiento continuo, poniendo a las personas y su desarrollo profesional primero, potenciando un ambiente de trabajo positivo y colaborativo.",
    "funciones": [
@@ -20890,7 +21600,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/cajero-a-multifuncional-planilla-completabono-responsabilidadbono-movilidadbono-por-ventas-eurofirms-group-1118439998.html"
   },
   {
-   "id": 483,
+   "id": 499,
    "puesto": "Asesor Postpago Claro",
    "empresa": "Consultora CyL",
    "cat": "Ventas",
@@ -20900,9 +21610,9 @@ window.CERO_VAGOS = {
    "modalidad": "Remoto",
    "ciudad": "Lima",
    "fuente": "Bumeran",
-   "dias": 43,
+   "dias": 44,
    "vence": "2026-11-11",
-   "restan": 17,
+   "restan": 16,
    "score": 81,
    "resumen": "NO POSTULES POR AQUÍ , ESCRIBENOS AL 907082961 ENVIANOS TU CV + CUL",
    "funciones": [
@@ -20925,7 +21635,7 @@ window.CERO_VAGOS = {
    "url": "https://www.bumeran.com.pe/empleos/asesor-postpago-claro-full-time-o-part-time-consultora-cyl-1118439822.html"
   },
   {
-   "id": 484,
+   "id": 500,
    "puesto": "Analista 1",
    "empresa": "Talento Humano Perú",
    "cat": "Ingeniería",
@@ -20935,9 +21645,9 @@ window.CERO_VAGOS = {
    "modalidad": "Presencial",
    "ciudad": "Cusco",
    "fuente": "Bumeran",
-   "dias": 44,
+   "dias": 45,
    "vence": "2027-01-09",
-   "restan": 76,
+   "restan": 75,
    "score": 95,
    "resumen": "Nuestro cliente, Empresa del Sector Eléctrico, nos ha encargado la búsqueda de un (1) Analista 1 – Activo Fijo No Eléctrico.",
    "funciones": [
@@ -20970,758 +21680,6 @@ window.CERO_VAGOS = {
     "FECHA LÍMITE DE RECEPCIÓN DE CURRICULUM VITAE: SÁBADO 19 DE SETIEMBRE DEL 2026"
    ],
    "url": "https://www.bumeran.com.pe/empleos/analista-1-activo-fijo-no-electrico-|-cusco-talento-humano-peru-1118439538.html"
-  },
-  {
-   "id": 485,
-   "puesto": "Anfitriona Automotriz A1",
-   "empresa": "A&RC Consultores",
-   "cat": "Ventas",
-   "min": 2700,
-   "max": 2700,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 44,
-   "vence": "2026-11-10",
-   "restan": 16,
-   "score": 92,
-   "resumen": "Dar la bienvenida a los clientes y/o Ejecutivos de la compañía.",
-   "funciones": [
-    "Dar la bienvenida a los clientes y/o Ejecutivos de la compañía.",
-    "Atención a clientes de nuestros productos y/o a ejecutivos de la compañía en red de concesionarias y/o Malls, dar bienvenida, información, dirigirlos a sus lugares en eventos corporativos.",
-    "Salir en fotografías de catálogo, y/o eventos promocionales, participar en desfiles temáticos, etc.",
-    "Dar cotizaciones, presupuestos, etc. (se les dará capacitación orientada, pagada desde el primer día)",
-    "Opcional proceso de venta de vehículo con comisiones adicionales al sueldo ofrecido, por auto colocado.",
-    "Participar en desfiles en eventos promocionales, de realizarse"
-   ],
-   "requisitos": [
-    "Edad: Hasta 35 años",
-    "Buena Presencia y Figura (NO Excluyente)",
-    "Orientadas a la excelencia del servicio",
-    "Proactiva y buen trato al cliente.",
-    "Deseos de superación y trabajo en equipo.",
-    "Personalidad extrovertida, conversadora, carismática y muy sociable.",
-    "Disponibilidad de traslado a cualquier punto de lima. (facilidad de elegir cercanía a domicilio y/o centro de estudios)",
-    "Ser atenta, servicial, amable y siempre disponible en cualquier actividad que se le encomiende.",
-    "Rapidez e iniciativa.",
-    "No requiere experiencia (capacitaciones constantes).",
-    "Disponibilidad inmediata.",
-    "Las Srtas. Interesadas, Postular enviando su CV con FOTOGRAFIA ACTUALIZADA, para arc.seleccion en gmail. com y asunto ANFIAUTO-2026/II. y por favor confirmar postulación por whatsapp con asistente de selección de personal, Srta. Andrea Garcés al Whatsapp +51 933 089 161 ."
-   ],
-   "beneficios": [
-    "Ingreso a planillas con todos sus beneficios de ley desde el primer día de Capacitación.",
-    "Oportunidad de desarrollar una Línea de Carrera",
-    "Asignación familiar de tener hijos menores de edad",
-    "Salario: 2500 (fijo) + S/.200 (viáticos semanales) = S/. 2700 / mes",
-    "Se dará Facilidades con sus horarios a las chicas que estudien.",
-    "Horario y Contacto",
-    "Mier, Jue, Vie, Sab de 9:30am a 5:30pm (Incluye refrigerio) y dos domingos al mes en el mismo horario."
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/anfitriona-automotriz-a1-2026-marcas-de-autos-arc-consultores-1118439682.html"
-  },
-  {
-   "id": 486,
-   "puesto": "Analista de Mejora Continua",
-   "empresa": "Grupo CONSERH",
-   "cat": "Logística",
-   "min": 2300,
-   "max": 2500,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 44,
-   "vence": "2026-11-10",
-   "restan": 16,
-   "score": 90,
-   "resumen": "Realizar mediciones en planta y elaborar procedimientos de trabajo y diagramas de flujo",
-   "funciones": [
-    "Realizar mediciones en planta y elaborar procedimientos de trabajo y diagramas de flujo",
-    "Ejecutar cálculos estadísticos y proponer soluciones de mejora bajo metodología LEAN",
-    "Capacitar y transmitir información a los equipos del CD"
-   ],
-   "requisitos": [
-    "Formación técnica o universitaria en Gestión, Ingeniería o Logística",
-    "2 años de experiencia en roles de calidad/proyectos aplicando LEAN en almacenes o CD",
-    "Manejo de Excel, Visio y algún paquete estadístico"
-   ],
-   "beneficios": [
-    "Banda salarial S/ 2,300 – S/ 2,500 (Previa evaluación)",
-    "Bono de movilidad S/ 150",
-    "Alimentación cubierta al 100%",
-    "Horario: lunes a viernes, 8:00 a.m. a 6:00 p.m.",
-    "Modalidad presencial – Planta en Villa El Salvador",
-    "Si cumples con el perfil, postúlate ahora enviando tu CV al 907 383 003"
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/analista-de-mejora-continua-cd-logistico-villa-el-salvador-grupo-conserh-1118438074.html"
-  },
-  {
-   "id": 487,
-   "puesto": "Vendedor(a) en Saga Mall del Sur",
-   "empresa": "Confidencial",
-   "cat": "Ventas",
-   "min": 1130,
-   "max": 1130,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 44,
-   "vence": "2026-11-10",
-   "restan": 16,
-   "score": 79,
-   "resumen": "Únete a nuestro equipo y representa una marca innovadora en el cuidado de zapatillas.",
-   "funciones": [
-    "Abordar y asesorar a clientes en tienda",
-    "Promover productos de la marca",
-    "Impulsar ventas y cumplimiento de metas",
-    "Mantener orden y exhibición de productos"
-   ],
-   "requisitos": [
-    "Personas dinámicas, extrovertidas y con iniciativa",
-    "Facilidad para abordar clientes y generar ventas",
-    "Actitud proactiva y orientación a resultados",
-    "Deseable experiencia en ventas o atención al cliente",
-    "¡Postúlate y únete a nosotros!",
-    "INTERESADOS ENVIAR CV AL 976 024 120"
-   ],
-   "beneficios": [
-    "Horario: Martes a domingo de 1:00 p.m. a 9:00 p.m. (descanso lunes)",
-    "Sueldo: S/ 1,130 en Planilla completa desde el primer día (Gratificación, CTS, vacaciones, seguro, asignación familiar, etc.)",
-    "Comisiones hasta S/100 Soles",
-    "Movilidad: S/ 90 mensual",
-    "Disponibilidad para tramitar Carnet de Sanidad"
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/vendedora-en-saga-mall-del-sur-1118438073.html"
-  },
-  {
-   "id": 488,
-   "puesto": "Asistente de Admisión IRIs",
-   "empresa": "ManpowerGroup Perú",
-   "cat": "Contabilidad",
-   "min": 5000,
-   "max": 5000,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 45,
-   "vence": "2026-12-09",
-   "restan": 45,
-   "score": 94,
-   "resumen": "En Manpower Perú buscamos al mejor talento para asumir el reto como Asistente de Admisión IRIs para la ciudad de Lima ¡La oportunidad de tener un futuro mejor, está aquí!",
-   "funciones": [
-    "Participar en la elaboración de las fichas de clasificación de intermediarios financieros.",
-    "Participar en el seguimiento de los intermediarios financieros con la finalidad de retroalimentar la admisión de riesgos con la evolución de las operaciones con riesgo vigente.",
-    "Apoyar en el diseño y la actualización de la metodología de admisión del riesgo de crédito de los intermediarios financieros.",
-    "Elaborar informes de situación financiera y elegibilidad de intermediarios requeridos por terceros.",
-    "Apoyar en la elaboración de la opinión sobre las propuestas de inversión que le presente la Gerencia de Finanzas e Inversiones, dentro del alcance de su evaluación según las políticas establecidas.",
-    "Mantener actualizada la base de datos para la evaluación de riesgo de crédito de intermediarios financieros."
-   ],
-   "requisitos": [
-    "Bachiller en Administración, Economía, Ingeniería Económica, Finanzas, Contabilidad o afines.",
-    "Con Cursos en temas relacionados a riesgos (Deseable).",
-    "Conocimientos en Financiamiento corporativo, gestión de proyectos, banca y finanzas, riesgos o negocios.",
-    "Experiencia 2 años mínimo de experiencia laboral general, contada desde egresado.",
-    "Experiencia 1 año en puesto de asistente, trainee, auxiliar o en puestos de similares características y responsabilidades.",
-    "Office a nivel intermedio.",
-    "Inglés a nivel intermedio."
-   ],
-   "beneficios": [
-    "Ingreso a la planilla directa del cliente.",
-    "EPS Mapfre, para ti y tu familia, cubierto hasta el 90% por parte de la empresa.",
-    "Seguro contra accidentes personales cubierto al 100% por parte de la empresa.",
-    "Seguro de Vida Ley desde el 1er. día de trabajo.",
-    "Seguro Oncológico, para ti y tu familia, cubierto al 100% por parte de la empresa.",
-    "Asignación por Uniforme, el cual se otorga dos (02) veces al año, siendo un importe anual aproximado de S/. 5,000, supeditado a la política interna y lineamientos corporativos presupuestales.",
-    "Otorgamiento del vale por alimentos por el importe de S/. 500.00 soles mensuales.",
-    "Bono por cumplimiento de objetivos al año de hasta un tope de dos (02) sueldos, ello supeditado a la política interna y lineamientos de FONAFE.",
-    "Horario de Trabajo de lunes a viernes de 8:45 a.m. a 5:30 p.m (PRESENCIAL)",
-    "En Manpower Perú, promovemos la inclusión e inserción laboral sin distinción por razón de discapacidad, genero, orientación, identidad y expresión de género, lugar de origen o generación. Por ello ¡Todos los talentos son bienvenidos!",
-    "(ÚNICO MEDIO DE POSTULACIÓN). Ingresando al siguiente link: https://empleo.manpower.pe/TrabajosManpower/JobDetail/ASISTENTE-ADMINISTRATIVO/109413",
-    "Colocando en palabras clave el siguiente número de Ref. 109413"
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/asistente-de-admision-iris--sector-financiero-san-isidro-ref.-109413-manpowergroup-peru-1118438038.html"
-  },
-  {
-   "id": 489,
-   "puesto": "Representante de Servicios",
-   "empresa": "CAJA CUSCO",
-   "cat": "Ingeniería",
-   "min": 1380,
-   "max": 1380,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Cusco",
-   "fuente": "Bumeran",
-   "dias": 45,
-   "vence": "2027-01-08",
-   "restan": 75,
-   "score": 94,
-   "resumen": "Caja Cusco, entidad financiera líder en la región sur del Perú, especializada en microfinanzas, ahorros y servicios financieros. Con más de 4,500 colaboradores comprometidos que lo hacen posible.",
-   "funciones": [
-    "Atender las operaciones de clientes y realizar la venta de servicios brindando un servicio de calidad, transparencia de información y guardando la confidencialidad de las operaciones e información de clientes garantizando la confidencialidad de información de los usuarios.",
-    "Orientar a los clientes con información transparente sobre los productos y servicios que se ofrecen, brindando soluciones para asegurar una atención de calidad, cortesía a clientes y preservar una buena imagen institucional.",
-    "Realizar la venta de servicios según las metas asignadas para el cumplimiento de objetivos de las Agencia y de la empresa.",
-    "Realizar el cuadre de efectivo de forma diaria e informar en caso de identificar sobrantes o faltantes para cumplir con los procedimientos de control interno.",
-    "Realizar actividades de control interno que aseguren que las operaciones se realicen cumpliendo los procedimientos internos y normas de entes supervisores, a fin de minimizar riesgos de sanciones."
-   ],
-   "requisitos": [
-    "Experiencia al Cliente",
-    "Espíritu Colaborativo",
-    "Mejora Continua",
-    "Profesional Técnico, Egresado, Bachiller o Estudios truncos de cualquier especialidad de Institutos o Universidades.",
-    "Representante de servicios con categoría superior: Seis (6) meses en el mismo cargo o un (1) año como Auxiliar de Atención al Usuario y Calidad o Puestos equivalentes en empresas del Sistema Financiero.",
-    "Representante de servicios junior: sin experiencia"
-   ],
-   "beneficios": [
-    "Remuneración fija de S/. 1380 + Bono variable por cumplimiento de metas.",
-    "Tarjeta de alimentación trimestral.",
-    "Oportunidad de Línea de carrera.",
-    "Ingreso a planilla con todos los beneficios de ley.",
-    "Opcional: Acceso a seguro privado de salud.",
-    "Fecha límite de postulación: LUNES , 14 DE SETIEMBRE del 2026."
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/representante-de-servicios-san-martin-de-ica-ref-1569-2026-caja-cusco-1118437905.html"
-  },
-  {
-   "id": 490,
-   "puesto": "Practicante Profesional de Almacén",
-   "empresa": "GRUPO WITHMORY",
-   "cat": "Prácticas",
-   "min": 1130,
-   "max": 1130,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 45,
-   "vence": "2026-12-09",
-   "restan": 45,
-   "score": 92,
-   "resumen": "Grupo Withmory, empresa peruana líder en el rubro automotriz con más de 30 años de trayectoria, se encuentra en la búsqueda del mejor talento para cubrir la posición de: Practicante Profesional de Almacén.",
-   "funciones": [
-    "Brindar soporte en la gestión del almacén, asegurando el adecuado control, registro y conservación de herramientas, equipos y materiales, contribuyendo al orden, disponibilidad y operatividad de los recursos.",
-    "Apoyar en la gestión y control del inventario de repuestos y lubricantes.",
-    "Realizar la recepción y verificación de repuestos provenientes de importación.",
-    "Identificar y reportar oportunamente faltantes, sobrantes o diferencias detectadas durante la recepción.Identificar y reportar repuestos dañados, deteriorados o con observaciones.",
-    "Recepcionar las compras realizadas a proveedores locales, verificando cantidades y condiciones de los productos.",
-    "Realizar la ubicación y almacenamiento adecuado de los repuestos y materiales recibidos.",
-    "Apoyar en el orden, clasificación y control físico del almacén.",
-    "Brindar soporte en inventarios físicos y conciliaciones de stock.",
-    "Mantener actualizada la documentación correspondiente a los ingresos y movimientos de almacén.",
-    "Realizar otras funciones asignadas por su jefe inmediato."
-   ],
-   "requisitos": [
-    "Recién egresado(a) de la carrera de Administración, Ing. Industrial, logística o carreras afines.",
-    "Experiencia mínima de 03 meses en el área de almacén (deseable).",
-    "Excel Nivel Intermedio (Indispensable).",
-    "Disponibilidad para laborar en Nicolás Ayllón - Ate de Lunes a Viernes de 8:00 am a 6:30 pm"
-   ],
-   "beneficios": [
-    "Subvención económica: S/ 1,130 mensuales.",
-    "Convenio de Prácticas Profesionales",
-    "Oportunidad de Desarrollo y línea de Carrera.",
-    "Grato ambiente Laboral."
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/practicante-profesional-de-almacen-grupo-withmory-1118437941.html"
-  },
-  {
-   "id": 491,
-   "puesto": "Operario(a) de Producción",
-   "empresa": "CYL",
-   "cat": "Ingeniería",
-   "min": 1130,
-   "max": 1130,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 45,
-   "vence": "2026-11-08",
-   "restan": 14,
-   "score": 88,
-   "resumen": "Buscamos personas responsables, comprometidas y con disposición para aprender y desarrollarse dentro de una empresa estable del sector tecnológico",
-   "funciones": [
-    "Realizar la limpieza y acondicionamiento de equipos electrónicos y de telecomunicaciones",
-    "Apoyar en el armado y desarmado de equipos",
-    "Realizar lijado, pulido, etiquetado e impresión",
-    "Realizar el empaque y acondicionamiento final de los equipos",
-    "Mantener el orden y limpieza del área de trabajo",
-    "Cumplir con los procedimientos de calidad y seguridad"
-   ],
-   "requisitos": [
-    "Disponibilidad para realizar horas extras",
-    "Disponibilidad para trabajar de lunes a sábado",
-    "Responsabilidad, compromiso y disposición para aprender",
-    "No es indispensable contar con experiencia previa, se brindará capacitación",
-    "Residir en Santa Anita, Ate o zonas aledañas (no indispensable)",
-    "Lunes a sábado",
-    "Lunes a jueves: horario regular + horas extras hasta las 7:45 p. m.",
-    "Viernes: hasta las 5:45 p. m.",
-    "Sábados: turno por coordinar en entrevista",
-    "LUGAR DE TRABAJO",
-    "ATE – SANTA ANITA",
-    "Referencia: Óvalo Santa Anita"
-   ],
-   "beneficios": [
-    "Ingreso a planilla completa desde el primer día",
-    "Sueldo base de S/ 1,130",
-    "Pago de horas extras",
-    "Bono de productividad de S/ 100 a S/ 200 según desempeño",
-    "Pagos quincenales y fin de mes",
-    "Todos los beneficios de ley: CTS, gratificaciones, Essalud, vacaciones y asignación familiar",
-    "Telemedicina 24/7",
-    "Oportunidad de desarrollo y línea de carrera",
-    "Posibilidad de crecimiento dentro del área",
-    "Estabilidad laboral y buen ambiente de trabajo"
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/trabaja-en-ate-operarioa-de-produccion-|-bonos-cyl-1118436386.html"
-  },
-  {
-   "id": 492,
-   "puesto": "Reponedor puesto fijo Crepier San Borja",
-   "empresa": "LULLI & ASOCIADOS S.A.C. - ENLACE Headhunting",
-   "cat": "Recursos Humanos",
-   "min": 1200,
-   "max": 1200,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 45,
-   "vence": "2026-12-09",
-   "restan": 45,
-   "score": 86,
-   "resumen": "Marca peruana líder en moda y accesorios de viaje, con más de 40 años de estilo e innovación.",
-   "funciones": [
-    "Marca peruana líder en moda y accesorios de viaje, con más de 40 años de estilo e innovación.",
-    "Por encargo de nuestro cliente CREPIER , estamos en la búsqueda de personas apasionadas y talentosas para sumar a su equipo como",
-    "REPONEDOR - TIENDA SAN BORJA",
-    "Verificar el stock de la mercadería.",
-    "Reposición de la mercadería.",
-    "Exhibir los productos según lineamientos de la marca.",
-    "Otras funciones que le asigne su jefe inmediato."
-   ],
-   "requisitos": [
-    "Contar con estudios de Secundaria completa o técnicas.",
-    "Disponibilidad para trabajar por campaña día de la madre.",
-    "Tener experiencia mínima de 6 meses a más como Reponedor (a).",
-    "INDISPENSABLE: Contar con disponibilidad inmediata para trabajar."
-   ],
-   "beneficios": [
-    "Horarios rotativos Lunes a Domingo (1 día de descanso dentro de semana).",
-    "10:00 am a 7:00 pm",
-    "11:00am a 8:00pm",
-    "12:00m a 9:00pm",
-    "Salario S/1200 en planilla con todos los beneficios de ley.",
-    "Tipo de puesto: Tiempo completo",
-    "Lugar de trabajo: Empleo presencial EN TIENDA"
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/reponedor-puesto-fijo-crepier-san-borja-lulli-asociados-s.a.c.-enlace-talento-trabajo-1118437845.html"
-  },
-  {
-   "id": 493,
-   "puesto": "Auxiliar de Producción",
-   "empresa": "CYL",
-   "cat": "Ingeniería",
-   "min": 1150,
-   "max": 1150,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 46,
-   "vence": "2026-11-08",
-   "restan": 14,
-   "score": 91,
-   "resumen": "¡Únete a una empresa estable del sector automotriz y desarrolla tu experiencia en el área de despacho!",
-   "funciones": [
-    "Recibir y revisar la mercadería que llega del área de armado.",
-    "Revisar que las cantidades, códigos, etiquetas, sellado y peso de los productos sean correctos.",
-    "Preparar la mercadería colocando los productos sobre pallets, asegurándolos con zuncho y film stretch.",
-    "Preparar y asegurar la carga para que quede lista para su despacho.",
-    "Cumplir con las normas de seguridad, mantener el orden y seguir los procedimientos de calidad."
-   ],
-   "requisitos": [
-    "Secundaria completa.",
-    "Experiencia en almacén, despacho o actividades similares (deseable) .",
-    "Disponibilidad para trabajar en turnos rotativos.",
-    "Disponibilidad para realizar horas extras.",
-    "Responsabilidad, compromiso y disposición para trabajar en equipo.",
-    "Lunes a viernes: 7:00 a. m. a 4:15 p. m.",
-    "Sábados: 7:00 a. m. a 12:30 p. m.",
-    "Lunes a viernes: 9:00 a. m. a 7:15 p. m.",
-    "Los turnos rotan mensualmente.",
-    "Domingo: día libre.",
-    "Disponibilidad para ambos turnos.",
-    "ATE – SANTA ANITA Referencia: Óvalo Santa Anita"
-   ],
-   "beneficios": [
-    "Ingreso directo a planilla desde el primer día.",
-    "Sueldo: S/ 1,150 .",
-    "Incremento salarial al cumplir un año.",
-    "Bono de transporte.",
-    "Bono de asistencia.",
-    "Alimentación con 70% de cobertura.",
-    "Todos los beneficios de ley.",
-    "Essalud, asignación familiar y utilidades.",
-    "Estabilidad laboral."
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/oportunidad-en-ate-auxiliar-de-produccion-|-sin-experiencia-cyl-1118436385.html"
-  },
-  {
-   "id": 494,
-   "puesto": "Asesor",
-   "empresa": "BUMERAN SELECTA",
-   "cat": "Ventas",
-   "min": 4000,
-   "max": 4000,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Piura",
-   "fuente": "Bumeran",
-   "dias": 47,
-   "vence": "2027-01-06",
-   "restan": 73,
-   "score": 97,
-   "resumen": "Gestionar y desarrollar comercialmente la cartera de clientes industriales asignada.",
-   "funciones": [
-    "Gestionar y desarrollar comercialmente la cartera de clientes industriales asignada.",
-    "Realizar visitas técnicas y comerciales en campo, identificando necesidades y oportunidades de venta.",
-    "Prospectar y captar nuevos clientes dentro de la Región Norte.",
-    "Brindar soporte y asesoría técnica en soluciones de lubricación, equipos y sistemas de lubricación .",
-    "Analizar los procesos y equipos de los clientes para identificar oportunidades de aplicación de las distintas soluciones de la compañía.",
-    "Presentar el portafolio de productos, resaltando su valor agregado, rendimiento y potencial de ahorro de costos.",
-    "Elaborar, presentar y realizar seguimiento a propuestas técnico-comerciales.",
-    "Participar activamente en la negociación y cierre de ventas .",
-    "Realizar seguimiento comercial y postventa a la cartera existente, fortaleciendo relaciones de largo plazo.",
-    "Dictar capacitaciones, presentaciones y charlas técnicas a clientes.",
-    "Identificar oportunidades de venta cruzada entre las distintas líneas de productos de la empresa.",
-    "Comercializar soluciones vinculadas a lubricación, transmisión mecánica, sistemas de aire comprimido y otras soluciones industriales."
-   ],
-   "requisitos": [
-    "Egresado/a de Ingeniería Mecánica, Ingeniería Mecatrónica, Ingeniería Química, Ingeniería Industrial o carreras afines.",
-    "Experiencia mínima de 2 años en ventas B2B a clientes del sector industrial .",
-    "Experiencia en posiciones comerciales con una base técnica sólida , que permita comprender procesos, maquinaria y necesidades del cliente.",
-    "Conocimiento y/o experiencia en lubricación industrial, equipos y sistemas de lubricación .",
-    "Experiencia en negociación, seguimiento y cierre de ventas.",
-    "Capacidad para realizar presentaciones y capacitaciones técnicas a clientes.",
-    "Inglés nivel intermedio.",
-    "Licencia de conducir vigente.",
-    "Disponibilidad para realizar trabajo principalmente en campo y viajar dentro de la Región Norte .",
-    "De preferencia, residencia en Piura , considerando cobertura comercial hacia Lambayeque, Talara, Tumbes y otras zonas del norte.",
-    "Orientación comercial, proactividad, comunicación efectiva, capacidad de negociación y orientación a resultados."
-   ],
-   "beneficios": [
-    "Sueldo básico bruto: S/4,000 mensuales.",
-    "Comisiones variables sobre las ventas facturadas.",
-    "Al inicio, el cliente estima un ingreso aproximado de S/2,500 a S/3,000 mensuales en comisiones , sujeto al nivel de ventas y cumplimiento comercial.",
-    "Posibilidad de incrementar progresivamente las comisiones conforme se desarrolle una mayor cartera y volumen de ventas.",
-    "La posición inicia con una base y cartera de clientes existente , por lo que no se parte desde cero.",
-    "Movilidad cubierta por la empresa para los desplazamientos comerciales correspondientes.",
-    "Viáticos cubiertos para viajes a otras provincias o departamentos , incluyendo traslado, alojamiento y alimentación, sujetos a rendición semanal.",
-    "Capacitación y acompañamiento comercial para el conocimiento de las distintas líneas y soluciones de la empresa.",
-    "Oportunidad de desarrollar una cartera propia y generar mayores ingresos en función de resultados."
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/asesor-a-tecnico-comercial--region-norte-copia-bumeran-selecta-1118434406.html"
-  },
-  {
-   "id": 495,
-   "puesto": "Analista Senior Contable",
-   "empresa": "BUMERAN SELECTA",
-   "cat": "Contabilidad",
-   "min": 4000,
-   "max": 4000,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 47,
-   "vence": "2026-12-07",
-   "restan": 43,
-   "score": 95,
-   "resumen": "Participar en el cierre contable mensual de la empresa.",
-   "funciones": [
-    "Participar en el cierre contable mensual de la empresa.",
-    "Realizar el análisis y revisión de cuentas contables .",
-    "Apoyar en la preparación del Balance General, Estado de Resultados y Flujo de Efectivo .",
-    "Revisar y controlar retenciones tributarias y otros conceptos fiscales del día a día.",
-    "Registrar y analizar facturas y operaciones contables vinculadas a impuestos.",
-    "Analizar los costos de importación y apoyar en el cálculo del costo de ventas.",
-    "Verificar el cumplimiento de las normas contables y fiscales aplicables.",
-    "Elaborar reportes contables y financieros para apoyar la toma de decisiones de la gerencia.",
-    "Preparar información y documentación de soporte para auditorías internas y externas .",
-    "Coordinar con la contadora externa y la gerencia respecto al avance y revisión de la información contable.",
-    "Mantener la documentación contable ordenada, actualizada y debidamente sustentada.",
-    "Cumplir con los cronogramas y fechas de cierre establecidos por la empresa."
-   ],
-   "requisitos": [
-    "Profesional titulado/a en Contabilidad .",
-    "Colegiatura vigente como requisito.",
-    "Experiencia mínima de 3 años como Analista Contable o en posiciones de similar responsabilidad .",
-    "Experiencia participando en cierres contables mensuales y análisis de cuentas.",
-    "Experiencia en costos de importación y cálculo de costo de ventas .",
-    "Conocimiento de registro de facturas, impuestos, retenciones, detracciones y percepciones .",
-    "Experiencia en preparación y análisis de estados financieros .",
-    "Conocimiento de normativa contable y tributaria vigente.",
-    "Experiencia preparando información para auditorías internas y/o externas.",
-    "Alto nivel de responsabilidad, organización, análisis, atención al detalle y ética profesional.",
-    "Disponibilidad para trabajar de manera presencial en Los Olivos ."
-   ],
-   "beneficios": [
-    "Sueldo bruto mensual: S/4,000.",
-    "Régimen laboral general.",
-    "Contrato firmado antes del inicio de labores.",
-    "Posibilidad de afiliación a EPS , sujeto a las condiciones y porcentaje de cobertura de la empresa.",
-    "Proyección de crecimiento dentro del área contable, con posibilidad de asumir a futuro la posición de contador/a interno/a .",
-    "Posible bono asociado a desempeño/compromiso, sujeto a evaluación y confirmación de condiciones.",
-    "Horario de trabajo",
-    "Lunes a viernes de 8:30 a. m. a 5:00 p. m.",
-    "Dos sábados al mes de 8:00 a. m. a 12:00 p. m.",
-    "Lugar de trabajo: Los Olivos, Lima ."
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/analista-senior-contable-los-olivos-bumeran-selecta-1118434409.html"
-  },
-  {
-   "id": 496,
-   "puesto": "Ejecutivo de Gobierno Corporativo",
-   "empresa": "ManpowerGroup Perú",
-   "cat": "Recursos Humanos",
-   "min": 5000,
-   "max": 5000,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 47,
-   "vence": "2026-12-07",
-   "restan": 43,
-   "score": 94,
-   "resumen": "En Manpower Perú buscamos al mejor talento para asumir el reto como Ejecutivo(a) de Gobierno Corporativo para la ciudad de Lima ¡La oportunidad de tener un futuro mejor, está aquí!",
-   "funciones": [
-    "Asegurar y gestionar la implementación de la política y lineamientos de gobernanza corporativa en COFIDE y asesorar y absolver consultas en temas relacionado a gobierno corporativo,",
-    "Planificar y gestionar la elaboración, actualización y difusión de normas, metodologías y procedimientos de gobernanza, incluyendo gestión de directores y continuidad operativa.",
-    "Garantizar y gestionar la elaboración de los reportes de gobernanza, informando sobre el nivel de madurez y cumplimiento de los procesos institucionales. Incluyendo el aseguramiento de la gestión de Buen Gobierno Corporativo aplicable a COFIDE.",
-    "Gestionar la capacitación a trabajadores y directores en mejores prácticas de gobernanza y tendencias internacionales.",
-    "Supervisar la gestión documental y normativa del Directorio, incluyendo revisión de contenidos y emisión de visados.",
-    "Asegurar el seguimiento de acuerdos y actividades del Directorio y Comités, reportando desviaciones o incumplimientos.",
-    "Gestionar eficientemente las comunicaciones internas y externas del Directorio, garantizando oportunidad y trazabilidad.",
-    "Representar al área en comités y grupos de trabajo relacionados con gobernanza.",
-    "Brindar soporte al Gerente de la Gerencia de Asesoría Jurídica en las labores de secretaría del Directorio y del Comité de Gerencia.",
-    "Brindar apoyo en la revisión y/o elaboración de actas, transcripciones, mociones, entre otros documentos de índole societario, así como coadyuvar en la atención a accionistas, directores y demás Stakeholders de COFIDE.",
-    "Cumplir con otras funciones asignadas por la gerencia"
-   ],
-   "requisitos": [
-    "Derecho, Economía, Administración, Contabilidad, Ingeniería Industrial o carreras afines.",
-    "Experiencia laboral general de 5 años desde egresado.",
-    "Experiencia específica: 3 años en puestos de ejecutivo, jefe, supervisor, analista o en puestos de similares características y responsabilidades.",
-    "Conocimientos técnicos principales requeridos para el puesto (No requieren documentación de sustento): Principios de gobierno corporativo, gestión de directorios y comités, normativa societaria y de cumplimiento, coordinación institucional, otros afines.",
-    "Curso o diplomado o especialización en Gobierno Corporativo. (Indispensable)",
-    "Curso: Dirección de Empresas o Gestión Pública, Compliance y Gestión de Riesgos. (Deseable)",
-    "Office - Intermedio (Deseable)",
-    "Inglés - Intermedio (Deseable)"
-   ],
-   "beneficios": [
-    "Ingreso a la planilla directa del cliente.",
-    "EPS Mapfre, para ti y tu familia, cubierto hasta el 90% por parte de la empresa.",
-    "Seguro contra accidentes personales cubierto al 100% por parte de la empresa.",
-    "Seguro de Vida Ley desde el 1er. día de trabajo.",
-    "Seguro Oncológico, para ti y tu familia, cubierto al 100% por parte de la empresa.",
-    "Asignación por Uniforme, el cual se otorga dos (02) veces al año, siendo un importe anual aproximado de S/. 5,000, supeditado a la política interna y lineamientos corporativos presupuestales.",
-    "Otorgamiento del vale por alimentos por el importe de S/. 500.00 soles mensuales.",
-    "Bono por cumplimiento de objetivos al año de hasta un tope de dos (02) sueldos, ello supeditado a la política interna y lineamientos de FONAFE.",
-    "Horario de Trabajo de lunes a viernes de 8:45 a.m. a 5:30 p.m (PRESENCIAL)",
-    "(ÚNICO MEDIO DE POSTULACIÓN)",
-    "Las postulaciones serán hasta el 15 de Setiembre (Hasta las 23:59 horas del último día de recepción).",
-    "En Manpower Perú, promovemos la inclusión e inserción laboral sin distinción por razón de discapacidad, género, orientación, identidad y expresión de género, lugar de origen o generación. Por ello ¡Todos los talentos son bienvenidos!"
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/ejecutivo-de-gobierno-corporativo-sector-financiero-san-isidro-ref109412-manpowergroup-peru-1118434386.html"
-  },
-  {
-   "id": 497,
-   "puesto": "UPN San Juan de Lurigancho: Asesor de ventas Educativas Pregrado",
-   "empresa": "Laureate Perú",
-   "cat": "Ventas",
-   "min": 1350,
-   "max": 1350,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 47,
-   "vence": "2026-12-07",
-   "restan": 43,
-   "score": 92,
-   "resumen": "En UPN contribuimos a la transformación del Perú a través de una educación inclusiva, accesible y de calidad que transforma vidas .",
-   "funciones": [
-    "Gestionar el proceso de venta según el producto asignado, cumpliendo la meta mensual y los indicadores diarios de gestión.",
-    "Registrar correctamente cada interacción con el prospecto y/o alumno en nuestros sistemas (CRM, Sócrates, Banner, entre otros).",
-    "Aplicar el guión de ventas (argumentario, manejo de objeciones, beneficios) siguiendo los lineamientos de capacitación y calidad.",
-    "Brindar una atención de calidad durante todo el proceso de venta, cumpliendo el reglamento de admisión y el manual de venta ética."
-   ],
-   "requisitos": [
-    "Estudiante universitario a partir de 7mo ciclo, o con estudios culminados, en Administración, Ingeniería o carreras afines.",
-    "Mínimo 1 año de experiencia en puestos de ventas (indispensable).",
-    "Deseable: experiencia en Call Center y/o atención al público, y en ventas del sector educativo.",
-    "Manejo de Office nivel intermedio (Excel, Word, PowerPoint, correo, Internet).",
-    "Buena redacción, ortografía y técnicas de atención al cliente.",
-    "Como institución, en UPN valoramos la diversidad y promovemos entornos inclusivos donde todas las personas tengan las mismas oportunidades de participación y desarrollo, sin distinción de origen, género, edad, discapacidad u otras condiciones.",
-    "#LoQueNosUneNosHaceUno #OportunidadesLaborales"
-   ],
-   "beneficios": [
-    "Lugar: UPN SJL (San Juan de Lurigancho)",
-    "Día de trabajo: Lunes a sábado",
-    "Rango horario: 9am a 9pm (Turno 1: 9:00 am a 3:00pm | Turno 2: 3:00 pm a 9:00pm )",
-    "Día de descanso: Domingo",
-    "Sueldo: S/ 1,350 + Comisiones.",
-    "Ingreso a planilla completa desde el primer día.",
-    "Seguro Vida Ley desde el primer día de labores.",
-    "EPS cubierta al 50% y Seguro Oncológico al 100%.",
-    "Beneficios educativos en las instituciones de la Red Laureate (UPN, UPC y Cibertec).",
-    "Línea de carrera.",
-    "Excelente clima laboral."
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/upn-san-juan-de-lurigancho-asesor-de-ventas-educativas-pregrado-call-center-s-1350-comisiones-laureate-peru-1118434411.html"
-  },
-  {
-   "id": 498,
-   "puesto": "Operario de Producción",
-   "empresa": "Eurofirms Group",
-   "cat": "Ingeniería",
-   "min": 1600,
-   "max": 1600,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 48,
-   "vence": "2026-12-06",
-   "restan": 42,
-   "score": 97,
-   "resumen": "En Eurofirms Group, creemos en el liderazgo por valores y el crecimiento continuo, poniendo a las personas y su desarrollo profesional primero, potenciando un ambiente de trabajo positivo y colaborativo.",
-   "funciones": [
-    "Ejecuta procesos y/u operaciones relacionadas a la producción de mezclas líquidas y de polvo, haciendo buen uso de insumos, equipos e instalaciones, acorde a las Instrucciones de Producción y a las normas de seguridad y salud en el trabajo de la Planta.",
-    "Colocarse los equipos de protección personal (EPPs) antes de iniciar las labores de producción según el tipo de proceso y protección indicada antes de iniciar la producción.",
-    "Verificar que las máquinas y equipos de fabricación, se encuentren debidamente limpios.",
-    "Verificar que la materia prima dispensada corresponda a lo indicado en la Instrucción de manufactura.",
-    "Iniciar el proceso de producción según la instrucción de manufactura.",
-    "Extraer una muestra del lote fabricado para realizar el control de calidad respectivo.",
-    "Envasar el producto según lo indicado en la Instrucción de manufactura.",
-    "Verificar que los Insumos Químicos y Bienes Fiscalizados (IQBF) dispensados para el proceso productivo cumplan con lo señalado en la Instrucción de Manufactura.",
-    "Utilizar responsablemente los Insumos Químicos y Bienes Fiscalizados (IQBF) para el proceso productivo.",
-    "Informar al Supervisor de producción, cualquier merma, perdida, derrame o incidencia que ocurra respecto a los Insumos Químicos y Bienes Fiscalizados (IQBF).",
-    "Cumplir con realizar correctamente la segregación de los residuos sólidos que se generan producto de la actividad, utilizando los tachos diferenciados de colores.",
-    "Llenar correctamente los registros de la Instrucción de Manufactura."
-   ],
-   "requisitos": [
-    "Secundaria completa.",
-    "Experiencia previa en producción, en industrias de químicos, construcción, entre otros.",
-    "Disponibilidad para laborar en Lurín.",
-    "Experiencia en manejo de Montacargas (certificado)",
-    "Disponibilidad para trabajar en horarios rotativos de manera semanal: Lunes a viernes de 7am a 5pm / Lunes a Jueves de 7pm a 7am."
-   ],
-   "beneficios": [
-    "Sueldo base: S/ 1,600",
-    "Servicio de movilidad",
-    "Bono de Alimentos S/ 13.80 por día efectivo laborado",
-    "Ingreso a planilla con todos los beneficios de ley (CTS, Gratificación, Utilidades, Seguro Es salud, Asignación familiar)",
-    "Si cumples con los requisitos, estás interesado y crees que eres el match perfecto, te invitamos a postular ¡Te esperamos!"
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/operario-de-produccion-movilidad-ida-y-vuelta-alimentacion-eurofirms-group-1118432554.html"
-  },
-  {
-   "id": 499,
-   "puesto": "Cajera",
-   "empresa": "ADN RETAIL S.A.C.",
-   "cat": "Otros",
-   "min": 1500,
-   "max": 1500,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 48,
-   "vence": "2026-12-06",
-   "restan": 42,
-   "score": 94,
-   "resumen": "Realizar el manejo, control y cuadre de caja durante el turno.",
-   "funciones": [
-    "Realizar el manejo, control y cuadre de caja durante el turno.",
-    "Recibir y procesar pagos mediante efectivo, tarjetas, transferencias y otros medios autorizados.",
-    "Emitir boletas, facturas y demás comprobantes de pago según corresponda.",
-    "Vender y recomendar suplementos deportivos, productos funcionales, snacks y demás productos del Market Saludable.",
-    "Brindar información clara y responsable sobre las características y beneficios de los productos, de acuerdo con la capacitación y lineamientos de la empresa.",
-    "Promover y vender los servicios de asesoría nutricional personalizada.",
-    "Captar potenciales clientes interesados en asesoría nutricional y gestionar el agendamiento de sus citas.",
-    "Realizar seguimiento a potenciales clientes y oportunidades comerciales mediante los canales autorizados por la empresa.",
-    "Promover productos y servicios complementarios de acuerdo con las necesidades del cliente.",
-    "Cumplir con metas individuales y objetivos comerciales establecidos por la empresa.",
-    "Mantenerse actualizado sobre los productos, suplementos, servicios y promociones ofrecidos por Buenas Fibras.",
-    "Apoyar en la correcta exhibición y presentación de los productos del Market Saludable."
-   ],
-   "requisitos": [
-    "Solo mujeres de cualquier nacionalidad entre 20 y 35 años.",
-    "Tener experiencia mínima de 1 año de experiencia en ventas, atención al cliente, caja o puestos comerciales similares.",
-    "Disponibilidad para trabajar 48 horas semanales, 6 días a la semana con 1 dia de descanso rotativo. Los horarios pueden ser: de 7:45 am a 4:30 pm o de 1:15 pm a 10 pm."
-   ],
-   "beneficios": [
-    "Grato ambiente laboral y posibilidad de hacer línea de carrera.",
-    "Pago quincena y fin de mes.",
-    "Beneficios laborales de planilla remype desde el 1er día de trabajo, tienen 15 días de vacaciones al año y Essalud.",
-    "Sueldo básico (S/.1500) + comisiones + alimentación."
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/cajera-adn-retail-s.a.c.-1118432596.html"
-  },
-  {
-   "id": 500,
-   "puesto": "Jefe",
-   "empresa": "Caja de Pensiones Militar Policial",
-   "cat": "Ingeniería",
-   "min": 10500,
-   "max": 10500,
-   "moneda": "PEN",
-   "modalidad": "Presencial",
-   "ciudad": "Lima",
-   "fuente": "Bumeran",
-   "dias": 48,
-   "vence": "2026-12-06",
-   "restan": 42,
-   "score": 92,
-   "resumen": "Revisar las propuestas de elegibilidad de instrumentos u operaciones de inversión, emisores, intermediarios de negociación, contrapartes, entidades de custodia, mecanismos electrónicos de negociación, indicadores de referencia, entre otros, de renta variable y alternativos.",
-   "funciones": [
-    "Revisar las propuestas de elegibilidad de instrumentos u operaciones de inversión, emisores, intermediarios de negociación, contrapartes, entidades de custodia, mecanismos electrónicos de negociación, indicadores de referencia, entre otros, de renta variable y alternativos.",
-    "Revisar y custodiar los documentos que forman parte del sustento del análisis de la decisión de inversión, el mismo que integra el Archivo de Expediente de Inversión de los instrumentos u operaciones de inversión de renta variable y alternativos.",
-    "Seleccionar y remitir propuestas de inversión y/u operación de clases de activos, emisores, intermediarios de negociación, contrapartes, entidades de custodia, mecanismos electrónicos de negociación, entre otros, en relación a las inversiones en renta variable y alternativos.",
-    "Revisar y supervisar la elaboración de la propuesta de ejecución de instrumentos de inversión de renta variable y alternativos en el sistema integrado de inversiones.",
-    "Gestionar de manera integral la atención y registro de llamados de capital, distribuciones, estados de cuenta y otros aspectos administrativos y operativos relacionados con los fondos de inversión, asegurando una comunicación fluida y precisa con las partes involucradas.",
-    "Atender el requerimiento regulatorio y control de límites de inversión.",
-    "Representar a los regímenes administrados en los comités que se le encarguen en relación a las inversiones en renta variable y alternativos.",
-    "Proponer lineamientos de política de inversiones y estrategias para optimizar la administración del portafolio de renta variable y alternativos.",
-    "Formular las propuestas de inversión en renta variable y alternativos, y aquellas que permitan dar atención a los requerimientos realizados por el Comité de Inversiones, según el ámbito de su competencia.",
-    "Ejecutar las operaciones de inversión en instrumentos financieros de renta variable y alternativos.",
-    "Presentar información y reportes sobre el mercado financiero, seguimiento de indicadores para la toma de decisiones, según se requiera.",
-    "Presentar el informe mensual de la situación de las inversiones en renta variable y alternativos y su desempeño."
-   ],
-   "requisitos": [
-    "Título profesional o bachiller en contabilidad, economía, administración, ingeniería industrial o afines.",
-    "De preferencia, postgrado en inversiones o afines.",
-    "Certificación internacionalmente reconocida en inversiones – Nivel I.",
-    "De preferencia, capacitación en interpretación de la Norma internacional ISO 37001:2016 Antisoborno.",
-    "Experiencia general de seis (6) años y experiencia especifica de cuatro (4) años acumulable como subgerente, jefe o puesto similar.",
-    "FUNCIÓN BÁSICA"
-   ],
-   "beneficios": [
-    "Remuneración: S/. 10,500.00",
-    "Horario de Trabajo regular: 9:00 a.m. a 5:15 p.m. de lunes a viernes (presencial).",
-    "Modalidad de contratación: Plazo indeterminado (Planilla, beneficios según ley).",
-    "Capacitación acorde a la necesidad del puesto.",
-    "Los datos personales que el postulante facilite a través de su hoja de vida, podrán ser recopilados, tratados, e incorporados a un Banco de Datos Personales de la CPMP, solo para dichos fines específicos, y serán conservados por un periodo máximo de dos años.",
-    "La Caja de Pensiones Militar Policial - CPMP declara que respeta los principios de legalidad, consentimiento, finalidad, proporcionalidad, calidad, disposición de recurso, nivel de protección adecuado, conforme a las disposiciones de la Ley de Protección de Datos Personales vigente en Perú\"",
-    "\" En la Caja de Pensiones Militar Policial creemos firmemente en la igualdad de oportunidades por lo cual promovemos la diversidad de género, origen étnico, nacionalidad, la inclusión de personas con discapacidad y/o habilidades diferentes (de acuerdo con lo establecido en la Ley N° 29973).\""
-   ],
-   "url": "https://www.bumeran.com.pe/empleos/subgerente-de-renta-variable-y-alternativos-caja-de-pensiones-militar-policial-1118432592.html"
   }
  ]
 };
