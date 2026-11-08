@@ -1,42 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://cerovagos.com/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://cerovagos.com/transparencia/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/como-trabajamos/</loc><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://cerovagos.com/terminos/</loc><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://cerovagos.com/privacidad/</loc><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://cerovagos.com/apoyanos/</loc><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/lima/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/arequipa/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/callao/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/piura/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-en/cusco/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/ventas/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/ingenieria/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/logistica/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/recursos-humanos/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/practicas/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/administracion/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/contabilidad/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/atencion-al-cliente/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/tecnologia/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/gastronomia/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cerovagos.com/trabajos-de/marketing/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://cerovagos.com/transparencia/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/como-trabajamos/</loc><lastmod>2026-11-08</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://cerovagos.com/terminos/</loc><lastmod>2026-11-08</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://cerovagos.com/privacidad/</loc><lastmod>2026-11-08</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://cerovagos.com/apoyanos/</loc><lastmod>2026-11-08</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/lima/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/arequipa/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/callao/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/cusco/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-en/piura/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/ventas/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/ingenieria/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/logistica/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/recursos-humanos/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/practicas/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/administracion/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/contabilidad/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/atencion-al-cliente/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/tecnologia/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/gastronomia/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/trabajos-de/marketing/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cerovagos.com/oferta/te-estamos-buscando-asesor-de-servicio-al-cliente-manpower-9a9dc56d/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asesor-comercial-factoring-manpower-89c57768/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operario-de-almacen-total-talent-human-resources-6cb2b2a5/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-arch-latam-8c787024/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/teleoperador-pacifico-asiste-8c1ab0d8/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/operario-de-limpieza-limtek-servicios-integrales-a6b53001/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/ventas-y-atencion-al-cliente-aadaru-2ade5d85/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/chofer-de-reemplazo-pacifico-asiste-8f028b31/</loc><lastmod>2026-11-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/gestor-comercial-de-campo-manpowergroup-peru-3703ce91/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/upn-lima-norte-supervisor-laureate-477b5c44/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/ayudante-de-cocina-hva-inversiones-c8008e59/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/supervisor-de-marketing-manpowergroup-peru-2d4fd352/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/coordinador-de-tienda-casalinda-d556e535/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-elvo-e8659fd4/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/auxiliar-grupo-aenza-5759cbf0/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/atencion-al-cliente-manpowergroup-peru-de8101c3/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-contable-chk-materials-peru-sac-f8d1fbdc/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/upn-asesor-de-ventas-postgrado-laureate-peru-ed0e86b6/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/asistente-operativo-san-fernando-eb933503/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/practicante-profesional-de-costos-klar-7d6dd0fd/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/asesor-comercial-factoring-b2b-manpowergroup-peru-8b536502/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/almacenero-de-repuestos-mym-repuestos-y-servicios-64beb8e1/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/vendedora-jockey-adn-retail-s-a-c-1217a0d6/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/talento-tecnico-motorizado-con-o-cyl-89b424ca/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-motorizado-moto-propia-licencia-propia-cyl-91c27780/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/auxiliar-contable-zona-llantas-e4220ac1/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/tecnico-electricista-tablerista-confidencial-308d5a4c/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/jefe-pieers-c323dcd6/</loc><lastmod>2026-11-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asesor-de-cobranzas-recupera-mas-sac-be16aa22/</loc><lastmod>2026-11-06</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/asistente-comercial-prestaclub-4146f8fd/</loc><lastmod>2026-11-06</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/asesor-de-campo-prestaclub-006dd711/</loc><lastmod>2026-11-06</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/tecnica-prestaclub-ba3bfd79/</loc><lastmod>2026-11-06</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/analista-contable-prestaclub-08e21b06/</loc><lastmod>2026-11-06</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/remoto-asesor-de-retencion-adecco-peru-s-a-3b4ab336/</loc><lastmod>2026-11-06</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/asistente-contable-confidencial-1b4ba306/</loc><lastmod>2026-11-06</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerovagos.com/oferta/asistente-tecnico-conductor-bureau-veritas-del-peru-sa-5a9c6cf7/</loc><lastmod>2026-11-06</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/asesor-a-de-ventas-call-center-agile-consuling-b4d531fa/</loc><lastmod>2026-11-06</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/practicante-profesional-de-operaciones-raciemsa-786f93ce/</loc><lastmod>2026-11-05</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/ingeniero-de-planeamiento-y-confiabilidad-analytica-mineral-services-0ecca650/</loc><lastmod>2026-11-05</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
@@ -80,7 +101,6 @@
   <url><loc>https://cerovagos.com/oferta/tecnico-de-subestaciones-electricas-grupo-aenza-ca6dbb74/</loc><lastmod>2026-11-03</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/practicante-profesional-de-laboratorio-quimico-consorcio-minero-horizo-44054376/</loc><lastmod>2026-11-03</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/auxiliar-de-almacen-dominio-excel-dentro-de-planta-backus-ate-equans-p-be312cbf/</loc><lastmod>2026-11-03</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/reponedor-adecco-peru-s-a-6b49ddd2/</loc><lastmod>2026-11-02</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/ayudante-operador-de-imprenta-adecco-peru-s-a-0a38b93a/</loc><lastmod>2026-11-02</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/ayudante-de-cafeteria-people-partners-47f553aa/</loc><lastmod>2026-11-02</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/operario-grafton-peru-s-a-c-bacb184b/</loc><lastmod>2026-11-02</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
@@ -167,8 +187,6 @@
   <url><loc>https://cerovagos.com/oferta/operario-de-produccion-con-y-adecco-peru-s-a-d53b3134/</loc><lastmod>2026-10-26</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/asesor-a-de-ventas-financieras-manpowergroup-peru-38e021f9/</loc><lastmod>2026-10-26</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/auxiliar-de-ensacado-para-planta-industrial-en-cajamarquilla-chosica-m-eb8a25eb/</loc><lastmod>2026-10-26</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operario-de-almacen-adecco-peru-s-a-4bdbccf8/</loc><lastmod>2026-10-26</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/supervisor-del-area-lavoro-peru-39528005/</loc><lastmod>2026-10-26</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/supervisor-adecco-peru-s-a-c1916ed3/</loc><lastmod>2026-10-26</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/auxiliar-de-almacen-manpower-23005b8c/</loc><lastmod>2026-10-26</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/operario-de-produccion-s-adecco-peru-s-a-6b4f8f8f/</loc><lastmod>2026-10-26</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
@@ -257,7 +275,6 @@
   <url><loc>https://cerovagos.com/oferta/operario-de-limpieza-y-jardineria-consorcio-lp-a301e5e9/</loc><lastmod>2026-10-19</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/operario-de-limpieza-para-i-e-privada-consorcio-lp-3dbd628f/</loc><lastmod>2026-10-19</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/operario-de-produccion-12-horas-eurofirms-peru-125c68b7/</loc><lastmod>2026-10-19</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operario-de-almacen-total-talent-human-resources-6cb2b2a5/</loc><lastmod>2026-10-19</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/auxiliar-de-produccion-adecco-peru-s-a-2dd079d2/</loc><lastmod>2026-10-19</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/operario-de-produccion-eurofirms-peru-b3f2adb8/</loc><lastmod>2026-10-19</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/supervisor-de-vehiculos-lavoro-peru-eb895a00/</loc><lastmod>2026-10-19</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
@@ -422,10 +439,6 @@
   <url><loc>https://cerovagos.com/oferta/operario-de-almacen-chorrillos-planet-game-s-a-c-2984f25a/</loc><lastmod>2026-10-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/practicante-de-soporte-tecnico-universidad-autonoma-del-peru-s-a-c-2ed2baf2/</loc><lastmod>2026-10-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/analista-de-operaciones-b2b-well-consulting-services-84bd0c76/</loc><lastmod>2026-10-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/jefe-de-tienda-academia-aula-20-43571823/</loc><lastmod>2026-10-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/upn-san-juan-de-lurigancho-asesor-a-de-ventas-educativas-laureate-17d5005e/</loc><lastmod>2026-10-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asistente-de-calidad-centro-carnes-s-r-l-54f9a70f/</loc><lastmod>2026-10-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/operario-de-produccion-centro-carnes-s-r-l-d6eb0824/</loc><lastmod>2026-10-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/practicante-profesional-contable-confidencial-598c23f6/</loc><lastmod>2026-10-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/estudia-y-trabaja-asesor-ventas-call-center-part-time-s-dac-nemo-conta-32549cd9/</loc><lastmod>2026-10-06</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/asistente-de-mantenimiento-soldimix-peru-97eaa1bf/</loc><lastmod>2026-10-06</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
@@ -581,8 +594,4 @@
   <url><loc>https://cerovagos.com/oferta/practicante-profesional-de-almacen-grupo-withmory-f845bd96/</loc><lastmod>2026-09-10</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/operario-a-de-produccion-cyl-b43bf08f/</loc><lastmod>2026-09-10</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://cerovagos.com/oferta/reponedor-puesto-fijo-crepier-san-borja-lulli-asociados-s-a-c-enlace-h-b48069c5/</loc><lastmod>2026-09-10</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/asesor-bumeran-selecta-ad504342/</loc><lastmod>2026-09-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/analista-senior-contable-bumeran-selecta-c6182ca2/</loc><lastmod>2026-09-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/ejecutivo-de-gobierno-corporativo-manpowergroup-peru-4c773f5f/</loc><lastmod>2026-09-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerovagos.com/oferta/upn-san-juan-de-lurigancho-asesor-de-ventas-educativas-pregrado-laurea-389ea527/</loc><lastmod>2026-09-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
 </urlset>
